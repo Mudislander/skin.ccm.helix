@@ -2,6 +2,7 @@
 <window>
 	<defaultcontrol always="true">10</defaultcontrol>
 	<allowoverlay>no</allowoverlay>
+	<include condition="!Skin.HasSetting(InitialSetUpRun)">DefaultInitialSetup</include>
 	<controls>
 		<control type="button" id="10">
 			<description>trigger</description>

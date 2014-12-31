@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<includes>
+	<variable name="VisibleMenuItemOne">
+		<value condition="IsEmpty(Skin.String(HomeItem.1.Path))">False</value>
+		<value condition="StringCompare(Skin.String(HomeItem.1.Type),Weather) + IsEmpty(Weather.Plugin)">False</value>
+		<value condition="StringCompare(Skin.String(HomeItem.1.Type),Movies) + !Library.HasContent(Movies)">False</value>
+		<value condition="StringCompare(Skin.String(HomeItem.1.Type),TVShows) + !Library.HasContent(TVShows)">False</value>
+		<value condition="StringCompare(Skin.String(HomeItem.1.Type),Concerts) + !Library.HasContent(MusicVideos)">False</value>
+		<value condition="StringCompare(Skin.String(HomeItem.1.Type),Radio) + !PVR.HasRadioChannels">False</value>
+		<value condition="StringCompare(Skin.String(HomeItem.1.Type),LiveTV) + !PVR.HasTVChannels">False</value>
+		<value condition="StringCompare(Skin.String(HomeItem.1.Type),PlayDisc) + !System.HasMediaDVD">False</value>
+		<value condition="StringCompare(Skin.String(HomeItem.1.Type),Streaming) + !System.HasNetwork">False</value>
+		<value>True</value>
+	</variable>
+	<variable name="VisibleMenuItemTwo">
+		<value condition="IsEmpty(Skin.String(HomeItem.2.Path))">False</value>
+		<value condition="StringCompare(Skin.String(HomeItem.2.Type),Weather) + IsEmpty(Weather.Plugin)">False</value>
+		<value condition="StringCompare(Skin.String(HomeItem.2.Type),Movies) + !Library.HasContent(Movies)">False</value>
+		<value condition="StringCompare(Skin.String(HomeItem.2.Type),TVShows) + !Library.HasContent(TVShows)">False</value>
+		<value condition="StringCompare(Skin.String(HomeItem.2.Type),Concerts) + !Library.HasContent(MusicVideos)">False</value>
+		<value condition="StringCompare(Skin.String(HomeItem.2.Type),Radio) + !PVR.HasRadioChannels">False</value>
+		<value condition="StringCompare(Skin.String(HomeItem.2.Type),LiveTV) + !PVR.HasTVChannels">False</value>
+		<value condition="StringCompare(Skin.String(HomeItem.2.Type),PlayDisc) + !System.HasMediaDVD">False</value>
+		<value condition="StringCompare(Skin.String(HomeItem.2.Type),Streaming) + !System.HasNetwork">False</value>
+		<value>True</value>
+	</variable>
+	<variable name="VisibleMenuItemThree">
+		<value condition="IsEmpty(Skin.String(HomeItem.3.Path))">False</value>
+		<value condition="StringCompare(Skin.String(HomeItem.3.Type),Weather) + IsEmpty(Weather.Plugin)">False</value>
+		<value condition="StringCompare(Skin.String(HomeItem.3.Type),Movies) + !Library.HasContent(Movies)">False</value>
+		<value condition="StringCompare(Skin.String(HomeItem.3.Type),TVShows) + !Library.HasContent(TVShows)">False</value>
+		<value condition="StringCompare(Skin.String(HomeItem.3.Type),Concerts) + !Library.HasContent(MusicVideos)">False</value>
+		<value condition="StringCompare(Skin.String(HomeItem.3.Type),Radio) + !PVR.HasRadioChannels">False</value>
+		<value condition="StringCompare(Skin.String(HomeItem.3.Type),LiveTV) + !PVR.HasTVChannels">False</value>
+		<value condition="StringCompare(Skin.String(HomeItem.3.Type),PlayDisc) + !System.HasMediaDVD">False</value>
+		<value condition="StringCompare(Skin.String(HomeItem.3.Type),Streaming) + !System.HasNetwork">False</value>
+		<value>True</value>
+	</variable>
+	<variable name="VisibleMenuItemFour">
+		<value condition="IsEmpty(Skin.String(HomeItem.4.Path))">False</value>
+		<value condition="StringCompare(Skin.String(HomeItem.4.Type),Weather) + IsEmpty(Weather.Plugin)">False</value>
+		<value condition="StringCompare(Skin.String(HomeItem.4.Type),Movies) + !Library.HasContent(Movies)">False</value>
+		<value condition="StringCompare(Skin.String(HomeItem.4.Type),TVShows) + !Library.HasContent(TVShows)">False</value>
+		<value condition="StringCompare(Skin.String(HomeItem.4.Type),Concerts) + !Library.HasContent(MusicVideos)">False</value>
+		<value condition="StringCompare(Skin.String(HomeItem.4.Type),Radio) + !PVR.HasRadioChannels">False</value>
+		<value condition="StringCompare(Skin.String(HomeItem.4.Type),LiveTV) + !PVR.HasTVChannels">False</value>
+		<value condition="StringCompare(Skin.String(HomeItem.4.Type),PlayDisc) + !System.HasMediaDVD">False</value>
+		<value condition="StringCompare(Skin.String(HomeItem.4.Type),Streaming) + !System.HasNetwork">False</value>
+		<value>True</value>
+	</variable>
+	<variable name="VisibleMenuItemFive">
+		<value condition="IsEmpty(Skin.String(HomeItem.5.Path))">False</value>
+		<value condition="StringCompare(Skin.String(HomeItem.5.Type),Weather) + IsEmpty(Weather.Plugin)">False</value>
+		<value condition="StringCompare(Skin.String(HomeItem.5.Type),Movies) + !Library.HasContent(Movies)">False</value>
+		<value condition="StringCompare(Skin.String(HomeItem.5.Type),TVShows) + !Library.HasContent(TVShows)">False</value>
+		<value condition="StringCompare(Skin.String(HomeItem.5.Type),Concerts) + !Library.HasContent(MusicVideos)">False</value>
+		<value condition="StringCompare(Skin.String(HomeItem.5.Type),Radio) + !PVR.HasRadioChannels">False</value>
+		<value condition="StringCompare(Skin.String(HomeItem.5.Type),LiveTV) + !PVR.HasTVChannels">False</value>
+		<value condition="StringCompare(Skin.String(HomeItem.5.Type),PlayDisc) + !System.HasMediaDVD">False</value>
+		<value condition="StringCompare(Skin.String(HomeItem.5.Type),Streaming) + !System.HasNetwork">False</value>
+		<value>True</value>
+	</variable>
+	<variable name="VisibleMenuItemSix">
+		<value condition="IsEmpty(Skin.String(HomeItem.6.Path))">False</value>
+		<value condition="StringCompare(Skin.String(HomeItem.6.Type),Weather) + IsEmpty(Weather.Plugin)">False</value>
+		<value condition="StringCompare(Skin.String(HomeItem.6.Type),Movies) + !Library.HasContent(Movies)">False</value>
+		<value condition="StringCompare(Skin.String(HomeItem.6.Type),TVShows) + !Library.HasContent(TVShows)">False</value>
+		<value condition="StringCompare(Skin.String(HomeItem.6.Type),Concerts) + !Library.HasContent(MusicVideos)">False</value>
+		<value condition="StringCompare(Skin.String(HomeItem.6.Type),Radio) + !PVR.HasRadioChannels">False</value>
+		<value condition="StringCompare(Skin.String(HomeItem.6.Type),LiveTV) + !PVR.HasTVChannels">False</value>
+		<value condition="StringCompare(Skin.String(HomeItem.6.Type),PlayDisc) + !System.HasMediaDVD">False</value>
+		<value condition="StringCompare(Skin.String(HomeItem.6.Type),Streaming) + !System.HasNetwork">False</value>
+		<value>True</value>
+	</variable>
+	<variable name="VisibleMenuItemSeven">
+		<value condition="IsEmpty(Skin.String(HomeItem.7.Path))">False</value>
+		<value condition="StringCompare(Skin.String(HomeItem.7.Type),Weather) + IsEmpty(Weather.Plugin)">False</value>
+		<value condition="StringCompare(Skin.String(HomeItem.7.Type),Movies) + !Library.HasContent(Movies)">False</value>
+		<value condition="StringCompare(Skin.String(HomeItem.7.Type),TVShows) + !Library.HasContent(TVShows)">False</value>
+		<value condition="StringCompare(Skin.String(HomeItem.7.Type),Concerts) + !Library.HasContent(MusicVideos)">False</value>
+		<value condition="StringCompare(Skin.String(HomeItem.7.Type),Radio) + !PVR.HasRadioChannels">False</value>
+		<value condition="StringCompare(Skin.String(HomeItem.7.Type),LiveTV) + !PVR.HasTVChannels">False</value>
+		<value condition="StringCompare(Skin.String(HomeItem.7.Type),PlayDisc) + !System.HasMediaDVD">False</value>
+		<value condition="StringCompare(Skin.String(HomeItem.7.Type),Streaming) + !System.HasNetwork">False</value>
+		<value>True</value>
+	</variable>
+	<variable name="VisibleMenuItemEight">
+		<value condition="IsEmpty(Skin.String(HomeItem.8.Path))">False</value>
+		<value condition="StringCompare(Skin.String(HomeItem.8.Type),Weather) + IsEmpty(Weather.Plugin)">False</value>
+		<value condition="StringCompare(Skin.String(HomeItem.8.Type),Movies) + !Library.HasContent(Movies)">False</value>
+		<value condition="StringCompare(Skin.String(HomeItem.8.Type),TVShows) + !Library.HasContent(TVShows)">False</value>
+		<value condition="StringCompare(Skin.String(HomeItem.8.Type),Concerts) + !Library.HasContent(MusicVideos)">False</value>
+		<value condition="StringCompare(Skin.String(HomeItem.8.Type),Radio) + !PVR.HasRadioChannels">False</value>
+		<value condition="StringCompare(Skin.String(HomeItem.8.Type),LiveTV) + !PVR.HasTVChannels">False</value>
+		<value condition="StringCompare(Skin.String(HomeItem.8.Type),PlayDisc) + !System.HasMediaDVD">False</value>
+		<value condition="StringCompare(Skin.String(HomeItem.8.Type),Streaming) + !System.HasNetwork">False</value>
+		<value>True</value>
+	</variable>
+	<variable name="VisibleMenuItemNine">
+		<value condition="IsEmpty(Skin.String(HomeItem.9.Path))">False</value>
+		<value condition="StringCompare(Skin.String(HomeItem.9.Type),Weather) + IsEmpty(Weather.Plugin)">False</value>
+		<value condition="StringCompare(Skin.String(HomeItem.9.Type),Movies) + !Library.HasContent(Movies)">False</value>
+		<value condition="StringCompare(Skin.String(HomeItem.9.Type),TVShows) + !Library.HasContent(TVShows)">False</value>
+		<value condition="StringCompare(Skin.String(HomeItem.9.Type),Concerts) + !Library.HasContent(MusicVideos)">False</value>
+		<value condition="StringCompare(Skin.String(HomeItem.9.Type),Radio) + !PVR.HasRadioChannels">False</value>
+		<value condition="StringCompare(Skin.String(HomeItem.9.Type),LiveTV) + !PVR.HasTVChannels">False</value>
+		<value condition="StringCompare(Skin.String(HomeItem.9.Type),PlayDisc) + !System.HasMediaDVD">False</value>
+		<value condition="StringCompare(Skin.String(HomeItem.9.Type),Streaming) + !System.HasNetwork">False</value>
+		<value>True</value>
+	</variable>
+	<variable name="VisibleMenuItemTen">
+		<value condition="IsEmpty(Skin.String(HomeItem.10.Path))">False</value>
+		<value condition="StringCompare(Skin.String(HomeItem.10.Type),Weather) + IsEmpty(Weather.Plugin)">False</value>
+		<value condition="StringCompare(Skin.String(HomeItem.10.Type),Movies) + !Library.HasContent(Movies)">False</value>
+		<value condition="StringCompare(Skin.String(HomeItem.10.Type),TVShows) + !Library.HasContent(TVShows)">False</value>
+		<value condition="StringCompare(Skin.String(HomeItem.10.Type),Concerts) + !Library.HasContent(MusicVideos)">False</value>
+		<value condition="StringCompare(Skin.String(HomeItem.10.Type),Radio) + !PVR.HasRadioChannels">False</value>
+		<value condition="StringCompare(Skin.String(HomeItem.10.Type),LiveTV) + !PVR.HasTVChannels">False</value>
+		<value condition="StringCompare(Skin.String(HomeItem.10.Type),PlayDisc) + !System.HasMediaDVD">False</value>
+		<value condition="StringCompare(Skin.String(HomeItem.10.Type),Streaming) + !System.HasNetwork">False</value>
+		<value>True</value>
+	</variable>
+	<variable name="VisibleMenuItemEleven">
+		<value condition="IsEmpty(Skin.String(HomeItem.11.Path))">False</value>
+		<value condition="StringCompare(Skin.String(HomeItem.11.Type),Weather) + IsEmpty(Weather.Plugin)">False</value>
+		<value condition="StringCompare(Skin.String(HomeItem.11.Type),Movies) + !Library.HasContent(Movies)">False</value>
+		<value condition="StringCompare(Skin.String(HomeItem.11.Type),TVShows) + !Library.HasContent(TVShows)">False</value>
+		<value condition="StringCompare(Skin.String(HomeItem.11.Type),Concerts) + !Library.HasContent(MusicVideos)">False</value>
+		<value condition="StringCompare(Skin.String(HomeItem.11.Type),Radio) + !PVR.HasRadioChannels">False</value>
+		<value condition="StringCompare(Skin.String(HomeItem.11.Type),LiveTV) + !PVR.HasTVChannels">False</value>
+		<value condition="StringCompare(Skin.String(HomeItem.11.Type),PlayDisc) + !System.HasMediaDVD">False</value>
+		<value condition="StringCompare(Skin.String(HomeItem.11.Type),Streaming) + !System.HasNetwork">False</value>
+		<value>True</value>
+	</variable>
+	<variable name="VisibleMenuItemTwelve">
+		<value condition="IsEmpty(Skin.String(HomeItem.12.Path))">False</value>
+		<value condition="StringCompare(Skin.String(HomeItem.12.Type),Weather) + IsEmpty(Weather.Plugin)">False</value>
+		<value condition="StringCompare(Skin.String(HomeItem.12.Type),Movies) + !Library.HasContent(Movies)">False</value>
+		<value condition="StringCompare(Skin.String(HomeItem.12.Type),TVShows) + !Library.HasContent(TVShows)">False</value>
+		<value condition="StringCompare(Skin.String(HomeItem.12.Type),Concerts) + !Library.HasContent(MusicVideos)">False</value>
+		<value condition="StringCompare(Skin.String(HomeItem.12.Type),Radio) + !PVR.HasRadioChannels">False</value>
+		<value condition="StringCompare(Skin.String(HomeItem.12.Type),LiveTV) + !PVR.HasTVChannels">False</value>
+		<value condition="StringCompare(Skin.String(HomeItem.12.Type),PlayDisc) + !System.HasMediaDVD">False</value>
+		<value condition="StringCompare(Skin.String(HomeItem.12.Type),Streaming) + !System.HasNetwork">False</value>
+		<value>True</value>
+	</variable>
+</includes>
