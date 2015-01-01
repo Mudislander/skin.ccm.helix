@@ -592,7 +592,7 @@
 				</control>
 				<control type="button" id="251">
 					<include>ButtonCommonValues</include>
-					<label>31317</label>
+					<label>31949</label>
 					<onclick>Skin.SetPath(WeatherFanartDir)</onclick>
 					<enable>Skin.HasSetting(ShowWeatherFanart)</enable>
 				</control>

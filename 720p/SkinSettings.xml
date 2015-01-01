@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <window>
 	<defaultcontrol always="true">9000</defaultcontrol>
+	<include condition="!Skin.HasSetting(InitialSetUpRun)">DefaultInitialSetup</include>
 	<controls>
 		<include>CommonBackground</include>
 		<control type="image">
@@ -170,8 +171,8 @@
 						<onclick>noop</onclick>
 					</item>
 					<item id="2">
-						<label>513</label>
-						<label2>31112</label2>
+						<label>31282</label>
+						<label2>5</label2>
 						<onclick>noop</onclick>
 					</item>
 					<item id="3">
@@ -181,7 +182,7 @@
 					</item>
 					<item id="4">
 						<label>24000</label>
-						<label2>31200</label2>
+						<label2>31996</label2>
 						<onclick>noop</onclick>
 					</item>
 				</content>
@@ -373,6 +374,7 @@
 					<onright>60</onright>
 					<onup>9002</onup>
 					<ondown>9002</ondown>
+					<!--
 					<control type="label" id="200">
 						<width>750</width>
 						<height>45</height>
@@ -459,6 +461,1155 @@
 						<align>left</align>
 						<aligny>center</aligny>
 					</control>
+					
+					
+					
+					
+					
+					-->
+					<!--###############################-->
+					<control type="button" id="200">
+						<width>750</width>
+						<height>40</height>
+						<font>font13</font>
+						<label>[B]$LOCALIZE[31290] - 1[/B]</label>
+						<label2>[COLOR=selected]$INFO[Skin.String(HomeItem.1.Label)][/COLOR]</label2>
+						<textcolor>blue</textcolor>
+						<focusedcolor>white</focusedcolor>
+						<texturefocus>MenuItemFO.png</texturefocus>
+						<texturenofocus>MenuItemNF.png</texturenofocus>
+						<onclick>SetProperty(UsrSelectBtn,HomeItem.1,Home)</onclick>
+						<onclick condition="Skin.String(HomeItem.1.Path) + !Skin.String(HomeItem.1.Playlist)">SetProperty(UsrSelectPath,InUse,home)</onclick>
+						<onclick condition="Skin.String(HomeItem.1.Path) + Skin.String(HomeItem.1.Playlist)">SetProperty(UsrSelectPath,PlaylistInUse,home)</onclick>
+						<onclick>ActivateWindow(2114)</onclick>
+					</control>
+					<control type="button" id="201">
+						<width>750</width>
+						<height>40</height>
+						<font>font13</font>
+						<label> - $LOCALIZE[31291]</label>
+						<label2>[COLOR=grey2]$VAR[UsrDefItemOneSubLabel][/COLOR]</label2>
+						<textcolor>grey2</textcolor>
+						<focusedcolor>white</focusedcolor>
+						<texturefocus>MenuItemFO.png</texturefocus>
+						<texturenofocus>MenuItemNF.png</texturenofocus>
+						<onclick>SetProperty(UsrSelectBtn,HomeItem.1,Home)</onclick>
+						<onclick>ActivateWindow(2116)</onclick>
+						<visible>!IsEmpty(Skin.String(HomeItem.1.Label))</visible>
+					</control>
+					<control type="button" id="202">
+						<width>750</width>
+						<height>40</height>
+						<font>font13</font>
+						<label> - $LOCALIZE[31292]</label>
+						<label2>[COLOR=grey2]$VAR[UsrDefItemOneAddOnLabel][/COLOR]</label2>
+						<textcolor>grey2</textcolor>
+						<focusedcolor>white</focusedcolor>
+						<texturefocus>MenuItemFO.png</texturefocus>
+						<texturenofocus>MenuItemNF.png</texturenofocus>
+						<onclick>SetProperty(UsrSelectBtn,HomeItem.1,Home)</onclick>
+						<onclick>ActivateWindow(2117)</onclick>
+						<visible>!IsEmpty(Skin.String(HomeItem.1.Label))</visible>
+					</control>
+					<control type="button" id="203">
+						<width>750</width>
+						<height>40</height>
+						<font>font13</font>
+						<label> - $LOCALIZE[31293]</label>
+						<label2>[COLOR=grey2]$VAR[UsrDefItemOneWidgetLabel][/COLOR]</label2>
+						<textcolor>grey2</textcolor>
+						<focusedcolor>white</focusedcolor>
+						<texturefocus>MenuItemFO.png</texturefocus>
+						<texturenofocus>MenuItemNF.png</texturenofocus>
+						<onclick>SetProperty(UsrSelectBtn,HomeItem.1,Home)</onclick>
+						<onclick>ActivateWindow(2118)</onclick>
+						<visible>!IsEmpty(Skin.String(HomeItem.1.Label))</visible>
+					</control>
+					<control type="button" id="204">
+						<description>Menu BackGround Type</description>
+						<width>750</width>
+						<height>40</height>
+						<font>font13</font>
+						<label> - $LOCALIZE[31294]</label>
+						<label2>[COLOR=grey2]$VAR[MenuOneBackgroundLabel][/COLOR]</label2>
+						<textcolor>grey2</textcolor>
+						<focusedcolor>white</focusedcolor>
+						<texturefocus>MenuItemFO.png</texturefocus>
+						<texturenofocus>MenuItemNF.png</texturenofocus>
+						<onclick>Skin.SetString(HomeItem.1.Display,$VAR[MenuOneBackgroundType])</onclick>
+						<enable>!Skin.HasSetting(HolidayEffects) + !Skin.HasSetting(SingleGlobalBackground)</enable>
+						<visible>!IsEmpty(Skin.String(HomeItem.1.Label))</visible>
+					</control>
+					<control type="button" id="205">
+						<width>750</width>
+						<height>40</height>
+						<font>font13</font>
+						<align>left</align>
+						<label> - $LOCALIZE[31247]</label>
+						<textcolor>grey2</textcolor>
+						<focusedcolor>white</focusedcolor>
+						<texturefocus>MenuItemFO.png</texturefocus>
+						<texturenofocus>MenuItemNF.png</texturenofocus>
+						<onclick>SetProperty(UsrSelectBtn,HomeItem.1,Home)</onclick>
+						<onclick>SetProperty(SwapItemLabel,$INFO[Skin.String(HomeItem.1.Label)],Home)</onclick>
+						<onclick>SetProperty(SwapItemPath,$INFO[Skin.String(HomeItem.1.Path)],Home)</onclick>
+						<onclick>SetProperty(SwapItemSub,$INFO[Skin.String(HomeItem.1.Sub)],Home)</onclick>
+						<onclick>SetProperty(SwapItemAddOn,$INFO[Skin.String(HomeItem.1.Addon)],Home)</onclick>
+						<onclick>SetProperty(SwapItemWidget,$INFO[Skin.String(HomeItem.1.Widget)],Home)</onclick>
+						<onclick>SetProperty(SwapItemType,$INFO[Skin.String(HomeItem.1.Type)],Home)</onclick>
+						<onclick>SetProperty(SwapItemFanArt,$INFO[Skin.String(HomeItem.1.Fanart)],Home)</onclick>
+						<onclick>SetProperty(SwapItemDisplay,$INFO[Skin.String(HomeItem.1.Display)],Home)</onclick>
+						<onclick>SetProperty(SwapItemPlaylist,$INFO[Skin.String(HomeItem.1.Playlist)],Home)</onclick>
+						<onclick>ActivateWindow(2128)</onclick>
+						<visible>!IsEmpty(Skin.String(HomeItem.1.Label))</visible>
+					</control>
+					<control type="button" id="206">
+						<width>750</width>
+						<height>40</height>
+						<font>font13</font>
+						<label>[B]$LOCALIZE[31290] - 2[/B]</label>
+						<label2>[COLOR=selected]$INFO[Skin.String(HomeItem.2.Label)][/COLOR]</label2>
+						<textcolor>blue</textcolor>
+						<focusedcolor>white</focusedcolor>
+						<texturefocus>MenuItemFO.png</texturefocus>
+						<texturenofocus>MenuItemNF.png</texturenofocus>
+						<onclick>SetProperty(UsrSelectBtn,HomeItem.2,Home)</onclick>
+						<onclick condition="Skin.String(HomeItem.2.Path) + !Skin.String(HomeItem.2.Playlist)">SetProperty(UsrSelectPath,InUse,home)</onclick>
+						<onclick condition="Skin.String(HomeItem.2.Path) + Skin.String(HomeItem.2.Playlist)">SetProperty(UsrSelectPath,PlaylistInUse,home)</onclick>
+						<onclick>ActivateWindow(2114)</onclick>
+					</control>
+					<control type="button" id="207">
+						<width>750</width>
+						<height>40</height>
+						<font>font13</font>
+						<label> - $LOCALIZE[31291]</label>
+						<label2>[COLOR=grey2]$VAR[UsrDefItemTwoSubLabel][/COLOR]</label2>
+						<textcolor>grey2</textcolor>
+						<focusedcolor>white</focusedcolor>
+						<texturefocus>MenuItemFO.png</texturefocus>
+						<texturenofocus>MenuItemNF.png</texturenofocus>
+						<onclick>SetProperty(UsrSelectBtn,HomeItem.2,Home)</onclick>
+						<onclick>ActivateWindow(2116)</onclick>
+						<visible>!IsEmpty(Skin.String(HomeItem.2.Label))</visible>
+					</control>
+					<control type="button" id="208">
+						<width>750</width>
+						<height>40</height>
+						<font>font13</font>
+						<label> - $LOCALIZE[31292]</label>
+						<label2>[COLOR=grey2]$VAR[UsrDefItemTwoAddOnLabel][/COLOR]</label2>
+						<textcolor>grey2</textcolor>
+						<focusedcolor>white</focusedcolor>
+						<texturefocus>MenuItemFO.png</texturefocus>
+						<texturenofocus>MenuItemNF.png</texturenofocus>
+						<onclick>SetProperty(UsrSelectBtn,HomeItem.2,Home)</onclick>
+						<onclick>ActivateWindow(2117)</onclick>
+						<visible>!IsEmpty(Skin.String(HomeItem.2.Label))</visible>
+					</control>
+					<control type="button" id="209">
+						<width>750</width>
+						<height>40</height>
+						<font>font13</font>
+						<label> - $LOCALIZE[31293]</label>
+						<label2>[COLOR=grey2]$VAR[UsrDefItemTwoWidgetLabel][/COLOR]</label2>
+						<textcolor>grey2</textcolor>
+						<focusedcolor>white</focusedcolor>
+						<texturefocus>MenuItemFO.png</texturefocus>
+						<texturenofocus>MenuItemNF.png</texturenofocus>
+						<onclick>SetProperty(UsrSelectBtn,HomeItem.2,Home)</onclick>
+						<onclick>ActivateWindow(2118)</onclick>
+						<visible>!IsEmpty(Skin.String(HomeItem.2.Label))</visible>
+					</control>
+					<control type="button" id="210">
+						<description>Menu BackGround Type</description>
+						<width>750</width>
+						<height>40</height>
+						<font>font13</font>
+						<label> - $LOCALIZE[31294]</label>
+						<label2>[COLOR=grey2]$VAR[MenuTwoBackgroundLabel][/COLOR]</label2>
+						<textcolor>grey2</textcolor>
+						<focusedcolor>white</focusedcolor>
+						<texturefocus>MenuItemFO.png</texturefocus>
+						<texturenofocus>MenuItemNF.png</texturenofocus>
+						<onclick>Skin.SetString(HomeItem.2.Display,$VAR[MenuTwoBackgroundType])</onclick>
+						<enable>!Skin.HasSetting(HolidayEffects) + !Skin.HasSetting(SingleGlobalBackground)</enable>
+						<visible>!IsEmpty(Skin.String(HomeItem.2.Label))</visible>
+					</control>
+					<control type="button" id="211">
+						<width>750</width>
+						<height>40</height>
+						<font>font13</font>
+						<align>left</align>
+						<label> - $LOCALIZE[31247]</label>
+						<textcolor>grey2</textcolor>
+						<focusedcolor>white</focusedcolor>
+						<texturefocus>MenuItemFO.png</texturefocus>
+						<texturenofocus>MenuItemNF.png</texturenofocus>
+						<onclick>SetProperty(UsrSelectBtn,HomeItem.2,Home)</onclick>
+						<onclick>SetProperty(SwapItemLabel,$INFO[Skin.String(HomeItem.2.Label)],Home)</onclick>
+						<onclick>SetProperty(SwapItemPath,$INFO[Skin.String(HomeItem.2.Path)],Home)</onclick>
+						<onclick>SetProperty(SwapItemSub,$INFO[Skin.String(HomeItem.2.Sub)],Home)</onclick>
+						<onclick>SetProperty(SwapItemAddOn,$INFO[Skin.String(HomeItem.2.Addon)],Home)</onclick>
+						<onclick>SetProperty(SwapItemWidget,$INFO[Skin.String(HomeItem.2.Widget)],Home)</onclick>
+						<onclick>SetProperty(SwapItemType,$INFO[Skin.String(HomeItem.2.Type)],Home)</onclick>
+						<onclick>SetProperty(SwapItemFanArt,$INFO[Skin.String(HomeItem.2.Fanart)],Home)</onclick>
+						<onclick>SetProperty(SwapItemDisplay,$INFO[Skin.String(HomeItem.2.Display)],Home)</onclick>
+						<onclick>SetProperty(SwapItemPlaylist,$INFO[Skin.String(HomeItem.2.Playlist)],Home)</onclick>
+						<onclick>ActivateWindow(2128)</onclick>
+						<visible>!IsEmpty(Skin.String(HomeItem.2.Label))</visible>
+					</control>
+					<control type="button" id="212">
+						<width>750</width>
+						<height>40</height>
+						<font>font13</font>
+						<label>[B]$LOCALIZE[31290] - 3[/B]</label>
+						<label2>[COLOR=selected]$INFO[Skin.String(HomeItem.3.Label)][/COLOR]</label2>
+						<textcolor>blue</textcolor>
+						<focusedcolor>white</focusedcolor>
+						<texturefocus>MenuItemFO.png</texturefocus>
+						<texturenofocus>MenuItemNF.png</texturenofocus>
+						<onclick>SetProperty(UsrSelectBtn,HomeItem.3,Home)</onclick>
+						<onclick condition="Skin.String(HomeItem.3.Path) + !Skin.String(HomeItem.3.Playlist)">SetProperty(UsrSelectPath,InUse,home)</onclick>
+						<onclick condition="Skin.String(HomeItem.3.Path) + Skin.String(HomeItem.3.Playlist)">SetProperty(UsrSelectPath,PlaylistInUse,home)</onclick>
+						<onclick>ActivateWindow(2114)</onclick>
+					</control>
+					<control type="button" id="213">
+						<width>750</width>
+						<height>40</height>
+						<font>font13</font>
+						<label> - $LOCALIZE[31291]</label>
+						<label2>[COLOR=grey2]$VAR[UsrDefItemThreeSubLabel][/COLOR]</label2>
+						<textcolor>grey2</textcolor>
+						<focusedcolor>white</focusedcolor>
+						<texturefocus>MenuItemFO.png</texturefocus>
+						<texturenofocus>MenuItemNF.png</texturenofocus>
+						<onclick>SetProperty(UsrSelectBtn,HomeItem.3,Home)</onclick>
+						<onclick>ActivateWindow(2116)</onclick>
+						<visible>!IsEmpty(Skin.String(HomeItem.3.Label))</visible>
+					</control>
+					<control type="button" id="214">
+						<width>750</width>
+						<height>40</height>
+						<font>font13</font>
+						<label> - $LOCALIZE[31292]</label>
+						<label2>[COLOR=grey2]$VAR[UsrDefItemThreeAddOnLabel][/COLOR]</label2>
+						<textcolor>grey2</textcolor>
+						<focusedcolor>white</focusedcolor>
+						<texturefocus>MenuItemFO.png</texturefocus>
+						<texturenofocus>MenuItemNF.png</texturenofocus>
+						<onclick>SetProperty(UsrSelectBtn,HomeItem.3,Home)</onclick>
+						<onclick>ActivateWindow(2117)</onclick>
+						<visible>!IsEmpty(Skin.String(HomeItem.3.Label))</visible>
+					</control>
+					<control type="button" id="215">
+						<width>750</width>
+						<height>40</height>
+						<font>font13</font>
+						<label> - $LOCALIZE[31293]</label>
+						<label2>[COLOR=grey2]$VAR[UsrDefItemThreeWidgetLabel][/COLOR]</label2>
+						<textcolor>grey2</textcolor>
+						<focusedcolor>white</focusedcolor>
+						<texturefocus>MenuItemFO.png</texturefocus>
+						<texturenofocus>MenuItemNF.png</texturenofocus>
+						<onclick>SetProperty(UsrSelectBtn,HomeItem.3,Home)</onclick>
+						<onclick>ActivateWindow(2118)</onclick>
+						<visible>!IsEmpty(Skin.String(HomeItem.3.Label))</visible>
+					</control>
+					<control type="button" id="216">
+						<description>Menu BackGround Type</description>
+						<width>750</width>
+						<height>40</height>
+						<font>font13</font>
+						<label> - $LOCALIZE[31294]</label>
+						<label2>[COLOR=grey2]$VAR[MenuThreeBackgroundLabel][/COLOR]</label2>
+						<textcolor>grey2</textcolor>
+						<focusedcolor>white</focusedcolor>
+						<texturefocus>MenuItemFO.png</texturefocus>
+						<texturenofocus>MenuItemNF.png</texturenofocus>
+						<onclick>Skin.SetString(HomeItem.3.Display,$VAR[MenuThreeBackgroundType])</onclick>
+						<enable>!Skin.HasSetting(HolidayEffects) + !Skin.HasSetting(SingleGlobalBackground)</enable>
+						<visible>!IsEmpty(Skin.String(HomeItem.3.Label))</visible>
+					</control>
+					<control type="button" id="217">
+						<width>750</width>
+						<height>40</height>
+						<font>font13</font>
+						<align>left</align>
+						<label> - $LOCALIZE[31247]</label>
+						<textcolor>grey2</textcolor>
+						<focusedcolor>white</focusedcolor>
+						<texturefocus>MenuItemFO.png</texturefocus>
+						<texturenofocus>MenuItemNF.png</texturenofocus>
+						<onclick>SetProperty(UsrSelectBtn,HomeItem.3,Home)</onclick>
+						<onclick>SetProperty(SwapItemLabel,$INFO[Skin.String(HomeItem.3.Label)],Home)</onclick>
+						<onclick>SetProperty(SwapItemPath,$INFO[Skin.String(HomeItem.3.Path)],Home)</onclick>
+						<onclick>SetProperty(SwapItemSub,$INFO[Skin.String(HomeItem.3.Sub)],Home)</onclick>
+						<onclick>SetProperty(SwapItemAddOn,$INFO[Skin.String(HomeItem.3.Addon)],Home)</onclick>
+						<onclick>SetProperty(SwapItemWidget,$INFO[Skin.String(HomeItem.3.Widget)],Home)</onclick>
+						<onclick>SetProperty(SwapItemType,$INFO[Skin.String(HomeItem.3.Type)],Home)</onclick>
+						<onclick>SetProperty(SwapItemFanArt,$INFO[Skin.String(HomeItem.3.Fanart)],Home)</onclick>
+						<onclick>SetProperty(SwapItemDisplay,$INFO[Skin.String(HomeItem.3.Display)],Home)</onclick>
+						<onclick>SetProperty(SwapItemPlaylist,$INFO[Skin.String(HomeItem.3.Playlist)],Home)</onclick>
+						<onclick>ActivateWindow(2128)</onclick>
+						<visible>!IsEmpty(Skin.String(HomeItem.3.Label))</visible>
+					</control>
+					<control type="button" id="218">
+						<width>750</width>
+						<height>40</height>
+						<font>font13</font>
+						<label>[B]$LOCALIZE[31290] - 4[/B]</label>
+						<label2>[COLOR=selected]$INFO[Skin.String(HomeItem.4.Label)][/COLOR]</label2>
+						<textcolor>blue</textcolor>
+						<focusedcolor>white</focusedcolor>
+						<texturefocus>MenuItemFO.png</texturefocus>
+						<texturenofocus>MenuItemNF.png</texturenofocus>
+						<onclick>SetProperty(UsrSelectBtn,HomeItem.4,Home)</onclick>
+						<onclick condition="Skin.String(HomeItem.4.Path) + !Skin.String(HomeItem.4.Playlist)">SetProperty(UsrSelectPath,InUse,home)</onclick>
+						<onclick condition="Skin.String(HomeItem.4.Path) + Skin.String(HomeItem.4.Playlist)">SetProperty(UsrSelectPath,PlaylistInUse,home)</onclick>
+						<onclick>ActivateWindow(2114)</onclick>
+					</control>
+					<control type="button" id="219">
+						<width>750</width>
+						<height>40</height>
+						<font>font13</font>
+						<label> - $LOCALIZE[31291]</label>
+						<label2>[COLOR=grey2]$VAR[UsrDefItemFourSubLabel][/COLOR]</label2>
+						<textcolor>grey2</textcolor>
+						<focusedcolor>white</focusedcolor>
+						<texturefocus>MenuItemFO.png</texturefocus>
+						<texturenofocus>MenuItemNF.png</texturenofocus>
+						<onclick>SetProperty(UsrSelectBtn,HomeItem.4,Home)</onclick>
+						<onclick>ActivateWindow(2116)</onclick>
+						<visible>!IsEmpty(Skin.String(HomeItem.4.Label))</visible>
+					</control>
+					<control type="button" id="220">
+						<width>750</width>
+						<height>40</height>
+						<font>font13</font>
+						<label> - $LOCALIZE[31292]</label>
+						<label2>[COLOR=grey2]$VAR[UsrDefItemFourAddOnLabel][/COLOR]</label2>
+						<textcolor>grey2</textcolor>
+						<focusedcolor>white</focusedcolor>
+						<texturefocus>MenuItemFO.png</texturefocus>
+						<texturenofocus>MenuItemNF.png</texturenofocus>
+						<onclick>SetProperty(UsrSelectBtn,HomeItem.4,Home)</onclick>
+						<onclick>ActivateWindow(2117)</onclick>
+						<visible>!IsEmpty(Skin.String(HomeItem.4.Label))</visible>
+					</control>
+					<control type="button" id="221">
+						<width>750</width>
+						<height>40</height>
+						<font>font13</font>
+						<label> - $LOCALIZE[31293]</label>
+						<label2>[COLOR=grey2]$VAR[UsrDefItemFourWidgetLabel][/COLOR]</label2>
+						<textcolor>grey2</textcolor>
+						<focusedcolor>white</focusedcolor>
+						<texturefocus>MenuItemFO.png</texturefocus>
+						<texturenofocus>MenuItemNF.png</texturenofocus>
+						<onclick>SetProperty(UsrSelectBtn,HomeItem.4,Home)</onclick>
+						<onclick>ActivateWindow(2118)</onclick>
+						<visible>!IsEmpty(Skin.String(HomeItem.4.Label))</visible>
+					</control>
+					<control type="button" id="222">
+						<description>Menu BackGround Type</description>
+						<width>750</width>
+						<height>40</height>
+						<font>font13</font>
+						<label> - $LOCALIZE[31294]</label>
+						<label2>[COLOR=grey2]$VAR[MenuFourBackgroundLabel][/COLOR]</label2>
+						<textcolor>grey2</textcolor>
+						<focusedcolor>white</focusedcolor>
+						<texturefocus>MenuItemFO.png</texturefocus>
+						<texturenofocus>MenuItemNF.png</texturenofocus>
+						<onclick>Skin.SetString(HomeItem.4.Display,$VAR[MenuFourBackgroundType])</onclick>
+						<enable>!Skin.HasSetting(HolidayEffects) + !Skin.HasSetting(SingleGlobalBackground)</enable>
+						<visible>!IsEmpty(Skin.String(HomeItem.4.Label))</visible>
+					</control>
+					<control type="button" id="223">
+						<width>750</width>
+						<height>40</height>
+						<font>font13</font>
+						<align>left</align>
+						<label> - $LOCALIZE[31247]</label>
+						<textcolor>grey2</textcolor>
+						<focusedcolor>white</focusedcolor>
+						<texturefocus>MenuItemFO.png</texturefocus>
+						<texturenofocus>MenuItemNF.png</texturenofocus>
+						<onclick>SetProperty(UsrSelectBtn,HomeItem.4,Home)</onclick>
+						<onclick>SetProperty(SwapItemLabel,$INFO[Skin.String(HomeItem.4.Label)],Home)</onclick>
+						<onclick>SetProperty(SwapItemPath,$INFO[Skin.String(HomeItem.4.Path)],Home)</onclick>
+						<onclick>SetProperty(SwapItemSub,$INFO[Skin.String(HomeItem.4.Sub)],Home)</onclick>
+						<onclick>SetProperty(SwapItemAddOn,$INFO[Skin.String(HomeItem.4.Addon)],Home)</onclick>
+						<onclick>SetProperty(SwapItemWidget,$INFO[Skin.String(HomeItem.4.Widget)],Home)</onclick>
+						<onclick>SetProperty(SwapItemType,$INFO[Skin.String(HomeItem.4.Type)],Home)</onclick>
+						<onclick>SetProperty(SwapItemFanArt,$INFO[Skin.String(HomeItem.4.Fanart)],Home)</onclick>
+						<onclick>SetProperty(SwapItemDisplay,$INFO[Skin.String(HomeItem.4.Display)],Home)</onclick>
+						<onclick>SetProperty(SwapItemPlaylist,$INFO[Skin.String(HomeItem.4.Playlist)],Home)</onclick>
+						<onclick>ActivateWindow(2128)</onclick>
+						<visible>!IsEmpty(Skin.String(HomeItem.4.Label))</visible>
+					</control>
+					<control type="button" id="224">
+						<width>750</width>
+						<height>40</height>
+						<font>font13</font>
+						<label>[B]$LOCALIZE[31290] - 5[/B]</label>
+						<label2>[COLOR=selected]$INFO[Skin.String(HomeItem.5.Label)][/COLOR]</label2>
+						<textcolor>blue</textcolor>
+						<focusedcolor>white</focusedcolor>
+						<texturefocus>MenuItemFO.png</texturefocus>
+						<texturenofocus>MenuItemNF.png</texturenofocus>
+						<onclick>SetProperty(UsrSelectBtn,HomeItem.5,Home)</onclick>
+						<onclick condition="Skin.String(HomeItem.5.Path) + !Skin.String(HomeItem.5.Playlist)">SetProperty(UsrSelectPath,InUse,home)</onclick>
+						<onclick condition="Skin.String(HomeItem.5.Path) + Skin.String(HomeItem.5.Playlist)">SetProperty(UsrSelectPath,PlaylistInUse,home)</onclick>
+						<onclick>ActivateWindow(2114)</onclick>
+					</control>
+					<control type="button" id="225">
+						<width>750</width>
+						<height>40</height>
+						<font>font13</font>
+						<label> - $LOCALIZE[31291]</label>
+						<label2>[COLOR=grey2]$VAR[UsrDefItemFiveSubLabel][/COLOR]</label2>
+						<textcolor>grey2</textcolor>
+						<focusedcolor>white</focusedcolor>
+						<texturefocus>MenuItemFO.png</texturefocus>
+						<texturenofocus>MenuItemNF.png</texturenofocus>
+						<onclick>SetProperty(UsrSelectBtn,HomeItem.5,Home)</onclick>
+						<onclick>ActivateWindow(2116)</onclick>
+						<visible>!IsEmpty(Skin.String(HomeItem.5.Label))</visible>
+					</control>
+					<control type="button" id="226">
+						<width>750</width>
+						<height>40</height>
+						<font>font13</font>
+						<label> - $LOCALIZE[31292]</label>
+						<label2>[COLOR=grey2]$VAR[UsrDefItemFiveAddOnLabel][/COLOR]</label2>
+						<textcolor>grey2</textcolor>
+						<focusedcolor>white</focusedcolor>
+						<texturefocus>MenuItemFO.png</texturefocus>
+						<texturenofocus>MenuItemNF.png</texturenofocus>
+						<onclick>SetProperty(UsrSelectBtn,HomeItem.5,Home)</onclick>
+						<onclick>ActivateWindow(2117)</onclick>
+						<visible>!IsEmpty(Skin.String(HomeItem.5.Label))</visible>
+					</control>
+					<control type="button" id="227">
+						<width>750</width>
+						<height>40</height>
+						<font>font13</font>
+						<label> - $LOCALIZE[31293]</label>
+						<label2>[COLOR=grey2]$VAR[UsrDefItemFiveWidgetLabel][/COLOR]</label2>
+						<textcolor>grey2</textcolor>
+						<focusedcolor>white</focusedcolor>
+						<texturefocus>MenuItemFO.png</texturefocus>
+						<texturenofocus>MenuItemNF.png</texturenofocus>
+						<onclick>SetProperty(UsrSelectBtn,HomeItem.5,Home)</onclick>
+						<onclick>ActivateWindow(2118)</onclick>
+						<visible>!IsEmpty(Skin.String(HomeItem.5.Label))</visible>
+					</control>
+					<control type="button" id="228">
+						<description>Menu BackGround Type</description>
+						<width>750</width>
+						<height>40</height>
+						<font>font13</font>
+						<label> - $LOCALIZE[31294]</label>
+						<label2>[COLOR=grey2]$VAR[MenuFiveBackgroundLabel][/COLOR]</label2>
+						<textcolor>grey2</textcolor>
+						<focusedcolor>white</focusedcolor>
+						<texturefocus>MenuItemFO.png</texturefocus>
+						<texturenofocus>MenuItemNF.png</texturenofocus>
+						<onclick>Skin.SetString(HomeItem.5.Display,$VAR[MenuFiveBackgroundType])</onclick>
+						<enable>!Skin.HasSetting(HolidayEffects) + !Skin.HasSetting(SingleGlobalBackground)</enable>
+						<visible>!IsEmpty(Skin.String(HomeItem.5.Label))</visible>
+					</control>
+					<control type="button" id="229">
+						<width>750</width>
+						<height>40</height>
+						<font>font13</font>
+						<align>left</align>
+						<label> - $LOCALIZE[31247]</label>
+						<textcolor>grey2</textcolor>
+						<focusedcolor>white</focusedcolor>
+						<texturefocus>MenuItemFO.png</texturefocus>
+						<texturenofocus>MenuItemNF.png</texturenofocus>
+						<onclick>SetProperty(UsrSelectBtn,HomeItem.5,Home)</onclick>
+						<onclick>SetProperty(SwapItemLabel,$INFO[Skin.String(HomeItem.5.Label)],Home)</onclick>
+						<onclick>SetProperty(SwapItemPath,$INFO[Skin.String(HomeItem.5.Path)],Home)</onclick>
+						<onclick>SetProperty(SwapItemSub,$INFO[Skin.String(HomeItem.5.Sub)],Home)</onclick>
+						<onclick>SetProperty(SwapItemAddOn,$INFO[Skin.String(HomeItem.5.Addon)],Home)</onclick>
+						<onclick>SetProperty(SwapItemWidget,$INFO[Skin.String(HomeItem.5.Widget)],Home)</onclick>
+						<onclick>SetProperty(SwapItemType,$INFO[Skin.String(HomeItem.5.Type)],Home)</onclick>
+						<onclick>SetProperty(SwapItemFanArt,$INFO[Skin.String(HomeItem.5.Fanart)],Home)</onclick>
+						<onclick>SetProperty(SwapItemDisplay,$INFO[Skin.String(HomeItem.5.Display)],Home)</onclick>
+						<onclick>SetProperty(SwapItemPlaylist,$INFO[Skin.String(HomeItem.5.Playlist)],Home)</onclick>
+						<onclick>ActivateWindow(2128)</onclick>
+						<visible>!IsEmpty(Skin.String(HomeItem.5.Label))</visible>
+					</control>
+					<control type="button" id="230">
+						<width>750</width>
+						<height>40</height>
+						<font>font13</font>
+						<label>[B]$LOCALIZE[31290] - 6[/B]</label>
+						<label2>[COLOR=selected]$INFO[Skin.String(HomeItem.6.Label)][/COLOR]</label2>
+						<textcolor>blue</textcolor>
+						<focusedcolor>white</focusedcolor>
+						<texturefocus>MenuItemFO.png</texturefocus>
+						<texturenofocus>MenuItemNF.png</texturenofocus>
+						<onclick>SetProperty(UsrSelectBtn,HomeItem.6,Home)</onclick>
+						<onclick condition="Skin.String(HomeItem.6.Path) + !Skin.String(HomeItem.6.Playlist)">SetProperty(UsrSelectPath,InUse,home)</onclick>
+						<onclick condition="Skin.String(HomeItem.6.Path) + Skin.String(HomeItem.6.Playlist)">SetProperty(UsrSelectPath,PlaylistInUse,home)</onclick>
+						<onclick>ActivateWindow(2114)</onclick>
+					</control>
+					<control type="button" id="231">
+						<width>750</width>
+						<height>40</height>
+						<font>font13</font>
+						<label> - $LOCALIZE[31291]</label>
+						<label2>[COLOR=grey2]$VAR[UsrDefItemSixSubLabel][/COLOR]</label2>
+						<textcolor>grey2</textcolor>
+						<focusedcolor>white</focusedcolor>
+						<texturefocus>MenuItemFO.png</texturefocus>
+						<texturenofocus>MenuItemNF.png</texturenofocus>
+						<onclick>SetProperty(UsrSelectBtn,HomeItem.6,Home)</onclick>
+						<onclick>ActivateWindow(2116)</onclick>
+						<visible>!IsEmpty(Skin.String(HomeItem.6.Label))</visible>
+					</control>
+					<control type="button" id="232">
+						<width>750</width>
+						<height>40</height>
+						<font>font13</font>
+						<label> - $LOCALIZE[31292]</label>
+						<label2>[COLOR=grey2]$VAR[UsrDefItemSixAddOnLabel][/COLOR]</label2>
+						<textcolor>grey2</textcolor>
+						<focusedcolor>white</focusedcolor>
+						<texturefocus>MenuItemFO.png</texturefocus>
+						<texturenofocus>MenuItemNF.png</texturenofocus>
+						<onclick>SetProperty(UsrSelectBtn,HomeItem.6,Home)</onclick>
+						<onclick>ActivateWindow(2117)</onclick>
+						<visible>!IsEmpty(Skin.String(HomeItem.6.Label))</visible>
+					</control>
+					<control type="button" id="233">
+						<width>750</width>
+						<height>40</height>
+						<font>font13</font>
+						<label> - $LOCALIZE[31293]</label>
+						<label2>[COLOR=grey2]$VAR[UsrDefItemSixWidgetLabel][/COLOR]</label2>
+						<textcolor>grey2</textcolor>
+						<focusedcolor>white</focusedcolor>
+						<texturefocus>MenuItemFO.png</texturefocus>
+						<texturenofocus>MenuItemNF.png</texturenofocus>
+						<onclick>SetProperty(UsrSelectBtn,HomeItem.6,Home)</onclick>
+						<onclick>ActivateWindow(2118)</onclick>
+						<visible>!IsEmpty(Skin.String(HomeItem.6.Label))</visible>
+					</control>
+					<control type="button" id="234">
+						<description>Menu BackGround Type</description>
+						<width>750</width>
+						<height>40</height>
+						<font>font13</font>
+						<label> - $LOCALIZE[31294]</label>
+						<label2>[COLOR=grey2]$VAR[MenuSixBackgroundLabel][/COLOR]</label2>
+						<textcolor>grey2</textcolor>
+						<focusedcolor>white</focusedcolor>
+						<texturefocus>MenuItemFO.png</texturefocus>
+						<texturenofocus>MenuItemNF.png</texturenofocus>
+						<onclick>Skin.SetString(HomeItem.6.Display,$VAR[MenuSixBackgroundType])</onclick>
+						<enable>!Skin.HasSetting(HolidayEffects) + !Skin.HasSetting(SingleGlobalBackground)</enable>
+						<visible>!IsEmpty(Skin.String(HomeItem.6.Label))</visible>
+					</control>
+					<control type="button" id="235">
+						<width>750</width>
+						<height>40</height>
+						<font>font13</font>
+						<align>left</align>
+						<label> - $LOCALIZE[31247]</label>
+						<textcolor>grey2</textcolor>
+						<focusedcolor>white</focusedcolor>
+						<texturefocus>MenuItemFO.png</texturefocus>
+						<texturenofocus>MenuItemNF.png</texturenofocus>
+						<onclick>SetProperty(UsrSelectBtn,HomeItem.6,Home)</onclick>
+						<onclick>SetProperty(SwapItemLabel,$INFO[Skin.String(HomeItem.6.Label)],Home)</onclick>
+						<onclick>SetProperty(SwapItemPath,$INFO[Skin.String(HomeItem.6.Path)],Home)</onclick>
+						<onclick>SetProperty(SwapItemSub,$INFO[Skin.String(HomeItem.6.Sub)],Home)</onclick>
+						<onclick>SetProperty(SwapItemAddOn,$INFO[Skin.String(HomeItem.6.Addon)],Home)</onclick>
+						<onclick>SetProperty(SwapItemWidget,$INFO[Skin.String(HomeItem.6.Widget)],Home)</onclick>
+						<onclick>SetProperty(SwapItemType,$INFO[Skin.String(HomeItem.6.Type)],Home)</onclick>
+						<onclick>SetProperty(SwapItemFanArt,$INFO[Skin.String(HomeItem.6.Fanart)],Home)</onclick>
+						<onclick>SetProperty(SwapItemDisplay,$INFO[Skin.String(HomeItem.6.Display)],Home)</onclick>
+						<onclick>SetProperty(SwapItemPlaylist,$INFO[Skin.String(HomeItem.6.Playlist)],Home)</onclick>
+						<onclick>ActivateWindow(2128)</onclick>
+						<visible>!IsEmpty(Skin.String(HomeItem.6.Label))</visible>
+					</control>
+					<control type="button" id="236">
+						<width>750</width>
+						<height>40</height>
+						<font>font13</font>
+						<label>[B]$LOCALIZE[31290] - 7[/B]</label>
+						<label2>[COLOR=selected]$INFO[Skin.String(HomeItem.7.Label)][/COLOR]</label2>
+						<textcolor>blue</textcolor>
+						<focusedcolor>white</focusedcolor>
+						<texturefocus>MenuItemFO.png</texturefocus>
+						<texturenofocus>MenuItemNF.png</texturenofocus>
+						<onclick>SetProperty(UsrSelectBtn,HomeItem.7,Home)</onclick>
+						<onclick condition="Skin.String(HomeItem.7.Path) + !Skin.String(HomeItem.7.Playlist)">SetProperty(UsrSelectPath,InUse,home)</onclick>
+						<onclick condition="Skin.String(HomeItem.7.Path) + Skin.String(HomeItem.7.Playlist)">SetProperty(UsrSelectPath,PlaylistInUse,home)</onclick>
+						<onclick>ActivateWindow(2114)</onclick>
+					</control>
+					<control type="button" id="237">
+						<width>750</width>
+						<height>40</height>
+						<font>font13</font>
+						<label> - $LOCALIZE[31291]</label>
+						<label2>[COLOR=grey2]$VAR[UsrDefItemSevenSubLabel][/COLOR]</label2>
+						<textcolor>grey2</textcolor>
+						<focusedcolor>white</focusedcolor>
+						<texturefocus>MenuItemFO.png</texturefocus>
+						<texturenofocus>MenuItemNF.png</texturenofocus>
+						<onclick>SetProperty(UsrSelectBtn,HomeItem.7,Home)</onclick>
+						<onclick>ActivateWindow(2116)</onclick>
+						<visible>!IsEmpty(Skin.String(HomeItem.7.Label))</visible>
+					</control>
+					<control type="button" id="238">
+						<width>750</width>
+						<height>40</height>
+						<font>font13</font>
+						<label> - $LOCALIZE[31292]</label>
+						<label2>[COLOR=grey2]$VAR[UsrDefItemSevenAddOnLabel][/COLOR]</label2>
+						<textcolor>grey2</textcolor>
+						<focusedcolor>white</focusedcolor>
+						<texturefocus>MenuItemFO.png</texturefocus>
+						<texturenofocus>MenuItemNF.png</texturenofocus>
+						<onclick>SetProperty(UsrSelectBtn,HomeItem.7,Home)</onclick>
+						<onclick>ActivateWindow(2117)</onclick>
+						<visible>!IsEmpty(Skin.String(HomeItem.7.Label))</visible>
+					</control>
+					<control type="button" id="239">
+						<width>750</width>
+						<height>40</height>
+						<font>font13</font>
+						<label> - $LOCALIZE[31293]</label>
+						<label2>[COLOR=grey2]$VAR[UsrDefItemSevenWidgetLabel][/COLOR]</label2>
+						<textcolor>grey2</textcolor>
+						<focusedcolor>white</focusedcolor>
+						<texturefocus>MenuItemFO.png</texturefocus>
+						<texturenofocus>MenuItemNF.png</texturenofocus>
+						<onclick>SetProperty(UsrSelectBtn,HomeItem.7,Home)</onclick>
+						<onclick>ActivateWindow(2118)</onclick>
+						<visible>!IsEmpty(Skin.String(HomeItem.7.Label))</visible>
+					</control>
+					<control type="button" id="240">
+						<description>Menu BackGround Type</description>
+						<width>750</width>
+						<height>40</height>
+						<font>font13</font>
+						<label> - $LOCALIZE[31294]</label>
+						<label2>[COLOR=grey2]$VAR[MenuSevenBackgroundLabel][/COLOR]</label2>
+						<textcolor>grey2</textcolor>
+						<focusedcolor>white</focusedcolor>
+						<texturefocus>MenuItemFO.png</texturefocus>
+						<texturenofocus>MenuItemNF.png</texturenofocus>
+						<onclick>Skin.SetString(HomeItem.7.Display,$VAR[MenuSevenBackgroundType])</onclick>
+						<enable>!Skin.HasSetting(HolidayEffects) + !Skin.HasSetting(SingleGlobalBackground)</enable>
+						<visible>!IsEmpty(Skin.String(HomeItem.7.Label))</visible>
+					</control>
+					<control type="button" id="241">
+						<width>750</width>
+						<height>40</height>
+						<font>font13</font>
+						<align>left</align>
+						<label> - $LOCALIZE[31247]</label>
+						<textcolor>grey2</textcolor>
+						<focusedcolor>white</focusedcolor>
+						<texturefocus>MenuItemFO.png</texturefocus>
+						<texturenofocus>MenuItemNF.png</texturenofocus>
+						<onclick>SetProperty(UsrSelectBtn,HomeItem.7,Home)</onclick>
+						<onclick>SetProperty(SwapItemLabel,$INFO[Skin.String(HomeItem.7.Label)],Home)</onclick>
+						<onclick>SetProperty(SwapItemPath,$INFO[Skin.String(HomeItem.7.Path)],Home)</onclick>
+						<onclick>SetProperty(SwapItemSub,$INFO[Skin.String(HomeItem.7.Sub)],Home)</onclick>
+						<onclick>SetProperty(SwapItemAddOn,$INFO[Skin.String(HomeItem.7.Addon)],Home)</onclick>
+						<onclick>SetProperty(SwapItemWidget,$INFO[Skin.String(HomeItem.7.Widget)],Home)</onclick>
+						<onclick>SetProperty(SwapItemType,$INFO[Skin.String(HomeItem.7.Type)],Home)</onclick>
+						<onclick>SetProperty(SwapItemFanArt,$INFO[Skin.String(HomeItem.7.Fanart)],Home)</onclick>
+						<onclick>SetProperty(SwapItemDisplay,$INFO[Skin.String(HomeItem.7.Display)],Home)</onclick>
+						<onclick>SetProperty(SwapItemPlaylist,$INFO[Skin.String(HomeItem.7.Playlist)],Home)</onclick>
+						<onclick>ActivateWindow(2128)</onclick>
+						<visible>!IsEmpty(Skin.String(HomeItem.7.Label))</visible>
+					</control>
+					<control type="button" id="242">
+						<width>750</width>
+						<height>40</height>
+						<font>font13</font>
+						<label>[B]$LOCALIZE[31290] - 8[/B]</label>
+						<label2>[COLOR=selected]$INFO[Skin.String(HomeItem.8.Label)][/COLOR]</label2>
+						<textcolor>blue</textcolor>
+						<focusedcolor>white</focusedcolor>
+						<texturefocus>MenuItemFO.png</texturefocus>
+						<texturenofocus>MenuItemNF.png</texturenofocus>
+						<onclick>SetProperty(UsrSelectBtn,HomeItem.8,Home)</onclick>
+						<onclick condition="Skin.String(HomeItem.8.Path) + !Skin.String(HomeItem.8.Playlist)">SetProperty(UsrSelectPath,InUse,home)</onclick>
+						<onclick condition="Skin.String(HomeItem.8.Path) + Skin.String(HomeItem.8.Playlist)">SetProperty(UsrSelectPath,PlaylistInUse,home)</onclick>
+						<onclick>ActivateWindow(2114)</onclick>
+					</control>
+					<control type="button" id="243">
+						<width>750</width>
+						<height>40</height>
+						<font>font13</font>
+						<label> - $LOCALIZE[31291]</label>
+						<label2>[COLOR=grey2]$VAR[UsrDefItemEightSubLabel][/COLOR]</label2>
+						<textcolor>grey2</textcolor>
+						<focusedcolor>white</focusedcolor>
+						<texturefocus>MenuItemFO.png</texturefocus>
+						<texturenofocus>MenuItemNF.png</texturenofocus>
+						<onclick>SetProperty(UsrSelectBtn,HomeItem.8,Home)</onclick>
+						<onclick>ActivateWindow(2116)</onclick>
+						<visible>!IsEmpty(Skin.String(HomeItem.8.Label))</visible>
+					</control>
+					<control type="button" id="244">
+						<width>750</width>
+						<height>40</height>
+						<font>font13</font>
+						<label> - $LOCALIZE[31292]</label>
+						<label2>[COLOR=grey2]$VAR[UsrDefItemEightAddOnLabel][/COLOR]</label2>
+						<textcolor>grey2</textcolor>
+						<focusedcolor>white</focusedcolor>
+						<texturefocus>MenuItemFO.png</texturefocus>
+						<texturenofocus>MenuItemNF.png</texturenofocus>
+						<onclick>SetProperty(UsrSelectBtn,HomeItem.8,Home)</onclick>
+						<onclick>ActivateWindow(2117)</onclick>
+						<visible>!IsEmpty(Skin.String(HomeItem.8.Label))</visible>
+					</control>
+					<control type="button" id="245">
+						<width>750</width>
+						<height>40</height>
+						<font>font13</font>
+						<label> - $LOCALIZE[31293]</label>
+						<label2>[COLOR=grey2]$VAR[UsrDefItemEightWidgetLabel][/COLOR]</label2>
+						<textcolor>grey2</textcolor>
+						<focusedcolor>white</focusedcolor>
+						<texturefocus>MenuItemFO.png</texturefocus>
+						<texturenofocus>MenuItemNF.png</texturenofocus>
+						<onclick>SetProperty(UsrSelectBtn,HomeItem.8,Home)</onclick>
+						<onclick>ActivateWindow(2118)</onclick>
+						<visible>!IsEmpty(Skin.String(HomeItem.8.Label))</visible>
+					</control>
+					<control type="button" id="246">
+						<description>Menu BackGround Type</description>
+						<width>750</width>
+						<height>40</height>
+						<font>font13</font>
+						<label> - $LOCALIZE[31294]</label>
+						<label2>[COLOR=grey2]$VAR[MenuEightBackgroundLabel][/COLOR]</label2>
+						<textcolor>grey2</textcolor>
+						<focusedcolor>white</focusedcolor>
+						<texturefocus>MenuItemFO.png</texturefocus>
+						<texturenofocus>MenuItemNF.png</texturenofocus>
+						<onclick>Skin.SetString(HomeItem.8.Display,$VAR[MenuEightBackgroundType])</onclick>
+						<enable>!Skin.HasSetting(HolidayEffects) + !Skin.HasSetting(SingleGlobalBackground)</enable>
+						<visible>!IsEmpty(Skin.String(HomeItem.8.Label))</visible>
+					</control>
+					<control type="button" id="247">
+						<width>750</width>
+						<height>40</height>
+						<font>font13</font>
+						<align>left</align>
+						<label> - $LOCALIZE[31247]</label>
+						<textcolor>grey2</textcolor>
+						<focusedcolor>white</focusedcolor>
+						<texturefocus>MenuItemFO.png</texturefocus>
+						<texturenofocus>MenuItemNF.png</texturenofocus>
+						<onclick>SetProperty(UsrSelectBtn,HomeItem.8,Home)</onclick>
+						<onclick>SetProperty(SwapItemLabel,$INFO[Skin.String(HomeItem.8.Label)],Home)</onclick>
+						<onclick>SetProperty(SwapItemPath,$INFO[Skin.String(HomeItem.8.Path)],Home)</onclick>
+						<onclick>SetProperty(SwapItemSub,$INFO[Skin.String(HomeItem.8.Sub)],Home)</onclick>
+						<onclick>SetProperty(SwapItemAddOn,$INFO[Skin.String(HomeItem.8.Addon)],Home)</onclick>
+						<onclick>SetProperty(SwapItemWidget,$INFO[Skin.String(HomeItem.8.Widget)],Home)</onclick>
+						<onclick>SetProperty(SwapItemType,$INFO[Skin.String(HomeItem.8.Type)],Home)</onclick>
+						<onclick>SetProperty(SwapItemFanArt,$INFO[Skin.String(HomeItem.8.Fanart)],Home)</onclick>
+						<onclick>SetProperty(SwapItemDisplay,$INFO[Skin.String(HomeItem.8.Display)],Home)</onclick>
+						<onclick>SetProperty(SwapItemPlaylist,$INFO[Skin.String(HomeItem.8.Playlist)],Home)</onclick>
+						<onclick>ActivateWindow(2128)</onclick>
+						<visible>!IsEmpty(Skin.String(HomeItem.8.Label))</visible>
+					</control>
+					<control type="button" id="248">
+						<width>750</width>
+						<height>40</height>
+						<font>font13</font>
+						<label>[B]$LOCALIZE[31290] - 9[/B]</label>
+						<label2>[COLOR=selected]$INFO[Skin.String(HomeItem.9.Label)][/COLOR]</label2>
+						<textcolor>blue</textcolor>
+						<focusedcolor>white</focusedcolor>
+						<texturefocus>MenuItemFO.png</texturefocus>
+						<texturenofocus>MenuItemNF.png</texturenofocus>
+						<onclick>SetProperty(UsrSelectBtn,HomeItem.9,Home)</onclick>
+						<onclick condition="Skin.String(HomeItem.9.Path) + !Skin.String(HomeItem.9.Playlist)">SetProperty(UsrSelectPath,InUse,home)</onclick>
+						<onclick condition="Skin.String(HomeItem.9.Path) + Skin.String(HomeItem.9.Playlist)">SetProperty(UsrSelectPath,PlaylistInUse,home)</onclick>
+						<onclick>ActivateWindow(2114)</onclick>
+					</control>
+					<control type="button" id="249">
+						<width>750</width>
+						<height>40</height>
+						<font>font13</font>
+						<label> - $LOCALIZE[31291]</label>
+						<label2>[COLOR=grey2]$VAR[UsrDefItemNineSubLabel][/COLOR]</label2>
+						<textcolor>grey2</textcolor>
+						<focusedcolor>white</focusedcolor>
+						<texturefocus>MenuItemFO.png</texturefocus>
+						<texturenofocus>MenuItemNF.png</texturenofocus>
+						<onclick>SetProperty(UsrSelectBtn,HomeItem.9,Home)</onclick>
+						<onclick>ActivateWindow(2116)</onclick>
+						<visible>!IsEmpty(Skin.String(HomeItem.9.Label))</visible>
+					</control>
+					<control type="button" id="250">
+						<width>750</width>
+						<height>40</height>
+						<font>font13</font>
+						<label> - $LOCALIZE[31292]</label>
+						<label2>[COLOR=grey2]$VAR[UsrDefItemNineAddOnLabel][/COLOR]</label2>
+						<textcolor>grey2</textcolor>
+						<focusedcolor>white</focusedcolor>
+						<texturefocus>MenuItemFO.png</texturefocus>
+						<texturenofocus>MenuItemNF.png</texturenofocus>
+						<onclick>SetProperty(UsrSelectBtn,HomeItem.9,Home)</onclick>
+						<onclick>ActivateWindow(2117)</onclick>
+						<visible>!IsEmpty(Skin.String(HomeItem.9.Label))</visible>
+					</control>
+					<control type="button" id="251">
+						<width>750</width>
+						<height>40</height>
+						<font>font13</font>
+						<label> - $LOCALIZE[31293]</label>
+						<label2>[COLOR=grey2]$VAR[UsrDefItemNineWidgetLabel][/COLOR]</label2>
+						<textcolor>grey2</textcolor>
+						<focusedcolor>white</focusedcolor>
+						<texturefocus>MenuItemFO.png</texturefocus>
+						<texturenofocus>MenuItemNF.png</texturenofocus>
+						<onclick>SetProperty(UsrSelectBtn,HomeItem.9,Home)</onclick>
+						<onclick>ActivateWindow(2118)</onclick>
+						<visible>!IsEmpty(Skin.String(HomeItem.9.Label))</visible>
+					</control>
+					<control type="button" id="252">
+						<description>Menu BackGround Type</description>
+						<width>750</width>
+						<height>40</height>
+						<font>font13</font>
+						<label> - $LOCALIZE[31294]</label>
+						<label2>[COLOR=grey2]$VAR[MenuNineBackgroundLabel][/COLOR]</label2>
+						<textcolor>grey2</textcolor>
+						<focusedcolor>white</focusedcolor>
+						<texturefocus>MenuItemFO.png</texturefocus>
+						<texturenofocus>MenuItemNF.png</texturenofocus>
+						<onclick>Skin.SetString(HomeItem.9.Display,$VAR[MenuNineBackgroundType])</onclick>
+						<enable>!Skin.HasSetting(HolidayEffects) + !Skin.HasSetting(SingleGlobalBackground)</enable>
+						<visible>!IsEmpty(Skin.String(HomeItem.9.Label))</visible>
+					</control>
+					<control type="button" id="253">
+						<width>750</width>
+						<height>40</height>
+						<font>font13</font>
+						<align>left</align>
+						<label> - $LOCALIZE[31247]</label>
+						<textcolor>grey2</textcolor>
+						<focusedcolor>white</focusedcolor>
+						<texturefocus>MenuItemFO.png</texturefocus>
+						<texturenofocus>MenuItemNF.png</texturenofocus>
+						<onclick>SetProperty(UsrSelectBtn,HomeItem.9,Home)</onclick>
+						<onclick>SetProperty(SwapItemLabel,$INFO[Skin.String(HomeItem.9.Label)],Home)</onclick>
+						<onclick>SetProperty(SwapItemPath,$INFO[Skin.String(HomeItem.9.Path)],Home)</onclick>
+						<onclick>SetProperty(SwapItemSub,$INFO[Skin.String(HomeItem.9.Sub)],Home)</onclick>
+						<onclick>SetProperty(SwapItemAddOn,$INFO[Skin.String(HomeItem.9.Addon)],Home)</onclick>
+						<onclick>SetProperty(SwapItemWidget,$INFO[Skin.String(HomeItem.9.Widget)],Home)</onclick>
+						<onclick>SetProperty(SwapItemType,$INFO[Skin.String(HomeItem.9.Type)],Home)</onclick>
+						<onclick>SetProperty(SwapItemFanArt,$INFO[Skin.String(HomeItem.9.Fanart)],Home)</onclick>
+						<onclick>SetProperty(SwapItemDisplay,$INFO[Skin.String(HomeItem.9.Display)],Home)</onclick>
+						<onclick>SetProperty(SwapItemPlaylist,$INFO[Skin.String(HomeItem.9.Playlist)],Home)</onclick>
+						<onclick>ActivateWindow(2128)</onclick>
+						<visible>!IsEmpty(Skin.String(HomeItem.9.Label))</visible>
+					</control>
+					<control type="button" id="254">
+						<width>750</width>
+						<height>40</height>
+						<font>font13</font>
+						<label>[B]$LOCALIZE[31290] - 10[/B]</label>
+						<label2>[COLOR=selected]$INFO[Skin.String(HomeItem.10.Label)][/COLOR]</label2>
+						<textcolor>blue</textcolor>
+						<focusedcolor>white</focusedcolor>
+						<texturefocus>MenuItemFO.png</texturefocus>
+						<texturenofocus>MenuItemNF.png</texturenofocus>
+						<onclick>SetProperty(UsrSelectBtn,HomeItem.10,Home)</onclick>
+						<onclick condition="Skin.String(HomeItem.10.Path) + !Skin.String(HomeItem.10.Playlist)">SetProperty(UsrSelectPath,InUse,home)</onclick>
+						<onclick condition="Skin.String(HomeItem.10.Path) + Skin.String(HomeItem.10.Playlist)">SetProperty(UsrSelectPath,PlaylistInUse,home)</onclick>
+						<onclick>ActivateWindow(2114)</onclick>
+					</control>
+					<control type="button" id="255">
+						<width>750</width>
+						<height>40</height>
+						<font>font13</font>
+						<label> - $LOCALIZE[31291]</label>
+						<label2>[COLOR=grey2]$VAR[UsrDefItemTenSubLabel][/COLOR]</label2>
+						<textcolor>grey2</textcolor>
+						<focusedcolor>white</focusedcolor>
+						<texturefocus>MenuItemFO.png</texturefocus>
+						<texturenofocus>MenuItemNF.png</texturenofocus>
+						<onclick>SetProperty(UsrSelectBtn,HomeItem.10,Home)</onclick>
+						<onclick>ActivateWindow(2116)</onclick>
+						<visible>!IsEmpty(Skin.String(HomeItem.10.Label))</visible>
+					</control>
+					<control type="button" id="257">
+						<width>750</width>
+						<height>40</height>
+						<font>font13</font>
+						<label> - $LOCALIZE[31292]</label>
+						<label2>[COLOR=grey2]$VAR[UsrDefItemTenAddOnLabel][/COLOR]</label2>
+						<textcolor>grey2</textcolor>
+						<focusedcolor>white</focusedcolor>
+						<texturefocus>MenuItemFO.png</texturefocus>
+						<texturenofocus>MenuItemNF.png</texturenofocus>
+						<onclick>SetProperty(UsrSelectBtn,HomeItem.10,Home)</onclick>
+						<onclick>ActivateWindow(2117)</onclick>
+						<visible>!IsEmpty(Skin.String(HomeItem.10.Label))</visible>
+					</control>
+					<control type="button" id="258">
+						<width>750</width>
+						<height>40</height>
+						<font>font13</font>
+						<label> - $LOCALIZE[31293]</label>
+						<label2>[COLOR=grey2]$VAR[UsrDefItemTenWidgetLabel][/COLOR]</label2>
+						<textcolor>grey2</textcolor>
+						<focusedcolor>white</focusedcolor>
+						<texturefocus>MenuItemFO.png</texturefocus>
+						<texturenofocus>MenuItemNF.png</texturenofocus>
+						<onclick>SetProperty(UsrSelectBtn,HomeItem.10,Home)</onclick>
+						<onclick>ActivateWindow(2118)</onclick>
+						<visible>!IsEmpty(Skin.String(HomeItem.10.Label))</visible>
+					</control>
+					<control type="button" id="259">
+						<description>Menu BackGround Type</description>
+						<width>750</width>
+						<height>40</height>
+						<font>font13</font>
+						<label> - $LOCALIZE[31294]</label>
+						<label2>[COLOR=grey2]$VAR[MenuTenBackgroundLabel][/COLOR]</label2>
+						<textcolor>grey2</textcolor>
+						<focusedcolor>white</focusedcolor>
+						<texturefocus>MenuItemFO.png</texturefocus>
+						<texturenofocus>MenuItemNF.png</texturenofocus>
+						<onclick>Skin.SetString(HomeItem.10.Display,$VAR[MenuTenBackgroundType])</onclick>
+						<enable>!Skin.HasSetting(HolidayEffects) + !Skin.HasSetting(SingleGlobalBackground)</enable>
+						<visible>!IsEmpty(Skin.String(HomeItem.10.Label))</visible>
+					</control>
+					<control type="button" id="260">
+						<width>750</width>
+						<height>40</height>
+						<font>font13</font>
+						<align>left</align>
+						<label> - $LOCALIZE[31247]</label>
+						<textcolor>grey2</textcolor>
+						<focusedcolor>white</focusedcolor>
+						<texturefocus>MenuItemFO.png</texturefocus>
+						<texturenofocus>MenuItemNF.png</texturenofocus>
+						<onclick>SetProperty(UsrSelectBtn,HomeItem.10,Home)</onclick>
+						<onclick>SetProperty(SwapItemLabel,$INFO[Skin.String(HomeItem.10.Label)],Home)</onclick>
+						<onclick>SetProperty(SwapItemPath,$INFO[Skin.String(HomeItem.10.Path)],Home)</onclick>
+						<onclick>SetProperty(SwapItemSub,$INFO[Skin.String(HomeItem.10.Sub)],Home)</onclick>
+						<onclick>SetProperty(SwapItemAddOn,$INFO[Skin.String(HomeItem.10.Addon)],Home)</onclick>
+						<onclick>SetProperty(SwapItemWidget,$INFO[Skin.String(HomeItem.10.Widget)],Home)</onclick>
+						<onclick>SetProperty(SwapItemType,$INFO[Skin.String(HomeItem.10.Type)],Home)</onclick>
+						<onclick>SetProperty(SwapItemFanArt,$INFO[Skin.String(HomeItem.10.Fanart)],Home)</onclick>
+						<onclick>SetProperty(SwapItemDisplay,$INFO[Skin.String(HomeItem.10.Display)],Home)</onclick>
+						<onclick>SetProperty(SwapItemPlaylist,$INFO[Skin.String(HomeItem.10.Playlist)],Home)</onclick>
+						<onclick>ActivateWindow(2128)</onclick>
+						<visible>!IsEmpty(Skin.String(HomeItem.10.Label))</visible>
+					</control>
+					<control type="button" id="261">
+						<width>750</width>
+						<height>40</height>
+						<font>font13</font>
+						<label>[B]$LOCALIZE[31290] - 11[/B]</label>
+						<label2>[COLOR=selected]$INFO[Skin.String(HomeItem.11.Label)][/COLOR]</label2>
+						<textcolor>blue</textcolor>
+						<focusedcolor>white</focusedcolor>
+						<texturefocus>MenuItemFO.png</texturefocus>
+						<texturenofocus>MenuItemNF.png</texturenofocus>
+						<onclick>SetProperty(UsrSelectBtn,HomeItem.11,Home)</onclick>
+						<onclick condition="Skin.String(HomeItem.11.Path) + !Skin.String(HomeItem.11.Playlist)">SetProperty(UsrSelectPath,InUse,home)</onclick>
+						<onclick condition="Skin.String(HomeItem.11.Path) + Skin.String(HomeItem.11.Playlist)">SetProperty(UsrSelectPath,PlaylistInUse,home)</onclick>
+						<onclick>ActivateWindow(2114)</onclick>
+					</control>
+					<control type="button" id="262">
+						<width>750</width>
+						<height>40</height>
+						<font>font13</font>
+						<label> - $LOCALIZE[31291]</label>
+						<label2>[COLOR=grey2]$VAR[UsrDefItemElevenSubLabel][/COLOR]</label2>
+						<textcolor>grey2</textcolor>
+						<focusedcolor>white</focusedcolor>
+						<texturefocus>MenuItemFO.png</texturefocus>
+						<texturenofocus>MenuItemNF.png</texturenofocus>
+						<onclick>SetProperty(UsrSelectBtn,HomeItem.11,Home)</onclick>
+						<onclick>ActivateWindow(2116)</onclick>
+						<visible>!IsEmpty(Skin.String(HomeItem.11.Label))</visible>
+					</control>
+					<control type="button" id="263">
+						<width>750</width>
+						<height>40</height>
+						<font>font13</font>
+						<label> - $LOCALIZE[31292]</label>
+						<label2>[COLOR=grey2]$VAR[UsrDefItemElevenAddOnLabel][/COLOR]</label2>
+						<textcolor>grey2</textcolor>
+						<focusedcolor>white</focusedcolor>
+						<texturefocus>MenuItemFO.png</texturefocus>
+						<texturenofocus>MenuItemNF.png</texturenofocus>
+						<onclick>SetProperty(UsrSelectBtn,HomeItem.11,Home)</onclick>
+						<onclick>ActivateWindow(2117)</onclick>
+						<visible>!IsEmpty(Skin.String(HomeItem.11.Label))</visible>
+					</control>
+					<control type="button" id="264">
+						<width>750</width>
+						<height>40</height>
+						<font>font13</font>
+						<label> - $LOCALIZE[31293]</label>
+						<label2>[COLOR=grey2]$VAR[UsrDefItemElevenWidgetLabel][/COLOR]</label2>
+						<textcolor>grey2</textcolor>
+						<focusedcolor>white</focusedcolor>
+						<texturefocus>MenuItemFO.png</texturefocus>
+						<texturenofocus>MenuItemNF.png</texturenofocus>
+						<onclick>SetProperty(UsrSelectBtn,HomeItem.11,Home)</onclick>
+						<onclick>ActivateWindow(2118)</onclick>
+						<visible>!IsEmpty(Skin.String(HomeItem.11.Label))</visible>
+					</control>
+					<control type="button" id="265">
+						<description>Menu BackGround Type</description>
+						<width>750</width>
+						<height>40</height>
+						<font>font13</font>
+						<label> - $LOCALIZE[31294]</label>
+						<label2>[COLOR=grey2]$VAR[MenuElevenBackgroundLabel][/COLOR]</label2>
+						<textcolor>grey2</textcolor>
+						<focusedcolor>white</focusedcolor>
+						<texturefocus>MenuItemFO.png</texturefocus>
+						<texturenofocus>MenuItemNF.png</texturenofocus>
+						<onclick>Skin.SetString(HomeItem.11.Display,$VAR[MenuElevenBackgroundType])</onclick>
+						<enable>!Skin.HasSetting(HolidayEffects) + !Skin.HasSetting(SingleGlobalBackground)</enable>
+						<visible>!IsEmpty(Skin.String(HomeItem.11.Label))</visible>
+					</control>
+					<control type="button" id="266">
+						<width>750</width>
+						<height>40</height>
+						<font>font13</font>
+						<align>left</align>
+						<label> - $LOCALIZE[31247]</label>
+						<textcolor>grey2</textcolor>
+						<focusedcolor>white</focusedcolor>
+						<texturefocus>MenuItemFO.png</texturefocus>
+						<texturenofocus>MenuItemNF.png</texturenofocus>
+						<onclick>SetProperty(UsrSelectBtn,HomeItem.11,Home)</onclick>
+						<onclick>SetProperty(SwapItemLabel,$INFO[Skin.String(HomeItem.11.Label)],Home)</onclick>
+						<onclick>SetProperty(SwapItemPath,$INFO[Skin.String(HomeItem.11.Path)],Home)</onclick>
+						<onclick>SetProperty(SwapItemSub,$INFO[Skin.String(HomeItem.11.Sub)],Home)</onclick>
+						<onclick>SetProperty(SwapItemAddOn,$INFO[Skin.String(HomeItem.11.Addon)],Home)</onclick>
+						<onclick>SetProperty(SwapItemWidget,$INFO[Skin.String(HomeItem.11.Widget)],Home)</onclick>
+						<onclick>SetProperty(SwapItemType,$INFO[Skin.String(HomeItem.11.Type)],Home)</onclick>
+						<onclick>SetProperty(SwapItemFanArt,$INFO[Skin.String(HomeItem.11.Fanart)],Home)</onclick>
+						<onclick>SetProperty(SwapItemDisplay,$INFO[Skin.String(HomeItem.11.Display)],Home)</onclick>
+						<onclick>SetProperty(SwapItemPlaylist,$INFO[Skin.String(HomeItem.11.Playlist)],Home)</onclick>
+						<onclick>ActivateWindow(2128)</onclick>
+						<visible>!IsEmpty(Skin.String(HomeItem.11.Label))</visible>
+					</control>
+					<control type="button" id="267">
+						<width>750</width>
+						<height>40</height>
+						<font>font13</font>
+						<label>[B]$LOCALIZE[31290] - 12[/B]</label>
+						<label2>[COLOR=selected]$INFO[Skin.String(HomeItem.12.Label)][/COLOR]</label2>
+						<textcolor>blue</textcolor>
+						<focusedcolor>white</focusedcolor>
+						<texturefocus>MenuItemFO.png</texturefocus>
+						<texturenofocus>MenuItemNF.png</texturenofocus>
+						<onclick>SetProperty(UsrSelectBtn,HomeItem.12,Home)</onclick>
+						<onclick condition="Skin.String(HomeItem.12.Path) + !Skin.String(HomeItem.12.Playlist)">SetProperty(UsrSelectPath,InUse,home)</onclick>
+						<onclick condition="Skin.String(HomeItem.12.Path) + Skin.String(HomeItem.12.Playlist)">SetProperty(UsrSelectPath,PlaylistInUse,home)</onclick>
+						<onclick>ActivateWindow(2114)</onclick>
+					</control>
+					<control type="button" id="268">
+						<width>750</width>
+						<height>40</height>
+						<font>font13</font>
+						<label> - $LOCALIZE[31291]</label>
+						<label2>[COLOR=grey2]$VAR[UsrDefItemTwelveSubLabel][/COLOR]</label2>
+						<textcolor>grey2</textcolor>
+						<focusedcolor>white</focusedcolor>
+						<texturefocus>MenuItemFO.png</texturefocus>
+						<texturenofocus>MenuItemNF.png</texturenofocus>
+						<onclick>SetProperty(UsrSelectBtn,HomeItem.12,Home)</onclick>
+						<onclick>ActivateWindow(2116)</onclick>
+						<visible>!IsEmpty(Skin.String(HomeItem.12.Label))</visible>
+					</control>
+					<control type="button" id="269">
+						<width>750</width>
+						<height>40</height>
+						<font>font13</font>
+						<label> - $LOCALIZE[31292]</label>
+						<label2>[COLOR=grey2]$VAR[UsrDefItemTwelveAddOnLabel][/COLOR]</label2>
+						<textcolor>grey2</textcolor>
+						<focusedcolor>white</focusedcolor>
+						<texturefocus>MenuItemFO.png</texturefocus>
+						<texturenofocus>MenuItemNF.png</texturenofocus>
+						<onclick>SetProperty(UsrSelectBtn,HomeItem.12,Home)</onclick>
+						<onclick>ActivateWindow(2117)</onclick>
+						<visible>!IsEmpty(Skin.String(HomeItem.12.Label))</visible>
+					</control>
+					<control type="button" id="270">
+						<width>750</width>
+						<height>40</height>
+						<font>font13</font>
+						<label> - $LOCALIZE[31293]</label>
+						<label2>[COLOR=grey2]$VAR[UsrDefItemTwelveWidgetLabel][/COLOR]</label2>
+						<textcolor>grey2</textcolor>
+						<focusedcolor>white</focusedcolor>
+						<texturefocus>MenuItemFO.png</texturefocus>
+						<texturenofocus>MenuItemNF.png</texturenofocus>
+						<onclick>SetProperty(UsrSelectBtn,HomeItem.12,Home)</onclick>
+						<onclick>ActivateWindow(2118)</onclick>
+						<visible>!IsEmpty(Skin.String(HomeItem.12.Label))</visible>
+					</control>
+					<control type="button" id="271">
+						<description>Menu BackGround Type</description>
+						<width>750</width>
+						<height>40</height>
+						<font>font13</font>
+						<label> - $LOCALIZE[31294]</label>
+						<label2>[COLOR=grey2]$VAR[MenuTwelveBackgroundLabel][/COLOR]</label2>
+						<textcolor>grey2</textcolor>
+						<focusedcolor>white</focusedcolor>
+						<texturefocus>MenuItemFO.png</texturefocus>
+						<texturenofocus>MenuItemNF.png</texturenofocus>
+						<onclick>Skin.SetString(HomeItem.12.Display,$VAR[MenuTwelveBackgroundType])</onclick>
+						<enable>!Skin.HasSetting(HolidayEffects) + !Skin.HasSetting(SingleGlobalBackground)</enable>
+						<visible>!IsEmpty(Skin.String(HomeItem.12.Label))</visible>
+					</control>
+					<control type="button" id="272">
+						<width>750</width>
+						<height>40</height>
+						<font>font13</font>
+						<align>left</align>
+						<label> - $LOCALIZE[31247]</label>
+						<textcolor>grey2</textcolor>
+						<focusedcolor>white</focusedcolor>
+						<texturefocus>MenuItemFO.png</texturefocus>
+						<texturenofocus>MenuItemNF.png</texturenofocus>
+						<onclick>SetProperty(UsrSelectBtn,HomeItem.12,Home)</onclick>
+						<onclick>SetProperty(SwapItemLabel,$INFO[Skin.String(HomeItem.12.Label)],Home)</onclick>
+						<onclick>SetProperty(SwapItemPath,$INFO[Skin.String(HomeItem.12.Path)],Home)</onclick>
+						<onclick>SetProperty(SwapItemSub,$INFO[Skin.String(HomeItem.12.Sub)],Home)</onclick>
+						<onclick>SetProperty(SwapItemAddOn,$INFO[Skin.String(HomeItem.12.Addon)],Home)</onclick>
+						<onclick>SetProperty(SwapItemWidget,$INFO[Skin.String(HomeItem.12.Widget)],Home)</onclick>
+						<onclick>SetProperty(SwapItemType,$INFO[Skin.String(HomeItem.12.Type)],Home)</onclick>
+						<onclick>SetProperty(SwapItemFanArt,$INFO[Skin.String(HomeItem.12.Fanart)],Home)</onclick>
+						<onclick>SetProperty(SwapItemDisplay,$INFO[Skin.String(HomeItem.12.Display)],Home)</onclick>
+						<onclick>SetProperty(SwapItemPlaylist,$INFO[Skin.String(HomeItem.12.Playlist)],Home)</onclick>
+						<onclick>ActivateWindow(2128)</onclick>
+						<visible>!IsEmpty(Skin.String(HomeItem.12.Label))</visible>
+					</control>
+					<!--##################################-->
+					<!--	
 					<control type="radiobutton" id="221">
 						<description>Hide Videos Button</description>
 						<width>750</width>
@@ -552,6 +1703,9 @@
 						<texturefocus>MenuItemFO.png</texturefocus>
 						<texturenofocus>MenuItemNF.png</texturenofocus>
 					</control>
+					
+					
+				-->
 				</control>
 				<control type="scrollbar" id="60">
 					<left>1060</left>

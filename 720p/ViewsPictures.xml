@@ -207,7 +207,7 @@
 					<top>535</top>
 					<width>640</width>
 					<height>15</height>
-					<label>$INFO[ListItem.PictureResolution,[COLOR=blue]$LOCALIZE[31327][/COLOR] - ]</label>
+					<label>$INFO[ListItem.PictureResolution,[COLOR=blue]$LOCALIZE[31999][/COLOR] - ]</label>
 					<align>left</align>
 					<aligny>center</aligny>
 					<font>font13</font>

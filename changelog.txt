@@ -1,4 +1,5 @@
-
-[B]3.0.0[/B]
+B]3.0.0[/B] [I]Jan 2015[/I]
 
 - Initial Commit to GitHub
+- Utilized graphics by uNiversal
+- Added User selectable main menu items

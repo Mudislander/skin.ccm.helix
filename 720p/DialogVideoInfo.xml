@@ -141,7 +141,7 @@
 						<shadowcolor>black</shadowcolor>
 						<align>center</align>
 						<aligny>center</aligny>
-						<label>31330</label>
+						<label>31964</label>
 						<visible>!Player.HasVideo</visible>
 					</control>
 					<control type="videowindow">

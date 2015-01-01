@@ -3,6 +3,7 @@
 	<include file="defaults.xml" />
 	<include file="IncludesVariables.xml" />
 	<include file="IncludesMainMenu.xml" />
+	<include file="IncludesMenuContentItems.xml" />
 	<include file="ViewsVideoLibrary.xml" />
 	<include file="ViewsMusicLibrary.xml" />
 	<include file="ViewsFileMode.xml" />
@@ -1243,5 +1244,22 @@
 		<aligny>center</aligny>
 		<font>font13</font>
 		<focusedcolor>black</focusedcolor>
+	</include>
+	<include name="ClearButtonChoice">
+		<onclick>Skin.Reset($INFO[Window(home).Property(UsrSelectBtn)].Label)</onclick>
+		<onclick>Skin.Reset($INFO[Window(home).Property(UsrSelectBtn)].Path)</onclick>
+		<onclick>Skin.Reset($INFO[Window(home).Property(UsrSelectBtn)].Fanart)</onclick>
+		<onclick condition="Window.IsVisible(2114)">Skin.Reset($INFO[Window(home).Property(UsrSelectBtn)].Playlist)</onclick>
+		<onclick condition="Window.IsVisible(2114)">Skin.Reset($INFO[Window(home).Property(UsrSelectBtn)].Sub)</onclick>
+		<onclick condition="Window.IsVisible(2114)">Skin.Reset($INFO[Window(home).Property(UsrSelectBtn)].Addon)</onclick>
+		<onclick condition="Window.IsVisible(2114)">Skin.Reset($INFO[Window(home).Property(UsrSelectBtn)].Type)</onclick>
+		<onclick condition="Window.IsVisible(2114)">Skin.Reset($INFO[Window(home).Property(UsrSelectBtn)].Widget)</onclick>
+		<onclick condition="Window.IsVisible(2114)">Skin.Reset($INFO[Window(home).Property(UsrSelectBtn)].Display)</onclick>
+	</include>
+	<include name="CloseMenuChoice">
+		<onclick condition="Window.IsVisible(2114)">Dialog.Close(2114)</onclick>
+		<onclick condition="Window.IsVisible(2115)">Dialog.Close(2115)</onclick>
+		<onclick>Skin.Reset(UsrSelectAddon)</onclick>
+		<onclick>ClearProperty(UsrSelectBtn,Home)</onclick>
 	</include>
 </includes>

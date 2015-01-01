@@ -54,7 +54,7 @@
 		</control>
 		<control type="button" id="90162">
 			<include>ButtonHomeSubCommonValues</include>
-			<label>31328</label>
+			<label>31998</label>
 			<onclick>ActivateWindow(Videos,RecentlyAddedMovies,return)</onclick>
 		</control>
 		<control type="button" id="90163">
@@ -97,7 +97,7 @@
 		</control>
 		<control type="button" id="90172">
 			<include>ButtonHomeSubCommonValues</include>
-			<label>31328</label>
+			<label>31998</label>
 			<onclick>ActivateWindow(Videos,RecentlyAddedEpisodes,return)</onclick>
 		</control>
 		<control type="button" id="90173">
