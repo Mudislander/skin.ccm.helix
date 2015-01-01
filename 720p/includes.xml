@@ -1262,4 +1262,32 @@
 		<onclick>Skin.Reset(UsrSelectAddon)</onclick>
 		<onclick>ClearProperty(UsrSelectBtn,Home)</onclick>
 	</include>
+	<include name="MenuMoviePlayListCheck">
+		<visible>
+			!IsEmpty(Skin.String(HomeItem.1.Playlist)) + Skin.String(HomeItem.1.Type,VideoPlayList) + StringCompare(Window(home).Property(UsrSelectBtn),HomeItem.1) |
+			!IsEmpty(Skin.String(HomeItem.2.Playlist)) + Skin.String(HomeItem.2.Type,VideoPlayList) + StringCompare(Window(home).Property(UsrSelectBtn),HomeItem.2) |
+			!IsEmpty(Skin.String(HomeItem.3.Playlist)) + Skin.String(HomeItem.3.Type,VideoPlayList) + StringCompare(Window(home).Property(UsrSelectBtn),HomeItem.3) |
+			!IsEmpty(Skin.String(HomeItem.4.Playlist)) + Skin.String(HomeItem.4.Type,VideoPlayList) + StringCompare(Window(home).Property(UsrSelectBtn),HomeItem.4) |
+			!IsEmpty(Skin.String(HomeItem.5.Playlist)) + Skin.String(HomeItem.5.Type,VideoPlayList) + StringCompare(Window(home).Property(UsrSelectBtn),HomeItem.5) |
+			!IsEmpty(Skin.String(HomeItem.6.Playlist)) + Skin.String(HomeItem.6.Type,VideoPlayList) + StringCompare(Window(home).Property(UsrSelectBtn),HomeItem.6) |
+			!IsEmpty(Skin.String(HomeItem.7.Playlist)) + Skin.String(HomeItem.7.Type,VideoPlayList) + StringCompare(Window(home).Property(UsrSelectBtn),HomeItem.7) |
+			!IsEmpty(Skin.String(HomeItem.8.Playlist)) + Skin.String(HomeItem.8.Type,VideoPlayList) + StringCompare(Window(home).Property(UsrSelectBtn),HomeItem.8) |
+			!IsEmpty(Skin.String(HomeItem.9.Playlist)) + Skin.String(HomeItem.9.Type,VideoPlayList) + StringCompare(Window(home).Property(UsrSelectBtn),HomeItem.9) |
+			!IsEmpty(Skin.String(HomeItem.10.Playlist)) + Skin.String(HomeItem.10.Type,VideoPlayList) + StringCompare(Window(home).Property(UsrSelectBtn),HomeItem.10)
+		</visible>
+	</include>
+	<include name="MenuMusicPlayListCheck">
+		<visible>
+			!IsEmpty(Skin.String(HomeItem.1.Playlist)) + Skin.String(HomeItem.1.Type,MusicPlaylist) + StringCompare(Window(home).Property(UsrSelectBtn),HomeItem.1) |
+			!IsEmpty(Skin.String(HomeItem.2.Playlist)) + Skin.String(HomeItem.2.Type,MusicPlaylist) + StringCompare(Window(home).Property(UsrSelectBtn),HomeItem.2) |
+			!IsEmpty(Skin.String(HomeItem.3.Playlist)) + Skin.String(HomeItem.3.Type,MusicPlaylist) + StringCompare(Window(home).Property(UsrSelectBtn),HomeItem.3) |
+			!IsEmpty(Skin.String(HomeItem.4.Playlist)) + Skin.String(HomeItem.4.Type,MusicPlaylist) + StringCompare(Window(home).Property(UsrSelectBtn),HomeItem.4) |
+			!IsEmpty(Skin.String(HomeItem.5.Playlist)) + Skin.String(HomeItem.5.Type,MusicPlaylist) + StringCompare(Window(home).Property(UsrSelectBtn),HomeItem.5) |
+			!IsEmpty(Skin.String(HomeItem.6.Playlist)) + Skin.String(HomeItem.6.Type,MusicPlaylist) + StringCompare(Window(home).Property(UsrSelectBtn),HomeItem.6) |
+			!IsEmpty(Skin.String(HomeItem.7.Playlist)) + Skin.String(HomeItem.7.Type,MusicPlaylist) + StringCompare(Window(home).Property(UsrSelectBtn),HomeItem.7) |
+			!IsEmpty(Skin.String(HomeItem.8.Playlist)) + Skin.String(HomeItem.8.Type,MusicPlaylist) + StringCompare(Window(home).Property(UsrSelectBtn),HomeItem.8) |
+			!IsEmpty(Skin.String(HomeItem.9.Playlist)) + Skin.String(HomeItem.9.Type,MusicPlaylist) + StringCompare(Window(home).Property(UsrSelectBtn),HomeItem.9) |
+			!IsEmpty(Skin.String(HomeItem.10.Playlist)) + Skin.String(HomeItem.10.Type,MusicPlaylist) + StringCompare(Window(home).Property(UsrSelectBtn),HomeItem.10)
+		</visible>
+	</include>
 </includes>

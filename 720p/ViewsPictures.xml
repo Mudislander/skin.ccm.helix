@@ -194,7 +194,7 @@
 					<top>510</top>
 					<width>640</width>
 					<height>15</height>
-					<label>$INFO[ListItem.PictureDateTime,[COLOR=blue]$LOCALIZE[31326][/COLOR] - ]</label>
+					<label>$INFO[ListItem.PictureDateTime,[COLOR=blue]$LOCALIZE[31948][/COLOR] - ]</label>
 					<align>left</align>
 					<aligny>center</aligny>
 					<font>font13</font>
