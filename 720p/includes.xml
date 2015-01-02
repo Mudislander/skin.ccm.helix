@@ -4,6 +4,7 @@
 	<include file="IncludesVariables.xml" />
 	<include file="IncludesMainMenu.xml" />
 	<include file="IncludesMenuContentItems.xml" />
+	<include file="IncludesBackgroundEffect.xml" />
 	<include file="ViewsVideoLibrary.xml" />
 	<include file="ViewsMusicLibrary.xml" />
 	<include file="ViewsFileMode.xml" />
@@ -1219,7 +1220,7 @@
 			</control>
 		</focusedlayout>
 	</include>
-	<include name="backgroundfade">
+	<include name="BackgroundFade">
 		<animation effect="fade" time="600">Visible</animation>
 		<animation effect="fade" time="600">Hidden</animation>
 	</include>
@@ -1244,6 +1245,16 @@
 		<aligny>center</aligny>
 		<font>font13</font>
 		<focusedcolor>black</focusedcolor>
+	</include>
+	<include name="KBurnsAnimateFanart">
+		<animation effect="zoom" start="110" end="130" center="auto" time="16000" tween="cubic" easing="inout" pulse="true" condition="!Skin.HasSetting(noanimatefanart)">Conditional</animation>
+		<animation effect="slide" start="-10,-10" end="20,20" time="8000" tween="cubic" easing="inout" pulse="true" condition="!Skin.HasSetting(noanimatefanart)">Conditional</animation>
+	</include>
+	<include name="Dimensions_Fullscreen">
+		<left>0</left>
+		<top>0</top>
+		<width>1280</width>
+		<height>720</height>
 	</include>
 	<include name="ClearButtonChoice">
 		<onclick>Skin.Reset($INFO[Window(home).Property(UsrSelectBtn)].Label)</onclick>
@@ -1273,7 +1284,9 @@
 			!IsEmpty(Skin.String(HomeItem.7.Playlist)) + Skin.String(HomeItem.7.Type,VideoPlayList) + StringCompare(Window(home).Property(UsrSelectBtn),HomeItem.7) |
 			!IsEmpty(Skin.String(HomeItem.8.Playlist)) + Skin.String(HomeItem.8.Type,VideoPlayList) + StringCompare(Window(home).Property(UsrSelectBtn),HomeItem.8) |
 			!IsEmpty(Skin.String(HomeItem.9.Playlist)) + Skin.String(HomeItem.9.Type,VideoPlayList) + StringCompare(Window(home).Property(UsrSelectBtn),HomeItem.9) |
-			!IsEmpty(Skin.String(HomeItem.10.Playlist)) + Skin.String(HomeItem.10.Type,VideoPlayList) + StringCompare(Window(home).Property(UsrSelectBtn),HomeItem.10)
+			!IsEmpty(Skin.String(HomeItem.10.Playlist)) + Skin.String(HomeItem.10.Type,VideoPlayList) + StringCompare(Window(home).Property(UsrSelectBtn),HomeItem.10) |
+			!IsEmpty(Skin.String(HomeItem.11.Playlist)) + Skin.String(HomeItem.11.Type,VideoPlayList) + StringCompare(Window(home).Property(UsrSelectBtn),HomeItem.11) |
+			!IsEmpty(Skin.String(HomeItem.12.Playlist)) + Skin.String(HomeItem.12.Type,VideoPlayList) + StringCompare(Window(home).Property(UsrSelectBtn),HomeItem.12)
 		</visible>
 	</include>
 	<include name="MenuMusicPlayListCheck">
@@ -1287,7 +1300,9 @@
 			!IsEmpty(Skin.String(HomeItem.7.Playlist)) + Skin.String(HomeItem.7.Type,MusicPlaylist) + StringCompare(Window(home).Property(UsrSelectBtn),HomeItem.7) |
 			!IsEmpty(Skin.String(HomeItem.8.Playlist)) + Skin.String(HomeItem.8.Type,MusicPlaylist) + StringCompare(Window(home).Property(UsrSelectBtn),HomeItem.8) |
 			!IsEmpty(Skin.String(HomeItem.9.Playlist)) + Skin.String(HomeItem.9.Type,MusicPlaylist) + StringCompare(Window(home).Property(UsrSelectBtn),HomeItem.9) |
-			!IsEmpty(Skin.String(HomeItem.10.Playlist)) + Skin.String(HomeItem.10.Type,MusicPlaylist) + StringCompare(Window(home).Property(UsrSelectBtn),HomeItem.10)
+			!IsEmpty(Skin.String(HomeItem.10.Playlist)) + Skin.String(HomeItem.10.Type,MusicPlaylist) + StringCompare(Window(home).Property(UsrSelectBtn),HomeItem.10) |
+			!IsEmpty(Skin.String(HomeItem.11.Playlist)) + Skin.String(HomeItem.11.Type,MusicPlaylist) + StringCompare(Window(home).Property(UsrSelectBtn),HomeItem.11) |
+			!IsEmpty(Skin.String(HomeItem.12.Playlist)) + Skin.String(HomeItem.12.Type,MusicPlaylist) + StringCompare(Window(home).Property(UsrSelectBtn),HomeItem.12)
 		</visible>
 	</include>
 </includes>

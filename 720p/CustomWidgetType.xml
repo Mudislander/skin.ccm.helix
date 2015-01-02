@@ -72,7 +72,7 @@
 						<align>left</align>
 						<aligny>center</aligny>
 						<selectedcolor>selected</selectedcolor>
-						<info>ListItem.label</info>
+						<info>ListItem.Label</info>
 					</control>
 				</itemlayout>
 				<focusedlayout height="40">
@@ -101,7 +101,7 @@
 						<align>left</align>
 						<aligny>center</aligny>
 						<selectedcolor>selected</selectedcolor>
-						<info>ListItem.label</info>
+						<info>ListItem.Label</info>
 					</control>
 				</focusedlayout>
 				<content>
@@ -163,7 +163,7 @@
                         <onclick>Dialog.Close(2118)</onclick>
                         <onclick>Skin.SetString($INFO[Window(home).Property(UsrSelectBtn)].Widget,UnWatchedMovies)</onclick>
                         <onclick>ClearProperty(UsrSelectBtn,Home)</onclick>
-                        <visible>!Skin.HasSetting(disablescriptplaylist)</visible>
+                        <visible>!Skin.HasSetting(DisableScriptPlaylist)</visible>
                     </item>
                     <item>
                         <description>Recent Episodes</description>

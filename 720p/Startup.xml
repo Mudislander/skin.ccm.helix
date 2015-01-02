@@ -3,7 +3,26 @@
 	<defaultcontrol always="true">10</defaultcontrol>
 	<allowoverlay>no</allowoverlay>
 	<include condition="!Skin.HasSetting(InitialSetUpRun)">DefaultInitialSetup</include>
+	<!--
+	 <onload condition="!Skin.HasSetting(disabletvnextaired) + !System.HasAddon(script.tv.show.next.aired)">Skin.Setbool(disabletvnextaired)</onload>
+    <onload condition="!Skin.HasSetting(DisableScriptPlaylist) + !System.HasAddon(script.randomandlastitems)">Skin.Setbool(DisableScriptPlaylist)</onload>
+    <onload condition="!Skin.HasSetting(disableglobalsearch) + !System.HasAddon(script.globalsearch)">Skin.Setbool(disableglobalsearch)</onload>
+    <onload condition="!Skin.HasSetting(disablevideoextras) + !System.HasAddon(script.videoextras)">Skin.Setbool(disablevideoextras)</onload>
+    <onload condition="!Skin.HasSetting(disabletvtunes) + !System.HasAddon(script.tvtunes)">Skin.Setbool(disabletvtunes)</onload>
+    <onload condition="!Skin.HasSetting(DisableSlideShowArt) + !System.HasAddon(script.artistslideshow)">Skin.Setbool(DisableSlideShowArt)</onload>
+    <onload condition="Skin.HasSetting(EnableFanartScript) + !System.HasAddon(script.grab.Fanart)">Skin.Reset(EnableFanartScript)</onload>
+    <onload condition="!Skin.HasSetting(disablegamebrowser) + !System.HasAddon(script.games.rom.collection.browser)">Skin.Setbool(disablegamebrowser)</onload>
+    <onload condition="!Skin.HasSetting(disabletvnextaired) + System.HasAddon(script.tv.show.next.aired)">RunScript(script.tv.show.next.aired,silent=True)</onload>
+	-->
 	<controls>
+		<control type="image">
+			<description>Startup Background Image</description>
+			<include>Dimensions_Fullscreen</include>
+			<aspectratio>scale</aspectratio>
+			<include>VisibleFadeEffect</include>
+			<texture fallback="special://skin/backgrounds/startup.jpg">$INFO[Skin.String(StartUpBackgroundPath)]</texture>
+			<visible>!Skin.HasSetting(HideStartUpBackground)</visible>
+		</control>
 		<control type="button" id="10">
 			<description>trigger</description>
 			<onfocus>ReplaceWindow($INFO[System.StartupWindow])</onfocus>

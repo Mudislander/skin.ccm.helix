@@ -146,12 +146,12 @@
 				<onclick>SetProperty(MenuItemSelected,$INFO[Skin.String(HomeItem.1.Type)],Home)</onclick>
 				<onclick>$INFO[Skin.String(HomeItem.1.Path)]</onclick>
 				<icon>$INFO[Skin.CurrentTheme,special://skin/backgrounds/,.jpg]</icon>
-				<thumb>$INFO[Skin.String(HomeItem.1.FanArt)]</thumb>
+				<thumb>$INFO[Skin.String(HomeItem.1.Fanart)]</thumb>
 				<property name="SubMenu">$INFO[Skin.String(HomeItem.1.Sub)]</property>
 				<property name="HiLiteItem">$INFO[Skin.String(HomeItem.1.Type)]</property>
 				<property name="AddOnSet">$INFO[Skin.String(HomeItem.1.Addon)]</property>
 				<property name="WidgetSet">$INFO[Skin.String(HomeItem.1.Widget)]</property>
-				<property name="PlayListType">$INFO[Window(home).Property(HomePlayListOne.Type)]</property>
+				<property name="PlayListType">$INFO[Window(home).Property(HomePlaylistOne.Type)]</property>
 				<property name="Background">$INFO[Skin.String(HomeItem.1.Display)]</property>
 				<visible>SubString(Window(Home).Property(MainMenuItemOne),True)</visible>
 			</item>
@@ -162,12 +162,12 @@
 				<onclick>SetProperty(MenuItemSelected,$INFO[Skin.String(HomeItem.2.Type)],Home)</onclick>
 				<onclick>$INFO[Skin.String(HomeItem.2.Path)]</onclick>
 				<icon>$INFO[Skin.CurrentTheme,special://skin/backgrounds/,.jpg]</icon>
-				<thumb>$INFO[Skin.String(HomeItem.2.FanArt)]</thumb>
+				<thumb>$INFO[Skin.String(HomeItem.2.Fanart)]</thumb>
 				<property name="SubMenu">$INFO[Skin.String(HomeItem.2.Sub)]</property>
 				<property name="HiLiteItem">$INFO[Skin.String(HomeItem.2.Type)]</property>
 				<property name="AddOnSet">$INFO[Skin.String(HomeItem.2.Addon)]</property>
 				<property name="WidgetSet">$INFO[Skin.String(HomeItem.2.Widget)]</property>
-				<property name="PlayListType">$INFO[Window(home).Property(HomePlayListTwo.Type)]</property>
+				<property name="PlayListType">$INFO[Window(home).Property(HomePlaylistTwo.Type)]</property>
 				<property name="Background">$INFO[Skin.String(HomeItem.2.Display)]</property>
 				<visible>SubString(Window(Home).Property(MainMenuItemTwo),True)</visible>
 			</item>
@@ -178,12 +178,12 @@
 				<onclick>SetProperty(MenuItemSelected,$INFO[Skin.String(HomeItem.3.Type)],Home)</onclick>
 				<onclick>$INFO[Skin.String(HomeItem.3.Path)]</onclick>
 				<icon>$INFO[Skin.CurrentTheme,special://skin/backgrounds/,.jpg]</icon>
-				<thumb>$INFO[Skin.String(HomeItem.3.FanArt)]</thumb>
+				<thumb>$INFO[Skin.String(HomeItem.3.Fanart)]</thumb>
 				<property name="SubMenu">$INFO[Skin.String(HomeItem.3.Sub)]</property>
 				<property name="HiLiteItem">$INFO[Skin.String(HomeItem.3.Type)]</property>
 				<property name="AddOnSet">$INFO[Skin.String(HomeItem.3.Addon)]</property>
 				<property name="WidgetSet">$INFO[Skin.String(HomeItem.3.Widget)]</property>
-				<property name="PlayListType">$INFO[Window(home).Property(HomePlayListThree.Type)]</property>
+				<property name="PlayListType">$INFO[Window(home).Property(HomePlaylistThree.Type)]</property>
 				<property name="Background">$INFO[Skin.String(HomeItem.3.Display)]</property>
 				<visible>SubString(Window(Home).Property(MainMenuItemThree),True)</visible>
 			</item>
@@ -194,12 +194,12 @@
 				<onclick>SetProperty(MenuItemSelected,$INFO[Skin.String(HomeItem.4.Type)],Home)</onclick>
 				<onclick>$INFO[Skin.String(HomeItem.4.Path)]</onclick>
 				<icon>$INFO[Skin.CurrentTheme,special://skin/backgrounds/,.jpg]</icon>
-				<thumb>$INFO[Skin.String(HomeItem.4.FanArt)]</thumb>
+				<thumb>$INFO[Skin.String(HomeItem.4.Fanart)]</thumb>
 				<property name="SubMenu">$INFO[Skin.String(HomeItem.4.Sub)]</property>
 				<property name="HiLiteItem">$INFO[Skin.String(HomeItem.4.Type)]</property>
 				<property name="AddOnSet">$INFO[Skin.String(HomeItem.4.Addon)]</property>
 				<property name="WidgetSet">$INFO[Skin.String(HomeItem.4.Widget)]</property>
-				<property name="PlayListType">$INFO[Window(home).Property(HomePlayListFour.Type)]</property>
+				<property name="PlayListType">$INFO[Window(home).Property(HomePlaylistFour.Type)]</property>
 				<property name="Background">$INFO[Skin.String(HomeItem.4.Display)]</property>
 				<visible>SubString(Window(Home).Property(MainMenuItemFour),True)</visible>
 			</item>
@@ -210,12 +210,12 @@
 				<onclick>SetProperty(MenuItemSelected,$INFO[Skin.String(HomeItem.5.Type)],Home)</onclick>
 				<onclick>$INFO[Skin.String(HomeItem.5.Path)]</onclick>
 				<icon>$INFO[Skin.CurrentTheme,special://skin/backgrounds/,.jpg]</icon>
-				<thumb>$INFO[Skin.String(HomeItem.5.FanArt)]</thumb>
+				<thumb>$INFO[Skin.String(HomeItem.5.Fanart)]</thumb>
 				<property name="SubMenu">$INFO[Skin.String(HomeItem.5.Sub)]</property>
 				<property name="HiLiteItem">$INFO[Skin.String(HomeItem.5.Type)]</property>
 				<property name="AddOnSet">$INFO[Skin.String(HomeItem.5.Addon)]</property>
 				<property name="WidgetSet">$INFO[Skin.String(HomeItem.5.Widget)]</property>
-				<property name="PlayListType">$INFO[Window(home).Property(HomePlayListFive.Type)]</property>
+				<property name="PlayListType">$INFO[Window(home).Property(HomePlaylistFive.Type)]</property>
 				<property name="Background">$INFO[Skin.String(HomeItem.5.Display)]</property>
 				<visible>SubString(Window(Home).Property(MainMenuItemFive),True)</visible>
 			</item>
@@ -226,12 +226,12 @@
 				<onclick>SetProperty(MenuItemSelected,$INFO[Skin.String(HomeItem.6.Type)],Home)</onclick>
 				<onclick>$INFO[Skin.String(HomeItem.6.Path)]</onclick>
 				<icon>$INFO[Skin.CurrentTheme,special://skin/backgrounds/,.jpg]</icon>
-				<thumb>$INFO[Skin.String(HomeItem.6.FanArt)]</thumb>
+				<thumb>$INFO[Skin.String(HomeItem.6.Fanart)]</thumb>
 				<property name="SubMenu">$INFO[Skin.String(HomeItem.6.Sub)]</property>
 				<property name="HiLiteItem">$INFO[Skin.String(HomeItem.6.Type)]</property>
 				<property name="AddOnSet">$INFO[Skin.String(HomeItem.6.Addon)]</property>
 				<property name="WidgetSet">$INFO[Skin.String(HomeItem.6.Widget)]</property>
-				<property name="PlayListType">$INFO[Window(home).Property(HomePlayListSix.Type)]</property>
+				<property name="PlayListType">$INFO[Window(home).Property(HomePlaylistSix.Type)]</property>
 				<property name="Background">$INFO[Skin.String(HomeItem.6.Display)]</property>
 				<visible>SubString(Window(Home).Property(MainMenuItemSix),True)</visible>
 			</item>
@@ -242,12 +242,12 @@
 				<onclick>SetProperty(MenuItemSelected,$INFO[Skin.String(HomeItem.7.Type)],Home)</onclick>
 				<onclick>$INFO[Skin.String(HomeItem.7.Path)]</onclick>
 				<icon>$INFO[Skin.CurrentTheme,special://skin/backgrounds/,.jpg]</icon>
-				<thumb>$INFO[Skin.String(HomeItem.7.FanArt)]</thumb>
+				<thumb>$INFO[Skin.String(HomeItem.7.Fanart)]</thumb>
 				<property name="SubMenu">$INFO[Skin.String(HomeItem.7.Sub)]</property>
 				<property name="HiLiteItem">$INFO[Skin.String(HomeItem.7.Type)]</property>
 				<property name="AddOnSet">$INFO[Skin.String(HomeItem.7.Addon)]</property>
 				<property name="WidgetSet">$INFO[Skin.String(HomeItem.7.Widget)]</property>
-				<property name="PlayListType">$INFO[Window(home).Property(HomePlayListSeven.Type)]</property>
+				<property name="PlayListType">$INFO[Window(home).Property(HomePlaylistSeven.Type)]</property>
 				<property name="Background">$INFO[Skin.String(HomeItem.7.Display)]</property>
 				<visible>SubString(Window(Home).Property(MainMenuItemSeven),True)</visible>
 			</item>
@@ -258,12 +258,12 @@
 				<onclick>SetProperty(MenuItemSelected,$INFO[Skin.String(HomeItem.8.Type)],Home)</onclick>
 				<onclick>$INFO[Skin.String(HomeItem.8.Path)]</onclick>
 				<icon>$INFO[Skin.CurrentTheme,special://skin/backgrounds/,.jpg]</icon>
-				<thumb>$INFO[Skin.String(HomeItem.8.FanArt)]</thumb>
+				<thumb>$INFO[Skin.String(HomeItem.8.Fanart)]</thumb>
 				<property name="SubMenu">$INFO[Skin.String(HomeItem.8.Sub)]</property>
 				<property name="HiLiteItem">$INFO[Skin.String(HomeItem.8.Type)]</property>
 				<property name="AddOnSet">$INFO[Skin.String(HomeItem.8.Addon)]</property>
 				<property name="WidgetSet">$INFO[Skin.String(HomeItem.8.Widget)]</property>
-				<property name="PlayListType">$INFO[Window(home).Property(HomePlayListEight.Type)]</property>
+				<property name="PlayListType">$INFO[Window(home).Property(HomePlaylistEight.Type)]</property>
 				<property name="Background">$INFO[Skin.String(HomeItem.8.Display)]</property>
 				<visible>SubString(Window(Home).Property(MainMenuItemEight),True)</visible>
 			</item>
@@ -274,12 +274,12 @@
 				<onclick>SetProperty(MenuItemSelected,$INFO[Skin.String(HomeItem.9.Type)],Home)</onclick>
 				<onclick>$INFO[Skin.String(HomeItem.9.Path)]</onclick>
 				<icon>$INFO[Skin.CurrentTheme,special://skin/backgrounds/,.jpg]</icon>
-				<thumb>$INFO[Skin.String(HomeItem.9.FanArt)]</thumb>
+				<thumb>$INFO[Skin.String(HomeItem.9.Fanart)]</thumb>
 				<property name="SubMenu">$INFO[Skin.String(HomeItem.9.Sub)]</property>
 				<property name="HiLiteItem">$INFO[Skin.String(HomeItem.9.Type)]</property>
 				<property name="AddOnSet">$INFO[Skin.String(HomeItem.9.Addon)]</property>
 				<property name="WidgetSet">$INFO[Skin.String(HomeItem.9.Widget)]</property>
-				<property name="PlayListType">$INFO[Window(home).Property(HomePlayListNine.Type)]</property>
+				<property name="PlayListType">$INFO[Window(home).Property(HomePlaylistNine.Type)]</property>
 				<property name="Background">$INFO[Skin.String(HomeItem.9.Display)]</property>
 				<visible>SubString(Window(Home).Property(MainMenuItemNine),True)</visible>
 			</item>
@@ -290,12 +290,12 @@
 				<onclick>SetProperty(MenuItemSelected,$INFO[Skin.String(HomeItem.10.Type)],Home)</onclick>
 				<onclick>$INFO[Skin.String(HomeItem.10.Path)]</onclick>
 				<icon>$INFO[Skin.CurrentTheme,special://skin/backgrounds/,.jpg]</icon>
-				<thumb>$INFO[Skin.String(HomeItem.10.FanArt)]</thumb>
+				<thumb>$INFO[Skin.String(HomeItem.10.Fanart)]</thumb>
 				<property name="SubMenu">$INFO[Skin.String(HomeItem.10.Sub)]</property>
 				<property name="HiLiteItem">$INFO[Skin.String(HomeItem.10.Type)]</property>
 				<property name="AddOnSet">$INFO[Skin.String(HomeItem.10.Addon)]</property>
 				<property name="WidgetSet">$INFO[Skin.String(HomeItem.10.Widget)]</property>
-				<property name="PlayListType">$INFO[Window(home).Property(HomePlayListTen.Type)]</property>
+				<property name="PlayListType">$INFO[Window(home).Property(HomePlaylistTen.Type)]</property>
 				<property name="Background">$INFO[Skin.String(HomeItem.10.Display)]</property>
 				<visible>SubString(Window(Home).Property(MainMenuItemTen),True)</visible>
 			</item>
@@ -306,12 +306,12 @@
 				<onclick>SetProperty(MenuItemSelected,$INFO[Skin.String(HomeItem.11.Type)],Home)</onclick>
 				<onclick>$INFO[Skin.String(HomeItem.11.Path)]</onclick>
 				<icon>$INFO[Skin.CurrentTheme,special://skin/backgrounds/,.jpg]</icon>
-				<thumb>$INFO[Skin.String(HomeItem.11.FanArt)]</thumb>
+				<thumb>$INFO[Skin.String(HomeItem.11.Fanart)]</thumb>
 				<property name="SubMenu">$INFO[Skin.String(HomeItem.11.Sub)]</property>
 				<property name="HiLiteItem">$INFO[Skin.String(HomeItem.11.Type)]</property>
 				<property name="AddOnSet">$INFO[Skin.String(HomeItem.11.Addon)]</property>
 				<property name="WidgetSet">$INFO[Skin.String(HomeItem.11.Widget)]</property>
-				<property name="PlayListType">$INFO[Window(home).Property(HomePlayListEleven.Type)]</property>
+				<property name="PlayListType">$INFO[Window(home).Property(HomePlaylistEleven.Type)]</property>
 				<property name="Background">$INFO[Skin.String(HomeItem.11.Display)]</property>
 				<visible>SubString(Window(Home).Property(MainMenuItemEleven),True)</visible>
 			</item>
@@ -322,12 +322,12 @@
 				<onclick>SetProperty(MenuItemSelected,$INFO[Skin.String(HomeItem.12.Type)],Home)</onclick>
 				<onclick>$INFO[Skin.String(HomeItem.12.Path)]</onclick>
 				<icon>$INFO[Skin.CurrentTheme,special://skin/backgrounds/,.jpg]</icon>
-				<thumb>$INFO[Skin.String(HomeItem.12.FanArt)]</thumb>
+				<thumb>$INFO[Skin.String(HomeItem.12.Fanart)]</thumb>
 				<property name="SubMenu">$INFO[Skin.String(HomeItem.12.Sub)]</property>
 				<property name="HiLiteItem">$INFO[Skin.String(HomeItem.12.Type)]</property>
 				<property name="AddOnSet">$INFO[Skin.String(HomeItem.12.Addon)]</property>
 				<property name="WidgetSet">$INFO[Skin.String(HomeItem.12.Widget)]</property>
-				<property name="PlayListType">$INFO[Window(home).Property(HomePlayListTwelve.Type)]</property>
+				<property name="PlayListType">$INFO[Window(home).Property(HomePlaylistTwelve.Type)]</property>
 				<property name="Background">$INFO[Skin.String(HomeItem.12.Display)]</property>
 				<visible>SubString(Window(Home).Property(MainMenuItemTwelve),True)</visible>
 			</item>
@@ -434,7 +434,7 @@
 		<onload>Skin.SetBool(SingleGlobalBackground)</onload>
 		<onload condition="System.Date(11-24,1-6)">Skin.Setbool(HolidayEffects)</onload>
 		<onload>Skin.SetString(HolidayThemePath,special://skin/extras/Holiday/xmastree.jpg)</onload>
-		<!--onload condition="!System.HasAddon(script.randomandlastitems)">Skin.Setbool(DisableScriptPlayList)</onload-->
+		<!--onload condition="!System.HasAddon(script.randomandlastitems)">Skin.Setbool(DisableScriptPlaylist)</onload-->
 		<onload>Skin.SetBool(InitialSetUpRun)</onload>
 	</include>
 </includes>
