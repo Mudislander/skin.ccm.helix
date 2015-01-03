@@ -7,7 +7,7 @@
 		<left>215</left>
 		<top>35</top>
 	</coordinates>
-	<include>dialogeffect</include>
+	<include>DialogEffect</include>
 	<controls>
 		<control type="group">
 			<animation effect="slide" start="0,0" end="0,60" time="0" condition="Control.IsVisible(3) + !Control.IsVisible(5) + !IntegerGreaterThan(Container(3).NumItems,4)">Conditional</animation>

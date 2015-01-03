@@ -7,7 +7,7 @@
 		<left>240</left>
 		<top>22</top>
 	</coordinates>
-	<include>dialogeffect</include>
+	<include>DialogEffect</include>
 	<controls>
 		<control type="group">
 			<visible>!Window.IsVisible(smartplaylistrule)</visible>

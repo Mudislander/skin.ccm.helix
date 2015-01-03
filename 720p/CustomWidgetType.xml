@@ -255,7 +255,7 @@
                         <onclick>Dialog.Close(2118)</onclick>
                         <onclick>Skin.SetString($INFO[Window(home).Property(UsrSelectBtn)].Widget,NextAired)</onclick>
                         <onclick>ClearProperty(UsrSelectBtn,Home)</onclick>
-                        <visible>!Skin.HasSetting(disabletvnextaired)</visible>
+                        <visible>!Skin.HasSetting(DisableTVNextAired)</visible>
                     </item-->
 					<!--item>
                         <description>Rom Games</description>
@@ -263,7 +263,7 @@
                         <onclick>Dialog.Close(2118)</onclick>
                         <onclick>Skin.SetString($INFO[Window(home).Property(UsrSelectBtn)].Widget,RomGames)</onclick>
                         <onclick>ClearProperty(UsrSelectBtn,Home)</onclick>
-                        <visible>!Skin.HasSetting(disablegamebrowser)</visible>
+                        <visible>!Skin.HasSetting(DisableGameBrowser)</visible>
                     </item-->
 					<!--item>
                         <description>Favourites</description>

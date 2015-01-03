@@ -16,7 +16,7 @@
 				<onclick>Dialog.Close(2115)</onclick>
 				<onclick>Skin.Reset(UsrSelectAddon)</onclick>
 				<onclick>ClearProperty(UsrSelectBtn,Home)</onclick>
-				<visible>![substring(Window(home).Property(UsrSelectBtn),UserSub,Left) | substring(Window(home).Property(UsrSelectBtn),subprog)] + Window.IsVisible(2115)</visible>
+				<visible>![substring(Window(home).Property(UsrSelectBtn),UserSub,Left) | substring(Window(home).Property(UsrSelectBtn),SubProg)] + Window.IsVisible(2115)</visible>
 				<visible>StringCompare(Window.Property(MenuItemType),MainMenu)</visible>
 			</item>
 			<item>
@@ -27,7 +27,7 @@
 				<onclick condition="Window.IsVisible(2115)">Dialog.Close(2115)</onclick>
 				<onclick>Skin.Reset(UsrSelectAddon)</onclick>
 				<onclick>ClearProperty(UsrSelectBtn,Home)</onclick>
-				<visible>substring(Window(home).Property(UsrSelectBtn),UserSub,Left) | substring(Window(home).Property(UsrSelectBtn),subprog) | Window.IsVisible(2114)</visible>
+				<visible>substring(Window(home).Property(UsrSelectBtn),UserSub,Left) | substring(Window(home).Property(UsrSelectBtn),SubProg) | Window.IsVisible(2114)</visible>
 				<visible>StringCompare(Window.Property(MenuItemType),MainMenu)</visible>
 			</item>
 			<item>
@@ -39,7 +39,7 @@
 				<onclick>Dialog.Close(2115)</onclick>
 				<onclick>Skin.Reset(UsrSelectAddon)</onclick>
 				<onclick>ClearProperty(UsrSelectBtn,Home)</onclick>
-				<visible>!substring(Window(home).Property(UsrSelectBtn),UserSub,Left) + !substring(Window(home).Property(UsrSelectBtn),subprog) + Window.IsVisible(2115)</visible>
+				<visible>!substring(Window(home).Property(UsrSelectBtn),UserSub,Left) + !substring(Window(home).Property(UsrSelectBtn),SubProg) + Window.IsVisible(2115)</visible>
 				<visible>StringCompare(Window.Property(MenuItemType),MainMenu)</visible>
 			</item>
 			<!--item> Changes Lable,Type & Command ** Is confusing for users !!
@@ -250,7 +250,7 @@
 				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(home).Property(UsrSelectBtn)].Fanart,special://skin/backgrounds/search.jpg)</onclick>
 				<onclick>Skin.SetString($INFO[Window(home).Property(UsrSelectBtn)].Label)</onclick>
 				<include>CloseMenuChoice</include>
-				<visible>!Skin.HasSetting(disableglobalsearch)</visible>
+				<visible>!Skin.HasSetting(DisableGlobalSearch)</visible>
 				<visible>StringCompare(Window.Property(MenuItemType),MainMenu)</visible>
 			</item>
 			<item>

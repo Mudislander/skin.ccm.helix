@@ -7,7 +7,7 @@
 		<left>80</left>
 		<top>65</top>
 	</coordinates>
-	<include>dialogeffect</include>
+	<include>DialogEffect</include>
 	<controls>
 		<control type="image">
 			<left>0</left>

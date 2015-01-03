@@ -3,17 +3,15 @@
 	<defaultcontrol always="true">10</defaultcontrol>
 	<allowoverlay>no</allowoverlay>
 	<include condition="!Skin.HasSetting(InitialSetUpRun)">DefaultInitialSetup</include>
-	<!--
-	 <onload condition="!Skin.HasSetting(disabletvnextaired) + !System.HasAddon(script.tv.show.next.aired)">Skin.Setbool(disabletvnextaired)</onload>
-    <onload condition="!Skin.HasSetting(DisableScriptPlaylist) + !System.HasAddon(script.randomandlastitems)">Skin.Setbool(DisableScriptPlaylist)</onload>
-    <onload condition="!Skin.HasSetting(disableglobalsearch) + !System.HasAddon(script.globalsearch)">Skin.Setbool(disableglobalsearch)</onload>
-    <onload condition="!Skin.HasSetting(disablevideoextras) + !System.HasAddon(script.videoextras)">Skin.Setbool(disablevideoextras)</onload>
-    <onload condition="!Skin.HasSetting(disabletvtunes) + !System.HasAddon(script.tvtunes)">Skin.Setbool(disabletvtunes)</onload>
-    <onload condition="!Skin.HasSetting(DisableSlideShowArt) + !System.HasAddon(script.artistslideshow)">Skin.Setbool(DisableSlideShowArt)</onload>
-    <onload condition="Skin.HasSetting(EnableFanartScript) + !System.HasAddon(script.grab.Fanart)">Skin.Reset(EnableFanartScript)</onload>
-    <onload condition="!Skin.HasSetting(disablegamebrowser) + !System.HasAddon(script.games.rom.collection.browser)">Skin.Setbool(disablegamebrowser)</onload>
-    <onload condition="!Skin.HasSetting(disabletvnextaired) + System.HasAddon(script.tv.show.next.aired)">RunScript(script.tv.show.next.aired,silent=True)</onload>
-	-->
+	<onload condition="!Skin.HasSetting(DisableTVNextAired) + !System.HasAddon(script.tv.show.next.aired)">Skin.Setbool(DisableTVNextAired)</onload>
+	<onload condition="!Skin.HasSetting(DisableScriptPlaylist) + !System.HasAddon(script.randomandlastitems)">Skin.Setbool(DisableScriptPlaylist)</onload>
+	<onload condition="!Skin.HasSetting(DisableGlobalSearch) + !System.HasAddon(script.globalsearch)">Skin.Setbool(DisableGlobalSearch)</onload>
+	<onload condition="!Skin.HasSetting(DisableVideoExtras) + !System.HasAddon(script.videoextras)">Skin.Setbool(DisableVideoExtras)</onload>
+	<onload condition="!Skin.HasSetting(DisableTVTunes) + !System.HasAddon(script.tvtunes)">Skin.Setbool(DisableTVTunes)</onload>
+	<onload condition="!Skin.HasSetting(DisableSlideShowArt) + !System.HasAddon(script.artistslideshow)">Skin.Setbool(DisableSlideShowArt)</onload>
+	<onload condition="Skin.HasSetting(EnableFanartScript) + !System.HasAddon(script.grab.Fanart)">Skin.Reset(EnableFanartScript)</onload>
+	<onload condition="!Skin.HasSetting(DisableGameBrowser) + !System.HasAddon(script.games.rom.collection.browser)">Skin.Setbool(DisableGameBrowser)</onload>
+	<onload condition="!Skin.HasSetting(DisableTVNextAired) + System.HasAddon(script.tv.show.next.aired)">RunScript(script.tv.show.next.aired,silent=True)</onload>
 	<controls>
 		<control type="image">
 			<description>Startup Background Image</description>
@@ -28,15 +26,15 @@
 			<onfocus>ReplaceWindow($INFO[System.StartupWindow])</onfocus>
 			<texturenofocus>-</texturenofocus>
 			<texturefocus>-</texturefocus>
-			<visible>!Skin.HasSetting(Use_Startup_Playlist)</visible>
+			<visible>!Skin.HasSetting(UseStartUpPlaylistPath)</visible>
 		</control>
 		<control type="button" id="10">
 			<description>trigger with startup Playlist</description>
-			<onfocus>PlayMedia($INFO[Skin.String(Startup_Playlist_Path)])</onfocus>
+			<onfocus>PlayMedia($INFO[Skin.String(StartUpPlaylistPath)])</onfocus>
 			<onfocus>ReplaceWindow($INFO[System.StartupWindow])</onfocus>
 			<texturenofocus>-</texturenofocus>
 			<texturefocus>-</texturefocus>
-			<visible>Skin.HasSetting(Use_Startup_Playlist)</visible>
+			<visible>Skin.HasSetting(UseStartUpPlaylistPath)</visible>
 		</control>
 		<include>CommonBackground</include>
 	</controls>

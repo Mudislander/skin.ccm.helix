@@ -586,7 +586,7 @@
 				<control type="radiobutton" id="250">
 					<description>Fanart Toggle</description>
 					<include>ButtonCommonValues</include>
-					<label>31307</label>
+					<label>31937</label>
 					<onclick>Skin.ToggleSetting(ShowWeatherFanart)</onclick>
 					<selected>!Skin.HasSetting(ShowWeatherFanart)</selected>
 				</control>

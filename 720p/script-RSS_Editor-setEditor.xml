@@ -6,7 +6,7 @@
 		<left>240</left>
 		<top>140</top>
 	</coordinates>
-	<include>dialogeffect</include>
+	<include>DialogEffect</include>
 	<controls>
 		<control type="image">
 			<description>background image</description>

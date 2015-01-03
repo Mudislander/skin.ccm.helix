@@ -56,7 +56,7 @@
 			</control>
 			<control type="multiimage">
 				<include>Dimensions_Fullscreen</include>
-				<imagepath background="true">special://skin/backgrounds/weather/$INFO[Window(Weather).Property(Current.FanartCode)]</imagepath>
+				<imagepath background="true">special://skin/extras/Weather/$INFO[Window(Weather).Property(Current.FanartCode)]</imagepath>
 				<timeperimage>8000</timeperimage>
 				<randomize>true</randomize>
 				<include>BackgroundFade</include>
@@ -76,21 +76,12 @@
 			</control>
 			<control type="multiimage">
 				<include>Dimensions_Fullscreen</include>
-				<aspectratio>scale</aspectratio>
-				<imagepath background="true">$VAR[AltMenuItemBackground]</imagepath>
-				<timeperimage>8000</timeperimage>
-				<randomize>true</randomize>
-				<fadetime>1000</fadetime>
-				<visible>Window.IsVisible(2129) + StringCompare(Window(home).Property(MenuBackground),Database)</visible>
-			</control>
-			<control type="multiimage">
-				<include>Dimensions_Fullscreen</include>
 				<imagepath background="true">$VAR[WeatherBackground]</imagepath>
 				<timeperimage>8000</timeperimage>
 				<randomize>true</randomize>
 				<fadetime>FanartCrossfadeTime</fadetime>
 				<visible>StringCompare(Window(home).Property(MenuItemSelected),Weather)</visible>
-				<visible>Window.IsVisible(weather) | Window.IsVisible(2129)</visible>
+				<visible>Window.IsVisible(weather)</visible>
 			</control>
 			<control type="multiimage">
 				<include>Dimensions_Fullscreen</include>
@@ -99,7 +90,7 @@
 				<timeperimage>8000</timeperimage>
 				<randomize>true</randomize>
 				<fadetime>1000</fadetime>
-				<visible>!StringCompare(Window(home).Property(MenuBackground),Database) | !Window.IsVisible(2129)</visible>
+				<visible>!StringCompare(Window(home).Property(MenuBackground),Database)</visible>
 				<visible>!Window.IsVisible(Home) + !StringCompare(Window(home).Property(MenuItemSelected),Weather) + !Container.Content(Seasons) + !Container.Content(Episodes)</visible>
 			</control>
 		</control>
@@ -108,12 +99,12 @@
 			<control type="image">
 				<include>Dimensions_Fullscreen</include>
 				<aspectratio>scale</aspectratio>
-				<texture background="true" fallback="special://skin/backgrounds/homescreen/videos.jpg">$INFO[Fanart.Image]</texture>
+				<texture background="true" fallback="special://skin/backgrounds/videos.jpg">$INFO[Fanart.Image]</texture>
 				<include>BackgroundFade</include>
 				<fadetime>FanartCrossfadeTime</fadetime>
 				<include>Window_OpenClose_Animation</include>
 				<visible>!IsEmpty(Fanart.Image)</visible>
-				<visible>StringCompare(ListItem.label,..) + [Container.Content(Seasons) | Container.Content(Episodes)]</visible>
+				<visible>StringCompare(ListItem.Label,..) + [Container.Content(Seasons) | Container.Content(Episodes)]</visible>
 			</control>
 			<control type="image">
 				<include>Dimensions_Fullscreen</include>
@@ -127,20 +118,20 @@
 			<control type="image">
 				<include>Dimensions_Fullscreen</include>
 				<aspectratio>scale</aspectratio>
-				<texture background="true">$VAR[GenreLabelFanart,special://skin/backgrounds/genres/,.jpg]</texture>
+				<texture background="true">$VAR[GenreLabelFanart,special://skin/extras/Genres/,.jpg]</texture>
 				<include>BackgroundFade</include>
 				<fadetime>FanartCrossfadeTime</fadetime>
 				<include>Window_OpenClose_Animation</include>
-				<visible>!StringCompare(ListItem.label,..) + Container.Content(genres)</visible>
+				<visible>!StringCompare(ListItem.Label,..) + Container.Content(genres)</visible>
 			</control>
 			<control type="image">
 				<include>Dimensions_Fullscreen</include>
 				<aspectratio>scale</aspectratio>
-				<texture background="true">$VAR[GenreFolderFanart,special://skin/backgrounds/genres/,.jpg]</texture>
+				<texture background="true">$VAR[GenreFolderFanart,special://skin/extras/Genres/,.jpg]</texture>
 				<include>BackgroundFade</include>
 				<fadetime>FanartCrossfadeTime</fadetime>
 				<include>Window_OpenClose_Animation</include>
-				<visible>StringCompare(ListItem.label,..)</visible>
+				<visible>StringCompare(ListItem.Label,..)</visible>
 				<visible>SubString(ListItem.FilenameAndPath,videodb://movies/genres) | SubString(ListItem.FilenameAndPath,videodb://tvshows/genres) | SubString(ListItem.FilenameAndPath,videodb://musicvideos/genres) | SubString(ListItem.FilenameAndPath,musicdb://genres)</visible>
 			</control>
 		</control>
@@ -164,7 +155,7 @@
 				<fadetime>1000</fadetime>
 				<aspectratio>keep</aspectratio>
 				<include condition="!Skin.HasSetting(noanimatevizfanart)">KBurnsAnimateFanart</include>
-				<imagepath background="true">$INFO[Skin.String(physicalmusicfolder)]$INFO[MusicPlayer.Artist,,/extrafanart/]</imagepath>
+				<imagepath background="true">$INFO[Skin.String(PhysicalMusicFolder)]$INFO[MusicPlayer.Artist,,/extrafanart/]</imagepath>
 				<visible>Skin.HasSetting(DisableSlideShowArt) + IsEmpty(Control.GetLabel(5043))</visible>
 			</control>
 			<control type="image">
@@ -252,7 +243,7 @@
 				<include>VisibleFadeEffect</include>
 			</control>
 		</control>
-		<control type="group">
+		<!--control type="group">
 			<visible>!Skin.HasSetting(hidebackgroundfanart)</visible>
 			<visible>Window.IsActive(script-globalsearch-main.xml)</visible>
 			<include>VisibleFadeEffect</include>
@@ -264,16 +255,36 @@
 				<include>VisibleFadeEffect</include>
 				<visible>!IsEmpty(Skin.String(searchbtnbackground))</visible>
 			</control>
-		</control>
+		</control-->
 		<control type="image">
 			<include>Dimensions_Fullscreen</include>
-			<texture>special://skin/backgrounds/homescreen/media-overlay.jpg</texture>
+			<texture>special://skin/backgrounds/media-overlay.jpg</texture>
 			<visible>Player.HasVideo + [StringCompare(Container(9000).ListItem.Property(HiLiteItem),FullScreen) | Skin.HasSetting(hidehomenowplaying)] + ![Window.IsVisible(PVR) + [Control.IsVisible(11) | Control.IsVisible(12)]]</visible>
 			<include>VisibleFadeEffect</include>
 		</control>
 		<control type="videowindow">
 			<include>Dimensions_Fullscreen</include>
 			<visible>Player.HasVideo + [StringCompare(Container(9000).ListItem.Property(HiLiteItem),FullScreen) | Skin.HasSetting(hidehomenowplaying)] + ![Window.IsVisible(PVR) + [Control.IsVisible(11) | Control.IsVisible(12)]]</visible>
+		</control>
+	</include>
+	<include name="ArtistExtraFanArt">
+		<control type="multiimage" id="5043">
+			<include>InvisibleButton</include>
+			<imagepath background="true">$INFO[Player.FolderPath,,../extrafanart/]</imagepath>
+			<visible>Player.HasAudio + !Player.IsInternetStream</visible>
+		</control>
+		<control type="multiimage" id="5044">
+			<include>InvisibleButton</include>
+			<imagepath background="true">$INFO[Skin.String(PhysicalMusicFolder)]$INFO[MusicPlayer.Artist,,/extrafanart/]</imagepath>
+			<visible>Player.HasAudio + IsEmpty(Control.GetLabel(5043))</visible>
+		</control>
+	</include>
+	<include name="FanArtExtraThumbs">
+		<control type="multiimage" id="5045">
+			<include>InvisibleButton</include>
+			<imagepath background="true">$INFO[ListItem.path,,extrathumbs/]</imagepath>
+			<visible>!IsEmpty(ListItem.Title)</visible>
+			<visible>Container.Content(Movies) | Container.Content(MusicVideos)</visible>
 		</control>
 	</include>
 	<!--
