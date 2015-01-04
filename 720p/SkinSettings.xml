@@ -438,42 +438,6 @@
 						<onclick>Skin.ToggleSetting(HideFilenameFlagging)</onclick>
 						<selected>Skin.HasSetting(HideFilenameFlagging)</selected>
 					</control>
-					<!--control type="label" id="106">
-						<width>750</width>
-						<height>45</height>
-						<font>font13_title</font>
-						<label>512</label>
-						<textcolor>blue</textcolor>
-						<shadowcolor>black</shadowcolor>
-						<align>left</align>
-						<aligny>center</aligny>
-					</control>
-					<control type="radiobutton" id="107">
-						<width>750</width>
-						<height>40</height>
-						<font>font13</font>
-						<label>21398</label>
-						<textcolor>grey2</textcolor>
-						<focusedcolor>white</focusedcolor>
-						<texturefocus>MenuItemFO.png</texturefocus>
-						<texturenofocus>MenuItemNF.png</texturenofocus>
-						<onclick>Skin.ToggleSetting(UseStartUpPlaylistPath)</onclick>
-						<selected>Skin.HasSetting(UseStartUpPlaylistPath)</selected>
-					</control>
-					<control type="button" id="108">
-						<description>Startup Playlist Path</description>
-						<width>750</width>
-						<height>40</height>
-						<font>font13</font>
-						<textcolor>grey2</textcolor>
-						<focusedcolor>white</focusedcolor>
-						<label>15311</label>
-						<label2>$INFO[Skin.String(StartUpPlaylistPath)]</label2>
-						<onclick>Skin.SetFile(StartUpPlaylistPath,,special://MusicPlaylists/)</onclick>
-						<texturefocus>MenuItemFO.png</texturefocus>
-						<texturenofocus>MenuItemNF.png</texturenofocus>
-						<enable>Skin.HasSetting(UseStartUpPlaylistPath)</enable>
-					</control-->
 					<control type="label" id="130">
 						<width>750</width>
 						<height>45</height>
@@ -524,135 +488,6 @@
 						<texturenofocus>MenuItemNF.png</texturenofocus>
 						<visible>!IsEmpty(Weather.Plugin)</visible>
 					</control>
-					<!--control type="radiobutton" id="205">
-						<description>Show Recently added Video info</description>
-						<width>750</width>
-						<height>40</height>
-						<font>font13</font>
-						<textcolor>grey2</textcolor>
-						<focusedcolor>white</focusedcolor>
-						<label>31117</label>
-						<onclick>Skin.ToggleSetting(HomepageHideRecentlyAddedVideo)</onclick>
-						<selected>!Skin.HasSetting(HomepageHideRecentlyAddedVideo)</selected>
-						<texturefocus>MenuItemFO.png</texturefocus>
-						<texturenofocus>MenuItemNF.png</texturenofocus>
-					</control>
-					<control type="radiobutton" id="206">
-						<description>Show Recently added info</description>
-						<width>750</width>
-						<height>40</height>
-						<font>font13</font>
-						<textcolor>grey2</textcolor>
-						<focusedcolor>white</focusedcolor>
-						<label>31116</label>
-						<onclick>Skin.ToggleSetting(HomepageHideRecentlyAddedAlbums)</onclick>
-						<selected>!Skin.HasSetting(HomepageHideRecentlyAddedAlbums)</selected>
-						<texturefocus>MenuItemFO.png</texturefocus>
-						<texturenofocus>MenuItemNF.png</texturenofocus>
-					</control-->
-					<!--control type="label" id="220">
-						<width>750</width>
-						<height>45</height>
-						<font>font13_title</font>
-						<label>31108</label>
-						<textcolor>blue</textcolor>
-						<shadowcolor>black</shadowcolor>
-						<align>left</align>
-						<aligny>center</aligny>
-					</control-->
-					<!--control type="radiobutton" id="221">
-						<description>Hide Videos Button</description>
-						<width>750</width>
-						<height>40</height>
-						<font>font13</font>
-						<textcolor>grey2</textcolor>
-						<focusedcolor>white</focusedcolor>
-						<label>$LOCALIZE[31111] - $LOCALIZE[3]</label>
-						<onclick>Skin.ToggleSetting(HomeMenuNoVideosButton)</onclick>
-						<selected>Skin.HasSetting(HomeMenuNoVideosButton)</selected>
-						<texturefocus>MenuItemFO.png</texturefocus>
-						<texturenofocus>MenuItemNF.png</texturenofocus>
-					</control>
-					<control type="radiobutton" id="222">
-						<description>Hide Movies Button</description>
-						<width>750</width>
-						<height>40</height>
-						<font>font13</font>
-						<textcolor>grey2</textcolor>
-						<focusedcolor>white</focusedcolor>
-						<label>$LOCALIZE[31111] - $LOCALIZE[20342] [COLOR=grey3] ($LOCALIZE[20314])[/COLOR]</label>
-						<onclick>Skin.ToggleSetting(HomeMenuNoMovieButton)</onclick>
-						<selected>Skin.HasSetting(HomeMenuNoMovieButton)</selected>
-						<texturefocus>MenuItemFO.png</texturefocus>
-						<texturenofocus>MenuItemNF.png</texturenofocus>
-						<enable>Library.HasContent(Movies)</enable>
-					</control>
-					<control type="radiobutton" id="223">
-						<description>Hide TV Shows Button</description>
-						<width>750</width>
-						<height>40</height>
-						<font>font13</font>
-						<textcolor>grey2</textcolor>
-						<focusedcolor>white</focusedcolor>
-						<label>$LOCALIZE[31111] - $LOCALIZE[20343] [COLOR=grey3] ($LOCALIZE[20314])[/COLOR]</label>
-						<onclick>Skin.ToggleSetting(HomeMenuNoTVShowButton)</onclick>
-						<selected>Skin.HasSetting(HomeMenuNoTVShowButton)</selected>
-						<texturefocus>MenuItemFO.png</texturefocus>
-						<texturenofocus>MenuItemNF.png</texturenofocus>
-						<enable>Library.HasContent(TVShows)</enable>
-					</control>
-					<control type="radiobutton" id="224">
-						<description>Hide Music Button</description>
-						<width>750</width>
-						<height>40</height>
-						<font>font13</font>
-						<textcolor>grey2</textcolor>
-						<focusedcolor>white</focusedcolor>
-						<label>$LOCALIZE[31111] - $LOCALIZE[2]</label>
-						<onclick>Skin.ToggleSetting(HomeMenuNoMusicButton)</onclick>
-						<selected>Skin.HasSetting(HomeMenuNoMusicButton)</selected>
-						<texturefocus>MenuItemFO.png</texturefocus>
-						<texturenofocus>MenuItemNF.png</texturenofocus>
-					</control>
-					<control type="radiobutton" id="225">
-						<description>Hide Pictures Button</description>
-						<width>750</width>
-						<height>40</height>
-						<font>font13</font>
-						<textcolor>grey2</textcolor>
-						<focusedcolor>white</focusedcolor>
-						<label>$LOCALIZE[31111] - $LOCALIZE[1]</label>
-						<onclick>Skin.ToggleSetting(HomeMenuNoPicturesButton)</onclick>
-						<selected>Skin.HasSetting(HomeMenuNoPicturesButton)</selected>
-						<texturefocus>MenuItemFO.png</texturefocus>
-						<texturenofocus>MenuItemNF.png</texturenofocus>
-					</control>
-					<control type="radiobutton" id="226">
-						<description>Hide Programs Button</description>
-						<width>750</width>
-						<height>40</height>
-						<font>font13</font>
-						<textcolor>grey2</textcolor>
-						<focusedcolor>white</focusedcolor>
-						<label>$LOCALIZE[31111] - $LOCALIZE[0]</label>
-						<onclick>Skin.ToggleSetting(HomeMenuNoProgramsButton)</onclick>
-						<selected>Skin.HasSetting(HomeMenuNoProgramsButton)</selected>
-						<texturefocus>MenuItemFO.png</texturefocus>
-						<texturenofocus>MenuItemNF.png</texturenofocus>
-					</control>
-					<control type="radiobutton" id="228">
-						<description>Hide Weather Button</description>
-						<width>750</width>
-						<height>40</height>
-						<font>font13</font>
-						<textcolor>grey2</textcolor>
-						<focusedcolor>white</focusedcolor>
-						<label>$LOCALIZE[31111] - $LOCALIZE[8]</label>
-						<onclick>Skin.ToggleSetting(HomeMenuNoWeatherButton)</onclick>
-						<selected>Skin.HasSetting(HomeMenuNoWeatherButton)</selected>
-						<texturefocus>MenuItemFO.png</texturefocus>
-						<texturenofocus>MenuItemNF.png</texturenofocus>
-					</control-->
 					<control type="label" id="140">
 						<width>750</width>
 						<height>45</height>
@@ -711,75 +546,6 @@
 						<onclick>Skin.ToggleSetting(ShowBackgroundVis)</onclick>
 						<selected>!Skin.HasSetting(ShowBackgroundVis)</selected>
 					</control>
-					<!--control type="label" id="310">
-						<width>750</width>
-						<height>45</height>
-						<font>font13_title</font>
-						<label>31102</label>
-						<textcolor>blue</textcolor>
-						<shadowcolor>black</shadowcolor>
-						<align>left</align>
-						<aligny>center</aligny>
-					</control>
-					<control type="radiobutton" id="311">
-						<width>750</width>
-						<height>40</height>
-						<font>font13</font>
-						<label>31109</label>
-						<textcolor>grey2</textcolor>
-						<focusedcolor>white</focusedcolor>
-						<texturefocus>MenuItemFO.png</texturefocus>
-						<texturenofocus>MenuItemNF.png</texturenofocus>
-						<onclick>Skin.ToggleSetting(UseCustomBackground)</onclick>
-						<selected>Skin.HasSetting(UseCustomBackground)</selected>
-					</control>
-					<control type="button" id="312">
-						<width>750</width>
-						<height>40</height>
-						<font>font13</font>
-						<label>- $LOCALIZE[31110]</label>
-						<label2>[COLOR=selected]$INFO[Skin.String(CustomBackgroundPath)][/COLOR]</label2>
-						<textcolor>grey2</textcolor>
-						<focusedcolor>white</focusedcolor>
-						<texturefocus>MenuItemFO.png</texturefocus>
-						<texturenofocus>MenuItemNF.png</texturenofocus>
-						<onclick>Skin.SetImage(CustomBackgroundPath)</onclick>
-						<enable>Skin.HasSetting(UseCustomBackground)</enable>
-					</control-->
-					<!--control type="label" id="150">
-							<width>750</width>
-							<height>45</height>
-							<font>font13_title</font>
-							<label>31140</label>
-							<textcolor>blue</textcolor>
-							<shadowcolor>black</shadowcolor>
-							<align>left</align>
-							<aligny>center</aligny>
-						</control>
-						<control type="button" id="151">
-							<width>750</width>
-							<height>40</height>
-							<font>font13</font>
-							<label>$LOCALIZE[31132]</label>
-							<label2>[COLOR=selected]$INFO[system.addontitle(Skin.String(LyricScript_Path))][/COLOR]</label2>
-							<textcolor>grey2</textcolor>
-							<focusedcolor>white</focusedcolor>
-							<texturefocus>MenuItemFO.png</texturefocus>
-							<texturenofocus>MenuItemNF.png</texturenofocus>
-							<onclick>Skin.SetAddon(LyricScript_Path,xbmc.python.lyrics)</onclick>
-						</control>
-						<control type="button" id="152">
-							<width>750</width>
-							<height>40</height>
-							<font>font13</font>
-							<label>- $LOCALIZE[24020]</label>
-							<textcolor>grey2</textcolor>
-							<focusedcolor>white</focusedcolor>
-							<texturefocus>MenuItemFO.png</texturefocus>
-							<texturenofocus>MenuItemNF.png</texturenofocus>
-							<enable>!IsEmpty(Skin.String(LyricScript_Path))</enable>
-							<onclick>Addon.OpenSettings($INFO[Skin.String(LyricScript_Path)])</onclick>
-						</control-->
 				</control>
 				<control type="scrollbar" id="60">
 					<left>1060</left>
@@ -1966,7 +1732,6 @@
 					<orientation>vertical</orientation>
 					<visible>Container(9000).Hasfocus(2)</visible>
 				</control>
-				<!--##############################-->
 				<control type="grouplist" id="9003">
 					<visible>Container(9000).Hasfocus(3)</visible>
 					<left>290</left>
@@ -3204,7 +2969,6 @@
 					<orientation>vertical</orientation>
 					<visible>Container(9000).Hasfocus(3)</visible>
 				</control>
-				<!--###################################-->
 				<control type="group">
 					<control type="grouplist" id="9004">
 						<visible>Container(9000).Hasfocus(4)</visible>
@@ -5057,9 +4821,9 @@
 						<textcolor>grey2</textcolor>
 						<focusedcolor>white</focusedcolor>
 						<label>31924</label>
-						<label2>[COLOR=selected]$INFO[Skin.String(UsAalbumThumbsDir)][/COLOR]</label2>
-						<onclick>Skin.Reset(UsAalbumThumbsDir)</onclick>
-						<onclick>Skin.SetPath(UsAalbumThumbsDir)</onclick>
+						<label2>[COLOR=selected]$INFO[Skin.String(UsrAlbumThumbsDir)][/COLOR]</label2>
+						<onclick>Skin.Reset(UsrAlbumThumbsDir)</onclick>
+						<onclick>Skin.SetPath(UsrAlbumThumbsDir)</onclick>
 						<texturefocus>MenuItemFO.png</texturefocus>
 						<texturenofocus>MenuItemNF.png</texturenofocus>
 					</control>

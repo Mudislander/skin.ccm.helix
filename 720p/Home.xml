@@ -469,7 +469,7 @@
 				</control>
 			</control>
 		</control>
-		<include condition="!Skin.HasSetting(HomepageHideRecentlyAddedVideo) | !Skin.HasSetting(HomepageHideRecentlyAddedAlbums)">HomeRecentlyAddedInfo</include>
+		<include>HomeWidgetDisplay</include>
 		<control type="button" id="9003">
 			<description>Hidden Button to pass through navigation when recently added is disabled</description>
 			<left>-20</left>

@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <includes>
+	<include file="IncludesHomeWidget.xml" />
 	<include file="defaults.xml" />
 	<include file="IncludesVariables.xml" />
 	<include file="IncludesMainMenu.xml" />
@@ -15,7 +16,6 @@
 	<include file="ViewsPVRGuide.xml" />
 	<include file="ViewsWeather.xml" />
 	<include file="IncludesCodecFlagging.xml" />
-	<include file="IncludesHomeRecentlyAdded.xml" />
 	<include file="IncludesHomeMenuItems.xml" />
 	<include file="IncludesPVR.xml" />
 	<include file="IncludesBackgroundBuilding.xml" />
