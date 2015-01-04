@@ -774,7 +774,6 @@
 					<onleft>9010</onleft>
 					<onright>9010</onright>
 					<include>HomeSubMenuVideos</include>
-					<!-- Buttons for the grouplist -->
 					<visible>StringCompare(Container(9000).ListItem.Property(SubMenu),Videos)</visible>
 				</control>
 				<control type="grouplist" id="9016">
@@ -782,7 +781,6 @@
 					<onleft>9016</onleft>
 					<onright>9016</onright>
 					<include>HomeSubMenuMovies</include>
-					<!-- Buttons for the grouplist -->
 					<visible>StringCompare(Container(9000).ListItem.Property(SubMenu),Movies)</visible>
 				</control>
 				<control type="grouplist" id="9017">
@@ -790,7 +788,6 @@
 					<onleft>9017</onleft>
 					<onright>9017</onright>
 					<include>HomeSubMenuTVShows</include>
-					<!-- Buttons for the grouplist -->
 					<visible>StringCompare(Container(9000).ListItem.Property(SubMenu),TVShows)</visible>
 				</control>
 				<control type="grouplist" id="9011">
@@ -798,7 +795,6 @@
 					<onleft>9011</onleft>
 					<onright>9011</onright>
 					<include>HomeSubMenuMusic</include>
-					<!-- Buttons for the grouplist -->
 					<visible>StringCompare(Container(9000).ListItem.Property(SubMenu),Music)</visible>
 				</control>
 				<control type="grouplist" id="9012">
@@ -806,7 +802,6 @@
 					<onleft>9012</onleft>
 					<onright>9012</onright>
 					<include>HomeSubMenuSystem</include>
-					<!-- Buttons for the grouplist -->
 					<visible>StringCompare(Container(9000).ListItem.Property(SubMenu),Settings)</visible>
 				</control>
 				<control type="grouplist" id="9013">
@@ -814,7 +809,6 @@
 					<onleft>9013</onleft>
 					<onright>9013</onright>
 					<include>HomeSubMenuPlayDisc</include>
-					<!-- Buttons for the grouplist -->
 					<visible>StringCompare(Container(9000).ListItem.Property(SubMenu),PlayDisc)</visible>
 				</control>
 				<control type="grouplist" id="9014">
@@ -829,7 +823,6 @@
 					<onleft>9013</onleft>
 					<onright>9013</onright>
 					<include>HomeSubMenuPictures</include>
-					<!-- Buttons for the grouplist -->
 					<visible>StringCompare(Container(9000).ListItem.Property(SubMenu),Pictures)</visible>
 				</control>
 				<control type="grouplist" id="9016">
@@ -837,7 +830,6 @@
 					<onleft>9014</onleft>
 					<onright>9014</onright>
 					<include>HomeSubMenuRadio</include>
-					<!-- Buttons for the grouplist -->
 					<visible>StringCompare(Container(9000).ListItem.Property(SubMenu),Radio)</visible>
 				</control>
 			</control>

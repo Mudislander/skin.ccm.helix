@@ -2036,7 +2036,7 @@
 						<height>40</height>
 						<font>font13</font>
 						<label>$LOCALIZE[31315] - 6</label>
-						<label2>[COLOR=selected]$VAR[SubMenuTVShowsSix][/COLOR]</label2>
+						<label2>[COLOR=selected]$INFO[Skin.String(SubTVShows.6.Label)][/COLOR]</label2>
 						<textcolor>grey</textcolor>
 						<focusedcolor>white</focusedcolor>
 						<texturefocus>MenuItemFO.png</texturefocus>

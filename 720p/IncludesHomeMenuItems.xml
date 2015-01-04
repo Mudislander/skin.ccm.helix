@@ -8,37 +8,49 @@
 		</control>
 		<control type="button" id="90102">
 			<include>ButtonHomeSubCommonValues</include>
-			<label>342</label>
-			<onclick>ActivateWindow(Videos,MovieTitles,return)</onclick>
-			<visible>Library.HasContent(Movies) + Skin.HasSetting(HomeMenuNoMovieButton)</visible>
+			<label>$VAR[SubMenuVideosOne]</label>
+			<onclick condition="IsEmpty(Skin.String(SubVideos.1.Path))">ActivateWindow(Videos,MovieTitles,return)</onclick>
+			<onclick condition="!IsEmpty(Skin.String(SubVideos.1.Path))">$INFO[Skin.String(SubVideos.1.Path)]</onclick>
+			<visible>Library.HasContent(Movies) | !IsEmpty(Skin.String(SubVideos.1.Path))</visible>
+			<visible>!stringcompare(Skin.String(SubVideos.1.Path),Hidden)</visible>
 		</control>
 		<control type="button" id="90103">
 			<include>ButtonHomeSubCommonValues</include>
-			<label>20343</label>
-			<onclick>ActivateWindow(Videos,TvShowTitles,return)</onclick>
-			<visible>Library.HasContent(TVShows) + Skin.HasSetting(HomeMenuNoTVShowButton)</visible>
+			<label>$VAR[SubMenuVideosTwo]</label>
+			<onclick condition="IsEmpty(Skin.String(SubVideos.2.Path))">ActivateWindow(Videos,TvShowTitles,return)</onclick>
+			<onclick condition="!IsEmpty(Skin.String(SubVideos.2.Path))">$INFO[Skin.String(SubVideos.2.Path)]</onclick>
+			<visible>Library.HasContent(TVShows)  | !IsEmpty(Skin.String(SubVideos.2.Path))</visible>
+			<visible>!stringcompare(Skin.String(SubVideos.2.Path),Hidden)</visible>
 		</control>
 		<control type="button" id="90104">
 			<include>ButtonHomeSubCommonValues</include>
-			<label>20389</label>
-			<onclick>ActivateWindow(Videos,MusicVideoTitles,return)</onclick>
-			<visible>Library.HasContent(MusicVideos)</visible>
+			<label>$VAR[SubMenuVideosThree]</label>
+			<onclick condition="IsEmpty(Skin.String(SubVideos.3.Path))">ActivateWindow(Videos,MusicVideoTitles,return)</onclick>
+			<onclick condition="!IsEmpty(Skin.String(SubVideos.3.Path))">$INFO[Skin.String(SubVideos.3.Path)]</onclick>
+			<visible>Library.HasContent(MusicVideos) | !IsEmpty(Skin.String(SubVideos.3.Path))</visible>
+			<visible>!stringcompare(Skin.String(SubVideos.3.Path),Hidden)</visible>
 		</control>
 		<control type="button" id="90105">
 			<include>ButtonHomeSubCommonValues</include>
-			<label>744</label>
-			<onclick>ActivateWindow(Videos,Files,return)</onclick>
+			<label>$VAR[SubMenuVideosFour]</label>
+			<onclick condition="IsEmpty(Skin.String(SubVideos.4.Path))">ActivateWindow(Videos,Files,return)</onclick>
+			<onclick condition="!IsEmpty(Skin.String(SubVideos.4.Path))">$INFO[Skin.String(SubVideos.4.Path)]</onclick>
+			<visible>!stringcompare(Skin.String(SubVideos.4.Path),Hidden)</visible>
 		</control>
 		<control type="button" id="90106">
 			<include>ButtonHomeSubCommonValues</include>
-			<label>14022</label>
-			<onclick>ActivateWindow(Videos,Root)</onclick>
-			<visible>Library.HasContent(Video)</visible>
+			<label>$VAR[SubMenuVideosFive]</label>
+			<onclick condition="IsEmpty(Skin.String(SubVideos.5.Path))">ActivateWindow(Videos,Root)</onclick>
+			<onclick condition="!IsEmpty(Skin.String(SubVideos.5.Path))">$INFO[Skin.String(SubVideos.5.Path)]</onclick>
+			<visible>Library.HasContent(Video) | !IsEmpty(Skin.String(SubVideos.5.Path))</visible>
+			<visible>!stringcompare(Skin.String(SubVideos.5.Path),Hidden)</visible>
 		</control>
 		<control type="button" id="90107">
 			<include>ButtonHomeSubCommonValues</include>
-			<label>24001</label>
-			<onclick>ActivateWindow(Videos,Addons,return)</onclick>
+			<label>$VAR[SubMenuVideosSix]</label>
+			<onclick condition="IsEmpty(Skin.String(SubVideos.6.Path))">ActivateWindow(Videos,Addons,return)</onclick>
+			<onclick condition="!IsEmpty(Skin.String(SubVideos.6.Path))">$INFO[Skin.String(SubVideos.6.Path)]</onclick>
+			<visible>!stringcompare(Skin.String(SubVideos.6.Path),Hidden)</visible>
 		</control>
 		<control type="image" id="90108">
 			<width>35</width>
@@ -54,34 +66,46 @@
 		</control>
 		<control type="button" id="90162">
 			<include>ButtonHomeSubCommonValues</include>
-			<label>31998</label>
-			<onclick>ActivateWindow(Videos,RecentlyAddedMovies,return)</onclick>
+			<label>$VAR[SubMenuMoviesOne]</label>
+			<onclick condition="IsEmpty(Skin.String(SubMovies.1.Path))">ActivateWindow(Videos,RecentlyAddedMovies,return)</onclick>
+			<onclick condition="!IsEmpty(Skin.String(SubMovies.1.Path))">$INFO[Skin.String(SubMovies.1.Path)]</onclick>
+			<visible>!stringcompare(Skin.String(SubMovies.1.Path),Hidden)</visible>
 		</control>
 		<control type="button" id="90163">
 			<include>ButtonHomeSubCommonValues</include>
-			<label>20434</label>
-			<onclick>ActivateWindow(Videos,MovieSets,return)</onclick>
-			<visible>Library.HasContent(MovieSets)</visible>
+			<label>$VAR[SubMenuMoviesTwo]</label>
+			<onclick condition="IsEmpty(Skin.String(SubMovies.2.Path))">ActivateWindow(Videos,MovieSets,return)</onclick>
+			<onclick condition="!IsEmpty(Skin.String(SubMovies.2.Path))">$INFO[Skin.String(SubMovies.2.Path)]</onclick>
+			<visible>Library.HasContent(MovieSets) | !IsEmpty(Skin.String(SubMovies.2.Path))</visible>
+			<visible>!stringcompare(Skin.String(SubMovies.2.Path),Hidden)</visible>
 		</control>
 		<control type="button" id="90164">
 			<include>ButtonHomeSubCommonValues</include>
-			<label>369</label>
-			<onclick>ActivateWindow(Videos,MovieTitles,return)</onclick>
+			<label>$VAR[SubMenuMoviesThree]</label>
+			<onclick condition="IsEmpty(Skin.String(SubMovies.3.Path))">ActivateWindow(Videos,MovieTitles,return)</onclick>
+			<onclick condition="!IsEmpty(Skin.String(SubMovies.3.Path))">$INFO[Skin.String(SubMovies.3.Path)]</onclick>
+			<visible>!stringcompare(Skin.String(SubMovies.3.Path),Hidden)</visible>
 		</control>
 		<control type="button" id="90165">
 			<include>ButtonHomeSubCommonValues</include>
-			<label>135</label>
-			<onclick>ActivateWindow(Videos,MovieGenres,return)</onclick>
+			<label>$VAR[SubMenuMoviesFour]</label>
+			<onclick condition="IsEmpty(Skin.String(SubMovies.4.Path))">ActivateWindow(Videos,MovieGenres,return)</onclick>
+			<onclick condition="!IsEmpty(Skin.String(SubMovies.4.Path))">$INFO[Skin.String(SubMovies.4.Path)]</onclick>
+			<visible>!stringcompare(Skin.String(SubMovies.4.Path),Hidden)</visible>
 		</control>
 		<control type="button" id="90166">
 			<include>ButtonHomeSubCommonValues</include>
-			<label>652</label>
-			<onclick>ActivateWindow(Videos,MovieYears,return)</onclick>
+			<label>$VAR[SubMenuMoviesFive]</label>
+			<onclick condition="IsEmpty(Skin.String(SubMovies.5.Path))">ActivateWindow(Videos,MovieYears,return)</onclick>
+			<onclick condition="!IsEmpty(Skin.String(SubMovies.5.Path))">$INFO[Skin.String(SubMovies.5.Path)]</onclick>
+			<visible>!stringcompare(Skin.String(SubMovies.5.Path),Hidden)</visible>
 		</control>
 		<control type="button" id="90167">
 			<include>ButtonHomeSubCommonValues</include>
-			<label>344</label>
-			<onclick>ActivateWindow(Videos,MovieActors,return)</onclick>
+			<label>$VAR[SubMenuMoviesSix]</label>
+			<onclick condition="IsEmpty(Skin.String(SubMovies.6.Path))">ActivateWindow(Videos,MovieActors,return)</onclick>
+			<onclick condition="!IsEmpty(Skin.String(SubMovies.6.Path))">$INFO[Skin.String(SubMovies.6.Path)]</onclick>
+			<visible>!stringcompare(Skin.String(SubMovies.6.Path),Hidden)</visible>
 		</control>
 		<control type="image" id="90168">
 			<width>35</width>
@@ -97,30 +121,46 @@
 		</control>
 		<control type="button" id="90172">
 			<include>ButtonHomeSubCommonValues</include>
-			<label>31998</label>
-			<onclick>ActivateWindow(Videos,RecentlyAddedEpisodes,return)</onclick>
+			<label>$VAR[SubMenuTVShowsOne]</label>
+			<onclick condition="IsEmpty(Skin.String(SubTVShows.1.Path))">ActivateWindow(Videos,RecentlyAddedEpisodes,return)</onclick>
+			<onclick condition="!IsEmpty(Skin.String(SubTVShows.1.Path))">$INFO[Skin.String(SubTVShows.1.Path)]</onclick>
+			<visible>!stringcompare(Skin.String(SubTVShows.1.Path),Hidden)</visible>
 		</control>
 		<control type="button" id="90173">
 			<include>ButtonHomeSubCommonValues</include>
-			<label>369</label>
-			<onclick>ActivateWindow(Videos,TVShowTitles,return)</onclick>
+			<label>$VAR[SubMenuTVShowsTwo]</label>
+			<onclick condition="IsEmpty(Skin.String(SubTVShows.2.Path))">ActivateWindow(Videos,TVShowTitles,return)</onclick>
+			<onclick condition="!IsEmpty(Skin.String(SubTVShows.2.Path))">$INFO[Skin.String(SubTVShows.2.Path)]</onclick>
+			<visible>!stringcompare(Skin.String(SubTVShows.2.Path),Hidden)</visible>
 		</control>
 		<control type="button" id="90174">
 			<include>ButtonHomeSubCommonValues</include>
-			<label>135</label>
-			<onclick>ActivateWindow(Videos,TVShowGenres,return)</onclick>
+			<label>$VAR[SubMenuTVShowsThree]</label>
+			<onclick condition="IsEmpty(Skin.String(SubTVShows.3.Path))">ActivateWindow(Videos,TVShowGenres,return)</onclick>
+			<onclick condition="!IsEmpty(Skin.String(SubTVShows.3.Path))">$INFO[Skin.String(SubTVShows.3.Path)]</onclick>
+			<visible>!stringcompare(Skin.String(SubTVShows.3.Path),Hidden)</visible>
 		</control>
 		<control type="button" id="90175">
 			<include>ButtonHomeSubCommonValues</include>
-			<label>652</label>
-			<onclick>ActivateWindow(Videos,TVShowYears,return)</onclick>
+			<label>$VAR[SubMenuTVShowsFour]</label>
+			<onclick condition="IsEmpty(Skin.String(SubTVShows.4.Path))">ActivateWindow(Videos,TVShowYears,return)</onclick>
+			<onclick condition="!IsEmpty(Skin.String(SubTVShows.4.Path))">$INFO[Skin.String(SubTVShows.4.Path)]</onclick>
+			<visible>!stringcompare(Skin.String(SubTVShows.4.Path),Hidden)</visible>
 		</control>
 		<control type="button" id="90176">
 			<include>ButtonHomeSubCommonValues</include>
-			<label>344</label>
-			<onclick>ActivateWindow(Videos,TVShowActors,return)</onclick>
+			<label>$VAR[SubMenuTVShowsFive]</label>
+			<onclick condition="IsEmpty(Skin.String(SubTVShows.5.Path))">ActivateWindow(Videos,TVShowActors,return)</onclick>
+			<onclick condition="!IsEmpty(Skin.String(SubTVShows.5.Path))">$INFO[Skin.String(SubTVShows.5.Path)]</onclick>
+			<visible>!stringcompare(Skin.String(SubTVShows.5.Path),Hidden)</visible>
 		</control>
-		<control type="image" id="90177">
+		<control type="button" id="90177">
+			<include>ButtonHomeSubCommonValues</include>
+			<label>$INFO[Skin.String(SubTVShows.6.Label)]</label>
+			<onclick>$INFO[Skin.String(SubTVShows.6.Path)]</onclick>
+			<visible>!stringcompare(Skin.String(SubTVShows.6.Path),Hidden) + !IsEmpty(Skin.String(SubTVShows.6.Path))</visible>
+		</control>
+		<control type="image" id="90178">
 			<width>35</width>
 			<height>35</height>
 			<texture border="0,0,0,3">HomeSubEnd.png</texture>
@@ -134,44 +174,50 @@
 		</control>
 		<control type="button" id="90112">
 			<include>ButtonHomeSubCommonValues</include>
-			<label>133</label>
-			<onclick>ActivateWindow(MusicLibrary,Artists,return)</onclick>
-			<visible>Library.HasContent(Music)</visible>
+			<label>$VAR[SubMenuMusicOne]</label>
+			<onclick condition="IsEmpty(Skin.String(SubMusic.1.Path))">ActivateWindow(MusicLibrary,Artists,return)</onclick>
+			<onclick condition="!IsEmpty(Skin.String(SubMusic.1.Path))">$INFO[Skin.String(SubMusic.1.Path)]</onclick>
+			<visible>Library.HasContent(Music) | !IsEmpty(Skin.String(SubMusic.1.Path))</visible>
+			<visible>!stringcompare(Skin.String(SubMusic.1.Path),Hidden)</visible>
 		</control>
 		<control type="button" id="90113">
 			<include>ButtonHomeSubCommonValues</include>
-			<label>132</label>
-			<onclick>ActivateWindow(MusicLibrary,Albums,return)</onclick>
-			<visible>Library.HasContent(Music)</visible>
+			<label>$VAR[SubMenuMusicTwo]</label>
+			<onclick condition="IsEmpty(Skin.String(SubMusic.2.Path))">ActivateWindow(MusicLibrary,Albums,return)</onclick>
+			<onclick condition="!IsEmpty(Skin.String(SubMusic.2.Path))">$INFO[Skin.String(SubMusic.2.Path)]</onclick>
+			<visible>Library.HasContent(Music) | !IsEmpty(Skin.String(SubMusic.2.Path))</visible>
+			<visible>!stringcompare(Skin.String(SubMusic.2.Path),Hidden)</visible>
 		</control>
 		<control type="button" id="90114">
 			<include>ButtonHomeSubCommonValues</include>
-			<label>134</label>
-			<onclick>ActivateWindow(MusicLibrary,Songs,return)</onclick>
-			<visible>Library.HasContent(Music)</visible>
+			<label>$VAR[SubMenuMusicThree]</label>
+			<onclick condition="IsEmpty(Skin.String(SubMusic.3.Path))">ActivateWindow(MusicLibrary,Songs,return)</onclick>
+			<onclick condition="!IsEmpty(Skin.String(SubMusic.3.Path))">$INFO[Skin.String(SubMusic.3.Path)]</onclick>
+			<visible>Library.HasContent(Music) | !IsEmpty(Skin.String(SubMusic.3.Path))</visible>
+			<visible>!stringcompare(Skin.String(SubMusic.3.Path),Hidden)</visible>
 		</control>
 		<control type="button" id="90115">
 			<include>ButtonHomeSubCommonValues</include>
-			<label>744</label>
-			<onclick>ActivateWindow(MusicFiles)</onclick>
+			<label>$VAR[SubMenuMusicFour]</label>
+			<onclick condition="IsEmpty(Skin.String(SubMusic.4.Path))">ActivateWindow(MusicFiles)</onclick>
+			<onclick condition="!IsEmpty(Skin.String(SubMusic.4.Path))">$INFO[Skin.String(SubMusic.4.Path)]</onclick>
+			<visible>!stringcompare(Skin.String(SubMusic.4.Path),Hidden)</visible>
 		</control>
 		<control type="button" id="90116">
 			<include>ButtonHomeSubCommonValues</include>
-			<label>14022</label>
-			<onclick>ActivateWindow(MusicLibrary,root)</onclick>
-			<visible>Library.HasContent(Music)</visible>
+			<label>$VAR[SubMenuMusicFive]</label>
+			<onclick condition="IsEmpty(Skin.String(SubMusic.5.Path))">ActivateWindow(MusicLibrary,root)</onclick>
+			<onclick condition="!IsEmpty(Skin.String(SubMusic.5.Path))">$INFO[Skin.String(SubMusic.5.Path)]</onclick>
+			<visible>Library.HasContent(Music) | !IsEmpty(Skin.String(SubMusic.5.Path))</visible>
+			<visible>!stringcompare(Skin.String(SubMusic.5.Path),Hidden)</visible>
 		</control>
 		<control type="button" id="90117">
 			<include>ButtonHomeSubCommonValues</include>
-			<label>24001</label>
-			<onclick>ActivateWindow(MusicLibrary,Addons,return)</onclick>
-			<visible>Library.HasContent(Music)</visible>
-		</control>
-		<control type="button" id="90118">
-			<include>ButtonHomeSubCommonValues</include>
-			<label>24001</label>
-			<onclick>ActivateWindow(MusicFiles,Addons,return)</onclick>
-			<visible>!Library.HasContent(Music)</visible>
+			<label>$VAR[SubMenuMusicSix]</label>
+			<onclick condition="IsEmpty(Skin.String(SubMusic.6.Path)) + Library.HasContent(Music)">ActivateWindow(MusicLibrary,Addons,return)</onclick>
+			<onclick condition="IsEmpty(Skin.String(SubMusic.6.Path)) + !Library.HasContent(Music)">ActivateWindow(MusicFiles,Addons,return)</onclick>
+			<onclick condition="!IsEmpty(Skin.String(SubMusic.6.Path))">$INFO[Skin.String(SubMusic.6.Path)]</onclick>
+			<visible>!stringcompare(Skin.String(SubMusic.6.Path),Hidden)</visible>
 		</control>
 		<control type="image" id="90119">
 			<width>35</width>
