@@ -158,7 +158,7 @@
 			<include>ButtonHomeSubCommonValues</include>
 			<label>$INFO[Skin.String(SubTVShows.6.Label)]</label>
 			<onclick>$INFO[Skin.String(SubTVShows.6.Path)]</onclick>
-			<visible>!stringcompare(Skin.String(SubTVShows.6.Path),Hidden) + !IsEmpty(Skin.String(SubTVShows.6.Path))</visible>
+			<visible>!IsEmpty(Skin.String(SubTVShows.6.Path))</visible>
 		</control>
 		<control type="image" id="90178">
 			<width>35</width>
@@ -233,25 +233,46 @@
 		</control>
 		<control type="button" id="90122">
 			<include>ButtonHomeSubCommonValues</include>
-			<label>5</label>
-			<onclick>ActivateWindow(Settings)</onclick>
+			<label>$VAR[SubMenuSystemOne]</label>
+			<onclick condition="IsEmpty(Skin.String(SubSystem.1.Path))">ActivateWindow(Settings)</onclick>
+			<onclick condition="!IsEmpty(Skin.String(SubSystem.1.Path))">$INFO[Skin.String(SubSystem.1.Path)]</onclick>
+			<visible>!stringcompare(Skin.String(SubSystem.1.Path),Hidden)</visible>
 		</control>
 		<control type="button" id="90123">
 			<include>ButtonHomeSubCommonValues</include>
-			<label>7</label>
-			<onclick>ActivateWindow(FileManager)</onclick>
+			<label>$VAR[SubMenuSystemTwo]</label>
+			<onclick condition="IsEmpty(Skin.String(SubSystem.2.Path))">ActivateWindow(FileManager)</onclick>
+			<onclick condition="!IsEmpty(Skin.String(SubSystem.2.Path))">$INFO[Skin.String(SubSystem.2.Path)]</onclick>
+			<visible>!stringcompare(Skin.String(SubSystem.2.Path),Hidden)</visible>
 		</control>
 		<control type="button" id="90124">
 			<include>ButtonHomeSubCommonValues</include>
-			<label>13200</label>
-			<onclick>ActivateWindow(Profiles)</onclick>
+			<label>$VAR[SubMenuSystemThree]</label>
+			<onclick condition="IsEmpty(Skin.String(SubSystem.3.Path))">ActivateWindow(Profiles)</onclick>
+			<onclick condition="!IsEmpty(Skin.String(SubSystem.3.Path))">$INFO[Skin.String(SubSystem.3.Path)]</onclick>
+			<visible>!stringcompare(Skin.String(SubSystem.3.Path),Hidden)</visible>
 		</control>
 		<control type="button" id="90125">
 			<include>ButtonHomeSubCommonValues</include>
+			<label>$VAR[SubMenuSystemFour]</label>
 			<label>130</label>
-			<onclick>ActivateWindow(SystemInfo)</onclick>
+			<onclick condition="IsEmpty(Skin.String(SubSystem.4.Path))">ActivateWindow(SystemInfo)</onclick>
+			<onclick condition="!IsEmpty(Skin.String(SubSystem.4.Path))">$INFO[Skin.String(SubSystem.4.Path)]</onclick>
+			<visible>!stringcompare(Skin.String(SubSystem.4.Path),Hidden)</visible>
 		</control>
-		<control type="image" id="90126">
+		<control type="button" id="90126">
+			<include>ButtonHomeSubCommonValues</include>
+			<label>$INFO[Skin.String(SubSystem.5.Label)]</label>
+			<onclick>$INFO[Skin.String(SubSystem.5.Path)]</onclick>
+			<visible>!IsEmpty(Skin.String(SubSystem.5.Path))</visible>
+		</control>
+		<control type="button" id="90127">
+			<include>ButtonHomeSubCommonValues</include>
+			<label>$INFO[Skin.String(SubSystem.6.Label)]</label>
+			<onclick>$INFO[Skin.String(SubSystem.6.Path)]</onclick>
+			<visible>!IsEmpty(Skin.String(SubSystem.6.Path))</visible>
+		</control>
+		<control type="image" id="90128">
 			<width>35</width>
 			<height>35</height>
 			<texture border="0,0,0,3">HomeSubEnd.png</texture>
@@ -283,10 +304,42 @@
 		</control>
 		<control type="button" id="90148">
 			<include>ButtonHomeSubCommonValues</include>
-			<label>24001</label>
-			<onclick>ActivateWindow(Pictures,Addons,return)</onclick>
+			<label>$VAR[SubMenuPicturesOne]</label>
+			<onclick condition="IsEmpty(Skin.String(SubPictures.1.Path))">ActivateWindow(Pictures,Addons,return)</onclick>
+			<onclick condition="!IsEmpty(Skin.String(SubPictures.1.Path))">$INFO[Skin.String(SubPictures.1.Path)]</onclick>
+			<visible>!stringcompare(Skin.String(SubPictures.1.Path),Hidden)</visible>
 		</control>
-		<control type="image" id="90149">
+		<control type="button" id="90149">
+			<include>ButtonHomeSubCommonValues</include>
+			<label>$INFO[Skin.String(SubPictures.2.Label)]</label>
+			<onclick>$INFO[Skin.String(SubPictures.2.Path)]</onclick>
+			<visible>!IsEmpty(Skin.String(SubPictures.2.Path))</visible>
+		</control>
+		<control type="button" id="90150">
+			<include>ButtonHomeSubCommonValues</include>
+			<label>$INFO[Skin.String(SubPictures.3.Label)]</label>
+			<onclick>$INFO[Skin.String(SubPictures.3.Path)]</onclick>
+			<visible>!IsEmpty(Skin.String(SubPictures.3.Path))</visible>
+		</control>
+		<control type="button" id="90151">
+			<include>ButtonHomeSubCommonValues</include>
+			<label>$INFO[Skin.String(SubPictures.4.Label)]</label>
+			<onclick>$INFO[Skin.String(SubPictures.4.Path)]</onclick>
+			<visible>!IsEmpty(Skin.String(SubPictures.4.Path))</visible>
+		</control>
+		<control type="button" id="90152">
+			<include>ButtonHomeSubCommonValues</include>
+			<label>$INFO[Skin.String(SubPictures.5.Label)]</label>
+			<onclick>$INFO[Skin.String(SubPictures.5.Path)]</onclick>
+			<visible>!IsEmpty(Skin.String(SubPictures.5.Path))</visible>
+		</control>
+		<control type="button" id="90153">
+			<include>ButtonHomeSubCommonValues</include>
+			<label>$INFO[Skin.String(SubPictures.6.Label)]</label>
+			<onclick>$INFO[Skin.String(SubPictures.6.Path)]</onclick>
+			<visible>!IsEmpty(Skin.String(SubPictures.6.Path))</visible>
+		</control>
+		<control type="image" id="90154">
 			<width>35</width>
 			<height>35</height>
 			<texture border="0,0,0,3">HomeSubEnd.png</texture>
@@ -300,30 +353,46 @@
 		</control>
 		<control type="button" id="90143">
 			<include>ButtonHomeSubCommonValues</include>
-			<label>19019</label>
-			<onclick>ActivateWindow(TVChannels)</onclick>
+			<label>$VAR[SubMenuLiveTVOne]</label>
+			<onclick condition="IsEmpty(Skin.String(SubLiveTV.1.Path))">ActivateWindow(TVChannels)</onclick>
+			<onclick condition="!IsEmpty(Skin.String(SubLiveTV.1.Path))">$INFO[Skin.String(SubLiveTV.1.Path)]</onclick>
+			<visible>!stringcompare(Skin.String(SubLiveTV.1.Path),Hidden)</visible>
 		</control>
 		<control type="button" id="90144">
 			<include>ButtonHomeSubCommonValues</include>
-			<label>19069</label>
-			<onclick>ActivateWindow(TVGuide)</onclick>
+			<label>$VAR[SubMenuLiveTVTwo]</label>
+			<onclick condition="IsEmpty(Skin.String(SubLiveTV.2.Path))">ActivateWindow(TVGuide)</onclick>
+			<onclick condition="!IsEmpty(Skin.String(SubLiveTV.2.Path))">$INFO[Skin.String(SubLiveTV.2.Path)]</onclick>
+			<visible>!stringcompare(Skin.String(SubLiveTV.2.Path),Hidden)</visible>
 		</control>
 		<control type="button" id="90145">
 			<include>ButtonHomeSubCommonValues</include>
-			<label>19163</label>
-			<onclick>ActivateWindow(TVRecordings)</onclick>
+			<label>$VAR[SubMenuLiveTVThree]</label>
+			<onclick condition="IsEmpty(Skin.String(SubLiveTV.3.Path))">ActivateWindow(TVRecordings)</onclick>
+			<onclick condition="!IsEmpty(Skin.String(SubLiveTV.3.Path))">$INFO[Skin.String(SubLiveTV.3.Path)]</onclick>
+			<visible>!stringcompare(Skin.String(SubLiveTV.3.Path),Hidden)</visible>
 		</control>
 		<control type="button" id="90146">
 			<include>ButtonHomeSubCommonValues</include>
-			<label>19040</label>
-			<onclick>ActivateWindow(TVTimers)</onclick>
+			<label>$VAR[SubMenuLiveTVFour]</label>
+			<onclick condition="IsEmpty(Skin.String(SubLiveTV.4.Path))">ActivateWindow(TVTimers)</onclick>
+			<onclick condition="!IsEmpty(Skin.String(SubLiveTV.4.Path))">$INFO[Skin.String(SubLiveTV.4.Path)]</onclick>
+			<visible>!stringcompare(Skin.String(SubLiveTV.4.Path),Hidden)</visible>
 		</control>
 		<control type="button" id="90147">
 			<include>ButtonHomeSubCommonValues</include>
-			<label>137</label>
-			<onclick>ActivateWindow(TVSearch)</onclick>
+			<label>$VAR[SubMenuLiveTVFive]</label>
+			<onclick condition="IsEmpty(Skin.String(SubLiveTV.5.Path))">ActivateWindow(TVSearch)</onclick>
+			<onclick condition="!IsEmpty(Skin.String(SubLiveTV.5.Path))">$INFO[Skin.String(SubLiveTV.5.Path)]</onclick>
+			<visible>!stringcompare(Skin.String(SubLiveTV.5.Path),Hidden)</visible>
 		</control>
-		<control type="image" id="90148">
+		<control type="button" id="90148">
+			<include>ButtonHomeSubCommonValues</include>
+			<label>$INFO[Skin.String(SubLiveTV.6.Label)]</label>
+			<onclick>$INFO[Skin.String(SubLiveTV.6.Path)]</onclick>
+			<visible>!IsEmpty(Skin.String(SubLiveTV.6.Path))</visible>
+		</control>
+		<control type="image" id="90149">
 			<width>35</width>
 			<height>35</height>
 			<texture border="0,0,0,3">HomeSubEnd.png</texture>
@@ -337,30 +406,243 @@
 		</control>
 		<control type="button" id="90243">
 			<include>ButtonHomeSubCommonValues</include>
-			<label>19019</label>
-			<onclick>ActivateWindow(RadioChannels)</onclick>
+			<label>$VAR[SubMenuRadioOne]</label>
+			<onclick condition="IsEmpty(Skin.String(SubRadio.1.Path))">ActivateWindow(RadioChannels)</onclick>
+			<onclick condition="!IsEmpty(Skin.String(SubRadio.1.Path))">$INFO[Skin.String(SubRadio.1.Path)]</onclick>
+			<visible>!stringcompare(Skin.String(SubRadio.1.Path),Hidden)</visible>
 		</control>
 		<control type="button" id="90244">
 			<include>ButtonHomeSubCommonValues</include>
-			<label>19069</label>
-			<onclick>ActivateWindow(RadioGuide)</onclick>
+			<label>$VAR[SubMenuRadioTwo]</label>
+			<onclick condition="IsEmpty(Skin.String(SubRadio.2.Path))">ActivateWindow(RadioGuide)</onclick>
+			<onclick condition="!IsEmpty(Skin.String(SubRadio.2.Path))">$INFO[Skin.String(SubRadio.2.Path)]</onclick>
+			<visible>!stringcompare(Skin.String(SubRadio.2.Path),Hidden)</visible>
 		</control>
 		<control type="button" id="90245">
 			<include>ButtonHomeSubCommonValues</include>
-			<label>19163</label>
-			<onclick>ActivateWindow(RadioRecordings)</onclick>
+			<label>$VAR[SubMenuRadioThree]</label>
+			<onclick condition="IsEmpty(Skin.String(SubRadio.3.Path))">ActivateWindow(RadioRecordings)</onclick>
+			<onclick condition="!IsEmpty(Skin.String(SubRadio.3.Path))">$INFO[Skin.String(SubRadio.3.Path)]</onclick>
+			<visible>!stringcompare(Skin.String(SubRadio.3.Path),Hidden)</visible>
 		</control>
 		<control type="button" id="90246">
 			<include>ButtonHomeSubCommonValues</include>
-			<label>19040</label>
-			<onclick>ActivateWindow(RadioTimers)</onclick>
+			<label>$VAR[SubMenuRadioFour]</label>
+			<onclick condition="IsEmpty(Skin.String(SubRadio.4.Path))">ActivateWindow(RadioTimers)</onclick>
+			<onclick condition="!IsEmpty(Skin.String(SubRadio.4.Path))">$INFO[Skin.String(SubRadio.4.Path)]</onclick>
+			<visible>!stringcompare(Skin.String(SubRadio.4.Path),Hidden)</visible>
 		</control>
 		<control type="button" id="90247">
 			<include>ButtonHomeSubCommonValues</include>
-			<label>137</label>
-			<onclick>ActivateWindow(RadioSearch)</onclick>
+			<label>$VAR[SubMenuRadioFive]</label>
+			<onclick condition="IsEmpty(Skin.String(SubRadio.5.Path))">ActivateWindow(RadioSearch)</onclick>
+			<onclick condition="!IsEmpty(Skin.String(SubRadio.5.Path))">$INFO[Skin.String(SubRadio.5.Path)]</onclick>
+			<visible>!stringcompare(Skin.String(SubRadio.5.Path),Hidden)</visible>
 		</control>
-		<control type="image" id="90248">
+		<control type="button" id="90248">
+			<include>ButtonHomeSubCommonValues</include>
+			<label>$INFO[Skin.String(SubRadio.6.Label)]</label>
+			<onclick>$INFO[Skin.String(SubRadio.6.Path)]</onclick>
+			<visible>!IsEmpty(Skin.String(SubRadio.6.Path))</visible>
+		</control>
+		<control type="image" id="90249">
+			<width>35</width>
+			<height>35</height>
+			<texture border="0,0,0,3">HomeSubEnd.png</texture>
+		</control>
+	</include>
+	<include name="HomeSubMenuConcerts">
+		<control type="image" id="90251">
+			<width>35</width>
+			<height>35</height>
+			<texture border="0,0,0,3" flipx="true">HomeSubEnd.png</texture>
+		</control>
+		<control type="button" id="90252">
+			<include>ButtonHomeSubCommonValues</include>
+			<label>$VAR[SubMenuConcertsOne]</label>
+			<onclick condition="IsEmpty(Skin.String(SubConcerts.1.Path))">ActivateWindow(2126),return</onclick>
+			<onclick condition="!IsEmpty(Skin.String(SubConcerts.1.Path))">$INFO[Skin.String(SubConcerts.1.Path)]</onclick>
+			<visible>!stringcompare(Skin.String(SubConcerts.1.Path),Hidden)</visible>
+		</control>
+		<control type="button" id="90253">
+			<include>ButtonHomeSubCommonValues</include>
+			<label>$VAR[SubMenuConcertsTwo]</label>
+			<onclick condition="IsEmpty(Skin.String(SubConcerts.2.Path))">ActivateWindow(Videos,MusicVideoTitles,return)</onclick>
+			<onclick condition="!IsEmpty(Skin.String(SubConcerts.2.Path))">$INFO[Skin.String(SubConcerts.2.Path)]</onclick>
+			<visible>!stringcompare(Skin.String(SubConcerts.2.Path),Hidden)</visible>
+		</control>
+		<control type="button" id="90254">
+			<include>ButtonHomeSubCommonValues</include>
+			<label>$VAR[SubMenuConcertsThree]</label>
+			<onclick condition="IsEmpty(Skin.String(SubConcerts.3.Path))">ActivateWindow(Videos,MusicVideoGenres,return)</onclick>
+			<onclick condition="!IsEmpty(Skin.String(SubConcerts.3.Path))">$INFO[Skin.String(SubConcerts.3.Path)]</onclick>
+			<visible>!stringcompare(Skin.String(SubConcerts.3.Path),Hidden)</visible>
+		</control>
+		<control type="button" id="90255">
+			<include>ButtonHomeSubCommonValues</include>
+			<label>$VAR[SubMenuConcertsFour]</label>
+			<onclick condition="IsEmpty(Skin.String(SubConcerts.4.Path))">ActivateWindow(Videos,MusicVideoYears,return)</onclick>
+			<onclick condition="!IsEmpty(Skin.String(SubConcerts.4.Path))">$INFO[Skin.String(SubConcerts.4.Path)]</onclick>
+			<visible>!stringcompare(Skin.String(SubConcerts.4.Path),Hidden)</visible>
+		</control>
+		<control type="button" id="90256">
+			<include>ButtonHomeSubCommonValues</include>
+			<label>$VAR[SubMenuConcertsFive]</label>
+			<onclick condition="IsEmpty(Skin.String(SubConcerts.5.Path))">ActivateWindow(Videos,MusicVideoTags,return)</onclick>
+			<onclick condition="!IsEmpty(Skin.String(SubConcerts.5.Path))">$INFO[Skin.String(SubConcerts.5.Path)]</onclick>
+			<visible>!stringcompare(Skin.String(SubConcerts.5.Path),Hidden)</visible>
+		</control>
+		<control type="button" id="90257">
+			<include>ButtonHomeSubCommonValues</include>
+			<label>$INFO[Skin.String(SubConcerts.6.Label)]</label>
+			<onclick>$INFO[Skin.String(SubConcerts.6.Path)]</onclick>
+			<visible>!IsEmpty(Skin.String(SubConcerts.6.Path))</visible>
+		</control>
+		<control type="image" id="90258">
+			<width>35</width>
+			<height>35</height>
+			<texture border="0,0,0,3">HomeSubEnd.png</texture>
+		</control>
+	</include>
+	<include name="HomeSubMenuPrograms">
+		<control type="image" id="90261">
+			<width>35</width>
+			<height>35</height>
+			<texture border="0,0,0,3" flipx="true">HomeSubEnd.png</texture>
+		</control>
+		<control type="button" id="90262">
+			<include>ButtonHomeSubCommonValues</include>
+			<label>$INFO[Skin.String(SubProg.1.Label)]</label>
+			<onclick>$INFO[Skin.String(SubProg.1.Path)]</onclick>
+			<visible>!IsEmpty(Skin.String(SubProg.1.Path))</visible>
+		</control>
+		<control type="button" id="90263">
+			<include>ButtonHomeSubCommonValues</include>
+			<label>$INFO[Skin.String(SubProg.2.Label)]</label>
+			<onclick>$INFO[Skin.String(SubProg.2.Path)]</onclick>
+			<visible>!IsEmpty(Skin.String(SubProg.2.Path))</visible>
+		</control>
+		<control type="button" id="90264">
+			<include>ButtonHomeSubCommonValues</include>
+			<label>$INFO[Skin.String(SubProg.3.Label)]</label>
+			<onclick>$INFO[Skin.String(SubProg.3.Path)]</onclick>
+			<visible>!IsEmpty(Skin.String(SubProg.3.Path))</visible>
+		</control>
+		<control type="button" id="90265">
+			<include>ButtonHomeSubCommonValues</include>
+			<label>$INFO[Skin.String(SubProg.4.Label)]</label>
+			<onclick>$INFO[Skin.String(SubProg.4.Path)]</onclick>
+			<visible>!IsEmpty(Skin.String(SubProg.4.Path))</visible>
+		</control>
+		<control type="button" id="90266">
+			<include>ButtonHomeSubCommonValues</include>
+			<label>$INFO[Skin.String(SubProg.5.Label)]</label>
+			<onclick>$INFO[Skin.String(SubProg.5.Path)]</onclick>
+			<visible>!IsEmpty(Skin.String(SubProg.5.Path))</visible>
+		</control>
+		<control type="button" id="90267">
+			<include>ButtonHomeSubCommonValues</include>
+			<label>$INFO[Skin.String(SubProg.6.Label)]</label>
+			<onclick>$INFO[Skin.String(SubProg.6.Path)]</onclick>
+			<visible>!IsEmpty(Skin.String(SubProg.6.Path))</visible>
+		</control>
+		<control type="image" id="90268">
+			<width>35</width>
+			<height>35</height>
+			<texture border="0,0,0,3">HomeSubEnd.png</texture>
+		</control>
+	</include>
+	<include name="HomeSubMenuUserOne">
+		<control type="image" id="90261">
+			<width>35</width>
+			<height>35</height>
+			<texture border="0,0,0,3" flipx="true">HomeSubEnd.png</texture>
+		</control>
+		<control type="button" id="90272">
+			<include>ButtonHomeSubCommonValues</include>
+			<label>$INFO[Skin.String(UserSubOne.1.Label)]</label>
+			<onclick>$INFO[Skin.String(UserSubOne.1.Path)]</onclick>
+			<visible>!IsEmpty(Skin.String(UserSubOne.1.Path))</visible>
+		</control>
+		<control type="button" id="90273">
+			<include>ButtonHomeSubCommonValues</include>
+			<label>$INFO[Skin.String(UserSubOne.2.Label)]</label>
+			<onclick>$INFO[Skin.String(UserSubOne.2.Path)]</onclick>
+			<visible>!IsEmpty(Skin.String(UserSubOne.2.Path))</visible>
+		</control>
+		<control type="button" id="90274">
+			<include>ButtonHomeSubCommonValues</include>
+			<label>$INFO[Skin.String(UserSubOne.3.Label)]</label>
+			<onclick>$INFO[Skin.String(UserSubOne.3.Path)]</onclick>
+			<visible>!IsEmpty(Skin.String(UserSubOne.3.Path))</visible>
+		</control>
+		<control type="button" id="90275">
+			<include>ButtonHomeSubCommonValues</include>
+			<label>$INFO[Skin.String(UserSubOne.4.Label)]</label>
+			<onclick>$INFO[Skin.String(UserSubOne.4.Path)]</onclick>
+			<visible>!IsEmpty(Skin.String(UserSubOne.4.Path))</visible>
+		</control>
+		<control type="button" id="90276">
+			<include>ButtonHomeSubCommonValues</include>
+			<label>$INFO[Skin.String(UserSubOne.5.Label)]</label>
+			<onclick>$INFO[Skin.String(UserSubOne.5.Path)]</onclick>
+			<visible>!IsEmpty(Skin.String(UserSubOne.5.Path))</visible>
+		</control>
+		<control type="button" id="90277">
+			<include>ButtonHomeSubCommonValues</include>
+			<label>$INFO[Skin.String(UserSubOne.6.Label)]</label>
+			<onclick>$INFO[Skin.String(UserSubOne.6.Path)]</onclick>
+			<visible>!IsEmpty(Skin.String(UserSubOne.6.Path))</visible>
+		</control>
+		<control type="image" id="90278">
+			<width>35</width>
+			<height>35</height>
+			<texture border="0,0,0,3">HomeSubEnd.png</texture>
+		</control>
+	</include>
+	<include name="HomeSubMenuUserTwo">
+		<control type="image" id="90281">
+			<width>35</width>
+			<height>35</height>
+			<texture border="0,0,0,3" flipx="true">HomeSubEnd.png</texture>
+		</control>
+		<control type="button" id="90282">
+			<include>ButtonHomeSubCommonValues</include>
+			<label>$INFO[Skin.String(UserSubTwo.1.Label)]</label>
+			<onclick>$INFO[Skin.String(UserSubTwo.1.Path)]</onclick>
+			<visible>!IsEmpty(Skin.String(UserSubTwo.1.Path))</visible>
+		</control>
+		<control type="button" id="90283">
+			<include>ButtonHomeSubCommonValues</include>
+			<label>$INFO[Skin.String(UserSubTwo.2.Label)]</label>
+			<onclick>$INFO[Skin.String(UserSubTwo.2.Path)]</onclick>
+			<visible>!IsEmpty(Skin.String(UserSubTwo.2.Path))</visible>
+		</control>
+		<control type="button" id="90284">
+			<include>ButtonHomeSubCommonValues</include>
+			<label>$INFO[Skin.String(UserSubTwo.3.Label)]</label>
+			<onclick>$INFO[Skin.String(UserSubTwo.3.Path)]</onclick>
+			<visible>!IsEmpty(Skin.String(UserSubTwo.3.Path))</visible>
+		</control>
+		<control type="button" id="90285">
+			<include>ButtonHomeSubCommonValues</include>
+			<label>$INFO[Skin.String(UserSubTwo.4.Label)]</label>
+			<onclick>$INFO[Skin.String(UserSubTwo.4.Path)]</onclick>
+			<visible>!IsEmpty(Skin.String(UserSubTwo.4.Path))</visible>
+		</control>
+		<control type="button" id="90286">
+			<include>ButtonHomeSubCommonValues</include>
+			<label>$INFO[Skin.String(UserSubTwo.5.Label)]</label>
+			<onclick>$INFO[Skin.String(UserSubTwo.5.Path)]</onclick>
+			<visible>!IsEmpty(Skin.String(UserSubTwo.5.Path))</visible>
+		</control>
+		<control type="button" id="90287">
+			<include>ButtonHomeSubCommonValues</include>
+			<label>$INFO[Skin.String(UserSubTwo.6.Label)]</label>
+			<onclick>$INFO[Skin.String(UserSubTwo.6.Path)]</onclick>
+			<visible>!IsEmpty(Skin.String(UserSubTwo.6.Path))</visible>
+		</control>
+		<control type="image" id="90288">
 			<width>35</width>
 			<height>35</height>
 			<texture border="0,0,0,3">HomeSubEnd.png</texture>

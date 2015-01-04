@@ -752,9 +752,29 @@
 		<value condition="!IsEmpty(Skin.String(UserSelectTwoSubMenu))">$INFO[Skin.String(UserSelectTwoSubMenu)]</value>
 		<value>$LOCALIZE[31231]</value>
 	</variable>
-	<variable name="UsersSubSelectThreeName" type="text">
-		<value condition="!IsEmpty(Skin.String(UserSelectThreeSubMenu))">$INFO[Skin.String(UserSelectThreeSubMenu)]</value>
-		<value>$LOCALIZE[31232]</value>
+	<variable name="UsersSubRadioName" type="text">
+		<value condition="!IsEmpty(Skin.String(UserRadioSubMenu))">$INFO[Skin.String(UserRadioSubMenu)]</value>
+		<value>$LOCALIZE[19021]</value>
+	</variable>
+	<variable name="SubMenuRadioOne" type="text">
+		<value condition="!IsEmpty(Skin.String(SubRadio.1.Label))">$INFO[Skin.String(SubRadio.1.Label)]</value>
+		<value>$LOCALIZE[19019]</value>
+	</variable>
+	<variable name="SubMenuRadioTwo" type="text">
+		<value condition="!IsEmpty(Skin.String(SubRadio.2.Label))">$INFO[Skin.String(SubRadio.2.Label)]</value>
+		<value>$LOCALIZE[19069]</value>
+	</variable>
+	<variable name="SubMenuRadioThree" type="text">
+		<value condition="!IsEmpty(Skin.String(SubRadio.3.Label))">$INFO[Skin.String(SubRadio.3.Label)]</value>
+		<value>$LOCALIZE[19163]</value>
+	</variable>
+	<variable name="SubMenuRadioFour" type="text">
+		<value condition="!IsEmpty(Skin.String(SubRadio.4.Label))">$INFO[Skin.String(SubRadio.4.Label)]</value>
+		<value>$LOCALIZE[19040]</value>
+	</variable>
+	<variable name="SubMenuRadioFive" type="text">
+		<value condition="!IsEmpty(Skin.String(SubRadio.5.Label))">$INFO[Skin.String(SubRadio.5.Label)]</value>
+		<value>$LOCALIZE[137]</value>
 	</variable>
 	<variable name="SubMenuVideosOne" type="text">
 		<value condition="!IsEmpty(Skin.String(SubVideos.1.Label))">$INFO[Skin.String(SubVideos.1.Label)]</value>
@@ -898,48 +918,40 @@
 	</variable>
 	<variable name="SubMenuLiveTVOne" type="text">
 		<value condition="!IsEmpty(Skin.String(SubLiveTV.1.Label))">$INFO[Skin.String(SubLiveTV.1.Label)]</value>
-		<value>$LOCALIZE[19023]</value>
+		<value>$LOCALIZE[19019]</value>
 	</variable>
 	<variable name="SubMenuLiveTVTwo" type="text">
 		<value condition="!IsEmpty(Skin.String(SubLiveTV.2.Label))">$INFO[Skin.String(SubLiveTV.2.Label)]</value>
-		<value>$LOCALIZE[19024]</value>
+		<value>$LOCALIZE[19069]</value>
 	</variable>
 	<variable name="SubMenuLiveTVThree" type="text">
 		<value condition="!IsEmpty(Skin.String(SubLiveTV.3.Label))">$INFO[Skin.String(SubLiveTV.3.Label)]</value>
-		<value>$LOCALIZE[19069]</value>
+		<value>$LOCALIZE[19163]</value>
 	</variable>
 	<variable name="SubMenuLiveTVFour" type="text">
 		<value condition="!IsEmpty(Skin.String(SubLiveTV.4.Label))">$INFO[Skin.String(SubLiveTV.4.Label)]</value>
-		<value>$LOCALIZE[19163]</value>
+		<value>$LOCALIZE[19040]</value>
 	</variable>
 	<variable name="SubMenuLiveTVFive" type="text">
 		<value condition="!IsEmpty(Skin.String(SubLiveTV.5.Label))">$INFO[Skin.String(SubLiveTV.5.Label)]</value>
-		<value>$LOCALIZE[19040]</value>
+		<value>$LOCALIZE[137]</value>
 	</variable>
 	<variable name="SubMenuSystemOne" type="text">
 		<value condition="!IsEmpty(Skin.String(SubSystem.1.Label))">$INFO[Skin.String(SubSystem.1.Label)]</value>
-		<value>$LOCALIZE[20077]</value>
+		<value>$LOCALIZE[5]</value>
 	</variable>
 	<variable name="SubMenuSystemTwo" type="text">
 		<value condition="!IsEmpty(Skin.String(SubSystem.2.Label))">$INFO[Skin.String(SubSystem.2.Label)]</value>
 		<value condition="IsEmpty(Skin.String(SubSystem.2.Label)) + System.HasAddon(script.raspbmc.settings)">$LOCALIZE[31002]</value>
-		<value>$LOCALIZE[31001]</value>
+		<value>$LOCALIZE[7]</value>
 	</variable>
 	<variable name="SubMenuSystemThree" type="text">
 		<value condition="!IsEmpty(Skin.String(SubSystem.3.Label))">$INFO[Skin.String(SubSystem.3.Label)]</value>
-		<value>$LOCALIZE[7]</value>
+		<value>$LOCALIZE[13200]</value>
 	</variable>
 	<variable name="SubMenuSystemFour" type="text">
 		<value condition="!IsEmpty(Skin.String(SubSystem.4.Label))">$INFO[Skin.String(SubSystem.4.Label)]</value>
-		<value>$LOCALIZE[10040]</value>
-	</variable>
-	<variable name="SubMenuSystemFive" type="text">
-		<value condition="!IsEmpty(Skin.String(SubSystem.5.Label))">$INFO[Skin.String(SubSystem.5.Label)]</value>
-		<value>$LOCALIZE[13200]</value>
-	</variable>
-	<variable name="SubMenuSystemSix" type="text">
-		<value condition="!IsEmpty(Skin.String(SubSystem.6.Label))">$INFO[Skin.String(SubSystem.6.Label)]</value>
-		<value>$LOCALIZE[13005]</value>
+		<value>$LOCALIZE[130]</value>
 	</variable>
 	<variable name="MenuOneBackgroundLabel" type="text">
 		<value condition="StringCompare(Skin.String(HomeItem.1.Display),Theme) | Skin.HasSetting(HolidayEffects) | Skin.HasSetting(SingleGlobalBackground)">$LOCALIZE[31366]</value>
@@ -1023,11 +1035,12 @@
 		<value condition="stringcompare(Skin.String(HomeItem.1.Sub),Pictures)">$VAR[UsersSubPicturesName]</value>
 		<value condition="stringcompare(Skin.String(HomeItem.1.Sub),UserOne)">$VAR[UsersSubSelectOneName]</value>
 		<value condition="stringcompare(Skin.String(HomeItem.1.Sub),UserTwo)">$VAR[UsersSubSelectTwoName]</value>
-		<value condition="stringcompare(Skin.String(HomeItem.1.Sub),UserThree)">$VAR[UsersSubSelectThreeName]</value>
+		<value condition="stringcompare(Skin.String(HomeItem.1.Sub),Radio)">$VAR[UsersSubRadioName]</value>
 		<value condition="stringcompare(Skin.String(HomeItem.1.Sub),Favourites)">$LOCALIZE[1036]</value>
 		<value condition="stringcompare(Skin.String(HomeItem.1.Sub),LiveTV)">$LOCALIZE[31502]</value>
 		<value condition="stringcompare(Skin.String(HomeItem.1.Sub),Settings)">$LOCALIZE[10004]</value>
 		<value condition="stringcompare(Skin.String(HomeItem.1.Sub),Shutdown)">$LOCALIZE[13005]</value>
+		<value condition="stringcompare(Skin.String(HomeItem.1.Sub),PlayDisc)">$LOCALIZE[13391]</value>
 		<value>$LOCALIZE[31254]</value>
 	</variable>
 	<variable name="UsrDefItemTwoSubLabel" type="text">
@@ -1040,11 +1053,12 @@
 		<value condition="stringcompare(Skin.String(HomeItem.2.Sub),Pictures)">$VAR[UsersSubPicturesName]</value>
 		<value condition="stringcompare(Skin.String(HomeItem.2.Sub),UserOne)">$VAR[UsersSubSelectOneName]</value>
 		<value condition="stringcompare(Skin.String(HomeItem.2.Sub),UserTwo)">$VAR[UsersSubSelectTwoName]</value>
-		<value condition="stringcompare(Skin.String(HomeItem.2.Sub),UserThree)">$VAR[UsersSubSelectThreeName]</value>
+		<value condition="stringcompare(Skin.String(HomeItem.2.Sub),Radio)">$VAR[UsersSubRadioName]</value>
 		<value condition="stringcompare(Skin.String(HomeItem.2.Sub),Favourites)">$LOCALIZE[1036]</value>
 		<value condition="stringcompare(Skin.String(HomeItem.2.Sub),LiveTV)">$LOCALIZE[31502]</value>
 		<value condition="stringcompare(Skin.String(HomeItem.2.Sub),Settings)">$LOCALIZE[10004]</value>
 		<value condition="stringcompare(Skin.String(HomeItem.2.Sub),Shutdown)">$LOCALIZE[13005]</value>
+		<value condition="stringcompare(Skin.String(HomeItem.2.Sub),PlayDisc)">$LOCALIZE[13391]</value>
 		<value>$LOCALIZE[31254]</value>
 	</variable>
 	<variable name="UsrDefItemThreeSubLabel" type="text">
@@ -1057,11 +1071,12 @@
 		<value condition="stringcompare(Skin.String(HomeItem.3.Sub),Pictures)">$VAR[UsersSubPicturesName]</value>
 		<value condition="stringcompare(Skin.String(HomeItem.3.Sub),UserOne)">$VAR[UsersSubSelectOneName]</value>
 		<value condition="stringcompare(Skin.String(HomeItem.3.Sub),UserTwo)">$VAR[UsersSubSelectTwoName]</value>
-		<value condition="stringcompare(Skin.String(HomeItem.3.Sub),UserThree)">$VAR[UsersSubSelectThreeName]</value>
+		<value condition="stringcompare(Skin.String(HomeItem.3.Sub),Radio)">$VAR[UsersSubRadioName]</value>
 		<value condition="stringcompare(Skin.String(HomeItem.3.Sub),Favourites)">$LOCALIZE[1036]</value>
 		<value condition="stringcompare(Skin.String(HomeItem.3.Sub),LiveTV)">$LOCALIZE[31502]</value>
 		<value condition="stringcompare(Skin.String(HomeItem.3.Sub),Settings)">$LOCALIZE[10004]</value>
 		<value condition="stringcompare(Skin.String(HomeItem.3.Sub),Shutdown)">$LOCALIZE[13005]</value>
+		<value condition="stringcompare(Skin.String(HomeItem.3.Sub),PlayDisc)">$LOCALIZE[13391]</value>
 		<value>$LOCALIZE[31254]</value>
 	</variable>
 	<variable name="UsrDefItemFourSubLabel" type="text">
@@ -1074,11 +1089,12 @@
 		<value condition="stringcompare(Skin.String(HomeItem.4.Sub),Pictures)">$VAR[UsersSubPicturesName]</value>
 		<value condition="stringcompare(Skin.String(HomeItem.4.Sub),UserOne)">$VAR[UsersSubSelectOneName]</value>
 		<value condition="stringcompare(Skin.String(HomeItem.4.Sub),UserTwo)">$VAR[UsersSubSelectTwoName]</value>
-		<value condition="stringcompare(Skin.String(HomeItem.4.Sub),UserThree)">$VAR[UsersSubSelectThreeName]</value>
+		<value condition="stringcompare(Skin.String(HomeItem.4.Sub),Radio)">$VAR[UsersSubRadioName]</value>
 		<value condition="stringcompare(Skin.String(HomeItem.4.Sub),Favourites)">$LOCALIZE[1036]</value>
 		<value condition="stringcompare(Skin.String(HomeItem.4.Sub),LiveTV)">$LOCALIZE[31502]</value>
 		<value condition="stringcompare(Skin.String(HomeItem.4.Sub),Settings)">$LOCALIZE[10004]</value>
 		<value condition="stringcompare(Skin.String(HomeItem.4.Sub),Shutdown)">$LOCALIZE[13005]</value>
+		<value condition="stringcompare(Skin.String(HomeItem.4.Sub),PlayDisc)">$LOCALIZE[13391]</value>
 		<value>$LOCALIZE[31254]</value>
 	</variable>
 	<variable name="UsrDefItemFiveSubLabel" type="text">
@@ -1091,11 +1107,12 @@
 		<value condition="stringcompare(Skin.String(HomeItem.5.Sub),Pictures)">$VAR[UsersSubPicturesName]</value>
 		<value condition="stringcompare(Skin.String(HomeItem.5.Sub),UserOne)">$VAR[UsersSubSelectOneName]</value>
 		<value condition="stringcompare(Skin.String(HomeItem.5.Sub),UserTwo)">$VAR[UsersSubSelectTwoName]</value>
-		<value condition="stringcompare(Skin.String(HomeItem.5.Sub),UserThree)">$VAR[UsersSubSelectThreeName]</value>
+		<value condition="stringcompare(Skin.String(HomeItem.5.Sub),Radio)">$VAR[UsersSubRadioName]</value>
 		<value condition="stringcompare(Skin.String(HomeItem.5.Sub),Favourites)">$LOCALIZE[1036]</value>
 		<value condition="stringcompare(Skin.String(HomeItem.5.Sub),LiveTV)">$LOCALIZE[31502]</value>
 		<value condition="stringcompare(Skin.String(HomeItem.5.Sub),Settings)">$LOCALIZE[10004]</value>
 		<value condition="stringcompare(Skin.String(HomeItem.5.Sub),Shutdown)">$LOCALIZE[13005]</value>
+		<value condition="stringcompare(Skin.String(HomeItem.5.Sub),PlayDisc)">$LOCALIZE[13391]</value>
 		<value>$LOCALIZE[31254]</value>
 	</variable>
 	<variable name="UsrDefItemSixSubLabel" type="text">
@@ -1108,11 +1125,12 @@
 		<value condition="stringcompare(Skin.String(HomeItem.6.Sub),Pictures)">$VAR[UsersSubPicturesName]</value>
 		<value condition="stringcompare(Skin.String(HomeItem.6.Sub),UserOne)">$VAR[UsersSubSelectOneName]</value>
 		<value condition="stringcompare(Skin.String(HomeItem.6.Sub),UserTwo)">$VAR[UsersSubSelectTwoName]</value>
-		<value condition="stringcompare(Skin.String(HomeItem.6.Sub),UserThree)">$VAR[UsersSubSelectThreeName]</value>
+		<value condition="stringcompare(Skin.String(HomeItem.6.Sub),Radio)">$VAR[UsersSubRadioName]</value>
 		<value condition="stringcompare(Skin.String(HomeItem.6.Sub),Favourites)">$LOCALIZE[1036]</value>
 		<value condition="stringcompare(Skin.String(HomeItem.6.Sub),LiveTV)">$LOCALIZE[31502]</value>
 		<value condition="stringcompare(Skin.String(HomeItem.6.Sub),Settings)">$LOCALIZE[10004]</value>
 		<value condition="stringcompare(Skin.String(HomeItem.6.Sub),Shutdown)">$LOCALIZE[13005]</value>
+		<value condition="stringcompare(Skin.String(HomeItem.6.Sub),PlayDisc)">$LOCALIZE[13391]</value>
 		<value>$LOCALIZE[31254]</value>
 	</variable>
 	<variable name="UsrDefItemSevenSubLabel" type="text">
@@ -1125,11 +1143,12 @@
 		<value condition="stringcompare(Skin.String(HomeItem.7.Sub),Pictures)">$VAR[UsersSubPicturesName]</value>
 		<value condition="stringcompare(Skin.String(HomeItem.7.Sub),UserOne)">$VAR[UsersSubSelectOneName]</value>
 		<value condition="stringcompare(Skin.String(HomeItem.7.Sub),UserTwo)">$VAR[UsersSubSelectTwoName]</value>
-		<value condition="stringcompare(Skin.String(HomeItem.7.Sub),UserThree)">$VAR[UsersSubSelectThreeName]</value>
+		<value condition="stringcompare(Skin.String(HomeItem.7.Sub),Radio)">$VAR[UsersSubRadioName]</value>
 		<value condition="stringcompare(Skin.String(HomeItem.7.Sub),Favourites)">$LOCALIZE[1036]</value>
 		<value condition="stringcompare(Skin.String(HomeItem.7.Sub),LiveTV)">$LOCALIZE[31502]</value>
 		<value condition="stringcompare(Skin.String(HomeItem.7.Sub),Settings)">$LOCALIZE[10004]</value>
 		<value condition="stringcompare(Skin.String(HomeItem.7.Sub),Shutdown)">$LOCALIZE[13005]</value>
+		<value condition="stringcompare(Skin.String(HomeItem.7.Sub),PlayDisc)">$LOCALIZE[13391]</value>
 		<value>$LOCALIZE[31254]</value>
 	</variable>
 	<variable name="UsrDefItemEightSubLabel" type="text">
@@ -1142,11 +1161,12 @@
 		<value condition="stringcompare(Skin.String(HomeItem.8.Sub),Pictures)">$VAR[UsersSubPicturesName]</value>
 		<value condition="stringcompare(Skin.String(HomeItem.8.Sub),UserOne)">$VAR[UsersSubSelectOneName]</value>
 		<value condition="stringcompare(Skin.String(HomeItem.8.Sub),UserTwo)">$VAR[UsersSubSelectTwoName]</value>
-		<value condition="stringcompare(Skin.String(HomeItem.8.Sub),UserThree)">$VAR[UsersSubSelectThreeName]</value>
+		<value condition="stringcompare(Skin.String(HomeItem.8.Sub),Radio)">$VAR[UsersSubRadioName]</value>
 		<value condition="stringcompare(Skin.String(HomeItem.8.Sub),Favourites)">$LOCALIZE[1036]</value>
 		<value condition="stringcompare(Skin.String(HomeItem.8.Sub),LiveTV)">$LOCALIZE[31502]</value>
 		<value condition="stringcompare(Skin.String(HomeItem.8.Sub),Settings)">$LOCALIZE[10004]</value>
 		<value condition="stringcompare(Skin.String(HomeItem.8.Sub),Shutdown)">$LOCALIZE[13005]</value>
+		<value condition="stringcompare(Skin.String(HomeItem.8.Sub),PlayDisc)">$LOCALIZE[13391]</value>
 		<value>$LOCALIZE[31254]</value>
 	</variable>
 	<variable name="UsrDefItemNineSubLabel" type="text">
@@ -1159,11 +1179,12 @@
 		<value condition="stringcompare(Skin.String(HomeItem.9.Sub),Pictures)">$VAR[UsersSubPicturesName]</value>
 		<value condition="stringcompare(Skin.String(HomeItem.9.Sub),UserOne)">$VAR[UsersSubSelectOneName]</value>
 		<value condition="stringcompare(Skin.String(HomeItem.9.Sub),UserTwo)">$VAR[UsersSubSelectTwoName]</value>
-		<value condition="stringcompare(Skin.String(HomeItem.9.Sub),UserThree)">$VAR[UsersSubSelectThreeName]</value>
+		<value condition="stringcompare(Skin.String(HomeItem.9.Sub),Radio)">$VAR[UsersSubRadioName]</value>
 		<value condition="stringcompare(Skin.String(HomeItem.9.Sub),Favourites)">$LOCALIZE[1036]</value>
 		<value condition="stringcompare(Skin.String(HomeItem.9.Sub),LiveTV)">$LOCALIZE[31502]</value>
 		<value condition="stringcompare(Skin.String(HomeItem.9.Sub),Settings)">$LOCALIZE[10004]</value>
 		<value condition="stringcompare(Skin.String(HomeItem.9.Sub),Shutdown)">$LOCALIZE[13005]</value>
+		<value condition="stringcompare(Skin.String(HomeItem.9.Sub),PlayDisc)">$LOCALIZE[13391]</value>
 		<value>$LOCALIZE[31254]</value>
 	</variable>
 	<variable name="UsrDefItemTenSubLabel" type="text">
@@ -1176,11 +1197,12 @@
 		<value condition="stringcompare(Skin.String(HomeItem.10.Sub),Pictures)">$VAR[UsersSubPicturesName]</value>
 		<value condition="stringcompare(Skin.String(HomeItem.10.Sub),UserOne)">$VAR[UsersSubSelectOneName]</value>
 		<value condition="stringcompare(Skin.String(HomeItem.10.Sub),UserTwo)">$VAR[UsersSubSelectTwoName]</value>
-		<value condition="stringcompare(Skin.String(HomeItem.10.Sub),UserThree)">$VAR[UsersSubSelectThreeName]</value>
+		<value condition="stringcompare(Skin.String(HomeItem.10.Sub),Radio)">$VAR[UsersSubRadioName]</value>
 		<value condition="stringcompare(Skin.String(HomeItem.10.Sub),Favourites)">$LOCALIZE[1036]</value>
 		<value condition="stringcompare(Skin.String(HomeItem.10.Sub),LiveTV)">$LOCALIZE[31502]</value>
 		<value condition="stringcompare(Skin.String(HomeItem.10.Sub),Settings)">$LOCALIZE[10004]</value>
 		<value condition="stringcompare(Skin.String(HomeItem.10.Sub),Shutdown)">$LOCALIZE[13005]</value>
+		<value condition="stringcompare(Skin.String(HomeItem.10.Sub),PlayDisc)">$LOCALIZE[13391]</value>
 		<value>$LOCALIZE[31254]</value>
 	</variable>
 	<variable name="UsrDefItemElevenSubLabel" type="text">
@@ -1193,11 +1215,12 @@
 		<value condition="stringcompare(Skin.String(HomeItem.11.Sub),Pictures)">$VAR[UsersSubPicturesName]</value>
 		<value condition="stringcompare(Skin.String(HomeItem.11.Sub),UserOne)">$VAR[UsersSubSelectOneName]</value>
 		<value condition="stringcompare(Skin.String(HomeItem.11.Sub),UserTwo)">$VAR[UsersSubSelectTwoName]</value>
-		<value condition="stringcompare(Skin.String(HomeItem.11.Sub),UserThree)">$VAR[UsersSubSelectThreeName]</value>
+		<value condition="stringcompare(Skin.String(HomeItem.11.Sub),Radio)">$VAR[UsersSubRadioName]</value>
 		<value condition="stringcompare(Skin.String(HomeItem.11.Sub),Favourites)">$LOCALIZE[1036]</value>
 		<value condition="stringcompare(Skin.String(HomeItem.11.Sub),LiveTV)">$LOCALIZE[31502]</value>
 		<value condition="stringcompare(Skin.String(HomeItem.11.Sub),Settings)">$LOCALIZE[10004]</value>
 		<value condition="stringcompare(Skin.String(HomeItem.11.Sub),Shutdown)">$LOCALIZE[13005]</value>
+		<value condition="stringcompare(Skin.String(HomeItem.11.Sub),PlayDisc)">$LOCALIZE[13391]</value>
 		<value>$LOCALIZE[31254]</value>
 	</variable>
 	<variable name="UsrDefItemTwelveSubLabel" type="text">
@@ -1210,11 +1233,12 @@
 		<value condition="stringcompare(Skin.String(HomeItem.12.Sub),Pictures)">$VAR[UsersSubPicturesName]</value>
 		<value condition="stringcompare(Skin.String(HomeItem.12.Sub),UserOne)">$VAR[UsersSubSelectOneName]</value>
 		<value condition="stringcompare(Skin.String(HomeItem.12.Sub),UserTwo)">$VAR[UsersSubSelectTwoName]</value>
-		<value condition="stringcompare(Skin.String(HomeItem.12.Sub),UserThree)">$VAR[UsersSubSelectThreeName]</value>
+		<value condition="stringcompare(Skin.String(HomeItem.12.Sub),Radio)">$VAR[UsersSubRadioName]</value>
 		<value condition="stringcompare(Skin.String(HomeItem.12.Sub),Favourites)">$LOCALIZE[1036]</value>
 		<value condition="stringcompare(Skin.String(HomeItem.12.Sub),LiveTV)">$LOCALIZE[31502]</value>
 		<value condition="stringcompare(Skin.String(HomeItem.12.Sub),Settings)">$LOCALIZE[10004]</value>
 		<value condition="stringcompare(Skin.String(HomeItem.12.Sub),Shutdown)">$LOCALIZE[13005]</value>
+		<value condition="stringcompare(Skin.String(HomeItem.12.Sub),PlayDisc)">$LOCALIZE[13391]</value>
 		<value>$LOCALIZE[31254]</value>
 	</variable>
 	<variable name="UsrDefItemOneAddOnLabel" type="text">

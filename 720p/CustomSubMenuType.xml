@@ -175,27 +175,27 @@
 						<onclick>Skin.SetString($INFO[Window(home).Property(UsrSelectBtn)].Sub,UserTwo)</onclick>
 						<onclick>ClearProperty(UsrSelectBtn,Home)</onclick>
 					</item>
-					<item>
-						<description>User Selection 3</description>
-						<label>$VAR[UsersSubSelectThreeName]</label>
-						<onclick>Dialog.Close(2116)</onclick>
-						<onclick>Skin.SetString($INFO[Window(home).Property(UsrSelectBtn)].Sub,UserThree)</onclick>
-						<onclick>ClearProperty(UsrSelectBtn,Home)</onclick>
-					</item>
-					<item>
+					<!--item>
 						<description>Favourites</description>
 						<label>$LOCALIZE[1036]</label>
 						<onclick>Dialog.Close(2116)</onclick>
 						<onclick>Skin.SetString($INFO[Window(home).Property(UsrSelectBtn)].Sub,Favourites)</onclick>
 						<onclick>ClearProperty(UsrSelectBtn,Home)</onclick>
-					</item>
+					</item-->
 					<item>
 						<description>LiveTV</description>
 						<label>$LOCALIZE[31502]</label>
 						<onclick>Dialog.Close(2116)</onclick>
 						<onclick>Skin.SetString($INFO[Window(home).Property(UsrSelectBtn)].Sub,LiveTV)</onclick>
 						<onclick>ClearProperty(UsrSelectBtn,Home)</onclick>
-						<visible>System.GetBool(pvrmanager.enabled)</visible>
+						<!--visible>System.GetBool(pvrmanager.enabled)</visible-->
+					</item>
+					<item>
+						<description>Radio</description>
+						<label>$VAR[UsersSubRadioName]</label>
+						<onclick>Dialog.Close(2116)</onclick>
+						<onclick>Skin.SetString($INFO[Window(home).Property(UsrSelectBtn)].Sub,Radio)</onclick>
+						<onclick>ClearProperty(UsrSelectBtn,Home)</onclick>
 					</item>
 					<item>
 						<description>system</description>
@@ -204,11 +204,18 @@
 						<onclick>Skin.SetString($INFO[Window(home).Property(UsrSelectBtn)].Sub,Settings)</onclick>
 						<onclick>ClearProperty(UsrSelectBtn,Home)</onclick>
 					</item>
-					<item>
+					<!--item>
 						<description>Shutdown</description>
 						<label>$LOCALIZE[13005]</label>
 						<onclick>Dialog.Close(2116)</onclick>
 						<onclick>Skin.SetString($INFO[Window(home).Property(UsrSelectBtn)].Sub,Shutdown)</onclick>
+						<onclick>ClearProperty(UsrSelectBtn,Home)</onclick>
+					</item-->
+					<item>
+						<description>DVD Drive</description>
+						<label>$LOCALIZE[13391]</label>
+						<onclick>Dialog.Close(2116)</onclick>
+						<onclick>Skin.SetString($INFO[Window(home).Property(UsrSelectBtn)].Sub,PlayDisc)</onclick>
 						<onclick>ClearProperty(UsrSelectBtn,Home)</onclick>
 					</item>
 				</content>

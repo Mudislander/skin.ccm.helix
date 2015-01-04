@@ -2453,7 +2453,7 @@
 						<shadowcolor>black</shadowcolor>
 						<align>left</align>
 						<aligny>center</aligny>
-						<visible>System.GetBool(pvrmanager.enabled)</visible>
+						<!--visible>System.GetBool(pvrmanager.enabled)</visible-->
 					</control>
 					<control type="button" id="357">
 						<width>750</width>
@@ -2466,7 +2466,7 @@
 						<texturefocus>MenuItemFO.png</texturefocus>
 						<texturenofocus>MenuItemNF.png</texturenofocus>
 						<onclick>Skin.SetString(UserLiveTVSubMenu)</onclick>
-						<visible>System.GetBool(pvrmanager.enabled)</visible>
+						<!--visible>System.GetBool(pvrmanager.enabled)</visible-->
 					</control>
 					<control type="button" id="358">
 						<width>750</width>
@@ -2480,7 +2480,7 @@
 						<texturenofocus>MenuItemNF.png</texturenofocus>
 						<onclick>SetProperty(UsrSelectBtn,SubLiveTV.1,Home)</onclick>
 						<onclick>ActivateWindow(2115)</onclick>
-						<visible>System.GetBool(pvrmanager.enabled)</visible>
+						<!--visible>System.GetBool(pvrmanager.enabled)</visible-->
 					</control>
 					<control type="button" id="359">
 						<width>750</width>
@@ -2494,7 +2494,7 @@
 						<texturenofocus>MenuItemNF.png</texturenofocus>
 						<onclick>SetProperty(UsrSelectBtn,SubLiveTV.2,Home)</onclick>
 						<onclick>ActivateWindow(2115)</onclick>
-						<visible>System.GetBool(pvrmanager.enabled)</visible>
+						<!--visible>System.GetBool(pvrmanager.enabled)</visible-->
 					</control>
 					<control type="button" id="360">
 						<width>750</width>
@@ -2508,7 +2508,7 @@
 						<texturenofocus>MenuItemNF.png</texturenofocus>
 						<onclick>SetProperty(UsrSelectBtn,SubLiveTV.3,Home)</onclick>
 						<onclick>ActivateWindow(2115)</onclick>
-						<visible>System.GetBool(pvrmanager.enabled)</visible>
+						<!--visible>System.GetBool(pvrmanager.enabled)</visible-->
 					</control>
 					<control type="button" id="361">
 						<width>750</width>
@@ -2522,7 +2522,7 @@
 						<texturenofocus>MenuItemNF.png</texturenofocus>
 						<onclick>SetProperty(UsrSelectBtn,SubLiveTV.4,Home)</onclick>
 						<onclick>ActivateWindow(2115)</onclick>
-						<visible>System.GetBool(pvrmanager.enabled)</visible>
+						<!--visible>System.GetBool(pvrmanager.enabled)</visible-->
 					</control>
 					<control type="button" id="362">
 						<width>750</width>
@@ -2536,7 +2536,7 @@
 						<texturenofocus>MenuItemNF.png</texturenofocus>
 						<onclick>SetProperty(UsrSelectBtn,SubLiveTV.5,Home)</onclick>
 						<onclick>ActivateWindow(2115)</onclick>
-						<visible>System.GetBool(pvrmanager.enabled)</visible>
+						<!--visible>System.GetBool(pvrmanager.enabled)</visible-->
 					</control>
 					<control type="button" id="363">
 						<width>750</width>
@@ -2550,9 +2550,109 @@
 						<texturenofocus>MenuItemNF.png</texturenofocus>
 						<onclick>SetProperty(UsrSelectBtn,SubLiveTV.6,Home)</onclick>
 						<onclick>ActivateWindow(2115)</onclick>
-						<visible>System.GetBool(pvrmanager.enabled)</visible>
+						<!--visible>System.GetBool(pvrmanager.enabled)</visible-->
 					</control>
 					<control type="label" id="364">
+						<width>750</width>
+						<height>45</height>
+						<font>font13_title</font>
+						<label>$VAR[UsersSubRadioName] $LOCALIZE[31291]</label>
+						<textcolor>blue</textcolor>
+						<shadowcolor>black</shadowcolor>
+						<align>left</align>
+						<aligny>center</aligny>
+					</control>
+					<control type="button" id="365">
+						<width>750</width>
+						<height>40</height>
+						<font>font13</font>
+						<label>$LOCALIZE[31240]</label>
+						<label2>[COLOR=white]$VAR[UsersSubRadioName][/COLOR]</label2>
+						<textcolor>grey2</textcolor>
+						<focusedcolor>white</focusedcolor>
+						<texturefocus>MenuItemFO.png</texturefocus>
+						<texturenofocus>MenuItemNF.png</texturenofocus>
+						<onclick>Skin.SetString(UserRadioSubMenu)</onclick>
+					</control>
+					<control type="button" id="366">
+						<width>750</width>
+						<height>40</height>
+						<font>font13</font>
+						<label>$LOCALIZE[31315] - 1</label>
+						<label2>[COLOR=selected]$VAR[SubMenuRadioOne][/COLOR]</label2>
+						<textcolor>grey</textcolor>
+						<focusedcolor>white</focusedcolor>
+						<texturefocus>MenuItemFO.png</texturefocus>
+						<texturenofocus>MenuItemNF.png</texturenofocus>
+						<onclick>SetProperty(UsrSelectBtn,SubRadio.1,Home)</onclick>
+						<onclick>ActivateWindow(2115)</onclick>
+					</control>
+					<control type="button" id="367">
+						<width>750</width>
+						<height>40</height>
+						<font>font13</font>
+						<label>$LOCALIZE[31315] - 2</label>
+						<label2>[COLOR=selected]$VAR[SubMenuRadioTwo][/COLOR]</label2>
+						<textcolor>grey</textcolor>
+						<focusedcolor>white</focusedcolor>
+						<texturefocus>MenuItemFO.png</texturefocus>
+						<texturenofocus>MenuItemNF.png</texturenofocus>
+						<onclick>SetProperty(UsrSelectBtn,SubRadio.2,Home)</onclick>
+						<onclick>ActivateWindow(2115)</onclick>
+					</control>
+					<control type="button" id="368">
+						<width>750</width>
+						<height>40</height>
+						<font>font13</font>
+						<label>$LOCALIZE[31315] - 3</label>
+						<label2>[COLOR=selected]$VAR[SubMenuRadioThree][/COLOR]</label2>
+						<textcolor>grey</textcolor>
+						<focusedcolor>white</focusedcolor>
+						<texturefocus>MenuItemFO.png</texturefocus>
+						<texturenofocus>MenuItemNF.png</texturenofocus>
+						<onclick>SetProperty(UsrSelectBtn,SubRadio.3,Home)</onclick>
+						<onclick>ActivateWindow(2115)</onclick>
+					</control>
+					<control type="button" id="369">
+						<width>750</width>
+						<height>40</height>
+						<font>font13</font>
+						<label>$LOCALIZE[31315] - 4</label>
+						<label2>[COLOR=selected]$VAR[SubMenuRadioFour][/COLOR]</label2>
+						<textcolor>grey</textcolor>
+						<focusedcolor>white</focusedcolor>
+						<texturefocus>MenuItemFO.png</texturefocus>
+						<texturenofocus>MenuItemNF.png</texturenofocus>
+						<onclick>SetProperty(UsrSelectBtn,SubRadio.4,Home)</onclick>
+						<onclick>ActivateWindow(2115)</onclick>
+					</control>
+					<control type="button" id="370">
+						<width>750</width>
+						<height>40</height>
+						<font>font13</font>
+						<label>$LOCALIZE[31315] - 5</label>
+						<label2>[COLOR=selected]$VAR[SubMenuRadioFive][/COLOR]</label2>
+						<textcolor>grey</textcolor>
+						<focusedcolor>white</focusedcolor>
+						<texturefocus>MenuItemFO.png</texturefocus>
+						<texturenofocus>MenuItemNF.png</texturenofocus>
+						<onclick>SetProperty(UsrSelectBtn,SubRadio.5,Home)</onclick>
+						<onclick>ActivateWindow(2115)</onclick>
+					</control>
+					<control type="button" id="371">
+						<width>750</width>
+						<height>40</height>
+						<font>font13</font>
+						<label>$LOCALIZE[31315] - 6</label>
+						<label2>[COLOR=selected]$INFO[Skin.String(SubRadio.6.Label)][/COLOR]</label2>
+						<textcolor>grey</textcolor>
+						<focusedcolor>white</focusedcolor>
+						<texturefocus>MenuItemFO.png</texturefocus>
+						<texturenofocus>MenuItemNF.png</texturenofocus>
+						<onclick>SetProperty(UsrSelectBtn,SubRadio.6,Home)</onclick>
+						<onclick>ActivateWindow(2115)</onclick>
+					</control>
+					<control type="label" id="372">
 						<width>750</width>
 						<height>45</height>
 						<font>font13_title</font>
@@ -2562,7 +2662,7 @@
 						<align>left</align>
 						<aligny>center</aligny>
 					</control>
-					<control type="button" id="365">
+					<control type="button" id="373">
 						<width>750</width>
 						<height>40</height>
 						<font>font13</font>
@@ -2574,7 +2674,7 @@
 						<texturenofocus>MenuItemNF.png</texturenofocus>
 						<onclick>Skin.SetString(UserSettingsSubMenu)</onclick>
 					</control>
-					<control type="button" id="366">
+					<control type="button" id="374">
 						<width>750</width>
 						<height>40</height>
 						<font>font13</font>
@@ -2587,7 +2687,7 @@
 						<onclick>SetProperty(UsrSelectBtn,SubSystem.1,Home)</onclick>
 						<onclick>ActivateWindow(2115)</onclick>
 					</control>
-					<control type="button" id="367">
+					<control type="button" id="375">
 						<width>750</width>
 						<height>40</height>
 						<font>font13</font>
@@ -2600,7 +2700,7 @@
 						<onclick>SetProperty(UsrSelectBtn,SubSystem.2,Home)</onclick>
 						<onclick>ActivateWindow(2115)</onclick>
 					</control>
-					<control type="button" id="368">
+					<control type="button" id="376">
 						<width>750</width>
 						<height>40</height>
 						<font>font13</font>
@@ -2613,7 +2713,7 @@
 						<onclick>SetProperty(UsrSelectBtn,SubSystem.3,Home)</onclick>
 						<onclick>ActivateWindow(2115)</onclick>
 					</control>
-					<control type="button" id="369">
+					<control type="button" id="377">
 						<width>750</width>
 						<height>40</height>
 						<font>font13</font>
@@ -2626,12 +2726,12 @@
 						<onclick>SetProperty(UsrSelectBtn,SubSystem.4,Home)</onclick>
 						<onclick>ActivateWindow(2115)</onclick>
 					</control>
-					<control type="button" id="370">
+					<control type="button" id="378">
 						<width>750</width>
 						<height>40</height>
 						<font>font13</font>
 						<label>$LOCALIZE[31315] - 5</label>
-						<label2>[COLOR=selected]$VAR[SubMenuSystemFive][/COLOR]</label2>
+						<label2>[COLOR=selected]$INFO[Skin.String(SubSystem.5.Label)][/COLOR]</label2>
 						<textcolor>grey</textcolor>
 						<focusedcolor>white</focusedcolor>
 						<texturefocus>MenuItemFO.png</texturefocus>
@@ -2639,12 +2739,12 @@
 						<onclick>SetProperty(UsrSelectBtn,SubSystem.5,Home)</onclick>
 						<onclick>ActivateWindow(2115)</onclick>
 					</control>
-					<control type="button" id="371">
+					<control type="button" id="379">
 						<width>750</width>
 						<height>40</height>
 						<font>font13</font>
 						<label>$LOCALIZE[31315] - 6</label>
-						<label2>[COLOR=selected]$VAR[SubMenuSystemSix][/COLOR]</label2>
+						<label2>[COLOR=selected]$INFO[Skin.String(SubSystem.6.Label)][/COLOR]</label2>
 						<textcolor>grey</textcolor>
 						<focusedcolor>white</focusedcolor>
 						<texturefocus>MenuItemFO.png</texturefocus>
@@ -2652,7 +2752,7 @@
 						<onclick>SetProperty(UsrSelectBtn,SubSystem.6,Home)</onclick>
 						<onclick>ActivateWindow(2115)</onclick>
 					</control>
-					<control type="label" id="372">
+					<control type="label" id="380">
 						<width>750</width>
 						<height>45</height>
 						<font>font13_title</font>
@@ -2662,7 +2762,7 @@
 						<align>left</align>
 						<aligny>center</aligny>
 					</control>
-					<control type="button" id="373">
+					<control type="button" id="381">
 						<width>750</width>
 						<height>40</height>
 						<font>font13</font>
@@ -2674,7 +2774,7 @@
 						<texturenofocus>MenuItemNF.png</texturenofocus>
 						<onclick>Skin.SetString(UserSelectOneSubMenu)</onclick>
 					</control>
-					<control type="button" id="374">
+					<control type="button" id="382">
 						<width>750</width>
 						<height>40</height>
 						<font>font13</font>
@@ -2687,7 +2787,7 @@
 						<onclick>SetProperty(UsrSelectBtn,UserSubOne.1,Home)</onclick>
 						<onclick>ActivateWindow(2115)</onclick>
 					</control>
-					<control type="button" id="375">
+					<control type="button" id="383">
 						<width>750</width>
 						<height>40</height>
 						<font>font13</font>
@@ -2700,7 +2800,7 @@
 						<onclick>SetProperty(UsrSelectBtn,UserSubOne.2,Home)</onclick>
 						<onclick>ActivateWindow(2115)</onclick>
 					</control>
-					<control type="button" id="376">
+					<control type="button" id="384">
 						<width>750</width>
 						<height>40</height>
 						<font>font13</font>
@@ -2713,7 +2813,7 @@
 						<onclick>SetProperty(UsrSelectBtn,UserSubOne.3,Home)</onclick>
 						<onclick>ActivateWindow(2115)</onclick>
 					</control>
-					<control type="button" id="377">
+					<control type="button" id="385">
 						<width>750</width>
 						<height>40</height>
 						<font>font13</font>
@@ -2726,7 +2826,7 @@
 						<onclick>SetProperty(UsrSelectBtn,UserSubOne.4,Home)</onclick>
 						<onclick>ActivateWindow(2115)</onclick>
 					</control>
-					<control type="button" id="378">
+					<control type="button" id="386">
 						<width>750</width>
 						<height>40</height>
 						<font>font13</font>
@@ -2739,7 +2839,7 @@
 						<onclick>SetProperty(UsrSelectBtn,UserSubOne.5,Home)</onclick>
 						<onclick>ActivateWindow(2115)</onclick>
 					</control>
-					<control type="button" id="379">
+					<control type="button" id="387">
 						<width>750</width>
 						<height>40</height>
 						<font>font13</font>
@@ -2752,7 +2852,7 @@
 						<onclick>SetProperty(UsrSelectBtn,UserSubOne.6,Home)</onclick>
 						<onclick>ActivateWindow(2115)</onclick>
 					</control>
-					<control type="label" id="380">
+					<control type="label" id="388">
 						<width>750</width>
 						<height>45</height>
 						<font>font13_title</font>
@@ -2762,7 +2862,7 @@
 						<align>left</align>
 						<aligny>center</aligny>
 					</control>
-					<control type="button" id="381">
+					<control type="button" id="389">
 						<width>750</width>
 						<height>40</height>
 						<font>font13</font>
@@ -2774,7 +2874,7 @@
 						<texturenofocus>MenuItemNF.png</texturenofocus>
 						<onclick>Skin.SetString(UserSelectTwoSubMenu)</onclick>
 					</control>
-					<control type="button" id="382">
+					<control type="button" id="390">
 						<width>750</width>
 						<height>40</height>
 						<font>font13</font>
@@ -2787,7 +2887,7 @@
 						<onclick>SetProperty(UsrSelectBtn,UserSubTwo.1,Home)</onclick>
 						<onclick>ActivateWindow(2115)</onclick>
 					</control>
-					<control type="button" id="383">
+					<control type="button" id="391">
 						<width>750</width>
 						<height>40</height>
 						<font>font13</font>
@@ -2800,7 +2900,7 @@
 						<onclick>SetProperty(UsrSelectBtn,UserSubTwo.2,Home)</onclick>
 						<onclick>ActivateWindow(2115)</onclick>
 					</control>
-					<control type="button" id="384">
+					<control type="button" id="392">
 						<width>750</width>
 						<height>40</height>
 						<font>font13</font>
@@ -2813,7 +2913,7 @@
 						<onclick>SetProperty(UsrSelectBtn,UserSubTwo.3,Home)</onclick>
 						<onclick>ActivateWindow(2115)</onclick>
 					</control>
-					<control type="button" id="385">
+					<control type="button" id="393">
 						<width>750</width>
 						<height>40</height>
 						<font>font13</font>
@@ -2826,7 +2926,7 @@
 						<onclick>SetProperty(UsrSelectBtn,UserSubTwo.4,Home)</onclick>
 						<onclick>ActivateWindow(2115)</onclick>
 					</control>
-					<control type="button" id="386">
+					<control type="button" id="394">
 						<width>750</width>
 						<height>40</height>
 						<font>font13</font>
@@ -2839,7 +2939,7 @@
 						<onclick>SetProperty(UsrSelectBtn,UserSubTwo.5,Home)</onclick>
 						<onclick>ActivateWindow(2115)</onclick>
 					</control>
-					<control type="button" id="387">
+					<control type="button" id="395">
 						<width>750</width>
 						<height>40</height>
 						<font>font13</font>
@@ -2850,106 +2950,6 @@
 						<texturefocus>MenuItemFO.png</texturefocus>
 						<texturenofocus>MenuItemNF.png</texturenofocus>
 						<onclick>SetProperty(UsrSelectBtn,UserSubTwo.6,Home)</onclick>
-						<onclick>ActivateWindow(2115)</onclick>
-					</control>
-					<control type="label" id="388">
-						<width>750</width>
-						<height>45</height>
-						<font>font13_title</font>
-						<label>$VAR[UsersSubSelectThreeName] $LOCALIZE[31291]</label>
-						<textcolor>blue</textcolor>
-						<shadowcolor>black</shadowcolor>
-						<align>left</align>
-						<aligny>center</aligny>
-					</control>
-					<control type="button" id="389">
-						<width>750</width>
-						<height>40</height>
-						<font>font13</font>
-						<label>$LOCALIZE[31240]</label>
-						<label2>[COLOR=white]$VAR[UsersSubSelectThreeName][/COLOR]</label2>
-						<textcolor>grey2</textcolor>
-						<focusedcolor>white</focusedcolor>
-						<texturefocus>MenuItemFO.png</texturefocus>
-						<texturenofocus>MenuItemNF.png</texturenofocus>
-						<onclick>Skin.SetString(UserSelectThreeSubMenu)</onclick>
-					</control>
-					<control type="button" id="390">
-						<width>750</width>
-						<height>40</height>
-						<font>font13</font>
-						<label>$LOCALIZE[31315] - 1</label>
-						<label2>[COLOR=selected]$INFO[Skin.String(UserSubThree.1.Label)][/COLOR]</label2>
-						<textcolor>grey</textcolor>
-						<focusedcolor>white</focusedcolor>
-						<texturefocus>MenuItemFO.png</texturefocus>
-						<texturenofocus>MenuItemNF.png</texturenofocus>
-						<onclick>SetProperty(UsrSelectBtn,UserSubThree.1,Home)</onclick>
-						<onclick>ActivateWindow(2115)</onclick>
-					</control>
-					<control type="button" id="391">
-						<width>750</width>
-						<height>40</height>
-						<font>font13</font>
-						<label>$LOCALIZE[31315] - 2</label>
-						<label2>[COLOR=selected]$INFO[Skin.String(UserSubThree.2.Label)][/COLOR]</label2>
-						<textcolor>grey</textcolor>
-						<focusedcolor>white</focusedcolor>
-						<texturefocus>MenuItemFO.png</texturefocus>
-						<texturenofocus>MenuItemNF.png</texturenofocus>
-						<onclick>SetProperty(UsrSelectBtn,UserSubThree.2,Home)</onclick>
-						<onclick>ActivateWindow(2115)</onclick>
-					</control>
-					<control type="button" id="392">
-						<width>750</width>
-						<height>40</height>
-						<font>font13</font>
-						<label>$LOCALIZE[31315] - 3</label>
-						<label2>[COLOR=selected]$INFO[Skin.String(UserSubThree.3.Label)][/COLOR]</label2>
-						<textcolor>grey</textcolor>
-						<focusedcolor>white</focusedcolor>
-						<texturefocus>MenuItemFO.png</texturefocus>
-						<texturenofocus>MenuItemNF.png</texturenofocus>
-						<onclick>SetProperty(UsrSelectBtn,UserSubThree.3,Home)</onclick>
-						<onclick>ActivateWindow(2115)</onclick>
-					</control>
-					<control type="button" id="393">
-						<width>750</width>
-						<height>40</height>
-						<font>font13</font>
-						<label>$LOCALIZE[31315] - 4</label>
-						<label2>[COLOR=selected]$INFO[Skin.String(UserSubThree.4.Label)][/COLOR]</label2>
-						<textcolor>grey</textcolor>
-						<focusedcolor>white</focusedcolor>
-						<texturefocus>MenuItemFO.png</texturefocus>
-						<texturenofocus>MenuItemNF.png</texturenofocus>
-						<onclick>SetProperty(UsrSelectBtn,UserSubThree.4,Home)</onclick>
-						<onclick>ActivateWindow(2115)</onclick>
-					</control>
-					<control type="button" id="394">
-						<width>750</width>
-						<height>40</height>
-						<font>font13</font>
-						<label>$LOCALIZE[31315] - 5</label>
-						<label2>[COLOR=selected]$INFO[Skin.String(UserSubThree.5.Label)][/COLOR]</label2>
-						<textcolor>grey</textcolor>
-						<focusedcolor>white</focusedcolor>
-						<texturefocus>MenuItemFO.png</texturefocus>
-						<texturenofocus>MenuItemNF.png</texturenofocus>
-						<onclick>SetProperty(UsrSelectBtn,UserSubThree.5,Home)</onclick>
-						<onclick>ActivateWindow(2115)</onclick>
-					</control>
-					<control type="button" id="395">
-						<width>750</width>
-						<height>40</height>
-						<font>font13</font>
-						<label>$LOCALIZE[31315] - 6</label>
-						<label2>[COLOR=selected]$INFO[Skin.String(UserSubThree.6.Label)][/COLOR]</label2>
-						<textcolor>grey</textcolor>
-						<focusedcolor>white</focusedcolor>
-						<texturefocus>MenuItemFO.png</texturefocus>
-						<texturenofocus>MenuItemNF.png</texturenofocus>
-						<onclick>SetProperty(UsrSelectBtn,UserSubThree.6,Home)</onclick>
 						<onclick>ActivateWindow(2115)</onclick>
 					</control>
 				</control>
@@ -4740,7 +4740,6 @@
 						<textcolor>white</textcolor>
 					</control>
 				</control>
-				<!--##################################################################################################-->
 				<control type="grouplist" id="9006">
 					<visible>Container(9000).Hasfocus(6)</visible>
 					<left>290</left>
@@ -4945,40 +4944,6 @@
 						<align>left</align>
 						<aligny>center</aligny>
 					</control>
-					<!--control type="button" id="716">
-						<width>750</width>
-						<height>40</height>
-						<font>font13</font>
-						<label>$LOCALIZE[31305]</label>
-						<label2>[COLOR=selected]$INFO[system.addontitle(Skin.String(lyricscriptpath))][/COLOR]</label2>
-						<textcolor>grey2</textcolor>
-						<focusedcolor>white</focusedcolor>
-						<texturefocus>MenuItemFO.png</texturefocus>
-						<texturenofocus>MenuItemNF.png</texturenofocus>
-						<onclick>Skin.SetAddon(lyricscriptpath,xbmc.python.lyrics)</onclick>
-					</control>
-					<control type="button" id="717">
-						<width>750</width>
-						<height>40</height>
-						<font>font13</font>
-						<label>- $LOCALIZE[24020]</label>
-						<textcolor>grey2</textcolor>
-						<focusedcolor>white</focusedcolor>
-						<texturefocus>MenuItemFO.png</texturefocus>
-						<texturenofocus>MenuItemNF.png</texturenofocus>
-						<enable>!IsEmpty(Skin.String(lyricscriptpath))</enable>
-						<onclick>Addon.OpenSettings($INFO[Skin.String(lyricscriptpath)])</onclick>
-					</control-->
-					<!--control type="label" id="620">
-							<width>750</width>
-							<height>45</height>
-							<font>font13_title</font>
-							<label>31140</label>
-							<textcolor>blue</textcolor>
-							<shadowcolor>black</shadowcolor>
-							<align>left</align>
-							<aligny>center</aligny>
-						</control-->
 					<control type="button" id="621">
 						<width>750</width>
 						<height>40</height>
@@ -5003,30 +4968,6 @@
 						<enable>!IsEmpty(Skin.String(LyricScript_Path))</enable>
 						<onclick>Addon.OpenSettings($INFO[Skin.String(LyricScript_Path)])</onclick>
 					</control>
-					<!--control type="label" id="104">
-						<width>750</width>
-						<height>45</height>
-						<font>font13_title</font>
-						<label>20343</label>
-						<textcolor>blue</textcolor>
-						<shadowcolor>black</shadowcolor>
-						<align>left</align>
-						<aligny>center</aligny>
-						<visible>System.HasAddon(script.tvtunes)</visible>
-					</control>
-					<control type="radiobutton" id="115">
-						<width>750</width>
-						<height>40</height>
-						<font>font13</font>
-						<label>31126</label>
-						<textcolor>grey2</textcolor>
-						<focusedcolor>white</focusedcolor>
-						<texturefocus>MenuItemFO.png</texturefocus>
-						<texturenofocus>MenuItemNF.png</texturenofocus>
-						<onclick>Skin.ToggleSetting(ActivateTvTunes)</onclick>
-						<selected>Skin.HasSetting(ActivateTvTunes)</selected>
-						<visible>System.HasAddon(script.tvtunes)</visible>
-					</control-->
 					<control type="radiobutton" id="625">
 						<width>750</width>
 						<height>40</height>
@@ -5260,16 +5201,6 @@
 					<onright>9000</onright>
 					<onup>9000</onup>
 					<ondown>9000</ondown>
-					<!--control type="label" id="700">
-						<width>750</width>
-						<height>45</height>
-						<font>font13_title</font>
-						<label>$LOCALIZE[31306] $LOCALIZE[31307]</label>
-						<textcolor>blue</textcolor>
-						<shadowcolor>black</shadowcolor>
-						<align>left</align>
-						<aligny>center</aligny>
-					</control-->
 					<control type="image" id="701">
 						<width>750</width>
 						<height>140</height>
@@ -5374,7 +5305,6 @@
 						</item>
 					</content>
 				</control>
-				<!--##################################################################################################-->
 			</control>
 		</control>
 		<include>CommonNowPlaying</include>

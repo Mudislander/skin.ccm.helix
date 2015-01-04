@@ -832,6 +832,34 @@
 					<include>HomeSubMenuRadio</include>
 					<visible>StringCompare(Container(9000).ListItem.Property(SubMenu),Radio)</visible>
 				</control>
+				<control type="grouplist" id="9017">
+					<include>HomeSubMenuCommonValues</include>
+					<onleft>9017</onleft>
+					<onright>9017</onright>
+					<include>HomeSubMenuConcerts</include>
+					<visible>StringCompare(Container(9000).ListItem.Property(SubMenu),Concerts)</visible>
+				</control>
+				<control type="grouplist" id="9018">
+					<include>HomeSubMenuCommonValues</include>
+					<onleft>9018</onleft>
+					<onright>9018</onright>
+					<include>HomeSubMenuPrograms</include>
+					<visible>StringCompare(Container(9000).ListItem.Property(SubMenu),Programs)</visible>
+				</control>
+				<control type="grouplist" id="9019">
+					<include>HomeSubMenuCommonValues</include>
+					<onleft>9019</onleft>
+					<onright>9019</onright>
+					<include>HomeSubMenuUserOne</include>
+					<visible>StringCompare(Container(9000).ListItem.Property(SubMenu),UserOne)</visible>
+				</control>
+				<control type="grouplist" id="9020">
+					<include>HomeSubMenuCommonValues</include>
+					<onleft>9020</onleft>
+					<onright>9020</onright>
+					<include>HomeSubMenuUserTwo</include>
+					<visible>StringCompare(Container(9000).ListItem.Property(SubMenu),UserTwo)</visible>
+				</control>
 			</control>
 			<control type="image">
 				<left>-100</left>
