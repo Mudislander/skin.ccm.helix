@@ -303,7 +303,7 @@
 		<onload>Skin.SetString(HomeItem.1.Widget,Weather)</onload>
 		<onload>Skin.SetString(HomeItem.1.Type,Weather)</onload>
 		<onload>Skin.SetString(HomeItem.1.Fanart,special://skin/backgrounds/weather.jpg)</onload>
-		<onload>Skin.SetString(HomeItem.1.Display,Theme)</onload>
+		<onload>Skin.SetString(HomeItem.1.Display,Default)</onload>
 		<onload>Skin.SetString(HomeItem.2.Label,$LOCALIZE[31951])</onload>
 		<onload>Skin.SetString(HomeItem.2.Path,ActivateWindow(Pictures))</onload>
 		<onload>Skin.SetString(HomeItem.2.Sub,Pictures)</onload>
@@ -311,7 +311,7 @@
 		<onload>Skin.SetString(HomeItem.2.Widget,None)</onload>
 		<onload>Skin.SetString(HomeItem.2.Type,Pictures)</onload>
 		<onload>Skin.SetString(HomeItem.2.Fanart,special://skin/backgrounds/pictures.jpg)</onload>
-		<onload>Skin.SetString(HomeItem.2.Display,Theme)</onload>
+		<onload>Skin.SetString(HomeItem.2.Display,Default)</onload>
 		<onload>Skin.SetString(HomeItem.3.Label,$LOCALIZE[31960])</onload>
 		<onload>Skin.SetString(HomeItem.3.Path,ActivateWindow(RadioChannels))</onload>
 		<onload>Skin.SetString(HomeItem.3.Sub,Radio)</onload>
@@ -319,7 +319,7 @@
 		<onload>Skin.SetString(HomeItem.3.Widget,None)</onload>
 		<onload>Skin.SetString(HomeItem.3.Type,Radio)</onload>
 		<onload>Skin.SetString(HomeItem.3.Fanart,special://skin/backgrounds/tv.jpg)</onload>
-		<onload>Skin.SetString(HomeItem.3.Display,Theme)</onload>
+		<onload>Skin.SetString(HomeItem.3.Display,Default)</onload>
 		<onload>Skin.SetString(HomeItem.4.Label,$LOCALIZE[31952])</onload>
 		<onload>Skin.SetString(HomeItem.4.Path,ActivateWindow(TVChannels))</onload>
 		<onload>Skin.SetString(HomeItem.4.Sub,LiveTV)</onload>
@@ -327,7 +327,7 @@
 		<onload>Skin.SetString(HomeItem.4.Widget,None)</onload>
 		<onload>Skin.SetString(HomeItem.4.Type,LiveTV)</onload>
 		<onload>Skin.SetString(HomeItem.4.Fanart,special://skin/backgrounds/tv.jpg)</onload>
-		<onload>Skin.SetString(HomeItem.4.Display,Theme)</onload>
+		<onload>Skin.SetString(HomeItem.4.Display,Default)</onload>
 		<onload>Skin.SetString(HomeItem.5.Label,$LOCALIZE[31953])</onload>
 		<onload>Skin.SetString(HomeItem.5.Path,ActivateWindow(Videos,root,return))</onload>
 		<onload>Skin.SetString(HomeItem.5.Sub,Videos)</onload>
@@ -335,7 +335,7 @@
 		<onload>Skin.SetString(HomeItem.5.Widget,UnWatched)</onload>
 		<onload>Skin.SetString(HomeItem.5.Type,Videos)</onload>
 		<onload>Skin.SetString(HomeItem.5.Fanart,special://skin/backgrounds/videos.jpg)</onload>
-		<onload>Skin.SetString(HomeItem.5.Display,Theme)</onload>
+		<onload>Skin.SetString(HomeItem.5.Display,Default)</onload>
 		<onload>Skin.SetString(HomeItem.6.Label,$LOCALIZE[31954])</onload>
 		<onload>Skin.SetString(HomeItem.6.Path,ActivateWindow(Videos,MovieTitles,return))</onload>
 		<onload>Skin.SetString(HomeItem.6.Sub,Movies)</onload>
@@ -343,7 +343,7 @@
 		<onload>Skin.SetString(HomeItem.6.Widget,RecentMovies)</onload>
 		<onload>Skin.SetString(HomeItem.6.Type,Movies)</onload>
 		<onload>Skin.SetString(HomeItem.6.Fanart,special://skin/backgrounds/videos.jpg)</onload>
-		<onload>Skin.SetString(HomeItem.6.Display,Theme)</onload>
+		<onload>Skin.SetString(HomeItem.6.Display,Database)</onload>
 		<onload>Skin.SetString(HomeItem.7.Label,$LOCALIZE[31955])</onload>
 		<onload>Skin.SetString(HomeItem.7.Path,ActivateWindow(Videos,TVShowTitles,return))</onload>
 		<onload>Skin.SetString(HomeItem.7.Sub,TVShows)</onload>
@@ -351,7 +351,7 @@
 		<onload>Skin.SetString(HomeItem.7.Widget,RecentEpisodes)</onload>
 		<onload>Skin.SetString(HomeItem.7.Type,TVShows)</onload>
 		<onload>Skin.SetString(HomeItem.7.Fanart,special://skin/backgrounds/videos.jpg)</onload>
-		<onload>Skin.SetString(HomeItem.7.Display,Theme)</onload>
+		<onload>Skin.SetString(HomeItem.7.Display,Database)</onload>
 		<onload>Skin.SetString(HomeItem.8.Label,$LOCALIZE[31956])</onload>
 		<onload>Skin.SetString(HomeItem.8.Path,ActivateWindow(Music))</onload>
 		<onload>Skin.SetString(HomeItem.8.Sub,Music)</onload>
@@ -359,7 +359,7 @@
 		<onload>Skin.SetString(HomeItem.8.Widget,RecentAlbums)</onload>
 		<onload>Skin.SetString(HomeItem.8.Type,Music)</onload>
 		<onload>Skin.SetString(HomeItem.8.Fanart,special://skin/backgrounds/music.jpg)</onload>
-		<onload>Skin.SetString(HomeItem.8.Display,Theme)</onload>
+		<onload>Skin.SetString(HomeItem.8.Display,Default)</onload>
 		<onload>Skin.SetString(HomeItem.9.Label,$LOCALIZE[31957])</onload>
 		<onload condition="!System.Platform.Android">Skin.SetString(HomeItem.9.Path,ActivateWindow(Programs,Addons,return))</onload>
 		<onload condition="System.Platform.Android">Skin.SetString(HomeItem.9.Path,ActivateWindow(Programs))</onload>
@@ -368,7 +368,7 @@
 		<onload>Skin.SetString(HomeItem.9.Widget,None)</onload>
 		<onload>Skin.SetString(HomeItem.9.Type,Programs)</onload>
 		<onload>Skin.SetString(HomeItem.9.Fanart,special://skin/backgrounds/programs.jpg)</onload>
-		<onload>Skin.SetString(HomeItem.9.Display,Theme)</onload>
+		<onload>Skin.SetString(HomeItem.9.Display,Default)</onload>
 		<onload>Skin.SetString(HomeItem.10.Label,$LOCALIZE[31965])</onload>
 		<onload>Skin.SetString(HomeItem.10.Path,PlayMedia(special://skin/extras/Streaming/Radio105NetworkTV.strm))</onload>
 		<onload>Skin.SetString(HomeItem.10.Sub,None)</onload>
@@ -376,7 +376,7 @@
 		<onload>Skin.SetString(HomeItem.10.Widget,None)</onload>
 		<onload>Skin.SetString(HomeItem.10.Type,Streaming)</onload>
 		<onload>Skin.SetString(HomeItem.10.Fanart,special://skin/backgrounds/musicvideos.jpg)</onload>
-		<onload>Skin.SetString(HomeItem.10.Display,Theme)</onload>
+		<onload>Skin.SetString(HomeItem.10.Display,Default)</onload>
 		<onload>Skin.SetString(HomeItem.11.Label,$LOCALIZE[31958])</onload>
 		<onload>Skin.SetString(HomeItem.11.Path,PlayDVD())</onload>
 		<onload>Skin.SetString(HomeItem.11.Sub,PlayDisc)</onload>
@@ -384,7 +384,7 @@
 		<onload>Skin.SetString(HomeItem.11.Widget,None)</onload>
 		<onload>Skin.SetString(HomeItem.11.Type,PlayDisc)</onload>
 		<onload>Skin.SetString(HomeItem.11.Fanart,special://skin/backgrounds/playdisc.jpg)</onload>
-		<onload>Skin.SetString(HomeItem.11.Display,Theme)</onload>
+		<onload>Skin.SetString(HomeItem.11.Display,Default)</onload>
 		<onload>Skin.SetString(HomeItem.12.Label,$LOCALIZE[31959])</onload>
 		<onload>Skin.SetString(HomeItem.12.Path,ActivateWindow(Settings))</onload>
 		<onload>Skin.SetString(HomeItem.12.Sub,Settings)</onload>
@@ -392,7 +392,7 @@
 		<onload>Skin.SetString(HomeItem.12.Widget,None)</onload>
 		<onload>Skin.SetString(HomeItem.12.Type,Settings)</onload>
 		<onload>Skin.SetString(HomeItem.12.Fanart,special://skin/backgrounds/settings.jpg)</onload>
-		<onload>Skin.SetString(HomeItem.12.Display,Theme)</onload>
+		<onload>Skin.SetString(HomeItem.12.Display,Default)</onload>
 		<onload>Skin.SetBool(SingleGlobalBackground)</onload>
 		<onload>Skin.SetBool(HideRainDropEffect)</onload>
 		<onload condition="System.Date(11-24,1-6)">Skin.Setbool(HolidayEffects)</onload>

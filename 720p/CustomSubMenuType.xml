@@ -175,20 +175,12 @@
 						<onclick>Skin.SetString($INFO[Window(home).Property(UsrSelectBtn)].Sub,UserTwo)</onclick>
 						<onclick>ClearProperty(UsrSelectBtn,Home)</onclick>
 					</item>
-					<!--item>
-						<description>Favourites</description>
-						<label>$LOCALIZE[1036]</label>
-						<onclick>Dialog.Close(2116)</onclick>
-						<onclick>Skin.SetString($INFO[Window(home).Property(UsrSelectBtn)].Sub,Favourites)</onclick>
-						<onclick>ClearProperty(UsrSelectBtn,Home)</onclick>
-					</item-->
 					<item>
 						<description>LiveTV</description>
 						<label>$LOCALIZE[31502]</label>
 						<onclick>Dialog.Close(2116)</onclick>
 						<onclick>Skin.SetString($INFO[Window(home).Property(UsrSelectBtn)].Sub,LiveTV)</onclick>
 						<onclick>ClearProperty(UsrSelectBtn,Home)</onclick>
-						<!--visible>System.GetBool(pvrmanager.enabled)</visible-->
 					</item>
 					<item>
 						<description>Radio</description>
@@ -204,13 +196,6 @@
 						<onclick>Skin.SetString($INFO[Window(home).Property(UsrSelectBtn)].Sub,Settings)</onclick>
 						<onclick>ClearProperty(UsrSelectBtn,Home)</onclick>
 					</item>
-					<!--item>
-						<description>Shutdown</description>
-						<label>$LOCALIZE[13005]</label>
-						<onclick>Dialog.Close(2116)</onclick>
-						<onclick>Skin.SetString($INFO[Window(home).Property(UsrSelectBtn)].Sub,Shutdown)</onclick>
-						<onclick>ClearProperty(UsrSelectBtn,Home)</onclick>
-					</item-->
 					<item>
 						<description>DVD Drive</description>
 						<label>$LOCALIZE[13391]</label>

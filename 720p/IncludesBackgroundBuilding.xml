@@ -279,14 +279,14 @@
 			<visible>Player.HasAudio + IsEmpty(Control.GetLabel(5043))</visible>
 		</control>
 	</include>
-	<include name="FanArtExtraThumbs">
+	<!--include name="FanArtExtraThumbs">
 		<control type="multiimage" id="5045">
 			<include>InvisibleButton</include>
-			<imagepath background="true">$INFO[ListItem.path,,extrathumbs/]</imagepath>
+			<imagepath background="true">$INFO[ListItem.Path,,extrathumbs/]</imagepath>
 			<visible>!IsEmpty(ListItem.Title)</visible>
 			<visible>Container.Content(Movies) | Container.Content(MusicVideos)</visible>
 		</control>
-	</include>
+	</include-->
 	<!--
 	<include name="CommonBackground">
 		<control type="image">

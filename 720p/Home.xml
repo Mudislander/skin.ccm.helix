@@ -6,7 +6,7 @@
 	<onload condition="!IsEmpty(Window(home).Property(MenuItemSelected))">ClearProperty(MenuItemSelected,Home)</onload>
 	<onload condition="!IsEmpty(Window(home).Property(MenuItemActive))">ClearProperty(MenuItemActive,Home)</onload>
 	<onload condition="!IsEmpty(Window(home).Property(SubMenuBackground))">ClearProperty(SubMenuBackground,Home)</onload>
-	<onload condition="Skin.HasSetting(HolidayEffects) + System.Date(1-7,11-23)">Skin.Reset(HolidayEffects)</onload>
+	<onload condition="Skin.HasSetting(HolidayEffects) + System.Date(1-6,11-23)">Skin.Reset(HolidayEffects)</onload>
 	<onload condition="System.HasAddon(script.favourites)">XBMC.RunScript(script.favourites)</onload>
 	<onload condition="!Skin.HasSetting(DisableSlideShowArt) + IsEmpty(Window.Property(ArtistSlideshowRunning))">RunScript(script.artistslideshow, daemon=True)</onload>
 	<onload condition="!Skin.HasSetting(DisableScriptPlaylist) + Library.HasContent(Movies)">XBMC.RunScript(script.randomandlastitems,type=Movie,limit=12,method=Random,playlist=special://skin/extras/Playlists/UnwatchedMovies.xsp,menu=UnWatched)</onload>
@@ -764,103 +764,7 @@
 				<effect type="zoom" start="100" end="80" center="640,360" easing="in" tween="back" time="300" />
 				<effect type="fade" start="100" end="0" time="300" />
 			</animation>
-			<control type="group" id="9001">
-				<left>0</left>
-				<top>70</top>
-				<onup>9000</onup>
-				<ondown>9002</ondown>
-				<control type="grouplist" id="9010">
-					<include>HomeSubMenuCommonValues</include>
-					<onleft>9010</onleft>
-					<onright>9010</onright>
-					<include>HomeSubMenuVideos</include>
-					<visible>StringCompare(Container(9000).ListItem.Property(SubMenu),Videos)</visible>
-				</control>
-				<control type="grouplist" id="9016">
-					<include>HomeSubMenuCommonValues</include>
-					<onleft>9016</onleft>
-					<onright>9016</onright>
-					<include>HomeSubMenuMovies</include>
-					<visible>StringCompare(Container(9000).ListItem.Property(SubMenu),Movies)</visible>
-				</control>
-				<control type="grouplist" id="9017">
-					<include>HomeSubMenuCommonValues</include>
-					<onleft>9017</onleft>
-					<onright>9017</onright>
-					<include>HomeSubMenuTVShows</include>
-					<visible>StringCompare(Container(9000).ListItem.Property(SubMenu),TVShows)</visible>
-				</control>
-				<control type="grouplist" id="9011">
-					<include>HomeSubMenuCommonValues</include>
-					<onleft>9011</onleft>
-					<onright>9011</onright>
-					<include>HomeSubMenuMusic</include>
-					<visible>StringCompare(Container(9000).ListItem.Property(SubMenu),Music)</visible>
-				</control>
-				<control type="grouplist" id="9012">
-					<include>HomeSubMenuCommonValues</include>
-					<onleft>9012</onleft>
-					<onright>9012</onright>
-					<include>HomeSubMenuSystem</include>
-					<visible>StringCompare(Container(9000).ListItem.Property(SubMenu),Settings)</visible>
-				</control>
-				<control type="grouplist" id="9013">
-					<include>HomeSubMenuCommonValues</include>
-					<onleft>9013</onleft>
-					<onright>9013</onright>
-					<include>HomeSubMenuPlayDisc</include>
-					<visible>StringCompare(Container(9000).ListItem.Property(SubMenu),PlayDisc)</visible>
-				</control>
-				<control type="grouplist" id="9014">
-					<include>HomeSubMenuCommonValues</include>
-					<onleft>9014</onleft>
-					<onright>9014</onright>
-					<include>HomeSubMenuTV</include>
-					<visible>StringCompare(Container(9000).ListItem.Property(SubMenu),LiveTV)</visible>
-				</control>
-				<control type="grouplist" id="9015">
-					<include>HomeSubMenuCommonValues</include>
-					<onleft>9013</onleft>
-					<onright>9013</onright>
-					<include>HomeSubMenuPictures</include>
-					<visible>StringCompare(Container(9000).ListItem.Property(SubMenu),Pictures)</visible>
-				</control>
-				<control type="grouplist" id="9016">
-					<include>HomeSubMenuCommonValues</include>
-					<onleft>9014</onleft>
-					<onright>9014</onright>
-					<include>HomeSubMenuRadio</include>
-					<visible>StringCompare(Container(9000).ListItem.Property(SubMenu),Radio)</visible>
-				</control>
-				<control type="grouplist" id="9017">
-					<include>HomeSubMenuCommonValues</include>
-					<onleft>9017</onleft>
-					<onright>9017</onright>
-					<include>HomeSubMenuConcerts</include>
-					<visible>StringCompare(Container(9000).ListItem.Property(SubMenu),Concerts)</visible>
-				</control>
-				<control type="grouplist" id="9018">
-					<include>HomeSubMenuCommonValues</include>
-					<onleft>9018</onleft>
-					<onright>9018</onright>
-					<include>HomeSubMenuPrograms</include>
-					<visible>StringCompare(Container(9000).ListItem.Property(SubMenu),Programs)</visible>
-				</control>
-				<control type="grouplist" id="9019">
-					<include>HomeSubMenuCommonValues</include>
-					<onleft>9019</onleft>
-					<onright>9019</onright>
-					<include>HomeSubMenuUserOne</include>
-					<visible>StringCompare(Container(9000).ListItem.Property(SubMenu),UserOne)</visible>
-				</control>
-				<control type="grouplist" id="9020">
-					<include>HomeSubMenuCommonValues</include>
-					<onleft>9020</onleft>
-					<onright>9020</onright>
-					<include>HomeSubMenuUserTwo</include>
-					<visible>StringCompare(Container(9000).ListItem.Property(SubMenu),UserTwo)</visible>
-				</control>
-			</control>
+			<include>HomeSubMenuControl</include>
 			<control type="image">
 				<left>-100</left>
 				<top>0</top>
@@ -892,58 +796,7 @@
 				<texture flipx="true">SideFade.png</texture>
 			</control>
 		</control>
-		<control type="group" id="9002">
-			<onup>9001</onup>
-			<ondown>20</ondown>
-			<control type="fixedlist" id="700">
-				<animation effect="slide" start="0,0" end="-91,0" time="0" condition="StringCompare(Container(700).NumItems,2) | StringCompare(Container(700).NumItems,4)">conditional</animation>
-				<visible>StringCompare(Container(9000).ListItem.Property(AddOnSet),Videos)</visible>
-				<onleft>700</onleft>
-				<onright>700</onright>
-				<onup>9001</onup>
-				<ondown>20</ondown>
-				<include>HomeAddonsCommonLayout</include>
-				<content>
-					<include>HomeAddonItemsVideos</include>
-				</content>
-			</control>
-			<control type="fixedlist" id="703">
-				<animation effect="slide" start="0,0" end="-91,0" time="0" condition="StringCompare(Container(703).NumItems,2) | StringCompare(Container(703).NumItems,4)">conditional</animation>
-				<visible>StringCompare(Container(9000).ListItem.Property(AddOnSet),Music)</visible>
-				<onleft>703</onleft>
-				<onright>703</onright>
-				<onup>9001</onup>
-				<ondown>20</ondown>
-				<include>HomeAddonsCommonLayout</include>
-				<content>
-					<include>HomeAddonItemsMusic</include>
-				</content>
-			</control>
-			<control type="fixedlist" id="704">
-				<animation effect="slide" start="0,0" end="-91,0" time="0" condition="StringCompare(Container(704).NumItems,2) | StringCompare(Container(704).NumItems,4)">conditional</animation>
-				<visible>StringCompare(Container(9000).ListItem.Property(AddOnSet),Pictures)</visible>
-				<onleft>704</onleft>
-				<onright>704</onright>
-				<onup>9001</onup>
-				<ondown>20</ondown>
-				<include>HomeAddonsCommonLayout</include>
-				<content>
-					<include>HomeAddonItemsPictures</include>
-				</content>
-			</control>
-			<control type="fixedlist" id="705">
-				<animation effect="slide" start="0,0" end="-91,0" time="0" condition="StringCompare(Container(705).NumItems,2) | StringCompare(Container(705).NumItems,4)">conditional</animation>
-				<visible>StringCompare(Container(9000).ListItem.Property(AddOnSet),Programs)</visible>
-				<onleft>705</onleft>
-				<onright>705</onright>
-				<onup>9001</onup>
-				<ondown>20</ondown>
-				<include>HomeAddonsCommonLayout</include>
-				<content>
-					<include>HomeAddonItemsPrograms</include>
-				</content>
-			</control>
-		</control>
+		<include>HomeAddonsDisplay</include>
 		<control type="group">
 			<left>0</left>
 			<top>33r</top>

@@ -2,16 +2,16 @@
 <includes>
 	<variable name="HomeMenuItemBackground" type="text">
 		<value condition="StringCompare(Container(9000).ListItem.Property(HiLiteItem),Videos) + StringCompare(Container(9000).ListItem.Property(Background),Database) + !IsEmpty(Skin.String(UsrMovieFanArtDir)) + !Skin.HasSetting(EnableFanartScript)">$INFO[Skin.String(UsrMovieFanArtDir)]</value>
-		<value condition="StringCompare(Container(9000).ListItem.Property(HiLiteItem),Videos) + StringCompare(Container(9000).ListItem.Property(Background),Database) + !IsEmpty(Window(Home).Property(script.grab.Fanart.Video.Fanart)) + Skin.HasSetting(EnableFanartScript)">$INFO[Window(Home).Property(script.grab.Fanart.Video.Fanart)]</value>
+		<value condition="StringCompare(Container(9000).ListItem.Property(HiLiteItem),Videos) + StringCompare(Container(9000).ListItem.Property(Background),Database) + !IsEmpty(Window(Home).Property(script.grab.fanart.Video.Fanart)) + Skin.HasSetting(EnableFanartScript)">$INFO[Window(Home).Property(script.grab.fanart.Video.Fanart)]</value>
 		<value condition="StringCompare(Container(9000).ListItem.Property(HiLiteItem),Videos) + StringCompare(Container(9000).ListItem.Property(Background),Database) + !IsEmpty(Window(home).Property(RandomMovie.1.Art(fanart)))">$INFO[Window(home).Property(RandomMovie.1.Art(fanart))]</value>
 		<value condition="StringCompare(Container(9000).ListItem.Property(HiLiteItem),Movies) + StringCompare(Container(9000).ListItem.Property(Background),Database) + !IsEmpty(Skin.String(UsrMovieFanArtDir)) + !Skin.HasSetting(EnableFanartScript)">$INFO[Skin.String(UsrMovieFanArtDir)]</value>
-		<value condition="StringCompare(Container(9000).ListItem.Property(HiLiteItem),Movies) + StringCompare(Container(9000).ListItem.Property(Background),Database) + !IsEmpty(Window(Home).Property(script.grab.Fanart.Movie.Fanart)) + Skin.HasSetting(EnableFanartScript)">$INFO[Window(Home).Property(script.grab.Fanart.Movie.Fanart)]</value>
+		<value condition="StringCompare(Container(9000).ListItem.Property(HiLiteItem),Movies) + StringCompare(Container(9000).ListItem.Property(Background),Database) + !IsEmpty(Window(Home).Property(script.grab.fanart.Movie.Fanart)) + Skin.HasSetting(EnableFanartScript)">$INFO[Window(Home).Property(script.grab.fanart.Movie.Fanart)]</value>
 		<value condition="StringCompare(Container(9000).ListItem.Property(HiLiteItem),Movies) + StringCompare(Container(9000).ListItem.Property(Background),Database) + !IsEmpty(Window(home).Property(RandomMovie.1.Art(fanart)))">$INFO[Window(home).Property(RandomMovie.1.Art(fanart))]</value>
 		<value condition="StringCompare(Container(9000).ListItem.Property(HiLiteItem),TVShows) + StringCompare(Container(9000).ListItem.Property(Background),Database) + !IsEmpty(Skin.String(UsrTVShowFanArtDir)) + !Skin.HasSetting(EnableFanartScript)">$INFO[Skin.String(UsrTVShowFanArtDir)]</value>
-		<value condition="StringCompare(Container(9000).ListItem.Property(HiLiteItem),TVShows) + StringCompare(Container(9000).ListItem.Property(Background),Database) + !IsEmpty(Window(Home).Property(script.grab.Fanart.TV.Fanart)) + Skin.HasSetting(EnableFanartScript)">$INFO[Window(Home).Property(script.grab.Fanart.TV.Fanart)]</value>
+		<value condition="StringCompare(Container(9000).ListItem.Property(HiLiteItem),TVShows) + StringCompare(Container(9000).ListItem.Property(Background),Database) + !IsEmpty(Window(Home).Property(script.grab.fanart.TV.Fanart)) + Skin.HasSetting(EnableFanartScript)">$INFO[Window(Home).Property(script.grab.fanart.TV.Fanart)]</value>
 		<value condition="StringCompare(Container(9000).ListItem.Property(HiLiteItem),TVShows) + StringCompare(Container(9000).ListItem.Property(Background),Database) + !IsEmpty(Window(home).Property(RandomEpisode.1.Art(tvshow.Fanart)))">$INFO[Window(home).Property(RandomEpisode.1.Art(tvshow.Fanart))]</value>
 		<value condition="StringCompare(Container(9000).ListItem.Property(HiLiteItem),Music) + StringCompare(Container(9000).ListItem.Property(Background),Database) + !IsEmpty(Skin.String(UsrArtistsFanArtDir)) + !Skin.HasSetting(EnableFanartScript)">$INFO[Skin.String(UsrArtistsFanArtDir)]</value>
-		<value condition="StringCompare(Container(9000).ListItem.Property(HiLiteItem),Music) + StringCompare(Container(9000).ListItem.Property(Background),Database) + !IsEmpty(Window(Home).Property(script.grab.Fanart.Music.Fanart)) + Skin.HasSetting(EnableFanartScript)">$INFO[Window(Home).Property(script.grab.Fanart.Music.Fanart)]</value>
+		<value condition="StringCompare(Container(9000).ListItem.Property(HiLiteItem),Music) + StringCompare(Container(9000).ListItem.Property(Background),Database) + !IsEmpty(Window(Home).Property(script.grab.fanart.Music.Fanart)) + Skin.HasSetting(EnableFanartScript)">$INFO[Window(Home).Property(script.grab.fanart.Music.Fanart)]</value>
 		<value condition="StringCompare(Container(9000).ListItem.Property(HiLiteItem),,Music) + StringCompare(Container(9000).ListItem.Property(Background),Database) + !IsEmpty(Window(home).Property(RandomAlbum.1.Fanart))">$INFO[Window(home).Property(RandomAlbum.1.Fanart)]</value>
 		<value condition="StringCompare(Container(9000).ListItem.Property(HiLiteItem),Concerts) + StringCompare(Container(9000).ListItem.Property(Background),Database) + !IsEmpty(Skin.String(UsrConcertsFanArtDir))">$INFO[Skin.String(UsrConcertsFanArtDir)]</value>
 		<value condition="StringCompare(Container(9000).ListItem.Property(HiLiteItem),Concerts) + StringCompare(Container(9000).ListItem.Property(Background),Database) + !IsEmpty(Window(home).Property(RandomMusicVideo.1.Fanart))">$INFO[Window(home).Property(RandomMusicVideo.1.Fanart)]</value>
@@ -691,18 +691,18 @@
 		<value>True</value>
 	</variable>
 	<variable name="GenreLabelFanart">
-		<value condition="substring(ListItem.label,Holiday) | substring(ListItem.label,Christmas)">christmas</value>
-		<value condition="substring(ListItem.label,Sci)">sciencefiction</value>
-		<value condition="substring(ListItem.label,Suspense)">psychologicalthriller</value>
-		<value condition="substring(ListItem.label,Sport)">sports</value>
-		<value condition="!StringCompare(ListItem.label,..)">$INFO[ListItem.Label]</value>
+		<value condition="substring(ListItem.Label,Holiday) | substring(ListItem.Label,Christmas)">christmas</value>
+		<value condition="substring(ListItem.Label,Sci)">sciencefiction</value>
+		<value condition="substring(ListItem.Label,Suspense)">psychologicalthriller</value>
+		<value condition="substring(ListItem.Label,Sport)">sports</value>
+		<value condition="!StringCompare(ListItem.Label,..)">$INFO[ListItem.Label]</value>
 	</variable>
 	<variable name="GenreFolderFanart">
 		<value condition="substring(Container.FolderName,Holiday) | substring(Container.FolderName,Christmas)">christmas</value>
 		<value condition="substring(Container.FolderName,Sci)">sciencefiction</value>
 		<value condition="substring(Container.FolderName,Suspense)">psychologicalthriller</value>
 		<value condition="substring(Container.FolderName,Sport)">sports</value>
-		<value condition="StringCompare(ListItem.label,..)">$INFO[Container.FolderName]</value>
+		<value condition="StringCompare(ListItem.Label,..)">$INFO[Container.FolderName]</value>
 	</variable>
 	<variable name="PlaylistSortOrder" type="text">
 		<value condition="Skin.HasSetting(EnableRandomPlaylist)">Random</value>
@@ -891,30 +891,6 @@
 	<variable name="SubMenuConcertsFive" type="text">
 		<value condition="!IsEmpty(Skin.String(SubConcerts.5.Label))">$INFO[Skin.String(SubConcerts.5.Label)]</value>
 		<value>$LOCALIZE[20459]</value>
-	</variable>
-	<variable name="SubMenuExitOne" type="text">
-		<value condition="!IsEmpty(Skin.String(subexit.1.Label))">$INFO[Skin.String(subexit.1.Label)]</value>
-		<value>$LOCALIZE[13012]</value>
-	</variable>
-	<variable name="SubMenuExitTwo" type="text">
-		<value condition="!IsEmpty(Skin.String(subexit.2.Label))">$INFO[Skin.String(subexit.2.Label)]</value>
-		<value>$LOCALIZE[13005]</value>
-	</variable>
-	<variable name="SubMenuExitThree" type="text">
-		<value condition="!IsEmpty(Skin.String(subexit.3.Label))">$INFO[Skin.String(subexit.3.Label)]</value>
-		<value>$LOCALIZE[13011]</value>
-	</variable>
-	<variable name="SubMenuExitFour" type="text">
-		<value condition="!IsEmpty(Skin.String(subexit.4.Label))">$INFO[Skin.String(subexit.4.Label)]</value>
-		<value>$LOCALIZE[13010]</value>
-	</variable>
-	<variable name="SubMenuExitFive" type="text">
-		<value condition="!IsEmpty(Skin.String(subexit.5.Label))">$INFO[Skin.String(subexit.5.Label)]</value>
-		<value>$LOCALIZE[13013]</value>
-	</variable>
-	<variable name="SubMenuExitSix" type="text">
-		<value condition="!IsEmpty(Skin.String(subexit.6.Label))">$INFO[Skin.String(subexit.6.Label)]</value>
-		<value>$LOCALIZE[20126]</value>
 	</variable>
 	<variable name="SubMenuLiveTVOne" type="text">
 		<value condition="!IsEmpty(Skin.String(SubLiveTV.1.Label))">$INFO[Skin.String(SubLiveTV.1.Label)]</value>
