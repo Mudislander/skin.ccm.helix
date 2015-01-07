@@ -4,7 +4,7 @@
 	<include condition="!Skin.HasSetting(InitialSetUpRun)">DefaultInitialSetup</include>
 	<onload condition="System.HasAddon(script.favourites)">XBMC.RunScript(script.favourites)</onload>
 	<onload>SetProperty(MenuItemActive,Settings,Home)</onload>
-	<onload condition="stringcompare(Container(9009).Position,0) + !stringcompare(Skin.String(InitialMenuPosi),0)">Control.Move(9009,$INFO[Skin.String(InitialMenuPosi)])</onload>
+	<!--onload condition="stringcompare(Container(9009).Position,0) + !stringcompare(Skin.String(InitialMenuPosi),0)">Control.Move(9009,$INFO[Skin.String(InitialMenuPosi)])</onload-->
 	<controls>
 		<control type="image">
 			<include>Dimensions_Fullscreen</include>
@@ -106,7 +106,7 @@
 				<left>10</left>
 				<top>90</top>
 				<width>260</width>
-				<height>491</height>
+				<height>561</height>
 				<onleft>9010</onleft>
 				<onright>9010</onright>
 				<onup>9000</onup>
@@ -6053,7 +6053,7 @@
 						<pulseonselect>false</pulseonselect>
 					</control>
 				</control>
-				<control type="list" id="9009">
+				<!--control type="list" id="9009">
 					<onleft>9001</onleft>
 					<onright>9001</onright>
 					<onup>9001</onup>
@@ -6133,7 +6133,7 @@
 							<visible>!IsEmpty(Skin.String(HomeItem.10.Path))</visible>
 						</item>
 					</content>
-				</control>
+				</control-->
 			</control>
 		</control>
 		<include>CommonNowPlaying</include>
