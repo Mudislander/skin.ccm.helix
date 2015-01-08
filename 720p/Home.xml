@@ -35,7 +35,6 @@
 	<onload>SetProperty(MainMenuItemTen,$VAR[VisibleMenuItemTen],Home)</onload>
 	<onload>SetProperty(MainMenuItemEleven,$VAR[VisibleMenuItemEleven],Home)</onload>
 	<onload>SetProperty(MainMenuItemTwelve,$VAR[VisibleMenuItemTwelve],Home)</onload>
-	<!--onload condition="Window.Previous(startup)">Control.Move(9000,$INFO[Skin.String(InitialMenuPosi)])</onload-->
 	<controls>
 		<include>CommonBackground</include>
 		<include condition="!Skin.HasSetting(HideRainDropEffect) | Skin.HasSetting(HolidayEffects)">AnimatedBackgroundEffect</include>

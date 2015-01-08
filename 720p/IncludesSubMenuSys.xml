@@ -532,7 +532,7 @@
 		<orientation>Horizontal</orientation>
 		<onup>9000</onup>
 		<ondown>9002</ondown>
-		<hitrect x="0" y="0" w="1280" h="44"/>
+		<hitrect x="0" y="0" w="1280" h="44" />
 	</include>
 	<include name="SubMenuCommonLayout">
 		<itemlayout height="35" width="193">

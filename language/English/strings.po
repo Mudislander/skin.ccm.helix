@@ -470,7 +470,11 @@ msgctxt "#31215"
 msgid "Watch it Later"
 msgstr ""
 
-#empty strings from id 31216 to 31220
+#empty strings from id 31216 to 31219
+
+msgctxt "#31220"
+msgid "In Progress Movies"
+msgstr ""
 
 msgctxt "#31221"
 msgid "Monte Carlo"
@@ -684,7 +688,9 @@ msgctxt "#31301"
 msgid "Last Updated"
 msgstr ""
 
-#empty string with id 31302
+msgctxt "#31302"
+msgid "Enable Kodi Intro Movie"
+msgstr ""
 
 msgctxt "#31303"
 msgid "Data provider"

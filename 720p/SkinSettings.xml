@@ -4,7 +4,6 @@
 	<include condition="!Skin.HasSetting(InitialSetUpRun)">DefaultInitialSetup</include>
 	<onload condition="System.HasAddon(script.favourites)">XBMC.RunScript(script.favourites)</onload>
 	<onload>SetProperty(MenuItemActive,Settings,Home)</onload>
-	<!--onload condition="stringcompare(Container(9009).Position,0) + !stringcompare(Skin.String(InitialMenuPosi),0)">Control.Move(9009,$INFO[Skin.String(InitialMenuPosi)])</onload-->
 	<controls>
 		<control type="image">
 			<include>Dimensions_Fullscreen</include>
@@ -301,30 +300,6 @@
 						<align>left</align>
 						<aligny>center</aligny>
 					</control>
-					<!--control type="button" id="111">
-						<width>750</width>
-						<height>40</height>
-						<font>font13</font>
-						<label>$LOCALIZE[31014]</label>
-						<label2>[COLOR=selected]$INFO[Container(9009).ListItem.Label][/COLOR]</label2>
-						<textcolor>grey2</textcolor>
-						<focusedcolor>white</focusedcolor>
-						<texturefocus>MenuItemFO.png</texturefocus>
-						<texturenofocus>MenuItemNF.png</texturenofocus>
-						<onclick>Control.Move(9009,1)</onclick>
-						<onclick>Skin.SetString(InitialMenuPosi,$INFO[Container(9009).Position])</onclick>
-						<onclick condition="StringCompare(Container(9009).Position,0)">Skin.SetString(InitialMenuItem,-1)</onclick>
-						<onclick condition="StringCompare(Container(9009).Position,1)">Skin.SetString(InitialMenuItem,0)</onclick>
-						<onclick condition="StringCompare(Container(9009).Position,2)">Skin.SetString(InitialMenuItem,1)</onclick>
-						<onclick condition="StringCompare(Container(9009).Position,3)">Skin.SetString(InitialMenuItem,2)</onclick>
-						<onclick condition="StringCompare(Container(9009).Position,4)">Skin.SetString(InitialMenuItem,3)</onclick>
-						<onclick condition="StringCompare(Container(9009).Position,5)">Skin.SetString(InitialMenuItem,4)</onclick>
-						<onclick condition="StringCompare(Container(9009).Position,6)">Skin.SetString(InitialMenuItem,5)</onclick>
-						<onclick condition="StringCompare(Container(9009).Position,7)">Skin.SetString(InitialMenuItem,6)</onclick>
-						<onclick condition="StringCompare(Container(9009).Position,8)">Skin.SetString(InitialMenuItem,7)</onclick>
-						<onclick condition="StringCompare(Container(9009).Position,9)">Skin.SetString(InitialMenuItem,8)</onclick>
-						<onclick condition="StringCompare(Container(9009).Position,10)">Skin.SetString(InitialMenuItem,-2)</onclick>
-					</control-->
 					<control type="radiobutton" id="112">
 						<description>enable wrap around menu</description>
 						<width>750</width>
@@ -5725,19 +5700,19 @@
 						<align>left</align>
 						<aligny>center</aligny>
 					</control>
-					<!--control type="radiobutton" id="611">
+					<control type="radiobutton" id="611">
 						<width>750</width>
 						<height>40</height>
 						<font>font13</font>
-						<label>31303</label>
+						<label>31302</label>
 						<textcolor>grey2</textcolor>
 						<focusedcolor>white</focusedcolor>
 						<texturefocus>MenuItemFO.png</texturefocus>
 						<texturenofocus>MenuItemNF.png</texturenofocus>
-						<onclick>Skin.ToggleSetting(hidexbmcintro)</onclick>
-						<onclick>Skin.Reset(enableStartUpPlaylistPath)</onclick>
-						<selected>!Skin.HasSetting(hidexbmcintro)</selected>
-					</control-->
+						<onclick>Skin.ToggleSetting(HideKodiIntro)</onclick>
+						<onclick>Skin.Reset(EnableStartUpPlaylistPath)</onclick>
+						<selected>!Skin.HasSetting(HideKodiIntro)</selected>
+					</control>
 					<control type="radiobutton" id="612">
 						<width>750</width>
 						<height>40</height>
@@ -6053,87 +6028,6 @@
 						<pulseonselect>false</pulseonselect>
 					</control>
 				</control>
-				<!--control type="list" id="9009">
-					<onleft>9001</onleft>
-					<onright>9001</onright>
-					<onup>9001</onup>
-					<ondown>9001</ondown>
-					<visible>Container(9000).Hasfocus(1)</visible>
-					<itemlayout height="1" width="750"></itemlayout>
-					<focusedlayout height="1" width="750"></focusedlayout>
-					<content>
-						<item>
-							<label>$INFO[Skin.String(HomeItem.1.Label)]</label>
-							<onclick>noop</onclick>
-							<icon>-</icon>
-							<thumb>-</thumb>
-							<visible>!IsEmpty(Skin.String(HomeItem.1.Path))</visible>
-						</item>
-						<item>
-							<label>$INFO[Skin.String(HomeItem.2.Label)]</label>
-							<onclick>noop</onclick>
-							<icon>-</icon>
-							<thumb>-</thumb>
-							<visible>!IsEmpty(Skin.String(HomeItem.2.Path))</visible>
-						</item>
-						<item>
-							<label>$INFO[Skin.String(HomeItem.3.Label)]</label>
-							<onclick>noop</onclick>
-							<icon>-</icon>
-							<thumb>-</thumb>
-							<visible>!IsEmpty(Skin.String(HomeItem.3.Path))</visible>
-						</item>
-						<item>
-							<label>$INFO[Skin.String(HomeItem.4.Label)]</label>
-							<onclick>noop</onclick>
-							<icon>-</icon>
-							<thumb>-</thumb>
-							<visible>!IsEmpty(Skin.String(HomeItem.4.Path))</visible>
-						</item>
-						<item>
-							<label>$INFO[Skin.String(HomeItem.5.Label)]</label>
-							<onclick>noop</onclick>
-							<icon>-</icon>
-							<thumb>-</thumb>
-							<visible>!IsEmpty(Skin.String(HomeItem.5.Path))</visible>
-						</item>
-						<item>
-							<label>$INFO[Skin.String(HomeItem.6.Label)]</label>
-							<onclick>noop</onclick>
-							<icon>-</icon>
-							<thumb>-</thumb>
-							<visible>!IsEmpty(Skin.String(HomeItem.6.Path))</visible>
-						</item>
-						<item>
-							<label>$INFO[Skin.String(HomeItem.7.Label)]</label>
-							<onclick>noop</onclick>
-							<icon>-</icon>
-							<thumb>-</thumb>
-							<visible>!IsEmpty(Skin.String(HomeItem.7.Path))</visible>
-						</item>
-						<item>
-							<label>$INFO[Skin.String(HomeItem.8.Label)]</label>
-							<onclick>noop</onclick>
-							<icon>-</icon>
-							<thumb>-</thumb>
-							<visible>!IsEmpty(Skin.String(HomeItem.8.Path))</visible>
-						</item>
-						<item>
-							<label>$INFO[Skin.String(HomeItem.9.Label)]</label>
-							<onclick>noop</onclick>
-							<icon>-</icon>
-							<thumb>-</thumb>
-							<visible>!IsEmpty(Skin.String(HomeItem.9.Path))</visible>
-						</item>
-						<item>
-							<label>$INFO[Skin.String(HomeItem.10.Label)]</label>
-							<onclick>noop</onclick>
-							<icon>-</icon>
-							<thumb>-</thumb>
-							<visible>!IsEmpty(Skin.String(HomeItem.10.Path))</visible>
-						</item>
-					</content>
-				</control-->
 			</control>
 		</control>
 		<include>CommonNowPlaying</include>
