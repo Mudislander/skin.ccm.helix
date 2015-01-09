@@ -1819,7 +1819,59 @@
 						<onclick>SetProperty(UsrSelectBtn,SubVideos.6,Home)</onclick>
 						<onclick>ActivateWindow(2115)</onclick>
 					</control>
-					<control type="label" id="308">
+					<control type="button" id="308">
+						<width>750</width>
+						<height>40</height>
+						<font>font13</font>
+						<label>$LOCALIZE[31315] - 7</label>
+						<label2>[COLOR=selected]$INFO[Skin.String(SubVideos.7.Label)][/COLOR]</label2>
+						<textcolor>grey</textcolor>
+						<focusedcolor>white</focusedcolor>
+						<texturefocus>MenuItemFO.png</texturefocus>
+						<texturenofocus>MenuItemNF.png</texturenofocus>
+						<onclick>SetProperty(UsrSelectBtn,SubVideos.7,Home)</onclick>
+						<onclick>ActivateWindow(2115)</onclick>
+					</control>
+					<control type="button" id="309">
+						<width>750</width>
+						<height>40</height>
+						<font>font13</font>
+						<label>$LOCALIZE[31315] - 8</label>
+						<label2>[COLOR=selected]$INFO[Skin.String(SubVideos.8.Label)][/COLOR]</label2>
+						<textcolor>grey</textcolor>
+						<focusedcolor>white</focusedcolor>
+						<texturefocus>MenuItemFO.png</texturefocus>
+						<texturenofocus>MenuItemNF.png</texturenofocus>
+						<onclick>SetProperty(UsrSelectBtn,SubVideos.8,Home)</onclick>
+						<onclick>ActivateWindow(2115)</onclick>
+					</control>
+					<control type="button" id="310">
+						<width>750</width>
+						<height>40</height>
+						<font>font13</font>
+						<label>$LOCALIZE[31315] - 9</label>
+						<label2>[COLOR=selected]$INFO[Skin.String(SubVideos.9.Label)][/COLOR]</label2>
+						<textcolor>grey</textcolor>
+						<focusedcolor>white</focusedcolor>
+						<texturefocus>MenuItemFO.png</texturefocus>
+						<texturenofocus>MenuItemNF.png</texturenofocus>
+						<onclick>SetProperty(UsrSelectBtn,SubVideos.9,Home)</onclick>
+						<onclick>ActivateWindow(2115)</onclick>
+					</control>
+					<control type="button" id="311">
+						<width>750</width>
+						<height>40</height>
+						<font>font13</font>
+						<label>$LOCALIZE[31315] - 10</label>
+						<label2>[COLOR=selected]$INFO[Skin.String(SubVideos.10.Label)][/COLOR]</label2>
+						<textcolor>grey</textcolor>
+						<focusedcolor>white</focusedcolor>
+						<texturefocus>MenuItemFO.png</texturefocus>
+						<texturenofocus>MenuItemNF.png</texturenofocus>
+						<onclick>SetProperty(UsrSelectBtn,SubVideos.10,Home)</onclick>
+						<onclick>ActivateWindow(2115)</onclick>
+					</control>
+					<control type="label" id="312">
 						<width>750</width>
 						<height>45</height>
 						<font>font13_title</font>
@@ -1829,7 +1881,7 @@
 						<align>left</align>
 						<aligny>center</aligny>
 					</control>
-					<control type="button" id="309">
+					<control type="button" id="313">
 						<width>750</width>
 						<height>40</height>
 						<font>font13</font>
@@ -1841,7 +1893,7 @@
 						<texturenofocus>MenuItemNF.png</texturenofocus>
 						<onclick>Skin.SetString(UserMoviesSubMenu)</onclick>
 					</control>
-					<control type="button" id="310">
+					<control type="button" id="314">
 						<width>750</width>
 						<height>40</height>
 						<font>font13</font>
@@ -1854,7 +1906,7 @@
 						<onclick>SetProperty(UsrSelectBtn,SubMovies.1,Home)</onclick>
 						<onclick>ActivateWindow(2115)</onclick>
 					</control>
-					<control type="button" id="311">
+					<control type="button" id="315">
 						<width>750</width>
 						<height>40</height>
 						<font>font13</font>
@@ -1867,7 +1919,7 @@
 						<onclick>SetProperty(UsrSelectBtn,SubMovies.2,Home)</onclick>
 						<onclick>ActivateWindow(2115)</onclick>
 					</control>
-					<control type="button" id="312">
+					<control type="button" id="316">
 						<width>750</width>
 						<height>40</height>
 						<font>font13</font>
@@ -1880,7 +1932,7 @@
 						<onclick>SetProperty(UsrSelectBtn,SubMovies.3,Home)</onclick>
 						<onclick>ActivateWindow(2115)</onclick>
 					</control>
-					<control type="button" id="313">
+					<control type="button" id="317">
 						<width>750</width>
 						<height>40</height>
 						<font>font13</font>
@@ -1893,7 +1945,7 @@
 						<onclick>SetProperty(UsrSelectBtn,SubMovies.4,Home)</onclick>
 						<onclick>ActivateWindow(2115)</onclick>
 					</control>
-					<control type="button" id="314">
+					<control type="button" id="318">
 						<width>750</width>
 						<height>40</height>
 						<font>font13</font>
@@ -1906,7 +1958,7 @@
 						<onclick>SetProperty(UsrSelectBtn,SubMovies.5,Home)</onclick>
 						<onclick>ActivateWindow(2115)</onclick>
 					</control>
-					<control type="button" id="315">
+					<control type="button" id="319">
 						<width>750</width>
 						<height>40</height>
 						<font>font13</font>
@@ -1919,7 +1971,59 @@
 						<onclick>SetProperty(UsrSelectBtn,SubMovies.6,Home)</onclick>
 						<onclick>ActivateWindow(2115)</onclick>
 					</control>
-					<control type="label" id="316">
+					<control type="button" id="320">
+						<width>750</width>
+						<height>40</height>
+						<font>font13</font>
+						<label>$LOCALIZE[31315] - 7</label>
+						<label2>[COLOR=selected]$INFO[Skin.String(SubMovies.7.Label)][/COLOR]</label2>
+						<textcolor>grey</textcolor>
+						<focusedcolor>white</focusedcolor>
+						<texturefocus>MenuItemFO.png</texturefocus>
+						<texturenofocus>MenuItemNF.png</texturenofocus>
+						<onclick>SetProperty(UsrSelectBtn,SubMovies.7,Home)</onclick>
+						<onclick>ActivateWindow(2115)</onclick>
+					</control>
+					<control type="button" id="321">
+						<width>750</width>
+						<height>40</height>
+						<font>font13</font>
+						<label>$LOCALIZE[31315] - 8</label>
+						<label2>[COLOR=selected]$INFO[Skin.String(SubMovies.8.Label)][/COLOR]</label2>
+						<textcolor>grey</textcolor>
+						<focusedcolor>white</focusedcolor>
+						<texturefocus>MenuItemFO.png</texturefocus>
+						<texturenofocus>MenuItemNF.png</texturenofocus>
+						<onclick>SetProperty(UsrSelectBtn,SubMovies.8,Home)</onclick>
+						<onclick>ActivateWindow(2115)</onclick>
+					</control>
+					<control type="button" id="322">
+						<width>750</width>
+						<height>40</height>
+						<font>font13</font>
+						<label>$LOCALIZE[31315] - 9</label>
+						<label2>[COLOR=selected]$INFO[Skin.String(SubMovies.9.Label)][/COLOR]</label2>
+						<textcolor>grey</textcolor>
+						<focusedcolor>white</focusedcolor>
+						<texturefocus>MenuItemFO.png</texturefocus>
+						<texturenofocus>MenuItemNF.png</texturenofocus>
+						<onclick>SetProperty(UsrSelectBtn,SubMovies.9,Home)</onclick>
+						<onclick>ActivateWindow(2115)</onclick>
+					</control>
+					<control type="button" id="323">
+						<width>750</width>
+						<height>40</height>
+						<font>font13</font>
+						<label>$LOCALIZE[31315] - 10</label>
+						<label2>[COLOR=selected]$INFO[Skin.String(SubMovies.10.Label)][/COLOR]</label2>
+						<textcolor>grey</textcolor>
+						<focusedcolor>white</focusedcolor>
+						<texturefocus>MenuItemFO.png</texturefocus>
+						<texturenofocus>MenuItemNF.png</texturenofocus>
+						<onclick>SetProperty(UsrSelectBtn,SubMovies.10,Home)</onclick>
+						<onclick>ActivateWindow(2115)</onclick>
+					</control>
+					<control type="label" id="324">
 						<width>750</width>
 						<height>45</height>
 						<font>font13_title</font>
@@ -1929,7 +2033,7 @@
 						<align>left</align>
 						<aligny>center</aligny>
 					</control>
-					<control type="button" id="317">
+					<control type="button" id="325">
 						<width>750</width>
 						<height>40</height>
 						<font>font13</font>
@@ -1941,7 +2045,7 @@
 						<texturenofocus>MenuItemNF.png</texturenofocus>
 						<onclick>Skin.SetString(UserTVShowsSubMenu)</onclick>
 					</control>
-					<control type="button" id="318">
+					<control type="button" id="326">
 						<width>750</width>
 						<height>40</height>
 						<font>font13</font>
@@ -1954,7 +2058,7 @@
 						<onclick>SetProperty(UsrSelectBtn,SubTVShows.1,Home)</onclick>
 						<onclick>ActivateWindow(2115)</onclick>
 					</control>
-					<control type="button" id="319">
+					<control type="button" id="327">
 						<width>750</width>
 						<height>40</height>
 						<font>font13</font>
@@ -1967,7 +2071,7 @@
 						<onclick>SetProperty(UsrSelectBtn,SubTVShows.2,Home)</onclick>
 						<onclick>ActivateWindow(2115)</onclick>
 					</control>
-					<control type="button" id="320">
+					<control type="button" id="328">
 						<width>750</width>
 						<height>40</height>
 						<font>font13</font>
@@ -1980,7 +2084,7 @@
 						<onclick>SetProperty(UsrSelectBtn,SubTVShows.3,Home)</onclick>
 						<onclick>ActivateWindow(2115)</onclick>
 					</control>
-					<control type="button" id="321">
+					<control type="button" id="329">
 						<width>750</width>
 						<height>40</height>
 						<font>font13</font>
@@ -1993,7 +2097,7 @@
 						<onclick>SetProperty(UsrSelectBtn,SubTVShows.4,Home)</onclick>
 						<onclick>ActivateWindow(2115)</onclick>
 					</control>
-					<control type="button" id="322">
+					<control type="button" id="330">
 						<width>750</width>
 						<height>40</height>
 						<font>font13</font>
@@ -2006,7 +2110,7 @@
 						<onclick>SetProperty(UsrSelectBtn,SubTVShows.5,Home)</onclick>
 						<onclick>ActivateWindow(2115)</onclick>
 					</control>
-					<control type="button" id="323">
+					<control type="button" id="331">
 						<width>750</width>
 						<height>40</height>
 						<font>font13</font>
@@ -2019,7 +2123,59 @@
 						<onclick>SetProperty(UsrSelectBtn,SubTVShows.6,Home)</onclick>
 						<onclick>ActivateWindow(2115)</onclick>
 					</control>
-					<control type="label" id="324">
+					<control type="button" id="332">
+						<width>750</width>
+						<height>40</height>
+						<font>font13</font>
+						<label>$LOCALIZE[31315] - 7</label>
+						<label2>[COLOR=selected]$INFO[Skin.String(SubTVShows.7.Label)][/COLOR]</label2>
+						<textcolor>grey</textcolor>
+						<focusedcolor>white</focusedcolor>
+						<texturefocus>MenuItemFO.png</texturefocus>
+						<texturenofocus>MenuItemNF.png</texturenofocus>
+						<onclick>SetProperty(UsrSelectBtn,SubTVShows.7,Home)</onclick>
+						<onclick>ActivateWindow(2115)</onclick>
+					</control>
+					<control type="button" id="333">
+						<width>750</width>
+						<height>40</height>
+						<font>font13</font>
+						<label>$LOCALIZE[31315] - 8</label>
+						<label2>[COLOR=selected]$INFO[Skin.String(SubTVShows.8.Label)][/COLOR]</label2>
+						<textcolor>grey</textcolor>
+						<focusedcolor>white</focusedcolor>
+						<texturefocus>MenuItemFO.png</texturefocus>
+						<texturenofocus>MenuItemNF.png</texturenofocus>
+						<onclick>SetProperty(UsrSelectBtn,SubTVShows.8,Home)</onclick>
+						<onclick>ActivateWindow(2115)</onclick>
+					</control>
+					<control type="button" id="334">
+						<width>750</width>
+						<height>40</height>
+						<font>font13</font>
+						<label>$LOCALIZE[31315] - 9</label>
+						<label2>[COLOR=selected]$INFO[Skin.String(SubTVShows.9.Label)][/COLOR]</label2>
+						<textcolor>grey</textcolor>
+						<focusedcolor>white</focusedcolor>
+						<texturefocus>MenuItemFO.png</texturefocus>
+						<texturenofocus>MenuItemNF.png</texturenofocus>
+						<onclick>SetProperty(UsrSelectBtn,SubTVShows.9,Home)</onclick>
+						<onclick>ActivateWindow(2115)</onclick>
+					</control>
+					<control type="button" id="335">
+						<width>750</width>
+						<height>40</height>
+						<font>font13</font>
+						<label>$LOCALIZE[31315] - 10</label>
+						<label2>[COLOR=selected]$INFO[Skin.String(SubTVShows.10.Label)][/COLOR]</label2>
+						<textcolor>grey</textcolor>
+						<focusedcolor>white</focusedcolor>
+						<texturefocus>MenuItemFO.png</texturefocus>
+						<texturenofocus>MenuItemNF.png</texturenofocus>
+						<onclick>SetProperty(UsrSelectBtn,SubTVShows.10,Home)</onclick>
+						<onclick>ActivateWindow(2115)</onclick>
+					</control>
+					<control type="label" id="336">
 						<width>750</width>
 						<height>45</height>
 						<font>font13_title</font>
@@ -2029,7 +2185,7 @@
 						<align>left</align>
 						<aligny>center</aligny>
 					</control>
-					<control type="button" id="325">
+					<control type="button" id="337">
 						<width>750</width>
 						<height>40</height>
 						<font>font13</font>
@@ -2041,7 +2197,7 @@
 						<texturenofocus>MenuItemNF.png</texturenofocus>
 						<onclick>Skin.SetString(UserConcertsSubMenu)</onclick>
 					</control>
-					<control type="button" id="326">
+					<control type="button" id="338">
 						<width>750</width>
 						<height>40</height>
 						<font>font13</font>
@@ -2054,7 +2210,7 @@
 						<onclick>SetProperty(UsrSelectBtn,SubConcerts.1,Home)</onclick>
 						<onclick>ActivateWindow(2115)</onclick>
 					</control>
-					<control type="button" id="327">
+					<control type="button" id="339">
 						<width>750</width>
 						<height>40</height>
 						<font>font13</font>
@@ -2067,7 +2223,7 @@
 						<onclick>SetProperty(UsrSelectBtn,SubConcerts.2,Home)</onclick>
 						<onclick>ActivateWindow(2115)</onclick>
 					</control>
-					<control type="button" id="328">
+					<control type="button" id="340">
 						<width>750</width>
 						<height>40</height>
 						<font>font13</font>
@@ -2080,7 +2236,7 @@
 						<onclick>SetProperty(UsrSelectBtn,SubConcerts.3,Home)</onclick>
 						<onclick>ActivateWindow(2115)</onclick>
 					</control>
-					<control type="button" id="329">
+					<control type="button" id="341">
 						<width>750</width>
 						<height>40</height>
 						<font>font13</font>
@@ -2093,7 +2249,7 @@
 						<onclick>SetProperty(UsrSelectBtn,SubConcerts.4,Home)</onclick>
 						<onclick>ActivateWindow(2115)</onclick>
 					</control>
-					<control type="button" id="330">
+					<control type="button" id="342">
 						<width>750</width>
 						<height>40</height>
 						<font>font13</font>
@@ -2106,7 +2262,7 @@
 						<onclick>SetProperty(UsrSelectBtn,SubConcerts.5,Home)</onclick>
 						<onclick>ActivateWindow(2115)</onclick>
 					</control>
-					<control type="button" id="331">
+					<control type="button" id="343">
 						<width>750</width>
 						<height>40</height>
 						<font>font13</font>
@@ -2119,7 +2275,59 @@
 						<onclick>SetProperty(UsrSelectBtn,SubConcerts.6,Home)</onclick>
 						<onclick>ActivateWindow(2115)</onclick>
 					</control>
-					<control type="label" id="332">
+					<control type="button" id="344">
+						<width>750</width>
+						<height>40</height>
+						<font>font13</font>
+						<label>$LOCALIZE[31315] - 7</label>
+						<label2>[COLOR=selected]$INFO[Skin.String(SubConcerts.7.Label)][/COLOR]</label2>
+						<textcolor>grey</textcolor>
+						<focusedcolor>white</focusedcolor>
+						<texturefocus>MenuItemFO.png</texturefocus>
+						<texturenofocus>MenuItemNF.png</texturenofocus>
+						<onclick>SetProperty(UsrSelectBtn,SubConcerts.7,Home)</onclick>
+						<onclick>ActivateWindow(2115)</onclick>
+					</control>
+					<control type="button" id="345">
+						<width>750</width>
+						<height>40</height>
+						<font>font13</font>
+						<label>$LOCALIZE[31315] - 8</label>
+						<label2>[COLOR=selected]$INFO[Skin.String(SubConcerts.8.Label)][/COLOR]</label2>
+						<textcolor>grey</textcolor>
+						<focusedcolor>white</focusedcolor>
+						<texturefocus>MenuItemFO.png</texturefocus>
+						<texturenofocus>MenuItemNF.png</texturenofocus>
+						<onclick>SetProperty(UsrSelectBtn,SubConcerts.8,Home)</onclick>
+						<onclick>ActivateWindow(2115)</onclick>
+					</control>
+					<control type="button" id="346">
+						<width>750</width>
+						<height>40</height>
+						<font>font13</font>
+						<label>$LOCALIZE[31315] - 9</label>
+						<label2>[COLOR=selected]$INFO[Skin.String(SubConcerts.9.Label)][/COLOR]</label2>
+						<textcolor>grey</textcolor>
+						<focusedcolor>white</focusedcolor>
+						<texturefocus>MenuItemFO.png</texturefocus>
+						<texturenofocus>MenuItemNF.png</texturenofocus>
+						<onclick>SetProperty(UsrSelectBtn,SubConcerts.9,Home)</onclick>
+						<onclick>ActivateWindow(2115)</onclick>
+					</control>
+					<control type="button" id="347">
+						<width>750</width>
+						<height>40</height>
+						<font>font13</font>
+						<label>$LOCALIZE[31315] - 10</label>
+						<label2>[COLOR=selected]$INFO[Skin.String(SubConcerts.10.Label)][/COLOR]</label2>
+						<textcolor>grey</textcolor>
+						<focusedcolor>white</focusedcolor>
+						<texturefocus>MenuItemFO.png</texturefocus>
+						<texturenofocus>MenuItemNF.png</texturenofocus>
+						<onclick>SetProperty(UsrSelectBtn,SubConcerts.10,Home)</onclick>
+						<onclick>ActivateWindow(2115)</onclick>
+					</control>
+					<control type="label" id="348">
 						<width>750</width>
 						<height>45</height>
 						<font>font13_title</font>
@@ -2129,7 +2337,7 @@
 						<align>left</align>
 						<aligny>center</aligny>
 					</control>
-					<control type="button" id="333">
+					<control type="button" id="349">
 						<width>750</width>
 						<height>40</height>
 						<font>font13</font>
@@ -2141,7 +2349,7 @@
 						<texturenofocus>MenuItemNF.png</texturenofocus>
 						<onclick>Skin.SetString(UserMusicSubMenu)</onclick>
 					</control>
-					<control type="button" id="334">
+					<control type="button" id="350">
 						<width>750</width>
 						<height>40</height>
 						<font>font13</font>
@@ -2154,7 +2362,7 @@
 						<onclick>SetProperty(UsrSelectBtn,SubMusic.1,Home)</onclick>
 						<onclick>ActivateWindow(2115)</onclick>
 					</control>
-					<control type="button" id="335">
+					<control type="button" id="351">
 						<width>750</width>
 						<height>40</height>
 						<font>font13</font>
@@ -2167,7 +2375,7 @@
 						<onclick>SetProperty(UsrSelectBtn,SubMusic.2,Home)</onclick>
 						<onclick>ActivateWindow(2115)</onclick>
 					</control>
-					<control type="button" id="336">
+					<control type="button" id="352">
 						<width>750</width>
 						<height>40</height>
 						<font>font13</font>
@@ -2180,7 +2388,7 @@
 						<onclick>SetProperty(UsrSelectBtn,SubMusic.3,Home)</onclick>
 						<onclick>ActivateWindow(2115)</onclick>
 					</control>
-					<control type="button" id="337">
+					<control type="button" id="353">
 						<width>750</width>
 						<height>40</height>
 						<font>font13</font>
@@ -2193,7 +2401,7 @@
 						<onclick>SetProperty(UsrSelectBtn,SubMusic.4,Home)</onclick>
 						<onclick>ActivateWindow(2115)</onclick>
 					</control>
-					<control type="button" id="338">
+					<control type="button" id="354">
 						<width>750</width>
 						<height>40</height>
 						<font>font13</font>
@@ -2206,7 +2414,7 @@
 						<onclick>SetProperty(UsrSelectBtn,SubMusic.5,Home)</onclick>
 						<onclick>ActivateWindow(2115)</onclick>
 					</control>
-					<control type="button" id="339">
+					<control type="button" id="355">
 						<width>750</width>
 						<height>40</height>
 						<font>font13</font>
@@ -2219,7 +2427,59 @@
 						<onclick>SetProperty(UsrSelectBtn,SubMusic.6,Home)</onclick>
 						<onclick>ActivateWindow(2115)</onclick>
 					</control>
-					<control type="label" id="340">
+					<control type="button" id="356">
+						<width>750</width>
+						<height>40</height>
+						<font>font13</font>
+						<label>$LOCALIZE[31315] - 7</label>
+						<label2>[COLOR=selected]$INFO[Skin.String(SubMusic.7.Label)][/COLOR]</label2>
+						<textcolor>grey</textcolor>
+						<focusedcolor>white</focusedcolor>
+						<texturefocus>MenuItemFO.png</texturefocus>
+						<texturenofocus>MenuItemNF.png</texturenofocus>
+						<onclick>SetProperty(UsrSelectBtn,SubMusic.7,Home)</onclick>
+						<onclick>ActivateWindow(2115)</onclick>
+					</control>
+					<control type="button" id="357">
+						<width>750</width>
+						<height>40</height>
+						<font>font13</font>
+						<label>$LOCALIZE[31315] - 8</label>
+						<label2>[COLOR=selected]$INFO[Skin.String(SubMusic.8.Label)][/COLOR]</label2>
+						<textcolor>grey</textcolor>
+						<focusedcolor>white</focusedcolor>
+						<texturefocus>MenuItemFO.png</texturefocus>
+						<texturenofocus>MenuItemNF.png</texturenofocus>
+						<onclick>SetProperty(UsrSelectBtn,SubMusic.8,Home)</onclick>
+						<onclick>ActivateWindow(2115)</onclick>
+					</control>
+					<control type="button" id="358">
+						<width>750</width>
+						<height>40</height>
+						<font>font13</font>
+						<label>$LOCALIZE[31315] - 9</label>
+						<label2>[COLOR=selected]$INFO[Skin.String(SubMusic.9.Label)][/COLOR]</label2>
+						<textcolor>grey</textcolor>
+						<focusedcolor>white</focusedcolor>
+						<texturefocus>MenuItemFO.png</texturefocus>
+						<texturenofocus>MenuItemNF.png</texturenofocus>
+						<onclick>SetProperty(UsrSelectBtn,SubMusic.9,Home)</onclick>
+						<onclick>ActivateWindow(2115)</onclick>
+					</control>
+					<control type="button" id="359">
+						<width>750</width>
+						<height>40</height>
+						<font>font13</font>
+						<label>$LOCALIZE[31315] - 10</label>
+						<label2>[COLOR=selected]$INFO[Skin.String(SubMusic.10.Label)][/COLOR]</label2>
+						<textcolor>grey</textcolor>
+						<focusedcolor>white</focusedcolor>
+						<texturefocus>MenuItemFO.png</texturefocus>
+						<texturenofocus>MenuItemNF.png</texturenofocus>
+						<onclick>SetProperty(UsrSelectBtn,SubMusic.10,Home)</onclick>
+						<onclick>ActivateWindow(2115)</onclick>
+					</control>
+					<control type="label" id="360">
 						<width>750</width>
 						<height>45</height>
 						<font>font13_title</font>
@@ -2229,7 +2489,7 @@
 						<align>left</align>
 						<aligny>center</aligny>
 					</control>
-					<control type="button" id="341">
+					<control type="button" id="361">
 						<width>750</width>
 						<height>40</height>
 						<font>font13</font>
@@ -2241,7 +2501,7 @@
 						<texturenofocus>MenuItemNF.png</texturenofocus>
 						<onclick>Skin.SetString(UserProgsSubMenu)</onclick>
 					</control>
-					<control type="button" id="342">
+					<control type="button" id="362">
 						<width>750</width>
 						<height>40</height>
 						<font>font13</font>
@@ -2254,7 +2514,7 @@
 						<onclick>SetProperty(UsrSelectBtn,SubProg.1,Home)</onclick>
 						<onclick>ActivateWindow(2115)</onclick>
 					</control>
-					<control type="button" id="343">
+					<control type="button" id="363">
 						<width>750</width>
 						<height>40</height>
 						<font>font13</font>
@@ -2267,7 +2527,7 @@
 						<onclick>SetProperty(UsrSelectBtn,SubProg.2,Home)</onclick>
 						<onclick>ActivateWindow(2115)</onclick>
 					</control>
-					<control type="button" id="344">
+					<control type="button" id="364">
 						<width>750</width>
 						<height>40</height>
 						<font>font13</font>
@@ -2280,7 +2540,7 @@
 						<onclick>SetProperty(UsrSelectBtn,SubProg.3,Home)</onclick>
 						<onclick>ActivateWindow(2115)</onclick>
 					</control>
-					<control type="button" id="345">
+					<control type="button" id="365">
 						<width>750</width>
 						<height>40</height>
 						<font>font13</font>
@@ -2293,7 +2553,7 @@
 						<onclick>SetProperty(UsrSelectBtn,SubProg.4,Home)</onclick>
 						<onclick>ActivateWindow(2115)</onclick>
 					</control>
-					<control type="button" id="346">
+					<control type="button" id="366">
 						<width>750</width>
 						<height>40</height>
 						<font>font13</font>
@@ -2306,7 +2566,7 @@
 						<onclick>SetProperty(UsrSelectBtn,SubProg.5,Home)</onclick>
 						<onclick>ActivateWindow(2115)</onclick>
 					</control>
-					<control type="button" id="347">
+					<control type="button" id="367">
 						<width>750</width>
 						<height>40</height>
 						<font>font13</font>
@@ -2319,7 +2579,59 @@
 						<onclick>SetProperty(UsrSelectBtn,SubProg.6,Home)</onclick>
 						<onclick>ActivateWindow(2115)</onclick>
 					</control>
-					<control type="label" id="348">
+					<control type="button" id="368">
+						<width>750</width>
+						<height>40</height>
+						<font>font13</font>
+						<label>$LOCALIZE[31315] - 7</label>
+						<label2>[COLOR=selected]$INFO[Skin.String(SubProg.7.Label)][/COLOR]</label2>
+						<textcolor>grey</textcolor>
+						<focusedcolor>white</focusedcolor>
+						<texturefocus>MenuItemFO.png</texturefocus>
+						<texturenofocus>MenuItemNF.png</texturenofocus>
+						<onclick>SetProperty(UsrSelectBtn,SubProg.7,Home)</onclick>
+						<onclick>ActivateWindow(2115)</onclick>
+					</control>
+					<control type="button" id="369">
+						<width>750</width>
+						<height>40</height>
+						<font>font13</font>
+						<label>$LOCALIZE[31315] - 8</label>
+						<label2>[COLOR=selected]$INFO[Skin.String(SubProg.8.Label)][/COLOR]</label2>
+						<textcolor>grey</textcolor>
+						<focusedcolor>white</focusedcolor>
+						<texturefocus>MenuItemFO.png</texturefocus>
+						<texturenofocus>MenuItemNF.png</texturenofocus>
+						<onclick>SetProperty(UsrSelectBtn,SubProg.8,Home)</onclick>
+						<onclick>ActivateWindow(2115)</onclick>
+					</control>
+					<control type="button" id="370">
+						<width>750</width>
+						<height>40</height>
+						<font>font13</font>
+						<label>$LOCALIZE[31315] - 9</label>
+						<label2>[COLOR=selected]$INFO[Skin.String(SubProg.9.Label)][/COLOR]</label2>
+						<textcolor>grey</textcolor>
+						<focusedcolor>white</focusedcolor>
+						<texturefocus>MenuItemFO.png</texturefocus>
+						<texturenofocus>MenuItemNF.png</texturenofocus>
+						<onclick>SetProperty(UsrSelectBtn,SubProg.9,Home)</onclick>
+						<onclick>ActivateWindow(2115)</onclick>
+					</control>
+					<control type="button" id="371">
+						<width>750</width>
+						<height>40</height>
+						<font>font13</font>
+						<label>$LOCALIZE[31315] - 10</label>
+						<label2>[COLOR=selected]$INFO[Skin.String(SubProg.10.Label)][/COLOR]</label2>
+						<textcolor>grey</textcolor>
+						<focusedcolor>white</focusedcolor>
+						<texturefocus>MenuItemFO.png</texturefocus>
+						<texturenofocus>MenuItemNF.png</texturenofocus>
+						<onclick>SetProperty(UsrSelectBtn,SubProg.10,Home)</onclick>
+						<onclick>ActivateWindow(2115)</onclick>
+					</control>
+					<control type="label" id="372">
 						<width>750</width>
 						<height>45</height>
 						<font>font13_title</font>
@@ -2329,7 +2641,7 @@
 						<align>left</align>
 						<aligny>center</aligny>
 					</control>
-					<control type="button" id="349">
+					<control type="button" id="373">
 						<width>750</width>
 						<height>40</height>
 						<font>font13</font>
@@ -2341,7 +2653,7 @@
 						<texturenofocus>MenuItemNF.png</texturenofocus>
 						<onclick>Skin.SetString(UserPicturesSubMenu)</onclick>
 					</control>
-					<control type="button" id="350">
+					<control type="button" id="374">
 						<width>750</width>
 						<height>40</height>
 						<font>font13</font>
@@ -2354,7 +2666,7 @@
 						<onclick>SetProperty(UsrSelectBtn,SubPictures.1,Home)</onclick>
 						<onclick>ActivateWindow(2115)</onclick>
 					</control>
-					<control type="button" id="351">
+					<control type="button" id="375">
 						<width>750</width>
 						<height>40</height>
 						<font>font13</font>
@@ -2367,7 +2679,7 @@
 						<onclick>SetProperty(UsrSelectBtn,SubPictures.2,Home)</onclick>
 						<onclick>ActivateWindow(2115)</onclick>
 					</control>
-					<control type="button" id="352">
+					<control type="button" id="376">
 						<width>750</width>
 						<height>40</height>
 						<font>font13</font>
@@ -2380,7 +2692,7 @@
 						<onclick>SetProperty(UsrSelectBtn,SubPictures.3,Home)</onclick>
 						<onclick>ActivateWindow(2115)</onclick>
 					</control>
-					<control type="button" id="353">
+					<control type="button" id="377">
 						<width>750</width>
 						<height>40</height>
 						<font>font13</font>
@@ -2393,7 +2705,7 @@
 						<onclick>SetProperty(UsrSelectBtn,SubPictures.4,Home)</onclick>
 						<onclick>ActivateWindow(2115)</onclick>
 					</control>
-					<control type="button" id="354">
+					<control type="button" id="378">
 						<width>750</width>
 						<height>40</height>
 						<font>font13</font>
@@ -2406,7 +2718,7 @@
 						<onclick>SetProperty(UsrSelectBtn,SubPictures.5,Home)</onclick>
 						<onclick>ActivateWindow(2115)</onclick>
 					</control>
-					<control type="button" id="355">
+					<control type="button" id="379">
 						<width>750</width>
 						<height>40</height>
 						<font>font13</font>
@@ -2419,7 +2731,59 @@
 						<onclick>SetProperty(UsrSelectBtn,SubPictures.6,Home)</onclick>
 						<onclick>ActivateWindow(2115)</onclick>
 					</control>
-					<control type="label" id="356">
+					<control type="button" id="380">
+						<width>750</width>
+						<height>40</height>
+						<font>font13</font>
+						<label>$LOCALIZE[31315] - 7</label>
+						<label2>[COLOR=selected]$INFO[Skin.String(SubPictures.7.Label)][/COLOR]</label2>
+						<textcolor>grey</textcolor>
+						<focusedcolor>white</focusedcolor>
+						<texturefocus>MenuItemFO.png</texturefocus>
+						<texturenofocus>MenuItemNF.png</texturenofocus>
+						<onclick>SetProperty(UsrSelectBtn,SubPictures.7,Home)</onclick>
+						<onclick>ActivateWindow(2115)</onclick>
+					</control>
+					<control type="button" id="381">
+						<width>750</width>
+						<height>40</height>
+						<font>font13</font>
+						<label>$LOCALIZE[31315] - 8</label>
+						<label2>[COLOR=selected]$INFO[Skin.String(SubPictures.8.Label)][/COLOR]</label2>
+						<textcolor>grey</textcolor>
+						<focusedcolor>white</focusedcolor>
+						<texturefocus>MenuItemFO.png</texturefocus>
+						<texturenofocus>MenuItemNF.png</texturenofocus>
+						<onclick>SetProperty(UsrSelectBtn,SubPictures.8,Home)</onclick>
+						<onclick>ActivateWindow(2115)</onclick>
+					</control>
+					<control type="button" id="382">
+						<width>750</width>
+						<height>40</height>
+						<font>font13</font>
+						<label>$LOCALIZE[31315] - 9</label>
+						<label2>[COLOR=selected]$INFO[Skin.String(SubPictures.9.Label)][/COLOR]</label2>
+						<textcolor>grey</textcolor>
+						<focusedcolor>white</focusedcolor>
+						<texturefocus>MenuItemFO.png</texturefocus>
+						<texturenofocus>MenuItemNF.png</texturenofocus>
+						<onclick>SetProperty(UsrSelectBtn,SubPictures.9,Home)</onclick>
+						<onclick>ActivateWindow(2115)</onclick>
+					</control>
+					<control type="button" id="383">
+						<width>750</width>
+						<height>40</height>
+						<font>font13</font>
+						<label>$LOCALIZE[31315] - 10</label>
+						<label2>[COLOR=selected]$INFO[Skin.String(SubPictures.10.Label)][/COLOR]</label2>
+						<textcolor>grey</textcolor>
+						<focusedcolor>white</focusedcolor>
+						<texturefocus>MenuItemFO.png</texturefocus>
+						<texturenofocus>MenuItemNF.png</texturenofocus>
+						<onclick>SetProperty(UsrSelectBtn,SubPictures.10,Home)</onclick>
+						<onclick>ActivateWindow(2115)</onclick>
+					</control>
+					<control type="label" id="384">
 						<width>750</width>
 						<height>45</height>
 						<font>font13_title</font>
@@ -2429,7 +2793,7 @@
 						<align>left</align>
 						<aligny>center</aligny>
 					</control>
-					<control type="button" id="357">
+					<control type="button" id="385">
 						<width>750</width>
 						<height>40</height>
 						<font>font13</font>
@@ -2441,7 +2805,7 @@
 						<texturenofocus>MenuItemNF.png</texturenofocus>
 						<onclick>Skin.SetString(UserLiveTVSubMenu)</onclick>
 					</control>
-					<control type="button" id="358">
+					<control type="button" id="386">
 						<width>750</width>
 						<height>40</height>
 						<font>font13</font>
@@ -2454,7 +2818,7 @@
 						<onclick>SetProperty(UsrSelectBtn,SubLiveTV.1,Home)</onclick>
 						<onclick>ActivateWindow(2115)</onclick>
 					</control>
-					<control type="button" id="359">
+					<control type="button" id="387">
 						<width>750</width>
 						<height>40</height>
 						<font>font13</font>
@@ -2467,7 +2831,7 @@
 						<onclick>SetProperty(UsrSelectBtn,SubLiveTV.2,Home)</onclick>
 						<onclick>ActivateWindow(2115)</onclick>
 					</control>
-					<control type="button" id="360">
+					<control type="button" id="388">
 						<width>750</width>
 						<height>40</height>
 						<font>font13</font>
@@ -2480,7 +2844,7 @@
 						<onclick>SetProperty(UsrSelectBtn,SubLiveTV.3,Home)</onclick>
 						<onclick>ActivateWindow(2115)</onclick>
 					</control>
-					<control type="button" id="361">
+					<control type="button" id="389">
 						<width>750</width>
 						<height>40</height>
 						<font>font13</font>
@@ -2493,7 +2857,7 @@
 						<onclick>SetProperty(UsrSelectBtn,SubLiveTV.4,Home)</onclick>
 						<onclick>ActivateWindow(2115)</onclick>
 					</control>
-					<control type="button" id="362">
+					<control type="button" id="390">
 						<width>750</width>
 						<height>40</height>
 						<font>font13</font>
@@ -2506,7 +2870,7 @@
 						<onclick>SetProperty(UsrSelectBtn,SubLiveTV.5,Home)</onclick>
 						<onclick>ActivateWindow(2115)</onclick>
 					</control>
-					<control type="button" id="363">
+					<control type="button" id="391">
 						<width>750</width>
 						<height>40</height>
 						<font>font13</font>
@@ -2519,7 +2883,59 @@
 						<onclick>SetProperty(UsrSelectBtn,SubLiveTV.6,Home)</onclick>
 						<onclick>ActivateWindow(2115)</onclick>
 					</control>
-					<control type="label" id="364">
+					<control type="button" id="392">
+						<width>750</width>
+						<height>40</height>
+						<font>font13</font>
+						<label>$LOCALIZE[31315] - 7</label>
+						<label2>[COLOR=selected]$INFO[Skin.String(SubLiveTV.7.Label)][/COLOR]</label2>
+						<textcolor>grey</textcolor>
+						<focusedcolor>white</focusedcolor>
+						<texturefocus>MenuItemFO.png</texturefocus>
+						<texturenofocus>MenuItemNF.png</texturenofocus>
+						<onclick>SetProperty(UsrSelectBtn,SubLiveTV.7,Home)</onclick>
+						<onclick>ActivateWindow(2115)</onclick>
+					</control>
+					<control type="button" id="393">
+						<width>750</width>
+						<height>40</height>
+						<font>font13</font>
+						<label>$LOCALIZE[31315] - 8</label>
+						<label2>[COLOR=selected]$INFO[Skin.String(SubLiveTV.8.Label)][/COLOR]</label2>
+						<textcolor>grey</textcolor>
+						<focusedcolor>white</focusedcolor>
+						<texturefocus>MenuItemFO.png</texturefocus>
+						<texturenofocus>MenuItemNF.png</texturenofocus>
+						<onclick>SetProperty(UsrSelectBtn,SubLiveTV.8,Home)</onclick>
+						<onclick>ActivateWindow(2115)</onclick>
+					</control>
+					<control type="button" id="394">
+						<width>750</width>
+						<height>40</height>
+						<font>font13</font>
+						<label>$LOCALIZE[31315] - 9</label>
+						<label2>[COLOR=selected]$INFO[Skin.String(SubLiveTV.9.Label)][/COLOR]</label2>
+						<textcolor>grey</textcolor>
+						<focusedcolor>white</focusedcolor>
+						<texturefocus>MenuItemFO.png</texturefocus>
+						<texturenofocus>MenuItemNF.png</texturenofocus>
+						<onclick>SetProperty(UsrSelectBtn,SubLiveTV.9,Home)</onclick>
+						<onclick>ActivateWindow(2115)</onclick>
+					</control>
+					<control type="button" id="395">
+						<width>750</width>
+						<height>40</height>
+						<font>font13</font>
+						<label>$LOCALIZE[31315] - 10</label>
+						<label2>[COLOR=selected]$INFO[Skin.String(SubLiveTV.10.Label)][/COLOR]</label2>
+						<textcolor>grey</textcolor>
+						<focusedcolor>white</focusedcolor>
+						<texturefocus>MenuItemFO.png</texturefocus>
+						<texturenofocus>MenuItemNF.png</texturenofocus>
+						<onclick>SetProperty(UsrSelectBtn,SubLiveTV.10,Home)</onclick>
+						<onclick>ActivateWindow(2115)</onclick>
+					</control>
+					<control type="label" id="396">
 						<width>750</width>
 						<height>45</height>
 						<font>font13_title</font>
@@ -2529,7 +2945,7 @@
 						<align>left</align>
 						<aligny>center</aligny>
 					</control>
-					<control type="button" id="365">
+					<control type="button" id="397">
 						<width>750</width>
 						<height>40</height>
 						<font>font13</font>
@@ -2541,7 +2957,7 @@
 						<texturenofocus>MenuItemNF.png</texturenofocus>
 						<onclick>Skin.SetString(UserRadioSubMenu)</onclick>
 					</control>
-					<control type="button" id="366">
+					<control type="button" id="398">
 						<width>750</width>
 						<height>40</height>
 						<font>font13</font>
@@ -2554,7 +2970,7 @@
 						<onclick>SetProperty(UsrSelectBtn,SubRadio.1,Home)</onclick>
 						<onclick>ActivateWindow(2115)</onclick>
 					</control>
-					<control type="button" id="367">
+					<control type="button" id="399">
 						<width>750</width>
 						<height>40</height>
 						<font>font13</font>
@@ -2567,7 +2983,7 @@
 						<onclick>SetProperty(UsrSelectBtn,SubRadio.2,Home)</onclick>
 						<onclick>ActivateWindow(2115)</onclick>
 					</control>
-					<control type="button" id="368">
+					<control type="button" id="400">
 						<width>750</width>
 						<height>40</height>
 						<font>font13</font>
@@ -2580,7 +2996,7 @@
 						<onclick>SetProperty(UsrSelectBtn,SubRadio.3,Home)</onclick>
 						<onclick>ActivateWindow(2115)</onclick>
 					</control>
-					<control type="button" id="369">
+					<control type="button" id="401">
 						<width>750</width>
 						<height>40</height>
 						<font>font13</font>
@@ -2593,7 +3009,7 @@
 						<onclick>SetProperty(UsrSelectBtn,SubRadio.4,Home)</onclick>
 						<onclick>ActivateWindow(2115)</onclick>
 					</control>
-					<control type="button" id="370">
+					<control type="button" id="402">
 						<width>750</width>
 						<height>40</height>
 						<font>font13</font>
@@ -2606,7 +3022,7 @@
 						<onclick>SetProperty(UsrSelectBtn,SubRadio.5,Home)</onclick>
 						<onclick>ActivateWindow(2115)</onclick>
 					</control>
-					<control type="button" id="371">
+					<control type="button" id="403">
 						<width>750</width>
 						<height>40</height>
 						<font>font13</font>
@@ -2619,7 +3035,59 @@
 						<onclick>SetProperty(UsrSelectBtn,SubRadio.6,Home)</onclick>
 						<onclick>ActivateWindow(2115)</onclick>
 					</control>
-					<control type="label" id="372">
+					<control type="button" id="404">
+						<width>750</width>
+						<height>40</height>
+						<font>font13</font>
+						<label>$LOCALIZE[31315] - 7</label>
+						<label2>[COLOR=selected]$INFO[Skin.String(SubRadio.7.Label)][/COLOR]</label2>
+						<textcolor>grey</textcolor>
+						<focusedcolor>white</focusedcolor>
+						<texturefocus>MenuItemFO.png</texturefocus>
+						<texturenofocus>MenuItemNF.png</texturenofocus>
+						<onclick>SetProperty(UsrSelectBtn,SubRadio.7,Home)</onclick>
+						<onclick>ActivateWindow(2115)</onclick>
+					</control>
+					<control type="button" id="405">
+						<width>750</width>
+						<height>40</height>
+						<font>font13</font>
+						<label>$LOCALIZE[31315] - 8</label>
+						<label2>[COLOR=selected]$INFO[Skin.String(SubRadio.8.Label)][/COLOR]</label2>
+						<textcolor>grey</textcolor>
+						<focusedcolor>white</focusedcolor>
+						<texturefocus>MenuItemFO.png</texturefocus>
+						<texturenofocus>MenuItemNF.png</texturenofocus>
+						<onclick>SetProperty(UsrSelectBtn,SubRadio.8,Home)</onclick>
+						<onclick>ActivateWindow(2115)</onclick>
+					</control>
+					<control type="button" id="406">
+						<width>750</width>
+						<height>40</height>
+						<font>font13</font>
+						<label>$LOCALIZE[31315] - 9</label>
+						<label2>[COLOR=selected]$INFO[Skin.String(SubRadio.9.Label)][/COLOR]</label2>
+						<textcolor>grey</textcolor>
+						<focusedcolor>white</focusedcolor>
+						<texturefocus>MenuItemFO.png</texturefocus>
+						<texturenofocus>MenuItemNF.png</texturenofocus>
+						<onclick>SetProperty(UsrSelectBtn,SubRadio.9,Home)</onclick>
+						<onclick>ActivateWindow(2115)</onclick>
+					</control>
+					<control type="button" id="407">
+						<width>750</width>
+						<height>40</height>
+						<font>font13</font>
+						<label>$LOCALIZE[31315] - 10</label>
+						<label2>[COLOR=selected]$INFO[Skin.String(SubRadio.10.Label)][/COLOR]</label2>
+						<textcolor>grey</textcolor>
+						<focusedcolor>white</focusedcolor>
+						<texturefocus>MenuItemFO.png</texturefocus>
+						<texturenofocus>MenuItemNF.png</texturenofocus>
+						<onclick>SetProperty(UsrSelectBtn,SubRadio.10,Home)</onclick>
+						<onclick>ActivateWindow(2115)</onclick>
+					</control>
+					<control type="label" id="408">
 						<width>750</width>
 						<height>45</height>
 						<font>font13_title</font>
@@ -2629,7 +3097,7 @@
 						<align>left</align>
 						<aligny>center</aligny>
 					</control>
-					<control type="button" id="373">
+					<control type="button" id="409">
 						<width>750</width>
 						<height>40</height>
 						<font>font13</font>
@@ -2641,7 +3109,7 @@
 						<texturenofocus>MenuItemNF.png</texturenofocus>
 						<onclick>Skin.SetString(UserSettingsSubMenu)</onclick>
 					</control>
-					<control type="button" id="374">
+					<control type="button" id="410">
 						<width>750</width>
 						<height>40</height>
 						<font>font13</font>
@@ -2654,7 +3122,7 @@
 						<onclick>SetProperty(UsrSelectBtn,SubSystem.1,Home)</onclick>
 						<onclick>ActivateWindow(2115)</onclick>
 					</control>
-					<control type="button" id="375">
+					<control type="button" id="411">
 						<width>750</width>
 						<height>40</height>
 						<font>font13</font>
@@ -2667,7 +3135,7 @@
 						<onclick>SetProperty(UsrSelectBtn,SubSystem.2,Home)</onclick>
 						<onclick>ActivateWindow(2115)</onclick>
 					</control>
-					<control type="button" id="376">
+					<control type="button" id="412">
 						<width>750</width>
 						<height>40</height>
 						<font>font13</font>
@@ -2680,7 +3148,7 @@
 						<onclick>SetProperty(UsrSelectBtn,SubSystem.3,Home)</onclick>
 						<onclick>ActivateWindow(2115)</onclick>
 					</control>
-					<control type="button" id="377">
+					<control type="button" id="413">
 						<width>750</width>
 						<height>40</height>
 						<font>font13</font>
@@ -2693,7 +3161,7 @@
 						<onclick>SetProperty(UsrSelectBtn,SubSystem.4,Home)</onclick>
 						<onclick>ActivateWindow(2115)</onclick>
 					</control>
-					<control type="button" id="378">
+					<control type="button" id="414">
 						<width>750</width>
 						<height>40</height>
 						<font>font13</font>
@@ -2706,7 +3174,7 @@
 						<onclick>SetProperty(UsrSelectBtn,SubSystem.5,Home)</onclick>
 						<onclick>ActivateWindow(2115)</onclick>
 					</control>
-					<control type="button" id="379">
+					<control type="button" id="415">
 						<width>750</width>
 						<height>40</height>
 						<font>font13</font>
@@ -2719,7 +3187,59 @@
 						<onclick>SetProperty(UsrSelectBtn,SubSystem.6,Home)</onclick>
 						<onclick>ActivateWindow(2115)</onclick>
 					</control>
-					<control type="label" id="380">
+					<control type="button" id="416">
+						<width>750</width>
+						<height>40</height>
+						<font>font13</font>
+						<label>$LOCALIZE[31315] - 7</label>
+						<label2>[COLOR=selected]$INFO[Skin.String(SubSystem.7.Label)][/COLOR]</label2>
+						<textcolor>grey</textcolor>
+						<focusedcolor>white</focusedcolor>
+						<texturefocus>MenuItemFO.png</texturefocus>
+						<texturenofocus>MenuItemNF.png</texturenofocus>
+						<onclick>SetProperty(UsrSelectBtn,SubSystem.7,Home)</onclick>
+						<onclick>ActivateWindow(2115)</onclick>
+					</control>
+					<control type="button" id="417">
+						<width>750</width>
+						<height>40</height>
+						<font>font13</font>
+						<label>$LOCALIZE[31315] - 8</label>
+						<label2>[COLOR=selected]$INFO[Skin.String(SubSystem.8.Label)][/COLOR]</label2>
+						<textcolor>grey</textcolor>
+						<focusedcolor>white</focusedcolor>
+						<texturefocus>MenuItemFO.png</texturefocus>
+						<texturenofocus>MenuItemNF.png</texturenofocus>
+						<onclick>SetProperty(UsrSelectBtn,SubSystem.8,Home)</onclick>
+						<onclick>ActivateWindow(2115)</onclick>
+					</control>
+					<control type="button" id="418">
+						<width>750</width>
+						<height>40</height>
+						<font>font13</font>
+						<label>$LOCALIZE[31315] - 9</label>
+						<label2>[COLOR=selected]$INFO[Skin.String(SubSystem.9.Label)][/COLOR]</label2>
+						<textcolor>grey</textcolor>
+						<focusedcolor>white</focusedcolor>
+						<texturefocus>MenuItemFO.png</texturefocus>
+						<texturenofocus>MenuItemNF.png</texturenofocus>
+						<onclick>SetProperty(UsrSelectBtn,SubSystem.9,Home)</onclick>
+						<onclick>ActivateWindow(2115)</onclick>
+					</control>
+					<control type="button" id="419">
+						<width>750</width>
+						<height>40</height>
+						<font>font13</font>
+						<label>$LOCALIZE[31315] - 10</label>
+						<label2>[COLOR=selected]$INFO[Skin.String(SubSystem.10.Label)][/COLOR]</label2>
+						<textcolor>grey</textcolor>
+						<focusedcolor>white</focusedcolor>
+						<texturefocus>MenuItemFO.png</texturefocus>
+						<texturenofocus>MenuItemNF.png</texturenofocus>
+						<onclick>SetProperty(UsrSelectBtn,SubSystem.10,Home)</onclick>
+						<onclick>ActivateWindow(2115)</onclick>
+					</control>
+					<control type="label" id="420">
 						<width>750</width>
 						<height>45</height>
 						<font>font13_title</font>
@@ -2729,7 +3249,7 @@
 						<align>left</align>
 						<aligny>center</aligny>
 					</control>
-					<control type="button" id="381">
+					<control type="button" id="421">
 						<width>750</width>
 						<height>40</height>
 						<font>font13</font>
@@ -2741,7 +3261,7 @@
 						<texturenofocus>MenuItemNF.png</texturenofocus>
 						<onclick>Skin.SetString(UserSelectOneSubMenu)</onclick>
 					</control>
-					<control type="button" id="382">
+					<control type="button" id="422">
 						<width>750</width>
 						<height>40</height>
 						<font>font13</font>
@@ -2754,7 +3274,7 @@
 						<onclick>SetProperty(UsrSelectBtn,UserSubOne.1,Home)</onclick>
 						<onclick>ActivateWindow(2115)</onclick>
 					</control>
-					<control type="button" id="383">
+					<control type="button" id="423">
 						<width>750</width>
 						<height>40</height>
 						<font>font13</font>
@@ -2767,7 +3287,7 @@
 						<onclick>SetProperty(UsrSelectBtn,UserSubOne.2,Home)</onclick>
 						<onclick>ActivateWindow(2115)</onclick>
 					</control>
-					<control type="button" id="384">
+					<control type="button" id="424">
 						<width>750</width>
 						<height>40</height>
 						<font>font13</font>
@@ -2780,7 +3300,7 @@
 						<onclick>SetProperty(UsrSelectBtn,UserSubOne.3,Home)</onclick>
 						<onclick>ActivateWindow(2115)</onclick>
 					</control>
-					<control type="button" id="385">
+					<control type="button" id="425">
 						<width>750</width>
 						<height>40</height>
 						<font>font13</font>
@@ -2793,7 +3313,7 @@
 						<onclick>SetProperty(UsrSelectBtn,UserSubOne.4,Home)</onclick>
 						<onclick>ActivateWindow(2115)</onclick>
 					</control>
-					<control type="button" id="386">
+					<control type="button" id="426">
 						<width>750</width>
 						<height>40</height>
 						<font>font13</font>
@@ -2806,7 +3326,7 @@
 						<onclick>SetProperty(UsrSelectBtn,UserSubOne.5,Home)</onclick>
 						<onclick>ActivateWindow(2115)</onclick>
 					</control>
-					<control type="button" id="387">
+					<control type="button" id="427">
 						<width>750</width>
 						<height>40</height>
 						<font>font13</font>
@@ -2819,7 +3339,59 @@
 						<onclick>SetProperty(UsrSelectBtn,UserSubOne.6,Home)</onclick>
 						<onclick>ActivateWindow(2115)</onclick>
 					</control>
-					<control type="label" id="388">
+					<control type="button" id="428">
+						<width>750</width>
+						<height>40</height>
+						<font>font13</font>
+						<label>$LOCALIZE[31315] - 7</label>
+						<label2>[COLOR=selected]$INFO[Skin.String(UserSubOne.7.Label)][/COLOR]</label2>
+						<textcolor>grey</textcolor>
+						<focusedcolor>white</focusedcolor>
+						<texturefocus>MenuItemFO.png</texturefocus>
+						<texturenofocus>MenuItemNF.png</texturenofocus>
+						<onclick>SetProperty(UsrSelectBtn,UserSubOne.7,Home)</onclick>
+						<onclick>ActivateWindow(2115)</onclick>
+					</control>
+					<control type="button" id="429">
+						<width>750</width>
+						<height>40</height>
+						<font>font13</font>
+						<label>$LOCALIZE[31315] - 8</label>
+						<label2>[COLOR=selected]$INFO[Skin.String(UserSubOne.8.Label)][/COLOR]</label2>
+						<textcolor>grey</textcolor>
+						<focusedcolor>white</focusedcolor>
+						<texturefocus>MenuItemFO.png</texturefocus>
+						<texturenofocus>MenuItemNF.png</texturenofocus>
+						<onclick>SetProperty(UsrSelectBtn,UserSubOne.8,Home)</onclick>
+						<onclick>ActivateWindow(2115)</onclick>
+					</control>
+					<control type="button" id="430">
+						<width>750</width>
+						<height>40</height>
+						<font>font13</font>
+						<label>$LOCALIZE[31315] - 9</label>
+						<label2>[COLOR=selected]$INFO[Skin.String(UserSubOne.9.Label)][/COLOR]</label2>
+						<textcolor>grey</textcolor>
+						<focusedcolor>white</focusedcolor>
+						<texturefocus>MenuItemFO.png</texturefocus>
+						<texturenofocus>MenuItemNF.png</texturenofocus>
+						<onclick>SetProperty(UsrSelectBtn,UserSubOne.9,Home)</onclick>
+						<onclick>ActivateWindow(2115)</onclick>
+					</control>
+					<control type="button" id="431">
+						<width>750</width>
+						<height>40</height>
+						<font>font13</font>
+						<label>$LOCALIZE[31315] - 10</label>
+						<label2>[COLOR=selected]$INFO[Skin.String(UserSubOne.10.Label)][/COLOR]</label2>
+						<textcolor>grey</textcolor>
+						<focusedcolor>white</focusedcolor>
+						<texturefocus>MenuItemFO.png</texturefocus>
+						<texturenofocus>MenuItemNF.png</texturenofocus>
+						<onclick>SetProperty(UsrSelectBtn,UserSubOne.10,Home)</onclick>
+						<onclick>ActivateWindow(2115)</onclick>
+					</control>
+					<control type="label" id="432">
 						<width>750</width>
 						<height>45</height>
 						<font>font13_title</font>
@@ -2829,7 +3401,7 @@
 						<align>left</align>
 						<aligny>center</aligny>
 					</control>
-					<control type="button" id="389">
+					<control type="button" id="433">
 						<width>750</width>
 						<height>40</height>
 						<font>font13</font>
@@ -2841,7 +3413,7 @@
 						<texturenofocus>MenuItemNF.png</texturenofocus>
 						<onclick>Skin.SetString(UserSelectTwoSubMenu)</onclick>
 					</control>
-					<control type="button" id="390">
+					<control type="button" id="434">
 						<width>750</width>
 						<height>40</height>
 						<font>font13</font>
@@ -2854,7 +3426,7 @@
 						<onclick>SetProperty(UsrSelectBtn,UserSubTwo.1,Home)</onclick>
 						<onclick>ActivateWindow(2115)</onclick>
 					</control>
-					<control type="button" id="391">
+					<control type="button" id="435">
 						<width>750</width>
 						<height>40</height>
 						<font>font13</font>
@@ -2867,7 +3439,7 @@
 						<onclick>SetProperty(UsrSelectBtn,UserSubTwo.2,Home)</onclick>
 						<onclick>ActivateWindow(2115)</onclick>
 					</control>
-					<control type="button" id="392">
+					<control type="button" id="436">
 						<width>750</width>
 						<height>40</height>
 						<font>font13</font>
@@ -2880,7 +3452,7 @@
 						<onclick>SetProperty(UsrSelectBtn,UserSubTwo.3,Home)</onclick>
 						<onclick>ActivateWindow(2115)</onclick>
 					</control>
-					<control type="button" id="393">
+					<control type="button" id="437">
 						<width>750</width>
 						<height>40</height>
 						<font>font13</font>
@@ -2893,7 +3465,7 @@
 						<onclick>SetProperty(UsrSelectBtn,UserSubTwo.4,Home)</onclick>
 						<onclick>ActivateWindow(2115)</onclick>
 					</control>
-					<control type="button" id="394">
+					<control type="button" id="438">
 						<width>750</width>
 						<height>40</height>
 						<font>font13</font>
@@ -2906,7 +3478,7 @@
 						<onclick>SetProperty(UsrSelectBtn,UserSubTwo.5,Home)</onclick>
 						<onclick>ActivateWindow(2115)</onclick>
 					</control>
-					<control type="button" id="395">
+					<control type="button" id="439">
 						<width>750</width>
 						<height>40</height>
 						<font>font13</font>
@@ -2917,6 +3489,58 @@
 						<texturefocus>MenuItemFO.png</texturefocus>
 						<texturenofocus>MenuItemNF.png</texturenofocus>
 						<onclick>SetProperty(UsrSelectBtn,UserSubTwo.6,Home)</onclick>
+						<onclick>ActivateWindow(2115)</onclick>
+					</control>
+					<control type="button" id="440">
+						<width>750</width>
+						<height>40</height>
+						<font>font13</font>
+						<label>$LOCALIZE[31315] - 7</label>
+						<label2>[COLOR=selected]$INFO[Skin.String(UserSubTwo.7.Label)][/COLOR]</label2>
+						<textcolor>grey</textcolor>
+						<focusedcolor>white</focusedcolor>
+						<texturefocus>MenuItemFO.png</texturefocus>
+						<texturenofocus>MenuItemNF.png</texturenofocus>
+						<onclick>SetProperty(UsrSelectBtn,UserSubTwo.7,Home)</onclick>
+						<onclick>ActivateWindow(2115)</onclick>
+					</control>
+					<control type="button" id="441">
+						<width>750</width>
+						<height>40</height>
+						<font>font13</font>
+						<label>$LOCALIZE[31315] - 8</label>
+						<label2>[COLOR=selected]$INFO[Skin.String(UserSubTwo.8.Label)][/COLOR]</label2>
+						<textcolor>grey</textcolor>
+						<focusedcolor>white</focusedcolor>
+						<texturefocus>MenuItemFO.png</texturefocus>
+						<texturenofocus>MenuItemNF.png</texturenofocus>
+						<onclick>SetProperty(UsrSelectBtn,UserSubTwo.8,Home)</onclick>
+						<onclick>ActivateWindow(2115)</onclick>
+					</control>
+					<control type="button" id="442">
+						<width>750</width>
+						<height>40</height>
+						<font>font13</font>
+						<label>$LOCALIZE[31315] - 9</label>
+						<label2>[COLOR=selected]$INFO[Skin.String(UserSubTwo.9.Label)][/COLOR]</label2>
+						<textcolor>grey</textcolor>
+						<focusedcolor>white</focusedcolor>
+						<texturefocus>MenuItemFO.png</texturefocus>
+						<texturenofocus>MenuItemNF.png</texturenofocus>
+						<onclick>SetProperty(UsrSelectBtn,UserSubTwo.9,Home)</onclick>
+						<onclick>ActivateWindow(2115)</onclick>
+					</control>
+					<control type="button" id="443">
+						<width>750</width>
+						<height>40</height>
+						<font>font13</font>
+						<label>$LOCALIZE[31315] - 10</label>
+						<label2>[COLOR=selected]$INFO[Skin.String(UserSubTwo.10.Label)][/COLOR]</label2>
+						<textcolor>grey</textcolor>
+						<focusedcolor>white</focusedcolor>
+						<texturefocus>MenuItemFO.png</texturefocus>
+						<texturenofocus>MenuItemNF.png</texturenofocus>
+						<onclick>SetProperty(UsrSelectBtn,UserSubTwo.10,Home)</onclick>
 						<onclick>ActivateWindow(2115)</onclick>
 					</control>
 				</control>
@@ -2949,7 +3573,7 @@
 						<onright>61</onright>
 						<onup>9004</onup>
 						<ondown>9004</ondown>
-						<control type="label" id="400">
+						<control type="label" id="700">
 							<width>750</width>
 							<height>45</height>
 							<font>font13_title</font>
@@ -2959,7 +3583,7 @@
 							<align>left</align>
 							<aligny>center</aligny>
 						</control>
-						<control type="button" id="401">
+						<control type="button" id="701">
 							<width>750</width>
 							<height>40</height>
 							<font>font13</font>
@@ -2971,7 +3595,7 @@
 							<texturenofocus>MenuItemNF.png</texturenofocus>
 							<onclick>Skin.SetString(UserSelectAddon.1.Label)</onclick>
 						</control>
-						<control type="button" id="402">
+						<control type="button" id="702">
 							<width>750</width>
 							<height>40</height>
 							<font>font13</font>
@@ -2984,7 +3608,7 @@
 							<onclick>SetProperty(UsrSelectBtn,AddonSetOne.1,Home)</onclick>
 							<onclick>ActivateWindow(2119)</onclick>
 						</control>
-						<control type="button" id="403">
+						<control type="button" id="703">
 							<width>750</width>
 							<height>40</height>
 							<font>font13</font>
@@ -2997,7 +3621,7 @@
 							<onclick>SetProperty(UsrSelectBtn,AddonSetOne.2,Home)</onclick>
 							<onclick>ActivateWindow(2119)</onclick>
 						</control>
-						<control type="button" id="404">
+						<control type="button" id="704">
 							<width>750</width>
 							<height>40</height>
 							<font>font13</font>
@@ -3010,7 +3634,7 @@
 							<onclick>SetProperty(UsrSelectBtn,AddonSetOne.3,Home)</onclick>
 							<onclick>ActivateWindow(2119)</onclick>
 						</control>
-						<control type="button" id="405">
+						<control type="button" id="705">
 							<width>750</width>
 							<height>40</height>
 							<font>font13</font>
@@ -3023,7 +3647,7 @@
 							<onclick>SetProperty(UsrSelectBtn,AddonSetOne.4,Home)</onclick>
 							<onclick>ActivateWindow(2119)</onclick>
 						</control>
-						<control type="button" id="406">
+						<control type="button" id="706">
 							<width>750</width>
 							<height>40</height>
 							<font>font13</font>
@@ -3036,7 +3660,7 @@
 							<onclick>SetProperty(UsrSelectBtn,AddonSetOne.5,Home)</onclick>
 							<onclick>ActivateWindow(2119)</onclick>
 						</control>
-						<control type="button" id="407">
+						<control type="button" id="707">
 							<width>750</width>
 							<height>40</height>
 							<font>font13</font>
@@ -3049,7 +3673,7 @@
 							<onclick>SetProperty(UsrSelectBtn,AddonSetOne.6,Home)</onclick>
 							<onclick>ActivateWindow(2119)</onclick>
 						</control>
-						<control type="button" id="408">
+						<control type="button" id="708">
 							<width>750</width>
 							<height>40</height>
 							<font>font13</font>
@@ -3062,7 +3686,7 @@
 							<onclick>SetProperty(UsrSelectBtn,AddonSetOne.7,Home)</onclick>
 							<onclick>ActivateWindow(2119)</onclick>
 						</control>
-						<control type="label" id="409">
+						<control type="label" id="709">
 							<width>750</width>
 							<height>45</height>
 							<font>font13_title</font>
@@ -3072,7 +3696,7 @@
 							<align>left</align>
 							<aligny>center</aligny>
 						</control>
-						<control type="button" id="410">
+						<control type="button" id="710">
 							<width>750</width>
 							<height>40</height>
 							<font>font13</font>
@@ -3084,7 +3708,7 @@
 							<texturenofocus>MenuItemNF.png</texturenofocus>
 							<onclick>Skin.SetString(UserSelectAddon.2.Label)</onclick>
 						</control>
-						<control type="button" id="411">
+						<control type="button" id="711">
 							<width>750</width>
 							<height>40</height>
 							<font>font13</font>
@@ -3097,7 +3721,7 @@
 							<onclick>SetProperty(UsrSelectBtn,AddonSetTwo.1,Home)</onclick>
 							<onclick>ActivateWindow(2119)</onclick>
 						</control>
-						<control type="button" id="412">
+						<control type="button" id="712">
 							<width>750</width>
 							<height>40</height>
 							<font>font13</font>
@@ -3110,7 +3734,7 @@
 							<onclick>SetProperty(UsrSelectBtn,AddonSetTwo.2,Home)</onclick>
 							<onclick>ActivateWindow(2119)</onclick>
 						</control>
-						<control type="button" id="413">
+						<control type="button" id="713">
 							<width>750</width>
 							<height>40</height>
 							<font>font13</font>
@@ -3123,7 +3747,7 @@
 							<onclick>SetProperty(UsrSelectBtn,AddonSetTwo.3,Home)</onclick>
 							<onclick>ActivateWindow(2119)</onclick>
 						</control>
-						<control type="button" id="414">
+						<control type="button" id="714">
 							<width>750</width>
 							<height>40</height>
 							<font>font13</font>
@@ -3136,7 +3760,7 @@
 							<onclick>SetProperty(UsrSelectBtn,AddonSetTwo.4,Home)</onclick>
 							<onclick>ActivateWindow(2119)</onclick>
 						</control>
-						<control type="button" id="415">
+						<control type="button" id="715">
 							<width>750</width>
 							<height>40</height>
 							<font>font13</font>
@@ -3149,7 +3773,7 @@
 							<onclick>SetProperty(UsrSelectBtn,AddonSetTwo.5,Home)</onclick>
 							<onclick>ActivateWindow(2119)</onclick>
 						</control>
-						<control type="button" id="416">
+						<control type="button" id="716">
 							<width>750</width>
 							<height>40</height>
 							<font>font13</font>
@@ -3162,7 +3786,7 @@
 							<onclick>SetProperty(UsrSelectBtn,AddonSetTwo.6,Home)</onclick>
 							<onclick>ActivateWindow(2119)</onclick>
 						</control>
-						<control type="button" id="417">
+						<control type="button" id="717">
 							<width>750</width>
 							<height>40</height>
 							<font>font13</font>
@@ -3175,7 +3799,7 @@
 							<onclick>SetProperty(UsrSelectBtn,AddonSetTwo.7,Home)</onclick>
 							<onclick>ActivateWindow(2119)</onclick>
 						</control>
-						<control type="label" id="418">
+						<control type="label" id="718">
 							<width>750</width>
 							<height>45</height>
 							<font>font13_title</font>
@@ -3185,7 +3809,7 @@
 							<align>left</align>
 							<aligny>center</aligny>
 						</control>
-						<control type="button" id="419">
+						<control type="button" id="719">
 							<width>750</width>
 							<height>40</height>
 							<font>font13</font>
@@ -3197,7 +3821,7 @@
 							<texturenofocus>MenuItemNF.png</texturenofocus>
 							<onclick>Skin.SetString(UserSelectAddon.3.Label)</onclick>
 						</control>
-						<control type="button" id="420">
+						<control type="button" id="720">
 							<width>750</width>
 							<height>40</height>
 							<font>font13</font>
@@ -3210,7 +3834,7 @@
 							<onclick>SetProperty(UsrSelectBtn,AddonSetThree.1,Home)</onclick>
 							<onclick>ActivateWindow(2119)</onclick>
 						</control>
-						<control type="button" id="421">
+						<control type="button" id="721">
 							<width>750</width>
 							<height>40</height>
 							<font>font13</font>
@@ -3223,7 +3847,7 @@
 							<onclick>SetProperty(UsrSelectBtn,AddonSetThree.2,Home)</onclick>
 							<onclick>ActivateWindow(2119)</onclick>
 						</control>
-						<control type="button" id="422">
+						<control type="button" id="722">
 							<width>750</width>
 							<height>40</height>
 							<font>font13</font>
@@ -3236,7 +3860,7 @@
 							<onclick>SetProperty(UsrSelectBtn,AddonSetThree.3,Home)</onclick>
 							<onclick>ActivateWindow(2119)</onclick>
 						</control>
-						<control type="button" id="423">
+						<control type="button" id="723">
 							<width>750</width>
 							<height>40</height>
 							<font>font13</font>
@@ -3249,7 +3873,7 @@
 							<onclick>SetProperty(UsrSelectBtn,AddonSetThree.4,Home)</onclick>
 							<onclick>ActivateWindow(2119)</onclick>
 						</control>
-						<control type="button" id="424">
+						<control type="button" id="724">
 							<width>750</width>
 							<height>40</height>
 							<font>font13</font>
@@ -3262,7 +3886,7 @@
 							<onclick>SetProperty(UsrSelectBtn,AddonSetThree.5,Home)</onclick>
 							<onclick>ActivateWindow(2119)</onclick>
 						</control>
-						<control type="button" id="425">
+						<control type="button" id="725">
 							<width>750</width>
 							<height>40</height>
 							<font>font13</font>
@@ -3275,7 +3899,7 @@
 							<onclick>SetProperty(UsrSelectBtn,AddonSetThree.6,Home)</onclick>
 							<onclick>ActivateWindow(2119)</onclick>
 						</control>
-						<control type="button" id="426">
+						<control type="button" id="726">
 							<width>750</width>
 							<height>40</height>
 							<font>font13</font>
@@ -3288,7 +3912,7 @@
 							<onclick>SetProperty(UsrSelectBtn,AddonSetThree.7,Home)</onclick>
 							<onclick>ActivateWindow(2119)</onclick>
 						</control>
-						<control type="label" id="427">
+						<control type="label" id="727">
 							<width>750</width>
 							<height>45</height>
 							<font>font13_title</font>
@@ -3298,7 +3922,7 @@
 							<align>left</align>
 							<aligny>center</aligny>
 						</control>
-						<control type="button" id="428">
+						<control type="button" id="728">
 							<width>750</width>
 							<height>40</height>
 							<font>font13</font>
@@ -3310,7 +3934,7 @@
 							<texturenofocus>MenuItemNF.png</texturenofocus>
 							<onclick>Skin.SetString(UserSelectAddon.4.Label)</onclick>
 						</control>
-						<control type="button" id="429">
+						<control type="button" id="729">
 							<width>750</width>
 							<height>40</height>
 							<font>font13</font>
@@ -3323,7 +3947,7 @@
 							<onclick>SetProperty(UsrSelectBtn,AddonSetFour.1,Home)</onclick>
 							<onclick>ActivateWindow(2119)</onclick>
 						</control>
-						<control type="button" id="430">
+						<control type="button" id="730">
 							<width>750</width>
 							<height>40</height>
 							<font>font13</font>
@@ -3336,7 +3960,7 @@
 							<onclick>SetProperty(UsrSelectBtn,AddonSetFour.2,Home)</onclick>
 							<onclick>ActivateWindow(2119)</onclick>
 						</control>
-						<control type="button" id="431">
+						<control type="button" id="731">
 							<width>750</width>
 							<height>40</height>
 							<font>font13</font>
@@ -3349,7 +3973,7 @@
 							<onclick>SetProperty(UsrSelectBtn,AddonSetFour.3,Home)</onclick>
 							<onclick>ActivateWindow(2119)</onclick>
 						</control>
-						<control type="button" id="432">
+						<control type="button" id="732">
 							<width>750</width>
 							<height>40</height>
 							<font>font13</font>
@@ -3362,7 +3986,7 @@
 							<onclick>SetProperty(UsrSelectBtn,AddonSetFour.4,Home)</onclick>
 							<onclick>ActivateWindow(2119)</onclick>
 						</control>
-						<control type="button" id="433">
+						<control type="button" id="733">
 							<width>750</width>
 							<height>40</height>
 							<font>font13</font>
@@ -3375,7 +3999,7 @@
 							<onclick>SetProperty(UsrSelectBtn,AddonSetFour.5,Home)</onclick>
 							<onclick>ActivateWindow(2119)</onclick>
 						</control>
-						<control type="button" id="434">
+						<control type="button" id="734">
 							<width>750</width>
 							<height>40</height>
 							<font>font13</font>
@@ -3388,7 +4012,7 @@
 							<onclick>SetProperty(UsrSelectBtn,AddonSetFour.6,Home)</onclick>
 							<onclick>ActivateWindow(2119)</onclick>
 						</control>
-						<control type="button" id="435">
+						<control type="button" id="735">
 							<width>750</width>
 							<height>40</height>
 							<font>font13</font>
@@ -3401,7 +4025,7 @@
 							<onclick>SetProperty(UsrSelectBtn,AddonSetFour.7,Home)</onclick>
 							<onclick>ActivateWindow(2119)</onclick>
 						</control>
-						<control type="label" id="436">
+						<control type="label" id="736">
 							<width>750</width>
 							<height>45</height>
 							<font>font13_title</font>
@@ -3411,7 +4035,7 @@
 							<align>left</align>
 							<aligny>center</aligny>
 						</control>
-						<control type="button" id="437">
+						<control type="button" id="737">
 							<width>750</width>
 							<height>40</height>
 							<font>font13</font>
@@ -3423,7 +4047,7 @@
 							<texturenofocus>MenuItemNF.png</texturenofocus>
 							<onclick>Skin.SetString(UserSelectAddon.5.Label)</onclick>
 						</control>
-						<control type="button" id="438">
+						<control type="button" id="738">
 							<width>750</width>
 							<height>40</height>
 							<font>font13</font>
@@ -3436,7 +4060,7 @@
 							<onclick>SetProperty(UsrSelectBtn,AddonSetFive.1,Home)</onclick>
 							<onclick>ActivateWindow(2119)</onclick>
 						</control>
-						<control type="button" id="439">
+						<control type="button" id="739">
 							<width>750</width>
 							<height>40</height>
 							<font>font13</font>
@@ -3449,7 +4073,7 @@
 							<onclick>SetProperty(UsrSelectBtn,AddonSetFive.2,Home)</onclick>
 							<onclick>ActivateWindow(2119)</onclick>
 						</control>
-						<control type="button" id="440">
+						<control type="button" id="740">
 							<width>750</width>
 							<height>40</height>
 							<font>font13</font>
@@ -3462,7 +4086,7 @@
 							<onclick>SetProperty(UsrSelectBtn,AddonSetFive.3,Home)</onclick>
 							<onclick>ActivateWindow(2119)</onclick>
 						</control>
-						<control type="button" id="441">
+						<control type="button" id="741">
 							<width>750</width>
 							<height>40</height>
 							<font>font13</font>
@@ -3475,7 +4099,7 @@
 							<onclick>SetProperty(UsrSelectBtn,AddonSetFive.4,Home)</onclick>
 							<onclick>ActivateWindow(2119)</onclick>
 						</control>
-						<control type="button" id="442">
+						<control type="button" id="742">
 							<width>750</width>
 							<height>40</height>
 							<font>font13</font>
@@ -3488,7 +4112,7 @@
 							<onclick>SetProperty(UsrSelectBtn,AddonSetFive.5,Home)</onclick>
 							<onclick>ActivateWindow(2119)</onclick>
 						</control>
-						<control type="button" id="443">
+						<control type="button" id="743">
 							<width>750</width>
 							<height>40</height>
 							<font>font13</font>
@@ -3501,7 +4125,7 @@
 							<onclick>SetProperty(UsrSelectBtn,AddonSetFive.6,Home)</onclick>
 							<onclick>ActivateWindow(2119)</onclick>
 						</control>
-						<control type="button" id="444">
+						<control type="button" id="744">
 							<width>750</width>
 							<height>40</height>
 							<font>font13</font>
@@ -3514,7 +4138,7 @@
 							<onclick>SetProperty(UsrSelectBtn,AddonSetFive.7,Home)</onclick>
 							<onclick>ActivateWindow(2119)</onclick>
 						</control>
-						<control type="label" id="445">
+						<control type="label" id="745">
 							<width>750</width>
 							<height>45</height>
 							<font>font13_title</font>
@@ -3524,7 +4148,7 @@
 							<align>left</align>
 							<aligny>center</aligny>
 						</control>
-						<control type="button" id="446">
+						<control type="button" id="746">
 							<width>750</width>
 							<height>40</height>
 							<font>font13</font>
@@ -3536,7 +4160,7 @@
 							<texturenofocus>MenuItemNF.png</texturenofocus>
 							<onclick>Skin.SetString(UserSelectAddon.6.Label)</onclick>
 						</control>
-						<control type="button" id="447">
+						<control type="button" id="747">
 							<width>750</width>
 							<height>40</height>
 							<font>font13</font>
@@ -3549,7 +4173,7 @@
 							<onclick>SetProperty(UsrSelectBtn,AddonSetSix.1,Home)</onclick>
 							<onclick>ActivateWindow(2119)</onclick>
 						</control>
-						<control type="button" id="448">
+						<control type="button" id="748">
 							<width>750</width>
 							<height>40</height>
 							<font>font13</font>
@@ -3562,7 +4186,7 @@
 							<onclick>SetProperty(UsrSelectBtn,AddonSetSix.2,Home)</onclick>
 							<onclick>ActivateWindow(2119)</onclick>
 						</control>
-						<control type="button" id="449">
+						<control type="button" id="749">
 							<width>750</width>
 							<height>40</height>
 							<font>font13</font>
@@ -3575,7 +4199,7 @@
 							<onclick>SetProperty(UsrSelectBtn,AddonSetSix.3,Home)</onclick>
 							<onclick>ActivateWindow(2119)</onclick>
 						</control>
-						<control type="button" id="450">
+						<control type="button" id="750">
 							<width>750</width>
 							<height>40</height>
 							<font>font13</font>
@@ -3588,7 +4212,7 @@
 							<onclick>SetProperty(UsrSelectBtn,AddonSetSix.4,Home)</onclick>
 							<onclick>ActivateWindow(2119)</onclick>
 						</control>
-						<control type="button" id="451">
+						<control type="button" id="751">
 							<width>750</width>
 							<height>40</height>
 							<font>font13</font>
@@ -3601,7 +4225,7 @@
 							<onclick>SetProperty(UsrSelectBtn,AddonSetSix.5,Home)</onclick>
 							<onclick>ActivateWindow(2119)</onclick>
 						</control>
-						<control type="button" id="452">
+						<control type="button" id="752">
 							<width>750</width>
 							<height>40</height>
 							<font>font13</font>
@@ -3614,7 +4238,7 @@
 							<onclick>SetProperty(UsrSelectBtn,AddonSetSix.6,Home)</onclick>
 							<onclick>ActivateWindow(2119)</onclick>
 						</control>
-						<control type="button" id="453">
+						<control type="button" id="753">
 							<width>750</width>
 							<height>40</height>
 							<font>font13</font>
@@ -3627,7 +4251,7 @@
 							<onclick>SetProperty(UsrSelectBtn,AddonSetSix.7,Home)</onclick>
 							<onclick>ActivateWindow(2119)</onclick>
 						</control>
-						<control type="label" id="454">
+						<control type="label" id="754">
 							<width>750</width>
 							<height>45</height>
 							<font>font13_title</font>
@@ -3637,7 +4261,7 @@
 							<align>left</align>
 							<aligny>center</aligny>
 						</control>
-						<control type="button" id="455">
+						<control type="button" id="755">
 							<width>750</width>
 							<height>40</height>
 							<font>font13</font>
@@ -3649,7 +4273,7 @@
 							<texturenofocus>MenuItemNF.png</texturenofocus>
 							<onclick>Skin.SetString(UserSelectAddon.7.Label)</onclick>
 						</control>
-						<control type="button" id="456">
+						<control type="button" id="756">
 							<width>750</width>
 							<height>40</height>
 							<font>font13</font>
@@ -3662,7 +4286,7 @@
 							<onclick>SetProperty(UsrSelectBtn,AddonSetSeven.1,Home)</onclick>
 							<onclick>ActivateWindow(2119)</onclick>
 						</control>
-						<control type="button" id="457">
+						<control type="button" id="757">
 							<width>750</width>
 							<height>40</height>
 							<font>font13</font>
@@ -3675,7 +4299,7 @@
 							<onclick>SetProperty(UsrSelectBtn,AddonSetSeven.2,Home)</onclick>
 							<onclick>ActivateWindow(2119)</onclick>
 						</control>
-						<control type="button" id="458">
+						<control type="button" id="758">
 							<width>750</width>
 							<height>40</height>
 							<font>font13</font>
@@ -3688,7 +4312,7 @@
 							<onclick>SetProperty(UsrSelectBtn,AddonSetSeven.3,Home)</onclick>
 							<onclick>ActivateWindow(2119)</onclick>
 						</control>
-						<control type="button" id="459">
+						<control type="button" id="759">
 							<width>750</width>
 							<height>40</height>
 							<font>font13</font>
@@ -3701,7 +4325,7 @@
 							<onclick>SetProperty(UsrSelectBtn,AddonSetSeven.4,Home)</onclick>
 							<onclick>ActivateWindow(2119)</onclick>
 						</control>
-						<control type="button" id="460">
+						<control type="button" id="760">
 							<width>750</width>
 							<height>40</height>
 							<font>font13</font>
@@ -3714,7 +4338,7 @@
 							<onclick>SetProperty(UsrSelectBtn,AddonSetSeven.5,Home)</onclick>
 							<onclick>ActivateWindow(2119)</onclick>
 						</control>
-						<control type="button" id="461">
+						<control type="button" id="761">
 							<width>750</width>
 							<height>40</height>
 							<font>font13</font>
@@ -3727,7 +4351,7 @@
 							<onclick>SetProperty(UsrSelectBtn,AddonSetSeven.6,Home)</onclick>
 							<onclick>ActivateWindow(2119)</onclick>
 						</control>
-						<control type="button" id="462">
+						<control type="button" id="762">
 							<width>750</width>
 							<height>40</height>
 							<font>font13</font>
@@ -3740,7 +4364,7 @@
 							<onclick>SetProperty(UsrSelectBtn,AddonSetSeven.7,Home)</onclick>
 							<onclick>ActivateWindow(2119)</onclick>
 						</control>
-						<control type="label" id="463">
+						<control type="label" id="763">
 							<width>750</width>
 							<height>45</height>
 							<font>font13_title</font>
@@ -3750,7 +4374,7 @@
 							<align>left</align>
 							<aligny>center</aligny>
 						</control>
-						<control type="button" id="464">
+						<control type="button" id="764">
 							<width>750</width>
 							<height>40</height>
 							<font>font13</font>
@@ -3762,7 +4386,7 @@
 							<texturenofocus>MenuItemNF.png</texturenofocus>
 							<onclick>Skin.SetString(UserSelectAddon.8.Label)</onclick>
 						</control>
-						<control type="button" id="465">
+						<control type="button" id="765">
 							<width>750</width>
 							<height>40</height>
 							<font>font13</font>
@@ -3775,7 +4399,7 @@
 							<onclick>SetProperty(UsrSelectBtn,AddonSetEight.1,Home)</onclick>
 							<onclick>ActivateWindow(2119)</onclick>
 						</control>
-						<control type="button" id="466">
+						<control type="button" id="766">
 							<width>750</width>
 							<height>40</height>
 							<font>font13</font>
@@ -3788,7 +4412,7 @@
 							<onclick>SetProperty(UsrSelectBtn,AddonSetEight.2,Home)</onclick>
 							<onclick>ActivateWindow(2119)</onclick>
 						</control>
-						<control type="button" id="467">
+						<control type="button" id="767">
 							<width>750</width>
 							<height>40</height>
 							<font>font13</font>
@@ -3801,7 +4425,7 @@
 							<onclick>SetProperty(UsrSelectBtn,AddonSetEight.3,Home)</onclick>
 							<onclick>ActivateWindow(2119)</onclick>
 						</control>
-						<control type="button" id="468">
+						<control type="button" id="768">
 							<width>750</width>
 							<height>40</height>
 							<font>font13</font>
@@ -3814,7 +4438,7 @@
 							<onclick>SetProperty(UsrSelectBtn,AddonSetEight.4,Home)</onclick>
 							<onclick>ActivateWindow(2119)</onclick>
 						</control>
-						<control type="button" id="469">
+						<control type="button" id="769">
 							<width>750</width>
 							<height>40</height>
 							<font>font13</font>
@@ -3827,7 +4451,7 @@
 							<onclick>SetProperty(UsrSelectBtn,AddonSetEight.5,Home)</onclick>
 							<onclick>ActivateWindow(2119)</onclick>
 						</control>
-						<control type="button" id="470">
+						<control type="button" id="770">
 							<width>750</width>
 							<height>40</height>
 							<font>font13</font>
@@ -3840,7 +4464,7 @@
 							<onclick>SetProperty(UsrSelectBtn,AddonSetEight.6,Home)</onclick>
 							<onclick>ActivateWindow(2119)</onclick>
 						</control>
-						<control type="button" id="471">
+						<control type="button" id="771">
 							<width>750</width>
 							<height>40</height>
 							<font>font13</font>
@@ -3853,7 +4477,7 @@
 							<onclick>SetProperty(UsrSelectBtn,AddonSetEight.7,Home)</onclick>
 							<onclick>ActivateWindow(2119)</onclick>
 						</control>
-						<control type="label" id="472">
+						<control type="label" id="772">
 							<width>750</width>
 							<height>45</height>
 							<font>font13_title</font>
@@ -3863,7 +4487,7 @@
 							<align>left</align>
 							<aligny>center</aligny>
 						</control>
-						<control type="button" id="473">
+						<control type="button" id="773">
 							<width>750</width>
 							<height>40</height>
 							<font>font13</font>
@@ -3875,7 +4499,7 @@
 							<texturenofocus>MenuItemNF.png</texturenofocus>
 							<onclick>Skin.SetString(UserSelectAddon.9.Label)</onclick>
 						</control>
-						<control type="button" id="474">
+						<control type="button" id="774">
 							<width>750</width>
 							<height>40</height>
 							<font>font13</font>
@@ -3888,7 +4512,7 @@
 							<onclick>SetProperty(UsrSelectBtn,AddonSetNine.1,Home)</onclick>
 							<onclick>ActivateWindow(2119)</onclick>
 						</control>
-						<control type="button" id="475">
+						<control type="button" id="775">
 							<width>750</width>
 							<height>40</height>
 							<font>font13</font>
@@ -3901,7 +4525,7 @@
 							<onclick>SetProperty(UsrSelectBtn,AddonSetNine.2,Home)</onclick>
 							<onclick>ActivateWindow(2119)</onclick>
 						</control>
-						<control type="button" id="476">
+						<control type="button" id="776">
 							<width>750</width>
 							<height>40</height>
 							<font>font13</font>
@@ -3914,7 +4538,7 @@
 							<onclick>SetProperty(UsrSelectBtn,AddonSetNine.3,Home)</onclick>
 							<onclick>ActivateWindow(2119)</onclick>
 						</control>
-						<control type="button" id="477">
+						<control type="button" id="777">
 							<width>750</width>
 							<height>40</height>
 							<font>font13</font>
@@ -3927,7 +4551,7 @@
 							<onclick>SetProperty(UsrSelectBtn,AddonSetNine.4,Home)</onclick>
 							<onclick>ActivateWindow(2119)</onclick>
 						</control>
-						<control type="button" id="478">
+						<control type="button" id="778">
 							<width>750</width>
 							<height>40</height>
 							<font>font13</font>
@@ -3940,7 +4564,7 @@
 							<onclick>SetProperty(UsrSelectBtn,AddonSetNine.5,Home)</onclick>
 							<onclick>ActivateWindow(2119)</onclick>
 						</control>
-						<control type="button" id="479">
+						<control type="button" id="779">
 							<width>750</width>
 							<height>40</height>
 							<font>font13</font>
@@ -3953,7 +4577,7 @@
 							<onclick>SetProperty(UsrSelectBtn,AddonSetNine.6,Home)</onclick>
 							<onclick>ActivateWindow(2119)</onclick>
 						</control>
-						<control type="button" id="480">
+						<control type="button" id="780">
 							<width>750</width>
 							<height>40</height>
 							<font>font13</font>
@@ -3966,7 +4590,7 @@
 							<onclick>SetProperty(UsrSelectBtn,AddonSetNine.7,Home)</onclick>
 							<onclick>ActivateWindow(2119)</onclick>
 						</control>
-						<control type="label" id="481">
+						<control type="label" id="781">
 							<width>750</width>
 							<height>45</height>
 							<font>font13_title</font>
@@ -3976,7 +4600,7 @@
 							<align>left</align>
 							<aligny>center</aligny>
 						</control>
-						<control type="button" id="482">
+						<control type="button" id="782">
 							<width>750</width>
 							<height>40</height>
 							<font>font13</font>
@@ -3988,7 +4612,7 @@
 							<texturenofocus>MenuItemNF.png</texturenofocus>
 							<onclick>Skin.SetString(UserSelectAddon.10.Label)</onclick>
 						</control>
-						<control type="button" id="483">
+						<control type="button" id="783">
 							<width>750</width>
 							<height>40</height>
 							<font>font13</font>
@@ -4001,7 +4625,7 @@
 							<onclick>SetProperty(UsrSelectBtn,AddonSetTen.1,Home)</onclick>
 							<onclick>ActivateWindow(2119)</onclick>
 						</control>
-						<control type="button" id="484">
+						<control type="button" id="784">
 							<width>750</width>
 							<height>40</height>
 							<font>font13</font>
@@ -4014,7 +4638,7 @@
 							<onclick>SetProperty(UsrSelectBtn,AddonSetTen.2,Home)</onclick>
 							<onclick>ActivateWindow(2119)</onclick>
 						</control>
-						<control type="button" id="485">
+						<control type="button" id="785">
 							<width>750</width>
 							<height>40</height>
 							<font>font13</font>
@@ -4027,7 +4651,7 @@
 							<onclick>SetProperty(UsrSelectBtn,AddonSetTen.3,Home)</onclick>
 							<onclick>ActivateWindow(2119)</onclick>
 						</control>
-						<control type="button" id="486">
+						<control type="button" id="786">
 							<width>750</width>
 							<height>40</height>
 							<font>font13</font>
@@ -4040,7 +4664,7 @@
 							<onclick>SetProperty(UsrSelectBtn,AddonSetTen.4,Home)</onclick>
 							<onclick>ActivateWindow(2119)</onclick>
 						</control>
-						<control type="button" id="487">
+						<control type="button" id="787">
 							<width>750</width>
 							<height>40</height>
 							<font>font13</font>
@@ -4053,7 +4677,7 @@
 							<onclick>SetProperty(UsrSelectBtn,AddonSetTen.5,Home)</onclick>
 							<onclick>ActivateWindow(2119)</onclick>
 						</control>
-						<control type="button" id="488">
+						<control type="button" id="788">
 							<width>750</width>
 							<height>40</height>
 							<font>font13</font>
@@ -4066,7 +4690,7 @@
 							<onclick>SetProperty(UsrSelectBtn,AddonSetTen.6,Home)</onclick>
 							<onclick>ActivateWindow(2119)</onclick>
 						</control>
-						<control type="button" id="489">
+						<control type="button" id="789">
 							<width>750</width>
 							<height>40</height>
 							<font>font13</font>
@@ -5574,7 +6198,7 @@
 						<font>font13</font>
 						<textcolor>grey2</textcolor>
 						<focusedcolor>white</focusedcolor>
-						<label>31302</label>
+						<label>31919</label>
 						<label2>[COLOR=selected]$INFO[Skin.String(PhysicalMusicFolder)][/COLOR]</label2>
 						<onclick>Skin.Reset(PhysicalMusicFolder)</onclick>
 						<onclick>Skin.SetPath(PhysicalMusicFolder)</onclick>
@@ -6005,13 +6629,13 @@
 					<onright>9000</onright>
 					<onup>9000</onup>
 					<ondown>9000</ondown>
-					<control type="image" id="701">
+					<control type="image" id="801">
 						<width>750</width>
 						<height>140</height>
 						<aspectratio aligny="center" align="center">keep</aspectratio>
 						<texture>warning.png</texture>
 					</control>
-					<control type="button" id="702">
+					<control type="button" id="802">
 						<description>Reset Skin Values</description>
 						<width>750</width>
 						<height>45</height>

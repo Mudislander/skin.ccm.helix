@@ -1116,8 +1116,11 @@ msgctxt "#31910"
 msgid "Maps"
 msgstr ""
 
-#empty strings from id 31911 to 31919
+#empty strings from id 31911 to 31918
 
+msgctxt "#31919"
+msgid "Music Path"
+msgstr ""
 
 msgctxt "#31920"
 msgid "Music Physical Folder"
