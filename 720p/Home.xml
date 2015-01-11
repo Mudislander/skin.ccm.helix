@@ -1,13 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <window>
 	<defaultcontrol always="true">9000</defaultcontrol>
-	<allowoverlay>no</allowoverlay>
+	<allowoverlay>no</allowoverlay>	
 	<include condition="!Skin.HasSetting(InitialSetUpRun)">DefaultInitialSetup</include>
 	<onload condition="!IsEmpty(Window(home).Property(MenuItemSelected))">ClearProperty(MenuItemSelected,Home)</onload>
 	<onload condition="!IsEmpty(Window(home).Property(MenuItemActive))">ClearProperty(MenuItemActive,Home)</onload>
 	<onload condition="!IsEmpty(Window(home).Property(SubMenuBackground))">ClearProperty(SubMenuBackground,Home)</onload>
+	<onload condition="!IsEmpty(Window(home).Property(MenuBackground))">ClearProperty(MenuBackground,Home)</onload>
 	<onload condition="Skin.HasSetting(HolidayEffects) + System.Date(1-6,11-23)">Skin.Reset(HolidayEffects)</onload>
 	<onload condition="System.HasAddon(script.favourites)">XBMC.RunScript(script.favourites)</onload>
+	<onload condition="IsEmpty(Skin.String(WeatherFanartDir))">Skin.SetString(WeatherFanartDir,special://skin/extras/Weather/)</onload>
 	<onload condition="!Skin.HasSetting(DisableSlideShowArt) + IsEmpty(Window.Property(ArtistSlideshowRunning))">RunScript(script.artistslideshow, daemon=True)</onload>
 	<onload condition="!Skin.HasSetting(DisableScriptPlaylist) + Library.HasContent(Movies)">XBMC.RunScript(script.randomandlastitems,type=Movie,limit=12,method=Random,playlist=special://skin/extras/Playlists/UnwatchedMovies.xsp,menu=UnWatched)</onload>
 	<onload condition="!Skin.HasSetting(DisableScriptPlaylist) + !IsEmpty(Skin.String(HomeItem.1.Playlist))">XBMC.RunScript(script.randomandlastitems,playlist=$INFO[Skin.String(HomeItem.1.Playlist)],method=$VAR[PlaylistSortOrder],limit=12,unwatched=False,resume=False,property=HomePlaylistOne)</onload>
@@ -35,6 +37,16 @@
 	<onload>SetProperty(MainMenuItemTen,$VAR[VisibleMenuItemTen],Home)</onload>
 	<onload>SetProperty(MainMenuItemEleven,$VAR[VisibleMenuItemEleven],Home)</onload>
 	<onload>SetProperty(MainMenuItemTwelve,$VAR[VisibleMenuItemTwelve],Home)</onload>
+	
+	
+	<!-- Temp Setting - script.grab.fanart has problems -->
+	<onload condition="Skin.HasSetting(EnableFanartScript)">Skin.Reset(EnableFanartScript)</onload>
+	<!-- Temp Setting - script.randomandlastitems has problems -->
+	<onload condition="!Skin.HasSetting(EnableRandomPlaylist)">Skin.SetBool(EnableRandomPlaylist)</onload>
+	<!-- Temp Setting - Hide FanArt has problems -->
+	<onload condition="Skin.HasSetting(HideBackGroundFanart)">Skin.Reset(HideBackGroundFanart)</onload>
+	
+	
 	<controls>
 		<include>CommonBackground</include>
 		<include condition="!Skin.HasSetting(HideRainDropEffect) | Skin.HasSetting(HolidayEffects)">AnimatedBackgroundEffect</include>

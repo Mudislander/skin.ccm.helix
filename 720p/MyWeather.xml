@@ -5,7 +5,7 @@
 	<onload condition="!Skin.HasSetting(FirstTimeRun)">ActivateWindow(1112)</onload>
 	<controls>
 		<include>CommonBackground</include>
-		<control type="multiimage">
+		<!--control type="multiimage">
 			<left>0</left>
 			<top>0</top>
 			<width>1280</width>
@@ -15,9 +15,9 @@
 			<randomize>true</randomize>
 			<fadetime>1000</fadetime>
 			<include>VisibleFadeEffect</include>
-			<visible>Skin.HasSetting(ShowWeatherFanart) + !IsEmpty(Skin.String(WeatherFanartDir))</visible>
+			<visible>StringCompare(Window(home).Property(Background),Live)</visible>
 			<animation effect="fade" time="200">WindowClose</animation>
-		</control>
+		</control-->
 		<control type="image">
 			<description>Section header image</description>
 			<left>20</left>
@@ -583,7 +583,7 @@
 					<textwidth>235</textwidth>
 					<include>ButtonCommonValues</include>
 				</control>
-				<control type="radiobutton" id="250">
+				<!--control type="radiobutton" id="250">
 					<description>Fanart Toggle</description>
 					<include>ButtonCommonValues</include>
 					<label>31937</label>
@@ -595,7 +595,7 @@
 					<label>31949</label>
 					<onclick>Skin.SetPath(WeatherFanartDir)</onclick>
 					<enable>Skin.HasSetting(ShowWeatherFanart)</enable>
-				</control>
+				</control-->
 				<include>CommonNowPlaying_Controls</include>
 			</control>
 		</control>

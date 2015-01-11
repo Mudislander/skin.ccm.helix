@@ -4,6 +4,7 @@
 	<include condition="!Skin.HasSetting(InitialSetUpRun)">DefaultInitialSetup</include>
 	<onload condition="System.HasAddon(script.favourites)">XBMC.RunScript(script.favourites)</onload>
 	<onload>SetProperty(MenuItemActive,Settings,Home)</onload>
+	<onunload condition="IsEmpty(Skin.String(WeatherFanartDir)) | SubString(Skin.String(WeatherFanartDir),skin.ccm.helix\extras\Weather\,right)">Skin.SetString(WeatherFanartDir,special://skin/extras/Weather/)</onunload>
 	<controls>
 		<control type="image">
 			<include>Dimensions_Fullscreen</include>
@@ -473,7 +474,7 @@
 						<align>left</align>
 						<aligny>center</aligny>
 					</control>
-					<control type="radiobutton" id="141">
+					<!--control type="radiobutton" id="141">
 						<width>750</width>
 						<height>40</height>
 						<font>font13</font>
@@ -484,8 +485,8 @@
 						<texturenofocus>MenuItemNF.png</texturenofocus>
 						<onclick>Skin.ToggleSetting(HideBackGroundFanart)</onclick>
 						<selected>Skin.HasSetting(HideBackGroundFanart)</selected>
-					</control>
-					<control type="radiobutton" id="142">
+					</control-->
+					<!--control type="radiobutton" id="142">
 						<width>750</width>
 						<height>40</height>
 						<font>font13</font>
@@ -496,8 +497,8 @@
 						<texturenofocus>MenuItemNF.png</texturenofocus>
 						<onclick>Skin.ToggleSetting(HideVisualizationFanart)</onclick>
 						<selected>Skin.HasSetting(HideVisualizationFanart)</selected>
-					</control>
-					<control type="radiobutton" id="143">
+					</control-->
+					<!--control type="radiobutton" id="143">
 						<width>750</width>
 						<height>40</height>
 						<font>font13</font>
@@ -520,6 +521,18 @@
 						<texturenofocus>MenuItemNF.png</texturenofocus>
 						<onclick>Skin.ToggleSetting(ShowBackgroundVis)</onclick>
 						<selected>!Skin.HasSetting(ShowBackgroundVis)</selected>
+					</control-->
+					<control type="radiobutton" id="144">
+						<width>750</width>
+						<height>40</height>
+						<font>font13</font>
+						<label>$LOCALIZE[31281]</label>
+						<textcolor>grey2</textcolor>
+						<focusedcolor>white</focusedcolor>
+						<texturefocus>MenuItemFO.png</texturefocus>
+						<texturenofocus>MenuItemNF.png</texturenofocus>
+						<onclick>Skin.ToggleSetting(HideHomeNowPlaying)</onclick>
+						<selected>!Skin.HasSetting(HideHomeNowPlaying)</selected>
 					</control>
 				</control>
 				<control type="scrollbar" id="60">
@@ -4896,7 +4909,7 @@
 								<property name="HiLiteItem">$INFO[Skin.String(HomeItem.7.Type)]</property>
 								<visible>!IsEmpty(Skin.String(HomeItem.7.Path)) + !Skin.HasSetting(HolidayEffects) + !Skin.HasSetting(SingleGlobalBackground)</visible>
 							</item>
-							<item id="7">
+							<item id="8">
 								<description>Home Menu Item Eight</description>
 								<label>$INFO[Skin.String(HomeItem.8.Label)]</label>
 								<onclick>noop</onclick>
@@ -6215,7 +6228,7 @@
 						<align>left</align>
 						<aligny>center</aligny>
 					</control>
-					<control type="radiobutton" id="603">
+					<!--control type="radiobutton" id="603">
 						<width>750</width>
 						<height>40</height>
 						<font>font13</font>
@@ -6240,7 +6253,7 @@
 						<onclick>Addon.OpenSettings(script.grab.fanart)</onclick>
 						<enable>Skin.HasSetting(EnableFanartScript)</enable>
 						<visible>System.HasAddon(script.grab.fanart)</visible>
-					</control>
+					</control-->
 					<control type="button" id="605">
 						<description>User Album Thumbnails Path</description>
 						<width>750</width>
@@ -6314,7 +6327,21 @@
 						<texturefocus>MenuItemFO.png</texturefocus>
 						<texturenofocus>MenuItemNF.png</texturenofocus>
 					</control>
-					<control type="label" id="610">
+					<control type="button" id="610">
+						<description>User Weather FanArt Path</description>
+						<width>750</width>
+						<height>40</height>
+						<font>font13</font>
+						<textcolor>grey2</textcolor>
+						<focusedcolor>white</focusedcolor>
+						<label>31100</label>
+						<label2>[COLOR=selected]$VAR[WeatherFanArtDirLabel][/COLOR]</label2>
+						<onclick>Skin.Reset(WeatherFanartDir)</onclick>
+						<onclick>Skin.SetPath(WeatherFanartDir)</onclick>
+						<texturefocus>MenuItemFO.png</texturefocus>
+						<texturenofocus>MenuItemNF.png</texturenofocus>
+					</control>
+					<control type="label" id="611">
 						<width>750</width>
 						<height>45</height>
 						<font>font13_title</font>
@@ -6324,7 +6351,7 @@
 						<align>left</align>
 						<aligny>center</aligny>
 					</control>
-					<control type="radiobutton" id="611">
+					<control type="radiobutton" id="612">
 						<width>750</width>
 						<height>40</height>
 						<font>font13</font>
@@ -6337,7 +6364,7 @@
 						<onclick>Skin.Reset(EnableStartUpPlaylistPath)</onclick>
 						<selected>!Skin.HasSetting(HideKodiIntro)</selected>
 					</control>
-					<control type="radiobutton" id="612">
+					<control type="radiobutton" id="613">
 						<width>750</width>
 						<height>40</height>
 						<font>font13</font>
@@ -6349,7 +6376,7 @@
 						<onclick>Skin.ToggleSetting(UseStartUpPlaylistPath)</onclick>
 						<selected>Skin.HasSetting(UseStartUpPlaylistPath)</selected>
 					</control>
-					<control type="button" id="613">
+					<control type="button" id="614">
 						<description>Startup Playlist Path</description>
 						<width>750</width>
 						<height>40</height>
@@ -6363,7 +6390,7 @@
 						<texturenofocus>MenuItemNF.png</texturenofocus>
 						<enable>Skin.HasSetting(UseStartUpPlaylistPath)</enable>
 					</control>
-					<control type="label" id="715">
+					<control type="label" id="615">
 						<width>750</width>
 						<height>45</height>
 						<font>font13_title</font>
@@ -6475,7 +6502,7 @@
 						<enable>!Skin.HasSetting(DisableGlobalSearch)</enable>
 						<visible>System.HasAddon(script.globalsearch)</visible>
 					</control>
-					<control type="radiobutton" id="631">
+					<!--control type="radiobutton" id="631">
 						<width>750</width>
 						<height>40</height>
 						<font>font13</font>
@@ -6500,7 +6527,7 @@
 						<onclick>Addon.OpenSettings(script.videoextras)</onclick>
 						<enable>!Skin.HasSetting(DisableVideoExtras)</enable>
 						<visible>System.HasAddon(script.videoextras)</visible>
-					</control>
+					</control-->
 					<control type="radiobutton" id="633">
 						<width>750</width>
 						<height>40</height>
@@ -6527,7 +6554,7 @@
 						<enable>!Skin.HasSetting(DisableTVNextAired)</enable>
 						<visible>System.HasAddon(script.tv.show.next.aired)</visible>
 					</control>
-					<control type="radiobutton" id="635">
+					<!--control type="radiobutton" id="635">
 						<width>750</width>
 						<height>40</height>
 						<font>font13</font>
@@ -6536,8 +6563,8 @@
 						<focusedcolor>white</focusedcolor>
 						<texturefocus>MenuItemFO.png</texturefocus>
 						<texturenofocus>MenuItemNF.png</texturenofocus>
-						<onclick>Skin.ToggleSetting(disablewatchitlater)</onclick>
-						<selected>!Skin.HasSetting(disablewatchitlater)</selected>
+						<onclick>Skin.ToggleSetting(DisableWatchitLater)</onclick>
+						<selected>!Skin.HasSetting(DisableWatchitLater)</selected>
 						<enable>System.HasAddon(script.simpleplaylists)</enable>
 					</control>
 					<control type="button" id="636">
@@ -6550,9 +6577,9 @@
 						<texturefocus>MenuItemFO.png</texturefocus>
 						<texturenofocus>MenuItemNF.png</texturenofocus>
 						<onclick>Addon.OpenSettings(script.simpleplaylists)</onclick>
-						<enable>!Skin.HasSetting(disablewatchitlater)</enable>
+						<enable>!Skin.HasSetting(DisableWatchitLater)</enable>
 						<visible>System.HasAddon(script.simpleplaylists)</visible>
-					</control>
+					</control-->
 					<control type="radiobutton" id="637">
 						<width>750</width>
 						<height>40</height>
@@ -6566,7 +6593,7 @@
 						<selected>!Skin.HasSetting(DisableScriptPlaylist)</selected>
 						<enable>System.HasAddon(script.randomandlastitems)</enable>
 					</control>
-					<control type="button" id="638">
+					<!--control type="button" id="638">
 						<width>750</width>
 						<height>40</height>
 						<font>font13</font>
@@ -6578,7 +6605,7 @@
 						<onclick>ActivateWindow(2127)</onclick>
 						<enable>!Skin.HasSetting(DisableScriptPlaylist)</enable>
 						<visible>System.HasAddon(script.randomandlastitems)</visible>
-					</control>
+					</control-->
 					<control type="label" id="639">
 						<width>750</width>
 						<height>45</height>

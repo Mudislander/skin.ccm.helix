@@ -19,7 +19,8 @@
 			<height>720</height>
 			<texture background="true">$INFO[Player.Art(fanart)]</texture>
 			<colordiffuse>AAFFFFFF</colordiffuse>
-			<visible>!IsEmpty(Player.Art(fanart)) + !Skin.HasSetting(HideVisualizationFanart)</visible>
+			<!--visible>!IsEmpty(Player.Art(fanart)) + !Skin.HasSetting(HideVisualizationFanart)</visible-->
+			<visible>!IsEmpty(Player.Art(fanart))</visible>
 			<fadetime>600</fadetime>
 		</control>
 		<!-- media infos -->

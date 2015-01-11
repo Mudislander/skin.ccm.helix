@@ -299,6 +299,7 @@
 						<property name="LowTemp">$INFO[Window.Property(Day0.LowTemp)]</property>
 						<property name="Outlook">$INFO[Window.Property(Day0.Outlook)]</property>
 						<property name="TempUnits">$INFO[System.TemperatureUnits]</property>
+						<property name="FanArt">$INFO[Window(Weather).Property(Day0.FanartCode)]</property>
 						<onclick>noop</onclick>
 						<visible>Weather.IsFetched + !IsEmpty(Window.Property(Day0.Outlook)) + IsEmpty(Window.Property(Daily.IsFetched))</visible>
 					</item>
@@ -309,6 +310,7 @@
 						<property name="LowTemp">$INFO[Window.Property(Day1.LowTemp)]</property>
 						<property name="Outlook">$INFO[Window.Property(Day1.Outlook)]</property>
 						<property name="TempUnits">$INFO[System.TemperatureUnits]</property>
+						<property name="FanArt">$INFO[Window(Weather).Property(Day1.FanartCode)]</property>
 						<onclick>noop</onclick>
 						<visible>Weather.IsFetched + !IsEmpty(Window.Property(Day1.Outlook)) + IsEmpty(Window.Property(Daily.IsFetched))</visible>
 					</item>
@@ -319,6 +321,7 @@
 						<property name="LowTemp">$INFO[Window.Property(Day2.LowTemp)]</property>
 						<property name="Outlook">$INFO[Window.Property(Day2.Outlook)]</property>
 						<property name="TempUnits">$INFO[System.TemperatureUnits]</property>
+						<property name="FanArt">$INFO[Window(Weather).Property(Day2.FanartCode)]</property>
 						<onclick>noop</onclick>
 						<visible>Weather.IsFetched + !IsEmpty(Window.Property(Day2.Outlook)) + IsEmpty(Window.Property(Daily.IsFetched))</visible>
 					</item>
@@ -329,6 +332,7 @@
 						<property name="LowTemp">$INFO[Window.Property(Day3.LowTemp)]</property>
 						<property name="Outlook">$INFO[Window.Property(Day3.Outlook)]</property>
 						<property name="TempUnits">$INFO[System.TemperatureUnits]</property>
+						<property name="FanArt">$INFO[Window(Weather).Property(Day3.FanartCode)]</property>
 						<onclick>noop</onclick>
 						<visible>Weather.IsFetched + !IsEmpty(Window.Property(Day3.Outlook)) + IsEmpty(Window.Property(Daily.IsFetched))</visible>
 					</item>
@@ -339,6 +343,7 @@
 						<property name="LowTemp">$INFO[Window.Property(Day4.LowTemp)]</property>
 						<property name="Outlook">$INFO[Window.Property(Day4.Outlook)]</property>
 						<property name="TempUnits">$INFO[System.TemperatureUnits]</property>
+						<property name="FanArt">$INFO[Window(Weather).Property(Day4.FanartCode)]</property>
 						<onclick>noop</onclick>
 						<visible>Weather.IsFetched + !IsEmpty(Window.Property(Day4.Outlook)) + IsEmpty(Window.Property(Daily.IsFetched))</visible>
 					</item>
@@ -349,6 +354,7 @@
 						<property name="LowTemp">$INFO[Window.Property(Day5.LowTemp)]</property>
 						<property name="Outlook">$INFO[Window.Property(Day5.Outlook)]</property>
 						<property name="TempUnits">$INFO[System.TemperatureUnits]</property>
+						<property name="FanArt">$INFO[Window(Weather).Property(Day5.FanartCode)]</property>
 						<onclick>noop</onclick>
 						<visible>Weather.IsFetched + !IsEmpty(Window.Property(Day5.Outlook)) + IsEmpty(Window.Property(Daily.IsFetched))</visible>
 					</item>
@@ -359,6 +365,7 @@
 						<property name="LowTemp">$INFO[Window.Property(Day6.LowTemp)]</property>
 						<property name="Outlook">$INFO[Window.Property(Day6.Outlook)]</property>
 						<property name="TempUnits">$INFO[System.TemperatureUnits]</property>
+						<property name="FanArt">$INFO[Window(Weather).Property(Day6.FanartCode)]</property>
 						<onclick>noop</onclick>
 						<visible>Weather.IsFetched + !IsEmpty(Window.Property(Day6.Outlook)) + IsEmpty(Window.Property(Daily.IsFetched))</visible>
 					</item>
@@ -367,6 +374,7 @@
 						<label2>$INFO[Window.Property(Daily.1.HighTemperature),[COLOR=grey2]$LOCALIZE[419] :[/COLOR][B] ,[/B]]  $INFO[Window.Property(Daily.1.LowTemperature),[COLOR=grey2]$LOCALIZE[418] :[/COLOR][B] ,[/B]][CR]$INFO[Window.Property(Daily.1.Precipitation),[COLOR=grey2]$LOCALIZE[33022] :[/COLOR][B] ,[/B]][CR]$INFO[Window.Property(Daily.1.Cloudiness),[COLOR=grey2]$LOCALIZE[387] :[/COLOR][B] ,[/B]]</label2>
 						<thumb>$INFO[Window.Property(Daily.1.OutlookIcon)]</thumb>
 						<icon>$INFO[Window.Property(Daily.1.Outlook),[COLOR=grey2]$LOCALIZE[33030]: [/COLOR]][CR][COLOR=grey2]$LOCALIZE[383]: [/COLOR]$INFO[Window.Property(Daily.1.WindSpeed)] $INFO[Window.Property(Daily.1.WindDirection)]</icon>
+						<property name="FanArt">$INFO[Window(Weather).Property(Day0.FanartCode)]</property>
 						<onclick>noop</onclick>
 						<visible>Weather.IsFetched + !IsEmpty(Window.Property(Daily.1.Outlook)) + !IsEmpty(Window.Property(Daily.IsFetched))</visible>
 					</item>
@@ -375,6 +383,7 @@
 						<label2>$INFO[Window.Property(Daily.2.HighTemperature),[COLOR=grey2]$LOCALIZE[419] :[/COLOR][B] ,[/B]]  $INFO[Window.Property(Daily.2.LowTemperature),[COLOR=grey2]$LOCALIZE[418] :[/COLOR][B] ,[/B]][CR]$INFO[Window.Property(Daily.2.Precipitation),[COLOR=grey2]$LOCALIZE[33022] :[/COLOR][B] ,[/B]][CR]$INFO[Window.Property(Daily.2.Cloudiness),[COLOR=grey2]$LOCALIZE[387] :[/COLOR][B] ,[/B]]</label2>
 						<thumb>$INFO[Window.Property(Daily.2.OutlookIcon)]</thumb>
 						<icon>$INFO[Window.Property(Daily.2.Outlook),[COLOR=grey2]$LOCALIZE[33030]: [/COLOR]][CR][COLOR=grey2]$LOCALIZE[383]: [/COLOR]$INFO[Window.Property(Daily.2.WindSpeed)] $INFO[Window.Property(Daily.2.WindDirection)]</icon>
+						<property name="FanArt">$INFO[Window(Weather).Property(Day1.FanartCode)]</property>
 						<onclick>noop</onclick>
 						<visible>Weather.IsFetched + !IsEmpty(Window.Property(Daily.2.Outlook)) + !IsEmpty(Window.Property(Daily.IsFetched))</visible>
 					</item>
@@ -383,6 +392,7 @@
 						<label2>$INFO[Window.Property(Daily.3.HighTemperature),[COLOR=grey2]$LOCALIZE[419] :[/COLOR][B] ,[/B]]  $INFO[Window.Property(Daily.3.LowTemperature),[COLOR=grey2]$LOCALIZE[418] :[/COLOR][B] ,[/B]][CR]$INFO[Window.Property(Daily.3.Precipitation),[COLOR=grey2]$LOCALIZE[33022] :[/COLOR][B] ,[/B]][CR]$INFO[Window.Property(Daily.3.Cloudiness),[COLOR=grey2]$LOCALIZE[387] :[/COLOR][B] ,[/B]]</label2>
 						<thumb>$INFO[Window.Property(Daily.3.OutlookIcon)]</thumb>
 						<icon>$INFO[Window.Property(Daily.3.Outlook),[COLOR=grey2]$LOCALIZE[33030]: [/COLOR]][CR][COLOR=grey2]$LOCALIZE[383]: [/COLOR]$INFO[Window.Property(Daily.3.WindSpeed)] $INFO[Window.Property(Daily.3.WindDirection)]</icon>
+						<property name="FanArt">$INFO[Window(Weather).Property(Day2.FanartCode)]</property>
 						<onclick>noop</onclick>
 						<visible>Weather.IsFetched + !IsEmpty(Window.Property(Daily.3.Outlook)) + !IsEmpty(Window.Property(Daily.IsFetched))</visible>
 					</item>
@@ -391,6 +401,7 @@
 						<label2>$INFO[Window.Property(Daily.4.HighTemperature),[COLOR=grey2]$LOCALIZE[419] :[/COLOR][B] ,[/B]]  $INFO[Window.Property(Daily.4.LowTemperature),[COLOR=grey2]$LOCALIZE[418] :[/COLOR][B] ,[/B]][CR]$INFO[Window.Property(Daily.4.Precipitation),[COLOR=grey2]$LOCALIZE[33022] :[/COLOR][B] ,[/B]][CR]$INFO[Window.Property(Daily.4.Cloudiness),[COLOR=grey2]$LOCALIZE[387] :[/COLOR][B] ,[/B]]</label2>
 						<thumb>$INFO[Window.Property(Daily.4.OutlookIcon)]</thumb>
 						<icon>$INFO[Window.Property(Daily.4.Outlook),[COLOR=grey2]$LOCALIZE[33030]: [/COLOR]][CR][COLOR=grey2]$LOCALIZE[383]: [/COLOR]$INFO[Window.Property(Daily.4.WindSpeed)] $INFO[Window.Property(Daily.4.WindDirection)]</icon>
+						<property name="FanArt">$INFO[Window(Weather).Property(Day3.FanartCode)]</property>
 						<onclick>noop</onclick>
 						<visible>Weather.IsFetched + !IsEmpty(Window.Property(Daily.4.Outlook)) + !IsEmpty(Window.Property(Daily.IsFetched))</visible>
 					</item>
@@ -399,6 +410,7 @@
 						<label2>$INFO[Window.Property(Daily.5.HighTemperature),[COLOR=grey2]$LOCALIZE[419] :[/COLOR][B] ,[/B]]  $INFO[Window.Property(Daily.5.LowTemperature),[COLOR=grey2]$LOCALIZE[418] :[/COLOR][B] ,[/B]][CR]$INFO[Window.Property(Daily.5.Precipitation),[COLOR=grey2]$LOCALIZE[33022] :[/COLOR][B] ,[/B]][CR]$INFO[Window.Property(Daily.5.Cloudiness),[COLOR=grey2]$LOCALIZE[387] :[/COLOR][B] ,[/B]]</label2>
 						<thumb>$INFO[Window.Property(Daily.5.OutlookIcon)]</thumb>
 						<icon>$INFO[Window.Property(Daily.5.Outlook),[COLOR=grey2]$LOCALIZE[33030]: [/COLOR]][CR][COLOR=grey2]$LOCALIZE[383]: [/COLOR]$INFO[Window.Property(Daily.5.WindSpeed)] $INFO[Window.Property(Daily.5.WindDirection)]</icon>
+						<property name="FanArt">$INFO[Window(Weather).Property(Day4.FanartCode)]</property>
 						<onclick>noop</onclick>
 						<visible>Weather.IsFetched + !IsEmpty(Window.Property(Daily.5.Outlook)) + !IsEmpty(Window.Property(Daily.IsFetched))</visible>
 					</item>
@@ -407,6 +419,7 @@
 						<label2>$INFO[Window.Property(Daily.6.HighTemperature),[COLOR=grey2]$LOCALIZE[419] :[/COLOR][B] ,[/B]]  $INFO[Window.Property(Daily.6.LowTemperature),[COLOR=grey2]$LOCALIZE[418] :[/COLOR][B] ,[/B]][CR]$INFO[Window.Property(Daily.6.Precipitation),[COLOR=grey2]$LOCALIZE[33022] :[/COLOR][B] ,[/B]][CR]$INFO[Window.Property(Daily.6.Cloudiness),[COLOR=grey2]$LOCALIZE[387] :[/COLOR][B] ,[/B]]</label2>
 						<thumb>$INFO[Window.Property(Daily.6.OutlookIcon)]</thumb>
 						<icon>$INFO[Window.Property(Daily.6.Outlook),[COLOR=grey2]$LOCALIZE[33030]: [/COLOR]][CR][COLOR=grey2]$LOCALIZE[383]: [/COLOR]$INFO[Window.Property(Daily.6.WindSpeed)] $INFO[Window.Property(Daily.6.WindDirection)]</icon>
+						<property name="FanArt">$INFO[Window(Weather).Property(Day5.FanartCode)]</property>
 						<onclick>noop</onclick>
 						<visible>Weather.IsFetched + !IsEmpty(Window.Property(Daily.6.Outlook)) + !IsEmpty(Window.Property(Daily.IsFetched))</visible>
 					</item>
@@ -415,6 +428,7 @@
 						<label2>$INFO[Window.Property(Daily.7.HighTemperature),[COLOR=grey2]$LOCALIZE[419] :[/COLOR][B] ,[/B]]  $INFO[Window.Property(Daily.7.LowTemperature),[COLOR=grey2]$LOCALIZE[418] :[/COLOR][B] ,[/B]][CR]$INFO[Window.Property(Daily.7.Precipitation),[COLOR=grey2]$LOCALIZE[33022] :[/COLOR][B] ,[/B]][CR]$INFO[Window.Property(Daily.7.Cloudiness),[COLOR=grey2]$LOCALIZE[387] :[/COLOR][B] ,[/B]]</label2>
 						<thumb>$INFO[Window.Property(Daily.7.OutlookIcon)]</thumb>
 						<icon>$INFO[Window.Property(Daily.7.Outlook),[COLOR=grey2]$LOCALIZE[33030]: [/COLOR]][CR][COLOR=grey2]$LOCALIZE[383]: [/COLOR]$INFO[Window.Property(Daily.7.WindSpeed)] $INFO[Window.Property(Daily.7.WindDirection)]</icon>
+						<property name="FanArt">$INFO[Window(Weather).Property(Day6.FanartCode)]</property>
 						<onclick>noop</onclick>
 						<visible>Weather.IsFetched + !IsEmpty(Window.Property(Daily.7.Outlook)) + !IsEmpty(Window.Property(Daily.IsFetched))</visible>
 					</item>
@@ -423,6 +437,7 @@
 						<label2>$INFO[Window.Property(Daily.8.HighTemperature),[COLOR=grey2]$LOCALIZE[419] :[/COLOR][B] ,[/B]]  $INFO[Window.Property(Daily.8.LowTemperature),[COLOR=grey2]$LOCALIZE[418] :[/COLOR][B] ,[/B]][CR]$INFO[Window.Property(Daily.8.Precipitation),[COLOR=grey2]$LOCALIZE[33022] :[/COLOR][B] ,[/B]][CR]$INFO[Window.Property(Daily.8.Cloudiness),[COLOR=grey2]$LOCALIZE[387] :[/COLOR][B] ,[/B]]</label2>
 						<thumb>$INFO[Window.Property(Daily.8.OutlookIcon)]</thumb>
 						<icon>$INFO[Window.Property(Daily.8.Outlook),[COLOR=grey2]$LOCALIZE[33030]: [/COLOR]][CR][COLOR=grey2]$LOCALIZE[383]: [/COLOR]$INFO[Window.Property(Daily.8.WindSpeed)] $INFO[Window.Property(Daily.8.WindDirection)]</icon>
+						<property name="FanArt">$INFO[Window(Weather).Property(Daily.8.FanartCode)]</property>
 						<onclick>noop</onclick>
 						<visible>Weather.IsFetched + !IsEmpty(Window.Property(Daily.8.Outlook)) + !IsEmpty(Window.Property(Daily.IsFetched))</visible>
 					</item>
@@ -431,6 +446,7 @@
 						<label2>$INFO[Window.Property(Daily.9.HighTemperature),[COLOR=grey2]$LOCALIZE[419] :[/COLOR][B] ,[/B]]  $INFO[Window.Property(Daily.9.LowTemperature),[COLOR=grey2]$LOCALIZE[418] :[/COLOR][B] ,[/B]][CR]$INFO[Window.Property(Daily.9.Precipitation),[COLOR=grey2]$LOCALIZE[33022] :[/COLOR][B] ,[/B]][CR]$INFO[Window.Property(Daily.9.Cloudiness),[COLOR=grey2]$LOCALIZE[387] :[/COLOR][B] ,[/B]]</label2>
 						<thumb>$INFO[Window.Property(Daily.9.OutlookIcon)]</thumb>
 						<icon>$INFO[Window.Property(Daily.9.Outlook),[COLOR=grey2]$LOCALIZE[33030]: [/COLOR]][CR][COLOR=grey2]$LOCALIZE[383]: [/COLOR]$INFO[Window.Property(Daily.9.WindSpeed)] $INFO[Window.Property(Daily.9.WindDirection)]</icon>
+						<property name="FanArt">$INFO[Window(Weather).Property(Daily.9.FanartCode)]</property>
 						<onclick>noop</onclick>
 						<visible>Weather.IsFetched + !IsEmpty(Window.Property(Daily.9.Outlook)) + !IsEmpty(Window.Property(Daily.IsFetched))</visible>
 					</item>
@@ -439,6 +455,7 @@
 						<label2>$INFO[Window.Property(Daily.10.HighTemperature),[COLOR=grey2]$LOCALIZE[419] :[/COLOR][B] ,[/B]]  $INFO[Window.Property(Daily.10.LowTemperature),[COLOR=grey2]$LOCALIZE[418] :[/COLOR][B] ,[/B]][CR]$INFO[Window.Property(Daily.10.Precipitation),[COLOR=grey2]$LOCALIZE[33022] :[/COLOR][B] ,[/B]][CR]$INFO[Window.Property(Daily.10.Cloudiness),[COLOR=grey2]$LOCALIZE[387] :[/COLOR][B] ,[/B]]</label2>
 						<thumb>$INFO[Window.Property(Daily.10.OutlookIcon)]</thumb>
 						<icon>$INFO[Window.Property(Daily.10.Outlook),[COLOR=grey2]$LOCALIZE[33030]: [/COLOR]][CR][COLOR=grey2]$LOCALIZE[383]: [/COLOR]$INFO[Window.Property(Daily.10.WindSpeed)] $INFO[Window.Property(Daily.10.WindDirection)]</icon>
+						<property name="FanArt">$INFO[Window(Weather).Property(Daily.10.FanartCode)]</property>
 						<onclick>noop</onclick>
 						<visible>Weather.IsFetched + !IsEmpty(Window.Property(Daily.10.Outlook)) + !IsEmpty(Window.Property(Daily.IsFetched))</visible>
 					</item>
@@ -447,6 +464,7 @@
 						<label2>$INFO[Window.Property(Daily.11.HighTemperature),[COLOR=grey2]$LOCALIZE[419] :[/COLOR][B] ,[/B]]  $INFO[Window.Property(Daily.11.LowTemperature),[COLOR=grey2]$LOCALIZE[418] :[/COLOR][B] ,[/B]][CR]$INFO[Window.Property(Daily.11.Precipitation),[COLOR=grey2]$LOCALIZE[33022] :[/COLOR][B] ,[/B]][CR]$INFO[Window.Property(Daily.11.Cloudiness),[COLOR=grey2]$LOCALIZE[387] :[/COLOR][B] ,[/B]]</label2>
 						<thumb>$INFO[Window.Property(Daily.11.OutlookIcon)]</thumb>
 						<icon>$INFO[Window.Property(Daily.11.Outlook),[COLOR=grey2]$LOCALIZE[33030]: [/COLOR]][CR][COLOR=grey2]$LOCALIZE[383]: [/COLOR]$INFO[Window.Property(Daily.11.WindSpeed)] $INFO[Window.Property(Daily.11.WindDirection)]</icon>
+						<property name="FanArt">$INFO[Window(Weather).Property(Daily.11.FanartCode)]</property>
 						<onclick>noop</onclick>
 						<visible>Weather.IsFetched + !IsEmpty(Window.Property(Daily.11.Outlook)) + !IsEmpty(Window.Property(Daily.IsFetched))</visible>
 					</item>
@@ -455,6 +473,7 @@
 						<label2>$INFO[Window.Property(Daily.12.HighTemperature),[COLOR=grey2]$LOCALIZE[419] :[/COLOR][B] ,[/B]]  $INFO[Window.Property(Daily.12.LowTemperature),[COLOR=grey2]$LOCALIZE[418] :[/COLOR][B] ,[/B]][CR]$INFO[Window.Property(Daily.12.Precipitation),[COLOR=grey2]$LOCALIZE[33022] :[/COLOR][B] ,[/B]][CR]$INFO[Window.Property(Daily.12.Cloudiness),[COLOR=grey2]$LOCALIZE[387] :[/COLOR][B] ,[/B]]</label2>
 						<thumb>$INFO[Window.Property(Daily.12.OutlookIcon)]</thumb>
 						<icon>$INFO[Window.Property(Daily.12.Outlook),[COLOR=grey2]$LOCALIZE[33030]: [/COLOR]][CR][COLOR=grey2]$LOCALIZE[383]: [/COLOR]$INFO[Window.Property(Daily.12.WindSpeed)] $INFO[Window.Property(Daily.12.WindDirection)]</icon>
+						<property name="FanArt">$INFO[Window(Weather).Property(Daily.12.FanartCode)]</property>
 						<onclick>noop</onclick>
 						<visible>Weather.IsFetched + !IsEmpty(Window.Property(Daily.12.Outlook)) + !IsEmpty(Window.Property(Daily.IsFetched))</visible>
 					</item>
@@ -463,6 +482,7 @@
 						<label2>$INFO[Window.Property(Daily.13.HighTemperature),[COLOR=grey2]$LOCALIZE[419] :[/COLOR][B] ,[/B]]  $INFO[Window.Property(Daily.13.LowTemperature),[COLOR=grey2]$LOCALIZE[418] :[/COLOR][B] ,[/B]][CR]$INFO[Window.Property(Daily.13.Precipitation),[COLOR=grey2]$LOCALIZE[33022] :[/COLOR][B] ,[/B]][CR]$INFO[Window.Property(Daily.13.Cloudiness),[COLOR=grey2]$LOCALIZE[387] :[/COLOR][B] ,[/B]]</label2>
 						<thumb>$INFO[Window.Property(Daily.13.OutlookIcon)]</thumb>
 						<icon>$INFO[Window.Property(Daily.13.Outlook),[COLOR=grey2]$LOCALIZE[33030]: [/COLOR]][CR][COLOR=grey2]$LOCALIZE[383]: [/COLOR]$INFO[Window.Property(Daily.13.WindSpeed)] $INFO[Window.Property(Daily.13.WindDirection)]</icon>
+						<property name="FanArt">$INFO[Window(Weather).Property(Daily.13.FanartCode)]</property>
 						<onclick>noop</onclick>
 						<visible>Weather.IsFetched + !IsEmpty(Window.Property(Daily.13.Outlook)) + !IsEmpty(Window.Property(Daily.IsFetched))</visible>
 					</item>
@@ -471,6 +491,7 @@
 						<label2>$INFO[Window.Property(Daily.14.HighTemperature),[COLOR=grey2]$LOCALIZE[419] :[/COLOR][B] ,[/B]]  $INFO[Window.Property(Daily.14.LowTemperature),[COLOR=grey2]$LOCALIZE[418] :[/COLOR][B] ,[/B]][CR]$INFO[Window.Property(Daily.14.Precipitation),[COLOR=grey2]$LOCALIZE[33022] :[/COLOR][B] ,[/B]][CR]$INFO[Window.Property(Daily.14.Cloudiness),[COLOR=grey2]$LOCALIZE[387] :[/COLOR][B] ,[/B]]</label2>
 						<thumb>$INFO[Window.Property(Daily.14.OutlookIcon)]</thumb>
 						<icon>$INFO[Window.Property(Daily.14.Outlook),[COLOR=grey2]$LOCALIZE[33030]: [/COLOR]][CR][COLOR=grey2]$LOCALIZE[383]: [/COLOR]$INFO[Window.Property(Daily.14.WindSpeed)] $INFO[Window.Property(Daily.14.WindDirection)]</icon>
+						<property name="FanArt">$INFO[Window(Weather).Property(Daily.14.FanartCode)]</property>
 						<onclick>noop</onclick>
 						<visible>Weather.IsFetched + !IsEmpty(Window.Property(Daily.14.Outlook)) + !IsEmpty(Window.Property(Daily.IsFetched))</visible>
 					</item>
@@ -1088,6 +1109,7 @@
 						<label2>$INFO[Window.Property(Hourly.1.Temperature),[COLOR=grey2]$LOCALIZE[401] :[/COLOR][B] ,[/B]]  $INFO[Window.Property(Hourly.1.FeelsLike),[COLOR=grey2]$LOCALIZE[402] :[/COLOR][B] ,[/B]][CR]$INFO[Window.Property(Hourly.1.Humidity),[COLOR=grey2]$LOCALIZE[406] :[/COLOR][B] ,[/B]][CR]$INFO[Window.Property(Hourly.1.Precipitation),[COLOR=grey2]$LOCALIZE[1448] :[/COLOR][B] ,[/B]]</label2>
 						<thumb>$INFO[Window.Property(Hourly.1.OutlookIcon)]</thumb>
 						<icon>$INFO[Window.Property(Hourly.1.Outlook),[COLOR=grey2]$LOCALIZE[33030]: [/COLOR]][CR][COLOR=grey2]$LOCALIZE[383]: [/COLOR]$INFO[Window.Property(Hourly.1.WindSpeed)] $INFO[Window.Property(Hourly.1.WindDirection)]</icon>
+						<property name="FanArt">$INFO[Window.Property(Hourly.1.FanartCode)]</property>
 						<onclick>noop</onclick>
 						<visible>Weather.IsFetched + !IsEmpty(Window.Property(Hourly.1.Outlook)) + !IsEmpty(Window.Property(Hourly.IsFetched))</visible>
 					</item>
@@ -1096,6 +1118,7 @@
 						<label2>$INFO[Window.Property(Hourly.2.Temperature),[COLOR=grey2]$LOCALIZE[401] :[/COLOR][B] ,[/B]]  $INFO[Window.Property(Hourly.2.FeelsLike),[COLOR=grey2]$LOCALIZE[402] :[/COLOR][B] ,[/B]][CR]$INFO[Window.Property(Hourly.2.Humidity),[COLOR=grey2]$LOCALIZE[406] :[/COLOR][B] ,[/B]][CR]$INFO[Window.Property(Hourly.2.Precipitation),[COLOR=grey2]$LOCALIZE[1448] :[/COLOR][B] ,[/B]]</label2>
 						<thumb>$INFO[Window.Property(Hourly.2.OutlookIcon)]</thumb>
 						<icon>$INFO[Window.Property(Hourly.2.Outlook),[COLOR=grey2]$LOCALIZE[33030]: [/COLOR]][CR][COLOR=grey2]$LOCALIZE[383]: [/COLOR]$INFO[Window.Property(Hourly.2.WindSpeed)] $INFO[Window.Property(Hourly.2.WindDirection)]</icon>
+						<property name="FanArt">$INFO[Window.Property(Hourly.2.FanartCode)]</property>
 						<onclick>noop</onclick>
 						<visible>Weather.IsFetched + !IsEmpty(Window.Property(Hourly.2.Outlook)) + !IsEmpty(Window.Property(Hourly.IsFetched))</visible>
 					</item>
@@ -1104,6 +1127,7 @@
 						<label2>$INFO[Window.Property(Hourly.3.Temperature),[COLOR=grey2]$LOCALIZE[401] :[/COLOR][B] ,[/B]]  $INFO[Window.Property(Hourly.3.FeelsLike),[COLOR=grey2]$LOCALIZE[402] :[/COLOR][B] ,[/B]][CR]$INFO[Window.Property(Hourly.3.Humidity),[COLOR=grey2]$LOCALIZE[406] :[/COLOR][B] ,[/B]][CR]$INFO[Window.Property(Hourly.3.Precipitation),[COLOR=grey2]$LOCALIZE[1448] :[/COLOR][B] ,[/B]]</label2>
 						<thumb>$INFO[Window.Property(Hourly.3.OutlookIcon)]</thumb>
 						<icon>$INFO[Window.Property(Hourly.3.Outlook),[COLOR=grey2]$LOCALIZE[33030]: [/COLOR]][CR][COLOR=grey2]$LOCALIZE[383]: [/COLOR]$INFO[Window.Property(Hourly.3.WindSpeed)] $INFO[Window.Property(Hourly.3.WindDirection)]</icon>
+						<property name="FanArt">$INFO[Window.Property(Hourly.3.FanartCode)]</property>
 						<onclick>noop</onclick>
 						<visible>Weather.IsFetched + !IsEmpty(Window.Property(Hourly.3.Outlook)) + !IsEmpty(Window.Property(Hourly.IsFetched))</visible>
 					</item>
@@ -1112,6 +1136,7 @@
 						<label2>$INFO[Window.Property(Hourly.4.Temperature),[COLOR=grey2]$LOCALIZE[401] :[/COLOR][B] ,[/B]]  $INFO[Window.Property(Hourly.4.FeelsLike),[COLOR=grey2]$LOCALIZE[402] :[/COLOR][B] ,[/B]][CR]$INFO[Window.Property(Hourly.4.Humidity),[COLOR=grey2]$LOCALIZE[406] :[/COLOR][B] ,[/B]][CR]$INFO[Window.Property(Hourly.4.Precipitation),[COLOR=grey2]$LOCALIZE[1448] :[/COLOR][B] ,[/B]]</label2>
 						<thumb>$INFO[Window.Property(Hourly.4.OutlookIcon)]</thumb>
 						<icon>$INFO[Window.Property(Hourly.4.Outlook),[COLOR=grey2]$LOCALIZE[33030]: [/COLOR]][CR][COLOR=grey2]$LOCALIZE[383]: [/COLOR]$INFO[Window.Property(Hourly.4.WindSpeed)] $INFO[Window.Property(Hourly.4.WindDirection)]</icon>
+						<property name="FanArt">$INFO[Window.Property(Hourly.4.FanartCode)]</property>
 						<onclick>noop</onclick>
 						<visible>Weather.IsFetched + !IsEmpty(Window.Property(Hourly.4.Outlook)) + !IsEmpty(Window.Property(Hourly.IsFetched))</visible>
 					</item>
@@ -1120,6 +1145,7 @@
 						<label2>$INFO[Window.Property(Hourly.5.Temperature),[COLOR=grey2]$LOCALIZE[401] :[/COLOR][B] ,[/B]]  $INFO[Window.Property(Hourly.5.FeelsLike),[COLOR=grey2]$LOCALIZE[402] :[/COLOR][B] ,[/B]][CR]$INFO[Window.Property(Hourly.5.Humidity),[COLOR=grey2]$LOCALIZE[406] :[/COLOR][B] ,[/B]][CR]$INFO[Window.Property(Hourly.5.Precipitation),[COLOR=grey2]$LOCALIZE[1448] :[/COLOR][B] ,[/B]]</label2>
 						<thumb>$INFO[Window.Property(Hourly.5.OutlookIcon)]</thumb>
 						<icon>$INFO[Window.Property(Hourly.5.Outlook),[COLOR=grey2]$LOCALIZE[33030]: [/COLOR]][CR][COLOR=grey2]$LOCALIZE[383]: [/COLOR]$INFO[Window.Property(Hourly.5.WindSpeed)] $INFO[Window.Property(Hourly.5.WindDirection)]</icon>
+						<property name="FanArt">$INFO[Window.Property(Hourly.5.FanartCode)]</property>
 						<onclick>noop</onclick>
 						<visible>Weather.IsFetched + !IsEmpty(Window.Property(Hourly.5.Outlook)) + !IsEmpty(Window.Property(Hourly.IsFetched))</visible>
 					</item>
@@ -1128,6 +1154,7 @@
 						<label2>$INFO[Window.Property(Hourly.6.Temperature),[COLOR=grey2]$LOCALIZE[401] :[/COLOR][B] ,[/B]]  $INFO[Window.Property(Hourly.6.FeelsLike),[COLOR=grey2]$LOCALIZE[402] :[/COLOR][B] ,[/B]][CR]$INFO[Window.Property(Hourly.6.Humidity),[COLOR=grey2]$LOCALIZE[406] :[/COLOR][B] ,[/B]][CR]$INFO[Window.Property(Hourly.6.Precipitation),[COLOR=grey2]$LOCALIZE[1448] :[/COLOR][B] ,[/B]]</label2>
 						<thumb>$INFO[Window.Property(Hourly.6.OutlookIcon)]</thumb>
 						<icon>$INFO[Window.Property(Hourly.6.Outlook),[COLOR=grey2]$LOCALIZE[33030]: [/COLOR]][CR][COLOR=grey2]$LOCALIZE[383]: [/COLOR]$INFO[Window.Property(Hourly.6.WindSpeed)] $INFO[Window.Property(Hourly.6.WindDirection)]</icon>
+						<property name="FanArt">$INFO[Window.Property(Hourly.6.FanartCode)]</property>
 						<onclick>noop</onclick>
 						<visible>Weather.IsFetched + !IsEmpty(Window.Property(Hourly.6.Outlook)) + !IsEmpty(Window.Property(Hourly.IsFetched))</visible>
 					</item>
@@ -1136,6 +1163,7 @@
 						<label2>$INFO[Window.Property(Hourly.7.Temperature),[COLOR=grey2]$LOCALIZE[401] :[/COLOR][B] ,[/B]]  $INFO[Window.Property(Hourly.7.FeelsLike),[COLOR=grey2]$LOCALIZE[402] :[/COLOR][B] ,[/B]][CR]$INFO[Window.Property(Hourly.7.Humidity),[COLOR=grey2]$LOCALIZE[406] :[/COLOR][B] ,[/B]][CR]$INFO[Window.Property(Hourly.7.Precipitation),[COLOR=grey2]$LOCALIZE[1448] :[/COLOR][B] ,[/B]]</label2>
 						<thumb>$INFO[Window.Property(Hourly.7.OutlookIcon)]</thumb>
 						<icon>$INFO[Window.Property(Hourly.7.Outlook),[COLOR=grey2]$LOCALIZE[33030]: [/COLOR]][CR][COLOR=grey2]$LOCALIZE[383]: [/COLOR]$INFO[Window.Property(Hourly.7.WindSpeed)] $INFO[Window.Property(Hourly.7.WindDirection)]</icon>
+						<property name="FanArt">$INFO[Window.Property(Hourly.7.FanartCode)]</property>
 						<onclick>noop</onclick>
 						<visible>Weather.IsFetched + !IsEmpty(Window.Property(Hourly.7.Outlook)) + !IsEmpty(Window.Property(Hourly.IsFetched))</visible>
 					</item>
@@ -1144,6 +1172,7 @@
 						<label2>$INFO[Window.Property(Hourly.8.Temperature),[COLOR=grey2]$LOCALIZE[401] :[/COLOR][B] ,[/B]]  $INFO[Window.Property(Hourly.8.FeelsLike),[COLOR=grey2]$LOCALIZE[402] :[/COLOR][B] ,[/B]][CR]$INFO[Window.Property(Hourly.8.Humidity),[COLOR=grey2]$LOCALIZE[406] :[/COLOR][B] ,[/B]][CR]$INFO[Window.Property(Hourly.8.Precipitation),[COLOR=grey2]$LOCALIZE[1448] :[/COLOR][B] ,[/B]]</label2>
 						<thumb>$INFO[Window.Property(Hourly.8.OutlookIcon)]</thumb>
 						<icon>$INFO[Window.Property(Hourly.8.Outlook),[COLOR=grey2]$LOCALIZE[33030]: [/COLOR]][CR][COLOR=grey2]$LOCALIZE[383]: [/COLOR]$INFO[Window.Property(Hourly.8.WindSpeed)] $INFO[Window.Property(Hourly.8.WindDirection)]</icon>
+						<property name="FanArt">$INFO[Window.Property(Hourly.8.FanartCode)]</property>
 						<onclick>noop</onclick>
 						<visible>Weather.IsFetched + !IsEmpty(Window.Property(Hourly.8.Outlook)) + !IsEmpty(Window.Property(Hourly.IsFetched))</visible>
 					</item>
@@ -1152,6 +1181,7 @@
 						<label2>$INFO[Window.Property(Hourly.9.Temperature),[COLOR=grey2]$LOCALIZE[401] :[/COLOR][B] ,[/B]]  $INFO[Window.Property(Hourly.9.FeelsLike),[COLOR=grey2]$LOCALIZE[402] :[/COLOR][B] ,[/B]][CR]$INFO[Window.Property(Hourly.9.Humidity),[COLOR=grey2]$LOCALIZE[406] :[/COLOR][B] ,[/B]][CR]$INFO[Window.Property(Hourly.9.Precipitation),[COLOR=grey2]$LOCALIZE[1448] :[/COLOR][B] ,[/B]]</label2>
 						<thumb>$INFO[Window.Property(Hourly.9.OutlookIcon)]</thumb>
 						<icon>$INFO[Window.Property(Hourly.9.Outlook),[COLOR=grey2]$LOCALIZE[33030]: [/COLOR]][CR][COLOR=grey2]$LOCALIZE[383]: [/COLOR]$INFO[Window.Property(Hourly.9.WindSpeed)] $INFO[Window.Property(Hourly.9.WindDirection)]</icon>
+						<property name="FanArt">$INFO[Window.Property(Hourly.9.FanartCode)]</property>
 						<onclick>noop</onclick>
 						<visible>Weather.IsFetched + !IsEmpty(Window.Property(Hourly.9.Outlook)) + !IsEmpty(Window.Property(Hourly.IsFetched))</visible>
 					</item>
@@ -1160,6 +1190,7 @@
 						<label2>$INFO[Window.Property(Hourly.10.Temperature),[COLOR=grey2]$LOCALIZE[401] :[/COLOR][B] ,[/B]]  $INFO[Window.Property(Hourly.10.FeelsLike),[COLOR=grey2]$LOCALIZE[402] :[/COLOR][B] ,[/B]][CR]$INFO[Window.Property(Hourly.10.Humidity),[COLOR=grey2]$LOCALIZE[406] :[/COLOR][B] ,[/B]][CR]$INFO[Window.Property(Hourly.10.Precipitation),[COLOR=grey2]$LOCALIZE[1448] :[/COLOR][B] ,[/B]]</label2>
 						<thumb>$INFO[Window.Property(Hourly.10.OutlookIcon)]</thumb>
 						<icon>$INFO[Window.Property(Hourly.10.Outlook),[COLOR=grey2]$LOCALIZE[33030]: [/COLOR]][CR][COLOR=grey2]$LOCALIZE[383]: [/COLOR]$INFO[Window.Property(Hourly.10.WindSpeed)] $INFO[Window.Property(Hourly.10.WindDirection)]</icon>
+						<property name="FanArt">$INFO[Window.Property(Hourly.10.FanartCode)]</property>
 						<onclick>noop</onclick>
 						<visible>Weather.IsFetched + !IsEmpty(Window.Property(Hourly.10.Outlook)) + !IsEmpty(Window.Property(Hourly.IsFetched))</visible>
 					</item>
@@ -1168,6 +1199,7 @@
 						<label2>$INFO[Window.Property(Hourly.11.Temperature),[COLOR=grey2]$LOCALIZE[401] :[/COLOR][B] ,[/B]]  $INFO[Window.Property(Hourly.11.FeelsLike),[COLOR=grey2]$LOCALIZE[402] :[/COLOR][B] ,[/B]][CR]$INFO[Window.Property(Hourly.11.Humidity),[COLOR=grey2]$LOCALIZE[406] :[/COLOR][B] ,[/B]][CR]$INFO[Window.Property(Hourly.11.Precipitation),[COLOR=grey2]$LOCALIZE[1448] :[/COLOR][B] ,[/B]]</label2>
 						<thumb>$INFO[Window.Property(Hourly.11.OutlookIcon)]</thumb>
 						<icon>$INFO[Window.Property(Hourly.11.Outlook),[COLOR=grey2]$LOCALIZE[33030]: [/COLOR]][CR][COLOR=grey2]$LOCALIZE[383]: [/COLOR]$INFO[Window.Property(Hourly.11.WindSpeed)] $INFO[Window.Property(Hourly.11.WindDirection)]</icon>
+						<property name="FanArt">$INFO[Window.Property(Hourly.11.FanartCode)]</property>
 						<onclick>noop</onclick>
 						<visible>Weather.IsFetched + !IsEmpty(Window.Property(Hourly.11.Outlook)) + !IsEmpty(Window.Property(Hourly.IsFetched))</visible>
 					</item>
@@ -1176,6 +1208,7 @@
 						<label2>$INFO[Window.Property(Hourly.12.Temperature),[COLOR=grey2]$LOCALIZE[401] :[/COLOR][B] ,[/B]]  $INFO[Window.Property(Hourly.12.FeelsLike),[COLOR=grey2]$LOCALIZE[402] :[/COLOR][B] ,[/B]][CR]$INFO[Window.Property(Hourly.12.Humidity),[COLOR=grey2]$LOCALIZE[406] :[/COLOR][B] ,[/B]][CR]$INFO[Window.Property(Hourly.12.Precipitation),[COLOR=grey2]$LOCALIZE[1448] :[/COLOR][B] ,[/B]]</label2>
 						<thumb>$INFO[Window.Property(Hourly.12.OutlookIcon)]</thumb>
 						<icon>$INFO[Window.Property(Hourly.12.Outlook),[COLOR=grey2]$LOCALIZE[33030]: [/COLOR]][CR][COLOR=grey2]$LOCALIZE[383]: [/COLOR]$INFO[Window.Property(Hourly.12.WindSpeed)] $INFO[Window.Property(Hourly.12.WindDirection)]</icon>
+						<property name="FanArt">$INFO[Window.Property(Hourly.12.FanartCode)]</property>
 						<onclick>noop</onclick>
 						<visible>Weather.IsFetched + !IsEmpty(Window.Property(Hourly.12.Outlook)) + !IsEmpty(Window.Property(Hourly.IsFetched))</visible>
 					</item>
@@ -1184,6 +1217,7 @@
 						<label2>$INFO[Window.Property(Hourly.13.Temperature),[COLOR=grey2]$LOCALIZE[401] :[/COLOR][B] ,[/B]]  $INFO[Window.Property(Hourly.13.FeelsLike),[COLOR=grey2]$LOCALIZE[402] :[/COLOR][B] ,[/B]][CR]$INFO[Window.Property(Hourly.13.Humidity),[COLOR=grey2]$LOCALIZE[406] :[/COLOR][B] ,[/B]][CR]$INFO[Window.Property(Hourly.13.Precipitation),[COLOR=grey2]$LOCALIZE[1448] :[/COLOR][B] ,[/B]]</label2>
 						<thumb>$INFO[Window.Property(Hourly.13.OutlookIcon)]</thumb>
 						<icon>$INFO[Window.Property(Hourly.13.Outlook),[COLOR=grey2]$LOCALIZE[33030]: [/COLOR]][CR][COLOR=grey2]$LOCALIZE[383]: [/COLOR]$INFO[Window.Property(Hourly.13.WindSpeed)] $INFO[Window.Property(Hourly.13.WindDirection)]</icon>
+						<property name="FanArt">$INFO[Window.Property(Hourly.13.FanartCode)]</property>
 						<onclick>noop</onclick>
 						<visible>Weather.IsFetched + !IsEmpty(Window.Property(Hourly.13.Outlook)) + !IsEmpty(Window.Property(Hourly.IsFetched))</visible>
 					</item>
@@ -1192,6 +1226,7 @@
 						<label2>$INFO[Window.Property(Hourly.14.Temperature),[COLOR=grey2]$LOCALIZE[401] :[/COLOR][B] ,[/B]]  $INFO[Window.Property(Hourly.14.FeelsLike),[COLOR=grey2]$LOCALIZE[402] :[/COLOR][B] ,[/B]][CR]$INFO[Window.Property(Hourly.14.Humidity),[COLOR=grey2]$LOCALIZE[406] :[/COLOR][B] ,[/B]][CR]$INFO[Window.Property(Hourly.14.Precipitation),[COLOR=grey2]$LOCALIZE[1448] :[/COLOR][B] ,[/B]]</label2>
 						<thumb>$INFO[Window.Property(Hourly.14.OutlookIcon)]</thumb>
 						<icon>$INFO[Window.Property(Hourly.14.Outlook),[COLOR=grey2]$LOCALIZE[33030]: [/COLOR]][CR][COLOR=grey2]$LOCALIZE[383]: [/COLOR]$INFO[Window.Property(Hourly.14.WindSpeed)] $INFO[Window.Property(Hourly.14.WindDirection)]</icon>
+						<property name="FanArt">$INFO[Window.Property(Hourly.14.FanartCode)]</property>
 						<onclick>noop</onclick>
 						<visible>Weather.IsFetched + !IsEmpty(Window.Property(Hourly.14.Outlook)) + !IsEmpty(Window.Property(Hourly.IsFetched))</visible>
 					</item>
@@ -1200,6 +1235,7 @@
 						<label2>$INFO[Window.Property(Hourly.15.Temperature),[COLOR=grey2]$LOCALIZE[401] :[/COLOR][B] ,[/B]]  $INFO[Window.Property(Hourly.15.FeelsLike),[COLOR=grey2]$LOCALIZE[402] :[/COLOR][B] ,[/B]][CR]$INFO[Window.Property(Hourly.15.Humidity),[COLOR=grey2]$LOCALIZE[406] :[/COLOR][B] ,[/B]][CR]$INFO[Window.Property(Hourly.15.Precipitation),[COLOR=grey2]$LOCALIZE[1448] :[/COLOR][B] ,[/B]]</label2>
 						<thumb>$INFO[Window.Property(Hourly.15.OutlookIcon)]</thumb>
 						<icon>$INFO[Window.Property(Hourly.15.Outlook),[COLOR=grey2]$LOCALIZE[33030]: [/COLOR]][CR][COLOR=grey2]$LOCALIZE[383]: [/COLOR]$INFO[Window.Property(Hourly.15.WindSpeed)] $INFO[Window.Property(Hourly.15.WindDirection)]</icon>
+						<property name="FanArt">$INFO[Window.Property(Hourly.15.FanartCode)]</property>
 						<onclick>noop</onclick>
 						<visible>Weather.IsFetched + !IsEmpty(Window.Property(Hourly.15.Outlook)) + !IsEmpty(Window.Property(Hourly.IsFetched))</visible>
 					</item>
@@ -1208,6 +1244,7 @@
 						<label2>$INFO[Window.Property(Hourly.16.Temperature),[COLOR=grey2]$LOCALIZE[401] :[/COLOR][B] ,[/B]]  $INFO[Window.Property(Hourly.16.FeelsLike),[COLOR=grey2]$LOCALIZE[402] :[/COLOR][B] ,[/B]][CR]$INFO[Window.Property(Hourly.16.Humidity),[COLOR=grey2]$LOCALIZE[406] :[/COLOR][B] ,[/B]][CR]$INFO[Window.Property(Hourly.16.Precipitation),[COLOR=grey2]$LOCALIZE[1448] :[/COLOR][B] ,[/B]]</label2>
 						<thumb>$INFO[Window.Property(Hourly.16.OutlookIcon)]</thumb>
 						<icon>$INFO[Window.Property(Hourly.16.Outlook),[COLOR=grey2]$LOCALIZE[33030]: [/COLOR]][CR][COLOR=grey2]$LOCALIZE[383]: [/COLOR]$INFO[Window.Property(Hourly.16.WindSpeed)] $INFO[Window.Property(Hourly.16.WindDirection)]</icon>
+						<property name="FanArt">$INFO[Window.Property(Hourly.16.FanartCode)]</property>
 						<onclick>noop</onclick>
 						<visible>Weather.IsFetched + !IsEmpty(Window.Property(Hourly.16.Outlook)) + !IsEmpty(Window.Property(Hourly.IsFetched))</visible>
 					</item>
@@ -1216,6 +1253,7 @@
 						<label2>$INFO[Window.Property(Hourly.17.Temperature),[COLOR=grey2]$LOCALIZE[401] :[/COLOR][B] ,[/B]]  $INFO[Window.Property(Hourly.17.FeelsLike),[COLOR=grey2]$LOCALIZE[402] :[/COLOR][B] ,[/B]][CR]$INFO[Window.Property(Hourly.17.Humidity),[COLOR=grey2]$LOCALIZE[406] :[/COLOR][B] ,[/B]][CR]$INFO[Window.Property(Hourly.17.Precipitation),[COLOR=grey2]$LOCALIZE[1448] :[/COLOR][B] ,[/B]]</label2>
 						<thumb>$INFO[Window.Property(Hourly.17.OutlookIcon)]</thumb>
 						<icon>$INFO[Window.Property(Hourly.17.Outlook),[COLOR=grey2]$LOCALIZE[33030]: [/COLOR]][CR][COLOR=grey2]$LOCALIZE[383]: [/COLOR]$INFO[Window.Property(Hourly.17.WindSpeed)] $INFO[Window.Property(Hourly.17.WindDirection)]</icon>
+						<property name="FanArt">$INFO[Window.Property(Hourly.17.FanartCode)]</property>
 						<onclick>noop</onclick>
 						<visible>Weather.IsFetched + !IsEmpty(Window.Property(Hourly.17.Outlook)) + !IsEmpty(Window.Property(Hourly.IsFetched))</visible>
 					</item>
@@ -1224,6 +1262,7 @@
 						<label2>$INFO[Window.Property(Hourly.18.Temperature),[COLOR=grey2]$LOCALIZE[401] :[/COLOR][B] ,[/B]]  $INFO[Window.Property(Hourly.18.FeelsLike),[COLOR=grey2]$LOCALIZE[402] :[/COLOR][B] ,[/B]][CR]$INFO[Window.Property(Hourly.18.Humidity),[COLOR=grey2]$LOCALIZE[406] :[/COLOR][B] ,[/B]][CR]$INFO[Window.Property(Hourly.18.Precipitation),[COLOR=grey2]$LOCALIZE[1448] :[/COLOR][B] ,[/B]]</label2>
 						<thumb>$INFO[Window.Property(Hourly.18.OutlookIcon)]</thumb>
 						<icon>$INFO[Window.Property(Hourly.18.Outlook),[COLOR=grey2]$LOCALIZE[33030]: [/COLOR]][CR][COLOR=grey2]$LOCALIZE[383]: [/COLOR]$INFO[Window.Property(Hourly.18.WindSpeed)] $INFO[Window.Property(Hourly.18.WindDirection)]</icon>
+						<property name="FanArt">$INFO[Window.Property(Hourly.18.FanartCode)]</property>
 						<onclick>noop</onclick>
 						<visible>Weather.IsFetched + !IsEmpty(Window.Property(Hourly.18.Outlook)) + !IsEmpty(Window.Property(Hourly.IsFetched))</visible>
 					</item>
@@ -1232,6 +1271,7 @@
 						<label2>$INFO[Window.Property(Hourly.19.Temperature),[COLOR=grey2]$LOCALIZE[401] :[/COLOR][B] ,[/B]]  $INFO[Window.Property(Hourly.19.FeelsLike),[COLOR=grey2]$LOCALIZE[402] :[/COLOR][B] ,[/B]][CR]$INFO[Window.Property(Hourly.19.Humidity),[COLOR=grey2]$LOCALIZE[406] :[/COLOR][B] ,[/B]][CR]$INFO[Window.Property(Hourly.19.Precipitation),[COLOR=grey2]$LOCALIZE[1448] :[/COLOR][B] ,[/B]]</label2>
 						<thumb>$INFO[Window.Property(Hourly.19.OutlookIcon)]</thumb>
 						<icon>$INFO[Window.Property(Hourly.19.Outlook),[COLOR=grey2]$LOCALIZE[33030]: [/COLOR]][CR][COLOR=grey2]$LOCALIZE[383]: [/COLOR]$INFO[Window.Property(Hourly.19.WindSpeed)] $INFO[Window.Property(Hourly.19.WindDirection)]</icon>
+						<property name="FanArt">$INFO[Window.Property(Hourly.19.FanartCode)]</property>
 						<onclick>noop</onclick>
 						<visible>Weather.IsFetched + !IsEmpty(Window.Property(Hourly.19.Outlook)) + !IsEmpty(Window.Property(Hourly.IsFetched))</visible>
 					</item>
@@ -1240,6 +1280,7 @@
 						<label2>$INFO[Window.Property(Hourly.20.Temperature),[COLOR=grey2]$LOCALIZE[401] :[/COLOR][B] ,[/B]]  $INFO[Window.Property(Hourly.20.FeelsLike),[COLOR=grey2]$LOCALIZE[402] :[/COLOR][B] ,[/B]][CR]$INFO[Window.Property(Hourly.20.Humidity),[COLOR=grey2]$LOCALIZE[406] :[/COLOR][B] ,[/B]][CR]$INFO[Window.Property(Hourly.20.Precipitation),[COLOR=grey2]$LOCALIZE[1448] :[/COLOR][B] ,[/B]]</label2>
 						<thumb>$INFO[Window.Property(Hourly.20.OutlookIcon)]</thumb>
 						<icon>$INFO[Window.Property(Hourly.20.Outlook),[COLOR=grey2]$LOCALIZE[33030]: [/COLOR]][CR][COLOR=grey2]$LOCALIZE[383]: [/COLOR]$INFO[Window.Property(Hourly.20.WindSpeed)] $INFO[Window.Property(Hourly.20.WindDirection)]</icon>
+						<property name="FanArt">$INFO[Window.Property(Hourly.20.FanartCode)]</property>
 						<onclick>noop</onclick>
 						<visible>Weather.IsFetched + !IsEmpty(Window.Property(Hourly.20.Outlook)) + !IsEmpty(Window.Property(Hourly.IsFetched))</visible>
 					</item>
@@ -1248,6 +1289,7 @@
 						<label2>$INFO[Window.Property(Hourly.21.Temperature),[COLOR=grey2]$LOCALIZE[401] :[/COLOR][B] ,[/B]]  $INFO[Window.Property(Hourly.21.FeelsLike),[COLOR=grey2]$LOCALIZE[402] :[/COLOR][B] ,[/B]][CR]$INFO[Window.Property(Hourly.21.Humidity),[COLOR=grey2]$LOCALIZE[406] :[/COLOR][B] ,[/B]][CR]$INFO[Window.Property(Hourly.21.Precipitation),[COLOR=grey2]$LOCALIZE[1448] :[/COLOR][B] ,[/B]]</label2>
 						<thumb>$INFO[Window.Property(Hourly.21.OutlookIcon)]</thumb>
 						<icon>$INFO[Window.Property(Hourly.21.Outlook),[COLOR=grey2]$LOCALIZE[33030]: [/COLOR]][CR][COLOR=grey2]$LOCALIZE[383]: [/COLOR]$INFO[Window.Property(Hourly.21.WindSpeed)] $INFO[Window.Property(Hourly.21.WindDirection)]</icon>
+						<property name="FanArt">$INFO[Window.Property(Hourly.21.FanartCode)]</property>
 						<onclick>noop</onclick>
 						<visible>Weather.IsFetched + !IsEmpty(Window.Property(Hourly.21.Outlook)) + !IsEmpty(Window.Property(Hourly.IsFetched))</visible>
 					</item>
@@ -1256,6 +1298,7 @@
 						<label2>$INFO[Window.Property(Hourly.22.Temperature),[COLOR=grey2]$LOCALIZE[401] :[/COLOR][B] ,[/B]]  $INFO[Window.Property(Hourly.22.FeelsLike),[COLOR=grey2]$LOCALIZE[402] :[/COLOR][B] ,[/B]][CR]$INFO[Window.Property(Hourly.22.Humidity),[COLOR=grey2]$LOCALIZE[406] :[/COLOR][B] ,[/B]][CR]$INFO[Window.Property(Hourly.22.Precipitation),[COLOR=grey2]$LOCALIZE[1448] :[/COLOR][B] ,[/B]]</label2>
 						<thumb>$INFO[Window.Property(Hourly.22.OutlookIcon)]</thumb>
 						<icon>$INFO[Window.Property(Hourly.22.Outlook),[COLOR=grey2]$LOCALIZE[33030]: [/COLOR]][CR][COLOR=grey2]$LOCALIZE[383]: [/COLOR]$INFO[Window.Property(Hourly.22.WindSpeed)] $INFO[Window.Property(Hourly.22.WindDirection)]</icon>
+						<property name="FanArt">$INFO[Window.Property(Hourly.22.FanartCode)]</property>
 						<onclick>noop</onclick>
 						<visible>Weather.IsFetched + !IsEmpty(Window.Property(Hourly.22.Outlook)) + !IsEmpty(Window.Property(Hourly.IsFetched))</visible>
 					</item>
@@ -1264,6 +1307,7 @@
 						<label2>$INFO[Window.Property(Hourly.23.Temperature),[COLOR=grey2]$LOCALIZE[401] :[/COLOR][B] ,[/B]]  $INFO[Window.Property(Hourly.23.FeelsLike),[COLOR=grey2]$LOCALIZE[402] :[/COLOR][B] ,[/B]][CR]$INFO[Window.Property(Hourly.23.Humidity),[COLOR=grey2]$LOCALIZE[406] :[/COLOR][B] ,[/B]][CR]$INFO[Window.Property(Hourly.23.Precipitation),[COLOR=grey2]$LOCALIZE[1448] :[/COLOR][B] ,[/B]]</label2>
 						<thumb>$INFO[Window.Property(Hourly.23.OutlookIcon)]</thumb>
 						<icon>$INFO[Window.Property(Hourly.23.Outlook),[COLOR=grey2]$LOCALIZE[33030]: [/COLOR]][CR][COLOR=grey2]$LOCALIZE[383]: [/COLOR]$INFO[Window.Property(Hourly.23.WindSpeed)] $INFO[Window.Property(Hourly.23.WindDirection)]</icon>
+						<property name="FanArt">$INFO[Window.Property(Hourly.23.FanartCode)]</property>
 						<onclick>noop</onclick>
 						<visible>Weather.IsFetched + !IsEmpty(Window.Property(Hourly.23.Outlook)) + !IsEmpty(Window.Property(Hourly.IsFetched))</visible>
 					</item>
@@ -1272,6 +1316,7 @@
 						<label2>$INFO[Window.Property(Hourly.24.Temperature),[COLOR=grey2]$LOCALIZE[401] :[/COLOR][B] ,[/B]]  $INFO[Window.Property(Hourly.24.FeelsLike),[COLOR=grey2]$LOCALIZE[402] :[/COLOR][B] ,[/B]][CR]$INFO[Window.Property(Hourly.24.Humidity),[COLOR=grey2]$LOCALIZE[406] :[/COLOR][B] ,[/B]][CR]$INFO[Window.Property(Hourly.24.Precipitation),[COLOR=grey2]$LOCALIZE[1448] :[/COLOR][B] ,[/B]]</label2>
 						<thumb>$INFO[Window.Property(Hourly.24.OutlookIcon)]</thumb>
 						<icon>$INFO[Window.Property(Hourly.24.Outlook),[COLOR=grey2]$LOCALIZE[33030]: [/COLOR]][CR][COLOR=grey2]$LOCALIZE[383]: [/COLOR]$INFO[Window.Property(Hourly.24.WindSpeed)] $INFO[Window.Property(Hourly.24.WindDirection)]</icon>
+						<property name="FanArt">$INFO[Window.Property(Hourly.24.FanartCode)]</property>
 						<onclick>noop</onclick>
 						<visible>Weather.IsFetched + !IsEmpty(Window.Property(Hourly.24.Outlook)) + !IsEmpty(Window.Property(Hourly.IsFetched))</visible>
 					</item>

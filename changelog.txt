@@ -3,3 +3,6 @@ B]3.0.0[/B] [I]Jan 2015[/I]
 - Initial Commit to GitHub
 - Utilized graphics by uNiversal
 - Added User selectable main menu items
+
+B]3.0.1[/B] [I]Jan 2015[/I]
+- Bugfix Home Addon icons
