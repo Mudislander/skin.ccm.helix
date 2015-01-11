@@ -286,49 +286,49 @@
 		<item>
 			<label>$INFO[Skin.String(AddonSetOne.1.Label)]</label>
 			<onclick>$INFO[Skin.String(AddonSetOne.1.Path)]</onclick>
-			<icon>-</icon>
+			<icon>$INFO[Skin.String(AddonSetOne.1.Icon)]</icon>
 			<thumb>-</thumb>
 			<visible>!IsEmpty(Skin.String(AddonSetOne.1.Path))</visible>
 		</item>
 		<item>
 			<label>$INFO[Skin.String(AddonSetOne.2.Label)]</label>
 			<onclick>$INFO[Skin.String(AddonSetOne.2.Path)]</onclick>
-			<icon>-</icon>
+			<icon>$INFO[Skin.String(AddonSetOne.2.Icon)]</icon>
 			<thumb>-</thumb>
 			<visible>!IsEmpty(Skin.String(AddonSetOne.2.Path))</visible>
 		</item>
 		<item>
 			<label>$INFO[Skin.String(AddonSetOne.3.Label)]</label>
 			<onclick>$INFO[Skin.String(AddonSetOne.3.Path)]</onclick>
-			<icon>-</icon>
+			<icon>$INFO[Skin.String(AddonSetOne.3.Icon)]</icon>
 			<thumb>-</thumb>
 			<visible>!IsEmpty(Skin.String(AddonSetOne.3.Path))</visible>
 		</item>
 		<item>
 			<label>$INFO[Skin.String(AddonSetOne.4.Label)]</label>
 			<onclick>$INFO[Skin.String(AddonSetOne.4.Path)]</onclick>
-			<icon>-</icon>
+			<icon>$INFO[Skin.String(AddonSetOne.4.Icon)]</icon>
 			<thumb>-</thumb>
 			<visible>!IsEmpty(Skin.String(AddonSetOne.4.Path))</visible>
 		</item>
 		<item>
 			<label>$INFO[Skin.String(AddonSetOne.5.Label)]</label>
 			<onclick>$INFO[Skin.String(AddonSetOne.5.Path)]</onclick>
-			<icon>-</icon>
+			<icon>$INFO[Skin.String(AddonSetOne.5.Icon)]</icon>
 			<thumb>-</thumb>
 			<visible>!IsEmpty(Skin.String(AddonSetOne.5.Path))</visible>
 		</item>
 		<item>
 			<label>$INFO[Skin.String(AddonSetOne.6.Label)]</label>
 			<onclick>$INFO[Skin.String(AddonSetOne.6.Path)]</onclick>
-			<icon>-</icon>
+			<icon>$INFO[Skin.String(AddonSetOne.6.Icon)]</icon>
 			<thumb>-</thumb>
 			<visible>!IsEmpty(Skin.String(AddonSetOne.6.Path))</visible>
 		</item>
 		<item>
 			<label>$INFO[Skin.String(AddonSetOne.7.Label)]</label>
 			<onclick>$INFO[Skin.String(AddonSetOne.7.Path)]</onclick>
-			<icon>-</icon>
+			<icon>$INFO[Skin.String(AddonSetOne.7.Icon)]</icon>
 			<thumb>-</thumb>
 			<visible>!IsEmpty(Skin.String(AddonSetOne.7.Path))</visible>
 		</item>
@@ -337,49 +337,49 @@
 		<item>
 			<label>$INFO[Skin.String(AddonSetTwo.1.Label)]</label>
 			<onclick>$INFO[Skin.String(AddonSetTwo.1.Path)]</onclick>
-			<icon>-</icon>
+			<icon>$INFO[Skin.String(AddonSetTwo.1.Icon)]</icon>
 			<thumb>-</thumb>
 			<visible>!IsEmpty(Skin.String(AddonSetTwo.1.Path))</visible>
 		</item>
 		<item>
 			<label>$INFO[Skin.String(AddonSetTwo.2.Label)]</label>
 			<onclick>$INFO[Skin.String(AddonSetTwo.2.Path)]</onclick>
-			<icon>-</icon>
+			<icon>$INFO[Skin.String(AddonSetTwo.2.Icon)]</icon>
 			<thumb>-</thumb>
 			<visible>!IsEmpty(Skin.String(AddonSetTwo.2.Path))</visible>
 		</item>
 		<item>
 			<label>$INFO[Skin.String(AddonSetTwo.3.Label)]</label>
 			<onclick>$INFO[Skin.String(AddonSetTwo.3.Path)]</onclick>
-			<icon>-</icon>
+			<icon>$INFO[Skin.String(AddonSetTwo.3.Icon)]</icon>
 			<thumb>-</thumb>
 			<visible>!IsEmpty(Skin.String(AddonSetTwo.3.Path))</visible>
 		</item>
 		<item>
 			<label>$INFO[Skin.String(AddonSetTwo.4.Label)]</label>
 			<onclick>$INFO[Skin.String(AddonSetTwo.4.Path)]</onclick>
-			<icon>-</icon>
+			<icon>$INFO[Skin.String(AddonSetTwo.4.Icon)]</icon>
 			<thumb>-</thumb>
 			<visible>!IsEmpty(Skin.String(AddonSetTwo.4.Path))</visible>
 		</item>
 		<item>
 			<label>$INFO[Skin.String(AddonSetTwo.5.Label)]</label>
 			<onclick>$INFO[Skin.String(AddonSetTwo.5.Path)]</onclick>
-			<icon>-</icon>
+			<icon>$INFO[Skin.String(AddonSetTwo.5.Icon)]</icon>
 			<thumb>-</thumb>
 			<visible>!IsEmpty(Skin.String(AddonSetTwo.5.Path))</visible>
 		</item>
 		<item>
 			<label>$INFO[Skin.String(AddonSetTwo.6.Label)]</label>
 			<onclick>$INFO[Skin.String(AddonSetTwo.6.Path)]</onclick>
-			<icon>-</icon>
+			<icon>$INFO[Skin.String(AddonSetTwo.6.Icon)]</icon>
 			<thumb>-</thumb>
 			<visible>!IsEmpty(Skin.String(AddonSetTwo.6.Path))</visible>
 		</item>
 		<item>
 			<label>$INFO[Skin.String(AddonSetTwo.7.Label)]</label>
 			<onclick>$INFO[Skin.String(AddonSetTwo.7.Path)]</onclick>
-			<icon>-</icon>
+			<icon>$INFO[Skin.String(AddonSetTwo.7.Icon)]</icon>
 			<thumb>-</thumb>
 			<visible>!IsEmpty(Skin.String(AddonSetTwo.7.Path))</visible>
 		</item>
@@ -388,49 +388,49 @@
 		<item>
 			<label>$INFO[Skin.String(AddonSetThree.1.Label)]</label>
 			<onclick>$INFO[Skin.String(AddonSetThree.1.Path)]</onclick>
-			<icon>-</icon>
+			<icon>$INFO[Skin.String(AddonSetThree.1.Icon)]</icon>
 			<thumb>-</thumb>
 			<visible>!IsEmpty(Skin.String(AddonSetThree.1.Path))</visible>
 		</item>
 		<item>
 			<label>$INFO[Skin.String(AddonSetThree.2.Label)]</label>
 			<onclick>$INFO[Skin.String(AddonSetThree.2.Path)]</onclick>
-			<icon>-</icon>
+			<icon>$INFO[Skin.String(AddonSetThree.2.Icon)]</icon>
 			<thumb>-</thumb>
 			<visible>!IsEmpty(Skin.String(AddonSetThree.2.Path))</visible>
 		</item>
 		<item>
 			<label>$INFO[Skin.String(AddonSetThree.3.Label)]</label>
 			<onclick>$INFO[Skin.String(AddonSetThree.3.Path)]</onclick>
-			<icon>-</icon>
+			<icon>$INFO[Skin.String(AddonSetThree.3.Icon)]</icon>
 			<thumb>-</thumb>
 			<visible>!IsEmpty(Skin.String(AddonSetThree.3.Path))</visible>
 		</item>
 		<item>
 			<label>$INFO[Skin.String(AddonSetThree.4.Label)]</label>
 			<onclick>$INFO[Skin.String(AddonSetThree.4.Path)]</onclick>
-			<icon>-</icon>
+			<icon>$INFO[Skin.String(AddonSetThree.4.Icon)]</icon>
 			<thumb>-</thumb>
 			<visible>!IsEmpty(Skin.String(AddonSetThree.4.Path))</visible>
 		</item>
 		<item>
 			<label>$INFO[Skin.String(AddonSetThree.5.Label)]</label>
 			<onclick>$INFO[Skin.String(AddonSetThree.5.Path)]</onclick>
-			<icon>-</icon>
+			<icon>$INFO[Skin.String(AddonSetThree.5.Icon)]</icon>
 			<thumb>-</thumb>
 			<visible>!IsEmpty(Skin.String(AddonSetThree.5.Path))</visible>
 		</item>
 		<item>
 			<label>$INFO[Skin.String(AddonSetThree.6.Label)]</label>
 			<onclick>$INFO[Skin.String(AddonSetThree.6.Path)]</onclick>
-			<icon>-</icon>
+			<icon>$INFO[Skin.String(AddonSetThree.6.Icon)]</icon>
 			<thumb>-</thumb>
 			<visible>!IsEmpty(Skin.String(AddonSetThree.6.Path))</visible>
 		</item>
 		<item>
 			<label>$INFO[Skin.String(AddonSetThree.7.Label)]</label>
 			<onclick>$INFO[Skin.String(AddonSetThree.7.Path)]</onclick>
-			<icon>-</icon>
+			<icon>$INFO[Skin.String(AddonSetThree.7.Icon)]</icon>
 			<thumb>-</thumb>
 			<visible>!IsEmpty(Skin.String(AddonSetThree.7.Path))</visible>
 		</item>
@@ -439,49 +439,49 @@
 		<item>
 			<label>$INFO[Skin.String(AddonSetFour.1.Label)]</label>
 			<onclick>$INFO[Skin.String(AddonSetFour.1.Path)]</onclick>
-			<icon>-</icon>
+			<icon>$INFO[Skin.String(AddonSetFour.1.Icon)]</icon>
 			<thumb>-</thumb>
 			<visible>!IsEmpty(Skin.String(AddonSetFour.1.Path))</visible>
 		</item>
 		<item>
 			<label>$INFO[Skin.String(AddonSetFour.2.Label)]</label>
 			<onclick>$INFO[Skin.String(AddonSetFour.2.Path)]</onclick>
-			<icon>-</icon>
+			<icon>$INFO[Skin.String(AddonSetFour.2.Icon)]</icon>
 			<thumb>-</thumb>
 			<visible>!IsEmpty(Skin.String(AddonSetFour.2.Path))</visible>
 		</item>
 		<item>
 			<label>$INFO[Skin.String(AddonSetFour.3.Label)]</label>
 			<onclick>$INFO[Skin.String(AddonSetFour.3.Path)]</onclick>
-			<icon>-</icon>
+			<icon>$INFO[Skin.String(AddonSetFour.3.Icon)]</icon>
 			<thumb>-</thumb>
 			<visible>!IsEmpty(Skin.String(AddonSetFour.3.Path))</visible>
 		</item>
 		<item>
 			<label>$INFO[Skin.String(AddonSetFour.4.Label)]</label>
 			<onclick>$INFO[Skin.String(AddonSetFour.4.Path)]</onclick>
-			<icon>-</icon>
+			<icon>$INFO[Skin.String(AddonSetFour.4.Icon)]</icon>
 			<thumb>-</thumb>
 			<visible>!IsEmpty(Skin.String(AddonSetFour.4.Path))</visible>
 		</item>
 		<item>
 			<label>$INFO[Skin.String(AddonSetFour.5.Label)]</label>
 			<onclick>$INFO[Skin.String(AddonSetFour.5.Path)]</onclick>
-			<icon>-</icon>
+			<icon>$INFO[Skin.String(AddonSetFour.5.Icon)]</icon>
 			<thumb>-</thumb>
 			<visible>!IsEmpty(Skin.String(AddonSetFour.5.Path))</visible>
 		</item>
 		<item>
 			<label>$INFO[Skin.String(AddonSetFour.6.Label)]</label>
 			<onclick>$INFO[Skin.String(AddonSetFour.6.Path)]</onclick>
-			<icon>-</icon>
+			<icon>$INFO[Skin.String(AddonSetFour.6.Icon)]</icon>
 			<thumb>-</thumb>
 			<visible>!IsEmpty(Skin.String(AddonSetFour.6.Path))</visible>
 		</item>
 		<item>
 			<label>$INFO[Skin.String(AddonSetFour.7.Label)]</label>
 			<onclick>$INFO[Skin.String(AddonSetFour.7.Path)]</onclick>
-			<icon>-</icon>
+			<icon>$INFO[Skin.String(AddonSetFour.7.Icon)]</icon>
 			<thumb>-</thumb>
 			<visible>!IsEmpty(Skin.String(AddonSetFour.7.Path))</visible>
 		</item>
@@ -490,49 +490,49 @@
 		<item>
 			<label>$INFO[Skin.String(AddonSetFive.1.Label)]</label>
 			<onclick>$INFO[Skin.String(AddonSetFive.1.Path)]</onclick>
-			<icon>-</icon>
+			<icon>$INFO[Skin.String(AddonSetFive.1.Icon)]</icon>
 			<thumb>-</thumb>
 			<visible>!IsEmpty(Skin.String(AddonSetFive.1.Path))</visible>
 		</item>
 		<item>
 			<label>$INFO[Skin.String(AddonSetFive.2.Label)]</label>
 			<onclick>$INFO[Skin.String(AddonSetFive.2.Path)]</onclick>
-			<icon>-</icon>
+			<icon>$INFO[Skin.String(AddonSetFive.2.Icon)]</icon>
 			<thumb>-</thumb>
 			<visible>!IsEmpty(Skin.String(AddonSetFive.2.Path))</visible>
 		</item>
 		<item>
 			<label>$INFO[Skin.String(AddonSetFive.3.Label)]</label>
 			<onclick>$INFO[Skin.String(AddonSetFive.3.Path)]</onclick>
-			<icon>-</icon>
+			<icon>$INFO[Skin.String(AddonSetFive.3.Icon)]</icon>
 			<thumb>-</thumb>
 			<visible>!IsEmpty(Skin.String(AddonSetFive.3.Path))</visible>
 		</item>
 		<item>
 			<label>$INFO[Skin.String(AddonSetFive.4.Label)]</label>
 			<onclick>$INFO[Skin.String(AddonSetFive.4.Path)]</onclick>
-			<icon>-</icon>
+			<icon>$INFO[Skin.String(AddonSetFive.4.Icon)]</icon>
 			<thumb>-</thumb>
 			<visible>!IsEmpty(Skin.String(AddonSetFive.4.Path))</visible>
 		</item>
 		<item>
 			<label>$INFO[Skin.String(AddonSetFive.5.Label)]</label>
 			<onclick>$INFO[Skin.String(AddonSetFive.5.Path)]</onclick>
-			<icon>-</icon>
+			<icon>$INFO[Skin.String(AddonSetFive.5.Icon)]</icon>
 			<thumb>-</thumb>
 			<visible>!IsEmpty(Skin.String(AddonSetFive.5.Path))</visible>
 		</item>
 		<item>
 			<label>$INFO[Skin.String(AddonSetFive.6.Label)]</label>
 			<onclick>$INFO[Skin.String(AddonSetFive.6.Path)]</onclick>
-			<icon>-</icon>
+			<icon>$INFO[Skin.String(AddonSetFive.6.Icon)]</icon>
 			<thumb>-</thumb>
 			<visible>!IsEmpty(Skin.String(AddonSetFive.6.Path))</visible>
 		</item>
 		<item>
 			<label>$INFO[Skin.String(AddonSetFive.7.Label)]</label>
 			<onclick>$INFO[Skin.String(AddonSetFive.7.Path)]</onclick>
-			<icon>-</icon>
+			<icon>$INFO[Skin.String(AddonSetFive.7.Icon)]</icon>
 			<thumb>-</thumb>
 			<visible>!IsEmpty(Skin.String(AddonSetFive.7.Path))</visible>
 		</item>
@@ -541,49 +541,49 @@
 		<item>
 			<label>$INFO[Skin.String(AddonSetSix.1.Label)]</label>
 			<onclick>$INFO[Skin.String(AddonSetSix.1.Path)]</onclick>
-			<icon>-</icon>
+			<icon>$INFO[Skin.String(AddonSetSix.1.Icon)]</icon>
 			<thumb>-</thumb>
 			<visible>!IsEmpty(Skin.String(AddonSetSix.1.Path))</visible>
 		</item>
 		<item>
 			<label>$INFO[Skin.String(AddonSetSix.2.Label)]</label>
 			<onclick>$INFO[Skin.String(AddonSetSix.2.Path)]</onclick>
-			<icon>-</icon>
+			<icon>$INFO[Skin.String(AddonSetSix.2.Icon)]</icon>
 			<thumb>-</thumb>
 			<visible>!IsEmpty(Skin.String(AddonSetSix.2.Path))</visible>
 		</item>
 		<item>
 			<label>$INFO[Skin.String(AddonSetSix.3.Label)]</label>
 			<onclick>$INFO[Skin.String(AddonSetSix.3.Path)]</onclick>
-			<icon>-</icon>
+			<icon>$INFO[Skin.String(AddonSetSix.3.Icon)]</icon>
 			<thumb>-</thumb>
 			<visible>!IsEmpty(Skin.String(AddonSetSix.3.Path))</visible>
 		</item>
 		<item>
 			<label>$INFO[Skin.String(AddonSetSix.4.Label)]</label>
 			<onclick>$INFO[Skin.String(AddonSetSix.4.Path)]</onclick>
-			<icon>-</icon>
+			<icon>$INFO[Skin.String(AddonSetSix.4.Icon)]</icon>
 			<thumb>-</thumb>
 			<visible>!IsEmpty(Skin.String(AddonSetSix.4.Path))</visible>
 		</item>
 		<item>
 			<label>$INFO[Skin.String(AddonSetSix.5.Label)]</label>
 			<onclick>$INFO[Skin.String(AddonSetSix.5.Path)]</onclick>
-			<icon>-</icon>
+			<icon>$INFO[Skin.String(AddonSetSix.5.Icon)]</icon>
 			<thumb>-</thumb>
 			<visible>!IsEmpty(Skin.String(AddonSetSix.5.Path))</visible>
 		</item>
 		<item>
 			<label>$INFO[Skin.String(AddonSetSix.6.Label)]</label>
 			<onclick>$INFO[Skin.String(AddonSetSix.6.Path)]</onclick>
-			<icon>-</icon>
+			<icon>$INFO[Skin.String(AddonSetSix.6.Icon)]</icon>
 			<thumb>-</thumb>
 			<visible>!IsEmpty(Skin.String(AddonSetSix.6.Path))</visible>
 		</item>
 		<item>
 			<label>$INFO[Skin.String(AddonSetSix.7.Label)]</label>
 			<onclick>$INFO[Skin.String(AddonSetSix.7.Path)]</onclick>
-			<icon>-</icon>
+			<icon>$INFO[Skin.String(AddonSetSix.7.Icon)]</icon>
 			<thumb>-</thumb>
 			<visible>!IsEmpty(Skin.String(AddonSetSix.7.Path))</visible>
 		</item>
@@ -592,49 +592,49 @@
 		<item>
 			<label>$INFO[Skin.String(AddonSetSeven.1.Label)]</label>
 			<onclick>$INFO[Skin.String(AddonSetSeven.1.Path)]</onclick>
-			<icon>-</icon>
+			<icon>$INFO[Skin.String(AddonSetSeven.1.Icon)]</icon>
 			<thumb>-</thumb>
 			<visible>!IsEmpty(Skin.String(AddonSetSeven.1.Path))</visible>
 		</item>
 		<item>
 			<label>$INFO[Skin.String(AddonSetSeven.2.Label)]</label>
 			<onclick>$INFO[Skin.String(AddonSetSeven.2.Path)]</onclick>
-			<icon>-</icon>
+			<icon>$INFO[Skin.String(AddonSetSeven.2.Icon)]</icon>
 			<thumb>-</thumb>
 			<visible>!IsEmpty(Skin.String(AddonSetSeven.2.Path))</visible>
 		</item>
 		<item>
 			<label>$INFO[Skin.String(AddonSetSeven.3.Label)]</label>
 			<onclick>$INFO[Skin.String(AddonSetSeven.3.Path)]</onclick>
-			<icon>-</icon>
+			<icon>$INFO[Skin.String(AddonSetSeven.3.Icon)]</icon>
 			<thumb>-</thumb>
 			<visible>!IsEmpty(Skin.String(AddonSetSeven.3.Path))</visible>
 		</item>
 		<item>
 			<label>$INFO[Skin.String(AddonSetSeven.4.Label)]</label>
 			<onclick>$INFO[Skin.String(AddonSetSeven.4.Path)]</onclick>
-			<icon>-</icon>
+			<icon>$INFO[Skin.String(AddonSetSeven.4.Icon)]</icon>
 			<thumb>-</thumb>
 			<visible>!IsEmpty(Skin.String(AddonSetSeven.4.Path))</visible>
 		</item>
 		<item>
 			<label>$INFO[Skin.String(AddonSetSeven.5.Label)]</label>
 			<onclick>$INFO[Skin.String(AddonSetSeven.5.Path)]</onclick>
-			<icon>-</icon>
+			<icon>$INFO[Skin.String(AddonSetSeven.5.Icon)]</icon>
 			<thumb>-</thumb>
 			<visible>!IsEmpty(Skin.String(AddonSetSeven.5.Path))</visible>
 		</item>
 		<item>
 			<label>$INFO[Skin.String(AddonSetSeven.6.Label)]</label>
 			<onclick>$INFO[Skin.String(AddonSetSeven.6.Path)]</onclick>
-			<icon>-</icon>
+			<icon>$INFO[Skin.String(AddonSetSeven.6.Icon)]</icon>
 			<thumb>-</thumb>
 			<visible>!IsEmpty(Skin.String(AddonSetSeven.6.Path))</visible>
 		</item>
 		<item>
 			<label>$INFO[Skin.String(AddonSetSeven.7.Label)]</label>
 			<onclick>$INFO[Skin.String(AddonSetSeven.7.Path)]</onclick>
-			<icon>-</icon>
+			<icon>$INFO[Skin.String(AddonSetSeven.7.Icon)]</icon>
 			<thumb>-</thumb>
 			<visible>!IsEmpty(Skin.String(AddonSetSeven.7.Path))</visible>
 		</item>
@@ -643,49 +643,49 @@
 		<item>
 			<label>$INFO[Skin.String(AddonSetEight.1.Label)]</label>
 			<onclick>$INFO[Skin.String(AddonSetEight.1.Path)]</onclick>
-			<icon>-</icon>
+			<icon>$INFO[Skin.String(AddonSetEight.1.Icon)]</icon>
 			<thumb>-</thumb>
 			<visible>!IsEmpty(Skin.String(AddonSetEight.1.Path))</visible>
 		</item>
 		<item>
 			<label>$INFO[Skin.String(AddonSetEight.2.Label)]</label>
 			<onclick>$INFO[Skin.String(AddonSetEight.2.Path)]</onclick>
-			<icon>-</icon>
+			<icon>$INFO[Skin.String(AddonSetEight.2.Icon)]</icon>
 			<thumb>-</thumb>
 			<visible>!IsEmpty(Skin.String(AddonSetEight.2.Path))</visible>
 		</item>
 		<item>
 			<label>$INFO[Skin.String(AddonSetEight.3.Label)]</label>
 			<onclick>$INFO[Skin.String(AddonSetEight.3.Path)]</onclick>
-			<icon>-</icon>
+			<icon>$INFO[Skin.String(AddonSetEight.3.Icon)]</icon>
 			<thumb>-</thumb>
 			<visible>!IsEmpty(Skin.String(AddonSetEight.3.Path))</visible>
 		</item>
 		<item>
 			<label>$INFO[Skin.String(AddonSetEight.4.Label)]</label>
 			<onclick>$INFO[Skin.String(AddonSetEight.4.Path)]</onclick>
-			<icon>-</icon>
+			<icon>$INFO[Skin.String(AddonSetEight.4.Icon)]</icon>
 			<thumb>-</thumb>
 			<visible>!IsEmpty(Skin.String(AddonSetEight.4.Path))</visible>
 		</item>
 		<item>
 			<label>$INFO[Skin.String(AddonSetEight.5.Label)]</label>
 			<onclick>$INFO[Skin.String(AddonSetEight.5.Path)]</onclick>
-			<icon>-</icon>
+			<icon>$INFO[Skin.String(AddonSetEight.5.Icon)]</icon>
 			<thumb>-</thumb>
 			<visible>!IsEmpty(Skin.String(AddonSetEight.5.Path))</visible>
 		</item>
 		<item>
 			<label>$INFO[Skin.String(AddonSetEight.6.Label)]</label>
 			<onclick>$INFO[Skin.String(AddonSetEight.6.Path)]</onclick>
-			<icon>-</icon>
+			<icon>$INFO[Skin.String(AddonSetEight.6.Icon)]</icon>
 			<thumb>-</thumb>
 			<visible>!IsEmpty(Skin.String(AddonSetEight.6.Path))</visible>
 		</item>
 		<item>
 			<label>$INFO[Skin.String(AddonSetEight.7.Label)]</label>
 			<onclick>$INFO[Skin.String(AddonSetEight.7.Path)]</onclick>
-			<icon>-</icon>
+			<icon>$INFO[Skin.String(AddonSetEight.7.Icon)]</icon>
 			<thumb>-</thumb>
 			<visible>!IsEmpty(Skin.String(AddonSetEight.7.Path))</visible>
 		</item>
@@ -694,49 +694,49 @@
 		<item>
 			<label>$INFO[Skin.String(AddonSetNine.1.Label)]</label>
 			<onclick>$INFO[Skin.String(AddonSetNine.1.Path)]</onclick>
-			<icon>-</icon>
+			<icon>$INFO[Skin.String(AddonSetNine.1.Icon)]</icon>
 			<thumb>-</thumb>
 			<visible>!IsEmpty(Skin.String(AddonSetNine.1.Path))</visible>
 		</item>
 		<item>
 			<label>$INFO[Skin.String(AddonSetNine.2.Label)]</label>
 			<onclick>$INFO[Skin.String(AddonSetNine.2.Path)]</onclick>
-			<icon>-</icon>
+			<icon>$INFO[Skin.String(AddonSetNine.2.Icon)]</icon>
 			<thumb>-</thumb>
 			<visible>!IsEmpty(Skin.String(AddonSetNine.2.Path))</visible>
 		</item>
 		<item>
 			<label>$INFO[Skin.String(AddonSetNine.3.Label)]</label>
 			<onclick>$INFO[Skin.String(AddonSetNine.3.Path)]</onclick>
-			<icon>-</icon>
+			<icon>$INFO[Skin.String(AddonSetNine.3.Icon)]</icon>
 			<thumb>-</thumb>
 			<visible>!IsEmpty(Skin.String(AddonSetNine.3.Path))</visible>
 		</item>
 		<item>
 			<label>$INFO[Skin.String(AddonSetNine.4.Label)]</label>
 			<onclick>$INFO[Skin.String(AddonSetNine.4.Path)]</onclick>
-			<icon>-</icon>
+			<icon>$INFO[Skin.String(AddonSetNine.4.Icon)]</icon>
 			<thumb>-</thumb>
 			<visible>!IsEmpty(Skin.String(AddonSetNine.4.Path))</visible>
 		</item>
 		<item>
 			<label>$INFO[Skin.String(AddonSetNine.5.Label)]</label>
 			<onclick>$INFO[Skin.String(AddonSetNine.5.Path)]</onclick>
-			<icon>-</icon>
+			<icon>$INFO[Skin.String(AddonSetNine.5.Icon)]</icon>
 			<thumb>-</thumb>
 			<visible>!IsEmpty(Skin.String(AddonSetNine.5.Path))</visible>
 		</item>
 		<item>
 			<label>$INFO[Skin.String(AddonSetNine.6.Label)]</label>
 			<onclick>$INFO[Skin.String(AddonSetNine.6.Path)]</onclick>
-			<icon>-</icon>
+			<icon>$INFO[Skin.String(AddonSetNine.6.Icon)]</icon>
 			<thumb>-</thumb>
 			<visible>!IsEmpty(Skin.String(AddonSetNine.6.Path))</visible>
 		</item>
 		<item>
 			<label>$INFO[Skin.String(AddonSetNine.7.Label)]</label>
 			<onclick>$INFO[Skin.String(AddonSetNine.7.Path)]</onclick>
-			<icon>-</icon>
+			<icon>$INFO[Skin.String(AddonSetNine.7.Icon)]</icon>
 			<thumb>-</thumb>
 			<visible>!IsEmpty(Skin.String(AddonSetNine.7.Path))</visible>
 		</item>
@@ -745,49 +745,49 @@
 		<item>
 			<label>$INFO[Skin.String(AddonSetTen.1.Label)]</label>
 			<onclick>$INFO[Skin.String(AddonSetTen.1.Path)]</onclick>
-			<icon>-</icon>
+			<icon>$INFO[Skin.String(AddonSetTen.1.Icon)]</icon>
 			<thumb>-</thumb>
 			<visible>!IsEmpty(Skin.String(AddonSetTen.1.Path))</visible>
 		</item>
 		<item>
 			<label>$INFO[Skin.String(AddonSetTen.2.Label)]</label>
 			<onclick>$INFO[Skin.String(AddonSetTen.2.Path)]</onclick>
-			<icon>-</icon>
+			<icon>$INFO[Skin.String(AddonSetTen.2.Icon)]</icon>
 			<thumb>-</thumb>
 			<visible>!IsEmpty(Skin.String(AddonSetTen.2.Path))</visible>
 		</item>
 		<item>
 			<label>$INFO[Skin.String(AddonSetTen.3.Label)]</label>
 			<onclick>$INFO[Skin.String(AddonSetTen.3.Path)]</onclick>
-			<icon>-</icon>
+			<icon>$INFO[Skin.String(AddonSetTen.3.Icon)]</icon>
 			<thumb>-</thumb>
 			<visible>!IsEmpty(Skin.String(AddonSetTen.3.Path))</visible>
 		</item>
 		<item>
 			<label>$INFO[Skin.String(AddonSetTen.4.Label)]</label>
 			<onclick>$INFO[Skin.String(AddonSetTen.4.Path)]</onclick>
-			<icon>-</icon>
+			<icon>$INFO[Skin.String(AddonSetTen.4.Icon)]</icon>
 			<thumb>-</thumb>
 			<visible>!IsEmpty(Skin.String(AddonSetTen.4.Path))</visible>
 		</item>
 		<item>
 			<label>$INFO[Skin.String(AddonSetTen.5.Label)]</label>
 			<onclick>$INFO[Skin.String(AddonSetTen.5.Path)]</onclick>
-			<icon>-</icon>
+			<icon>$INFO[Skin.String(AddonSetTen.5.Icon)]</icon>
 			<thumb>-</thumb>
 			<visible>!IsEmpty(Skin.String(AddonSetTen.5.Path))</visible>
 		</item>
 		<item>
 			<label>$INFO[Skin.String(AddonSetTen.6.Label)]</label>
 			<onclick>$INFO[Skin.String(AddonSetTen.6.Path)]</onclick>
-			<icon>-</icon>
+			<icon>$INFO[Skin.String(AddonSetTen.6.Icon)]</icon>
 			<thumb>-</thumb>
 			<visible>!IsEmpty(Skin.String(AddonSetTen.6.Path))</visible>
 		</item>
 		<item>
 			<label>$INFO[Skin.String(AddonSetTen.7.Label)]</label>
 			<onclick>$INFO[Skin.String(AddonSetTen.7.Path)]</onclick>
-			<icon>-</icon>
+			<icon>$INFO[Skin.String(AddonSetTen.7.Icon)]</icon>
 			<thumb>-</thumb>
 			<visible>!IsEmpty(Skin.String(AddonSetTen.7.Path))</visible>
 		</item>

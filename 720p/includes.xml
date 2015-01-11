@@ -1446,8 +1446,8 @@
 		<focusedcolor>black</focusedcolor>
 	</include>
 	<include name="KBurnsAnimateFanart">
-		<animation effect="zoom" start="110" end="130" center="auto" time="16000" tween="cubic" easing="inout" pulse="true" condition="!Skin.HasSetting(NoAnimateFanart)">Conditional</animation>
-		<animation effect="slide" start="-10,-10" end="20,20" time="8000" tween="cubic" easing="inout" pulse="true" condition="!Skin.HasSetting(NoAnimateFanart)">Conditional</animation>
+		<animation effect="zoom" start="110" end="130" center="auto" time="16000" tween="cubic" easing="inout" pulse="true" condition="!Skin.HasSetting(noanimatefanart)">Conditional</animation>
+		<animation effect="slide" start="-10,-10" end="20,20" time="8000" tween="cubic" easing="inout" pulse="true" condition="!Skin.HasSetting(noanimatefanart)">Conditional</animation>
 	</include>
 	<include name="Dimensions_Fullscreen">
 		<left>0</left>
