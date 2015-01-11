@@ -201,8 +201,12 @@ msgctxt "#31061"
 msgid "Current Selected"
 msgstr ""
 
-#empty strings from id 31062 to 31100
+#empty strings from id 31062 to 31099
 #Skin Settings labels
+
+msgctxt "#31100"
+msgid "Weather FanArt"
+msgstr ""
 
 msgctxt "#31101"
 msgid "Home screen options"
@@ -629,6 +633,10 @@ msgid "Enable Visible Horizontal SubMenu"
 msgstr ""
 
 #empty strings from id 31276 to 31281
+
+msgctxt "#31281"
+msgid "Hide Video Now Playing Background"
+msgstr ""
 
 msgctxt "#31282"
 msgid "Home Menu"

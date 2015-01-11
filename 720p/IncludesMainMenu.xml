@@ -15,7 +15,7 @@
 		</control>
 	</include>
 	<include name="HomeMainMenuSys">
-		<left>-190</left>
+		<left>-110</left>
 		<top>5</top>
 		<width>1500</width>
 		<height>60</height>
@@ -31,7 +31,7 @@
 		<focusposition>2</focusposition>
 		<movement>1</movement>
 		<orientation>Horizontal</orientation>
-		<itemlayout height="60" width="340">
+		<itemlayout height="60" width="300">
 			<control type="image">
 				<posx>0</posx>
 				<posy>4</posy>
@@ -58,7 +58,7 @@
 				<label>$INFO[ListItem.Label]</label>
 			</control>
 		</itemlayout>
-		<focusedlayout height="60" width="340">
+		<focusedlayout height="60" width="300">
 			<control type="image">
 				<posx>0</posx>
 				<posy>4</posy>
@@ -106,6 +106,7 @@
 				<label>$INFO[Skin.String(HomeItem.1.Label)]</label>
 				<onclick>SetProperty(MenuItemActive,ItemOne,Home)</onclick>
 				<onclick>SetProperty(MenuItemSelected,$INFO[Skin.String(HomeItem.1.Type)],Home)</onclick>
+				<onclick>SetProperty(MenuBackground,$INFO[Skin.String(HomeItem.1.Display)],Home)</onclick>
 				<onclick>$INFO[Skin.String(HomeItem.1.Path)]</onclick>
 				<icon>$INFO[Skin.CurrentTheme,special://skin/backgrounds/,.jpg]</icon>
 				<thumb>$INFO[Skin.String(HomeItem.1.Fanart)]</thumb>
@@ -122,6 +123,7 @@
 				<label>$INFO[Skin.String(HomeItem.2.Label)]</label>
 				<onclick>SetProperty(MenuItemActive,ItemTwo,Home)</onclick>
 				<onclick>SetProperty(MenuItemSelected,$INFO[Skin.String(HomeItem.2.Type)],Home)</onclick>
+				<onclick>SetProperty(MenuBackground,$INFO[Skin.String(HomeItem.2.Display)],Home)</onclick>
 				<onclick>$INFO[Skin.String(HomeItem.2.Path)]</onclick>
 				<icon>$INFO[Skin.CurrentTheme,special://skin/backgrounds/,.jpg]</icon>
 				<thumb>$INFO[Skin.String(HomeItem.2.Fanart)]</thumb>
@@ -138,6 +140,7 @@
 				<label>$INFO[Skin.String(HomeItem.3.Label)]</label>
 				<onclick>SetProperty(MenuItemActive,ItemThree,Home)</onclick>
 				<onclick>SetProperty(MenuItemSelected,$INFO[Skin.String(HomeItem.3.Type)],Home)</onclick>
+				<onclick>SetProperty(MenuBackground,$INFO[Skin.String(HomeItem.3.Display)],Home)</onclick>
 				<onclick>$INFO[Skin.String(HomeItem.3.Path)]</onclick>
 				<icon>$INFO[Skin.CurrentTheme,special://skin/backgrounds/,.jpg]</icon>
 				<thumb>$INFO[Skin.String(HomeItem.3.Fanart)]</thumb>
@@ -154,6 +157,7 @@
 				<label>$INFO[Skin.String(HomeItem.4.Label)]</label>
 				<onclick>SetProperty(MenuItemActive,ItemFour,Home)</onclick>
 				<onclick>SetProperty(MenuItemSelected,$INFO[Skin.String(HomeItem.4.Type)],Home)</onclick>
+				<onclick>SetProperty(MenuBackground,$INFO[Skin.String(HomeItem.4.Display)],Home)</onclick>
 				<onclick>$INFO[Skin.String(HomeItem.4.Path)]</onclick>
 				<icon>$INFO[Skin.CurrentTheme,special://skin/backgrounds/,.jpg]</icon>
 				<thumb>$INFO[Skin.String(HomeItem.4.Fanart)]</thumb>
@@ -170,6 +174,7 @@
 				<label>$INFO[Skin.String(HomeItem.5.Label)]</label>
 				<onclick>SetProperty(MenuItemActive,ItemFive,Home)</onclick>
 				<onclick>SetProperty(MenuItemSelected,$INFO[Skin.String(HomeItem.5.Type)],Home)</onclick>
+				<onclick>SetProperty(MenuBackground,$INFO[Skin.String(HomeItem.5.Display)],Home)</onclick>
 				<onclick>$INFO[Skin.String(HomeItem.5.Path)]</onclick>
 				<icon>$INFO[Skin.CurrentTheme,special://skin/backgrounds/,.jpg]</icon>
 				<thumb>$INFO[Skin.String(HomeItem.5.Fanart)]</thumb>
@@ -186,6 +191,7 @@
 				<label>$INFO[Skin.String(HomeItem.6.Label)]</label>
 				<onclick>SetProperty(MenuItemActive,ItemSix,Home)</onclick>
 				<onclick>SetProperty(MenuItemSelected,$INFO[Skin.String(HomeItem.6.Type)],Home)</onclick>
+				<onclick>SetProperty(MenuBackground,$INFO[Skin.String(HomeItem.6.Display)],Home)</onclick>
 				<onclick>$INFO[Skin.String(HomeItem.6.Path)]</onclick>
 				<icon>$INFO[Skin.CurrentTheme,special://skin/backgrounds/,.jpg]</icon>
 				<thumb>$INFO[Skin.String(HomeItem.6.Fanart)]</thumb>
@@ -202,6 +208,7 @@
 				<label>$INFO[Skin.String(HomeItem.7.Label)]</label>
 				<onclick>SetProperty(MenuItemActive,ItemSeven,Home)</onclick>
 				<onclick>SetProperty(MenuItemSelected,$INFO[Skin.String(HomeItem.7.Type)],Home)</onclick>
+				<onclick>SetProperty(MenuBackground,$INFO[Skin.String(HomeItem.7.Display)],Home)</onclick>
 				<onclick>$INFO[Skin.String(HomeItem.7.Path)]</onclick>
 				<icon>$INFO[Skin.CurrentTheme,special://skin/backgrounds/,.jpg]</icon>
 				<thumb>$INFO[Skin.String(HomeItem.7.Fanart)]</thumb>
@@ -218,6 +225,7 @@
 				<label>$INFO[Skin.String(HomeItem.8.Label)]</label>
 				<onclick>SetProperty(MenuItemActive,ItemEight,Home)</onclick>
 				<onclick>SetProperty(MenuItemSelected,$INFO[Skin.String(HomeItem.8.Type)],Home)</onclick>
+				<onclick>SetProperty(MenuBackground,$INFO[Skin.String(HomeItem.8.Display)],Home)</onclick>
 				<onclick>$INFO[Skin.String(HomeItem.8.Path)]</onclick>
 				<icon>$INFO[Skin.CurrentTheme,special://skin/backgrounds/,.jpg]</icon>
 				<thumb>$INFO[Skin.String(HomeItem.8.Fanart)]</thumb>
@@ -234,6 +242,7 @@
 				<label>$INFO[Skin.String(HomeItem.9.Label)]</label>
 				<onclick>SetProperty(MenuItemActive,ItemNine,Home)</onclick>
 				<onclick>SetProperty(MenuItemSelected,$INFO[Skin.String(HomeItem.9.Type)],Home)</onclick>
+				<onclick>SetProperty(MenuBackground,$INFO[Skin.String(HomeItem.9.Display)],Home)</onclick>
 				<onclick>$INFO[Skin.String(HomeItem.9.Path)]</onclick>
 				<icon>$INFO[Skin.CurrentTheme,special://skin/backgrounds/,.jpg]</icon>
 				<thumb>$INFO[Skin.String(HomeItem.9.Fanart)]</thumb>
@@ -250,6 +259,7 @@
 				<label>$INFO[Skin.String(HomeItem.10.Label)]</label>
 				<onclick>SetProperty(MenuItemActive,ItemTen,Home)</onclick>
 				<onclick>SetProperty(MenuItemSelected,$INFO[Skin.String(HomeItem.10.Type)],Home)</onclick>
+				<onclick>SetProperty(MenuBackground,$INFO[Skin.String(HomeItem.10.Display)],Home)</onclick>
 				<onclick>$INFO[Skin.String(HomeItem.10.Path)]</onclick>
 				<icon>$INFO[Skin.CurrentTheme,special://skin/backgrounds/,.jpg]</icon>
 				<thumb>$INFO[Skin.String(HomeItem.10.Fanart)]</thumb>
@@ -266,6 +276,7 @@
 				<label>$INFO[Skin.String(HomeItem.11.Label)]</label>
 				<onclick>SetProperty(MenuItemActive,ItemEleven,Home)</onclick>
 				<onclick>SetProperty(MenuItemSelected,$INFO[Skin.String(HomeItem.11.Type)],Home)</onclick>
+				<onclick>SetProperty(MenuBackground,$INFO[Skin.String(HomeItem.11.Display)],Home)</onclick>
 				<onclick>$INFO[Skin.String(HomeItem.11.Path)]</onclick>
 				<icon>$INFO[Skin.CurrentTheme,special://skin/backgrounds/,.jpg]</icon>
 				<thumb>$INFO[Skin.String(HomeItem.11.Fanart)]</thumb>
@@ -282,6 +293,7 @@
 				<label>$INFO[Skin.String(HomeItem.12.Label)]</label>
 				<onclick>SetProperty(MenuItemActive,ItemTwelve,Home)</onclick>
 				<onclick>SetProperty(MenuItemSelected,$INFO[Skin.String(HomeItem.12.Type)],Home)</onclick>
+				<onclick>SetProperty(MenuBackground,$INFO[Skin.String(HomeItem.12.Display)],Home)</onclick>
 				<onclick>$INFO[Skin.String(HomeItem.12.Path)]</onclick>
 				<icon>$INFO[Skin.CurrentTheme,special://skin/backgrounds/,.jpg]</icon>
 				<thumb>$INFO[Skin.String(HomeItem.12.Fanart)]</thumb>

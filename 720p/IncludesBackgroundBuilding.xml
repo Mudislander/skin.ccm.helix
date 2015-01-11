@@ -2,7 +2,7 @@
 <includes>
 	<include name="CommonBackground">
 		<control type="group">
-			<visible>[Skin.HasSetting(SingleGlobalBackground) | StringCompare(Window(home).Property(MenuBackground),Theme) | StringCompare(Container(9000).ListItem.Property(Background),Theme)] + !Skin.HasSetting(HolidayEffects)</visible>
+			<visible>[Skin.HasSetting(SingleGlobalBackground) | StringCompare(Window(home).Property(Background),Theme) | StringCompare(Container(9000).ListItem.Property(Background),Theme)] + !Skin.HasSetting(HolidayEffects)</visible>
 			<control type="multiimage">
 				<include>Dimensions_Fullscreen</include>
 				<imagepath background="true">$INFO[Skin.String(GlobalBackgroundPath)]</imagepath>
@@ -56,7 +56,7 @@
 			</control>
 			<control type="multiimage">
 				<include>Dimensions_Fullscreen</include>
-				<imagepath background="true">special://skin/extras/Weather/$INFO[Window(Weather).Property(Current.FanartCode)]</imagepath>
+				<imagepath background="true">$INFO[Skin.String(WeatherFanartDir)]$INFO[Window(Weather).Property(Current.FanartCode)]</imagepath>
 				<timeperimage>8000</timeperimage>
 				<randomize>true</randomize>
 				<include>BackgroundFade</include>
@@ -95,7 +95,7 @@
 			</control>
 		</control>
 		<control type="group">
-			<visible>!Window.IsVisible(Home) + !Player.HasVideo + !Skin.HasSetting(hidebackgroundfanart)</visible>
+			<visible>!Window.IsVisible(Home) + !Player.HasVideo + !Skin.HasSetting(HideBackGroundFanart)</visible>
 			<control type="image">
 				<include>Dimensions_Fullscreen</include>
 				<aspectratio>scale</aspectratio>
@@ -144,7 +144,7 @@
 				<randomize>true</randomize>
 				<fadetime>1000</fadetime>
 				<aspectratio>keep</aspectratio>
-				<include condition="!Skin.HasSetting(noanimatevizfanart)">KBurnsAnimateFanart</include>
+				<include condition="!Skin.HasSetting(NoAnimateVizFanart)">KBurnsAnimateFanart</include>
 				<imagepath background="true">$INFO[Player.FolderPath,,../extrafanart/]</imagepath>
 				<visible>Skin.HasSetting(DisableSlideShowArt) + !IsEmpty(Control.GetLabel(5043))</visible>
 			</control>
@@ -154,14 +154,14 @@
 				<randomize>true</randomize>
 				<fadetime>1000</fadetime>
 				<aspectratio>keep</aspectratio>
-				<include condition="!Skin.HasSetting(noanimatevizfanart)">KBurnsAnimateFanart</include>
+				<include condition="!Skin.HasSetting(NoAnimateVizFanart)">KBurnsAnimateFanart</include>
 				<imagepath background="true">$INFO[Skin.String(PhysicalMusicFolder)]$INFO[MusicPlayer.Artist,,/extrafanart/]</imagepath>
 				<visible>Skin.HasSetting(DisableSlideShowArt) + IsEmpty(Control.GetLabel(5043))</visible>
 			</control>
 			<control type="image">
 				<description>Fanart Image for Artist</description>
 				<include>Dimensions_Fullscreen</include>
-				<include condition="!Skin.HasSetting(noanimatevizfanart)">KBurnsAnimateFanart</include>
+				<include condition="!Skin.HasSetting(NoAnimateVizFanart)">KBurnsAnimateFanart</include>
 				<texture background="true">$INFO[Player.Art(fanart)]</texture>
 				<visible>!IsEmpty(Player.Art(fanart)) + [IsEmpty(Control.GetLabel(5043)) + IsEmpty(Control.GetLabel(5044))] | !Skin.HasSetting(DisableSlideShowArt)</visible>
 				<fadetime>600</fadetime>
@@ -172,9 +172,9 @@
 				<randomize>true</randomize>
 				<fadetime>1000</fadetime>
 				<aspectratio>keep</aspectratio>
-				<include condition="!Skin.HasSetting(noanimatevizfanart)">KBurnsAnimateFanart</include>
+				<include condition="!Skin.HasSetting(NoAnimateVizFanart)">KBurnsAnimateFanart</include>
 				<imagepath background="true">$INFO[Window(Visualisation).Property(ArtistSlideshow)]</imagepath>
-				<visible>!Skin.HasSetting(hideartistartosd)</visible>
+				<visible>!Skin.HasSetting(HideArtistArtOsd)</visible>
 			</control>
 			<control type="visualisation">
 				<include>Dimensions_Fullscreen</include>
@@ -244,7 +244,7 @@
 			</control>
 		</control>
 		<!--control type="group">
-			<visible>!Skin.HasSetting(hidebackgroundfanart)</visible>
+			<visible>!Skin.HasSetting(HideBackGroundFanart)</visible>
 			<visible>Window.IsActive(script-globalsearch-main.xml)</visible>
 			<include>VisibleFadeEffect</include>
 			<control type="image">
@@ -259,12 +259,12 @@
 		<control type="image">
 			<include>Dimensions_Fullscreen</include>
 			<texture>special://skin/backgrounds/media-overlay.jpg</texture>
-			<visible>Player.HasVideo + [StringCompare(Container(9000).ListItem.Property(HiLiteItem),FullScreen) | Skin.HasSetting(hidehomenowplaying)] + ![Window.IsVisible(PVR) + [Control.IsVisible(11) | Control.IsVisible(12)]]</visible>
+			<visible>Player.HasVideo + [StringCompare(Container(9000).ListItem.Property(HiLiteItem),FullScreen) | Skin.HasSetting(HideHomeNowPlaying)] + ![Window.IsVisible(PVR) + [Control.IsVisible(11) | Control.IsVisible(12)]]</visible>
 			<include>VisibleFadeEffect</include>
 		</control>
 		<control type="videowindow">
 			<include>Dimensions_Fullscreen</include>
-			<visible>Player.HasVideo + [StringCompare(Container(9000).ListItem.Property(HiLiteItem),FullScreen) | Skin.HasSetting(hidehomenowplaying)] + ![Window.IsVisible(PVR) + [Control.IsVisible(11) | Control.IsVisible(12)]]</visible>
+			<visible>Player.HasVideo + [StringCompare(Container(9000).ListItem.Property(HiLiteItem),FullScreen) | Skin.HasSetting(HideHomeNowPlaying)] + ![Window.IsVisible(PVR) + [Control.IsVisible(11) | Control.IsVisible(12)]]</visible>
 		</control>
 	</include>
 	<include name="ArtistExtraFanArt">
