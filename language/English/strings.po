@@ -1157,7 +1157,57 @@ msgctxt "#31511"
 msgid "Channel Options"
 msgstr ""
 
-#empty strings from id 31512 to 31900
+#empty strings from id 31512 to 31599
+
+msgctxt "#31600"
+msgid "Transcoding settings"
+msgstr ""
+
+msgctxt "#31601"
+msgid "Enable transcoding"
+msgstr ""
+
+msgctxt "#31602"
+msgid "Audio codec"
+msgstr ""
+
+msgctxt "#31603"
+msgid "Video codec"
+msgstr ""
+
+msgctxt "#31604"
+msgid "Resolution"
+msgstr ""
+
+msgctxt "#31605"
+msgid "Schedule settings"
+msgstr ""
+
+msgctxt "#31606"
+msgid "Frequency"
+msgstr ""
+
+msgctxt "#31607"
+msgid "Airtime"
+msgstr ""
+
+msgctxt "#31608"
+msgid "Channels"
+msgstr ""
+
+msgctxt "#31609"
+msgid "Keep"
+msgstr ""
+
+msgctxt "#31610"
+msgid "Record minutes before start"
+msgstr ""
+
+msgctxt "#31611"
+msgid "Record minutes after end"
+msgstr ""
+
+#empty strings from id 31612 to 31900
 #Weather plugin
 
 msgctxt "#31901"

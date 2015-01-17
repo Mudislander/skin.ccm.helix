@@ -3,6 +3,11 @@ B]3.0.2[/B] [I]Jan 2015[/I]
 - Option Large Widgets
 - Added stats Bar
 - Adjusted Concerts Widgets Layout
+- Support file pvr.hts
+- Support file pvr.mediaportal.tvserver
+- Support file pvr.vdr.vnsi
+- Support file pvr.wmc
+
 
 B]3.0.1[/B] [I]Jan 2015[/I]
 - Bugfix Home Addon icons
