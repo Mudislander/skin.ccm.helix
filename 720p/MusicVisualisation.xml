@@ -75,6 +75,7 @@
 				<shadowcolor>black</shadowcolor>
 				<label>$INFO[System.Time]</label>
 				<animation effect="slide" start="0,0" end="-70,0" time="0" condition="Window.IsVisible(MusicOSD)">conditional</animation>
+				<visible>!Skin.HasSetting(HideSystemTime)</visible>
 			</control>
 			<control type="image">
 				<left>0</left>

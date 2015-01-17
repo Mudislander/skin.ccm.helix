@@ -201,7 +201,69 @@ msgctxt "#31061"
 msgid "Current Selected"
 msgstr ""
 
-#empty strings from id 31062 to 31099
+#empty strings from id 31062 to 31070
+
+msgctxt "#31070"
+msgid "Show Background Fanart"
+msgstr ""
+
+msgctxt "#31071"
+msgid "Show Now Playing Info"
+msgstr ""
+
+msgctxt "#31072"
+msgid "Home Top Left Info Area"
+msgstr ""
+
+msgctxt "#31073"
+msgid "Enable Home Stats Bar"
+msgstr ""
+
+msgctxt "#31074"
+msgid "Enable Large Home Widgets"
+msgstr ""
+
+msgctxt "#31075"
+msgid "Hide Episode Thumbnails"
+msgstr ""
+
+msgctxt "#31076"
+msgid "Enable RainDrop Effect"
+msgstr ""
+
+msgctxt "#31077"
+msgid "Shutdown Menu"
+msgstr ""
+
+msgctxt "#31078"
+msgid "Power Button Action"
+msgstr ""
+
+msgctxt "#31079"
+msgid "Hide Power Button"
+msgstr ""
+
+msgctxt "#31080"
+msgid "Power Button Options"
+msgstr ""
+
+msgctxt "#31081"
+msgid "Hide Date and Clock Display"
+msgstr ""
+
+msgctxt "#31082"
+msgid "Profile (if not master)"
+msgstr ""
+
+msgctxt "#31083"
+msgid "Kodi Icon"
+msgstr ""
+
+msgctxt "#31084"
+msgid "Enable Kodi Intro Movie"
+msgstr ""
+
+#empty strings from id 31085 to 31099
 #Skin Settings labels
 
 msgctxt "#31100"
@@ -324,7 +386,11 @@ msgctxt "#31136"
 msgid "Home Page Pictures Sub-menu"
 msgstr ""
 
-#empty strings from id 31137 to 31139
+msgctxt "#31137"
+msgid "Lower Main Menu Bar"
+msgstr ""
+
+#empty strings from id 31138 to 31139
 
 msgctxt "#31140"
 msgid "Music OSD"
@@ -697,7 +763,7 @@ msgid "Last Updated"
 msgstr ""
 
 msgctxt "#31302"
-msgid "Enable Kodi Intro Movie"
+msgid "Outlook - "
 msgstr ""
 
 msgctxt "#31303"

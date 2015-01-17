@@ -2,8 +2,12 @@
 <includes>
 	<include name="HomeAddonsDisplay">
 		<control type="group" id="9002">
-			<onup>9001</onup>
-			<ondown>20</ondown>
+			<onup condition="!Skin.HasSetting(LowerMainMenuBar)">9001</onup>
+			<onup condition="Skin.HasSetting(LowerMainMenuBar)">9003</onup>
+			<ondown condition="!Skin.HasSetting(LowerMainMenuBar) + !Skin.HasSetting(HideHomePowerBtn)">20</ondown>
+			<ondown condition="!Skin.HasSetting(LowerMainMenuBar) + Skin.HasSetting(HideHomePowerBtn)">21</ondown>
+			<ondown condition="Skin.HasSetting(LowerMainMenuBar) + !Skin.HasSetting(DisableGlobalSearch)">608</ondown>
+			<ondown condition="Skin.HasSetting(LowerMainMenuBar) + Skin.HasSetting(DisableGlobalSearch)">603</ondown>
 			<control type="list" id="700">
 				<animation effect="slide" start="0,0" end="82,0" time="0" condition="StringCompare(Container(700).NumItems,6)">conditional</animation>
 				<animation effect="slide" start="0,0" end="164,0" time="0" condition="StringCompare(Container(700).NumItems,5)">conditional</animation>
@@ -12,11 +16,41 @@
 				<animation effect="slide" start="0,0" end="410,0" time="0" condition="StringCompare(Container(700).NumItems,2)">conditional</animation>
 				<animation effect="slide" start="0,0" end="492,0" time="0" condition="StringCompare(Container(700).NumItems,1)">conditional</animation>
 				<visible>StringCompare(Container(9000).ListItem.Property(AddOnSet),AddonSetOne)</visible>
+				<visible>!Skin.HasSetting(LowerMainMenuBar) | !Player.HasMedia | Skin.HasSetting(HideNowPlayingInfo)</visible>
+				<!--
+				
+				-->
 				<onleft>700</onleft>
 				<onright>700</onright>
-				<onup>9001</onup>
-				<ondown>20</ondown>
+				<onup condition="!Skin.HasSetting(LowerMainMenuBar)">9001</onup>
+				<onup condition="Skin.HasSetting(LowerMainMenuBar)">9003</onup>
+				<ondown condition="!Skin.HasSetting(LowerMainMenuBar) + !Skin.HasSetting(HideHomePowerBtn)">20</ondown>
+				<ondown condition="!Skin.HasSetting(LowerMainMenuBar) + Skin.HasSetting(HideHomePowerBtn)">21</ondown>
+				<ondown condition="Skin.HasSetting(LowerMainMenuBar) + !Skin.HasSetting(DisableGlobalSearch)">608</ondown>
+				<ondown condition="Skin.HasSetting(LowerMainMenuBar) + Skin.HasSetting(DisableGlobalSearch)">603</ondown>
 				<include>HomeAddonsCommonLayout</include>
+				<content>
+					<include>HomeAddonSetOne</include>
+				</content>
+			</control>
+			<control type="list" id="700">
+				<animation effect="slide" start="0,0" end="82,0" time="0" condition="StringCompare(Container(700).NumItems,6)">conditional</animation>
+				<animation effect="slide" start="0,0" end="164,0" time="0" condition="StringCompare(Container(700).NumItems,5)">conditional</animation>
+				<animation effect="slide" start="0,0" end="246,0" time="0" condition="StringCompare(Container(700).NumItems,4)">conditional</animation>
+				<animation effect="slide" start="0,0" end="328,0" time="0" condition="StringCompare(Container(700).NumItems,3)">conditional</animation>
+				<animation effect="slide" start="0,0" end="410,0" time="0" condition="StringCompare(Container(700).NumItems,2)">conditional</animation>
+				<animation effect="slide" start="0,0" end="492,0" time="0" condition="StringCompare(Container(700).NumItems,1)">conditional</animation>
+				<visible>StringCompare(Container(9000).ListItem.Property(AddOnSet),AddonSetOne)</visible>
+				<visible>Skin.HasSetting(LowerMainMenuBar) + Player.HasMedia + !Skin.HasSetting(HideNowPlayingInfo)</visible>
+				<onleft>700</onleft>
+				<onright>700</onright>
+				<onup condition="!Skin.HasSetting(LowerMainMenuBar)">9001</onup>
+				<onup condition="Skin.HasSetting(LowerMainMenuBar)">9003</onup>
+				<ondown condition="!Skin.HasSetting(LowerMainMenuBar) + !Skin.HasSetting(HideHomePowerBtn)">20</ondown>
+				<ondown condition="!Skin.HasSetting(LowerMainMenuBar) + Skin.HasSetting(HideHomePowerBtn)">21</ondown>
+				<ondown condition="Skin.HasSetting(LowerMainMenuBar) + !Skin.HasSetting(DisableGlobalSearch)">608</ondown>
+				<ondown condition="Skin.HasSetting(LowerMainMenuBar) + Skin.HasSetting(DisableGlobalSearch)">603</ondown>
+				<include>AddonsMediaPlayingLayout</include>
 				<content>
 					<include>HomeAddonSetOne</include>
 				</content>
@@ -29,10 +63,15 @@
 				<animation effect="slide" start="0,0" end="410,0" time="0" condition="StringCompare(Container(701).NumItems,2)">conditional</animation>
 				<animation effect="slide" start="0,0" end="492,0" time="0" condition="StringCompare(Container(701).NumItems,1)">conditional</animation>
 				<visible>StringCompare(Container(9000).ListItem.Property(AddOnSet),AddonSetTwo)</visible>
+				<visible>!Skin.HasSetting(LowerMainMenuBar) | !Player.HasMedia | Skin.HasSetting(HideNowPlayingInfo)</visible>
 				<onleft>701</onleft>
 				<onright>701</onright>
-				<onup>9001</onup>
-				<ondown>20</ondown>
+				<onup condition="!Skin.HasSetting(LowerMainMenuBar)">9001</onup>
+				<onup condition="Skin.HasSetting(LowerMainMenuBar)">9003</onup>
+				<ondown condition="!Skin.HasSetting(LowerMainMenuBar) + !Skin.HasSetting(HideHomePowerBtn)">20</ondown>
+				<ondown condition="!Skin.HasSetting(LowerMainMenuBar) + Skin.HasSetting(HideHomePowerBtn)">21</ondown>
+				<ondown condition="Skin.HasSetting(LowerMainMenuBar) + !Skin.HasSetting(DisableGlobalSearch)">608</ondown>
+				<ondown condition="Skin.HasSetting(LowerMainMenuBar) + Skin.HasSetting(DisableGlobalSearch)">603</ondown>
 				<include>HomeAddonsCommonLayout</include>
 				<content>
 					<include>HomeAddonSetTwo</include>
@@ -46,10 +85,15 @@
 				<animation effect="slide" start="0,0" end="410,0" time="0" condition="StringCompare(Container(702).NumItems,2)">conditional</animation>
 				<animation effect="slide" start="0,0" end="492,0" time="0" condition="StringCompare(Container(702).NumItems,1)">conditional</animation>
 				<visible>StringCompare(Container(9000).ListItem.Property(AddOnSet),AddonSetThree)</visible>
+				<visible>!Skin.HasSetting(LowerMainMenuBar) | !Player.HasMedia | Skin.HasSetting(HideNowPlayingInfo)</visible>
 				<onleft>702</onleft>
 				<onright>702</onright>
-				<onup>9001</onup>
-				<ondown>20</ondown>
+				<onup condition="!Skin.HasSetting(LowerMainMenuBar)">9001</onup>
+				<onup condition="Skin.HasSetting(LowerMainMenuBar)">9003</onup>
+				<ondown condition="!Skin.HasSetting(LowerMainMenuBar) + !Skin.HasSetting(HideHomePowerBtn)">20</ondown>
+				<ondown condition="!Skin.HasSetting(LowerMainMenuBar) + Skin.HasSetting(HideHomePowerBtn)">21</ondown>
+				<ondown condition="Skin.HasSetting(LowerMainMenuBar) + !Skin.HasSetting(DisableGlobalSearch)">608</ondown>
+				<ondown condition="Skin.HasSetting(LowerMainMenuBar) + Skin.HasSetting(DisableGlobalSearch)">603</ondown>
 				<include>HomeAddonsCommonLayout</include>
 				<content>
 					<include>HomeAddonSetThree</include>
@@ -63,10 +107,15 @@
 				<animation effect="slide" start="0,0" end="410,0" time="0" condition="StringCompare(Container(704).NumItems,2)">conditional</animation>
 				<animation effect="slide" start="0,0" end="492,0" time="0" condition="StringCompare(Container(704).NumItems,1)">conditional</animation>
 				<visible>StringCompare(Container(9000).ListItem.Property(AddOnSet),AddonSetFour)</visible>
+				<visible>!Skin.HasSetting(LowerMainMenuBar) | !Player.HasMedia | Skin.HasSetting(HideNowPlayingInfo)</visible>
 				<onleft>704</onleft>
 				<onright>704</onright>
-				<onup>9001</onup>
-				<ondown>20</ondown>
+				<onup condition="!Skin.HasSetting(LowerMainMenuBar)">9001</onup>
+				<onup condition="Skin.HasSetting(LowerMainMenuBar)">9003</onup>
+				<ondown condition="!Skin.HasSetting(LowerMainMenuBar) + !Skin.HasSetting(HideHomePowerBtn)">20</ondown>
+				<ondown condition="!Skin.HasSetting(LowerMainMenuBar) + Skin.HasSetting(HideHomePowerBtn)">21</ondown>
+				<ondown condition="Skin.HasSetting(LowerMainMenuBar) + !Skin.HasSetting(DisableGlobalSearch)">608</ondown>
+				<ondown condition="Skin.HasSetting(LowerMainMenuBar) + Skin.HasSetting(DisableGlobalSearch)">603</ondown>
 				<include>HomeAddonsCommonLayout</include>
 				<content>
 					<include>HomeAddonSetFour</include>
@@ -80,10 +129,15 @@
 				<animation effect="slide" start="0,0" end="410,0" time="0" condition="StringCompare(Container(705).NumItems,2)">conditional</animation>
 				<animation effect="slide" start="0,0" end="492,0" time="0" condition="StringCompare(Container(705).NumItems,1)">conditional</animation>
 				<visible>StringCompare(Container(9000).ListItem.Property(AddOnSet),AddonSetFive)</visible>
+				<visible>!Skin.HasSetting(LowerMainMenuBar) | !Player.HasMedia | Skin.HasSetting(HideNowPlayingInfo)</visible>
 				<onleft>705</onleft>
 				<onright>705</onright>
-				<onup>9001</onup>
-				<ondown>20</ondown>
+				<onup condition="!Skin.HasSetting(LowerMainMenuBar)">9001</onup>
+				<onup condition="Skin.HasSetting(LowerMainMenuBar)">9003</onup>
+				<ondown condition="!Skin.HasSetting(LowerMainMenuBar) + !Skin.HasSetting(HideHomePowerBtn)">20</ondown>
+				<ondown condition="!Skin.HasSetting(LowerMainMenuBar) + Skin.HasSetting(HideHomePowerBtn)">21</ondown>
+				<ondown condition="Skin.HasSetting(LowerMainMenuBar) + !Skin.HasSetting(DisableGlobalSearch)">608</ondown>
+				<ondown condition="Skin.HasSetting(LowerMainMenuBar) + Skin.HasSetting(DisableGlobalSearch)">603</ondown>
 				<include>HomeAddonsCommonLayout</include>
 				<content>
 					<include>HomeAddonSetFive</include>
@@ -97,10 +151,15 @@
 				<animation effect="slide" start="0,0" end="410,0" time="0" condition="StringCompare(Container(706).NumItems,2)">conditional</animation>
 				<animation effect="slide" start="0,0" end="492,0" time="0" condition="StringCompare(Container(706).NumItems,1)">conditional</animation>
 				<visible>StringCompare(Container(9000).ListItem.Property(AddOnSet),AddonSetSix)</visible>
+				<visible>!Skin.HasSetting(LowerMainMenuBar) | !Player.HasMedia | Skin.HasSetting(HideNowPlayingInfo)</visible>
 				<onleft>706</onleft>
 				<onright>706</onright>
-				<onup>9001</onup>
-				<ondown>20</ondown>
+				<onup condition="!Skin.HasSetting(LowerMainMenuBar)">9001</onup>
+				<onup condition="Skin.HasSetting(LowerMainMenuBar)">9003</onup>
+				<ondown condition="!Skin.HasSetting(LowerMainMenuBar) + !Skin.HasSetting(HideHomePowerBtn)">20</ondown>
+				<ondown condition="!Skin.HasSetting(LowerMainMenuBar) + Skin.HasSetting(HideHomePowerBtn)">21</ondown>
+				<ondown condition="Skin.HasSetting(LowerMainMenuBar) + !Skin.HasSetting(DisableGlobalSearch)">608</ondown>
+				<ondown condition="Skin.HasSetting(LowerMainMenuBar) + Skin.HasSetting(DisableGlobalSearch)">603</ondown>
 				<include>HomeAddonsCommonLayout</include>
 				<content>
 					<include>HomeAddonSetSix</include>
@@ -114,10 +173,15 @@
 				<animation effect="slide" start="0,0" end="410,0" time="0" condition="StringCompare(Container(707).NumItems,2)">conditional</animation>
 				<animation effect="slide" start="0,0" end="492,0" time="0" condition="StringCompare(Container(707).NumItems,1)">conditional</animation>
 				<visible>StringCompare(Container(9000).ListItem.Property(AddOnSet),AddonSetSeven)</visible>
+				<visible>!Skin.HasSetting(LowerMainMenuBar) | !Player.HasMedia | Skin.HasSetting(HideNowPlayingInfo)</visible>
 				<onleft>707</onleft>
 				<onright>707</onright>
-				<onup>9001</onup>
-				<ondown>20</ondown>
+				<onup condition="!Skin.HasSetting(LowerMainMenuBar)">9001</onup>
+				<onup condition="Skin.HasSetting(LowerMainMenuBar)">9003</onup>
+				<ondown condition="!Skin.HasSetting(LowerMainMenuBar) + !Skin.HasSetting(HideHomePowerBtn)">20</ondown>
+				<ondown condition="!Skin.HasSetting(LowerMainMenuBar) + Skin.HasSetting(HideHomePowerBtn)">21</ondown>
+				<ondown condition="Skin.HasSetting(LowerMainMenuBar) + !Skin.HasSetting(DisableGlobalSearch)">608</ondown>
+				<ondown condition="Skin.HasSetting(LowerMainMenuBar) + Skin.HasSetting(DisableGlobalSearch)">603</ondown>
 				<include>HomeAddonsCommonLayout</include>
 				<content>
 					<include>HomeAddonSetSeven</include>
@@ -131,10 +195,15 @@
 				<animation effect="slide" start="0,0" end="410,0" time="0" condition="StringCompare(Container(708).NumItems,2)">conditional</animation>
 				<animation effect="slide" start="0,0" end="492,0" time="0" condition="StringCompare(Container(708).NumItems,1)">conditional</animation>
 				<visible>StringCompare(Container(9000).ListItem.Property(AddOnSet),AddonSetEight)</visible>
+				<visible>!Skin.HasSetting(LowerMainMenuBar) | !Player.HasMedia | Skin.HasSetting(HideNowPlayingInfo)</visible>
 				<onleft>708</onleft>
 				<onright>708</onright>
-				<onup>9001</onup>
-				<ondown>20</ondown>
+				<onup condition="!Skin.HasSetting(LowerMainMenuBar)">9001</onup>
+				<onup condition="Skin.HasSetting(LowerMainMenuBar)">9003</onup>
+				<ondown condition="!Skin.HasSetting(LowerMainMenuBar) + !Skin.HasSetting(HideHomePowerBtn)">20</ondown>
+				<ondown condition="!Skin.HasSetting(LowerMainMenuBar) + Skin.HasSetting(HideHomePowerBtn)">21</ondown>
+				<ondown condition="Skin.HasSetting(LowerMainMenuBar) + !Skin.HasSetting(DisableGlobalSearch)">608</ondown>
+				<ondown condition="Skin.HasSetting(LowerMainMenuBar) + Skin.HasSetting(DisableGlobalSearch)">603</ondown>
 				<include>HomeAddonsCommonLayout</include>
 				<content>
 					<include>HomeAddonSetEight</include>
@@ -148,10 +217,15 @@
 				<animation effect="slide" start="0,0" end="410,0" time="0" condition="StringCompare(Container(709).NumItems,2)">conditional</animation>
 				<animation effect="slide" start="0,0" end="492,0" time="0" condition="StringCompare(Container(709).NumItems,1)">conditional</animation>
 				<visible>StringCompare(Container(9000).ListItem.Property(AddOnSet),AddonSetNine)</visible>
+				<visible>!Skin.HasSetting(LowerMainMenuBar) | !Player.HasMedia | Skin.HasSetting(HideNowPlayingInfo)</visible>
 				<onleft>709</onleft>
 				<onright>709</onright>
-				<onup>9001</onup>
-				<ondown>20</ondown>
+				<onup condition="!Skin.HasSetting(LowerMainMenuBar)">9001</onup>
+				<onup condition="Skin.HasSetting(LowerMainMenuBar)">9003</onup>
+				<ondown condition="!Skin.HasSetting(LowerMainMenuBar) + !Skin.HasSetting(HideHomePowerBtn)">20</ondown>
+				<ondown condition="!Skin.HasSetting(LowerMainMenuBar) + Skin.HasSetting(HideHomePowerBtn)">21</ondown>
+				<ondown condition="Skin.HasSetting(LowerMainMenuBar) + !Skin.HasSetting(DisableGlobalSearch)">608</ondown>
+				<ondown condition="Skin.HasSetting(LowerMainMenuBar) + Skin.HasSetting(DisableGlobalSearch)">603</ondown>
 				<include>HomeAddonsCommonLayout</include>
 				<content>
 					<include>HomeAddonSetNine</include>
@@ -165,10 +239,15 @@
 				<animation effect="slide" start="0,0" end="410,0" time="0" condition="StringCompare(Container(710).NumItems,2)">conditional</animation>
 				<animation effect="slide" start="0,0" end="492,0" time="0" condition="StringCompare(Container(710).NumItems,1)">conditional</animation>
 				<visible>StringCompare(Container(9000).ListItem.Property(AddOnSet),AddonSetTen)</visible>
+				<visible>!Skin.HasSetting(LowerMainMenuBar) | !Player.HasMedia | Skin.HasSetting(HideNowPlayingInfo)</visible>
 				<onleft>710</onleft>
 				<onright>710</onright>
-				<onup>9001</onup>
-				<ondown>20</ondown>
+				<onup condition="!Skin.HasSetting(LowerMainMenuBar)">9001</onup>
+				<onup condition="Skin.HasSetting(LowerMainMenuBar)">9003</onup>
+				<ondown condition="!Skin.HasSetting(LowerMainMenuBar) + !Skin.HasSetting(HideHomePowerBtn)">20</ondown>
+				<ondown condition="!Skin.HasSetting(LowerMainMenuBar) + Skin.HasSetting(HideHomePowerBtn)">21</ondown>
+				<ondown condition="Skin.HasSetting(LowerMainMenuBar) + !Skin.HasSetting(DisableGlobalSearch)">608</ondown>
+				<ondown condition="Skin.HasSetting(LowerMainMenuBar) + Skin.HasSetting(DisableGlobalSearch)">603</ondown>
 				<include>HomeAddonsCommonLayout</include>
 				<content>
 					<include>HomeAddonSetTen</include>
@@ -178,6 +257,113 @@
 	</include>
 	<include name="HomeAddonsCommonLayout">
 		<include>Window_OpenClose_Animation</include>
+		<animation effect="slide" start="0,0" end="0,-170" time="0" condition="Skin.HasSetting(LowerMainMenuBar)">Conditional</animation>
+		<animation type="Visible">
+			<effect type="slide" start="0,30" end="0,0" delay="200" easing="out" tween="quadratic" time="200" />
+			<effect type="fade" start="0" end="100" delay="200" time="200" />
+		</animation>
+		<animation type="Hidden">
+			<effect type="fade" start="100" end="0" time="200" />
+		</animation>
+		<hitrect x="0" y="530" w="1280" h="120" />
+		<left>65</left>
+		<top>190r</top>
+		<width>1274</width>
+		<height>200</height>
+		<pagecontrol>-</pagecontrol>
+		<scrolltime>300</scrolltime>
+		<orientation>Horizontal</orientation>
+		<itemlayout height="180" width="164">
+			<control type="image">
+				<left>0</left>
+				<top>0</top>
+				<width>162</width>
+				<height>108</height>
+				<aspectratio aligny="bottom">keep</aspectratio>
+				<bordertexture border="5">button-nofocus.png</bordertexture>
+				<bordersize>3</bordersize>
+				<texture background="true">$INFO[ListItem.Icon]</texture>
+			</control>
+			<control type="image">
+				<left>5</left>
+				<top>108</top>
+				<width>152</width>
+				<height>100</height>
+				<aspectratio aligny="top">keep</aspectratio>
+				<texture diffuse="diffuse_mirror2.png" flipy="true" background="true">$INFO[ListItem.Icon]</texture>
+			</control>
+			<control type="label">
+				<left>1</left>
+				<top>110</top>
+				<width>162</width>
+				<height>20</height>
+				<font>font12</font>
+				<textcolor>grey2</textcolor>
+				<align>center</align>
+				<aligny>center</aligny>
+				<label>$INFO[ListItem.Label]</label>
+			</control>
+		</itemlayout>
+		<focusedlayout height="180" width="164">
+			<control type="image">
+				<left>0</left>
+				<top>0</top>
+				<width>162</width>
+				<height>108</height>
+				<aspectratio aligny="bottom">keep</aspectratio>
+				<bordertexture border="5">button-nofocus.png</bordertexture>
+				<bordersize>3</bordersize>
+				<texture background="true">$INFO[ListItem.Icon]</texture>
+				<visible>!ControlGroup(9002).HasFocus</visible>
+			</control>
+			<control type="image">
+				<left>0</left>
+				<top>0</top>
+				<width>162</width>
+				<height>108</height>
+				<aspectratio aligny="bottom">keep</aspectratio>
+				<bordertexture border="5">folder-focus.png</bordertexture>
+				<bordersize>3</bordersize>
+				<texture background="true">$INFO[ListItem.Icon]</texture>
+				<visible>ControlGroup(9002).HasFocus</visible>
+			</control>
+			<control type="image">
+				<left>5</left>
+				<top>108</top>
+				<width>152</width>
+				<height>100</height>
+				<aspectratio aligny="top">keep</aspectratio>
+				<texture diffuse="diffuse_mirror2.png" flipy="true" background="true">$INFO[ListItem.Icon]</texture>
+			</control>
+			<control type="label">
+				<left>1</left>
+				<top>110</top>
+				<width>162</width>
+				<height>20</height>
+				<font>font12</font>
+				<textcolor>white</textcolor>
+				<align>center</align>
+				<aligny>center</aligny>
+				<label>$INFO[ListItem.Label]</label>
+				<visible>Control.HasFocus(9002)</visible>
+			</control>
+			<control type="label">
+				<left>1</left>
+				<top>110</top>
+				<width>162</width>
+				<height>20</height>
+				<font>font12</font>
+				<textcolor>grey2</textcolor>
+				<align>center</align>
+				<aligny>center</aligny>
+				<label>$INFO[ListItem.Label]</label>
+				<visible>!Control.HasFocus(9002)</visible>
+			</control>
+		</focusedlayout>
+	</include>
+	<include name="AddonsMediaPlayingLayout">
+		<include>Window_OpenClose_Animation</include>
+		<animation effect="slide" start="0,0" end="0,-170" time="0" condition="Skin.HasSetting(LowerMainMenuBar)">Conditional</animation>
 		<animation type="Visible">
 			<effect type="slide" start="0,30" end="0,0" delay="200" easing="out" tween="quadratic" time="200" />
 			<effect type="fade" start="0" end="100" delay="200" time="200" />
@@ -187,9 +373,9 @@
 			<effect type="fade" start="100" end="0" time="200" />
 		</animation>
 		<hitrect x="0" y="530" w="1280" h="120" />
-		<left>65</left>
+		<left>229</left>
 		<top>190r</top>
-		<width>1274</width>
+		<width>820</width>
 		<height>200</height>
 		<pagecontrol>-</pagecontrol>
 		<scrolltime>300</scrolltime>

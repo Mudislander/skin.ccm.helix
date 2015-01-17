@@ -10,6 +10,7 @@
 				<width>690</width>
 				<height>561</height>
 				<onleft>2</onleft>
+				<onleft condition="Skin.HasSetting(ManualMenuSlide) + IsEmpty(Window.Property(SideBladeOpen))">SetProperty(SideBladeOpen,True)</onleft>
 				<onright>60</onright>
 				<onup>50</onup>
 				<ondown>50</ondown>

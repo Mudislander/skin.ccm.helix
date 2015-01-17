@@ -2,7 +2,7 @@
 <includes>
 	<include name="AnimatedBackgroundEffect">
 		<control type="group">
-			<visible>!Skin.HasSetting(HolidayEffects) + !Skin.HasSetting(HideRainDropEffect) + !Player.HasVideo</visible>
+			<visible>!Skin.HasSetting(HolidayEffects) + Skin.HasSetting(EnableRainDropEffect) + !Player.HasVideo</visible>
 			<include>VisibleFadeEffect</include>
 			<control type="image">
 				<description>Raindrop 5 animation</description>

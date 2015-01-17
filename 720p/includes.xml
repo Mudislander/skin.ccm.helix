@@ -109,9 +109,13 @@
 		<pulseonselect>false</pulseonselect>
 	</include>
 	<include name="SideBladeLeft">
-		<animation effect="slide" start="0,0" end="250,0" time="400" tween="quadratic" easing="out" condition="ControlGroup(9000).HasFocus | Control.HasFocus(9001) | Control.HasFocus(8999)">Conditional</animation>
-		<animation effect="slide" start="0,0" end="-300,0" time="400" tween="quadratic" easing="out" condition="ControlGroup(9000).HasFocus | Control.HasFocus(9001)">WindowClose</animation>
-		<animation effect="slide" start="0,0" end="-50,0" time="300" tween="quadratic" easing="out" condition="![ControlGroup(9000).HasFocus | Control.HasFocus(9001)]">WindowClose</animation>
+		<animation effect="slide" start="0,0" end="250,0" time="400" tween="quadratic" easing="out" condition="Skin.HasSetting(ManualMenuSlide) + !IsEmpty(Window.Property(SideBladeOpen))">Conditional</animation>
+		<animation effect="slide" start="0,0" end="-300,0" time="400" tween="quadratic" easing="out" condition="Skin.HasSetting(ManualMenuSlide) + !IsEmpty(Window.Property(SideBladeOpen))">WindowClose</animation>
+		<animation effect="slide" start="0,0" end="-50,0" time="300" tween="quadratic" easing="out" condition="Skin.HasSetting(ManualMenuSlide) + IsEmpty(Window.Property(SideBladeOpen))">WindowClose</animation>
+		<!--animation effect="slide" start="-50,0" end="0,0" time="300" tween="quadratic" easing="out">WindowOpen</animation-->
+		<animation effect="slide" start="0,0" end="250,0" time="400" tween="quadratic" easing="out" condition="!Skin.HasSetting(ManualMenuSlide) + [ControlGroup(9000).HasFocus | Control.HasFocus(9001) | Control.HasFocus(8999)]">Conditional</animation>
+		<animation effect="slide" start="0,0" end="-300,0" time="400" tween="quadratic" easing="out" condition="!Skin.HasSetting(ManualMenuSlide) + [ControlGroup(9000).HasFocus | Control.HasFocus(9001)]">WindowClose</animation>
+		<animation effect="slide" start="0,0" end="-50,0" time="300" tween="quadratic" easing="out" condition="!Skin.HasSetting(ManualMenuSlide) + ![ControlGroup(9000).HasFocus | Control.HasFocus(9001)]">WindowClose</animation>
 		<animation effect="slide" start="-50,0" end="0,0" time="300" tween="quadratic" easing="out">WindowOpen</animation>
 		<control type="button" id="8999">
 			<description>Fake button for mouse control</description>
@@ -133,6 +137,10 @@
 			<font>-</font>
 			<texturefocus>HasSub.png</texturefocus>
 			<texturenofocus>HasSub.png</texturenofocus>
+			<onright>50</onright>
+			<onclick condition="Skin.HasSetting(ManualMenuSlide) + IsEmpty(Window.Property(SideBladeOpen))">SetProperty(SideBladeOpen,True)</onclick>
+			<onclick condition="!IsEmpty(Window.Property(SideBladeOpen))">ClearProperty(SideBladeOpen)</onclick>
+			<onclick condition="!IsEmpty(Window.Property(SideBladeOpen))">50</onclick>
 		</control>
 		<control type="image">
 			<left>0</left>
@@ -927,10 +935,11 @@
 			<align>right</align>
 			<aligny>center</aligny>
 			<font>font28_title</font>
-			<textcolor>white</textcolor>
+			<textcolor>C0FFFFFF</textcolor>
 			<shadowcolor>black</shadowcolor>
 			<label>$INFO[System.Time]</label>
 			<animation effect="slide" start="0,0" end="-40,0" time="100" condition="Window.IsVisible(Mutebug)">conditional</animation>
+			<visible>!Skin.HasSetting(HideSystemTime)</visible>
 		</control>
 	</include>
 	<!--include name="CDArtSpinner">
