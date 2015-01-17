@@ -2385,6 +2385,7 @@
 		<value condition="StringCompare(Container(9005).ListItem.Property(HiLiteItem),TVShows) + stringcompare(Container(9005).ListItem.Thumb,special://skin/backgrounds/videos.jpg)">$LOCALIZE[31257]</value>
 		<value condition="StringCompare(Container(9005).ListItem.Property(HiLiteItem),Concerts) + stringcompare(Container(9005).ListItem.Thumb,special://skin/backgrounds/musicvideos.jpg)">$LOCALIZE[31257]</value>
 		<value condition="StringCompare(Container(9005).ListItem.Property(HiLiteItem),LiveTV) + stringcompare(Container(9005).ListItem.Thumb,special://skin/backgrounds/tv.jpg)">$LOCALIZE[31257]</value>
+		<value condition="StringCompare(Container(9005).ListItem.Property(HiLiteItem),Radio) + stringcompare(Container(9005).ListItem.Thumb,special://skin/backgrounds/tv.jpg)">$LOCALIZE[31257]</value>
 		<value condition="StringCompare(Container(9005).ListItem.Property(HiLiteItem),Music) + stringcompare(Container(9005).ListItem.Thumb,special://skin/backgrounds/music.jpg)">$LOCALIZE[31257]</value>
 		<value condition="StringCompare(Container(9005).ListItem.Property(HiLiteItem),Programs) + stringcompare(Container(9005).ListItem.Thumb,special://skin/backgrounds/programs.jpg)">$LOCALIZE[31257]</value>
 		<value condition="StringCompare(Container(9005).ListItem.Property(HiLiteItem),AddOns) + stringcompare(Container(9005).ListItem.Thumb,special://skin/backgrounds/addons.jpg)">$LOCALIZE[31257]</value>

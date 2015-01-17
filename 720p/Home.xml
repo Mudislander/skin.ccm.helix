@@ -38,11 +38,10 @@
 	<onload>SetProperty(MainMenuItemEleven,$VAR[VisibleMenuItemEleven],Home)</onload>
 	<onload>SetProperty(MainMenuItemTwelve,$VAR[VisibleMenuItemTwelve],Home)</onload>
 	<!-- Temp Setting - script.grab.fanart has problems -->
-	<onload condition="Skin.HasSetting(EnableFanartScript)">Skin.Reset(EnableFanartScript)</onload>
+	<!--onload condition="Skin.HasSetting(EnableFanartScript)">Skin.Reset(EnableFanartScript)</onload-->
 	<!-- Temp Setting - script.randomandlastitems has problems -->
 	<onload condition="!Skin.HasSetting(EnableRandomPlaylist)">Skin.SetBool(EnableRandomPlaylist)</onload>
-	<!-- Temp Setting - Hide FanArt has problems -->
-	<!--onload condition="Skin.HasSetting(HideBackGroundFanart)">Skin.Reset(HideBackGroundFanart)</onload-->
+	
 	<controls>
 		<include>CommonBackground</include>
 		<include condition="Skin.HasSetting(EnableRainDropEffect) | Skin.HasSetting(HolidayEffects)">AnimatedBackgroundEffect</include>

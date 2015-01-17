@@ -6334,7 +6334,10 @@
 						<align>left</align>
 						<aligny>center</aligny>
 					</control>
-					<!--control type="radiobutton" id="603">
+					
+					
+					
+					<control type="radiobutton" id="603">
 						<width>750</width>
 						<height>40</height>
 						<font>font13</font>
@@ -6347,7 +6350,7 @@
 						<selected>Skin.HasSetting(EnableFanartScript)</selected>
 						<enable>System.HasAddon(script.grab.fanart)</enable>
 					</control>
-					<control type="button" id="604">
+					<!--control type="button" id="604">
 						<width>750</width>
 						<height>40</height>
 						<font>font13</font>
@@ -6360,6 +6363,9 @@
 						<enable>Skin.HasSetting(EnableFanartScript)</enable>
 						<visible>System.HasAddon(script.grab.fanart)</visible>
 					</control-->
+					
+					
+					
 					<control type="button" id="605">
 						<description>User Album Thumbnails Path</description>
 						<width>750</width>

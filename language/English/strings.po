@@ -701,7 +701,7 @@ msgstr ""
 #empty strings from id 31276 to 31281
 
 msgctxt "#31281"
-msgid "Hide Video Now Playing Background"
+msgid "Show Media Now Playing Background"
 msgstr ""
 
 msgctxt "#31282"
