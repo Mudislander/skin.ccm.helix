@@ -3,10 +3,10 @@
 	<defaultcontrol always="true">9000</defaultcontrol>
 	<allowoverlay>no</allowoverlay>
 	<include condition="!Skin.HasSetting(InitialSetUpRun)">DefaultInitialSetup</include>
-	<onload condition="!IsEmpty(Window(home).Property(MenuItemSelected))">ClearProperty(MenuItemSelected,Home)</onload>
-	<onload condition="!IsEmpty(Window(home).Property(MenuItemActive))">ClearProperty(MenuItemActive,Home)</onload>
-	<onload condition="!IsEmpty(Window(home).Property(SubMenuBackground))">ClearProperty(SubMenuBackground,Home)</onload>
-	<onload condition="!IsEmpty(Window(home).Property(MenuBackground))">ClearProperty(MenuBackground,Home)</onload>
+	<onload condition="!IsEmpty(Window(Home).Property(MenuItemSelected))">ClearProperty(MenuItemSelected,Home)</onload>
+	<onload condition="!IsEmpty(Window(Home).Property(MenuItemActive))">ClearProperty(MenuItemActive,Home)</onload>
+	<onload condition="!IsEmpty(Window(Home).Property(SubMenuBackground))">ClearProperty(SubMenuBackground,Home)</onload>
+	<onload condition="!IsEmpty(Window(Home).Property(MenuBackground))">ClearProperty(MenuBackground,Home)</onload>
 	<onload condition="Skin.HasSetting(HolidayEffects) + System.Date(1-6,11-23)">Skin.Reset(HolidayEffects)</onload>
 	<onload condition="System.HasAddon(script.favourites)">XBMC.RunScript(script.favourites)</onload>
 	<onload condition="IsEmpty(Skin.String(WeatherFanartDir))">Skin.SetString(WeatherFanartDir,special://skin/extras/Weather/)</onload>
@@ -25,7 +25,7 @@
 	<onload condition="!Skin.HasSetting(DisableScriptPlaylist) + !IsEmpty(Skin.String(HomeItem.11.Playlist))">XBMC.RunScript(script.randomandlastitems,playlist=$INFO[Skin.String(HomeItem.11.Playlist)],method=$VAR[PlaylistSortOrder],limit=12,unwatched=False,resume=False,property=HomePlaylistEleven)</onload>
 	<onload condition="!Skin.HasSetting(DisableScriptPlaylist) + !IsEmpty(Skin.String(HomeItem.12.Playlist))">XBMC.RunScript(script.randomandlastitems,playlist=$INFO[Skin.String(HomeItem.12.Playlist)],method=$VAR[PlaylistSortOrder],limit=12,unwatched=False,resume=False,property=HomePlaylistTwelve)</onload>
 	<onload condition="!IsEmpty(Weather.Plugin) + !Weather.IsFetched">Weather.Refresh</onload>
-	<onload>SetProperty(MainMenuItemOne,$VAR[VisibleMenuItemOne],Home)</onload>
+	<!--onload>SetProperty(MainMenuItemOne,$VAR[VisibleMenuItemOne],Home)</onload>
 	<onload>SetProperty(MainMenuItemTwo,$VAR[VisibleMenuItemTwo],Home)</onload>
 	<onload>SetProperty(MainMenuItemThree,$VAR[VisibleMenuItemThree],Home)</onload>
 	<onload>SetProperty(MainMenuItemFour,$VAR[VisibleMenuItemFour],Home)</onload>
@@ -36,11 +36,10 @@
 	<onload>SetProperty(MainMenuItemNine,$VAR[VisibleMenuItemNine],Home)</onload>
 	<onload>SetProperty(MainMenuItemTen,$VAR[VisibleMenuItemTen],Home)</onload>
 	<onload>SetProperty(MainMenuItemEleven,$VAR[VisibleMenuItemEleven],Home)</onload>
-	<onload>SetProperty(MainMenuItemTwelve,$VAR[VisibleMenuItemTwelve],Home)</onload>
-	<!-- Temp Setting - script.grab.fanart has problems -->
-	<!--onload condition="Skin.HasSetting(EnableFanartScript)">Skin.Reset(EnableFanartScript)</onload-->
+	<onload>SetProperty(MainMenuItemTwelve,$VAR[VisibleMenuItemTwelve],Home)</onload-->
 	<!-- Temp Setting - script.randomandlastitems has problems -->
 	<onload condition="!Skin.HasSetting(EnableRandomPlaylist)">Skin.SetBool(EnableRandomPlaylist)</onload>
+	<onload condition="Window.Previous(Startup)">Control.Move(9000,$INFO[Skin.String(InitialMenuItem)])</onload>
 	
 	<controls>
 		<include>CommonBackground</include>

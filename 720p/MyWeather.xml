@@ -15,7 +15,7 @@
 			<randomize>true</randomize>
 			<fadetime>1000</fadetime>
 			<include>VisibleFadeEffect</include>
-			<visible>StringCompare(Window(home).Property(Background),Live)</visible>
+			<visible>StringCompare(Window(Home).Property(Background),Live)</visible>
 			<animation effect="fade" time="200">WindowClose</animation>
 		</control-->
 		<control type="image">

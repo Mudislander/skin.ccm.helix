@@ -519,9 +519,9 @@
 				<width>150</width>
 				<height>150</height>
 				<aspectratio>stretch</aspectratio>
-				<texture background="true" fallback="DefaultAlbumCover.png">$INFO[Window(home).Property(RandomAlbum.2.Thumb )]</texture>
+				<texture background="true" fallback="DefaultAlbumCover.png">$INFO[Window(Home).Property(RandomAlbum.2.Thumb )]</texture>
 				<colordiffuse>AAFFFFFF</colordiffuse>
-				<visible>!IsEmpty(Window(home).Property(RandomAlbum.2.Thumb ))</visible>
+				<visible>!IsEmpty(Window(Home).Property(RandomAlbum.2.Thumb ))</visible>
 			</control>
 			<control type="image">
 				<left>0</left>
@@ -529,9 +529,9 @@
 				<width>150</width>
 				<height>150</height>
 				<aspectratio>stretch</aspectratio>
-				<texture background="true" fallback="DefaultAlbumCover.png">$INFO[Window(home).Property(LatestAlbum.9.Thumb)]</texture>
+				<texture background="true" fallback="DefaultAlbumCover.png">$INFO[Window(Home).Property(LatestAlbum.9.Thumb)]</texture>
 				<colordiffuse>AAFFFFFF</colordiffuse>
-				<visible>IsEmpty(Window(home).Property(RandomAlbum.2.Thumb ))</visible>
+				<visible>IsEmpty(Window(Home).Property(RandomAlbum.2.Thumb ))</visible>
 			</control>
 			<control type="image">
 				<left>150</left>
@@ -539,9 +539,9 @@
 				<width>150</width>
 				<height>150</height>
 				<aspectratio>stretch</aspectratio>
-				<texture background="true" fallback="DefaultAlbumCover.png">$INFO[Window(home).Property(RandomAlbum.15.Thumb )]</texture>
+				<texture background="true" fallback="DefaultAlbumCover.png">$INFO[Window(Home).Property(RandomAlbum.15.Thumb )]</texture>
 				<colordiffuse>AAFFFFFF</colordiffuse>
-				<visible>!IsEmpty(Window(home).Property(RandomAlbum.15.Thumb ))</visible>
+				<visible>!IsEmpty(Window(Home).Property(RandomAlbum.15.Thumb ))</visible>
 			</control>
 			<control type="image">
 				<left>150</left>
@@ -549,9 +549,9 @@
 				<width>150</width>
 				<height>150</height>
 				<aspectratio>stretch</aspectratio>
-				<texture background="true" fallback="DefaultAlbumCover.png">$INFO[Window(home).Property(LatestAlbum.4.Thumb)]</texture>
+				<texture background="true" fallback="DefaultAlbumCover.png">$INFO[Window(Home).Property(LatestAlbum.4.Thumb)]</texture>
 				<colordiffuse>AAFFFFFF</colordiffuse>
-				<visible>IsEmpty(Window(home).Property(RandomAlbum.15.Thumb ))</visible>
+				<visible>IsEmpty(Window(Home).Property(RandomAlbum.15.Thumb ))</visible>
 			</control>
 			<control type="image">
 				<left>300</left>
@@ -559,9 +559,9 @@
 				<width>150</width>
 				<height>150</height>
 				<aspectratio>stretch</aspectratio>
-				<texture background="true" fallback="DefaultAlbumCover.png">$INFO[Window(home).Property(RandomAlbum.10.Thumb )]</texture>
+				<texture background="true" fallback="DefaultAlbumCover.png">$INFO[Window(Home).Property(RandomAlbum.10.Thumb )]</texture>
 				<colordiffuse>AAFFFFFF</colordiffuse>
-				<visible>!IsEmpty(Window(home).Property(RandomAlbum.10.Thumb ))</visible>
+				<visible>!IsEmpty(Window(Home).Property(RandomAlbum.10.Thumb ))</visible>
 			</control>
 			<control type="image">
 				<left>300</left>
@@ -569,9 +569,9 @@
 				<width>150</width>
 				<height>150</height>
 				<aspectratio>stretch</aspectratio>
-				<texture background="true" fallback="DefaultAlbumCover.png">$INFO[Window(home).Property(LatestAlbum.4.Thumb)]</texture>
+				<texture background="true" fallback="DefaultAlbumCover.png">$INFO[Window(Home).Property(LatestAlbum.4.Thumb)]</texture>
 				<colordiffuse>AAFFFFFF</colordiffuse>
-				<visible>IsEmpty(Window(home).Property(RandomAlbum.10.Thumb ))</visible>
+				<visible>IsEmpty(Window(Home).Property(RandomAlbum.10.Thumb ))</visible>
 			</control>
 			<control type="image">
 				<left>450</left>
@@ -579,9 +579,9 @@
 				<width>150</width>
 				<height>150</height>
 				<aspectratio>stretch</aspectratio>
-				<texture background="true" fallback="DefaultAlbumCover.png">$INFO[Window(home).Property(RandomAlbum.9.Thumb )]</texture>
+				<texture background="true" fallback="DefaultAlbumCover.png">$INFO[Window(Home).Property(RandomAlbum.9.Thumb )]</texture>
 				<colordiffuse>AAFFFFFF</colordiffuse>
-				<visible>!IsEmpty(Window(home).Property(RandomAlbum.9.Thumb ))</visible>
+				<visible>!IsEmpty(Window(Home).Property(RandomAlbum.9.Thumb ))</visible>
 			</control>
 			<control type="image">
 				<left>450</left>
@@ -589,9 +589,9 @@
 				<width>150</width>
 				<height>150</height>
 				<aspectratio>stretch</aspectratio>
-				<texture background="true" fallback="DefaultAlbumCover.png">$INFO[Window(home).Property(LatestAlbum.2.Thumb)]</texture>
+				<texture background="true" fallback="DefaultAlbumCover.png">$INFO[Window(Home).Property(LatestAlbum.2.Thumb)]</texture>
 				<colordiffuse>AAFFFFFF</colordiffuse>
-				<visible>IsEmpty(Window(home).Property(RandomAlbum.9.Thumb ))</visible>
+				<visible>IsEmpty(Window(Home).Property(RandomAlbum.9.Thumb ))</visible>
 			</control>
 			<control type="image">
 				<left>600</left>
@@ -599,9 +599,9 @@
 				<width>150</width>
 				<height>150</height>
 				<aspectratio>stretch</aspectratio>
-				<texture background="true" fallback="DefaultAlbumCover.png">$INFO[Window(home).Property(RandomAlbum.5.Thumb )]</texture>
+				<texture background="true" fallback="DefaultAlbumCover.png">$INFO[Window(Home).Property(RandomAlbum.5.Thumb )]</texture>
 				<colordiffuse>AAFFFFFF</colordiffuse>
-				<visible>!IsEmpty(Window(home).Property(RandomAlbum.5.Thumb ))</visible>
+				<visible>!IsEmpty(Window(Home).Property(RandomAlbum.5.Thumb ))</visible>
 			</control>
 			<control type="image">
 				<left>600</left>
@@ -609,9 +609,9 @@
 				<width>150</width>
 				<height>150</height>
 				<aspectratio>stretch</aspectratio>
-				<texture background="true" fallback="DefaultAlbumCover.png">$INFO[Window(home).Property(LatestAlbum.5.Thumb)]</texture>
+				<texture background="true" fallback="DefaultAlbumCover.png">$INFO[Window(Home).Property(LatestAlbum.5.Thumb)]</texture>
 				<colordiffuse>AAFFFFFF</colordiffuse>
-				<visible>IsEmpty(Window(home).Property(RandomAlbum.5.Thumb ))</visible>
+				<visible>IsEmpty(Window(Home).Property(RandomAlbum.5.Thumb ))</visible>
 			</control>
 			<control type="image">
 				<left>750</left>
@@ -619,9 +619,9 @@
 				<width>150</width>
 				<height>150</height>
 				<aspectratio>stretch</aspectratio>
-				<texture background="true" fallback="DefaultAlbumCover.png">$INFO[Window(home).Property(RandomAlbum.19.Thumb )]</texture>
+				<texture background="true" fallback="DefaultAlbumCover.png">$INFO[Window(Home).Property(RandomAlbum.19.Thumb )]</texture>
 				<colordiffuse>AAFFFFFF</colordiffuse>
-				<visible>!IsEmpty(Window(home).Property(RandomAlbum.19.Thumb ))</visible>
+				<visible>!IsEmpty(Window(Home).Property(RandomAlbum.19.Thumb ))</visible>
 			</control>
 			<control type="image">
 				<left>750</left>
@@ -629,9 +629,9 @@
 				<width>150</width>
 				<height>150</height>
 				<aspectratio>stretch</aspectratio>
-				<texture background="true" fallback="DefaultAlbumCover.png">$INFO[Window(home).Property(LatestAlbum.8.Thumb)]</texture>
+				<texture background="true" fallback="DefaultAlbumCover.png">$INFO[Window(Home).Property(LatestAlbum.8.Thumb)]</texture>
 				<colordiffuse>AAFFFFFF</colordiffuse>
-				<visible>IsEmpty(Window(home).Property(RandomAlbum.19.Thumb ))</visible>
+				<visible>IsEmpty(Window(Home).Property(RandomAlbum.19.Thumb ))</visible>
 			</control>
 			<control type="image">
 				<left>900</left>
@@ -639,9 +639,9 @@
 				<width>150</width>
 				<height>150</height>
 				<aspectratio>stretch</aspectratio>
-				<texture background="true" fallback="DefaultAlbumCover.png">$INFO[Window(home).Property(RandomAlbum.12.Thumb )]</texture>
+				<texture background="true" fallback="DefaultAlbumCover.png">$INFO[Window(Home).Property(RandomAlbum.12.Thumb )]</texture>
 				<colordiffuse>AAFFFFFF</colordiffuse>
-				<visible>!IsEmpty(Window(home).Property(RandomAlbum.12.Thumb ))</visible>
+				<visible>!IsEmpty(Window(Home).Property(RandomAlbum.12.Thumb ))</visible>
 			</control>
 			<control type="image">
 				<left>900</left>
@@ -649,9 +649,9 @@
 				<width>150</width>
 				<height>150</height>
 				<aspectratio>stretch</aspectratio>
-				<texture background="true" fallback="DefaultAlbumCover.png">$INFO[Window(home).Property(LatestAlbum.1.Thumb)]</texture>
+				<texture background="true" fallback="DefaultAlbumCover.png">$INFO[Window(Home).Property(LatestAlbum.1.Thumb)]</texture>
 				<colordiffuse>AAFFFFFF</colordiffuse>
-				<visible>IsEmpty(Window(home).Property(RandomAlbum.12.Thumb ))</visible>
+				<visible>IsEmpty(Window(Home).Property(RandomAlbum.12.Thumb ))</visible>
 			</control>
 			<control type="image">
 				<left>1050</left>
@@ -659,9 +659,9 @@
 				<width>150</width>
 				<height>150</height>
 				<aspectratio>stretch</aspectratio>
-				<texture background="true" fallback="DefaultAlbumCover.png">$INFO[Window(home).Property(RandomAlbum.16.Thumb )]</texture>
+				<texture background="true" fallback="DefaultAlbumCover.png">$INFO[Window(Home).Property(RandomAlbum.16.Thumb )]</texture>
 				<colordiffuse>AAFFFFFF</colordiffuse>
-				<visible>!IsEmpty(Window(home).Property(RandomAlbum.16.Thumb ))</visible>
+				<visible>!IsEmpty(Window(Home).Property(RandomAlbum.16.Thumb ))</visible>
 			</control>
 			<control type="image">
 				<left>1050</left>
@@ -669,9 +669,9 @@
 				<width>150</width>
 				<height>150</height>
 				<aspectratio>stretch</aspectratio>
-				<texture background="true" fallback="DefaultAlbumCover.png">$INFO[Window(home).Property(LatestAlbum.6.Thumb)]</texture>
+				<texture background="true" fallback="DefaultAlbumCover.png">$INFO[Window(Home).Property(LatestAlbum.6.Thumb)]</texture>
 				<colordiffuse>AAFFFFFF</colordiffuse>
-				<visible>IsEmpty(Window(home).Property(RandomAlbum.16.Thumb ))</visible>
+				<visible>IsEmpty(Window(Home).Property(RandomAlbum.16.Thumb ))</visible>
 			</control>
 			<control type="image">
 				<left>1200</left>
@@ -679,9 +679,9 @@
 				<width>150</width>
 				<height>150</height>
 				<aspectratio>stretch</aspectratio>
-				<texture background="true" fallback="DefaultAlbumCover.png">$INFO[Window(home).Property(RandomAlbum.8.Thumb )]</texture>
+				<texture background="true" fallback="DefaultAlbumCover.png">$INFO[Window(Home).Property(RandomAlbum.8.Thumb )]</texture>
 				<colordiffuse>AAFFFFFF</colordiffuse>
-				<visible>!IsEmpty(Window(home).Property(RandomAlbum.8.Thumb ))</visible>
+				<visible>!IsEmpty(Window(Home).Property(RandomAlbum.8.Thumb ))</visible>
 			</control>
 			<control type="image">
 				<left>1200</left>
@@ -689,9 +689,9 @@
 				<width>150</width>
 				<height>150</height>
 				<aspectratio>stretch</aspectratio>
-				<texture background="true" fallback="DefaultAlbumCover.png">$INFO[Window(home).Property(LatestAlbum.10.Thumb)]</texture>
+				<texture background="true" fallback="DefaultAlbumCover.png">$INFO[Window(Home).Property(LatestAlbum.10.Thumb)]</texture>
 				<colordiffuse>AAFFFFFF</colordiffuse>
-				<visible>IsEmpty(Window(home).Property(RandomAlbum.8.Thumb ))</visible>
+				<visible>IsEmpty(Window(Home).Property(RandomAlbum.8.Thumb ))</visible>
 			</control>
 			<control type="image">
 				<left>0</left>
@@ -699,9 +699,9 @@
 				<width>150</width>
 				<height>150</height>
 				<aspectratio>stretch</aspectratio>
-				<texture background="true" fallback="DefaultAlbumCover.png">$INFO[Window(home).Property(RandomAlbum.7.Thumb )]</texture>
+				<texture background="true" fallback="DefaultAlbumCover.png">$INFO[Window(Home).Property(RandomAlbum.7.Thumb )]</texture>
 				<colordiffuse>AAFFFFFF</colordiffuse>
-				<visible>!IsEmpty(Window(home).Property(RandomAlbum.7.Thumb ))</visible>
+				<visible>!IsEmpty(Window(Home).Property(RandomAlbum.7.Thumb ))</visible>
 			</control>
 			<control type="image">
 				<left>0</left>
@@ -709,9 +709,9 @@
 				<width>150</width>
 				<height>150</height>
 				<aspectratio>stretch</aspectratio>
-				<texture background="true" fallback="DefaultAlbumCover.png">$INFO[Window(home).Property(LatestAlbum.3.Thumb)]</texture>
+				<texture background="true" fallback="DefaultAlbumCover.png">$INFO[Window(Home).Property(LatestAlbum.3.Thumb)]</texture>
 				<colordiffuse>AAFFFFFF</colordiffuse>
-				<visible>IsEmpty(Window(home).Property(RandomAlbum.7.Thumb ))</visible>
+				<visible>IsEmpty(Window(Home).Property(RandomAlbum.7.Thumb ))</visible>
 			</control>
 			<control type="image">
 				<left>150</left>
@@ -719,9 +719,9 @@
 				<width>150</width>
 				<height>150</height>
 				<aspectratio>stretch</aspectratio>
-				<texture background="true" fallback="DefaultAlbumCover.png">$INFO[Window(home).Property(RandomAlbum.13.Thumb )]</texture>
+				<texture background="true" fallback="DefaultAlbumCover.png">$INFO[Window(Home).Property(RandomAlbum.13.Thumb )]</texture>
 				<colordiffuse>AAFFFFFF</colordiffuse>
-				<visible>!IsEmpty(Window(home).Property(RandomAlbum.13.Thumb ))</visible>
+				<visible>!IsEmpty(Window(Home).Property(RandomAlbum.13.Thumb ))</visible>
 			</control>
 			<control type="image">
 				<left>150</left>
@@ -729,9 +729,9 @@
 				<width>150</width>
 				<height>150</height>
 				<aspectratio>stretch</aspectratio>
-				<texture background="true" fallback="DefaultAlbumCover.png">$INFO[Window(home).Property(LatestAlbum.7.Thumb)]</texture>
+				<texture background="true" fallback="DefaultAlbumCover.png">$INFO[Window(Home).Property(LatestAlbum.7.Thumb)]</texture>
 				<colordiffuse>AAFFFFFF</colordiffuse>
-				<visible>IsEmpty(Window(home).Property(RandomAlbum.13.Thumb ))</visible>
+				<visible>IsEmpty(Window(Home).Property(RandomAlbum.13.Thumb ))</visible>
 			</control>
 			<control type="image">
 				<left>300</left>
@@ -739,9 +739,9 @@
 				<width>150</width>
 				<height>150</height>
 				<aspectratio>stretch</aspectratio>
-				<texture background="true" fallback="DefaultAlbumCover.png">$INFO[Window(home).Property(RandomAlbum.17.Thumb )]</texture>
+				<texture background="true" fallback="DefaultAlbumCover.png">$INFO[Window(Home).Property(RandomAlbum.17.Thumb )]</texture>
 				<colordiffuse>AAFFFFFF</colordiffuse>
-				<visible>!IsEmpty(Window(home).Property(RandomAlbum.17.Thumb ))</visible>
+				<visible>!IsEmpty(Window(Home).Property(RandomAlbum.17.Thumb ))</visible>
 			</control>
 			<control type="image">
 				<left>300</left>
@@ -749,9 +749,9 @@
 				<width>150</width>
 				<height>150</height>
 				<aspectratio>stretch</aspectratio>
-				<texture background="true" fallback="DefaultAlbumCover.png">$INFO[Window(home).Property(LatestAlbum.2.Thumb)]</texture>
+				<texture background="true" fallback="DefaultAlbumCover.png">$INFO[Window(Home).Property(LatestAlbum.2.Thumb)]</texture>
 				<colordiffuse>AAFFFFFF</colordiffuse>
-				<visible>IsEmpty(Window(home).Property(RandomAlbum.17.Thumb ))</visible>
+				<visible>IsEmpty(Window(Home).Property(RandomAlbum.17.Thumb ))</visible>
 			</control>
 			<control type="image">
 				<left>450</left>
@@ -759,9 +759,9 @@
 				<width>150</width>
 				<height>150</height>
 				<aspectratio>stretch</aspectratio>
-				<texture background="true" fallback="DefaultAlbumCover.png">$INFO[Window(home).Property(RandomAlbum.11.Thumb )]</texture>
+				<texture background="true" fallback="DefaultAlbumCover.png">$INFO[Window(Home).Property(RandomAlbum.11.Thumb )]</texture>
 				<colordiffuse>AAFFFFFF</colordiffuse>
-				<visible>!IsEmpty(Window(home).Property(RandomAlbum.11.Thumb ))</visible>
+				<visible>!IsEmpty(Window(Home).Property(RandomAlbum.11.Thumb ))</visible>
 			</control>
 			<control type="image">
 				<left>450</left>
@@ -769,9 +769,9 @@
 				<width>150</width>
 				<height>150</height>
 				<aspectratio>stretch</aspectratio>
-				<texture background="true" fallback="DefaultAlbumCover.png">$INFO[Window(home).Property(LatestAlbum.6.Thumb)]</texture>
+				<texture background="true" fallback="DefaultAlbumCover.png">$INFO[Window(Home).Property(LatestAlbum.6.Thumb)]</texture>
 				<colordiffuse>AAFFFFFF</colordiffuse>
-				<visible>IsEmpty(Window(home).Property(RandomAlbum.11.Thumb ))</visible>
+				<visible>IsEmpty(Window(Home).Property(RandomAlbum.11.Thumb ))</visible>
 			</control>
 			<control type="image">
 				<left>600</left>
@@ -779,9 +779,9 @@
 				<width>150</width>
 				<height>150</height>
 				<aspectratio>stretch</aspectratio>
-				<texture background="true" fallback="DefaultAlbumCover.png">$INFO[Window(home).Property(RandomAlbum.3.Thumb )]</texture>
+				<texture background="true" fallback="DefaultAlbumCover.png">$INFO[Window(Home).Property(RandomAlbum.3.Thumb )]</texture>
 				<colordiffuse>AAFFFFFF</colordiffuse>
-				<visible>!IsEmpty(Window(home).Property(RandomAlbum.3.Thumb ))</visible>
+				<visible>!IsEmpty(Window(Home).Property(RandomAlbum.3.Thumb ))</visible>
 			</control>
 			<control type="image">
 				<left>600</left>
@@ -789,9 +789,9 @@
 				<width>150</width>
 				<height>150</height>
 				<aspectratio>stretch</aspectratio>
-				<texture background="true" fallback="DefaultAlbumCover.png">$INFO[Window(home).Property(LatestAlbum.1.Thumb)]</texture>
+				<texture background="true" fallback="DefaultAlbumCover.png">$INFO[Window(Home).Property(LatestAlbum.1.Thumb)]</texture>
 				<colordiffuse>AAFFFFFF</colordiffuse>
-				<visible>IsEmpty(Window(home).Property(RandomAlbum.3.Thumb ))</visible>
+				<visible>IsEmpty(Window(Home).Property(RandomAlbum.3.Thumb ))</visible>
 			</control>
 			<control type="image">
 				<left>750</left>
@@ -799,9 +799,9 @@
 				<width>150</width>
 				<height>150</height>
 				<aspectratio>stretch</aspectratio>
-				<texture background="true" fallback="DefaultAlbumCover.png">$INFO[Window(home).Property(RandomAlbum.1.Thumb )]</texture>
+				<texture background="true" fallback="DefaultAlbumCover.png">$INFO[Window(Home).Property(RandomAlbum.1.Thumb )]</texture>
 				<colordiffuse>AAFFFFFF</colordiffuse>
-				<visible>!IsEmpty(Window(home).Property(RandomAlbum.1.Thumb ))</visible>
+				<visible>!IsEmpty(Window(Home).Property(RandomAlbum.1.Thumb ))</visible>
 			</control>
 			<control type="image">
 				<left>750</left>
@@ -809,9 +809,9 @@
 				<width>150</width>
 				<height>150</height>
 				<aspectratio>stretch</aspectratio>
-				<texture background="true" fallback="DefaultAlbumCover.png">$INFO[Window(home).Property(LatestAlbum.5.Thumb)]</texture>
+				<texture background="true" fallback="DefaultAlbumCover.png">$INFO[Window(Home).Property(LatestAlbum.5.Thumb)]</texture>
 				<colordiffuse>AAFFFFFF</colordiffuse>
-				<visible>IsEmpty(Window(home).Property(RandomAlbum.1.Thumb ))</visible>
+				<visible>IsEmpty(Window(Home).Property(RandomAlbum.1.Thumb ))</visible>
 			</control>
 			<control type="image">
 				<left>900</left>
@@ -819,9 +819,9 @@
 				<width>150</width>
 				<height>150</height>
 				<aspectratio>stretch</aspectratio>
-				<texture background="true" fallback="DefaultAlbumCover.png">$INFO[Window(home).Property(RandomAlbum.20.Thumb )]</texture>
+				<texture background="true" fallback="DefaultAlbumCover.png">$INFO[Window(Home).Property(RandomAlbum.20.Thumb )]</texture>
 				<colordiffuse>AAFFFFFF</colordiffuse>
-				<visible>!IsEmpty(Window(home).Property(RandomAlbum.20.Thumb ))</visible>
+				<visible>!IsEmpty(Window(Home).Property(RandomAlbum.20.Thumb ))</visible>
 			</control>
 			<control type="image">
 				<left>900</left>
@@ -829,9 +829,9 @@
 				<width>150</width>
 				<height>150</height>
 				<aspectratio>stretch</aspectratio>
-				<texture background="true" fallback="DefaultAlbumCover.png">$INFO[Window(home).Property(LatestAlbum.4.Thumb)]</texture>
+				<texture background="true" fallback="DefaultAlbumCover.png">$INFO[Window(Home).Property(LatestAlbum.4.Thumb)]</texture>
 				<colordiffuse>AAFFFFFF</colordiffuse>
-				<visible>IsEmpty(Window(home).Property(RandomAlbum.20.Thumb ))</visible>
+				<visible>IsEmpty(Window(Home).Property(RandomAlbum.20.Thumb ))</visible>
 			</control>
 			<control type="image">
 				<left>1050</left>
@@ -839,9 +839,9 @@
 				<width>150</width>
 				<height>150</height>
 				<aspectratio>stretch</aspectratio>
-				<texture background="true" fallback="DefaultAlbumCover.png">$INFO[Window(home).Property(RandomAlbum.4.Thumb )]</texture>
+				<texture background="true" fallback="DefaultAlbumCover.png">$INFO[Window(Home).Property(RandomAlbum.4.Thumb )]</texture>
 				<colordiffuse>AAFFFFFF</colordiffuse>
-				<visible>!IsEmpty(Window(home).Property(RandomAlbum.4.Thumb ))</visible>
+				<visible>!IsEmpty(Window(Home).Property(RandomAlbum.4.Thumb ))</visible>
 			</control>
 			<control type="image">
 				<left>1050</left>
@@ -849,9 +849,9 @@
 				<width>150</width>
 				<height>150</height>
 				<aspectratio>stretch</aspectratio>
-				<texture background="true" fallback="DefaultAlbumCover.png">$INFO[Window(home).Property(LatestAlbum.3.Thumb)]</texture>
+				<texture background="true" fallback="DefaultAlbumCover.png">$INFO[Window(Home).Property(LatestAlbum.3.Thumb)]</texture>
 				<colordiffuse>AAFFFFFF</colordiffuse>
-				<visible>IsEmpty(Window(home).Property(RandomAlbum.4.Thumb ))</visible>
+				<visible>IsEmpty(Window(Home).Property(RandomAlbum.4.Thumb ))</visible>
 			</control>
 			<control type="image">
 				<left>1200</left>
@@ -859,9 +859,9 @@
 				<width>150</width>
 				<height>150</height>
 				<aspectratio>stretch</aspectratio>
-				<texture background="true" fallback="DefaultAlbumCover.png">$INFO[Window(home).Property(RandomAlbum.14.Thumb )]</texture>
+				<texture background="true" fallback="DefaultAlbumCover.png">$INFO[Window(Home).Property(RandomAlbum.14.Thumb )]</texture>
 				<colordiffuse>AAFFFFFF</colordiffuse>
-				<visible>!IsEmpty(Window(home).Property(RandomAlbum.14.Thumb ))</visible>
+				<visible>!IsEmpty(Window(Home).Property(RandomAlbum.14.Thumb ))</visible>
 			</control>
 			<control type="image">
 				<left>1200</left>
@@ -869,9 +869,9 @@
 				<width>150</width>
 				<height>150</height>
 				<aspectratio>stretch</aspectratio>
-				<texture background="true" fallback="DefaultAlbumCover.png">$INFO[Window(home).Property(LatestAlbum.10.Thumb)]</texture>
+				<texture background="true" fallback="DefaultAlbumCover.png">$INFO[Window(Home).Property(LatestAlbum.10.Thumb)]</texture>
 				<colordiffuse>AAFFFFFF</colordiffuse>
-				<visible>IsEmpty(Window(home).Property(RandomAlbum.14.Thumb ))</visible>
+				<visible>IsEmpty(Window(Home).Property(RandomAlbum.14.Thumb ))</visible>
 			</control>
 			<control type="image">
 				<left>0</left>
@@ -879,9 +879,9 @@
 				<width>150</width>
 				<height>150</height>
 				<aspectratio>stretch</aspectratio>
-				<texture background="true" fallback="DefaultAlbumCover.png">$INFO[Window(home).Property(RandomAlbum.6.Thumb )]</texture>
+				<texture background="true" fallback="DefaultAlbumCover.png">$INFO[Window(Home).Property(RandomAlbum.6.Thumb )]</texture>
 				<colordiffuse>AAFFFFFF</colordiffuse>
-				<visible>!IsEmpty(Window(home).Property(RandomAlbum.6.Thumb ))</visible>
+				<visible>!IsEmpty(Window(Home).Property(RandomAlbum.6.Thumb ))</visible>
 			</control>
 			<control type="image">
 				<left>0</left>
@@ -889,9 +889,9 @@
 				<width>150</width>
 				<height>150</height>
 				<aspectratio>stretch</aspectratio>
-				<texture background="true" fallback="DefaultAlbumCover.png">$INFO[Window(home).Property(LatestAlbum.7.Thumb)]</texture>
+				<texture background="true" fallback="DefaultAlbumCover.png">$INFO[Window(Home).Property(LatestAlbum.7.Thumb)]</texture>
 				<colordiffuse>AAFFFFFF</colordiffuse>
-				<visible>IsEmpty(Window(home).Property(RandomAlbum.6.Thumb ))</visible>
+				<visible>IsEmpty(Window(Home).Property(RandomAlbum.6.Thumb ))</visible>
 			</control>
 			<control type="image">
 				<left>150</left>
@@ -899,9 +899,9 @@
 				<width>150</width>
 				<height>150</height>
 				<aspectratio>stretch</aspectratio>
-				<texture background="true" fallback="DefaultAlbumCover.png">$INFO[Window(home).Property(RandomAlbum.18.Thumb )]</texture>
+				<texture background="true" fallback="DefaultAlbumCover.png">$INFO[Window(Home).Property(RandomAlbum.18.Thumb )]</texture>
 				<colordiffuse>AAFFFFFF</colordiffuse>
-				<visible>!IsEmpty(Window(home).Property(RandomAlbum.18.Thumb ))</visible>
+				<visible>!IsEmpty(Window(Home).Property(RandomAlbum.18.Thumb ))</visible>
 			</control>
 			<control type="image">
 				<left>150</left>
@@ -909,9 +909,9 @@
 				<width>150</width>
 				<height>150</height>
 				<aspectratio>stretch</aspectratio>
-				<texture background="true" fallback="DefaultAlbumCover.png">$INFO[Window(home).Property(LatestAlbum.8.Thumb)]</texture>
+				<texture background="true" fallback="DefaultAlbumCover.png">$INFO[Window(Home).Property(LatestAlbum.8.Thumb)]</texture>
 				<colordiffuse>AAFFFFFF</colordiffuse>
-				<visible>IsEmpty(Window(home).Property(RandomAlbum.18.Thumb ))</visible>
+				<visible>IsEmpty(Window(Home).Property(RandomAlbum.18.Thumb ))</visible>
 			</control>
 			<control type="image">
 				<left>300</left>
@@ -919,9 +919,9 @@
 				<width>150</width>
 				<height>150</height>
 				<aspectratio>stretch</aspectratio>
-				<texture background="true" fallback="DefaultAlbumCover.png">$INFO[Window(home).Property(RandomAlbum.13.Thumb )]</texture>
+				<texture background="true" fallback="DefaultAlbumCover.png">$INFO[Window(Home).Property(RandomAlbum.13.Thumb )]</texture>
 				<colordiffuse>AAFFFFFF</colordiffuse>
-				<visible>!IsEmpty(Window(home).Property(RandomAlbum.13.Thumb ))</visible>
+				<visible>!IsEmpty(Window(Home).Property(RandomAlbum.13.Thumb ))</visible>
 			</control>
 			<control type="image">
 				<left>300</left>
@@ -929,9 +929,9 @@
 				<width>150</width>
 				<height>150</height>
 				<aspectratio>stretch</aspectratio>
-				<texture background="true" fallback="DefaultAlbumCover.png">$INFO[Window(home).Property(LatestAlbum.9.Thumb)]</texture>
+				<texture background="true" fallback="DefaultAlbumCover.png">$INFO[Window(Home).Property(LatestAlbum.9.Thumb)]</texture>
 				<colordiffuse>AAFFFFFF</colordiffuse>
-				<visible>IsEmpty(Window(home).Property(RandomAlbum.13.Thumb ))</visible>
+				<visible>IsEmpty(Window(Home).Property(RandomAlbum.13.Thumb ))</visible>
 			</control>
 			<control type="image">
 				<left>450</left>
@@ -939,9 +939,9 @@
 				<width>150</width>
 				<height>150</height>
 				<aspectratio>stretch</aspectratio>
-				<texture background="true" fallback="DefaultAlbumCover.png">$INFO[Window(home).Property(RandomAlbum.9.Thumb )]</texture>
+				<texture background="true" fallback="DefaultAlbumCover.png">$INFO[Window(Home).Property(RandomAlbum.9.Thumb )]</texture>
 				<colordiffuse>AAFFFFFF</colordiffuse>
-				<visible>!IsEmpty(Window(home).Property(RandomAlbum.9.Thumb ))</visible>
+				<visible>!IsEmpty(Window(Home).Property(RandomAlbum.9.Thumb ))</visible>
 			</control>
 			<control type="image">
 				<left>450</left>
@@ -949,9 +949,9 @@
 				<width>150</width>
 				<height>150</height>
 				<aspectratio>stretch</aspectratio>
-				<texture background="true" fallback="DefaultAlbumCover.png">$INFO[Window(home).Property(LatestAlbum.5.Thumb)]</texture>
+				<texture background="true" fallback="DefaultAlbumCover.png">$INFO[Window(Home).Property(LatestAlbum.5.Thumb)]</texture>
 				<colordiffuse>AAFFFFFF</colordiffuse>
-				<visible>IsEmpty(Window(home).Property(RandomAlbum.9.Thumb ))</visible>
+				<visible>IsEmpty(Window(Home).Property(RandomAlbum.9.Thumb ))</visible>
 			</control>
 			<control type="image">
 				<left>600</left>
@@ -959,9 +959,9 @@
 				<width>150</width>
 				<height>150</height>
 				<aspectratio>stretch</aspectratio>
-				<texture background="true" fallback="DefaultAlbumCover.png">$INFO[Window(home).Property(RandomAlbum.5.Thumb )]</texture>
+				<texture background="true" fallback="DefaultAlbumCover.png">$INFO[Window(Home).Property(RandomAlbum.5.Thumb )]</texture>
 				<colordiffuse>AAFFFFFF</colordiffuse>
-				<visible>!IsEmpty(Window(home).Property(RandomAlbum.5.Thumb ))</visible>
+				<visible>!IsEmpty(Window(Home).Property(RandomAlbum.5.Thumb ))</visible>
 			</control>
 			<control type="image">
 				<left>600</left>
@@ -969,9 +969,9 @@
 				<width>150</width>
 				<height>150</height>
 				<aspectratio>stretch</aspectratio>
-				<texture background="true" fallback="DefaultAlbumCover.png">$INFO[Window(home).Property(LatestAlbum.3.Thumb)]</texture>
+				<texture background="true" fallback="DefaultAlbumCover.png">$INFO[Window(Home).Property(LatestAlbum.3.Thumb)]</texture>
 				<colordiffuse>AAFFFFFF</colordiffuse>
-				<visible>IsEmpty(Window(home).Property(RandomAlbum.5.Thumb ))</visible>
+				<visible>IsEmpty(Window(Home).Property(RandomAlbum.5.Thumb ))</visible>
 			</control>
 			<control type="image">
 				<left>750</left>
@@ -979,9 +979,9 @@
 				<width>150</width>
 				<height>150</height>
 				<aspectratio>stretch</aspectratio>
-				<texture background="true" fallback="DefaultAlbumCover.png">$INFO[Window(home).Property(RandomAlbum.20.Thumb )]</texture>
+				<texture background="true" fallback="DefaultAlbumCover.png">$INFO[Window(Home).Property(RandomAlbum.20.Thumb )]</texture>
 				<colordiffuse>AAFFFFFF</colordiffuse>
-				<visible>!IsEmpty(Window(home).Property(RandomAlbum.20.Thumb ))</visible>
+				<visible>!IsEmpty(Window(Home).Property(RandomAlbum.20.Thumb ))</visible>
 			</control>
 			<control type="image">
 				<left>750</left>
@@ -989,9 +989,9 @@
 				<width>150</width>
 				<height>150</height>
 				<aspectratio>stretch</aspectratio>
-				<texture background="true" fallback="DefaultAlbumCover.png">$INFO[Window(home).Property(LatestAlbum.2.Thumb)]</texture>
+				<texture background="true" fallback="DefaultAlbumCover.png">$INFO[Window(Home).Property(LatestAlbum.2.Thumb)]</texture>
 				<colordiffuse>AAFFFFFF</colordiffuse>
-				<visible>IsEmpty(Window(home).Property(RandomAlbum.20.Thumb ))</visible>
+				<visible>IsEmpty(Window(Home).Property(RandomAlbum.20.Thumb ))</visible>
 			</control>
 			<control type="image">
 				<left>900</left>
@@ -999,9 +999,9 @@
 				<width>150</width>
 				<height>150</height>
 				<aspectratio>stretch</aspectratio>
-				<texture background="true" fallback="DefaultAlbumCover.png">$INFO[Window(home).Property(RandomAlbum.17.Thumb )]</texture>
+				<texture background="true" fallback="DefaultAlbumCover.png">$INFO[Window(Home).Property(RandomAlbum.17.Thumb )]</texture>
 				<colordiffuse>AAFFFFFF</colordiffuse>
-				<visible>!IsEmpty(Window(home).Property(RandomAlbum.17.Thumb ))</visible>
+				<visible>!IsEmpty(Window(Home).Property(RandomAlbum.17.Thumb ))</visible>
 			</control>
 			<control type="image">
 				<left>900</left>
@@ -1009,9 +1009,9 @@
 				<width>150</width>
 				<height>150</height>
 				<aspectratio>stretch</aspectratio>
-				<texture background="true" fallback="DefaultAlbumCover.png">$INFO[Window(home).Property(LatestAlbum.10.Thumb)]</texture>
+				<texture background="true" fallback="DefaultAlbumCover.png">$INFO[Window(Home).Property(LatestAlbum.10.Thumb)]</texture>
 				<colordiffuse>AAFFFFFF</colordiffuse>
-				<visible>IsEmpty(Window(home).Property(RandomAlbum.17.Thumb ))</visible>
+				<visible>IsEmpty(Window(Home).Property(RandomAlbum.17.Thumb ))</visible>
 			</control>
 			<control type="image">
 				<left>1050</left>
@@ -1019,9 +1019,9 @@
 				<width>150</width>
 				<height>150</height>
 				<aspectratio>stretch</aspectratio>
-				<texture background="true" fallback="DefaultAlbumCover.png">$INFO[Window(home).Property(RandomAlbum.7.Thumb )]</texture>
+				<texture background="true" fallback="DefaultAlbumCover.png">$INFO[Window(Home).Property(RandomAlbum.7.Thumb )]</texture>
 				<colordiffuse>AAFFFFFF</colordiffuse>
-				<visible>!IsEmpty(Window(home).Property(RandomAlbum.7.Thumb ))</visible>
+				<visible>!IsEmpty(Window(Home).Property(RandomAlbum.7.Thumb ))</visible>
 			</control>
 			<control type="image">
 				<left>1050</left>
@@ -1029,9 +1029,9 @@
 				<width>150</width>
 				<height>150</height>
 				<aspectratio>stretch</aspectratio>
-				<texture background="true" fallback="DefaultAlbumCover.png">$INFO[Window(home).Property(LatestAlbum.9.Thumb)]</texture>
+				<texture background="true" fallback="DefaultAlbumCover.png">$INFO[Window(Home).Property(LatestAlbum.9.Thumb)]</texture>
 				<colordiffuse>AAFFFFFF</colordiffuse>
-				<visible>IsEmpty(Window(home).Property(RandomAlbum.7.Thumb ))</visible>
+				<visible>IsEmpty(Window(Home).Property(RandomAlbum.7.Thumb ))</visible>
 			</control>
 			<control type="image">
 				<left>1200</left>
@@ -1039,9 +1039,9 @@
 				<width>150</width>
 				<height>150</height>
 				<aspectratio>stretch</aspectratio>
-				<texture background="true" fallback="DefaultAlbumCover.png">$INFO[Window(home).Property(RandomAlbum.16.Thumb )]</texture>
+				<texture background="true" fallback="DefaultAlbumCover.png">$INFO[Window(Home).Property(RandomAlbum.16.Thumb )]</texture>
 				<colordiffuse>AAFFFFFF</colordiffuse>
-				<visible>!IsEmpty(Window(home).Property(RandomAlbum.16.Thumb ))</visible>
+				<visible>!IsEmpty(Window(Home).Property(RandomAlbum.16.Thumb ))</visible>
 			</control>
 			<control type="image">
 				<left>1200</left>
@@ -1049,9 +1049,9 @@
 				<width>150</width>
 				<height>150</height>
 				<aspectratio>stretch</aspectratio>
-				<texture background="true" fallback="DefaultAlbumCover.png">$INFO[Window(home).Property(LatestAlbum.8.Thumb)]</texture>
+				<texture background="true" fallback="DefaultAlbumCover.png">$INFO[Window(Home).Property(LatestAlbum.8.Thumb)]</texture>
 				<colordiffuse>AAFFFFFF</colordiffuse>
-				<visible>IsEmpty(Window(home).Property(RandomAlbum.16.Thumb ))</visible>
+				<visible>IsEmpty(Window(Home).Property(RandomAlbum.16.Thumb ))</visible>
 			</control>
 			<control type="image">
 				<left>0</left>
@@ -1059,9 +1059,9 @@
 				<width>150</width>
 				<height>150</height>
 				<aspectratio>stretch</aspectratio>
-				<texture background="true" fallback="DefaultAlbumCover.png">$INFO[Window(home).Property(RandomAlbum.11.Thumb )]</texture>
+				<texture background="true" fallback="DefaultAlbumCover.png">$INFO[Window(Home).Property(RandomAlbum.11.Thumb )]</texture>
 				<colordiffuse>AAFFFFFF</colordiffuse>
-				<visible>!IsEmpty(Window(home).Property(RandomAlbum.11.Thumb ))</visible>
+				<visible>!IsEmpty(Window(Home).Property(RandomAlbum.11.Thumb ))</visible>
 			</control>
 			<control type="image">
 				<left>0</left>
@@ -1069,9 +1069,9 @@
 				<width>150</width>
 				<height>150</height>
 				<aspectratio>stretch</aspectratio>
-				<texture background="true" fallback="DefaultAlbumCover.png">$INFO[Window(home).Property(LatestAlbum.4.Thumb)]</texture>
+				<texture background="true" fallback="DefaultAlbumCover.png">$INFO[Window(Home).Property(LatestAlbum.4.Thumb)]</texture>
 				<colordiffuse>AAFFFFFF</colordiffuse>
-				<visible>IsEmpty(Window(home).Property(RandomAlbum.11.Thumb ))</visible>
+				<visible>IsEmpty(Window(Home).Property(RandomAlbum.11.Thumb ))</visible>
 			</control>
 			<control type="image">
 				<left>150</left>
@@ -1079,9 +1079,9 @@
 				<width>150</width>
 				<height>150</height>
 				<aspectratio>stretch</aspectratio>
-				<texture background="true" fallback="DefaultAlbumCover.png">$INFO[Window(home).Property(RandomAlbum.3.Thumb )]</texture>
+				<texture background="true" fallback="DefaultAlbumCover.png">$INFO[Window(Home).Property(RandomAlbum.3.Thumb )]</texture>
 				<colordiffuse>AAFFFFFF</colordiffuse>
-				<visible>!IsEmpty(Window(home).Property(RandomAlbum.3.Thumb ))</visible>
+				<visible>!IsEmpty(Window(Home).Property(RandomAlbum.3.Thumb ))</visible>
 			</control>
 			<control type="image">
 				<left>150</left>
@@ -1089,9 +1089,9 @@
 				<width>150</width>
 				<height>150</height>
 				<aspectratio>stretch</aspectratio>
-				<texture background="true" fallback="DefaultAlbumCover.png">$INFO[Window(home).Property(LatestAlbum.7.Thumb)]</texture>
+				<texture background="true" fallback="DefaultAlbumCover.png">$INFO[Window(Home).Property(LatestAlbum.7.Thumb)]</texture>
 				<colordiffuse>AAFFFFFF</colordiffuse>
-				<visible>IsEmpty(Window(home).Property(RandomAlbum.3.Thumb ))</visible>
+				<visible>IsEmpty(Window(Home).Property(RandomAlbum.3.Thumb ))</visible>
 			</control>
 			<control type="image">
 				<left>300</left>
@@ -1099,9 +1099,9 @@
 				<width>150</width>
 				<height>150</height>
 				<aspectratio>stretch</aspectratio>
-				<texture background="true" fallback="DefaultAlbumCover.png">$INFO[Window(home).Property(RandomAlbum.12.Thumb )]</texture>
+				<texture background="true" fallback="DefaultAlbumCover.png">$INFO[Window(Home).Property(RandomAlbum.12.Thumb )]</texture>
 				<colordiffuse>AAFFFFFF</colordiffuse>
-				<visible>!IsEmpty(Window(home).Property(RandomAlbum.12.Thumb ))</visible>
+				<visible>!IsEmpty(Window(Home).Property(RandomAlbum.12.Thumb ))</visible>
 			</control>
 			<control type="image">
 				<left>300</left>
@@ -1109,9 +1109,9 @@
 				<width>150</width>
 				<height>150</height>
 				<aspectratio>stretch</aspectratio>
-				<texture background="true" fallback="DefaultAlbumCover.png">$INFO[Window(home).Property(LatestAlbum.1.Thumb)]</texture>
+				<texture background="true" fallback="DefaultAlbumCover.png">$INFO[Window(Home).Property(LatestAlbum.1.Thumb)]</texture>
 				<colordiffuse>AAFFFFFF</colordiffuse>
-				<visible>IsEmpty(Window(home).Property(RandomAlbum.12.Thumb ))</visible>
+				<visible>IsEmpty(Window(Home).Property(RandomAlbum.12.Thumb ))</visible>
 			</control>
 			<control type="image">
 				<left>450</left>
@@ -1119,9 +1119,9 @@
 				<width>150</width>
 				<height>150</height>
 				<aspectratio>stretch</aspectratio>
-				<texture background="true" fallback="DefaultAlbumCover.png">$INFO[Window(home).Property(RandomAlbum.2.Thumb )]</texture>
+				<texture background="true" fallback="DefaultAlbumCover.png">$INFO[Window(Home).Property(RandomAlbum.2.Thumb )]</texture>
 				<colordiffuse>AAFFFFFF</colordiffuse>
-				<visible>!IsEmpty(Window(home).Property(RandomAlbum.2.Thumb ))</visible>
+				<visible>!IsEmpty(Window(Home).Property(RandomAlbum.2.Thumb ))</visible>
 			</control>
 			<control type="image">
 				<left>450</left>
@@ -1129,9 +1129,9 @@
 				<width>150</width>
 				<height>150</height>
 				<aspectratio>stretch</aspectratio>
-				<texture background="true" fallback="DefaultAlbumCover.png">$INFO[Window(home).Property(LatestAlbum.6.Thumb)]</texture>
+				<texture background="true" fallback="DefaultAlbumCover.png">$INFO[Window(Home).Property(LatestAlbum.6.Thumb)]</texture>
 				<colordiffuse>AAFFFFFF</colordiffuse>
-				<visible>IsEmpty(Window(home).Property(RandomAlbum.2.Thumb ))</visible>
+				<visible>IsEmpty(Window(Home).Property(RandomAlbum.2.Thumb ))</visible>
 			</control>
 			<control type="image">
 				<left>600</left>
@@ -1139,9 +1139,9 @@
 				<width>150</width>
 				<height>150</height>
 				<aspectratio>stretch</aspectratio>
-				<texture background="true" fallback="DefaultAlbumCover.png">$INFO[Window(home).Property(RandomAlbum.1.Thumb )]</texture>
+				<texture background="true" fallback="DefaultAlbumCover.png">$INFO[Window(Home).Property(RandomAlbum.1.Thumb )]</texture>
 				<colordiffuse>AAFFFFFF</colordiffuse>
-				<visible>!IsEmpty(Window(home).Property(RandomAlbum.1.Thumb ))</visible>
+				<visible>!IsEmpty(Window(Home).Property(RandomAlbum.1.Thumb ))</visible>
 			</control>
 			<control type="image">
 				<left>600</left>
@@ -1149,9 +1149,9 @@
 				<width>150</width>
 				<height>150</height>
 				<aspectratio>stretch</aspectratio>
-				<texture background="true" fallback="DefaultAlbumCover.png">$INFO[Window(home).Property(LatestAlbum.8.Thumb)]</texture>
+				<texture background="true" fallback="DefaultAlbumCover.png">$INFO[Window(Home).Property(LatestAlbum.8.Thumb)]</texture>
 				<colordiffuse>AAFFFFFF</colordiffuse>
-				<visible>IsEmpty(Window(home).Property(RandomAlbum.1.Thumb ))</visible>
+				<visible>IsEmpty(Window(Home).Property(RandomAlbum.1.Thumb ))</visible>
 			</control>
 			<control type="image">
 				<left>750</left>
@@ -1159,9 +1159,9 @@
 				<width>150</width>
 				<height>150</height>
 				<aspectratio>stretch</aspectratio>
-				<texture background="true" fallback="DefaultAlbumCover.png">$INFO[Window(home).Property(RandomAlbum.10.Thumb )]</texture>
+				<texture background="true" fallback="DefaultAlbumCover.png">$INFO[Window(Home).Property(RandomAlbum.10.Thumb )]</texture>
 				<colordiffuse>AAFFFFFF</colordiffuse>
-				<visible>!IsEmpty(Window(home).Property(RandomAlbum.10.Thumb ))</visible>
+				<visible>!IsEmpty(Window(Home).Property(RandomAlbum.10.Thumb ))</visible>
 			</control>
 			<control type="image">
 				<left>750</left>
@@ -1169,9 +1169,9 @@
 				<width>150</width>
 				<height>150</height>
 				<aspectratio>stretch</aspectratio>
-				<texture background="true" fallback="DefaultAlbumCover.png">$INFO[Window(home).Property(LatestAlbum.7.Thumb)]</texture>
+				<texture background="true" fallback="DefaultAlbumCover.png">$INFO[Window(Home).Property(LatestAlbum.7.Thumb)]</texture>
 				<colordiffuse>AAFFFFFF</colordiffuse>
-				<visible>IsEmpty(Window(home).Property(RandomAlbum.10.Thumb ))</visible>
+				<visible>IsEmpty(Window(Home).Property(RandomAlbum.10.Thumb ))</visible>
 			</control>
 			<control type="image">
 				<left>900</left>
@@ -1179,9 +1179,9 @@
 				<width>150</width>
 				<height>150</height>
 				<aspectratio>stretch</aspectratio>
-				<texture background="true" fallback="DefaultAlbumCover.png">$INFO[Window(home).Property(RandomAlbum.18.Thumb )]</texture>
+				<texture background="true" fallback="DefaultAlbumCover.png">$INFO[Window(Home).Property(RandomAlbum.18.Thumb )]</texture>
 				<colordiffuse>AAFFFFFF</colordiffuse>
-				<visible>!IsEmpty(Window(home).Property(RandomAlbum.18.Thumb ))</visible>
+				<visible>!IsEmpty(Window(Home).Property(RandomAlbum.18.Thumb ))</visible>
 			</control>
 			<control type="image">
 				<left>900</left>
@@ -1189,9 +1189,9 @@
 				<width>150</width>
 				<height>150</height>
 				<aspectratio>stretch</aspectratio>
-				<texture background="true" fallback="DefaultAlbumCover.png">$INFO[Window(home).Property(LatestAlbum.9.Thumb)]</texture>
+				<texture background="true" fallback="DefaultAlbumCover.png">$INFO[Window(Home).Property(LatestAlbum.9.Thumb)]</texture>
 				<colordiffuse>AAFFFFFF</colordiffuse>
-				<visible>IsEmpty(Window(home).Property(RandomAlbum.18.Thumb ))</visible>
+				<visible>IsEmpty(Window(Home).Property(RandomAlbum.18.Thumb ))</visible>
 			</control>
 			<control type="image">
 				<left>1050</left>
@@ -1199,9 +1199,9 @@
 				<width>150</width>
 				<height>150</height>
 				<aspectratio>stretch</aspectratio>
-				<texture background="true" fallback="DefaultAlbumCover.png">$INFO[Window(home).Property(RandomAlbum.6.Thumb )]</texture>
+				<texture background="true" fallback="DefaultAlbumCover.png">$INFO[Window(Home).Property(RandomAlbum.6.Thumb )]</texture>
 				<colordiffuse>AAFFFFFF</colordiffuse>
-				<visible>!IsEmpty(Window(home).Property(RandomAlbum.6.Thumb ))</visible>
+				<visible>!IsEmpty(Window(Home).Property(RandomAlbum.6.Thumb ))</visible>
 			</control>
 			<control type="image">
 				<left>1050</left>
@@ -1209,9 +1209,9 @@
 				<width>150</width>
 				<height>150</height>
 				<aspectratio>stretch</aspectratio>
-				<texture background="true" fallback="DefaultAlbumCover.png">$INFO[Window(home).Property(LatestAlbum.2.Thumb)]</texture>
+				<texture background="true" fallback="DefaultAlbumCover.png">$INFO[Window(Home).Property(LatestAlbum.2.Thumb)]</texture>
 				<colordiffuse>AAFFFFFF</colordiffuse>
-				<visible>IsEmpty(Window(home).Property(RandomAlbum.6.Thumb ))</visible>
+				<visible>IsEmpty(Window(Home).Property(RandomAlbum.6.Thumb ))</visible>
 			</control>
 			<control type="image">
 				<left>1200</left>
@@ -1219,9 +1219,9 @@
 				<width>150</width>
 				<height>150</height>
 				<aspectratio>stretch</aspectratio>
-				<texture background="true" fallback="DefaultAlbumCover.png">$INFO[Window(home).Property(RandomAlbum.19.Thumb )]</texture>
+				<texture background="true" fallback="DefaultAlbumCover.png">$INFO[Window(Home).Property(RandomAlbum.19.Thumb )]</texture>
 				<colordiffuse>AAFFFFFF</colordiffuse>
-				<visible>!IsEmpty(Window(home).Property(RandomAlbum.19.Thumb ))</visible>
+				<visible>!IsEmpty(Window(Home).Property(RandomAlbum.19.Thumb ))</visible>
 			</control>
 			<control type="image">
 				<left>1200</left>
@@ -1229,9 +1229,9 @@
 				<width>150</width>
 				<height>150</height>
 				<aspectratio>stretch</aspectratio>
-				<texture background="true" fallback="DefaultAlbumCover.png">$INFO[Window(home).Property(LatestAlbum.10.Thumb)]</texture>
+				<texture background="true" fallback="DefaultAlbumCover.png">$INFO[Window(Home).Property(LatestAlbum.10.Thumb)]</texture>
 				<colordiffuse>AAFFFFFF</colordiffuse>
-				<visible>IsEmpty(Window(home).Property(RandomAlbum.19.Thumb ))</visible>
+				<visible>IsEmpty(Window(Home).Property(RandomAlbum.19.Thumb ))</visible>
 			</control>
 			<control type="image">
 				<left>0</left>
@@ -1239,9 +1239,9 @@
 				<width>150</width>
 				<height>150</height>
 				<aspectratio>stretch</aspectratio>
-				<texture background="true" fallback="DefaultAlbumCover.png">$INFO[Window(home).Property(RandomAlbum.14.Thumb )]</texture>
+				<texture background="true" fallback="DefaultAlbumCover.png">$INFO[Window(Home).Property(RandomAlbum.14.Thumb )]</texture>
 				<colordiffuse>AAFFFFFF</colordiffuse>
-				<visible>!IsEmpty(Window(home).Property(RandomAlbum.14.Thumb ))</visible>
+				<visible>!IsEmpty(Window(Home).Property(RandomAlbum.14.Thumb ))</visible>
 			</control>
 			<control type="image">
 				<left>0</left>
@@ -1249,9 +1249,9 @@
 				<width>150</width>
 				<height>150</height>
 				<aspectratio>stretch</aspectratio>
-				<texture background="true" fallback="DefaultAlbumCover.png">$INFO[Window(home).Property(LatestAlbum.3.Thumb)]</texture>
+				<texture background="true" fallback="DefaultAlbumCover.png">$INFO[Window(Home).Property(LatestAlbum.3.Thumb)]</texture>
 				<colordiffuse>AAFFFFFF</colordiffuse>
-				<visible>IsEmpty(Window(home).Property(RandomAlbum.14.Thumb ))</visible>
+				<visible>IsEmpty(Window(Home).Property(RandomAlbum.14.Thumb ))</visible>
 			</control>
 			<control type="image">
 				<left>150</left>
@@ -1259,9 +1259,9 @@
 				<width>150</width>
 				<height>150</height>
 				<aspectratio>stretch</aspectratio>
-				<texture background="true" fallback="DefaultAlbumCover.png">$INFO[Window(home).Property(RandomAlbum.15.Thumb )]</texture>
+				<texture background="true" fallback="DefaultAlbumCover.png">$INFO[Window(Home).Property(RandomAlbum.15.Thumb )]</texture>
 				<colordiffuse>AAFFFFFF</colordiffuse>
-				<visible>!IsEmpty(Window(home).Property(RandomAlbum.15.Thumb ))</visible>
+				<visible>!IsEmpty(Window(Home).Property(RandomAlbum.15.Thumb ))</visible>
 			</control>
 			<control type="image">
 				<left>150</left>
@@ -1269,9 +1269,9 @@
 				<width>150</width>
 				<height>150</height>
 				<aspectratio>stretch</aspectratio>
-				<texture background="true" fallback="DefaultAlbumCover.png">$INFO[Window(home).Property(LatestAlbum.5.Thumb)]</texture>
+				<texture background="true" fallback="DefaultAlbumCover.png">$INFO[Window(Home).Property(LatestAlbum.5.Thumb)]</texture>
 				<colordiffuse>AAFFFFFF</colordiffuse>
-				<visible>IsEmpty(Window(home).Property(RandomAlbum.15.Thumb ))</visible>
+				<visible>IsEmpty(Window(Home).Property(RandomAlbum.15.Thumb ))</visible>
 			</control>
 			<control type="image">
 				<left>300</left>
@@ -1279,9 +1279,9 @@
 				<width>150</width>
 				<height>150</height>
 				<aspectratio>stretch</aspectratio>
-				<texture background="true" fallback="DefaultAlbumCover.png">$INFO[Window(home).Property(RandomAlbum.8.Thumb )]</texture>
+				<texture background="true" fallback="DefaultAlbumCover.png">$INFO[Window(Home).Property(RandomAlbum.8.Thumb )]</texture>
 				<colordiffuse>AAFFFFFF</colordiffuse>
-				<visible>!IsEmpty(Window(home).Property(RandomAlbum.8.Thumb ))</visible>
+				<visible>!IsEmpty(Window(Home).Property(RandomAlbum.8.Thumb ))</visible>
 			</control>
 			<control type="image">
 				<left>300</left>
@@ -1289,9 +1289,9 @@
 				<width>150</width>
 				<height>150</height>
 				<aspectratio>stretch</aspectratio>
-				<texture background="true" fallback="DefaultAlbumCover.png">$INFO[Window(home).Property(LatestAlbum.8.Thumb)]</texture>
+				<texture background="true" fallback="DefaultAlbumCover.png">$INFO[Window(Home).Property(LatestAlbum.8.Thumb)]</texture>
 				<colordiffuse>AAFFFFFF</colordiffuse>
-				<visible>IsEmpty(Window(home).Property(RandomAlbum.8.Thumb ))</visible>
+				<visible>IsEmpty(Window(Home).Property(RandomAlbum.8.Thumb ))</visible>
 			</control>
 			<control type="image">
 				<left>450</left>
@@ -1299,9 +1299,9 @@
 				<width>150</width>
 				<height>150</height>
 				<aspectratio>stretch</aspectratio>
-				<texture background="true" fallback="DefaultAlbumCover.png">$INFO[Window(home).Property(RandomAlbum.4.Thumb )]</texture>
+				<texture background="true" fallback="DefaultAlbumCover.png">$INFO[Window(Home).Property(RandomAlbum.4.Thumb )]</texture>
 				<colordiffuse>AAFFFFFF</colordiffuse>
-				<visible>!IsEmpty(Window(home).Property(RandomAlbum.4.Thumb ))</visible>
+				<visible>!IsEmpty(Window(Home).Property(RandomAlbum.4.Thumb ))</visible>
 			</control>
 			<control type="image">
 				<left>450</left>
@@ -1309,9 +1309,9 @@
 				<width>150</width>
 				<height>150</height>
 				<aspectratio>stretch</aspectratio>
-				<texture background="true" fallback="DefaultAlbumCover.png">$INFO[Window(home).Property(LatestAlbum.1.Thumb)]</texture>
+				<texture background="true" fallback="DefaultAlbumCover.png">$INFO[Window(Home).Property(LatestAlbum.1.Thumb)]</texture>
 				<colordiffuse>AAFFFFFF</colordiffuse>
-				<visible>IsEmpty(Window(home).Property(RandomAlbum.4.Thumb ))</visible>
+				<visible>IsEmpty(Window(Home).Property(RandomAlbum.4.Thumb ))</visible>
 			</control>
 			<control type="image">
 				<left>600</left>
@@ -1319,9 +1319,9 @@
 				<width>150</width>
 				<height>150</height>
 				<aspectratio>stretch</aspectratio>
-				<texture background="true" fallback="DefaultAlbumCover.png">$INFO[Window(home).Property(RandomAlbum.6.Thumb )]</texture>
+				<texture background="true" fallback="DefaultAlbumCover.png">$INFO[Window(Home).Property(RandomAlbum.6.Thumb )]</texture>
 				<colordiffuse>AAFFFFFF</colordiffuse>
-				<visible>!IsEmpty(Window(home).Property(RandomAlbum.6.Thumb ))</visible>
+				<visible>!IsEmpty(Window(Home).Property(RandomAlbum.6.Thumb ))</visible>
 			</control>
 			<control type="image">
 				<left>600</left>
@@ -1329,9 +1329,9 @@
 				<width>150</width>
 				<height>150</height>
 				<aspectratio>stretch</aspectratio>
-				<texture background="true" fallback="DefaultAlbumCover.png">$INFO[Window(home).Property(LatestAlbum.4.Thumb)]</texture>
+				<texture background="true" fallback="DefaultAlbumCover.png">$INFO[Window(Home).Property(LatestAlbum.4.Thumb)]</texture>
 				<colordiffuse>AAFFFFFF</colordiffuse>
-				<visible>IsEmpty(Window(home).Property(RandomAlbum.6.Thumb ))</visible>
+				<visible>IsEmpty(Window(Home).Property(RandomAlbum.6.Thumb ))</visible>
 			</control>
 			<control type="image">
 				<left>750</left>
@@ -1339,9 +1339,9 @@
 				<width>150</width>
 				<height>150</height>
 				<aspectratio>stretch</aspectratio>
-				<texture background="true" fallback="DefaultAlbumCover.png">$INFO[Window(home).Property(RandomAlbum.3.Thumb )]</texture>
+				<texture background="true" fallback="DefaultAlbumCover.png">$INFO[Window(Home).Property(RandomAlbum.3.Thumb )]</texture>
 				<colordiffuse>AAFFFFFF</colordiffuse>
-				<visible>!IsEmpty(Window(home).Property(RandomAlbum.3.Thumb ))</visible>
+				<visible>!IsEmpty(Window(Home).Property(RandomAlbum.3.Thumb ))</visible>
 			</control>
 			<control type="image">
 				<left>750</left>
@@ -1349,9 +1349,9 @@
 				<width>150</width>
 				<height>150</height>
 				<aspectratio>stretch</aspectratio>
-				<texture background="true" fallback="DefaultAlbumCover.png">$INFO[Window(home).Property(LatestAlbum.5.Thumb)]</texture>
+				<texture background="true" fallback="DefaultAlbumCover.png">$INFO[Window(Home).Property(LatestAlbum.5.Thumb)]</texture>
 				<colordiffuse>AAFFFFFF</colordiffuse>
-				<visible>IsEmpty(Window(home).Property(RandomAlbum.3.Thumb ))</visible>
+				<visible>IsEmpty(Window(Home).Property(RandomAlbum.3.Thumb ))</visible>
 			</control>
 			<control type="image">
 				<left>900</left>
@@ -1359,9 +1359,9 @@
 				<width>150</width>
 				<height>150</height>
 				<aspectratio>stretch</aspectratio>
-				<texture background="true" fallback="DefaultAlbumCover.png">$INFO[Window(home).Property(RandomAlbum.1.Thumb )]</texture>
+				<texture background="true" fallback="DefaultAlbumCover.png">$INFO[Window(Home).Property(RandomAlbum.1.Thumb )]</texture>
 				<colordiffuse>AAFFFFFF</colordiffuse>
-				<visible>!IsEmpty(Window(home).Property(RandomAlbum.1.Thumb ))</visible>
+				<visible>!IsEmpty(Window(Home).Property(RandomAlbum.1.Thumb ))</visible>
 			</control>
 			<control type="image">
 				<left>900</left>
@@ -1369,9 +1369,9 @@
 				<width>150</width>
 				<height>150</height>
 				<aspectratio>stretch</aspectratio>
-				<texture background="true" fallback="DefaultAlbumCover.png">$INFO[Window(home).Property(LatestAlbum.7.Thumb)]</texture>
+				<texture background="true" fallback="DefaultAlbumCover.png">$INFO[Window(Home).Property(LatestAlbum.7.Thumb)]</texture>
 				<colordiffuse>AAFFFFFF</colordiffuse>
-				<visible>IsEmpty(Window(home).Property(RandomAlbum.1.Thumb ))</visible>
+				<visible>IsEmpty(Window(Home).Property(RandomAlbum.1.Thumb ))</visible>
 			</control>
 			<control type="image">
 				<left>1050</left>
@@ -1379,9 +1379,9 @@
 				<width>150</width>
 				<height>150</height>
 				<aspectratio>stretch</aspectratio>
-				<texture background="true" fallback="DefaultAlbumCover.png">$INFO[Window(home).Property(RandomAlbum.10.Thumb )]</texture>
+				<texture background="true" fallback="DefaultAlbumCover.png">$INFO[Window(Home).Property(RandomAlbum.10.Thumb )]</texture>
 				<colordiffuse>AAFFFFFF</colordiffuse>
-				<visible>!IsEmpty(Window(home).Property(RandomAlbum.10.Thumb ))</visible>
+				<visible>!IsEmpty(Window(Home).Property(RandomAlbum.10.Thumb ))</visible>
 			</control>
 			<control type="image">
 				<left>1050</left>
@@ -1389,9 +1389,9 @@
 				<width>150</width>
 				<height>150</height>
 				<aspectratio>stretch</aspectratio>
-				<texture background="true" fallback="DefaultAlbumCover.png">$INFO[Window(home).Property(LatestAlbum.10.Thumb)]</texture>
+				<texture background="true" fallback="DefaultAlbumCover.png">$INFO[Window(Home).Property(LatestAlbum.10.Thumb)]</texture>
 				<colordiffuse>AAFFFFFF</colordiffuse>
-				<visible>IsEmpty(Window(home).Property(RandomAlbum.10.Thumb ))</visible>
+				<visible>IsEmpty(Window(Home).Property(RandomAlbum.10.Thumb ))</visible>
 			</control>
 			<control type="image">
 				<left>1200</left>
@@ -1399,9 +1399,9 @@
 				<width>150</width>
 				<height>150</height>
 				<aspectratio>stretch</aspectratio>
-				<texture background="true" fallback="DefaultAlbumCover.png">$INFO[Window(home).Property(RandomAlbum.16.Thumb )]</texture>
+				<texture background="true" fallback="DefaultAlbumCover.png">$INFO[Window(Home).Property(RandomAlbum.16.Thumb )]</texture>
 				<colordiffuse>AAFFFFFF</colordiffuse>
-				<visible>!IsEmpty(Window(home).Property(RandomAlbum.16.Thumb ))</visible>
+				<visible>!IsEmpty(Window(Home).Property(RandomAlbum.16.Thumb ))</visible>
 			</control>
 			<control type="image">
 				<left>1200</left>
@@ -1409,9 +1409,9 @@
 				<width>150</width>
 				<height>150</height>
 				<aspectratio>stretch</aspectratio>
-				<texture background="true" fallback="DefaultAlbumCover.png">$INFO[Window(home).Property(LatestAlbum.9.Thumb)]</texture>
+				<texture background="true" fallback="DefaultAlbumCover.png">$INFO[Window(Home).Property(LatestAlbum.9.Thumb)]</texture>
 				<colordiffuse>AAFFFFFF</colordiffuse>
-				<visible>IsEmpty(Window(home).Property(RandomAlbum.16.Thumb ))</visible>
+				<visible>IsEmpty(Window(Home).Property(RandomAlbum.16.Thumb ))</visible>
 			</control>
 		</control>
 		<control type="group">
@@ -1426,8 +1426,8 @@
 				<width>150</width>
 				<height>150</height>
 				<aspectratio>stretch</aspectratio>
-				<texture background="true" fallback="DefaultAlbumCover.png">$INFO[Window(home).Property(RandomAlbum.2.Thumb )]</texture>
-				<visible>!IsEmpty(Window(home).Property(RandomAlbum.2.Thumb ))</visible>
+				<texture background="true" fallback="DefaultAlbumCover.png">$INFO[Window(Home).Property(RandomAlbum.2.Thumb )]</texture>
+				<visible>!IsEmpty(Window(Home).Property(RandomAlbum.2.Thumb ))</visible>
 			</control>
 			<control type="image">
 				<left>0</left>
@@ -1435,8 +1435,8 @@
 				<width>150</width>
 				<height>150</height>
 				<aspectratio>stretch</aspectratio>
-				<texture background="true" fallback="DefaultAlbumCover.png">$INFO[Window(home).Property(LatestAlbum.9.Thumb)]</texture>
-				<visible>IsEmpty(Window(home).Property(RandomAlbum.2.Thumb ))</visible>
+				<texture background="true" fallback="DefaultAlbumCover.png">$INFO[Window(Home).Property(LatestAlbum.9.Thumb)]</texture>
+				<visible>IsEmpty(Window(Home).Property(RandomAlbum.2.Thumb ))</visible>
 			</control>
 			<control type="image">
 				<left>150</left>
@@ -1444,8 +1444,8 @@
 				<width>150</width>
 				<height>150</height>
 				<aspectratio>stretch</aspectratio>
-				<texture background="true" fallback="DefaultAlbumCover.png">$INFO[Window(home).Property(RandomAlbum.15.Thumb )]</texture>
-				<visible>!IsEmpty(Window(home).Property(RandomAlbum.15.Thumb ))</visible>
+				<texture background="true" fallback="DefaultAlbumCover.png">$INFO[Window(Home).Property(RandomAlbum.15.Thumb )]</texture>
+				<visible>!IsEmpty(Window(Home).Property(RandomAlbum.15.Thumb ))</visible>
 			</control>
 			<control type="image">
 				<left>150</left>
@@ -1453,8 +1453,8 @@
 				<width>150</width>
 				<height>150</height>
 				<aspectratio>stretch</aspectratio>
-				<texture background="true" fallback="DefaultAlbumCover.png">$INFO[Window(home).Property(LatestAlbum.4.Thumb)]</texture>
-				<visible>IsEmpty(Window(home).Property(RandomAlbum.15.Thumb ))</visible>
+				<texture background="true" fallback="DefaultAlbumCover.png">$INFO[Window(Home).Property(LatestAlbum.4.Thumb)]</texture>
+				<visible>IsEmpty(Window(Home).Property(RandomAlbum.15.Thumb ))</visible>
 			</control>
 			<control type="image">
 				<left>300</left>
@@ -1462,8 +1462,8 @@
 				<width>150</width>
 				<height>150</height>
 				<aspectratio>stretch</aspectratio>
-				<texture background="true" fallback="DefaultAlbumCover.png">$INFO[Window(home).Property(RandomAlbum.10.Thumb )]</texture>
-				<visible>!IsEmpty(Window(home).Property(RandomAlbum.10.Thumb ))</visible>
+				<texture background="true" fallback="DefaultAlbumCover.png">$INFO[Window(Home).Property(RandomAlbum.10.Thumb )]</texture>
+				<visible>!IsEmpty(Window(Home).Property(RandomAlbum.10.Thumb ))</visible>
 			</control>
 			<control type="image">
 				<left>300</left>
@@ -1471,8 +1471,8 @@
 				<width>150</width>
 				<height>150</height>
 				<aspectratio>stretch</aspectratio>
-				<texture background="true" fallback="DefaultAlbumCover.png">$INFO[Window(home).Property(LatestAlbum.4.Thumb)]</texture>
-				<visible>IsEmpty(Window(home).Property(RandomAlbum.10.Thumb ))</visible>
+				<texture background="true" fallback="DefaultAlbumCover.png">$INFO[Window(Home).Property(LatestAlbum.4.Thumb)]</texture>
+				<visible>IsEmpty(Window(Home).Property(RandomAlbum.10.Thumb ))</visible>
 			</control>
 			<control type="image">
 				<left>450</left>
@@ -1480,8 +1480,8 @@
 				<width>150</width>
 				<height>150</height>
 				<aspectratio>stretch</aspectratio>
-				<texture background="true" fallback="DefaultAlbumCover.png">$INFO[Window(home).Property(RandomAlbum.9.Thumb )]</texture>
-				<visible>!IsEmpty(Window(home).Property(RandomAlbum.9.Thumb ))</visible>
+				<texture background="true" fallback="DefaultAlbumCover.png">$INFO[Window(Home).Property(RandomAlbum.9.Thumb )]</texture>
+				<visible>!IsEmpty(Window(Home).Property(RandomAlbum.9.Thumb ))</visible>
 			</control>
 			<control type="image">
 				<left>450</left>
@@ -1489,8 +1489,8 @@
 				<width>150</width>
 				<height>150</height>
 				<aspectratio>stretch</aspectratio>
-				<texture background="true" fallback="DefaultAlbumCover.png">$INFO[Window(home).Property(LatestAlbum.2.Thumb)]</texture>
-				<visible>IsEmpty(Window(home).Property(RandomAlbum.9.Thumb ))</visible>
+				<texture background="true" fallback="DefaultAlbumCover.png">$INFO[Window(Home).Property(LatestAlbum.2.Thumb)]</texture>
+				<visible>IsEmpty(Window(Home).Property(RandomAlbum.9.Thumb ))</visible>
 			</control>
 			<control type="image">
 				<left>600</left>
@@ -1498,8 +1498,8 @@
 				<width>150</width>
 				<height>150</height>
 				<aspectratio>stretch</aspectratio>
-				<texture background="true" fallback="DefaultAlbumCover.png">$INFO[Window(home).Property(RandomAlbum.5.Thumb )]</texture>
-				<visible>!IsEmpty(Window(home).Property(RandomAlbum.5.Thumb ))</visible>
+				<texture background="true" fallback="DefaultAlbumCover.png">$INFO[Window(Home).Property(RandomAlbum.5.Thumb )]</texture>
+				<visible>!IsEmpty(Window(Home).Property(RandomAlbum.5.Thumb ))</visible>
 			</control>
 			<control type="image">
 				<left>600</left>
@@ -1507,8 +1507,8 @@
 				<width>150</width>
 				<height>150</height>
 				<aspectratio>stretch</aspectratio>
-				<texture background="true" fallback="DefaultAlbumCover.png">$INFO[Window(home).Property(LatestAlbum.5.Thumb)]</texture>
-				<visible>IsEmpty(Window(home).Property(RandomAlbum.5.Thumb ))</visible>
+				<texture background="true" fallback="DefaultAlbumCover.png">$INFO[Window(Home).Property(LatestAlbum.5.Thumb)]</texture>
+				<visible>IsEmpty(Window(Home).Property(RandomAlbum.5.Thumb ))</visible>
 			</control>
 			<control type="image">
 				<left>750</left>
@@ -1516,8 +1516,8 @@
 				<width>150</width>
 				<height>150</height>
 				<aspectratio>stretch</aspectratio>
-				<texture background="true" fallback="DefaultAlbumCover.png">$INFO[Window(home).Property(RandomAlbum.19.Thumb )]</texture>
-				<visible>!IsEmpty(Window(home).Property(RandomAlbum.19.Thumb ))</visible>
+				<texture background="true" fallback="DefaultAlbumCover.png">$INFO[Window(Home).Property(RandomAlbum.19.Thumb )]</texture>
+				<visible>!IsEmpty(Window(Home).Property(RandomAlbum.19.Thumb ))</visible>
 			</control>
 			<control type="image">
 				<left>750</left>
@@ -1525,8 +1525,8 @@
 				<width>150</width>
 				<height>150</height>
 				<aspectratio>stretch</aspectratio>
-				<texture background="true" fallback="DefaultAlbumCover.png">$INFO[Window(home).Property(LatestAlbum.8.Thumb)]</texture>
-				<visible>IsEmpty(Window(home).Property(RandomAlbum.19.Thumb ))</visible>
+				<texture background="true" fallback="DefaultAlbumCover.png">$INFO[Window(Home).Property(LatestAlbum.8.Thumb)]</texture>
+				<visible>IsEmpty(Window(Home).Property(RandomAlbum.19.Thumb ))</visible>
 			</control>
 			<control type="image">
 				<left>900</left>
@@ -1534,8 +1534,8 @@
 				<width>150</width>
 				<height>150</height>
 				<aspectratio>stretch</aspectratio>
-				<texture background="true" fallback="DefaultAlbumCover.png">$INFO[Window(home).Property(RandomAlbum.12.Thumb )]</texture>
-				<visible>!IsEmpty(Window(home).Property(RandomAlbum.12.Thumb ))</visible>
+				<texture background="true" fallback="DefaultAlbumCover.png">$INFO[Window(Home).Property(RandomAlbum.12.Thumb )]</texture>
+				<visible>!IsEmpty(Window(Home).Property(RandomAlbum.12.Thumb ))</visible>
 			</control>
 			<control type="image">
 				<left>900</left>
@@ -1543,8 +1543,8 @@
 				<width>150</width>
 				<height>150</height>
 				<aspectratio>stretch</aspectratio>
-				<texture background="true" fallback="DefaultAlbumCover.png">$INFO[Window(home).Property(LatestAlbum.1.Thumb)]</texture>
-				<visible>IsEmpty(Window(home).Property(RandomAlbum.12.Thumb ))</visible>
+				<texture background="true" fallback="DefaultAlbumCover.png">$INFO[Window(Home).Property(LatestAlbum.1.Thumb)]</texture>
+				<visible>IsEmpty(Window(Home).Property(RandomAlbum.12.Thumb ))</visible>
 			</control>
 			<control type="image">
 				<left>1050</left>
@@ -1552,8 +1552,8 @@
 				<width>150</width>
 				<height>150</height>
 				<aspectratio>stretch</aspectratio>
-				<texture background="true" fallback="DefaultAlbumCover.png">$INFO[Window(home).Property(RandomAlbum.16.Thumb )]</texture>
-				<visible>!IsEmpty(Window(home).Property(RandomAlbum.16.Thumb ))</visible>
+				<texture background="true" fallback="DefaultAlbumCover.png">$INFO[Window(Home).Property(RandomAlbum.16.Thumb )]</texture>
+				<visible>!IsEmpty(Window(Home).Property(RandomAlbum.16.Thumb ))</visible>
 			</control>
 			<control type="image">
 				<left>1050</left>
@@ -1561,8 +1561,8 @@
 				<width>150</width>
 				<height>150</height>
 				<aspectratio>stretch</aspectratio>
-				<texture background="true" fallback="DefaultAlbumCover.png">$INFO[Window(home).Property(LatestAlbum.6.Thumb)]</texture>
-				<visible>IsEmpty(Window(home).Property(RandomAlbum.16.Thumb ))</visible>
+				<texture background="true" fallback="DefaultAlbumCover.png">$INFO[Window(Home).Property(LatestAlbum.6.Thumb)]</texture>
+				<visible>IsEmpty(Window(Home).Property(RandomAlbum.16.Thumb ))</visible>
 			</control>
 			<control type="image">
 				<left>1200</left>
@@ -1570,8 +1570,8 @@
 				<width>150</width>
 				<height>150</height>
 				<aspectratio>stretch</aspectratio>
-				<texture background="true" fallback="DefaultAlbumCover.png">$INFO[Window(home).Property(RandomAlbum.8.Thumb )]</texture>
-				<visible>!IsEmpty(Window(home).Property(RandomAlbum.8.Thumb ))</visible>
+				<texture background="true" fallback="DefaultAlbumCover.png">$INFO[Window(Home).Property(RandomAlbum.8.Thumb )]</texture>
+				<visible>!IsEmpty(Window(Home).Property(RandomAlbum.8.Thumb ))</visible>
 			</control>
 			<control type="image">
 				<left>1200</left>
@@ -1579,8 +1579,8 @@
 				<width>150</width>
 				<height>150</height>
 				<aspectratio>stretch</aspectratio>
-				<texture background="true" fallback="DefaultAlbumCover.png">$INFO[Window(home).Property(LatestAlbum.10.Thumb)]</texture>
-				<visible>IsEmpty(Window(home).Property(RandomAlbum.8.Thumb ))</visible>
+				<texture background="true" fallback="DefaultAlbumCover.png">$INFO[Window(Home).Property(LatestAlbum.10.Thumb)]</texture>
+				<visible>IsEmpty(Window(Home).Property(RandomAlbum.8.Thumb ))</visible>
 			</control>
 			<control type="image">
 				<left>0</left>
@@ -1588,8 +1588,8 @@
 				<width>150</width>
 				<height>150</height>
 				<aspectratio>stretch</aspectratio>
-				<texture background="true" fallback="DefaultAlbumCover.png">$INFO[Window(home).Property(RandomAlbum.7.Thumb )]</texture>
-				<visible>!IsEmpty(Window(home).Property(RandomAlbum.7.Thumb ))</visible>
+				<texture background="true" fallback="DefaultAlbumCover.png">$INFO[Window(Home).Property(RandomAlbum.7.Thumb )]</texture>
+				<visible>!IsEmpty(Window(Home).Property(RandomAlbum.7.Thumb ))</visible>
 			</control>
 			<control type="image">
 				<left>0</left>
@@ -1597,8 +1597,8 @@
 				<width>150</width>
 				<height>150</height>
 				<aspectratio>stretch</aspectratio>
-				<texture background="true" fallback="DefaultAlbumCover.png">$INFO[Window(home).Property(LatestAlbum.3.Thumb)]</texture>
-				<visible>IsEmpty(Window(home).Property(RandomAlbum.7.Thumb ))</visible>
+				<texture background="true" fallback="DefaultAlbumCover.png">$INFO[Window(Home).Property(LatestAlbum.3.Thumb)]</texture>
+				<visible>IsEmpty(Window(Home).Property(RandomAlbum.7.Thumb ))</visible>
 			</control>
 			<control type="image">
 				<left>150</left>
@@ -1606,8 +1606,8 @@
 				<width>150</width>
 				<height>150</height>
 				<aspectratio>stretch</aspectratio>
-				<texture background="true" fallback="DefaultAlbumCover.png">$INFO[Window(home).Property(RandomAlbum.13.Thumb )]</texture>
-				<visible>!IsEmpty(Window(home).Property(RandomAlbum.13.Thumb ))</visible>
+				<texture background="true" fallback="DefaultAlbumCover.png">$INFO[Window(Home).Property(RandomAlbum.13.Thumb )]</texture>
+				<visible>!IsEmpty(Window(Home).Property(RandomAlbum.13.Thumb ))</visible>
 			</control>
 			<control type="image">
 				<left>150</left>
@@ -1615,8 +1615,8 @@
 				<width>150</width>
 				<height>150</height>
 				<aspectratio>stretch</aspectratio>
-				<texture background="true" fallback="DefaultAlbumCover.png">$INFO[Window(home).Property(LatestAlbum.7.Thumb)]</texture>
-				<visible>IsEmpty(Window(home).Property(RandomAlbum.13.Thumb ))</visible>
+				<texture background="true" fallback="DefaultAlbumCover.png">$INFO[Window(Home).Property(LatestAlbum.7.Thumb)]</texture>
+				<visible>IsEmpty(Window(Home).Property(RandomAlbum.13.Thumb ))</visible>
 			</control>
 			<control type="image">
 				<left>300</left>
@@ -1624,8 +1624,8 @@
 				<width>150</width>
 				<height>150</height>
 				<aspectratio>stretch</aspectratio>
-				<texture background="true" fallback="DefaultAlbumCover.png">$INFO[Window(home).Property(RandomAlbum.17.Thumb )]</texture>
-				<visible>!IsEmpty(Window(home).Property(RandomAlbum.17.Thumb ))</visible>
+				<texture background="true" fallback="DefaultAlbumCover.png">$INFO[Window(Home).Property(RandomAlbum.17.Thumb )]</texture>
+				<visible>!IsEmpty(Window(Home).Property(RandomAlbum.17.Thumb ))</visible>
 			</control>
 			<control type="image">
 				<left>300</left>
@@ -1633,8 +1633,8 @@
 				<width>150</width>
 				<height>150</height>
 				<aspectratio>stretch</aspectratio>
-				<texture background="true" fallback="DefaultAlbumCover.png">$INFO[Window(home).Property(LatestAlbum.2.Thumb)]</texture>
-				<visible>IsEmpty(Window(home).Property(RandomAlbum.17.Thumb ))</visible>
+				<texture background="true" fallback="DefaultAlbumCover.png">$INFO[Window(Home).Property(LatestAlbum.2.Thumb)]</texture>
+				<visible>IsEmpty(Window(Home).Property(RandomAlbum.17.Thumb ))</visible>
 			</control>
 			<control type="image">
 				<left>450</left>
@@ -1642,8 +1642,8 @@
 				<width>150</width>
 				<height>150</height>
 				<aspectratio>stretch</aspectratio>
-				<texture background="true" fallback="DefaultAlbumCover.png">$INFO[Window(home).Property(RandomAlbum.11.Thumb )]</texture>
-				<visible>!IsEmpty(Window(home).Property(RandomAlbum.11.Thumb ))</visible>
+				<texture background="true" fallback="DefaultAlbumCover.png">$INFO[Window(Home).Property(RandomAlbum.11.Thumb )]</texture>
+				<visible>!IsEmpty(Window(Home).Property(RandomAlbum.11.Thumb ))</visible>
 			</control>
 			<control type="image">
 				<left>450</left>
@@ -1651,8 +1651,8 @@
 				<width>150</width>
 				<height>150</height>
 				<aspectratio>stretch</aspectratio>
-				<texture background="true" fallback="DefaultAlbumCover.png">$INFO[Window(home).Property(LatestAlbum.6.Thumb)]</texture>
-				<visible>IsEmpty(Window(home).Property(RandomAlbum.11.Thumb ))</visible>
+				<texture background="true" fallback="DefaultAlbumCover.png">$INFO[Window(Home).Property(LatestAlbum.6.Thumb)]</texture>
+				<visible>IsEmpty(Window(Home).Property(RandomAlbum.11.Thumb ))</visible>
 			</control>
 			<control type="image">
 				<left>600</left>
@@ -1660,8 +1660,8 @@
 				<width>150</width>
 				<height>150</height>
 				<aspectratio>stretch</aspectratio>
-				<texture background="true" fallback="DefaultAlbumCover.png">$INFO[Window(home).Property(RandomAlbum.3.Thumb )]</texture>
-				<visible>!IsEmpty(Window(home).Property(RandomAlbum.3.Thumb ))</visible>
+				<texture background="true" fallback="DefaultAlbumCover.png">$INFO[Window(Home).Property(RandomAlbum.3.Thumb )]</texture>
+				<visible>!IsEmpty(Window(Home).Property(RandomAlbum.3.Thumb ))</visible>
 			</control>
 			<control type="image">
 				<left>600</left>
@@ -1669,8 +1669,8 @@
 				<width>150</width>
 				<height>150</height>
 				<aspectratio>stretch</aspectratio>
-				<texture background="true" fallback="DefaultAlbumCover.png">$INFO[Window(home).Property(LatestAlbum.1.Thumb)]</texture>
-				<visible>IsEmpty(Window(home).Property(RandomAlbum.3.Thumb ))</visible>
+				<texture background="true" fallback="DefaultAlbumCover.png">$INFO[Window(Home).Property(LatestAlbum.1.Thumb)]</texture>
+				<visible>IsEmpty(Window(Home).Property(RandomAlbum.3.Thumb ))</visible>
 			</control>
 			<control type="image">
 				<left>750</left>
@@ -1678,8 +1678,8 @@
 				<width>150</width>
 				<height>150</height>
 				<aspectratio>stretch</aspectratio>
-				<texture background="true" fallback="DefaultAlbumCover.png">$INFO[Window(home).Property(RandomAlbum.1.Thumb )]</texture>
-				<visible>!IsEmpty(Window(home).Property(RandomAlbum.1.Thumb ))</visible>
+				<texture background="true" fallback="DefaultAlbumCover.png">$INFO[Window(Home).Property(RandomAlbum.1.Thumb )]</texture>
+				<visible>!IsEmpty(Window(Home).Property(RandomAlbum.1.Thumb ))</visible>
 			</control>
 			<control type="image">
 				<left>750</left>
@@ -1687,8 +1687,8 @@
 				<width>150</width>
 				<height>150</height>
 				<aspectratio>stretch</aspectratio>
-				<texture background="true" fallback="DefaultAlbumCover.png">$INFO[Window(home).Property(LatestAlbum.5.Thumb)]</texture>
-				<visible>IsEmpty(Window(home).Property(RandomAlbum.1.Thumb ))</visible>
+				<texture background="true" fallback="DefaultAlbumCover.png">$INFO[Window(Home).Property(LatestAlbum.5.Thumb)]</texture>
+				<visible>IsEmpty(Window(Home).Property(RandomAlbum.1.Thumb ))</visible>
 			</control>
 			<control type="image">
 				<left>900</left>
@@ -1696,8 +1696,8 @@
 				<width>150</width>
 				<height>150</height>
 				<aspectratio>stretch</aspectratio>
-				<texture background="true" fallback="DefaultAlbumCover.png">$INFO[Window(home).Property(RandomAlbum.20.Thumb )]</texture>
-				<visible>!IsEmpty(Window(home).Property(RandomAlbum.20.Thumb ))</visible>
+				<texture background="true" fallback="DefaultAlbumCover.png">$INFO[Window(Home).Property(RandomAlbum.20.Thumb )]</texture>
+				<visible>!IsEmpty(Window(Home).Property(RandomAlbum.20.Thumb ))</visible>
 			</control>
 			<control type="image">
 				<left>900</left>
@@ -1705,8 +1705,8 @@
 				<width>150</width>
 				<height>150</height>
 				<aspectratio>stretch</aspectratio>
-				<texture background="true" fallback="DefaultAlbumCover.png">$INFO[Window(home).Property(LatestAlbum.4.Thumb)]</texture>
-				<visible>IsEmpty(Window(home).Property(RandomAlbum.20.Thumb ))</visible>
+				<texture background="true" fallback="DefaultAlbumCover.png">$INFO[Window(Home).Property(LatestAlbum.4.Thumb)]</texture>
+				<visible>IsEmpty(Window(Home).Property(RandomAlbum.20.Thumb ))</visible>
 			</control>
 			<control type="image">
 				<left>1050</left>
@@ -1714,8 +1714,8 @@
 				<width>150</width>
 				<height>150</height>
 				<aspectratio>stretch</aspectratio>
-				<texture background="true" fallback="DefaultAlbumCover.png">$INFO[Window(home).Property(RandomAlbum.4.Thumb )]</texture>
-				<visible>!IsEmpty(Window(home).Property(RandomAlbum.4.Thumb ))</visible>
+				<texture background="true" fallback="DefaultAlbumCover.png">$INFO[Window(Home).Property(RandomAlbum.4.Thumb )]</texture>
+				<visible>!IsEmpty(Window(Home).Property(RandomAlbum.4.Thumb ))</visible>
 			</control>
 			<control type="image">
 				<left>1050</left>
@@ -1723,8 +1723,8 @@
 				<width>150</width>
 				<height>150</height>
 				<aspectratio>stretch</aspectratio>
-				<texture background="true" fallback="DefaultAlbumCover.png">$INFO[Window(home).Property(LatestAlbum.3.Thumb)]</texture>
-				<visible>IsEmpty(Window(home).Property(RandomAlbum.4.Thumb ))</visible>
+				<texture background="true" fallback="DefaultAlbumCover.png">$INFO[Window(Home).Property(LatestAlbum.3.Thumb)]</texture>
+				<visible>IsEmpty(Window(Home).Property(RandomAlbum.4.Thumb ))</visible>
 			</control>
 			<control type="image">
 				<left>1200</left>
@@ -1732,8 +1732,8 @@
 				<width>150</width>
 				<height>150</height>
 				<aspectratio>stretch</aspectratio>
-				<texture background="true" fallback="DefaultAlbumCover.png">$INFO[Window(home).Property(RandomAlbum.14.Thumb )]</texture>
-				<visible>!IsEmpty(Window(home).Property(RandomAlbum.14.Thumb ))</visible>
+				<texture background="true" fallback="DefaultAlbumCover.png">$INFO[Window(Home).Property(RandomAlbum.14.Thumb )]</texture>
+				<visible>!IsEmpty(Window(Home).Property(RandomAlbum.14.Thumb ))</visible>
 			</control>
 			<control type="image">
 				<left>1200</left>
@@ -1741,8 +1741,8 @@
 				<width>150</width>
 				<height>150</height>
 				<aspectratio>stretch</aspectratio>
-				<texture background="true" fallback="DefaultAlbumCover.png">$INFO[Window(home).Property(LatestAlbum.10.Thumb)]</texture>
-				<visible>IsEmpty(Window(home).Property(RandomAlbum.14.Thumb ))</visible>
+				<texture background="true" fallback="DefaultAlbumCover.png">$INFO[Window(Home).Property(LatestAlbum.10.Thumb)]</texture>
+				<visible>IsEmpty(Window(Home).Property(RandomAlbum.14.Thumb ))</visible>
 			</control>
 			<control type="image">
 				<left>0</left>
@@ -1750,8 +1750,8 @@
 				<width>150</width>
 				<height>150</height>
 				<aspectratio>stretch</aspectratio>
-				<texture background="true" fallback="DefaultAlbumCover.png">$INFO[Window(home).Property(RandomAlbum.6.Thumb )]</texture>
-				<visible>!IsEmpty(Window(home).Property(RandomAlbum.6.Thumb ))</visible>
+				<texture background="true" fallback="DefaultAlbumCover.png">$INFO[Window(Home).Property(RandomAlbum.6.Thumb )]</texture>
+				<visible>!IsEmpty(Window(Home).Property(RandomAlbum.6.Thumb ))</visible>
 			</control>
 			<control type="image">
 				<left>0</left>
@@ -1759,8 +1759,8 @@
 				<width>150</width>
 				<height>150</height>
 				<aspectratio>stretch</aspectratio>
-				<texture background="true" fallback="DefaultAlbumCover.png">$INFO[Window(home).Property(LatestAlbum.7.Thumb)]</texture>
-				<visible>IsEmpty(Window(home).Property(RandomAlbum.6.Thumb ))</visible>
+				<texture background="true" fallback="DefaultAlbumCover.png">$INFO[Window(Home).Property(LatestAlbum.7.Thumb)]</texture>
+				<visible>IsEmpty(Window(Home).Property(RandomAlbum.6.Thumb ))</visible>
 			</control>
 			<control type="image">
 				<left>150</left>
@@ -1768,8 +1768,8 @@
 				<width>150</width>
 				<height>150</height>
 				<aspectratio>stretch</aspectratio>
-				<texture background="true" fallback="DefaultAlbumCover.png">$INFO[Window(home).Property(RandomAlbum.18.Thumb )]</texture>
-				<visible>!IsEmpty(Window(home).Property(RandomAlbum.18.Thumb ))</visible>
+				<texture background="true" fallback="DefaultAlbumCover.png">$INFO[Window(Home).Property(RandomAlbum.18.Thumb )]</texture>
+				<visible>!IsEmpty(Window(Home).Property(RandomAlbum.18.Thumb ))</visible>
 			</control>
 			<control type="image">
 				<left>150</left>
@@ -1777,8 +1777,8 @@
 				<width>150</width>
 				<height>150</height>
 				<aspectratio>stretch</aspectratio>
-				<texture background="true" fallback="DefaultAlbumCover.png">$INFO[Window(home).Property(LatestAlbum.8.Thumb)]</texture>
-				<visible>IsEmpty(Window(home).Property(RandomAlbum.18.Thumb ))</visible>
+				<texture background="true" fallback="DefaultAlbumCover.png">$INFO[Window(Home).Property(LatestAlbum.8.Thumb)]</texture>
+				<visible>IsEmpty(Window(Home).Property(RandomAlbum.18.Thumb ))</visible>
 			</control>
 			<control type="image">
 				<left>300</left>
@@ -1786,8 +1786,8 @@
 				<width>150</width>
 				<height>150</height>
 				<aspectratio>stretch</aspectratio>
-				<texture background="true" fallback="DefaultAlbumCover.png">$INFO[Window(home).Property(RandomAlbum.13.Thumb )]</texture>
-				<visible>!IsEmpty(Window(home).Property(RandomAlbum.13.Thumb ))</visible>
+				<texture background="true" fallback="DefaultAlbumCover.png">$INFO[Window(Home).Property(RandomAlbum.13.Thumb )]</texture>
+				<visible>!IsEmpty(Window(Home).Property(RandomAlbum.13.Thumb ))</visible>
 			</control>
 			<control type="image">
 				<left>300</left>
@@ -1795,8 +1795,8 @@
 				<width>150</width>
 				<height>150</height>
 				<aspectratio>stretch</aspectratio>
-				<texture background="true" fallback="DefaultAlbumCover.png">$INFO[Window(home).Property(LatestAlbum.9.Thumb)]</texture>
-				<visible>IsEmpty(Window(home).Property(RandomAlbum.13.Thumb ))</visible>
+				<texture background="true" fallback="DefaultAlbumCover.png">$INFO[Window(Home).Property(LatestAlbum.9.Thumb)]</texture>
+				<visible>IsEmpty(Window(Home).Property(RandomAlbum.13.Thumb ))</visible>
 			</control>
 			<control type="image">
 				<left>450</left>
@@ -1804,8 +1804,8 @@
 				<width>150</width>
 				<height>150</height>
 				<aspectratio>stretch</aspectratio>
-				<texture background="true" fallback="DefaultAlbumCover.png">$INFO[Window(home).Property(RandomAlbum.9.Thumb )]</texture>
-				<visible>!IsEmpty(Window(home).Property(RandomAlbum.9.Thumb ))</visible>
+				<texture background="true" fallback="DefaultAlbumCover.png">$INFO[Window(Home).Property(RandomAlbum.9.Thumb )]</texture>
+				<visible>!IsEmpty(Window(Home).Property(RandomAlbum.9.Thumb ))</visible>
 			</control>
 			<control type="image">
 				<left>450</left>
@@ -1813,8 +1813,8 @@
 				<width>150</width>
 				<height>150</height>
 				<aspectratio>stretch</aspectratio>
-				<texture background="true" fallback="DefaultAlbumCover.png">$INFO[Window(home).Property(LatestAlbum.5.Thumb)]</texture>
-				<visible>IsEmpty(Window(home).Property(RandomAlbum.9.Thumb ))</visible>
+				<texture background="true" fallback="DefaultAlbumCover.png">$INFO[Window(Home).Property(LatestAlbum.5.Thumb)]</texture>
+				<visible>IsEmpty(Window(Home).Property(RandomAlbum.9.Thumb ))</visible>
 			</control>
 			<control type="image">
 				<left>600</left>
@@ -1822,8 +1822,8 @@
 				<width>150</width>
 				<height>150</height>
 				<aspectratio>stretch</aspectratio>
-				<texture background="true" fallback="DefaultAlbumCover.png">$INFO[Window(home).Property(RandomAlbum.5.Thumb )]</texture>
-				<visible>!IsEmpty(Window(home).Property(RandomAlbum.5.Thumb ))</visible>
+				<texture background="true" fallback="DefaultAlbumCover.png">$INFO[Window(Home).Property(RandomAlbum.5.Thumb )]</texture>
+				<visible>!IsEmpty(Window(Home).Property(RandomAlbum.5.Thumb ))</visible>
 			</control>
 			<control type="image">
 				<left>600</left>
@@ -1831,8 +1831,8 @@
 				<width>150</width>
 				<height>150</height>
 				<aspectratio>stretch</aspectratio>
-				<texture background="true" fallback="DefaultAlbumCover.png">$INFO[Window(home).Property(LatestAlbum.3.Thumb)]</texture>
-				<visible>IsEmpty(Window(home).Property(RandomAlbum.5.Thumb ))</visible>
+				<texture background="true" fallback="DefaultAlbumCover.png">$INFO[Window(Home).Property(LatestAlbum.3.Thumb)]</texture>
+				<visible>IsEmpty(Window(Home).Property(RandomAlbum.5.Thumb ))</visible>
 			</control>
 			<control type="image">
 				<left>750</left>
@@ -1840,8 +1840,8 @@
 				<width>150</width>
 				<height>150</height>
 				<aspectratio>stretch</aspectratio>
-				<texture background="true" fallback="DefaultAlbumCover.png">$INFO[Window(home).Property(RandomAlbum.20.Thumb )]</texture>
-				<visible>!IsEmpty(Window(home).Property(RandomAlbum.20.Thumb ))</visible>
+				<texture background="true" fallback="DefaultAlbumCover.png">$INFO[Window(Home).Property(RandomAlbum.20.Thumb )]</texture>
+				<visible>!IsEmpty(Window(Home).Property(RandomAlbum.20.Thumb ))</visible>
 			</control>
 			<control type="image">
 				<left>750</left>
@@ -1849,8 +1849,8 @@
 				<width>150</width>
 				<height>150</height>
 				<aspectratio>stretch</aspectratio>
-				<texture background="true" fallback="DefaultAlbumCover.png">$INFO[Window(home).Property(LatestAlbum.2.Thumb)]</texture>
-				<visible>IsEmpty(Window(home).Property(RandomAlbum.20.Thumb ))</visible>
+				<texture background="true" fallback="DefaultAlbumCover.png">$INFO[Window(Home).Property(LatestAlbum.2.Thumb)]</texture>
+				<visible>IsEmpty(Window(Home).Property(RandomAlbum.20.Thumb ))</visible>
 			</control>
 			<control type="image">
 				<left>900</left>
@@ -1858,8 +1858,8 @@
 				<width>150</width>
 				<height>150</height>
 				<aspectratio>stretch</aspectratio>
-				<texture background="true" fallback="DefaultAlbumCover.png">$INFO[Window(home).Property(RandomAlbum.17.Thumb )]</texture>
-				<visible>!IsEmpty(Window(home).Property(RandomAlbum.17.Thumb ))</visible>
+				<texture background="true" fallback="DefaultAlbumCover.png">$INFO[Window(Home).Property(RandomAlbum.17.Thumb )]</texture>
+				<visible>!IsEmpty(Window(Home).Property(RandomAlbum.17.Thumb ))</visible>
 			</control>
 			<control type="image">
 				<left>900</left>
@@ -1867,8 +1867,8 @@
 				<width>150</width>
 				<height>150</height>
 				<aspectratio>stretch</aspectratio>
-				<texture background="true" fallback="DefaultAlbumCover.png">$INFO[Window(home).Property(LatestAlbum.10.Thumb)]</texture>
-				<visible>IsEmpty(Window(home).Property(RandomAlbum.17.Thumb ))</visible>
+				<texture background="true" fallback="DefaultAlbumCover.png">$INFO[Window(Home).Property(LatestAlbum.10.Thumb)]</texture>
+				<visible>IsEmpty(Window(Home).Property(RandomAlbum.17.Thumb ))</visible>
 			</control>
 			<control type="image">
 				<left>1050</left>
@@ -1876,8 +1876,8 @@
 				<width>150</width>
 				<height>150</height>
 				<aspectratio>stretch</aspectratio>
-				<texture background="true" fallback="DefaultAlbumCover.png">$INFO[Window(home).Property(RandomAlbum.7.Thumb )]</texture>
-				<visible>!IsEmpty(Window(home).Property(RandomAlbum.7.Thumb ))</visible>
+				<texture background="true" fallback="DefaultAlbumCover.png">$INFO[Window(Home).Property(RandomAlbum.7.Thumb )]</texture>
+				<visible>!IsEmpty(Window(Home).Property(RandomAlbum.7.Thumb ))</visible>
 			</control>
 			<control type="image">
 				<left>1050</left>
@@ -1885,8 +1885,8 @@
 				<width>150</width>
 				<height>150</height>
 				<aspectratio>stretch</aspectratio>
-				<texture background="true" fallback="DefaultAlbumCover.png">$INFO[Window(home).Property(LatestAlbum.9.Thumb)]</texture>
-				<visible>IsEmpty(Window(home).Property(RandomAlbum.7.Thumb ))</visible>
+				<texture background="true" fallback="DefaultAlbumCover.png">$INFO[Window(Home).Property(LatestAlbum.9.Thumb)]</texture>
+				<visible>IsEmpty(Window(Home).Property(RandomAlbum.7.Thumb ))</visible>
 			</control>
 			<control type="image">
 				<left>1200</left>
@@ -1894,8 +1894,8 @@
 				<width>150</width>
 				<height>150</height>
 				<aspectratio>stretch</aspectratio>
-				<texture background="true" fallback="DefaultAlbumCover.png">$INFO[Window(home).Property(RandomAlbum.16.Thumb )]</texture>
-				<visible>!IsEmpty(Window(home).Property(RandomAlbum.16.Thumb ))</visible>
+				<texture background="true" fallback="DefaultAlbumCover.png">$INFO[Window(Home).Property(RandomAlbum.16.Thumb )]</texture>
+				<visible>!IsEmpty(Window(Home).Property(RandomAlbum.16.Thumb ))</visible>
 			</control>
 			<control type="image">
 				<left>1200</left>
@@ -1903,8 +1903,8 @@
 				<width>150</width>
 				<height>150</height>
 				<aspectratio>stretch</aspectratio>
-				<texture background="true" fallback="DefaultAlbumCover.png">$INFO[Window(home).Property(LatestAlbum.8.Thumb)]</texture>
-				<visible>IsEmpty(Window(home).Property(RandomAlbum.16.Thumb ))</visible>
+				<texture background="true" fallback="DefaultAlbumCover.png">$INFO[Window(Home).Property(LatestAlbum.8.Thumb)]</texture>
+				<visible>IsEmpty(Window(Home).Property(RandomAlbum.16.Thumb ))</visible>
 			</control>
 			<control type="image">
 				<left>0</left>
@@ -1912,8 +1912,8 @@
 				<width>150</width>
 				<height>150</height>
 				<aspectratio>stretch</aspectratio>
-				<texture background="true" fallback="DefaultAlbumCover.png">$INFO[Window(home).Property(RandomAlbum.11.Thumb )]</texture>
-				<visible>!IsEmpty(Window(home).Property(RandomAlbum.11.Thumb ))</visible>
+				<texture background="true" fallback="DefaultAlbumCover.png">$INFO[Window(Home).Property(RandomAlbum.11.Thumb )]</texture>
+				<visible>!IsEmpty(Window(Home).Property(RandomAlbum.11.Thumb ))</visible>
 			</control>
 			<control type="image">
 				<left>0</left>
@@ -1921,8 +1921,8 @@
 				<width>150</width>
 				<height>150</height>
 				<aspectratio>stretch</aspectratio>
-				<texture background="true" fallback="DefaultAlbumCover.png">$INFO[Window(home).Property(LatestAlbum.4.Thumb)]</texture>
-				<visible>IsEmpty(Window(home).Property(RandomAlbum.11.Thumb ))</visible>
+				<texture background="true" fallback="DefaultAlbumCover.png">$INFO[Window(Home).Property(LatestAlbum.4.Thumb)]</texture>
+				<visible>IsEmpty(Window(Home).Property(RandomAlbum.11.Thumb ))</visible>
 			</control>
 			<control type="image">
 				<left>150</left>
@@ -1930,8 +1930,8 @@
 				<width>150</width>
 				<height>150</height>
 				<aspectratio>stretch</aspectratio>
-				<texture background="true" fallback="DefaultAlbumCover.png">$INFO[Window(home).Property(RandomAlbum.3.Thumb )]</texture>
-				<visible>!IsEmpty(Window(home).Property(RandomAlbum.3.Thumb ))</visible>
+				<texture background="true" fallback="DefaultAlbumCover.png">$INFO[Window(Home).Property(RandomAlbum.3.Thumb )]</texture>
+				<visible>!IsEmpty(Window(Home).Property(RandomAlbum.3.Thumb ))</visible>
 			</control>
 			<control type="image">
 				<left>150</left>
@@ -1939,8 +1939,8 @@
 				<width>150</width>
 				<height>150</height>
 				<aspectratio>stretch</aspectratio>
-				<texture background="true" fallback="DefaultAlbumCover.png">$INFO[Window(home).Property(LatestAlbum.7.Thumb)]</texture>
-				<visible>IsEmpty(Window(home).Property(RandomAlbum.3.Thumb ))</visible>
+				<texture background="true" fallback="DefaultAlbumCover.png">$INFO[Window(Home).Property(LatestAlbum.7.Thumb)]</texture>
+				<visible>IsEmpty(Window(Home).Property(RandomAlbum.3.Thumb ))</visible>
 			</control>
 			<control type="image">
 				<left>300</left>
@@ -1948,8 +1948,8 @@
 				<width>150</width>
 				<height>150</height>
 				<aspectratio>stretch</aspectratio>
-				<texture background="true" fallback="DefaultAlbumCover.png">$INFO[Window(home).Property(RandomAlbum.12.Thumb )]</texture>
-				<visible>!IsEmpty(Window(home).Property(RandomAlbum.12.Thumb ))</visible>
+				<texture background="true" fallback="DefaultAlbumCover.png">$INFO[Window(Home).Property(RandomAlbum.12.Thumb )]</texture>
+				<visible>!IsEmpty(Window(Home).Property(RandomAlbum.12.Thumb ))</visible>
 			</control>
 			<control type="image">
 				<left>300</left>
@@ -1957,8 +1957,8 @@
 				<width>150</width>
 				<height>150</height>
 				<aspectratio>stretch</aspectratio>
-				<texture background="true" fallback="DefaultAlbumCover.png">$INFO[Window(home).Property(LatestAlbum.1.Thumb)]</texture>
-				<visible>IsEmpty(Window(home).Property(RandomAlbum.12.Thumb ))</visible>
+				<texture background="true" fallback="DefaultAlbumCover.png">$INFO[Window(Home).Property(LatestAlbum.1.Thumb)]</texture>
+				<visible>IsEmpty(Window(Home).Property(RandomAlbum.12.Thumb ))</visible>
 			</control>
 			<control type="image">
 				<left>450</left>
@@ -1966,8 +1966,8 @@
 				<width>150</width>
 				<height>150</height>
 				<aspectratio>stretch</aspectratio>
-				<texture background="true" fallback="DefaultAlbumCover.png">$INFO[Window(home).Property(RandomAlbum.2.Thumb )]</texture>
-				<visible>!IsEmpty(Window(home).Property(RandomAlbum.2.Thumb ))</visible>
+				<texture background="true" fallback="DefaultAlbumCover.png">$INFO[Window(Home).Property(RandomAlbum.2.Thumb )]</texture>
+				<visible>!IsEmpty(Window(Home).Property(RandomAlbum.2.Thumb ))</visible>
 			</control>
 			<control type="image">
 				<left>450</left>
@@ -1975,8 +1975,8 @@
 				<width>150</width>
 				<height>150</height>
 				<aspectratio>stretch</aspectratio>
-				<texture background="true" fallback="DefaultAlbumCover.png">$INFO[Window(home).Property(LatestAlbum.6.Thumb)]</texture>
-				<visible>IsEmpty(Window(home).Property(RandomAlbum.2.Thumb ))</visible>
+				<texture background="true" fallback="DefaultAlbumCover.png">$INFO[Window(Home).Property(LatestAlbum.6.Thumb)]</texture>
+				<visible>IsEmpty(Window(Home).Property(RandomAlbum.2.Thumb ))</visible>
 			</control>
 			<control type="image">
 				<left>600</left>
@@ -1984,8 +1984,8 @@
 				<width>150</width>
 				<height>150</height>
 				<aspectratio>stretch</aspectratio>
-				<texture background="true" fallback="DefaultAlbumCover.png">$INFO[Window(home).Property(RandomAlbum.1.Thumb )]</texture>
-				<visible>!IsEmpty(Window(home).Property(RandomAlbum.1.Thumb ))</visible>
+				<texture background="true" fallback="DefaultAlbumCover.png">$INFO[Window(Home).Property(RandomAlbum.1.Thumb )]</texture>
+				<visible>!IsEmpty(Window(Home).Property(RandomAlbum.1.Thumb ))</visible>
 			</control>
 			<control type="image">
 				<left>600</left>
@@ -1993,8 +1993,8 @@
 				<width>150</width>
 				<height>150</height>
 				<aspectratio>stretch</aspectratio>
-				<texture background="true" fallback="DefaultAlbumCover.png">$INFO[Window(home).Property(LatestAlbum.8.Thumb)]</texture>
-				<visible>IsEmpty(Window(home).Property(RandomAlbum.1.Thumb ))</visible>
+				<texture background="true" fallback="DefaultAlbumCover.png">$INFO[Window(Home).Property(LatestAlbum.8.Thumb)]</texture>
+				<visible>IsEmpty(Window(Home).Property(RandomAlbum.1.Thumb ))</visible>
 			</control>
 			<control type="image">
 				<left>750</left>
@@ -2002,8 +2002,8 @@
 				<width>150</width>
 				<height>150</height>
 				<aspectratio>stretch</aspectratio>
-				<texture background="true" fallback="DefaultAlbumCover.png">$INFO[Window(home).Property(RandomAlbum.10.Thumb )]</texture>
-				<visible>!IsEmpty(Window(home).Property(RandomAlbum.10.Thumb ))</visible>
+				<texture background="true" fallback="DefaultAlbumCover.png">$INFO[Window(Home).Property(RandomAlbum.10.Thumb )]</texture>
+				<visible>!IsEmpty(Window(Home).Property(RandomAlbum.10.Thumb ))</visible>
 			</control>
 			<control type="image">
 				<left>750</left>
@@ -2011,8 +2011,8 @@
 				<width>150</width>
 				<height>150</height>
 				<aspectratio>stretch</aspectratio>
-				<texture background="true" fallback="DefaultAlbumCover.png">$INFO[Window(home).Property(LatestAlbum.7.Thumb)]</texture>
-				<visible>IsEmpty(Window(home).Property(RandomAlbum.10.Thumb ))</visible>
+				<texture background="true" fallback="DefaultAlbumCover.png">$INFO[Window(Home).Property(LatestAlbum.7.Thumb)]</texture>
+				<visible>IsEmpty(Window(Home).Property(RandomAlbum.10.Thumb ))</visible>
 			</control>
 			<control type="image">
 				<left>900</left>
@@ -2020,8 +2020,8 @@
 				<width>150</width>
 				<height>150</height>
 				<aspectratio>stretch</aspectratio>
-				<texture background="true" fallback="DefaultAlbumCover.png">$INFO[Window(home).Property(RandomAlbum.18.Thumb )]</texture>
-				<visible>!IsEmpty(Window(home).Property(RandomAlbum.18.Thumb ))</visible>
+				<texture background="true" fallback="DefaultAlbumCover.png">$INFO[Window(Home).Property(RandomAlbum.18.Thumb )]</texture>
+				<visible>!IsEmpty(Window(Home).Property(RandomAlbum.18.Thumb ))</visible>
 			</control>
 			<control type="image">
 				<left>900</left>
@@ -2029,8 +2029,8 @@
 				<width>150</width>
 				<height>150</height>
 				<aspectratio>stretch</aspectratio>
-				<texture background="true" fallback="DefaultAlbumCover.png">$INFO[Window(home).Property(LatestAlbum.9.Thumb)]</texture>
-				<visible>IsEmpty(Window(home).Property(RandomAlbum.18.Thumb ))</visible>
+				<texture background="true" fallback="DefaultAlbumCover.png">$INFO[Window(Home).Property(LatestAlbum.9.Thumb)]</texture>
+				<visible>IsEmpty(Window(Home).Property(RandomAlbum.18.Thumb ))</visible>
 			</control>
 			<control type="image">
 				<left>1050</left>
@@ -2038,8 +2038,8 @@
 				<width>150</width>
 				<height>150</height>
 				<aspectratio>stretch</aspectratio>
-				<texture background="true" fallback="DefaultAlbumCover.png">$INFO[Window(home).Property(RandomAlbum.6.Thumb )]</texture>
-				<visible>!IsEmpty(Window(home).Property(RandomAlbum.6.Thumb ))</visible>
+				<texture background="true" fallback="DefaultAlbumCover.png">$INFO[Window(Home).Property(RandomAlbum.6.Thumb )]</texture>
+				<visible>!IsEmpty(Window(Home).Property(RandomAlbum.6.Thumb ))</visible>
 			</control>
 			<control type="image">
 				<left>1050</left>
@@ -2047,8 +2047,8 @@
 				<width>150</width>
 				<height>150</height>
 				<aspectratio>stretch</aspectratio>
-				<texture background="true" fallback="DefaultAlbumCover.png">$INFO[Window(home).Property(LatestAlbum.2.Thumb)]</texture>
-				<visible>IsEmpty(Window(home).Property(RandomAlbum.6.Thumb ))</visible>
+				<texture background="true" fallback="DefaultAlbumCover.png">$INFO[Window(Home).Property(LatestAlbum.2.Thumb)]</texture>
+				<visible>IsEmpty(Window(Home).Property(RandomAlbum.6.Thumb ))</visible>
 			</control>
 			<control type="image">
 				<left>1200</left>
@@ -2056,8 +2056,8 @@
 				<width>150</width>
 				<height>150</height>
 				<aspectratio>stretch</aspectratio>
-				<texture background="true" fallback="DefaultAlbumCover.png">$INFO[Window(home).Property(RandomAlbum.19.Thumb )]</texture>
-				<visible>!IsEmpty(Window(home).Property(RandomAlbum.19.Thumb ))</visible>
+				<texture background="true" fallback="DefaultAlbumCover.png">$INFO[Window(Home).Property(RandomAlbum.19.Thumb )]</texture>
+				<visible>!IsEmpty(Window(Home).Property(RandomAlbum.19.Thumb ))</visible>
 			</control>
 			<control type="image">
 				<left>1200</left>
@@ -2065,8 +2065,8 @@
 				<width>150</width>
 				<height>150</height>
 				<aspectratio>stretch</aspectratio>
-				<texture background="true" fallback="DefaultAlbumCover.png">$INFO[Window(home).Property(LatestAlbum.10.Thumb)]</texture>
-				<visible>IsEmpty(Window(home).Property(RandomAlbum.19.Thumb ))</visible>
+				<texture background="true" fallback="DefaultAlbumCover.png">$INFO[Window(Home).Property(LatestAlbum.10.Thumb)]</texture>
+				<visible>IsEmpty(Window(Home).Property(RandomAlbum.19.Thumb ))</visible>
 			</control>
 			<control type="image">
 				<left>0</left>
@@ -2074,8 +2074,8 @@
 				<width>150</width>
 				<height>150</height>
 				<aspectratio>stretch</aspectratio>
-				<texture background="true" fallback="DefaultAlbumCover.png">$INFO[Window(home).Property(RandomAlbum.14.Thumb )]</texture>
-				<visible>!IsEmpty(Window(home).Property(RandomAlbum.14.Thumb ))</visible>
+				<texture background="true" fallback="DefaultAlbumCover.png">$INFO[Window(Home).Property(RandomAlbum.14.Thumb )]</texture>
+				<visible>!IsEmpty(Window(Home).Property(RandomAlbum.14.Thumb ))</visible>
 			</control>
 			<control type="image">
 				<left>0</left>
@@ -2083,8 +2083,8 @@
 				<width>150</width>
 				<height>150</height>
 				<aspectratio>stretch</aspectratio>
-				<texture background="true" fallback="DefaultAlbumCover.png">$INFO[Window(home).Property(LatestAlbum.3.Thumb)]</texture>
-				<visible>IsEmpty(Window(home).Property(RandomAlbum.14.Thumb ))</visible>
+				<texture background="true" fallback="DefaultAlbumCover.png">$INFO[Window(Home).Property(LatestAlbum.3.Thumb)]</texture>
+				<visible>IsEmpty(Window(Home).Property(RandomAlbum.14.Thumb ))</visible>
 			</control>
 			<control type="image">
 				<left>150</left>
@@ -2092,8 +2092,8 @@
 				<width>150</width>
 				<height>150</height>
 				<aspectratio>stretch</aspectratio>
-				<texture background="true" fallback="DefaultAlbumCover.png">$INFO[Window(home).Property(RandomAlbum.15.Thumb )]</texture>
-				<visible>!IsEmpty(Window(home).Property(RandomAlbum.15.Thumb ))</visible>
+				<texture background="true" fallback="DefaultAlbumCover.png">$INFO[Window(Home).Property(RandomAlbum.15.Thumb )]</texture>
+				<visible>!IsEmpty(Window(Home).Property(RandomAlbum.15.Thumb ))</visible>
 			</control>
 			<control type="image">
 				<left>150</left>
@@ -2101,8 +2101,8 @@
 				<width>150</width>
 				<height>150</height>
 				<aspectratio>stretch</aspectratio>
-				<texture background="true" fallback="DefaultAlbumCover.png">$INFO[Window(home).Property(LatestAlbum.5.Thumb)]</texture>
-				<visible>IsEmpty(Window(home).Property(RandomAlbum.15.Thumb ))</visible>
+				<texture background="true" fallback="DefaultAlbumCover.png">$INFO[Window(Home).Property(LatestAlbum.5.Thumb)]</texture>
+				<visible>IsEmpty(Window(Home).Property(RandomAlbum.15.Thumb ))</visible>
 			</control>
 			<control type="image">
 				<left>300</left>
@@ -2110,8 +2110,8 @@
 				<width>150</width>
 				<height>150</height>
 				<aspectratio>stretch</aspectratio>
-				<texture background="true" fallback="DefaultAlbumCover.png">$INFO[Window(home).Property(RandomAlbum.8.Thumb )]</texture>
-				<visible>!IsEmpty(Window(home).Property(RandomAlbum.8.Thumb ))</visible>
+				<texture background="true" fallback="DefaultAlbumCover.png">$INFO[Window(Home).Property(RandomAlbum.8.Thumb )]</texture>
+				<visible>!IsEmpty(Window(Home).Property(RandomAlbum.8.Thumb ))</visible>
 			</control>
 			<control type="image">
 				<left>300</left>
@@ -2119,8 +2119,8 @@
 				<width>150</width>
 				<height>150</height>
 				<aspectratio>stretch</aspectratio>
-				<texture background="true" fallback="DefaultAlbumCover.png">$INFO[Window(home).Property(LatestAlbum.8.Thumb)]</texture>
-				<visible>IsEmpty(Window(home).Property(RandomAlbum.8.Thumb ))</visible>
+				<texture background="true" fallback="DefaultAlbumCover.png">$INFO[Window(Home).Property(LatestAlbum.8.Thumb)]</texture>
+				<visible>IsEmpty(Window(Home).Property(RandomAlbum.8.Thumb ))</visible>
 			</control>
 			<control type="image">
 				<left>450</left>
@@ -2128,8 +2128,8 @@
 				<width>150</width>
 				<height>150</height>
 				<aspectratio>stretch</aspectratio>
-				<texture background="true" fallback="DefaultAlbumCover.png">$INFO[Window(home).Property(RandomAlbum.4.Thumb )]</texture>
-				<visible>!IsEmpty(Window(home).Property(RandomAlbum.4.Thumb ))</visible>
+				<texture background="true" fallback="DefaultAlbumCover.png">$INFO[Window(Home).Property(RandomAlbum.4.Thumb )]</texture>
+				<visible>!IsEmpty(Window(Home).Property(RandomAlbum.4.Thumb ))</visible>
 			</control>
 			<control type="image">
 				<left>450</left>
@@ -2137,8 +2137,8 @@
 				<width>150</width>
 				<height>150</height>
 				<aspectratio>stretch</aspectratio>
-				<texture background="true" fallback="DefaultAlbumCover.png">$INFO[Window(home).Property(LatestAlbum.1.Thumb)]</texture>
-				<visible>IsEmpty(Window(home).Property(RandomAlbum.4.Thumb ))</visible>
+				<texture background="true" fallback="DefaultAlbumCover.png">$INFO[Window(Home).Property(LatestAlbum.1.Thumb)]</texture>
+				<visible>IsEmpty(Window(Home).Property(RandomAlbum.4.Thumb ))</visible>
 			</control>
 			<control type="image">
 				<left>600</left>
@@ -2146,8 +2146,8 @@
 				<width>150</width>
 				<height>150</height>
 				<aspectratio>stretch</aspectratio>
-				<texture background="true" fallback="DefaultAlbumCover.png">$INFO[Window(home).Property(RandomAlbum.6.Thumb )]</texture>
-				<visible>!IsEmpty(Window(home).Property(RandomAlbum.6.Thumb ))</visible>
+				<texture background="true" fallback="DefaultAlbumCover.png">$INFO[Window(Home).Property(RandomAlbum.6.Thumb )]</texture>
+				<visible>!IsEmpty(Window(Home).Property(RandomAlbum.6.Thumb ))</visible>
 			</control>
 			<control type="image">
 				<left>600</left>
@@ -2155,8 +2155,8 @@
 				<width>150</width>
 				<height>150</height>
 				<aspectratio>stretch</aspectratio>
-				<texture background="true" fallback="DefaultAlbumCover.png">$INFO[Window(home).Property(LatestAlbum.4.Thumb)]</texture>
-				<visible>IsEmpty(Window(home).Property(RandomAlbum.6.Thumb ))</visible>
+				<texture background="true" fallback="DefaultAlbumCover.png">$INFO[Window(Home).Property(LatestAlbum.4.Thumb)]</texture>
+				<visible>IsEmpty(Window(Home).Property(RandomAlbum.6.Thumb ))</visible>
 			</control>
 			<control type="image">
 				<left>750</left>
@@ -2164,8 +2164,8 @@
 				<width>150</width>
 				<height>150</height>
 				<aspectratio>stretch</aspectratio>
-				<texture background="true" fallback="DefaultAlbumCover.png">$INFO[Window(home).Property(RandomAlbum.3.Thumb )]</texture>
-				<visible>!IsEmpty(Window(home).Property(RandomAlbum.3.Thumb ))</visible>
+				<texture background="true" fallback="DefaultAlbumCover.png">$INFO[Window(Home).Property(RandomAlbum.3.Thumb )]</texture>
+				<visible>!IsEmpty(Window(Home).Property(RandomAlbum.3.Thumb ))</visible>
 			</control>
 			<control type="image">
 				<left>750</left>
@@ -2173,8 +2173,8 @@
 				<width>150</width>
 				<height>150</height>
 				<aspectratio>stretch</aspectratio>
-				<texture background="true" fallback="DefaultAlbumCover.png">$INFO[Window(home).Property(LatestAlbum.5.Thumb)]</texture>
-				<visible>IsEmpty(Window(home).Property(RandomAlbum.3.Thumb ))</visible>
+				<texture background="true" fallback="DefaultAlbumCover.png">$INFO[Window(Home).Property(LatestAlbum.5.Thumb)]</texture>
+				<visible>IsEmpty(Window(Home).Property(RandomAlbum.3.Thumb ))</visible>
 			</control>
 			<control type="image">
 				<left>900</left>
@@ -2182,8 +2182,8 @@
 				<width>150</width>
 				<height>150</height>
 				<aspectratio>stretch</aspectratio>
-				<texture background="true" fallback="DefaultAlbumCover.png">$INFO[Window(home).Property(RandomAlbum.1.Thumb )]</texture>
-				<visible>!IsEmpty(Window(home).Property(RandomAlbum.1.Thumb ))</visible>
+				<texture background="true" fallback="DefaultAlbumCover.png">$INFO[Window(Home).Property(RandomAlbum.1.Thumb )]</texture>
+				<visible>!IsEmpty(Window(Home).Property(RandomAlbum.1.Thumb ))</visible>
 			</control>
 			<control type="image">
 				<left>900</left>
@@ -2191,8 +2191,8 @@
 				<width>150</width>
 				<height>150</height>
 				<aspectratio>stretch</aspectratio>
-				<texture background="true" fallback="DefaultAlbumCover.png">$INFO[Window(home).Property(LatestAlbum.7.Thumb)]</texture>
-				<visible>IsEmpty(Window(home).Property(RandomAlbum.1.Thumb ))</visible>
+				<texture background="true" fallback="DefaultAlbumCover.png">$INFO[Window(Home).Property(LatestAlbum.7.Thumb)]</texture>
+				<visible>IsEmpty(Window(Home).Property(RandomAlbum.1.Thumb ))</visible>
 			</control>
 			<control type="image">
 				<left>1050</left>
@@ -2200,8 +2200,8 @@
 				<width>150</width>
 				<height>150</height>
 				<aspectratio>stretch</aspectratio>
-				<texture background="true" fallback="DefaultAlbumCover.png">$INFO[Window(home).Property(RandomAlbum.10.Thumb )]</texture>
-				<visible>!IsEmpty(Window(home).Property(RandomAlbum.10.Thumb ))</visible>
+				<texture background="true" fallback="DefaultAlbumCover.png">$INFO[Window(Home).Property(RandomAlbum.10.Thumb )]</texture>
+				<visible>!IsEmpty(Window(Home).Property(RandomAlbum.10.Thumb ))</visible>
 			</control>
 			<control type="image">
 				<left>1050</left>
@@ -2209,8 +2209,8 @@
 				<width>150</width>
 				<height>150</height>
 				<aspectratio>stretch</aspectratio>
-				<texture background="true" fallback="DefaultAlbumCover.png">$INFO[Window(home).Property(LatestAlbum.10.Thumb)]</texture>
-				<visible>IsEmpty(Window(home).Property(RandomAlbum.10.Thumb ))</visible>
+				<texture background="true" fallback="DefaultAlbumCover.png">$INFO[Window(Home).Property(LatestAlbum.10.Thumb)]</texture>
+				<visible>IsEmpty(Window(Home).Property(RandomAlbum.10.Thumb ))</visible>
 			</control>
 			<control type="image">
 				<left>1200</left>
@@ -2218,8 +2218,8 @@
 				<width>150</width>
 				<height>150</height>
 				<aspectratio>stretch</aspectratio>
-				<texture background="true" fallback="DefaultAlbumCover.png">$INFO[Window(home).Property(RandomAlbum.16.Thumb )]</texture>
-				<visible>!IsEmpty(Window(home).Property(RandomAlbum.16.Thumb ))</visible>
+				<texture background="true" fallback="DefaultAlbumCover.png">$INFO[Window(Home).Property(RandomAlbum.16.Thumb )]</texture>
+				<visible>!IsEmpty(Window(Home).Property(RandomAlbum.16.Thumb ))</visible>
 			</control>
 			<control type="image">
 				<left>1200</left>
@@ -2227,8 +2227,8 @@
 				<width>150</width>
 				<height>150</height>
 				<aspectratio>stretch</aspectratio>
-				<texture background="true" fallback="DefaultAlbumCover.png">$INFO[Window(home).Property(LatestAlbum.9.Thumb)]</texture>
-				<visible>IsEmpty(Window(home).Property(RandomAlbum.16.Thumb ))</visible>
+				<texture background="true" fallback="DefaultAlbumCover.png">$INFO[Window(Home).Property(LatestAlbum.9.Thumb)]</texture>
+				<visible>IsEmpty(Window(Home).Property(RandomAlbum.16.Thumb ))</visible>
 			</control>
 		</control>
 		<control type="group">
@@ -2243,9 +2243,9 @@
 				<width>150</width>
 				<height>150</height>
 				<aspectratio>stretch</aspectratio>
-				<texture background="true" fallback="DefaultAlbumCover.png">$INFO[Window(home).Property(RandomAlbum.2.Thumb )]</texture>
+				<texture background="true" fallback="DefaultAlbumCover.png">$INFO[Window(Home).Property(RandomAlbum.2.Thumb )]</texture>
 				<colordiffuse>AAFFFFFF</colordiffuse>
-				<visible>!IsEmpty(Window(home).Property(RandomAlbum.2.Thumb ))</visible>
+				<visible>!IsEmpty(Window(Home).Property(RandomAlbum.2.Thumb ))</visible>
 			</control>
 			<control type="image">
 				<left>0</left>
@@ -2253,9 +2253,9 @@
 				<width>150</width>
 				<height>150</height>
 				<aspectratio>stretch</aspectratio>
-				<texture background="true" fallback="DefaultAlbumCover.png">$INFO[Window(home).Property(LatestAlbum.9.Thumb)]</texture>
+				<texture background="true" fallback="DefaultAlbumCover.png">$INFO[Window(Home).Property(LatestAlbum.9.Thumb)]</texture>
 				<colordiffuse>AAFFFFFF</colordiffuse>
-				<visible>IsEmpty(Window(home).Property(RandomAlbum.2.Thumb ))</visible>
+				<visible>IsEmpty(Window(Home).Property(RandomAlbum.2.Thumb ))</visible>
 			</control>
 			<control type="image">
 				<left>150</left>
@@ -2263,9 +2263,9 @@
 				<width>150</width>
 				<height>150</height>
 				<aspectratio>stretch</aspectratio>
-				<texture background="true" fallback="DefaultAlbumCover.png">$INFO[Window(home).Property(RandomAlbum.15.Thumb )]</texture>
+				<texture background="true" fallback="DefaultAlbumCover.png">$INFO[Window(Home).Property(RandomAlbum.15.Thumb )]</texture>
 				<colordiffuse>AAFFFFFF</colordiffuse>
-				<visible>!IsEmpty(Window(home).Property(RandomAlbum.15.Thumb ))</visible>
+				<visible>!IsEmpty(Window(Home).Property(RandomAlbum.15.Thumb ))</visible>
 			</control>
 			<control type="image">
 				<left>150</left>
@@ -2273,9 +2273,9 @@
 				<width>150</width>
 				<height>150</height>
 				<aspectratio>stretch</aspectratio>
-				<texture background="true" fallback="DefaultAlbumCover.png">$INFO[Window(home).Property(LatestAlbum.4.Thumb)]</texture>
+				<texture background="true" fallback="DefaultAlbumCover.png">$INFO[Window(Home).Property(LatestAlbum.4.Thumb)]</texture>
 				<colordiffuse>AAFFFFFF</colordiffuse>
-				<visible>IsEmpty(Window(home).Property(RandomAlbum.15.Thumb ))</visible>
+				<visible>IsEmpty(Window(Home).Property(RandomAlbum.15.Thumb ))</visible>
 			</control>
 			<control type="image">
 				<left>300</left>
@@ -2283,9 +2283,9 @@
 				<width>150</width>
 				<height>150</height>
 				<aspectratio>stretch</aspectratio>
-				<texture background="true" fallback="DefaultAlbumCover.png">$INFO[Window(home).Property(RandomAlbum.10.Thumb )]</texture>
+				<texture background="true" fallback="DefaultAlbumCover.png">$INFO[Window(Home).Property(RandomAlbum.10.Thumb )]</texture>
 				<colordiffuse>AAFFFFFF</colordiffuse>
-				<visible>!IsEmpty(Window(home).Property(RandomAlbum.10.Thumb ))</visible>
+				<visible>!IsEmpty(Window(Home).Property(RandomAlbum.10.Thumb ))</visible>
 			</control>
 			<control type="image">
 				<left>300</left>
@@ -2293,9 +2293,9 @@
 				<width>150</width>
 				<height>150</height>
 				<aspectratio>stretch</aspectratio>
-				<texture background="true" fallback="DefaultAlbumCover.png">$INFO[Window(home).Property(LatestAlbum.4.Thumb)]</texture>
+				<texture background="true" fallback="DefaultAlbumCover.png">$INFO[Window(Home).Property(LatestAlbum.4.Thumb)]</texture>
 				<colordiffuse>AAFFFFFF</colordiffuse>
-				<visible>IsEmpty(Window(home).Property(RandomAlbum.10.Thumb ))</visible>
+				<visible>IsEmpty(Window(Home).Property(RandomAlbum.10.Thumb ))</visible>
 			</control>
 			<control type="image">
 				<left>450</left>
@@ -2303,9 +2303,9 @@
 				<width>150</width>
 				<height>150</height>
 				<aspectratio>stretch</aspectratio>
-				<texture background="true" fallback="DefaultAlbumCover.png">$INFO[Window(home).Property(RandomAlbum.9.Thumb )]</texture>
+				<texture background="true" fallback="DefaultAlbumCover.png">$INFO[Window(Home).Property(RandomAlbum.9.Thumb )]</texture>
 				<colordiffuse>AAFFFFFF</colordiffuse>
-				<visible>!IsEmpty(Window(home).Property(RandomAlbum.9.Thumb ))</visible>
+				<visible>!IsEmpty(Window(Home).Property(RandomAlbum.9.Thumb ))</visible>
 			</control>
 			<control type="image">
 				<left>450</left>
@@ -2313,9 +2313,9 @@
 				<width>150</width>
 				<height>150</height>
 				<aspectratio>stretch</aspectratio>
-				<texture background="true" fallback="DefaultAlbumCover.png">$INFO[Window(home).Property(LatestAlbum.2.Thumb)]</texture>
+				<texture background="true" fallback="DefaultAlbumCover.png">$INFO[Window(Home).Property(LatestAlbum.2.Thumb)]</texture>
 				<colordiffuse>AAFFFFFF</colordiffuse>
-				<visible>IsEmpty(Window(home).Property(RandomAlbum.9.Thumb ))</visible>
+				<visible>IsEmpty(Window(Home).Property(RandomAlbum.9.Thumb ))</visible>
 			</control>
 			<control type="image">
 				<left>600</left>
@@ -2323,9 +2323,9 @@
 				<width>150</width>
 				<height>150</height>
 				<aspectratio>stretch</aspectratio>
-				<texture background="true" fallback="DefaultAlbumCover.png">$INFO[Window(home).Property(RandomAlbum.5.Thumb )]</texture>
+				<texture background="true" fallback="DefaultAlbumCover.png">$INFO[Window(Home).Property(RandomAlbum.5.Thumb )]</texture>
 				<colordiffuse>AAFFFFFF</colordiffuse>
-				<visible>!IsEmpty(Window(home).Property(RandomAlbum.5.Thumb ))</visible>
+				<visible>!IsEmpty(Window(Home).Property(RandomAlbum.5.Thumb ))</visible>
 			</control>
 			<control type="image">
 				<left>600</left>
@@ -2333,9 +2333,9 @@
 				<width>150</width>
 				<height>150</height>
 				<aspectratio>stretch</aspectratio>
-				<texture background="true" fallback="DefaultAlbumCover.png">$INFO[Window(home).Property(LatestAlbum.5.Thumb)]</texture>
+				<texture background="true" fallback="DefaultAlbumCover.png">$INFO[Window(Home).Property(LatestAlbum.5.Thumb)]</texture>
 				<colordiffuse>AAFFFFFF</colordiffuse>
-				<visible>IsEmpty(Window(home).Property(RandomAlbum.5.Thumb ))</visible>
+				<visible>IsEmpty(Window(Home).Property(RandomAlbum.5.Thumb ))</visible>
 			</control>
 			<control type="image">
 				<left>750</left>
@@ -2343,9 +2343,9 @@
 				<width>150</width>
 				<height>150</height>
 				<aspectratio>stretch</aspectratio>
-				<texture background="true" fallback="DefaultAlbumCover.png">$INFO[Window(home).Property(RandomAlbum.19.Thumb )]</texture>
+				<texture background="true" fallback="DefaultAlbumCover.png">$INFO[Window(Home).Property(RandomAlbum.19.Thumb )]</texture>
 				<colordiffuse>AAFFFFFF</colordiffuse>
-				<visible>!IsEmpty(Window(home).Property(RandomAlbum.19.Thumb ))</visible>
+				<visible>!IsEmpty(Window(Home).Property(RandomAlbum.19.Thumb ))</visible>
 			</control>
 			<control type="image">
 				<left>750</left>
@@ -2353,9 +2353,9 @@
 				<width>150</width>
 				<height>150</height>
 				<aspectratio>stretch</aspectratio>
-				<texture background="true" fallback="DefaultAlbumCover.png">$INFO[Window(home).Property(LatestAlbum.8.Thumb)]</texture>
+				<texture background="true" fallback="DefaultAlbumCover.png">$INFO[Window(Home).Property(LatestAlbum.8.Thumb)]</texture>
 				<colordiffuse>AAFFFFFF</colordiffuse>
-				<visible>IsEmpty(Window(home).Property(RandomAlbum.19.Thumb ))</visible>
+				<visible>IsEmpty(Window(Home).Property(RandomAlbum.19.Thumb ))</visible>
 			</control>
 			<control type="image">
 				<left>900</left>
@@ -2363,9 +2363,9 @@
 				<width>150</width>
 				<height>150</height>
 				<aspectratio>stretch</aspectratio>
-				<texture background="true" fallback="DefaultAlbumCover.png">$INFO[Window(home).Property(RandomAlbum.12.Thumb )]</texture>
+				<texture background="true" fallback="DefaultAlbumCover.png">$INFO[Window(Home).Property(RandomAlbum.12.Thumb )]</texture>
 				<colordiffuse>AAFFFFFF</colordiffuse>
-				<visible>!IsEmpty(Window(home).Property(RandomAlbum.12.Thumb ))</visible>
+				<visible>!IsEmpty(Window(Home).Property(RandomAlbum.12.Thumb ))</visible>
 			</control>
 			<control type="image">
 				<left>900</left>
@@ -2373,9 +2373,9 @@
 				<width>150</width>
 				<height>150</height>
 				<aspectratio>stretch</aspectratio>
-				<texture background="true" fallback="DefaultAlbumCover.png">$INFO[Window(home).Property(LatestAlbum.1.Thumb)]</texture>
+				<texture background="true" fallback="DefaultAlbumCover.png">$INFO[Window(Home).Property(LatestAlbum.1.Thumb)]</texture>
 				<colordiffuse>AAFFFFFF</colordiffuse>
-				<visible>IsEmpty(Window(home).Property(RandomAlbum.12.Thumb ))</visible>
+				<visible>IsEmpty(Window(Home).Property(RandomAlbum.12.Thumb ))</visible>
 			</control>
 			<control type="image">
 				<left>1050</left>
@@ -2383,9 +2383,9 @@
 				<width>150</width>
 				<height>150</height>
 				<aspectratio>stretch</aspectratio>
-				<texture background="true" fallback="DefaultAlbumCover.png">$INFO[Window(home).Property(RandomAlbum.16.Thumb )]</texture>
+				<texture background="true" fallback="DefaultAlbumCover.png">$INFO[Window(Home).Property(RandomAlbum.16.Thumb )]</texture>
 				<colordiffuse>AAFFFFFF</colordiffuse>
-				<visible>!IsEmpty(Window(home).Property(RandomAlbum.16.Thumb ))</visible>
+				<visible>!IsEmpty(Window(Home).Property(RandomAlbum.16.Thumb ))</visible>
 			</control>
 			<control type="image">
 				<left>1050</left>
@@ -2393,9 +2393,9 @@
 				<width>150</width>
 				<height>150</height>
 				<aspectratio>stretch</aspectratio>
-				<texture background="true" fallback="DefaultAlbumCover.png">$INFO[Window(home).Property(LatestAlbum.6.Thumb)]</texture>
+				<texture background="true" fallback="DefaultAlbumCover.png">$INFO[Window(Home).Property(LatestAlbum.6.Thumb)]</texture>
 				<colordiffuse>AAFFFFFF</colordiffuse>
-				<visible>IsEmpty(Window(home).Property(RandomAlbum.16.Thumb ))</visible>
+				<visible>IsEmpty(Window(Home).Property(RandomAlbum.16.Thumb ))</visible>
 			</control>
 			<control type="image">
 				<left>1200</left>
@@ -2403,9 +2403,9 @@
 				<width>150</width>
 				<height>150</height>
 				<aspectratio>stretch</aspectratio>
-				<texture background="true" fallback="DefaultAlbumCover.png">$INFO[Window(home).Property(RandomAlbum.8.Thumb )]</texture>
+				<texture background="true" fallback="DefaultAlbumCover.png">$INFO[Window(Home).Property(RandomAlbum.8.Thumb )]</texture>
 				<colordiffuse>AAFFFFFF</colordiffuse>
-				<visible>!IsEmpty(Window(home).Property(RandomAlbum.8.Thumb ))</visible>
+				<visible>!IsEmpty(Window(Home).Property(RandomAlbum.8.Thumb ))</visible>
 			</control>
 			<control type="image">
 				<left>1200</left>
@@ -2413,9 +2413,9 @@
 				<width>150</width>
 				<height>150</height>
 				<aspectratio>stretch</aspectratio>
-				<texture background="true" fallback="DefaultAlbumCover.png">$INFO[Window(home).Property(LatestAlbum.10.Thumb)]</texture>
+				<texture background="true" fallback="DefaultAlbumCover.png">$INFO[Window(Home).Property(LatestAlbum.10.Thumb)]</texture>
 				<colordiffuse>AAFFFFFF</colordiffuse>
-				<visible>IsEmpty(Window(home).Property(RandomAlbum.8.Thumb ))</visible>
+				<visible>IsEmpty(Window(Home).Property(RandomAlbum.8.Thumb ))</visible>
 			</control>
 			<control type="image">
 				<left>0</left>
@@ -2423,9 +2423,9 @@
 				<width>150</width>
 				<height>150</height>
 				<aspectratio>stretch</aspectratio>
-				<texture background="true" fallback="DefaultAlbumCover.png">$INFO[Window(home).Property(RandomAlbum.7.Thumb )]</texture>
+				<texture background="true" fallback="DefaultAlbumCover.png">$INFO[Window(Home).Property(RandomAlbum.7.Thumb )]</texture>
 				<colordiffuse>AAFFFFFF</colordiffuse>
-				<visible>!IsEmpty(Window(home).Property(RandomAlbum.7.Thumb ))</visible>
+				<visible>!IsEmpty(Window(Home).Property(RandomAlbum.7.Thumb ))</visible>
 			</control>
 			<control type="image">
 				<left>0</left>
@@ -2433,9 +2433,9 @@
 				<width>150</width>
 				<height>150</height>
 				<aspectratio>stretch</aspectratio>
-				<texture background="true" fallback="DefaultAlbumCover.png">$INFO[Window(home).Property(LatestAlbum.3.Thumb)]</texture>
+				<texture background="true" fallback="DefaultAlbumCover.png">$INFO[Window(Home).Property(LatestAlbum.3.Thumb)]</texture>
 				<colordiffuse>AAFFFFFF</colordiffuse>
-				<visible>IsEmpty(Window(home).Property(RandomAlbum.7.Thumb ))</visible>
+				<visible>IsEmpty(Window(Home).Property(RandomAlbum.7.Thumb ))</visible>
 			</control>
 			<control type="image">
 				<left>150</left>
@@ -2443,9 +2443,9 @@
 				<width>150</width>
 				<height>150</height>
 				<aspectratio>stretch</aspectratio>
-				<texture background="true" fallback="DefaultAlbumCover.png">$INFO[Window(home).Property(RandomAlbum.13.Thumb )]</texture>
+				<texture background="true" fallback="DefaultAlbumCover.png">$INFO[Window(Home).Property(RandomAlbum.13.Thumb )]</texture>
 				<colordiffuse>AAFFFFFF</colordiffuse>
-				<visible>!IsEmpty(Window(home).Property(RandomAlbum.13.Thumb ))</visible>
+				<visible>!IsEmpty(Window(Home).Property(RandomAlbum.13.Thumb ))</visible>
 			</control>
 			<control type="image">
 				<left>150</left>
@@ -2453,9 +2453,9 @@
 				<width>150</width>
 				<height>150</height>
 				<aspectratio>stretch</aspectratio>
-				<texture background="true" fallback="DefaultAlbumCover.png">$INFO[Window(home).Property(LatestAlbum.7.Thumb)]</texture>
+				<texture background="true" fallback="DefaultAlbumCover.png">$INFO[Window(Home).Property(LatestAlbum.7.Thumb)]</texture>
 				<colordiffuse>AAFFFFFF</colordiffuse>
-				<visible>IsEmpty(Window(home).Property(RandomAlbum.13.Thumb ))</visible>
+				<visible>IsEmpty(Window(Home).Property(RandomAlbum.13.Thumb ))</visible>
 			</control>
 			<control type="image">
 				<left>300</left>
@@ -2463,9 +2463,9 @@
 				<width>150</width>
 				<height>150</height>
 				<aspectratio>stretch</aspectratio>
-				<texture background="true" fallback="DefaultAlbumCover.png">$INFO[Window(home).Property(RandomAlbum.17.Thumb )]</texture>
+				<texture background="true" fallback="DefaultAlbumCover.png">$INFO[Window(Home).Property(RandomAlbum.17.Thumb )]</texture>
 				<colordiffuse>AAFFFFFF</colordiffuse>
-				<visible>!IsEmpty(Window(home).Property(RandomAlbum.17.Thumb ))</visible>
+				<visible>!IsEmpty(Window(Home).Property(RandomAlbum.17.Thumb ))</visible>
 			</control>
 			<control type="image">
 				<left>300</left>
@@ -2473,9 +2473,9 @@
 				<width>150</width>
 				<height>150</height>
 				<aspectratio>stretch</aspectratio>
-				<texture background="true" fallback="DefaultAlbumCover.png">$INFO[Window(home).Property(LatestAlbum.2.Thumb)]</texture>
+				<texture background="true" fallback="DefaultAlbumCover.png">$INFO[Window(Home).Property(LatestAlbum.2.Thumb)]</texture>
 				<colordiffuse>AAFFFFFF</colordiffuse>
-				<visible>IsEmpty(Window(home).Property(RandomAlbum.17.Thumb ))</visible>
+				<visible>IsEmpty(Window(Home).Property(RandomAlbum.17.Thumb ))</visible>
 			</control>
 			<control type="image">
 				<left>450</left>
@@ -2483,9 +2483,9 @@
 				<width>150</width>
 				<height>150</height>
 				<aspectratio>stretch</aspectratio>
-				<texture background="true" fallback="DefaultAlbumCover.png">$INFO[Window(home).Property(RandomAlbum.11.Thumb )]</texture>
+				<texture background="true" fallback="DefaultAlbumCover.png">$INFO[Window(Home).Property(RandomAlbum.11.Thumb )]</texture>
 				<colordiffuse>AAFFFFFF</colordiffuse>
-				<visible>!IsEmpty(Window(home).Property(RandomAlbum.11.Thumb ))</visible>
+				<visible>!IsEmpty(Window(Home).Property(RandomAlbum.11.Thumb ))</visible>
 			</control>
 			<control type="image">
 				<left>450</left>
@@ -2493,9 +2493,9 @@
 				<width>150</width>
 				<height>150</height>
 				<aspectratio>stretch</aspectratio>
-				<texture background="true" fallback="DefaultAlbumCover.png">$INFO[Window(home).Property(LatestAlbum.6.Thumb)]</texture>
+				<texture background="true" fallback="DefaultAlbumCover.png">$INFO[Window(Home).Property(LatestAlbum.6.Thumb)]</texture>
 				<colordiffuse>AAFFFFFF</colordiffuse>
-				<visible>IsEmpty(Window(home).Property(RandomAlbum.11.Thumb ))</visible>
+				<visible>IsEmpty(Window(Home).Property(RandomAlbum.11.Thumb ))</visible>
 			</control>
 			<control type="image">
 				<left>600</left>
@@ -2503,9 +2503,9 @@
 				<width>150</width>
 				<height>150</height>
 				<aspectratio>stretch</aspectratio>
-				<texture background="true" fallback="DefaultAlbumCover.png">$INFO[Window(home).Property(RandomAlbum.3.Thumb )]</texture>
+				<texture background="true" fallback="DefaultAlbumCover.png">$INFO[Window(Home).Property(RandomAlbum.3.Thumb )]</texture>
 				<colordiffuse>AAFFFFFF</colordiffuse>
-				<visible>!IsEmpty(Window(home).Property(RandomAlbum.3.Thumb ))</visible>
+				<visible>!IsEmpty(Window(Home).Property(RandomAlbum.3.Thumb ))</visible>
 			</control>
 			<control type="image">
 				<left>600</left>
@@ -2513,9 +2513,9 @@
 				<width>150</width>
 				<height>150</height>
 				<aspectratio>stretch</aspectratio>
-				<texture background="true" fallback="DefaultAlbumCover.png">$INFO[Window(home).Property(LatestAlbum.1.Thumb)]</texture>
+				<texture background="true" fallback="DefaultAlbumCover.png">$INFO[Window(Home).Property(LatestAlbum.1.Thumb)]</texture>
 				<colordiffuse>AAFFFFFF</colordiffuse>
-				<visible>IsEmpty(Window(home).Property(RandomAlbum.3.Thumb ))</visible>
+				<visible>IsEmpty(Window(Home).Property(RandomAlbum.3.Thumb ))</visible>
 			</control>
 			<control type="image">
 				<left>750</left>
@@ -2523,9 +2523,9 @@
 				<width>150</width>
 				<height>150</height>
 				<aspectratio>stretch</aspectratio>
-				<texture background="true" fallback="DefaultAlbumCover.png">$INFO[Window(home).Property(RandomAlbum.1.Thumb )]</texture>
+				<texture background="true" fallback="DefaultAlbumCover.png">$INFO[Window(Home).Property(RandomAlbum.1.Thumb )]</texture>
 				<colordiffuse>AAFFFFFF</colordiffuse>
-				<visible>!IsEmpty(Window(home).Property(RandomAlbum.1.Thumb ))</visible>
+				<visible>!IsEmpty(Window(Home).Property(RandomAlbum.1.Thumb ))</visible>
 			</control>
 			<control type="image">
 				<left>750</left>
@@ -2533,9 +2533,9 @@
 				<width>150</width>
 				<height>150</height>
 				<aspectratio>stretch</aspectratio>
-				<texture background="true" fallback="DefaultAlbumCover.png">$INFO[Window(home).Property(LatestAlbum.5.Thumb)]</texture>
+				<texture background="true" fallback="DefaultAlbumCover.png">$INFO[Window(Home).Property(LatestAlbum.5.Thumb)]</texture>
 				<colordiffuse>AAFFFFFF</colordiffuse>
-				<visible>IsEmpty(Window(home).Property(RandomAlbum.1.Thumb ))</visible>
+				<visible>IsEmpty(Window(Home).Property(RandomAlbum.1.Thumb ))</visible>
 			</control>
 			<control type="image">
 				<left>900</left>
@@ -2543,9 +2543,9 @@
 				<width>150</width>
 				<height>150</height>
 				<aspectratio>stretch</aspectratio>
-				<texture background="true" fallback="DefaultAlbumCover.png">$INFO[Window(home).Property(RandomAlbum.20.Thumb )]</texture>
+				<texture background="true" fallback="DefaultAlbumCover.png">$INFO[Window(Home).Property(RandomAlbum.20.Thumb )]</texture>
 				<colordiffuse>AAFFFFFF</colordiffuse>
-				<visible>!IsEmpty(Window(home).Property(RandomAlbum.20.Thumb ))</visible>
+				<visible>!IsEmpty(Window(Home).Property(RandomAlbum.20.Thumb ))</visible>
 			</control>
 			<control type="image">
 				<left>900</left>
@@ -2553,9 +2553,9 @@
 				<width>150</width>
 				<height>150</height>
 				<aspectratio>stretch</aspectratio>
-				<texture background="true" fallback="DefaultAlbumCover.png">$INFO[Window(home).Property(LatestAlbum.4.Thumb)]</texture>
+				<texture background="true" fallback="DefaultAlbumCover.png">$INFO[Window(Home).Property(LatestAlbum.4.Thumb)]</texture>
 				<colordiffuse>AAFFFFFF</colordiffuse>
-				<visible>IsEmpty(Window(home).Property(RandomAlbum.20.Thumb ))</visible>
+				<visible>IsEmpty(Window(Home).Property(RandomAlbum.20.Thumb ))</visible>
 			</control>
 			<control type="image">
 				<left>1050</left>
@@ -2563,9 +2563,9 @@
 				<width>150</width>
 				<height>150</height>
 				<aspectratio>stretch</aspectratio>
-				<texture background="true" fallback="DefaultAlbumCover.png">$INFO[Window(home).Property(RandomAlbum.4.Thumb )]</texture>
+				<texture background="true" fallback="DefaultAlbumCover.png">$INFO[Window(Home).Property(RandomAlbum.4.Thumb )]</texture>
 				<colordiffuse>AAFFFFFF</colordiffuse>
-				<visible>!IsEmpty(Window(home).Property(RandomAlbum.4.Thumb ))</visible>
+				<visible>!IsEmpty(Window(Home).Property(RandomAlbum.4.Thumb ))</visible>
 			</control>
 			<control type="image">
 				<left>1050</left>
@@ -2573,9 +2573,9 @@
 				<width>150</width>
 				<height>150</height>
 				<aspectratio>stretch</aspectratio>
-				<texture background="true" fallback="DefaultAlbumCover.png">$INFO[Window(home).Property(LatestAlbum.3.Thumb)]</texture>
+				<texture background="true" fallback="DefaultAlbumCover.png">$INFO[Window(Home).Property(LatestAlbum.3.Thumb)]</texture>
 				<colordiffuse>AAFFFFFF</colordiffuse>
-				<visible>IsEmpty(Window(home).Property(RandomAlbum.4.Thumb ))</visible>
+				<visible>IsEmpty(Window(Home).Property(RandomAlbum.4.Thumb ))</visible>
 			</control>
 			<control type="image">
 				<left>1200</left>
@@ -2583,9 +2583,9 @@
 				<width>150</width>
 				<height>150</height>
 				<aspectratio>stretch</aspectratio>
-				<texture background="true" fallback="DefaultAlbumCover.png">$INFO[Window(home).Property(RandomAlbum.14.Thumb )]</texture>
+				<texture background="true" fallback="DefaultAlbumCover.png">$INFO[Window(Home).Property(RandomAlbum.14.Thumb )]</texture>
 				<colordiffuse>AAFFFFFF</colordiffuse>
-				<visible>!IsEmpty(Window(home).Property(RandomAlbum.14.Thumb ))</visible>
+				<visible>!IsEmpty(Window(Home).Property(RandomAlbum.14.Thumb ))</visible>
 			</control>
 			<control type="image">
 				<left>1200</left>
@@ -2593,9 +2593,9 @@
 				<width>150</width>
 				<height>150</height>
 				<aspectratio>stretch</aspectratio>
-				<texture background="true" fallback="DefaultAlbumCover.png">$INFO[Window(home).Property(LatestAlbum.10.Thumb)]</texture>
+				<texture background="true" fallback="DefaultAlbumCover.png">$INFO[Window(Home).Property(LatestAlbum.10.Thumb)]</texture>
 				<colordiffuse>AAFFFFFF</colordiffuse>
-				<visible>IsEmpty(Window(home).Property(RandomAlbum.14.Thumb ))</visible>
+				<visible>IsEmpty(Window(Home).Property(RandomAlbum.14.Thumb ))</visible>
 			</control>
 			<control type="image">
 				<left>0</left>
@@ -2603,9 +2603,9 @@
 				<width>150</width>
 				<height>150</height>
 				<aspectratio>stretch</aspectratio>
-				<texture background="true" fallback="DefaultAlbumCover.png">$INFO[Window(home).Property(RandomAlbum.6.Thumb )]</texture>
+				<texture background="true" fallback="DefaultAlbumCover.png">$INFO[Window(Home).Property(RandomAlbum.6.Thumb )]</texture>
 				<colordiffuse>AAFFFFFF</colordiffuse>
-				<visible>!IsEmpty(Window(home).Property(RandomAlbum.6.Thumb ))</visible>
+				<visible>!IsEmpty(Window(Home).Property(RandomAlbum.6.Thumb ))</visible>
 			</control>
 			<control type="image">
 				<left>0</left>
@@ -2613,9 +2613,9 @@
 				<width>150</width>
 				<height>150</height>
 				<aspectratio>stretch</aspectratio>
-				<texture background="true" fallback="DefaultAlbumCover.png">$INFO[Window(home).Property(LatestAlbum.7.Thumb)]</texture>
+				<texture background="true" fallback="DefaultAlbumCover.png">$INFO[Window(Home).Property(LatestAlbum.7.Thumb)]</texture>
 				<colordiffuse>AAFFFFFF</colordiffuse>
-				<visible>IsEmpty(Window(home).Property(RandomAlbum.6.Thumb ))</visible>
+				<visible>IsEmpty(Window(Home).Property(RandomAlbum.6.Thumb ))</visible>
 			</control>
 			<control type="image">
 				<left>150</left>
@@ -2623,9 +2623,9 @@
 				<width>150</width>
 				<height>150</height>
 				<aspectratio>stretch</aspectratio>
-				<texture background="true" fallback="DefaultAlbumCover.png">$INFO[Window(home).Property(RandomAlbum.18.Thumb )]</texture>
+				<texture background="true" fallback="DefaultAlbumCover.png">$INFO[Window(Home).Property(RandomAlbum.18.Thumb )]</texture>
 				<colordiffuse>AAFFFFFF</colordiffuse>
-				<visible>!IsEmpty(Window(home).Property(RandomAlbum.18.Thumb ))</visible>
+				<visible>!IsEmpty(Window(Home).Property(RandomAlbum.18.Thumb ))</visible>
 			</control>
 			<control type="image">
 				<left>150</left>
@@ -2633,9 +2633,9 @@
 				<width>150</width>
 				<height>150</height>
 				<aspectratio>stretch</aspectratio>
-				<texture background="true" fallback="DefaultAlbumCover.png">$INFO[Window(home).Property(LatestAlbum.8.Thumb)]</texture>
+				<texture background="true" fallback="DefaultAlbumCover.png">$INFO[Window(Home).Property(LatestAlbum.8.Thumb)]</texture>
 				<colordiffuse>AAFFFFFF</colordiffuse>
-				<visible>IsEmpty(Window(home).Property(RandomAlbum.18.Thumb ))</visible>
+				<visible>IsEmpty(Window(Home).Property(RandomAlbum.18.Thumb ))</visible>
 			</control>
 			<control type="image">
 				<left>300</left>
@@ -2643,9 +2643,9 @@
 				<width>150</width>
 				<height>150</height>
 				<aspectratio>stretch</aspectratio>
-				<texture background="true" fallback="DefaultAlbumCover.png">$INFO[Window(home).Property(RandomAlbum.13.Thumb )]</texture>
+				<texture background="true" fallback="DefaultAlbumCover.png">$INFO[Window(Home).Property(RandomAlbum.13.Thumb )]</texture>
 				<colordiffuse>AAFFFFFF</colordiffuse>
-				<visible>!IsEmpty(Window(home).Property(RandomAlbum.13.Thumb ))</visible>
+				<visible>!IsEmpty(Window(Home).Property(RandomAlbum.13.Thumb ))</visible>
 			</control>
 			<control type="image">
 				<left>300</left>
@@ -2653,9 +2653,9 @@
 				<width>150</width>
 				<height>150</height>
 				<aspectratio>stretch</aspectratio>
-				<texture background="true" fallback="DefaultAlbumCover.png">$INFO[Window(home).Property(LatestAlbum.9.Thumb)]</texture>
+				<texture background="true" fallback="DefaultAlbumCover.png">$INFO[Window(Home).Property(LatestAlbum.9.Thumb)]</texture>
 				<colordiffuse>AAFFFFFF</colordiffuse>
-				<visible>IsEmpty(Window(home).Property(RandomAlbum.13.Thumb ))</visible>
+				<visible>IsEmpty(Window(Home).Property(RandomAlbum.13.Thumb ))</visible>
 			</control>
 			<control type="image">
 				<left>450</left>
@@ -2663,9 +2663,9 @@
 				<width>150</width>
 				<height>150</height>
 				<aspectratio>stretch</aspectratio>
-				<texture background="true" fallback="DefaultAlbumCover.png">$INFO[Window(home).Property(RandomAlbum.9.Thumb )]</texture>
+				<texture background="true" fallback="DefaultAlbumCover.png">$INFO[Window(Home).Property(RandomAlbum.9.Thumb )]</texture>
 				<colordiffuse>AAFFFFFF</colordiffuse>
-				<visible>!IsEmpty(Window(home).Property(RandomAlbum.9.Thumb ))</visible>
+				<visible>!IsEmpty(Window(Home).Property(RandomAlbum.9.Thumb ))</visible>
 			</control>
 			<control type="image">
 				<left>450</left>
@@ -2673,9 +2673,9 @@
 				<width>150</width>
 				<height>150</height>
 				<aspectratio>stretch</aspectratio>
-				<texture background="true" fallback="DefaultAlbumCover.png">$INFO[Window(home).Property(LatestAlbum.5.Thumb)]</texture>
+				<texture background="true" fallback="DefaultAlbumCover.png">$INFO[Window(Home).Property(LatestAlbum.5.Thumb)]</texture>
 				<colordiffuse>AAFFFFFF</colordiffuse>
-				<visible>IsEmpty(Window(home).Property(RandomAlbum.9.Thumb ))</visible>
+				<visible>IsEmpty(Window(Home).Property(RandomAlbum.9.Thumb ))</visible>
 			</control>
 			<control type="image">
 				<left>600</left>
@@ -2683,9 +2683,9 @@
 				<width>150</width>
 				<height>150</height>
 				<aspectratio>stretch</aspectratio>
-				<texture background="true" fallback="DefaultAlbumCover.png">$INFO[Window(home).Property(RandomAlbum.5.Thumb )]</texture>
+				<texture background="true" fallback="DefaultAlbumCover.png">$INFO[Window(Home).Property(RandomAlbum.5.Thumb )]</texture>
 				<colordiffuse>AAFFFFFF</colordiffuse>
-				<visible>!IsEmpty(Window(home).Property(RandomAlbum.5.Thumb ))</visible>
+				<visible>!IsEmpty(Window(Home).Property(RandomAlbum.5.Thumb ))</visible>
 			</control>
 			<control type="image">
 				<left>600</left>
@@ -2693,9 +2693,9 @@
 				<width>150</width>
 				<height>150</height>
 				<aspectratio>stretch</aspectratio>
-				<texture background="true" fallback="DefaultAlbumCover.png">$INFO[Window(home).Property(LatestAlbum.3.Thumb)]</texture>
+				<texture background="true" fallback="DefaultAlbumCover.png">$INFO[Window(Home).Property(LatestAlbum.3.Thumb)]</texture>
 				<colordiffuse>AAFFFFFF</colordiffuse>
-				<visible>IsEmpty(Window(home).Property(RandomAlbum.5.Thumb ))</visible>
+				<visible>IsEmpty(Window(Home).Property(RandomAlbum.5.Thumb ))</visible>
 			</control>
 			<control type="image">
 				<left>750</left>
@@ -2703,9 +2703,9 @@
 				<width>150</width>
 				<height>150</height>
 				<aspectratio>stretch</aspectratio>
-				<texture background="true" fallback="DefaultAlbumCover.png">$INFO[Window(home).Property(RandomAlbum.20.Thumb )]</texture>
+				<texture background="true" fallback="DefaultAlbumCover.png">$INFO[Window(Home).Property(RandomAlbum.20.Thumb )]</texture>
 				<colordiffuse>AAFFFFFF</colordiffuse>
-				<visible>!IsEmpty(Window(home).Property(RandomAlbum.20.Thumb ))</visible>
+				<visible>!IsEmpty(Window(Home).Property(RandomAlbum.20.Thumb ))</visible>
 			</control>
 			<control type="image">
 				<left>750</left>
@@ -2713,9 +2713,9 @@
 				<width>150</width>
 				<height>150</height>
 				<aspectratio>stretch</aspectratio>
-				<texture background="true" fallback="DefaultAlbumCover.png">$INFO[Window(home).Property(LatestAlbum.2.Thumb)]</texture>
+				<texture background="true" fallback="DefaultAlbumCover.png">$INFO[Window(Home).Property(LatestAlbum.2.Thumb)]</texture>
 				<colordiffuse>AAFFFFFF</colordiffuse>
-				<visible>IsEmpty(Window(home).Property(RandomAlbum.20.Thumb ))</visible>
+				<visible>IsEmpty(Window(Home).Property(RandomAlbum.20.Thumb ))</visible>
 			</control>
 			<control type="image">
 				<left>900</left>
@@ -2723,9 +2723,9 @@
 				<width>150</width>
 				<height>150</height>
 				<aspectratio>stretch</aspectratio>
-				<texture background="true" fallback="DefaultAlbumCover.png">$INFO[Window(home).Property(RandomAlbum.17.Thumb )]</texture>
+				<texture background="true" fallback="DefaultAlbumCover.png">$INFO[Window(Home).Property(RandomAlbum.17.Thumb )]</texture>
 				<colordiffuse>AAFFFFFF</colordiffuse>
-				<visible>!IsEmpty(Window(home).Property(RandomAlbum.17.Thumb ))</visible>
+				<visible>!IsEmpty(Window(Home).Property(RandomAlbum.17.Thumb ))</visible>
 			</control>
 			<control type="image">
 				<left>900</left>
@@ -2733,9 +2733,9 @@
 				<width>150</width>
 				<height>150</height>
 				<aspectratio>stretch</aspectratio>
-				<texture background="true" fallback="DefaultAlbumCover.png">$INFO[Window(home).Property(LatestAlbum.10.Thumb)]</texture>
+				<texture background="true" fallback="DefaultAlbumCover.png">$INFO[Window(Home).Property(LatestAlbum.10.Thumb)]</texture>
 				<colordiffuse>AAFFFFFF</colordiffuse>
-				<visible>IsEmpty(Window(home).Property(RandomAlbum.17.Thumb ))</visible>
+				<visible>IsEmpty(Window(Home).Property(RandomAlbum.17.Thumb ))</visible>
 			</control>
 			<control type="image">
 				<left>1050</left>
@@ -2743,9 +2743,9 @@
 				<width>150</width>
 				<height>150</height>
 				<aspectratio>stretch</aspectratio>
-				<texture background="true" fallback="DefaultAlbumCover.png">$INFO[Window(home).Property(RandomAlbum.7.Thumb )]</texture>
+				<texture background="true" fallback="DefaultAlbumCover.png">$INFO[Window(Home).Property(RandomAlbum.7.Thumb )]</texture>
 				<colordiffuse>AAFFFFFF</colordiffuse>
-				<visible>!IsEmpty(Window(home).Property(RandomAlbum.7.Thumb ))</visible>
+				<visible>!IsEmpty(Window(Home).Property(RandomAlbum.7.Thumb ))</visible>
 			</control>
 			<control type="image">
 				<left>1050</left>
@@ -2753,9 +2753,9 @@
 				<width>150</width>
 				<height>150</height>
 				<aspectratio>stretch</aspectratio>
-				<texture background="true" fallback="DefaultAlbumCover.png">$INFO[Window(home).Property(LatestAlbum.9.Thumb)]</texture>
+				<texture background="true" fallback="DefaultAlbumCover.png">$INFO[Window(Home).Property(LatestAlbum.9.Thumb)]</texture>
 				<colordiffuse>AAFFFFFF</colordiffuse>
-				<visible>IsEmpty(Window(home).Property(RandomAlbum.7.Thumb ))</visible>
+				<visible>IsEmpty(Window(Home).Property(RandomAlbum.7.Thumb ))</visible>
 			</control>
 			<control type="image">
 				<left>1200</left>
@@ -2763,9 +2763,9 @@
 				<width>150</width>
 				<height>150</height>
 				<aspectratio>stretch</aspectratio>
-				<texture background="true" fallback="DefaultAlbumCover.png">$INFO[Window(home).Property(RandomAlbum.16.Thumb )]</texture>
+				<texture background="true" fallback="DefaultAlbumCover.png">$INFO[Window(Home).Property(RandomAlbum.16.Thumb )]</texture>
 				<colordiffuse>AAFFFFFF</colordiffuse>
-				<visible>!IsEmpty(Window(home).Property(RandomAlbum.16.Thumb ))</visible>
+				<visible>!IsEmpty(Window(Home).Property(RandomAlbum.16.Thumb ))</visible>
 			</control>
 			<control type="image">
 				<left>1200</left>
@@ -2773,9 +2773,9 @@
 				<width>150</width>
 				<height>150</height>
 				<aspectratio>stretch</aspectratio>
-				<texture background="true" fallback="DefaultAlbumCover.png">$INFO[Window(home).Property(LatestAlbum.8.Thumb)]</texture>
+				<texture background="true" fallback="DefaultAlbumCover.png">$INFO[Window(Home).Property(LatestAlbum.8.Thumb)]</texture>
 				<colordiffuse>AAFFFFFF</colordiffuse>
-				<visible>IsEmpty(Window(home).Property(RandomAlbum.16.Thumb ))</visible>
+				<visible>IsEmpty(Window(Home).Property(RandomAlbum.16.Thumb ))</visible>
 			</control>
 			<control type="image">
 				<left>0</left>
@@ -2783,9 +2783,9 @@
 				<width>150</width>
 				<height>150</height>
 				<aspectratio>stretch</aspectratio>
-				<texture background="true" fallback="DefaultAlbumCover.png">$INFO[Window(home).Property(RandomAlbum.11.Thumb )]</texture>
+				<texture background="true" fallback="DefaultAlbumCover.png">$INFO[Window(Home).Property(RandomAlbum.11.Thumb )]</texture>
 				<colordiffuse>AAFFFFFF</colordiffuse>
-				<visible>!IsEmpty(Window(home).Property(RandomAlbum.11.Thumb ))</visible>
+				<visible>!IsEmpty(Window(Home).Property(RandomAlbum.11.Thumb ))</visible>
 			</control>
 			<control type="image">
 				<left>0</left>
@@ -2793,9 +2793,9 @@
 				<width>150</width>
 				<height>150</height>
 				<aspectratio>stretch</aspectratio>
-				<texture background="true" fallback="DefaultAlbumCover.png">$INFO[Window(home).Property(LatestAlbum.4.Thumb)]</texture>
+				<texture background="true" fallback="DefaultAlbumCover.png">$INFO[Window(Home).Property(LatestAlbum.4.Thumb)]</texture>
 				<colordiffuse>AAFFFFFF</colordiffuse>
-				<visible>IsEmpty(Window(home).Property(RandomAlbum.11.Thumb ))</visible>
+				<visible>IsEmpty(Window(Home).Property(RandomAlbum.11.Thumb ))</visible>
 			</control>
 			<control type="image">
 				<left>150</left>
@@ -2803,9 +2803,9 @@
 				<width>150</width>
 				<height>150</height>
 				<aspectratio>stretch</aspectratio>
-				<texture background="true" fallback="DefaultAlbumCover.png">$INFO[Window(home).Property(RandomAlbum.3.Thumb )]</texture>
+				<texture background="true" fallback="DefaultAlbumCover.png">$INFO[Window(Home).Property(RandomAlbum.3.Thumb )]</texture>
 				<colordiffuse>AAFFFFFF</colordiffuse>
-				<visible>!IsEmpty(Window(home).Property(RandomAlbum.3.Thumb ))</visible>
+				<visible>!IsEmpty(Window(Home).Property(RandomAlbum.3.Thumb ))</visible>
 			</control>
 			<control type="image">
 				<left>150</left>
@@ -2813,9 +2813,9 @@
 				<width>150</width>
 				<height>150</height>
 				<aspectratio>stretch</aspectratio>
-				<texture background="true" fallback="DefaultAlbumCover.png">$INFO[Window(home).Property(LatestAlbum.7.Thumb)]</texture>
+				<texture background="true" fallback="DefaultAlbumCover.png">$INFO[Window(Home).Property(LatestAlbum.7.Thumb)]</texture>
 				<colordiffuse>AAFFFFFF</colordiffuse>
-				<visible>IsEmpty(Window(home).Property(RandomAlbum.3.Thumb ))</visible>
+				<visible>IsEmpty(Window(Home).Property(RandomAlbum.3.Thumb ))</visible>
 			</control>
 			<control type="image">
 				<left>300</left>
@@ -2823,9 +2823,9 @@
 				<width>150</width>
 				<height>150</height>
 				<aspectratio>stretch</aspectratio>
-				<texture background="true" fallback="DefaultAlbumCover.png">$INFO[Window(home).Property(RandomAlbum.12.Thumb )]</texture>
+				<texture background="true" fallback="DefaultAlbumCover.png">$INFO[Window(Home).Property(RandomAlbum.12.Thumb )]</texture>
 				<colordiffuse>AAFFFFFF</colordiffuse>
-				<visible>!IsEmpty(Window(home).Property(RandomAlbum.12.Thumb ))</visible>
+				<visible>!IsEmpty(Window(Home).Property(RandomAlbum.12.Thumb ))</visible>
 			</control>
 			<control type="image">
 				<left>300</left>
@@ -2833,9 +2833,9 @@
 				<width>150</width>
 				<height>150</height>
 				<aspectratio>stretch</aspectratio>
-				<texture background="true" fallback="DefaultAlbumCover.png">$INFO[Window(home).Property(LatestAlbum.1.Thumb)]</texture>
+				<texture background="true" fallback="DefaultAlbumCover.png">$INFO[Window(Home).Property(LatestAlbum.1.Thumb)]</texture>
 				<colordiffuse>AAFFFFFF</colordiffuse>
-				<visible>IsEmpty(Window(home).Property(RandomAlbum.12.Thumb ))</visible>
+				<visible>IsEmpty(Window(Home).Property(RandomAlbum.12.Thumb ))</visible>
 			</control>
 			<control type="image">
 				<left>450</left>
@@ -2843,9 +2843,9 @@
 				<width>150</width>
 				<height>150</height>
 				<aspectratio>stretch</aspectratio>
-				<texture background="true" fallback="DefaultAlbumCover.png">$INFO[Window(home).Property(RandomAlbum.2.Thumb )]</texture>
+				<texture background="true" fallback="DefaultAlbumCover.png">$INFO[Window(Home).Property(RandomAlbum.2.Thumb )]</texture>
 				<colordiffuse>AAFFFFFF</colordiffuse>
-				<visible>!IsEmpty(Window(home).Property(RandomAlbum.2.Thumb ))</visible>
+				<visible>!IsEmpty(Window(Home).Property(RandomAlbum.2.Thumb ))</visible>
 			</control>
 			<control type="image">
 				<left>450</left>
@@ -2853,9 +2853,9 @@
 				<width>150</width>
 				<height>150</height>
 				<aspectratio>stretch</aspectratio>
-				<texture background="true" fallback="DefaultAlbumCover.png">$INFO[Window(home).Property(LatestAlbum.6.Thumb)]</texture>
+				<texture background="true" fallback="DefaultAlbumCover.png">$INFO[Window(Home).Property(LatestAlbum.6.Thumb)]</texture>
 				<colordiffuse>AAFFFFFF</colordiffuse>
-				<visible>IsEmpty(Window(home).Property(RandomAlbum.2.Thumb ))</visible>
+				<visible>IsEmpty(Window(Home).Property(RandomAlbum.2.Thumb ))</visible>
 			</control>
 			<control type="image">
 				<left>600</left>
@@ -2863,9 +2863,9 @@
 				<width>150</width>
 				<height>150</height>
 				<aspectratio>stretch</aspectratio>
-				<texture background="true" fallback="DefaultAlbumCover.png">$INFO[Window(home).Property(RandomAlbum.1.Thumb )]</texture>
+				<texture background="true" fallback="DefaultAlbumCover.png">$INFO[Window(Home).Property(RandomAlbum.1.Thumb )]</texture>
 				<colordiffuse>AAFFFFFF</colordiffuse>
-				<visible>!IsEmpty(Window(home).Property(RandomAlbum.1.Thumb ))</visible>
+				<visible>!IsEmpty(Window(Home).Property(RandomAlbum.1.Thumb ))</visible>
 			</control>
 			<control type="image">
 				<left>600</left>
@@ -2873,9 +2873,9 @@
 				<width>150</width>
 				<height>150</height>
 				<aspectratio>stretch</aspectratio>
-				<texture background="true" fallback="DefaultAlbumCover.png">$INFO[Window(home).Property(LatestAlbum.8.Thumb)]</texture>
+				<texture background="true" fallback="DefaultAlbumCover.png">$INFO[Window(Home).Property(LatestAlbum.8.Thumb)]</texture>
 				<colordiffuse>AAFFFFFF</colordiffuse>
-				<visible>IsEmpty(Window(home).Property(RandomAlbum.1.Thumb ))</visible>
+				<visible>IsEmpty(Window(Home).Property(RandomAlbum.1.Thumb ))</visible>
 			</control>
 			<control type="image">
 				<left>750</left>
@@ -2883,9 +2883,9 @@
 				<width>150</width>
 				<height>150</height>
 				<aspectratio>stretch</aspectratio>
-				<texture background="true" fallback="DefaultAlbumCover.png">$INFO[Window(home).Property(RandomAlbum.10.Thumb )]</texture>
+				<texture background="true" fallback="DefaultAlbumCover.png">$INFO[Window(Home).Property(RandomAlbum.10.Thumb )]</texture>
 				<colordiffuse>AAFFFFFF</colordiffuse>
-				<visible>!IsEmpty(Window(home).Property(RandomAlbum.10.Thumb ))</visible>
+				<visible>!IsEmpty(Window(Home).Property(RandomAlbum.10.Thumb ))</visible>
 			</control>
 			<control type="image">
 				<left>750</left>
@@ -2893,9 +2893,9 @@
 				<width>150</width>
 				<height>150</height>
 				<aspectratio>stretch</aspectratio>
-				<texture background="true" fallback="DefaultAlbumCover.png">$INFO[Window(home).Property(LatestAlbum.7.Thumb)]</texture>
+				<texture background="true" fallback="DefaultAlbumCover.png">$INFO[Window(Home).Property(LatestAlbum.7.Thumb)]</texture>
 				<colordiffuse>AAFFFFFF</colordiffuse>
-				<visible>IsEmpty(Window(home).Property(RandomAlbum.10.Thumb ))</visible>
+				<visible>IsEmpty(Window(Home).Property(RandomAlbum.10.Thumb ))</visible>
 			</control>
 			<control type="image">
 				<left>900</left>
@@ -2903,9 +2903,9 @@
 				<width>150</width>
 				<height>150</height>
 				<aspectratio>stretch</aspectratio>
-				<texture background="true" fallback="DefaultAlbumCover.png">$INFO[Window(home).Property(RandomAlbum.18.Thumb )]</texture>
+				<texture background="true" fallback="DefaultAlbumCover.png">$INFO[Window(Home).Property(RandomAlbum.18.Thumb )]</texture>
 				<colordiffuse>AAFFFFFF</colordiffuse>
-				<visible>!IsEmpty(Window(home).Property(RandomAlbum.18.Thumb ))</visible>
+				<visible>!IsEmpty(Window(Home).Property(RandomAlbum.18.Thumb ))</visible>
 			</control>
 			<control type="image">
 				<left>900</left>
@@ -2913,9 +2913,9 @@
 				<width>150</width>
 				<height>150</height>
 				<aspectratio>stretch</aspectratio>
-				<texture background="true" fallback="DefaultAlbumCover.png">$INFO[Window(home).Property(LatestAlbum.9.Thumb)]</texture>
+				<texture background="true" fallback="DefaultAlbumCover.png">$INFO[Window(Home).Property(LatestAlbum.9.Thumb)]</texture>
 				<colordiffuse>AAFFFFFF</colordiffuse>
-				<visible>IsEmpty(Window(home).Property(RandomAlbum.18.Thumb ))</visible>
+				<visible>IsEmpty(Window(Home).Property(RandomAlbum.18.Thumb ))</visible>
 			</control>
 			<control type="image">
 				<left>1050</left>
@@ -2923,9 +2923,9 @@
 				<width>150</width>
 				<height>150</height>
 				<aspectratio>stretch</aspectratio>
-				<texture background="true" fallback="DefaultAlbumCover.png">$INFO[Window(home).Property(RandomAlbum.6.Thumb )]</texture>
+				<texture background="true" fallback="DefaultAlbumCover.png">$INFO[Window(Home).Property(RandomAlbum.6.Thumb )]</texture>
 				<colordiffuse>AAFFFFFF</colordiffuse>
-				<visible>!IsEmpty(Window(home).Property(RandomAlbum.6.Thumb ))</visible>
+				<visible>!IsEmpty(Window(Home).Property(RandomAlbum.6.Thumb ))</visible>
 			</control>
 			<control type="image">
 				<left>1050</left>
@@ -2933,9 +2933,9 @@
 				<width>150</width>
 				<height>150</height>
 				<aspectratio>stretch</aspectratio>
-				<texture background="true" fallback="DefaultAlbumCover.png">$INFO[Window(home).Property(LatestAlbum.2.Thumb)]</texture>
+				<texture background="true" fallback="DefaultAlbumCover.png">$INFO[Window(Home).Property(LatestAlbum.2.Thumb)]</texture>
 				<colordiffuse>AAFFFFFF</colordiffuse>
-				<visible>IsEmpty(Window(home).Property(RandomAlbum.6.Thumb ))</visible>
+				<visible>IsEmpty(Window(Home).Property(RandomAlbum.6.Thumb ))</visible>
 			</control>
 			<control type="image">
 				<left>1200</left>
@@ -2943,9 +2943,9 @@
 				<width>150</width>
 				<height>150</height>
 				<aspectratio>stretch</aspectratio>
-				<texture background="true" fallback="DefaultAlbumCover.png">$INFO[Window(home).Property(RandomAlbum.19.Thumb )]</texture>
+				<texture background="true" fallback="DefaultAlbumCover.png">$INFO[Window(Home).Property(RandomAlbum.19.Thumb )]</texture>
 				<colordiffuse>AAFFFFFF</colordiffuse>
-				<visible>!IsEmpty(Window(home).Property(RandomAlbum.19.Thumb ))</visible>
+				<visible>!IsEmpty(Window(Home).Property(RandomAlbum.19.Thumb ))</visible>
 			</control>
 			<control type="image">
 				<left>1200</left>
@@ -2953,9 +2953,9 @@
 				<width>150</width>
 				<height>150</height>
 				<aspectratio>stretch</aspectratio>
-				<texture background="true" fallback="DefaultAlbumCover.png">$INFO[Window(home).Property(LatestAlbum.10.Thumb)]</texture>
+				<texture background="true" fallback="DefaultAlbumCover.png">$INFO[Window(Home).Property(LatestAlbum.10.Thumb)]</texture>
 				<colordiffuse>AAFFFFFF</colordiffuse>
-				<visible>IsEmpty(Window(home).Property(RandomAlbum.19.Thumb ))</visible>
+				<visible>IsEmpty(Window(Home).Property(RandomAlbum.19.Thumb ))</visible>
 			</control>
 			<control type="image">
 				<left>0</left>
@@ -2963,9 +2963,9 @@
 				<width>150</width>
 				<height>150</height>
 				<aspectratio>stretch</aspectratio>
-				<texture background="true" fallback="DefaultAlbumCover.png">$INFO[Window(home).Property(RandomAlbum.14.Thumb )]</texture>
+				<texture background="true" fallback="DefaultAlbumCover.png">$INFO[Window(Home).Property(RandomAlbum.14.Thumb )]</texture>
 				<colordiffuse>AAFFFFFF</colordiffuse>
-				<visible>!IsEmpty(Window(home).Property(RandomAlbum.14.Thumb ))</visible>
+				<visible>!IsEmpty(Window(Home).Property(RandomAlbum.14.Thumb ))</visible>
 			</control>
 			<control type="image">
 				<left>0</left>
@@ -2973,9 +2973,9 @@
 				<width>150</width>
 				<height>150</height>
 				<aspectratio>stretch</aspectratio>
-				<texture background="true" fallback="DefaultAlbumCover.png">$INFO[Window(home).Property(LatestAlbum.3.Thumb)]</texture>
+				<texture background="true" fallback="DefaultAlbumCover.png">$INFO[Window(Home).Property(LatestAlbum.3.Thumb)]</texture>
 				<colordiffuse>AAFFFFFF</colordiffuse>
-				<visible>IsEmpty(Window(home).Property(RandomAlbum.14.Thumb ))</visible>
+				<visible>IsEmpty(Window(Home).Property(RandomAlbum.14.Thumb ))</visible>
 			</control>
 			<control type="image">
 				<left>150</left>
@@ -2983,9 +2983,9 @@
 				<width>150</width>
 				<height>150</height>
 				<aspectratio>stretch</aspectratio>
-				<texture background="true" fallback="DefaultAlbumCover.png">$INFO[Window(home).Property(RandomAlbum.15.Thumb )]</texture>
+				<texture background="true" fallback="DefaultAlbumCover.png">$INFO[Window(Home).Property(RandomAlbum.15.Thumb )]</texture>
 				<colordiffuse>AAFFFFFF</colordiffuse>
-				<visible>!IsEmpty(Window(home).Property(RandomAlbum.15.Thumb ))</visible>
+				<visible>!IsEmpty(Window(Home).Property(RandomAlbum.15.Thumb ))</visible>
 			</control>
 			<control type="image">
 				<left>150</left>
@@ -2993,9 +2993,9 @@
 				<width>150</width>
 				<height>150</height>
 				<aspectratio>stretch</aspectratio>
-				<texture background="true" fallback="DefaultAlbumCover.png">$INFO[Window(home).Property(LatestAlbum.5.Thumb)]</texture>
+				<texture background="true" fallback="DefaultAlbumCover.png">$INFO[Window(Home).Property(LatestAlbum.5.Thumb)]</texture>
 				<colordiffuse>AAFFFFFF</colordiffuse>
-				<visible>IsEmpty(Window(home).Property(RandomAlbum.15.Thumb ))</visible>
+				<visible>IsEmpty(Window(Home).Property(RandomAlbum.15.Thumb ))</visible>
 			</control>
 			<control type="image">
 				<left>300</left>
@@ -3003,9 +3003,9 @@
 				<width>150</width>
 				<height>150</height>
 				<aspectratio>stretch</aspectratio>
-				<texture background="true" fallback="DefaultAlbumCover.png">$INFO[Window(home).Property(RandomAlbum.8.Thumb )]</texture>
+				<texture background="true" fallback="DefaultAlbumCover.png">$INFO[Window(Home).Property(RandomAlbum.8.Thumb )]</texture>
 				<colordiffuse>AAFFFFFF</colordiffuse>
-				<visible>!IsEmpty(Window(home).Property(RandomAlbum.8.Thumb ))</visible>
+				<visible>!IsEmpty(Window(Home).Property(RandomAlbum.8.Thumb ))</visible>
 			</control>
 			<control type="image">
 				<left>300</left>
@@ -3013,9 +3013,9 @@
 				<width>150</width>
 				<height>150</height>
 				<aspectratio>stretch</aspectratio>
-				<texture background="true" fallback="DefaultAlbumCover.png">$INFO[Window(home).Property(LatestAlbum.8.Thumb)]</texture>
+				<texture background="true" fallback="DefaultAlbumCover.png">$INFO[Window(Home).Property(LatestAlbum.8.Thumb)]</texture>
 				<colordiffuse>AAFFFFFF</colordiffuse>
-				<visible>IsEmpty(Window(home).Property(RandomAlbum.8.Thumb ))</visible>
+				<visible>IsEmpty(Window(Home).Property(RandomAlbum.8.Thumb ))</visible>
 			</control>
 			<control type="image">
 				<left>450</left>
@@ -3023,9 +3023,9 @@
 				<width>150</width>
 				<height>150</height>
 				<aspectratio>stretch</aspectratio>
-				<texture background="true" fallback="DefaultAlbumCover.png">$INFO[Window(home).Property(RandomAlbum.4.Thumb )]</texture>
+				<texture background="true" fallback="DefaultAlbumCover.png">$INFO[Window(Home).Property(RandomAlbum.4.Thumb )]</texture>
 				<colordiffuse>AAFFFFFF</colordiffuse>
-				<visible>!IsEmpty(Window(home).Property(RandomAlbum.4.Thumb ))</visible>
+				<visible>!IsEmpty(Window(Home).Property(RandomAlbum.4.Thumb ))</visible>
 			</control>
 			<control type="image">
 				<left>450</left>
@@ -3033,9 +3033,9 @@
 				<width>150</width>
 				<height>150</height>
 				<aspectratio>stretch</aspectratio>
-				<texture background="true" fallback="DefaultAlbumCover.png">$INFO[Window(home).Property(LatestAlbum.1.Thumb)]</texture>
+				<texture background="true" fallback="DefaultAlbumCover.png">$INFO[Window(Home).Property(LatestAlbum.1.Thumb)]</texture>
 				<colordiffuse>AAFFFFFF</colordiffuse>
-				<visible>IsEmpty(Window(home).Property(RandomAlbum.4.Thumb ))</visible>
+				<visible>IsEmpty(Window(Home).Property(RandomAlbum.4.Thumb ))</visible>
 			</control>
 			<control type="image">
 				<left>600</left>
@@ -3043,9 +3043,9 @@
 				<width>150</width>
 				<height>150</height>
 				<aspectratio>stretch</aspectratio>
-				<texture background="true" fallback="DefaultAlbumCover.png">$INFO[Window(home).Property(RandomAlbum.6.Thumb )]</texture>
+				<texture background="true" fallback="DefaultAlbumCover.png">$INFO[Window(Home).Property(RandomAlbum.6.Thumb )]</texture>
 				<colordiffuse>AAFFFFFF</colordiffuse>
-				<visible>!IsEmpty(Window(home).Property(RandomAlbum.6.Thumb ))</visible>
+				<visible>!IsEmpty(Window(Home).Property(RandomAlbum.6.Thumb ))</visible>
 			</control>
 			<control type="image">
 				<left>600</left>
@@ -3053,9 +3053,9 @@
 				<width>150</width>
 				<height>150</height>
 				<aspectratio>stretch</aspectratio>
-				<texture background="true" fallback="DefaultAlbumCover.png">$INFO[Window(home).Property(LatestAlbum.4.Thumb)]</texture>
+				<texture background="true" fallback="DefaultAlbumCover.png">$INFO[Window(Home).Property(LatestAlbum.4.Thumb)]</texture>
 				<colordiffuse>AAFFFFFF</colordiffuse>
-				<visible>IsEmpty(Window(home).Property(RandomAlbum.6.Thumb ))</visible>
+				<visible>IsEmpty(Window(Home).Property(RandomAlbum.6.Thumb ))</visible>
 			</control>
 			<control type="image">
 				<left>750</left>
@@ -3063,9 +3063,9 @@
 				<width>150</width>
 				<height>150</height>
 				<aspectratio>stretch</aspectratio>
-				<texture background="true" fallback="DefaultAlbumCover.png">$INFO[Window(home).Property(RandomAlbum.3.Thumb )]</texture>
+				<texture background="true" fallback="DefaultAlbumCover.png">$INFO[Window(Home).Property(RandomAlbum.3.Thumb )]</texture>
 				<colordiffuse>AAFFFFFF</colordiffuse>
-				<visible>!IsEmpty(Window(home).Property(RandomAlbum.3.Thumb ))</visible>
+				<visible>!IsEmpty(Window(Home).Property(RandomAlbum.3.Thumb ))</visible>
 			</control>
 			<control type="image">
 				<left>750</left>
@@ -3073,9 +3073,9 @@
 				<width>150</width>
 				<height>150</height>
 				<aspectratio>stretch</aspectratio>
-				<texture background="true" fallback="DefaultAlbumCover.png">$INFO[Window(home).Property(LatestAlbum.5.Thumb)]</texture>
+				<texture background="true" fallback="DefaultAlbumCover.png">$INFO[Window(Home).Property(LatestAlbum.5.Thumb)]</texture>
 				<colordiffuse>AAFFFFFF</colordiffuse>
-				<visible>IsEmpty(Window(home).Property(RandomAlbum.3.Thumb ))</visible>
+				<visible>IsEmpty(Window(Home).Property(RandomAlbum.3.Thumb ))</visible>
 			</control>
 			<control type="image">
 				<left>900</left>
@@ -3083,9 +3083,9 @@
 				<width>150</width>
 				<height>150</height>
 				<aspectratio>stretch</aspectratio>
-				<texture background="true" fallback="DefaultAlbumCover.png">$INFO[Window(home).Property(RandomAlbum.1.Thumb )]</texture>
+				<texture background="true" fallback="DefaultAlbumCover.png">$INFO[Window(Home).Property(RandomAlbum.1.Thumb )]</texture>
 				<colordiffuse>AAFFFFFF</colordiffuse>
-				<visible>!IsEmpty(Window(home).Property(RandomAlbum.1.Thumb ))</visible>
+				<visible>!IsEmpty(Window(Home).Property(RandomAlbum.1.Thumb ))</visible>
 			</control>
 			<control type="image">
 				<left>900</left>
@@ -3093,9 +3093,9 @@
 				<width>150</width>
 				<height>150</height>
 				<aspectratio>stretch</aspectratio>
-				<texture background="true" fallback="DefaultAlbumCover.png">$INFO[Window(home).Property(LatestAlbum.7.Thumb)]</texture>
+				<texture background="true" fallback="DefaultAlbumCover.png">$INFO[Window(Home).Property(LatestAlbum.7.Thumb)]</texture>
 				<colordiffuse>AAFFFFFF</colordiffuse>
-				<visible>IsEmpty(Window(home).Property(RandomAlbum.1.Thumb ))</visible>
+				<visible>IsEmpty(Window(Home).Property(RandomAlbum.1.Thumb ))</visible>
 			</control>
 			<control type="image">
 				<left>1050</left>
@@ -3103,9 +3103,9 @@
 				<width>150</width>
 				<height>150</height>
 				<aspectratio>stretch</aspectratio>
-				<texture background="true" fallback="DefaultAlbumCover.png">$INFO[Window(home).Property(RandomAlbum.10.Thumb )]</texture>
+				<texture background="true" fallback="DefaultAlbumCover.png">$INFO[Window(Home).Property(RandomAlbum.10.Thumb )]</texture>
 				<colordiffuse>AAFFFFFF</colordiffuse>
-				<visible>!IsEmpty(Window(home).Property(RandomAlbum.10.Thumb ))</visible>
+				<visible>!IsEmpty(Window(Home).Property(RandomAlbum.10.Thumb ))</visible>
 			</control>
 			<control type="image">
 				<left>1050</left>
@@ -3113,9 +3113,9 @@
 				<width>150</width>
 				<height>150</height>
 				<aspectratio>stretch</aspectratio>
-				<texture background="true" fallback="DefaultAlbumCover.png">$INFO[Window(home).Property(LatestAlbum.10.Thumb)]</texture>
+				<texture background="true" fallback="DefaultAlbumCover.png">$INFO[Window(Home).Property(LatestAlbum.10.Thumb)]</texture>
 				<colordiffuse>AAFFFFFF</colordiffuse>
-				<visible>IsEmpty(Window(home).Property(RandomAlbum.10.Thumb ))</visible>
+				<visible>IsEmpty(Window(Home).Property(RandomAlbum.10.Thumb ))</visible>
 			</control>
 			<control type="image">
 				<left>1200</left>
@@ -3123,9 +3123,9 @@
 				<width>150</width>
 				<height>150</height>
 				<aspectratio>stretch</aspectratio>
-				<texture background="true" fallback="DefaultAlbumCover.png">$INFO[Window(home).Property(RandomAlbum.16.Thumb )]</texture>
+				<texture background="true" fallback="DefaultAlbumCover.png">$INFO[Window(Home).Property(RandomAlbum.16.Thumb )]</texture>
 				<colordiffuse>AAFFFFFF</colordiffuse>
-				<visible>!IsEmpty(Window(home).Property(RandomAlbum.16.Thumb ))</visible>
+				<visible>!IsEmpty(Window(Home).Property(RandomAlbum.16.Thumb ))</visible>
 			</control>
 			<control type="image">
 				<left>1200</left>
@@ -3133,9 +3133,9 @@
 				<width>150</width>
 				<height>150</height>
 				<aspectratio>stretch</aspectratio>
-				<texture background="true" fallback="DefaultAlbumCover.png">$INFO[Window(home).Property(LatestAlbum.9.Thumb)]</texture>
+				<texture background="true" fallback="DefaultAlbumCover.png">$INFO[Window(Home).Property(LatestAlbum.9.Thumb)]</texture>
 				<colordiffuse>AAFFFFFF</colordiffuse>
-				<visible>IsEmpty(Window(home).Property(RandomAlbum.16.Thumb ))</visible>
+				<visible>IsEmpty(Window(Home).Property(RandomAlbum.16.Thumb ))</visible>
 			</control>
 		</control>
 		<control type="image">

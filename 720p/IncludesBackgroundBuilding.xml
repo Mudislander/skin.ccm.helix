@@ -2,7 +2,7 @@
 <includes>
 	<include name="CommonBackground">
 		<control type="group">
-			<visible>[Skin.HasSetting(SingleGlobalBackground) | StringCompare(Window(home).Property(Background),Theme) | StringCompare(Container(9000).ListItem.Property(Background),Theme)] + !Skin.HasSetting(HolidayEffects)</visible>
+			<visible>[Skin.HasSetting(SingleGlobalBackground) | StringCompare(Window(Home).Property(Background),Theme) | StringCompare(Container(9000).ListItem.Property(Background),Theme)] + !Skin.HasSetting(HolidayEffects)</visible>
 			<control type="multiimage">
 				<include>Dimensions_Fullscreen</include>
 				<imagepath background="true">$INFO[Skin.String(GlobalBackgroundPath)]</imagepath>
@@ -46,7 +46,7 @@
 		</control>
 		<control type="group">
 			<visible>Skin.HasSetting(HideHomeNowPlaying) | !Player.HasAudio | Player.Paused | SubString(Window(videolibrary).Property(TvTunesIsAlive),TRUE)</visible>
-			<visible>!Skin.HasSetting(SingleGlobalBackground) + !StringCompare(Window(home).Property(MenuBackground),Theme) + !StringCompare(Container(9000).ListItem.Property(Background),Theme) + !Skin.HasSetting(HolidayEffects)</visible>
+			<visible>!Skin.HasSetting(SingleGlobalBackground) + !StringCompare(Window(Home).Property(MenuBackground),Theme) + !StringCompare(Container(9000).ListItem.Property(Background),Theme) + !Skin.HasSetting(HolidayEffects)</visible>
 			<control type="group">
 				<include>BackgroundFade</include>
 				<fadetime>FanartCrossfadeTime</fadetime>
@@ -80,7 +80,7 @@
 				<timeperimage>8000</timeperimage>
 				<randomize>true</randomize>
 				<fadetime>FanartCrossfadeTime</fadetime>
-				<visible>StringCompare(Window(home).Property(MenuItemSelected),Weather)</visible>
+				<visible>StringCompare(Window(Home).Property(MenuItemSelected),Weather)</visible>
 				<visible>Window.IsVisible(weather)</visible>
 			</control>
 			<control type="multiimage">
@@ -90,14 +90,10 @@
 				<timeperimage>8000</timeperimage>
 				<randomize>true</randomize>
 				<fadetime>1000</fadetime>
-				<visible>!StringCompare(Window(home).Property(MenuBackground),Database)</visible>
-				<visible>!Window.IsVisible(Home) + !StringCompare(Window(home).Property(MenuItemSelected),Weather) + !Container.Content(Seasons) + !Container.Content(Episodes)</visible>
+				<!--visible>!StringCompare(Window(Home).Property(MenuBackground),Database)</visible-->
+				<visible>!Window.IsVisible(Home) + !StringCompare(Window(Home).Property(MenuItemSelected),Weather) + !Container.Content(Seasons) + !Container.Content(Episodes)</visible>
 			</control>
 		</control>
-		
-		
-		
-		
 		<control type="group">
 			<visible>!Window.IsVisible(Home) + !Player.HasVideo + !Skin.HasSetting(HideBackGroundFanart)</visible>
 			<control type="image">
@@ -188,7 +184,7 @@
 			</control>
 		</control>
 		<control type="group">
-			<visible>!IsEmpty(Window(home).Property(TVGuide.BackgroundFanart))</visible>
+			<visible>!IsEmpty(Window(Home).Property(TVGuide.BackgroundFanart))</visible>
 			<visible>Window.IsActive(script-NextAired-TVGuide.xml)</visible>
 			<control type="image">
 				<include>Dimensions_Fullscreen</include>
@@ -278,14 +274,6 @@
 			<visible>Container.Content(Movies) | Container.Content(MusicVideos)</visible>
 		</control>
 	</include>
-	
-	
-	
-	
-	
-	
-	
-	
 	<include name="ContentPanelBackgrounds">
 		<control type="image">
 			<left>0</left>

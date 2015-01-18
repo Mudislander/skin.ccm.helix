@@ -9,7 +9,6 @@
 	<onload condition="!Skin.HasSetting(DisableGlobalSearch) + !System.HasAddon(script.globalsearch)">Skin.Setbool(DisableGlobalSearch)</onload>
 	<onload condition="!Skin.HasSetting(DisableTVTunes) + !System.HasAddon(script.tvtunes)">Skin.Setbool(DisableTVTunes)</onload>
 	<onload condition="!Skin.HasSetting(DisableSlideShowArt) + !System.HasAddon(script.artistslideshow)">Skin.Setbool(DisableSlideShowArt)</onload>
-	<onload condition="!Skin.HasSetting(DisableVideoExtras) + !System.HasAddon(script.videoextras)">Skin.Setbool(DisableVideoExtras)</onload>
 	<onload condition="!Skin.HasSetting(DisableTVNextAired) + System.HasAddon(script.tv.show.next.aired)">RunScript(script.tv.show.next.aired,silent=True)</onload>
 	<controls>
 		<control type="image">

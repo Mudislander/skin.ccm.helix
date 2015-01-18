@@ -876,10 +876,6 @@ msgctxt "#31327"
 msgid "Hide Item"
 msgstr ""
 
-msgctxt "#31328"
-msgid "Hidden"
-msgstr ""
-
 #msgctxt "#31329"
 #msgid "[B]Timer set![/B] [COLOR=grey2] - System auto shutdown in[/COLOR]"
 #msgstr ""
@@ -1356,48 +1352,10 @@ msgstr ""
 #msgid "Set Fanart Path"
 #msgstr ""
 
-msgctxt "#31950"
-msgid "WEATHER"
-msgstr ""
 
-msgctxt "#31951"
-msgid "PICTURES"
-msgstr ""
-
-msgctxt "#31952"
-msgid "TV"
-msgstr ""
-
-msgctxt "#31953"
-msgid "VIDEOS"
-msgstr ""
-
-msgctxt "#31954"
-msgid "MOVIES"
-msgstr ""
-
-msgctxt "#31955"
-msgid "TV SHOWS"
-msgstr ""
-
-msgctxt "#31956"
-msgid "MUSIC"
-msgstr ""
-
-msgctxt "#31957"
-msgid "PROGRAMS"
-msgstr ""
 
 msgctxt "#31958"
-msgid "PLAY DISC"
-msgstr ""
-
-msgctxt "#31959"
-msgid "SYSTEM"
-msgstr ""
-
-msgctxt "#31960"
-msgid "RADIO"
+msgid "DVD Drive"
 msgstr ""
 
 msgctxt "#31961"
@@ -1416,9 +1374,6 @@ msgctxt "#31964"
 msgid "Click button to play[CR][CR]Movie trailer"
 msgstr ""
 
-msgctxt "#31965"
-msgid "STREAM"
-msgstr ""
 
 msgctxt "#31996"
 msgid "Shortcuts"

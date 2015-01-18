@@ -1,3 +1,6 @@
+B]3.0.3[/B] [I]Jan 2015[/I]
+- Various BugFixes
+
 B]3.0.2[/B] [I]Jan 2015[/I]
 - Option to Lower Menu
 - Option Large Widgets

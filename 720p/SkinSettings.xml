@@ -4,6 +4,7 @@
 	<include condition="!Skin.HasSetting(InitialSetUpRun)">DefaultInitialSetup</include>
 	<onload condition="System.HasAddon(script.favourites)">XBMC.RunScript(script.favourites)</onload>
 	<onload>SetProperty(MenuItemActive,Settings,Home)</onload>
+	<onload condition="stringcompare(Container(9011).Position,0) + !stringcompare(Skin.String(InitialMenuPosi),0)">Control.Move(9011,$INFO[Skin.String(InitialMenuPosi)])</onload>
 	<onunload condition="IsEmpty(Skin.String(WeatherFanartDir)) | SubString(Skin.String(WeatherFanartDir),skin.ccm.helix\extras\Weather\,right)">Skin.SetString(WeatherFanartDir,special://skin/extras/Weather/)</onunload>
 	<controls>
 		<control type="image">
@@ -340,7 +341,33 @@
 						<align>left</align>
 						<aligny>center</aligny>
 					</control>
-					<control type="radiobutton" id="111">
+					<control type="button" id="111">
+						<width>750</width>
+						<height>40</height>
+						<font>font13</font>
+						<label>$LOCALIZE[31014]</label>
+						<label2>[COLOR=selected]$INFO[Container(9011).ListItem.Label][/COLOR]</label2>
+						<textcolor>grey2</textcolor>
+						<focusedcolor>white</focusedcolor>
+						<texturefocus>MenuItemFO.png</texturefocus>
+						<texturenofocus>MenuItemNF.png</texturenofocus>
+						<onclick>Control.Move(9011,1)</onclick>
+						<onclick>Skin.SetString(InitialMenuPosi,$INFO[Container(9011).Position])</onclick>
+						<onclick condition="StringCompare(Container(9011).Position,0)">Skin.SetString(InitialMenuItem,-1)</onclick>
+						<onclick condition="StringCompare(Container(9011).Position,1)">Skin.SetString(InitialMenuItem,0)</onclick>
+						<onclick condition="StringCompare(Container(9011).Position,2)">Skin.SetString(InitialMenuItem,1)</onclick>
+						<onclick condition="StringCompare(Container(9011).Position,3)">Skin.SetString(InitialMenuItem,2)</onclick>
+						<onclick condition="StringCompare(Container(9011).Position,4)">Skin.SetString(InitialMenuItem,3)</onclick>
+						<onclick condition="StringCompare(Container(9011).Position,5)">Skin.SetString(InitialMenuItem,4)</onclick>
+						<onclick condition="StringCompare(Container(9011).Position,6)">Skin.SetString(InitialMenuItem,5)</onclick>
+						<onclick condition="StringCompare(Container(9011).Position,7)">Skin.SetString(InitialMenuItem,6)</onclick>
+						<onclick condition="StringCompare(Container(9011).Position,8)">Skin.SetString(InitialMenuItem,7)</onclick>
+						<onclick condition="StringCompare(Container(9011).Position,9)">Skin.SetString(InitialMenuItem,8)</onclick>
+						<onclick condition="StringCompare(Container(9011).Position,10)">Skin.SetString(InitialMenuItem,9)</onclick>
+						<onclick condition="StringCompare(Container(9011).Position,11)">Skin.SetString(InitialMenuItem,10)</onclick>
+						<onclick condition="StringCompare(Container(9011).Position,12)">Skin.SetString(InitialMenuItem,-2)</onclick>
+					</control>
+					<control type="radiobutton" id="112">
 						<description>lower menu bar</description>
 						<width>750</width>
 						<height>40</height>
@@ -353,7 +380,7 @@
 						<texturefocus>MenuItemFO.png</texturefocus>
 						<texturenofocus>MenuItemNF.png</texturenofocus>
 					</control>
-					<control type="radiobutton" id="112">
+					<control type="radiobutton" id="113">
 						<description>enable wrap around menu</description>
 						<width>750</width>
 						<height>40</height>
@@ -367,7 +394,7 @@
 						<texturefocus>MenuItemFO.png</texturefocus>
 						<texturenofocus>MenuItemNF.png</texturenofocus>
 					</control>
-					<control type="radiobutton" id="113">
+					<control type="radiobutton" id="114">
 						<description>enable fixed ends menu</description>
 						<width>750</width>
 						<height>40</height>
@@ -381,7 +408,7 @@
 						<texturenofocus>MenuItemNF.png</texturenofocus>
 						<enable>!Skin.HasSetting(WrapAroundHomeMenu)</enable>
 					</control>
-					<control type="radiobutton" id="114">
+					<control type="radiobutton" id="115">
 						<description>hide horizontal submenu</description>
 						<width>750</width>
 						<height>40</height>
@@ -394,7 +421,7 @@
 						<texturefocus>MenuItemFO.png</texturefocus>
 						<texturenofocus>MenuItemNF.png</texturenofocus>
 					</control>
-					<!--control type="radiobutton" id="115">
+					<!--control type="radiobutton" id="116">
                         <description>enable submenu advise</description>
                         <width>750</width>
                         <height>40</height>
@@ -408,7 +435,7 @@
                         <texturenofocus>MenuItemNF.png</texturenofocus>
                         <enable>Skin.HasSetting(AutoVisableSubMenu)</enable>
                     </control-->
-					<control type="radiobutton" id="116">
+					<control type="radiobutton" id="117">
 						<description>large widget layout</description>
 						<width>750</width>
 						<height>40</height>
@@ -421,7 +448,7 @@
 						<texturefocus>MenuItemFO.png</texturefocus>
 						<texturenofocus>MenuItemNF.png</texturenofocus>
 					</control>
-					<control type="radiobutton" id="117">
+					<control type="radiobutton" id="118">
 						<description>enable video info</description>
 						<width>750</width>
 						<height>40</height>
@@ -434,7 +461,7 @@
 						<texturefocus>MenuItemFO.png</texturefocus>
 						<texturenofocus>MenuItemNF.png</texturenofocus>
 					</control>
-					<control type="radiobutton" id="118">
+					<control type="radiobutton" id="119">
 						<description>enable stats bar</description>
 						<width>750</width>
 						<height>40</height>
@@ -447,7 +474,7 @@
 						<texturefocus>MenuItemFO.png</texturefocus>
 						<texturenofocus>MenuItemNF.png</texturenofocus>
 					</control>
-					<control type="button" id="119">
+					<control type="button" id="120">
 						<description>Top Left Home Info</description>
 						<width>750</width>
 						<height>40</height>
@@ -466,7 +493,7 @@
 						<texturefocus>MenuItemFO.png</texturefocus>
 						<texturenofocus>MenuItemNF.png</texturenofocus>
 					</control>
-					<control type="radiobutton" id="120">
+					<control type="radiobutton" id="121">
 						<description>enable raindrop effect</description>
 						<width>750</width>
 						<height>40</height>
@@ -479,7 +506,7 @@
 						<texturefocus>MenuItemFO.png</texturefocus>
 						<texturenofocus>MenuItemNF.png</texturenofocus>
 					</control>
-					<control type="label" id="121">
+					<control type="label" id="122">
 						<width>750</width>
 						<height>45</height>
 						<font>font13_title</font>
@@ -489,7 +516,7 @@
 						<align>left</align>
 						<aligny>center</aligny>
 					</control>
-					<control type="radiobutton" id="122">
+					<control type="radiobutton" id="123">
 						<width>750</width>
 						<height>40</height>
 						<font>font13</font>
@@ -501,7 +528,7 @@
 						<onclick>Skin.ToggleSetting(AutoScroll)</onclick>
 						<selected>Skin.HasSetting(AutoScroll)</selected>
 					</control>
-					<control type="radiobutton" id="123">
+					<control type="radiobutton" id="124">
 						<width>750</width>
 						<height>40</height>
 						<font>font13</font>
@@ -513,7 +540,7 @@
 						<onclick>Skin.ToggleSetting(Show_SlideShow_Paused)</onclick>
 						<selected>!Skin.HasSetting(Show_SlideShow_Paused)</selected>
 					</control>
-					<control type="radiobutton" id="124">
+					<control type="radiobutton" id="125">
 						<width>750</width>
 						<height>40</height>
 						<font>font13</font>
@@ -525,7 +552,7 @@
 						<onclick>Skin.ToggleSetting(WindowedTrailer)</onclick>
 						<selected>Skin.HasSetting(WindowedTrailer)</selected>
 					</control>
-					<control type="radiobutton" id="125">
+					<control type="radiobutton" id="126">
 						<width>750</width>
 						<height>40</height>
 						<font>font13</font>
@@ -595,7 +622,7 @@
 						<texturefocus>MenuItemFO.png</texturefocus>
 						<texturenofocus>MenuItemNF.png</texturenofocus>
 						<onclick>Skin.ToggleSetting(HideHomeNowPlaying)</onclick>
-						<selected>!Skin.HasSetting(HideHomeNowPlaying)</selected>
+						<selected>Skin.HasSetting(HideHomeNowPlaying)</selected>
 					</control>
 					<control type="label" id="150">
 						<width>750</width>
@@ -635,7 +662,8 @@
 						<onclick condition="Skin.String(PowerBtnAction,Suspend)">Skin.SetString(PowerBtnAction,Hibernate)</onclick>
 						<onclick condition="Skin.String(PowerBtnAction,Hibernate)">Skin.SetString(PowerBtnAction,Reboot)</onclick>
 						<onclick condition="Skin.String(PowerBtnAction,Reboot)">Skin.SetString(PowerBtnAction,Logoff)</onclick>
-						<onclick condition="Skin.String(PowerBtnAction,Logoff)">Skin.SetString(PowerBtnAction,Settings)</onclick>
+						<onclick condition="Skin.String(PowerBtnAction,Logoff)">Skin.SetString(PowerBtnAction,Menu)</onclick>
+						<onclick condition="Skin.String(PowerBtnAction,Menu)">Skin.SetString(PowerBtnAction,Settings)</onclick>
 						<texturefocus>MenuItemFO.png</texturefocus>
 						<texturenofocus>MenuItemNF.png</texturenofocus>
 						<enable>!Skin.HasSetting(HideHomePowerBtn)</enable>
@@ -3285,7 +3313,7 @@
 						<height>40</height>
 						<font>font13</font>
 						<label>$LOCALIZE[31315] - 5</label>
-						<label2>[COLOR=selected]$INFO[Skin.String(SubSettings.5.Label)][/COLOR]</label2>
+						<label2>[COLOR=selected]$VAR[SubMenuSystemFive][/COLOR]</label2>
 						<textcolor>grey</textcolor>
 						<focusedcolor>white</focusedcolor>
 						<texturefocus>MenuItemFO.png</texturefocus>
@@ -6334,9 +6362,6 @@
 						<align>left</align>
 						<aligny>center</aligny>
 					</control>
-					
-					
-					
 					<control type="radiobutton" id="603">
 						<width>750</width>
 						<height>40</height>
@@ -6363,9 +6388,6 @@
 						<enable>Skin.HasSetting(EnableFanartScript)</enable>
 						<visible>System.HasAddon(script.grab.fanart)</visible>
 					</control-->
-					
-					
-					
 					<control type="button" id="605">
 						<description>User Album Thumbnails Path</description>
 						<width>750</width>
@@ -6614,32 +6636,6 @@
 						<enable>!Skin.HasSetting(DisableGlobalSearch)</enable>
 						<visible>System.HasAddon(script.globalsearch)</visible>
 					</control>
-					<!--control type="radiobutton" id="631">
-						<width>750</width>
-						<height>40</height>
-						<font>font13</font>
-						<label>31394</label>
-						<textcolor>grey2</textcolor>
-						<focusedcolor>white</focusedcolor>
-						<texturefocus>MenuItemFO.png</texturefocus>
-						<texturenofocus>MenuItemNF.png</texturenofocus>
-						<onclick>Skin.ToggleSetting(DisableVideoExtras)</onclick>
-						<selected>!Skin.HasSetting(DisableVideoExtras)</selected>
-						<enable>System.HasAddon(script.videoextras)</enable>
-					</control>
-					<control type="button" id="632">
-						<width>750</width>
-						<height>40</height>
-						<font>font13</font>
-						<label> - $LOCALIZE[31395]</label>
-						<textcolor>grey2</textcolor>
-						<focusedcolor>white</focusedcolor>
-						<texturefocus>MenuItemFO.png</texturefocus>
-						<texturenofocus>MenuItemNF.png</texturenofocus>
-						<onclick>Addon.OpenSettings(script.videoextras)</onclick>
-						<enable>!Skin.HasSetting(DisableVideoExtras)</enable>
-						<visible>System.HasAddon(script.videoextras)</visible>
-					</control-->
 					<control type="radiobutton" id="633">
 						<width>750</width>
 						<height>40</height>
@@ -6791,6 +6787,102 @@
 						<pulseonselect>false</pulseonselect>
 					</control>
 				</control>
+			</control>
+			<control type="list" id="9011">
+				<!--onleft>9001</onleft>
+                    <onright>9001</onright>
+                    <onup>9001</onup>
+                    <ondown>9001</ondown-->
+				<!--visible>Container(9000).Hasfocus(1)</visible-->
+				<visible>false</visible>
+				<itemlayout height="1" width="750"></itemlayout>
+				<focusedlayout height="1" width="750"></focusedlayout>
+				<content>
+					<item>
+						<label>$INFO[Skin.String(HomeItem.1.Label)]</label>
+						<onclick>noop</onclick>
+						<icon>-</icon>
+						<thumb>-</thumb>
+						<visible>!IsEmpty(Skin.String(HomeItem.1.Path))</visible>
+					</item>
+					<item>
+						<label>$INFO[Skin.String(HomeItem.2.Label)]</label>
+						<onclick>noop</onclick>
+						<icon>-</icon>
+						<thumb>-</thumb>
+						<visible>!IsEmpty(Skin.String(HomeItem.2.Path))</visible>
+					</item>
+					<item>
+						<label>$INFO[Skin.String(HomeItem.3.Label)]</label>
+						<onclick>noop</onclick>
+						<icon>-</icon>
+						<thumb>-</thumb>
+						<visible>!IsEmpty(Skin.String(HomeItem.3.Path))</visible>
+					</item>
+					<item>
+						<label>$INFO[Skin.String(HomeItem.4.Label)]</label>
+						<onclick>noop</onclick>
+						<icon>-</icon>
+						<thumb>-</thumb>
+						<visible>!IsEmpty(Skin.String(HomeItem.4.Path))</visible>
+					</item>
+					<item>
+						<label>$INFO[Skin.String(HomeItem.5.Label)]</label>
+						<onclick>noop</onclick>
+						<icon>-</icon>
+						<thumb>-</thumb>
+						<visible>!IsEmpty(Skin.String(HomeItem.5.Path))</visible>
+					</item>
+					<item>
+						<label>$INFO[Skin.String(HomeItem.6.Label)]</label>
+						<onclick>noop</onclick>
+						<icon>-</icon>
+						<thumb>-</thumb>
+						<visible>!IsEmpty(Skin.String(HomeItem.6.Path))</visible>
+					</item>
+					<item>
+						<label>$INFO[Skin.String(HomeItem.7.Label)]</label>
+						<onclick>noop</onclick>
+						<icon>-</icon>
+						<thumb>-</thumb>
+						<visible>!IsEmpty(Skin.String(HomeItem.7.Path))</visible>
+					</item>
+					<item>
+						<label>$INFO[Skin.String(HomeItem.8.Label)]</label>
+						<onclick>noop</onclick>
+						<icon>-</icon>
+						<thumb>-</thumb>
+						<visible>!IsEmpty(Skin.String(HomeItem.8.Path))</visible>
+					</item>
+					<item>
+						<label>$INFO[Skin.String(HomeItem.9.Label)]</label>
+						<onclick>noop</onclick>
+						<icon>-</icon>
+						<thumb>-</thumb>
+						<visible>!IsEmpty(Skin.String(HomeItem.9.Path))</visible>
+					</item>
+					<item>
+						<label>$INFO[Skin.String(HomeItem.10.Label)]</label>
+						<onclick>noop</onclick>
+						<icon>-</icon>
+						<thumb>-</thumb>
+						<visible>!IsEmpty(Skin.String(HomeItem.10.Path))</visible>
+					</item>
+					<item>
+						<label>$INFO[Skin.String(HomeItem.11.Label)]</label>
+						<onclick>noop</onclick>
+						<icon>-</icon>
+						<thumb>-</thumb>
+						<visible>!IsEmpty(Skin.String(HomeItem.11.Path))</visible>
+					</item>
+					<item>
+						<label>$INFO[Skin.String(HomeItem.12.Label)]</label>
+						<onclick>noop</onclick>
+						<icon>-</icon>
+						<thumb>-</thumb>
+						<visible>!IsEmpty(Skin.String(HomeItem.12.Path))</visible>
+					</item>
+				</content>
 			</control>
 		</control>
 		<include>CommonNowPlaying</include>
