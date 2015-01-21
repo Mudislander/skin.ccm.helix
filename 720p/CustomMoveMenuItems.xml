@@ -417,54 +417,6 @@
 					</item>
 				</content>
 			</control>
-			<control type="button">
-				<description>Up Arrow</description>
-				<left>390r</left>
-				<top>95</top>
-				<width>30</width>
-				<height>40</height>
-				<texturefocus>arrow-big-up.png</texturefocus>
-				<texturenofocus>arrow-big-up.png</texturenofocus>
-				<onclick>Control.Move(450,-1)</onclick>
-				<visible>Container(450).HasPrevious</visible>
-				<include>VisibleFadeEffect</include>
-			</control>
-			<control type="button">
-				<description>Up Arrow</description>
-				<left>60r</left>
-				<top>95</top>
-				<width>30</width>
-				<height>40</height>
-				<texturefocus>arrow-big-up.png</texturefocus>
-				<texturenofocus>arrow-big-up.png</texturenofocus>
-				<onclick>Control.Move(450,-1)</onclick>
-				<visible>Container(450).HasPrevious</visible>
-				<include>VisibleFadeEffect</include>
-			</control>
-			<control type="button">
-				<description>Down Arrow</description>
-				<left>390r</left>
-				<top>605</top>
-				<width>30</width>
-				<height>40</height>
-				<texturefocus>arrow-big-down.png</texturefocus>
-				<texturenofocus>arrow-big-down.png</texturenofocus>
-				<onclick>Control.Move(450,1)</onclick>
-				<visible>Container(450).HasNext</visible>
-				<include>VisibleFadeEffect</include>
-			</control>
-			<control type="button">
-				<description>Down Arrow</description>
-				<left>60r</left>
-				<top>605</top>
-				<width>30</width>
-				<height>40</height>
-				<texturefocus>arrow-big-down.png</texturefocus>
-				<texturenofocus>arrow-big-down.png</texturenofocus>
-				<onclick>Control.Move(450,1)</onclick>
-				<visible>Container(450).HasNext</visible>
-				<include>VisibleFadeEffect</include>
-			</control>
 			<control type="scrollbar" id="60">
 				<left>1250</left>
 				<top>95</top>

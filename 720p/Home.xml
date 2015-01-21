@@ -25,20 +25,6 @@
 	<onload condition="!Skin.HasSetting(DisableScriptPlaylist) + !IsEmpty(Skin.String(HomeItem.11.Playlist))">XBMC.RunScript(script.randomandlastitems,playlist=$INFO[Skin.String(HomeItem.11.Playlist)],method=$VAR[PlaylistSortOrder],limit=12,unwatched=False,resume=False,property=HomePlaylistEleven)</onload>
 	<onload condition="!Skin.HasSetting(DisableScriptPlaylist) + !IsEmpty(Skin.String(HomeItem.12.Playlist))">XBMC.RunScript(script.randomandlastitems,playlist=$INFO[Skin.String(HomeItem.12.Playlist)],method=$VAR[PlaylistSortOrder],limit=12,unwatched=False,resume=False,property=HomePlaylistTwelve)</onload>
 	<onload condition="!IsEmpty(Weather.Plugin) + !Weather.IsFetched">Weather.Refresh</onload>
-	<!--onload>SetProperty(MainMenuItemOne,$VAR[VisibleMenuItemOne],Home)</onload>
-	<onload>SetProperty(MainMenuItemTwo,$VAR[VisibleMenuItemTwo],Home)</onload>
-	<onload>SetProperty(MainMenuItemThree,$VAR[VisibleMenuItemThree],Home)</onload>
-	<onload>SetProperty(MainMenuItemFour,$VAR[VisibleMenuItemFour],Home)</onload>
-	<onload>SetProperty(MainMenuItemFive,$VAR[VisibleMenuItemFive],Home)</onload>
-	<onload>SetProperty(MainMenuItemSix,$VAR[VisibleMenuItemSix],Home)</onload>
-	<onload>SetProperty(MainMenuItemSeven,$VAR[VisibleMenuItemSeven],Home)</onload>
-	<onload>SetProperty(MainMenuItemEight,$VAR[VisibleMenuItemEight],Home)</onload>
-	<onload>SetProperty(MainMenuItemNine,$VAR[VisibleMenuItemNine],Home)</onload>
-	<onload>SetProperty(MainMenuItemTen,$VAR[VisibleMenuItemTen],Home)</onload>
-	<onload>SetProperty(MainMenuItemEleven,$VAR[VisibleMenuItemEleven],Home)</onload>
-	<onload>SetProperty(MainMenuItemTwelve,$VAR[VisibleMenuItemTwelve],Home)</onload-->
-	<!-- Temp Setting - script.randomandlastitems has problems -->
-	<onload condition="!Skin.HasSetting(EnableRandomPlaylist)">Skin.SetBool(EnableRandomPlaylist)</onload>
 	<onload condition="Window.Previous(Startup)">Control.Move(9000,$INFO[Skin.String(InitialMenuItem)])</onload>
 	<controls>
 		<include>CommonBackground</include>

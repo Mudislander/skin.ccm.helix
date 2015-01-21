@@ -750,9 +750,6 @@
 		<value condition="!Skin.HasSetting(DisableScriptPlaylist) + StringCompare(Container(9000).ListItem.Property(HiLiteItem),VideoPlayList) + Container(9000).Hasfocus(10)">[B][COLOR=$VAR[MainColorOne]]$LOCALIZE[31025]: [/COLOR][/B]$INFO[Window(Home).Property(HomePlayListTen.Count)]   [B][COLOR=$VAR[MainColorOne]]$LOCALIZE[16102]: [/COLOR][/B]$INFO[Window(Home).Property(HomePlayListTen.Watched)]    [B][COLOR=$VAR[MainColorOne]]$LOCALIZE[16101]: [/COLOR][/B]$INFO[Window(Home).Property(HomePlayListTen.Unwatched)]</value>
 		<value condition="!Skin.HasSetting(DisableScriptPlaylist) + StringCompare(Container(9000).ListItem.Property(HiLiteItem),VideoPlayList) + Container(9000).Hasfocus(11)">[B][COLOR=$VAR[MainColorOne]]$LOCALIZE[31025]: [/COLOR][/B]$INFO[Window(Home).Property(HomePlayListEleven.Count)]   [B][COLOR=$VAR[MainColorOne]]$LOCALIZE[16102]: [/COLOR][/B]$INFO[Window(Home).Property(HomePlayListEleven.Watched)]    [B][COLOR=$VAR[MainColorOne]]$LOCALIZE[16101]: [/COLOR][/B]$INFO[Window(Home).Property(HomePlayListEleven.Unwatched)]</value>
 		<value condition="!Skin.HasSetting(DisableScriptPlaylist) + StringCompare(Container(9000).ListItem.Property(HiLiteItem),VideoPlayList) + Container(9000).Hasfocus(12)">[B][COLOR=$VAR[MainColorOne]]$LOCALIZE[31025]: [/COLOR][/B]$INFO[Window(Home).Property(HomePlayListTwelve.Count)]   [B][COLOR=$VAR[MainColorOne]]$LOCALIZE[16102]: [/COLOR][/B]$INFO[Window(Home).Property(HomePlayListTwelve.Watched)]    [B][COLOR=$VAR[MainColorOne]]$LOCALIZE[16101]: [/COLOR][/B]$INFO[Window(Home).Property(HomePlayListTwelve.Unwatched)]</value>
-		
-		
-		
 		<value condition="StringCompare(Container(9000).ListItem.Property(HiLiteItem),Videos)">[B][COLOR=$VAR[MainColorOne]]$LOCALIZE[20342]: [/COLOR][/B]$INFO[Window.Property(Movies.Count)]    [B][COLOR=$VAR[MainColorOne]]$LOCALIZE[20343]: [/COLOR][/B]$INFO[Window.Property(TVShows.Count)]    [B][COLOR=$VAR[MainColorOne]]$LOCALIZE[20389]: [/COLOR][/B]$INFO[Window.Property(MusicVideos.Count)]</value>
 		<value condition="StringCompare(Container(9000).ListItem.Property(HiLiteItem),Movies)">[B][COLOR=$VAR[MainColorOne]]$LOCALIZE[20342]: [/COLOR][/B]$INFO[Window.Property(Movies.Count)]    [B][COLOR=$VAR[MainColorOne]]$LOCALIZE[16102]: [/COLOR][/B]$INFO[Window.Property(Movies.Watched)]    [B][COLOR=$VAR[MainColorOne]]$LOCALIZE[16101]: [/COLOR][/B]$INFO[Window.Property(Movies.UnWatched)]</value>
 		<value condition="StringCompare(Container(9000).ListItem.Property(HiLiteItem),TVShows)">[B][COLOR=$VAR[MainColorOne]]$LOCALIZE[20343]: [/COLOR][/B]$INFO[Window.Property(TVShows.Count)]    [B][COLOR=$VAR[MainColorOne]]$LOCALIZE[20360]: [/COLOR][/B]$INFO[Window.Property(Episodes.Count)]    [B][COLOR=$VAR[MainColorOne]]$LOCALIZE[16101]: [/COLOR][/B]$INFO[Window.Property(Episodes.UnWatched)]</value>
@@ -765,9 +762,6 @@
 		<value condition="!substring(System.CPUTemperature,?)">[B][COLOR=$VAR[MainColorOne]]IP: [/COLOR][/B]]$INFO[Network.IPAddress    [B][COLOR=$VAR[MainColorOne]]$LOCALIZE[401]: [/COLOR][/B]$INFO[System.CPUTemperature]    [B][COLOR=$VAR[MainColorOne]]$LOCALIZE[155]: [/COLOR][/B]$INFO[System.UsedSpacePercent]</value>
 		<value>[COLOR=$VAR[MainColorOne]][B]IP:[/B][/COLOR]$INFO[Network.IPAddress]    [COLOR=$VAR[MainColorOne]][B]RAM:[/B][/COLOR]$INFO[system.memory(used.percent)]    [COLOR=$VAR[MainColorOne]][B]$LOCALIZE[155]:[/B][/COLOR]$INFO[System.UsedSpacePercent]</value>
 	</variable>
-	
-	
-	-->
 	<variable name="GenreLabelFanart">
 		<value condition="substring(ListItem.Label,Holiday) | substring(ListItem.Label,Christmas)">christmas</value>
 		<value condition="substring(ListItem.Label,Sci)">sciencefiction</value>
@@ -784,7 +778,8 @@
 	</variable>
 	<variable name="PlaylistSortOrder" type="text">
 		<value condition="Skin.HasSetting(EnableRandomPlaylist)">Random</value>
-		<value>Playlist</value>
+		<!--value>Playlist</value-->
+		<value>Last</value>
 	</variable>
 	<variable name="UsersSubVideosName" type="text">
 		<value condition="!IsEmpty(Skin.String(UserVideosSubMenu))">$INFO[Skin.String(UserVideosSubMenu)]</value>
@@ -2440,9 +2435,12 @@
 	</variable>
 	<variable name="ColorOneName" type="text">
 		<value condition="IsEmpty(Skin.String(UsrColorOne))">$LOCALIZE[13278]</value>
+		<value condition="!IsEmpty(Skin.String(UsrColorOne))">$INFO[Skin.String(UsrColorOne)]</value>
+		<!--
 		<value condition="StringCompare(Skin.String(UsrColorOne),ff0084ff)">$LOCALIZE[762]</value>
 		<value condition="StringCompare(Skin.String(UsrColorOne),FFF30000)">$LOCALIZE[31367]</value>
 		<value condition="StringCompare(Skin.String(UsrColorOne),FF6DF300)">$LOCALIZE[31368]</value>
 		<value>$LOCALIZE[13278]</value>
+		-->
 	</variable>
 </includes>

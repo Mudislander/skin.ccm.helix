@@ -116,7 +116,6 @@
 				<property name="WidgetSet">$INFO[Skin.String(HomeItem.1.Widget)]</property>
 				<property name="PlayListType">$INFO[Window(Home).Property(HomePlaylistOne.Type)]</property>
 				<property name="Background">$INFO[Skin.String(HomeItem.1.Display)]</property>
-				<!--visible>SubString(Window(Home).Property(MainMenuItemOne),True)</visible-->
 				<visible>!IsEmpty(Skin.String(HomeItem.1.Path))</visible>
 			</item>
 			<item id="2">
@@ -134,7 +133,6 @@
 				<property name="WidgetSet">$INFO[Skin.String(HomeItem.2.Widget)]</property>
 				<property name="PlayListType">$INFO[Window(Home).Property(HomePlaylistTwo.Type)]</property>
 				<property name="Background">$INFO[Skin.String(HomeItem.2.Display)]</property>
-				<!--visible>SubString(Window(Home).Property(MainMenuItemTwo),True)</visible-->
 				<visible>!IsEmpty(Skin.String(HomeItem.2.Path))</visible>
 			</item>
 			<item id="3">
@@ -152,7 +150,6 @@
 				<property name="WidgetSet">$INFO[Skin.String(HomeItem.3.Widget)]</property>
 				<property name="PlayListType">$INFO[Window(Home).Property(HomePlaylistThree.Type)]</property>
 				<property name="Background">$INFO[Skin.String(HomeItem.3.Display)]</property>
-				<!--visible>SubString(Window(Home).Property(MainMenuItemThree),True)</visible-->
 				<visible>!IsEmpty(Skin.String(HomeItem.3.Path))</visible>
 			</item>
 			<item id="4">
@@ -170,7 +167,6 @@
 				<property name="WidgetSet">$INFO[Skin.String(HomeItem.4.Widget)]</property>
 				<property name="PlayListType">$INFO[Window(Home).Property(HomePlaylistFour.Type)]</property>
 				<property name="Background">$INFO[Skin.String(HomeItem.4.Display)]</property>
-				<!--visible>SubString(Window(Home).Property(MainMenuItemFour),True)</visible-->
 				<visible>!IsEmpty(Skin.String(HomeItem.4.Path))</visible>
 			</item>
 			<item id="5">
@@ -188,7 +184,6 @@
 				<property name="WidgetSet">$INFO[Skin.String(HomeItem.5.Widget)]</property>
 				<property name="PlayListType">$INFO[Window(Home).Property(HomePlaylistFive.Type)]</property>
 				<property name="Background">$INFO[Skin.String(HomeItem.5.Display)]</property>
-				<!--visible>SubString(Window(Home).Property(MainMenuItemFive),True)</visible-->
 				<visible>!IsEmpty(Skin.String(HomeItem.5.Path))</visible>
 			</item>
 			<item id="6">
@@ -206,7 +201,6 @@
 				<property name="WidgetSet">$INFO[Skin.String(HomeItem.6.Widget)]</property>
 				<property name="PlayListType">$INFO[Window(Home).Property(HomePlaylistSix.Type)]</property>
 				<property name="Background">$INFO[Skin.String(HomeItem.6.Display)]</property>
-				<!--visible>SubString(Window(Home).Property(MainMenuItemSix),True)</visible-->
 				<visible>!IsEmpty(Skin.String(HomeItem.6.Path))</visible>
 			</item>
 			<item id="7">
@@ -224,7 +218,6 @@
 				<property name="WidgetSet">$INFO[Skin.String(HomeItem.7.Widget)]</property>
 				<property name="PlayListType">$INFO[Window(Home).Property(HomePlaylistSeven.Type)]</property>
 				<property name="Background">$INFO[Skin.String(HomeItem.7.Display)]</property>
-				<!--visible>SubString(Window(Home).Property(MainMenuItemSeven),True)</visible-->
 				<visible>!IsEmpty(Skin.String(HomeItem.7.Path))</visible>
 			</item>
 			<item id="8">
@@ -242,7 +235,6 @@
 				<property name="WidgetSet">$INFO[Skin.String(HomeItem.8.Widget)]</property>
 				<property name="PlayListType">$INFO[Window(Home).Property(HomePlaylistEight.Type)]</property>
 				<property name="Background">$INFO[Skin.String(HomeItem.8.Display)]</property>
-				<!--visible>SubString(Window(Home).Property(MainMenuItemEight),True)</visible-->
 				<visible>!IsEmpty(Skin.String(HomeItem.8.Path))</visible>
 			</item>
 			<item id="9">
@@ -260,7 +252,6 @@
 				<property name="WidgetSet">$INFO[Skin.String(HomeItem.9.Widget)]</property>
 				<property name="PlayListType">$INFO[Window(Home).Property(HomePlaylistNine.Type)]</property>
 				<property name="Background">$INFO[Skin.String(HomeItem.9.Display)]</property>
-				<!--visible>SubString(Window(Home).Property(MainMenuItemNine),True)</visible-->
 				<visible>!IsEmpty(Skin.String(HomeItem.9.Path))</visible>
 			</item>
 			<item id="10">
@@ -278,7 +269,6 @@
 				<property name="WidgetSet">$INFO[Skin.String(HomeItem.10.Widget)]</property>
 				<property name="PlayListType">$INFO[Window(Home).Property(HomePlaylistTen.Type)]</property>
 				<property name="Background">$INFO[Skin.String(HomeItem.10.Display)]</property>
-				<!--visible>SubString(Window(Home).Property(MainMenuItemTen),True)</visible-->
 				<visible>!IsEmpty(Skin.String(HomeItem.10.Path))</visible>
 			</item>
 			<item id="11">
@@ -296,7 +286,6 @@
 				<property name="WidgetSet">$INFO[Skin.String(HomeItem.11.Widget)]</property>
 				<property name="PlayListType">$INFO[Window(Home).Property(HomePlaylistEleven.Type)]</property>
 				<property name="Background">$INFO[Skin.String(HomeItem.11.Display)]</property>
-				<!--visible>SubString(Window(Home).Property(MainMenuItemEleven),True)</visible-->
 				<visible>!IsEmpty(Skin.String(HomeItem.11.Path))</visible>
 			</item>
 			<item id="12">
@@ -314,7 +303,6 @@
 				<property name="WidgetSet">$INFO[Skin.String(HomeItem.12.Widget)]</property>
 				<property name="PlayListType">$INFO[Window(Home).Property(HomePlaylistTwelve.Type)]</property>
 				<property name="Background">$INFO[Skin.String(HomeItem.12.Display)]</property>
-				<!--visible>SubString(Window(Home).Property(MainMenuItemTwelve),True)</visible-->
 				<visible>!IsEmpty(Skin.String(HomeItem.12.Path))</visible>
 			</item>
 		</content>

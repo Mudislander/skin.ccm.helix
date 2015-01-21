@@ -314,11 +314,13 @@
 						<focusedcolor>white</focusedcolor>
 						<label>$LOCALIZE[31365]</label>
 						<label2>[COLOR=$VAR[MainColorOne]]$VAR[ColorOneName][/COLOR]</label2>
+						<onclick>ActivateWindow(2130)</onclick>
+						<!--
 						<onclick condition="IsEmpty(Skin.String(UsrColorOne))">Skin.SetString(UsrColorOne,FFF30000)</onclick>
 						
 						
 						<onclick condition="Skin.String(UsrColorOne,FFF30000)">Skin.SetString(UsrColorOne,ff0084ff)</onclick>
-						<!-- Insert new colours here -->
+						
 						
 						<onclick condition="Skin.String(UsrColorOne,ff0084ff)">Skin.SetString(UsrColorOne,FF6DF300)</onclick>
 						
@@ -326,6 +328,8 @@
 						
 						
 						<onclick condition="Skin.String(UsrColorOne,FF6DF300)">Skin.Reset(UsrColorOne)</onclick>
+						
+						-->
 						<texturefocus>MenuItemFO.png</texturefocus>
 						<texturenofocus>MenuItemNF.png</texturenofocus>
 					</control>
@@ -517,11 +521,6 @@
 						<texturefocus>MenuItemFO.png</texturefocus>
 						<texturenofocus>MenuItemNF.png</texturenofocus>
 					</control>
-					
-					
-					
-					
-					
 					<control type="radiobutton" id="121">
 						<description>hide home floor</description>
 						<width>750</width>
@@ -535,12 +534,6 @@
 						<texturefocus>MenuItemFO.png</texturefocus>
 						<texturenofocus>MenuItemNF.png</texturenofocus>
 					</control>
-					
-					
-					
-					
-					
-					
 					<control type="radiobutton" id="122">
 						<description>enable raindrop effect</description>
 						<width>750</width>
@@ -624,8 +617,6 @@
 						<onclick>Skin.ToggleSetting(HideBackGroundFanart)</onclick>
 						<selected>!Skin.HasSetting(HideBackGroundFanart)</selected>
 					</control>
-					
-					
 					<control type="radiobutton" id="142">
 						<description>Fanart Animation</description>
 						<width>750</width>
@@ -639,11 +630,6 @@
 						<texturefocus>MenuItemFO.png</texturefocus>
 						<texturenofocus>MenuItemNF.png</texturenofocus>
 					</control>
-					
-					
-					
-					
-					
 					<!--control type="radiobutton" id="142">
 						<width>750</width>
 						<height>40</height>
@@ -705,8 +691,6 @@
 						<texturefocus>MenuItemFO.png</texturefocus>
 						<texturenofocus>MenuItemNF.png</texturenofocus>
 					</control>
-					
-					
 					<control type="label" id="150">
 						<width>750</width>
 						<height>45</height>
@@ -6784,7 +6768,7 @@
 						<selected>!Skin.HasSetting(DisableScriptPlaylist)</selected>
 						<enable>System.HasAddon(script.randomandlastitems)</enable>
 					</control>
-					<!--control type="button" id="638">
+					<control type="button" id="638">
 						<width>750</width>
 						<height>40</height>
 						<font>font13</font>
@@ -6796,7 +6780,7 @@
 						<onclick>ActivateWindow(2127)</onclick>
 						<enable>!Skin.HasSetting(DisableScriptPlaylist)</enable>
 						<visible>System.HasAddon(script.randomandlastitems)</visible>
-					</control-->
+					</control>
 					<control type="label" id="639">
 						<width>750</width>
 						<height>45</height>

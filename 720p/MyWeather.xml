@@ -5,19 +5,6 @@
 	<onload condition="!Skin.HasSetting(FirstTimeRun)">ActivateWindow(1112)</onload>
 	<controls>
 		<include>CommonBackground</include>
-		<!--control type="multiimage">
-			<left>0</left>
-			<top>0</top>
-			<width>1280</width>
-			<height>720</height>
-			<imagepath background="true">$INFO[Skin.String(WeatherFanartDir)]$INFO[Window(Weather).Property(Current.FanartCode)]</imagepath>
-			<timeperimage>10000</timeperimage>
-			<randomize>true</randomize>
-			<fadetime>1000</fadetime>
-			<include>VisibleFadeEffect</include>
-			<visible>StringCompare(Window(Home).Property(Background),Live)</visible>
-			<animation effect="fade" time="200">WindowClose</animation>
-		</control-->
 		<control type="image">
 			<description>Section header image</description>
 			<left>20</left>
@@ -583,19 +570,6 @@
 					<textwidth>235</textwidth>
 					<include>ButtonCommonValues</include>
 				</control>
-				<!--control type="radiobutton" id="250">
-					<description>Fanart Toggle</description>
-					<include>ButtonCommonValues</include>
-					<label>31937</label>
-					<onclick>Skin.ToggleSetting(ShowWeatherFanart)</onclick>
-					<selected>!Skin.HasSetting(ShowWeatherFanart)</selected>
-				</control>
-				<control type="button" id="251">
-					<include>ButtonCommonValues</include>
-					<label>31949</label>
-					<onclick>Skin.SetPath(WeatherFanartDir)</onclick>
-					<enable>Skin.HasSetting(ShowWeatherFanart)</enable>
-				</control-->
 				<include>CommonNowPlaying_Controls</include>
 			</control>
 		</control>
