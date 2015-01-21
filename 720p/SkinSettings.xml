@@ -666,6 +666,19 @@
 						<onclick>Skin.ToggleSetting(ShowBackgroundVis)</onclick>
 						<selected>!Skin.HasSetting(ShowBackgroundVis)</selected>
 					</control-->
+					<control type="radiobutton" id="143">
+						<description>Auto Music Viz</description>
+						<width>750</width>
+						<height>40</height>
+						<font>font13</font>
+						<textcolor>grey2</textcolor>
+						<focusedcolor>white</focusedcolor>
+						<label>$LOCALIZE[31339]</label>
+						<texturefocus>MenuItemFO.png</texturefocus>
+						<texturenofocus>MenuItemNF.png</texturenofocus>
+						<onclick>Skin.ToggleSetting(HideAutoMusicViz)</onclick>
+						<selected>!Skin.HasSetting(HideAutoMusicViz)</selected>
+					</control>
 					<control type="radiobutton" id="144">
 						<width>750</width>
 						<height>40</height>
