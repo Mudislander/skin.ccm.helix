@@ -40,7 +40,7 @@
 				<font>font13_title</font>
 				<align>center</align>
 				<aligny>center</aligny>
-				<textcolor>blue</textcolor>
+				<textcolor>$VAR[MainColorOne]</textcolor>
 				<shadowcolor>black</shadowcolor>
 				<label>$LOCALIZE[31316]</label>
 			</control>

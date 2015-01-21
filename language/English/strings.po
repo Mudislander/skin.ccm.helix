@@ -203,6 +203,18 @@ msgstr ""
 
 #empty strings from id 31062 to 31070
 
+msgctxt "#31067"
+msgid "Enable CD Wall as Default Background While Playing"
+msgstr ""
+
+msgctxt "#31068"
+msgid "Enable Fanart Animation While Playing"
+msgstr ""
+
+msgctxt "#31069"
+msgid "Hide Home Floor"
+msgstr ""
+
 msgctxt "#31070"
 msgid "Show Background Fanart"
 msgstr ""
@@ -540,7 +552,21 @@ msgctxt "#31215"
 msgid "Watch it Later"
 msgstr ""
 
-#empty strings from id 31216 to 31219
+msgctxt "#31216"
+msgid "Animation"
+msgstr ""
+
+msgctxt "#31217"
+msgid "Children"
+msgstr ""
+
+msgctxt "#31218"
+msgid "Comedy"
+msgstr ""
+
+msgctxt "#31219"
+msgid "Family"
+msgstr ""
 
 msgctxt "#31220"
 msgid "In Progress Movies"
@@ -678,6 +704,10 @@ msgstr ""
 
 msgctxt "#31258"
 msgid "User Select"
+msgstr ""
+
+msgctxt "#31260"
+msgid "No Disc Media Detected"
 msgstr ""
 
 #empty strings from id 31259 to 31271
@@ -986,10 +1016,20 @@ msgctxt "#31364"
 msgid "Holiday Theme"
 msgstr ""
 
-#empty strings from id 31365 to 31365
+msgctxt "#31365"
+msgid "Select Main Font Colour"
+msgstr ""
 
 msgctxt "#31366"
 msgid "Current Theme"
+msgstr ""
+
+msgctxt "#31367"
+msgid "Fire"
+msgstr ""
+
+msgctxt "#31368"
+msgid "Kryptonite"
 msgstr ""
 
 #empty strings from id 31367 to 31379

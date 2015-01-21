@@ -52,7 +52,7 @@
 				<label>$LOCALIZE[19023] - $INFO[VideoPlayer.ChannelGroup]</label>
 				<align>center</align>
 				<aligny>center</aligny>
-				<textcolor>blue</textcolor>
+				<textcolor>$VAR[MainColorOne]</textcolor>
 				<shadowcolor>black</shadowcolor>
 				<visible>!pvr.IsPlayingRadio</visible>
 			</control>
@@ -66,7 +66,7 @@
 				<label>$LOCALIZE[19024] - $INFO[MusicPlayer.ChannelGroup]</label>
 				<align>center</align>
 				<aligny>center</aligny>
-				<textcolor>blue</textcolor>
+				<textcolor>$VAR[MainColorOne]</textcolor>
 				<shadowcolor>black</shadowcolor>
 				<visible>pvr.IsPlayingRadio</visible>
 			</control>
@@ -168,7 +168,7 @@
 						<width>60</width>
 						<height>20</height>
 						<font>font10_title</font>
-						<textcolor>blue</textcolor>
+						<textcolor>$VAR[MainColorOne]</textcolor>
 						<selectedcolor>blue</selectedcolor>
 						<aligny>center</aligny>
 						<label>$INFO[ListItem.StartTime]</label>
@@ -190,7 +190,7 @@
 						<width>60</width>
 						<height>20</height>
 						<font>font10_title</font>
-						<textcolor>blue</textcolor>
+						<textcolor>$VAR[MainColorOne]</textcolor>
 						<selectedcolor>blue</selectedcolor>
 						<aligny>center</aligny>
 						<label>$INFO[ListItem.EndTime]</label>
@@ -288,7 +288,7 @@
 						<width>60</width>
 						<height>20</height>
 						<font>font10_title</font>
-						<textcolor>blue</textcolor>
+						<textcolor>$VAR[MainColorOne]</textcolor>
 						<selectedcolor>blue</selectedcolor>
 						<aligny>center</aligny>
 						<label>$INFO[ListItem.StartTime]</label>
@@ -310,7 +310,7 @@
 						<width>60</width>
 						<height>20</height>
 						<font>font10_title</font>
-						<textcolor>blue</textcolor>
+						<textcolor>$VAR[MainColorOne]</textcolor>
 						<selectedcolor>blue</selectedcolor>
 						<aligny>center</aligny>
 						<label>$INFO[ListItem.EndTime]</label>
@@ -354,7 +354,7 @@
 				<scroll>false</scroll>
 				<align>right</align>
 				<aligny>center</aligny>
-				<label>([COLOR=blue]$INFO[Container(11).NumItems][/COLOR]) $LOCALIZE[19019] - $LOCALIZE[31024] ([COLOR=blue]$INFO[Container(11).CurrentPage]/$INFO[Container(11).NumPages][/COLOR])</label>
+				<label>([COLOR=$VAR[MainColorOne]]$INFO[Container(11).NumItems][/COLOR]) $LOCALIZE[19019] - $LOCALIZE[31024] ([COLOR=$VAR[MainColorOne]]$INFO[Container(11).CurrentPage]/$INFO[Container(11).NumPages][/COLOR])</label>
 				<include>Window_OpenClose_Animation</include>
 			</control>
 		</control>

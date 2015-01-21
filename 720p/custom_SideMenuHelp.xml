@@ -30,7 +30,7 @@
 			<width>680</width>
 			<height>60</height>
 			<font>font35_title</font>
-			<textcolor>blue</textcolor>
+			<textcolor>$VAR[MainColorOne]</textcolor>
 			<align>left</align>
 			<aligny>center</aligny>
 			<label>31411</label>

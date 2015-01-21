@@ -254,7 +254,7 @@
 				<top>53r</top>
 				<width>700</width>
 				<height>20</height>
-				<label>$INFO[Player.Title] - ([COLOR=blue]$INFO[Player.Time] / $INFO[Player.Duration,][/COLOR])</label>
+				<label>$INFO[Player.Title] - ([COLOR=$VAR[MainColorOne]]$INFO[Player.Time] / $INFO[Player.Duration,][/COLOR])</label>
 				<align>left</align>
 				<aligny>center</aligny>
 				<font>font12</font>
@@ -318,7 +318,7 @@
 				<top>30r</top>
 				<width>700</width>
 				<height>20</height>
-				<label>$INFO[VideoPlayer.ChannelName]$INFO[VideoPlayer.ChannelNumberLabel, - ([COLOR=blue],[/COLOR])]</label>
+				<label>$INFO[VideoPlayer.ChannelName]$INFO[VideoPlayer.ChannelNumberLabel, - ([COLOR=grey3],[/COLOR])]</label>
 				<align>left</align>
 				<aligny>center</aligny>
 				<font>font12</font>
@@ -439,7 +439,7 @@
 			<top>120</top>
 			<height>30</height>
 			<width>325</width>
-			<label>[COLOR=blue]$LOCALIZE[19031] :[/COLOR] $INFO[MusicPlayer.offset(1).Title]</label>
+			<label>[COLOR=$VAR[MainColorOne]]$LOCALIZE[19031] :[/COLOR] $INFO[MusicPlayer.offset(1).Title]</label>
 			<align>right</align>
 			<aligny>center</aligny>
 			<font>font12</font>
@@ -586,7 +586,7 @@
 			<height>35</height>
 			<font>font12</font>
 			<label>31023</label>
-			<textcolor>blue</textcolor>
+			<textcolor>$VAR[MainColorOne]</textcolor>
 			<align>center</align>
 			<aligny>center</aligny>
 			<visible>Player.HasMedia</visible>

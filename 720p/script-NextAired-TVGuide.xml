@@ -130,7 +130,7 @@
 			</control>
 			<control type="label">
 				<include>WindowTitleCommons</include>
-				<label>[COLOR=blue] - [/COLOR]$LOCALIZE[31207]</label>
+				<label>[COLOR=$VAR[MainColorOne]] - [/COLOR]$LOCALIZE[31207]</label>
 			</control>
 		</control>
 		<control type="grouplist" id="2000">
@@ -516,7 +516,7 @@
 					<height>35</height>
 					<font>font12</font>
 					<label>31006</label>
-					<textcolor>blue</textcolor>
+					<textcolor>$VAR[MainColorOne]</textcolor>
 					<align>center</align>
 					<aligny>center</aligny>
 				</control>

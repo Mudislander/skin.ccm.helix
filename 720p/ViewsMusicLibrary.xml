@@ -391,7 +391,7 @@
 				<width>840</width>
 				<height>20</height>
 				<font>font24_title</font>
-				<textcolor>blue</textcolor>
+				<textcolor>$VAR[MainColorOne]</textcolor>
 				<shadowcolor>black</shadowcolor>
 				<scroll>true</scroll>
 				<align>center</align>
@@ -823,7 +823,7 @@
 						<align>right</align>
 						<aligny>center</aligny>
 						<font>font13_title</font>
-						<textcolor>blue</textcolor>
+						<textcolor>$VAR[MainColorOne]</textcolor>
 						<visible>!IsEmpty(ListItem.Property(Artist_Born))</visible>
 					</control>
 					<control type="label">
@@ -849,7 +849,7 @@
 						<align>right</align>
 						<aligny>center</aligny>
 						<font>font13_title</font>
-						<textcolor>blue</textcolor>
+						<textcolor>$VAR[MainColorOne]</textcolor>
 						<visible>!IsEmpty(ListItem.Property(Artist_Formed))</visible>
 					</control>
 					<control type="label">
@@ -875,7 +875,7 @@
 						<align>right</align>
 						<aligny>center</aligny>
 						<font>font13_title</font>
-						<textcolor>blue</textcolor>
+						<textcolor>$VAR[MainColorOne]</textcolor>
 					</control>
 					<control type="label">
 						<description>Genre Value</description>
@@ -1055,7 +1055,7 @@
 					<align>center</align>
 					<aligny>center</aligny>
 					<font>font12_title</font>
-					<textcolor>blue</textcolor>
+					<textcolor>$VAR[MainColorOne]</textcolor>
 					<shadowcolor>black</shadowcolor>
 				</control>
 				<control type="textbox">

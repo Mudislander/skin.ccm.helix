@@ -64,7 +64,7 @@
 			</control>
 			<control type="label">
 				<include>WindowTitleCommons</include>
-				<label>[COLOR=blue] - [/COLOR]$INFO[Container.FolderName]</label>
+				<label>[COLOR=$VAR[MainColorOne]] - [/COLOR]$INFO[Container.FolderName]</label>
 				<visible>!IsEmpty(Container.FolderName)</visible>
 			</control>
 		</control>
@@ -87,7 +87,7 @@
 					<height>35</height>
 					<font>font12</font>
 					<label>31006</label>
-					<textcolor>blue</textcolor>
+					<textcolor>$VAR[MainColorOne]</textcolor>
 					<align>center</align>
 					<aligny>center</aligny>
 				</control>
@@ -131,7 +131,7 @@
 					<height>35</height>
 					<font>font12</font>
 					<label>31026</label>
-					<textcolor>blue</textcolor>
+					<textcolor>$VAR[MainColorOne]</textcolor>
 					<align>center</align>
 					<aligny>center</aligny>
 				</control>

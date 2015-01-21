@@ -66,7 +66,7 @@
 				<label>$LOCALIZE[20344]</label>
 				<align>center</align>
 				<aligny>center</aligny>
-				<textcolor>blue</textcolor>
+				<textcolor>$VAR[MainColorOne]</textcolor>
 				<shadowcolor>black</shadowcolor>
 			</control>
 			<control type="spincontrolex" id="20">
@@ -108,7 +108,7 @@
 				<label>$LOCALIZE[31944]</label>
 				<align>center</align>
 				<aligny>center</aligny>
-				<textcolor>blue</textcolor>
+				<textcolor>$VAR[MainColorOne]</textcolor>
 				<shadowcolor>black</shadowcolor>
 			</control>
 			<control type="image">
@@ -151,7 +151,7 @@
 				<label>$LOCALIZE[31943]</label>
 				<align>center</align>
 				<aligny>center</aligny>
-				<textcolor>blue</textcolor>
+				<textcolor>$VAR[MainColorOne]</textcolor>
 				<shadowcolor>black</shadowcolor>
 			</control>
 			<control type="list" id="21">
@@ -256,7 +256,7 @@
 				<label>$LOCALIZE[31314]</label>
 				<align>center</align>
 				<aligny>center</aligny>
-				<textcolor>blue</textcolor>
+				<textcolor>$VAR[MainColorOne]</textcolor>
 				<shadowcolor>black</shadowcolor>
 			</control>
 			<control type="grouplist" id="5">

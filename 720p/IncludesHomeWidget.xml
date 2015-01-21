@@ -135,7 +135,7 @@
 							<width>150</width>
 							<height>20</height>
 							<font>font12</font>
-							<textcolor>blue</textcolor>
+							<textcolor>$VAR[MainColorOne]</textcolor>
 							<selectedcolor>selected</selectedcolor>
 							<align>center</align>
 							<aligny>center</aligny>
@@ -168,7 +168,7 @@
 				</visible>
 				<visible>StringCompare(Container(9000).ListItem.Property(WidgetSet),RecentMovies)</visible>
 				<include>VisibleFadeEffect</include>
-				<control type="label">
+				<!--control type="label">
 					<left>370</left>
 					<top>284</top>
 					<height>20</height>
@@ -180,7 +180,7 @@
 					<textcolor>white</textcolor>
 					<shadowcolor>black</shadowcolor>
 					<visible>IntegerGreaterThan(Container(8001).NumItems,0)</visible>
-				</control>
+				</control-->
 				<control type="image">
 					<left>-20</left>
 					<top>-5</top>
@@ -384,7 +384,7 @@
 							<width>150</width>
 							<height>20</height>
 							<font>font12</font>
-							<textcolor>blue</textcolor>
+							<textcolor>$VAR[MainColorOne]</textcolor>
 							<selectedcolor>selected</selectedcolor>
 							<align>center</align>
 							<aligny>center</aligny>
@@ -417,7 +417,7 @@
 				</visible>
 				<visible>StringCompare(Container(9000).ListItem.Property(WidgetSet),RandomMovies)</visible>
 				<include>VisibleFadeEffect</include>
-				<control type="label">
+				<!--control type="label">
 					<left>370</left>
 					<top>284</top>
 					<height>20</height>
@@ -429,7 +429,7 @@
 					<textcolor>white</textcolor>
 					<shadowcolor>black</shadowcolor>
 					<visible>IntegerGreaterThan(Container(8003).NumItems,0)</visible>
-				</control>
+				</control-->
 				<control type="image">
 					<left>-20</left>
 					<top>-5</top>
@@ -633,7 +633,7 @@
 							<width>150</width>
 							<height>20</height>
 							<font>font12</font>
-							<textcolor>blue</textcolor>
+							<textcolor>$VAR[MainColorOne]</textcolor>
 							<selectedcolor>selected</selectedcolor>
 							<align>center</align>
 							<aligny>center</aligny>
@@ -666,7 +666,7 @@
 				</visible>
 				<visible>StringCompare(Container(9000).ListItem.Property(WidgetSet),SuggestedMovies)</visible>
 				<include>VisibleFadeEffect</include>
-				<control type="label">
+				<!--control type="label">
 					<left>370</left>
 					<top>284</top>
 					<height>20</height>
@@ -678,7 +678,7 @@
 					<textcolor>white</textcolor>
 					<shadowcolor>black</shadowcolor>
 					<visible>IntegerGreaterThan(Container(8005).NumItems,0)</visible>
-				</control>
+				</control-->
 				<control type="image">
 					<left>-20</left>
 					<top>-5</top>
@@ -882,7 +882,7 @@
 							<width>150</width>
 							<height>20</height>
 							<font>font12</font>
-							<textcolor>blue</textcolor>
+							<textcolor>$VAR[MainColorOne]</textcolor>
 							<selectedcolor>selected</selectedcolor>
 							<align>center</align>
 							<aligny>center</aligny>
@@ -915,7 +915,7 @@
 				</visible>
 				<visible>StringCompare(Container(9000).ListItem.Property(WidgetSet),UnWatchedMovies)</visible>
 				<include>VisibleFadeEffect</include>
-				<control type="label">
+				<!--control type="label">
 					<left>370</left>
 					<top>284</top>
 					<height>20</height>
@@ -927,7 +927,7 @@
 					<textcolor>white</textcolor>
 					<shadowcolor>black</shadowcolor>
 					<visible>IntegerGreaterThan(Container(8007).NumItems,0)</visible>
-				</control>
+				</control-->
 				<control type="image">
 					<left>-20</left>
 					<top>-5</top>
@@ -1158,7 +1158,7 @@
 							<width>200</width>
 							<height>20</height>
 							<font>font12</font>
-							<textcolor>blue</textcolor>
+							<textcolor>$VAR[MainColorOne]</textcolor>
 							<selectedcolor>selected</selectedcolor>
 							<align>center</align>
 							<aligny>center</aligny>
@@ -1191,7 +1191,7 @@
 				</visible>
 				<visible>StringCompare(Container(9000).ListItem.Property(WidgetSet),RecentEpisodes)</visible>
 				<include>VisibleFadeEffect</include>
-				<control type="label">
+				<!--control type="label">
 					<left>370</left>
 					<top>284</top>
 					<height>20</height>
@@ -1203,7 +1203,7 @@
 					<textcolor>white</textcolor>
 					<shadowcolor>black</shadowcolor>
 					<visible>IntegerGreaterThan(Container(8009).NumItems,0)</visible>
-				</control>
+				</control-->
 				<control type="image">
 					<left>-20</left>
 					<top>-5</top>
@@ -1326,7 +1326,7 @@
 							<width>280</width>
 							<height>20</height>
 							<font>font12</font>
-							<textcolor>blue</textcolor>
+							<textcolor>$VAR[MainColorOne]</textcolor>
 							<selectedcolor>selected</selectedcolor>
 							<align>center</align>
 							<aligny>center</aligny>
@@ -1498,7 +1498,7 @@
 							<width>200</width>
 							<height>20</height>
 							<font>font12</font>
-							<textcolor>blue</textcolor>
+							<textcolor>$VAR[MainColorOne]</textcolor>
 							<selectedcolor>selected</selectedcolor>
 							<align>center</align>
 							<aligny>center</aligny>
@@ -1531,7 +1531,7 @@
 				</visible>
 				<visible>StringCompare(Container(9000).ListItem.Property(WidgetSet),RandomEpisodes)</visible>
 				<include>VisibleFadeEffect</include>
-				<control type="label">
+				<!--control type="label">
 					<left>370</left>
 					<top>284</top>
 					<height>20</height>
@@ -1543,7 +1543,7 @@
 					<textcolor>white</textcolor>
 					<shadowcolor>black</shadowcolor>
 					<visible>IntegerGreaterThan(Container(8011).NumItems,0)</visible>
-				</control>
+				</control-->
 				<control type="image">
 					<left>-20</left>
 					<top>-5</top>
@@ -1666,7 +1666,7 @@
 							<width>280</width>
 							<height>20</height>
 							<font>font12</font>
-							<textcolor>blue</textcolor>
+							<textcolor>$VAR[MainColorOne]</textcolor>
 							<selectedcolor>selected</selectedcolor>
 							<align>center</align>
 							<aligny>center</aligny>
@@ -1838,7 +1838,7 @@
 							<width>200</width>
 							<height>20</height>
 							<font>font12</font>
-							<textcolor>blue</textcolor>
+							<textcolor>$VAR[MainColorOne]</textcolor>
 							<selectedcolor>selected</selectedcolor>
 							<align>center</align>
 							<aligny>center</aligny>
@@ -1871,7 +1871,7 @@
 				</visible>
 				<visible>StringCompare(Container(9000).ListItem.Property(WidgetSet),SuggestedEpisodes)</visible>
 				<include>VisibleFadeEffect</include>
-				<control type="label">
+				<!--control type="label">
 					<left>370</left>
 					<top>284</top>
 					<height>20</height>
@@ -1883,7 +1883,7 @@
 					<textcolor>white</textcolor>
 					<shadowcolor>black</shadowcolor>
 					<visible>IntegerGreaterThan(Container(8013).NumItems,0)</visible>
-				</control>
+				</control-->
 				<control type="image">
 					<left>-20</left>
 					<top>-5</top>
@@ -2006,7 +2006,7 @@
 							<width>280</width>
 							<height>20</height>
 							<font>font12</font>
-							<textcolor>blue</textcolor>
+							<textcolor>$VAR[MainColorOne]</textcolor>
 							<selectedcolor>selected</selectedcolor>
 							<align>center</align>
 							<aligny>center</aligny>
@@ -2176,7 +2176,7 @@
 							<width>180</width>
 							<height>20</height>
 							<font>font12</font>
-							<textcolor>blue</textcolor>
+							<textcolor>$VAR[MainColorOne]</textcolor>
 							<selectedcolor>selected</selectedcolor>
 							<align>center</align>
 							<aligny>center</aligny>
@@ -2209,7 +2209,7 @@
 				</visible>
 				<visible>StringCompare(Container(9000).ListItem.Property(WidgetSet),RecentAlbums)</visible>
 				<include>VisibleFadeEffect</include>
-				<control type="label">
+				<!--control type="label">
 					<left>370</left>
 					<top>284</top>
 					<height>20</height>
@@ -2221,7 +2221,7 @@
 					<textcolor>white</textcolor>
 					<shadowcolor>black</shadowcolor>
 					<visible>IntegerGreaterThan(Container(8015).NumItems,0)</visible>
-				</control>
+				</control-->
 				<control type="image">
 					<left>-20</left>
 					<top>-5</top>
@@ -2343,7 +2343,7 @@
 							<width>225</width>
 							<height>20</height>
 							<font>font12</font>
-							<textcolor>blue</textcolor>
+							<textcolor>$VAR[MainColorOne]</textcolor>
 							<selectedcolor>selected</selectedcolor>
 							<align>center</align>
 							<aligny>center</aligny>
@@ -2513,7 +2513,7 @@
 							<width>180</width>
 							<height>20</height>
 							<font>font12</font>
-							<textcolor>blue</textcolor>
+							<textcolor>$VAR[MainColorOne]</textcolor>
 							<selectedcolor>selected</selectedcolor>
 							<align>center</align>
 							<aligny>center</aligny>
@@ -2546,7 +2546,7 @@
 				</visible>
 				<visible>StringCompare(Container(9000).ListItem.Property(WidgetSet),RandomAlbums)</visible>
 				<include>VisibleFadeEffect</include>
-				<control type="label">
+				<!--control type="label">
 					<left>370</left>
 					<top>284</top>
 					<height>20</height>
@@ -2558,7 +2558,7 @@
 					<textcolor>white</textcolor>
 					<shadowcolor>black</shadowcolor>
 					<visible>IntegerGreaterThan(Container(8017).NumItems,0)</visible>
-				</control>
+				</control-->
 				<control type="image">
 					<left>-20</left>
 					<top>-5</top>
@@ -2680,7 +2680,7 @@
 							<width>225</width>
 							<height>20</height>
 							<font>font12</font>
-							<textcolor>blue</textcolor>
+							<textcolor>$VAR[MainColorOne]</textcolor>
 							<selectedcolor>selected</selectedcolor>
 							<align>center</align>
 							<aligny>center</aligny>
@@ -2850,7 +2850,7 @@
 							<width>180</width>
 							<height>20</height>
 							<font>font12</font>
-							<textcolor>blue</textcolor>
+							<textcolor>$VAR[MainColorOne]</textcolor>
 							<selectedcolor>selected</selectedcolor>
 							<align>center</align>
 							<aligny>center</aligny>
@@ -2883,7 +2883,7 @@
 				</visible>
 				<visible>StringCompare(Container(9000).ListItem.Property(WidgetSet),SuggestedAlbums)</visible>
 				<include>VisibleFadeEffect</include>
-				<control type="label">
+				<!--control type="label">
 					<left>370</left>
 					<top>284</top>
 					<height>20</height>
@@ -2895,7 +2895,7 @@
 					<textcolor>white</textcolor>
 					<shadowcolor>black</shadowcolor>
 					<visible>IntegerGreaterThan(Container(8019).NumItems,0)</visible>
-				</control>
+				</control-->
 				<control type="image">
 					<left>-20</left>
 					<top>-5</top>
@@ -3017,7 +3017,7 @@
 							<width>225</width>
 							<height>20</height>
 							<font>font12</font>
-							<textcolor>blue</textcolor>
+							<textcolor>$VAR[MainColorOne]</textcolor>
 							<selectedcolor>selected</selectedcolor>
 							<align>center</align>
 							<aligny>center</aligny>
@@ -3189,7 +3189,7 @@
 							<width>200</width>
 							<height>20</height>
 							<font>font12</font>
-							<textcolor>blue</textcolor>
+							<textcolor>$VAR[MainColorOne]</textcolor>
 							<selectedcolor>selected</selectedcolor>
 							<align>center</align>
 							<aligny>center</aligny>
@@ -3222,7 +3222,7 @@
 				</visible>
 				<visible>StringCompare(Container(9000).ListItem.Property(WidgetSet),RecentConcerts)</visible>
 				<include>VisibleFadeEffect</include>
-				<control type="label">
+				<!--control type="label">
 					<left>370</left>
 					<top>284</top>
 					<height>20</height>
@@ -3234,7 +3234,7 @@
 					<textcolor>white</textcolor>
 					<shadowcolor>black</shadowcolor>
 					<visible>IntegerGreaterThan(Container(8021).NumItems,0)</visible>
-				</control>
+				</control-->
 				<control type="image">
 					<left>-20</left>
 					<top>-5</top>
@@ -3357,7 +3357,7 @@
 							<width>280</width>
 							<height>20</height>
 							<font>font12</font>
-							<textcolor>blue</textcolor>
+							<textcolor>$VAR[MainColorOne]</textcolor>
 							<selectedcolor>selected</selectedcolor>
 							<align>center</align>
 							<aligny>center</aligny>
@@ -3529,7 +3529,7 @@
 							<width>200</width>
 							<height>20</height>
 							<font>font12</font>
-							<textcolor>blue</textcolor>
+							<textcolor>$VAR[MainColorOne]</textcolor>
 							<selectedcolor>selected</selectedcolor>
 							<align>center</align>
 							<aligny>center</aligny>
@@ -3562,7 +3562,7 @@
 				</visible>
 				<visible>StringCompare(Container(9000).ListItem.Property(WidgetSet),RandomConcerts)</visible>
 				<include>VisibleFadeEffect</include>
-				<control type="label">
+				<!--control type="label">
 					<left>370</left>
 					<top>284</top>
 					<height>20</height>
@@ -3574,7 +3574,7 @@
 					<textcolor>white</textcolor>
 					<shadowcolor>black</shadowcolor>
 					<visible>IntegerGreaterThan(Container(8023).NumItems,0)</visible>
-				</control>
+				</control-->
 				<control type="image">
 					<left>-20</left>
 					<top>-5</top>
@@ -3697,7 +3697,7 @@
 							<width>280</width>
 							<height>20</height>
 							<font>font12</font>
-							<textcolor>blue</textcolor>
+							<textcolor>$VAR[MainColorOne]</textcolor>
 							<selectedcolor>selected</selectedcolor>
 							<align>center</align>
 							<aligny>center</aligny>
@@ -3869,7 +3869,7 @@
 							<width>200</width>
 							<height>20</height>
 							<font>font12</font>
-							<textcolor>blue</textcolor>
+							<textcolor>$VAR[MainColorOne]</textcolor>
 							<selectedcolor>selected</selectedcolor>
 							<align>center</align>
 							<aligny>center</aligny>
@@ -3902,7 +3902,7 @@
 				</visible>
 				<visible>StringCompare(Container(9000).ListItem.Property(WidgetSet),SuggestedConcerts)</visible>
 				<include>VisibleFadeEffect</include>
-				<control type="label">
+				<!--control type="label">
 					<left>370</left>
 					<top>284</top>
 					<height>20</height>
@@ -3914,7 +3914,7 @@
 					<textcolor>white</textcolor>
 					<shadowcolor>black</shadowcolor>
 					<visible>IntegerGreaterThan(Container(8025).NumItems,0)</visible>
-				</control>
+				</control-->
 				<control type="image">
 					<left>-20</left>
 					<top>-5</top>
@@ -4037,7 +4037,7 @@
 							<width>280</width>
 							<height>20</height>
 							<font>font12</font>
-							<textcolor>blue</textcolor>
+							<textcolor>$VAR[MainColorOne]</textcolor>
 							<selectedcolor>selected</selectedcolor>
 							<align>center</align>
 							<aligny>center</aligny>
@@ -4410,7 +4410,7 @@
 				</visible>
 				<visible>StringCompare(Container(9000).ListItem.Property(PlayListType),Movie)</visible>
 				<include>VisibleFadeEffect</include>
-				<control type="label">
+				<!--control type="label">
 					<description>Recent Title label</description>
 					<left>370</left>
 					<top>284</top>
@@ -4424,8 +4424,8 @@
 					<shadowcolor>black</shadowcolor>
 					<visible>IntegerGreaterThan(Container(8027).NumItems,0)</visible>
 					<visible>!Skin.HasSetting(EnableRandomPlaylist)</visible>
-				</control>
-				<control type="label">
+				</control-->
+				<!--control type="label">
 					<description>Random Title label</description>
 					<left>370</left>
 					<top>284</top>
@@ -4438,7 +4438,7 @@
 					<textcolor>white</textcolor>
 					<shadowcolor>black</shadowcolor>
 					<visible>Skin.HasSetting(EnableRandomPlaylist) + !IsEmpty(Container(8027).ListItem.Label)</visible>
-				</control>
+				</control-->
 				<control type="image">
 					<left>-20</left>
 					<top>-5</top>
@@ -5123,7 +5123,7 @@
 				<visible>StringCompare(Container(9000).ListItem.Property(WidgetSet),VideoPlayList) + !Skin.HasSetting(DisableScriptPlayList)</visible>
 				<visible>StringCompare(Container(9000).ListItem.Property(PlayListType),Episode)</visible>
 				<include>VisibleFadeEffect</include>
-				<control type="label">
+				<!--control type="label">
 					<description>Random Title label</description>
 					<left>370</left>
 					<top>284</top>
@@ -5137,8 +5137,8 @@
 					<shadowcolor>black</shadowcolor>
 					<visible>IntegerGreaterThan(Container(8029).NumItems,0)</visible>
 					<visible>Skin.HasSetting(EnableRandomPlaylist)</visible>
-				</control>
-				<control type="label">
+				</control-->
+				<!--control type="label">
 					<description>Recent Title label</description>
 					<left>370</left>
 					<top>284</top>
@@ -5151,7 +5151,7 @@
 					<textcolor>white</textcolor>
 					<shadowcolor>black</shadowcolor>
 					<visible>!Skin.HasSetting(EnableRandomPlaylist) + !IsEmpty(Container(8029).ListItem.Label)</visible>
-				</control>
+				</control-->
 				<control type="image">
 					<left>-20</left>
 					<top>-5</top>
@@ -5556,7 +5556,7 @@
 				<width>150</width>
 				<height>20</height>
 				<font>font12</font>
-				<textcolor>blue</textcolor>
+				<textcolor>$VAR[MainColorOne]</textcolor>
 				<selectedcolor>selected</selectedcolor>
 				<align>center</align>
 				<aligny>center</aligny>
@@ -5711,7 +5711,7 @@
 				<width>200</width>
 				<height>20</height>
 				<font>font12</font>
-				<textcolor>blue</textcolor>
+				<textcolor>$VAR[MainColorOne]</textcolor>
 				<selectedcolor>selected</selectedcolor>
 				<align>center</align>
 				<aligny>center</aligny>
@@ -5814,7 +5814,7 @@
 				<width>280</width>
 				<height>20</height>
 				<font>font12</font>
-				<textcolor>blue</textcolor>
+				<textcolor>$VAR[MainColorOne]</textcolor>
 				<selectedcolor>selected</selectedcolor>
 				<align>center</align>
 				<aligny>center</aligny>

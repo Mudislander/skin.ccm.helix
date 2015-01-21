@@ -40,7 +40,7 @@
 				<font>font13_title</font>
 				<align>center</align>
 				<aligny>center</aligny>
-				<textcolor>blue</textcolor>
+				<textcolor>$VAR[MainColorOne]</textcolor>
 				<shadowcolor>black</shadowcolor>
 				<label>$LOCALIZE[31318]</label>
 			</control>
@@ -193,6 +193,18 @@
 						<onclick>Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Icon,DefaultVideoPlaylists.png)</onclick>
 						<onclick>Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Label)</onclick>
 						<onclick>ClearProperty(UsrSelectBtn,home)</onclick>
+					</item>
+					<item>
+						<description>Watch it Later Playlist</description>
+						<label>$LOCALIZE[559] - $LOCALIZE[31215]</label>
+						<onclick>Skin.Reset(UsrSelectAddon)</onclick>
+						<onclick>Dialog.Close(2119)</onclick>
+						<onclick>Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Label,$LOCALIZE[31215])</onclick>
+						<onclick>Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Path,RunAddon(script.simpleplaylists))</onclick>
+						<onclick>Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Icon,DefaultVideoPlaylists.png)</onclick>
+						<onclick>Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Label)</onclick>
+						<onclick>ClearProperty(UsrSelectBtn,home)</onclick>
+						<visible>System.HasAddon(script.simpleplaylists)</visible>
 					</item>
 				</content>
 			</control>

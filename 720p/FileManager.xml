@@ -80,7 +80,7 @@
 				<label>A</label>
 				<align>left</align>
 				<aligny>center</aligny>
-				<textcolor>blue</textcolor>
+				<textcolor>$VAR[MainColorOne]</textcolor>
 				<shadowcolor>black</shadowcolor>
 			</control>
 			<control type="label" id="101">
@@ -254,7 +254,7 @@
 				<label>B</label>
 				<align>right</align>
 				<aligny>center</aligny>
-				<textcolor>blue</textcolor>
+				<textcolor>$VAR[MainColorOne]</textcolor>
 				<shadowcolor>black</shadowcolor>
 			</control>
 			<control type="label" id="102">
@@ -393,7 +393,7 @@
 			<scroll>true</scroll>
 			<textcolor>grey</textcolor>
 			<shadowcolor>black</shadowcolor>
-			<label>([COLOR=blue]$INFO[Container(20).NumItems][/COLOR]) $LOCALIZE[31025] - $LOCALIZE[31024] ([COLOR=blue]$INFO[Container(20).CurrentPage]/$INFO[Container(20).NumPages][/COLOR])</label>
+			<label>([COLOR=$VAR[MainColorOne]]$INFO[Container(20).NumItems][/COLOR]) $LOCALIZE[31025] - $LOCALIZE[31024] ([COLOR=$VAR[MainColorOne]]$INFO[Container(20).CurrentPage]/$INFO[Container(20).NumPages][/COLOR])</label>
 		</control>
 		<control type="label">
 			<description>number of files/pages in left list text label</description>
@@ -405,7 +405,7 @@
 			<scroll>true</scroll>
 			<textcolor>grey</textcolor>
 			<shadowcolor>black</shadowcolor>
-			<label>([COLOR=blue]$INFO[Container(21).NumItems][/COLOR]) $LOCALIZE[31025] - $LOCALIZE[31024] ([COLOR=blue]$INFO[Container(21).CurrentPage]/$INFO[Container(21).NumPages][/COLOR])</label>
+			<label>([COLOR=$VAR[MainColorOne]]$INFO[Container(21).NumItems][/COLOR]) $LOCALIZE[31025] - $LOCALIZE[31024] ([COLOR=$VAR[MainColorOne]]$INFO[Container(21).CurrentPage]/$INFO[Container(21).NumPages][/COLOR])</label>
 		</control>
 		<control type="group" id="10">
 			<left>595</left>

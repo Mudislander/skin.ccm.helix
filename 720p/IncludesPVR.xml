@@ -30,27 +30,27 @@
 			</control>
 			<control type="label">
 				<include>WindowTitleCommons</include>
-				<label>[COLOR=blue] - [/COLOR]$LOCALIZE[19019]</label>
+				<label>[COLOR=$VAR[MainColorOne]] - [/COLOR]$LOCALIZE[19019]</label>
 				<visible>Window.IsActive(TVChannels) | Window.IsActive(RadioChannels)</visible>
 			</control>
 			<control type="label">
 				<include>WindowTitleCommons</include>
-				<label>[COLOR=blue] - [/COLOR]$LOCALIZE[22020]</label>
+				<label>[COLOR=$VAR[MainColorOne]] - [/COLOR]$LOCALIZE[22020]</label>
 				<visible>Window.IsActive(TVGuide) | Window.IsActive(RadioGuide)</visible>
 			</control>
 			<control type="label">
 				<include>WindowTitleCommons</include>
-				<label>[COLOR=blue] - [/COLOR]$LOCALIZE[19017]</label>
+				<label>[COLOR=$VAR[MainColorOne]] - [/COLOR]$LOCALIZE[19017]</label>
 				<visible>Window.IsActive(TVRecordings) | Window.IsActive(RadioRecordings)</visible>
 			</control>
 			<control type="label">
 				<include>WindowTitleCommons</include>
-				<label>[COLOR=blue] - [/COLOR]$LOCALIZE[19040]</label>
+				<label>[COLOR=$VAR[MainColorOne]] - [/COLOR]$LOCALIZE[19040]</label>
 				<visible>Window.IsActive(TVTimers) | Window.IsActive(RadioTimers)</visible>
 			</control>
 			<control type="label">
 				<include>WindowTitleCommons</include>
-				<label>[COLOR=blue] - [/COLOR]$LOCALIZE[137]</label>
+				<label>[COLOR=$VAR[MainColorOne]] - [/COLOR]$LOCALIZE[137]</label>
 				<visible>Window.IsActive(TVSearch) | Window.IsActive(RadioSearch)</visible>
 			</control>
 			<control type="label">
@@ -90,7 +90,7 @@
 					<height>35</height>
 					<font>font12caps</font>
 					<label>33063</label>
-					<textcolor>blue</textcolor>
+					<textcolor>$VAR[MainColorOne]</textcolor>
 					<align>center</align>
 					<aligny>center</aligny>
 				</control>
@@ -151,7 +151,7 @@
 					<height>35</height>
 					<font>font12</font>
 					<label>31006</label>
-					<textcolor>blue</textcolor>
+					<textcolor>$VAR[MainColorOne]</textcolor>
 					<align>center</align>
 					<aligny>center</aligny>
 				</control>

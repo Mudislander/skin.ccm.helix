@@ -123,7 +123,7 @@
 				<width>1220</width>
 				<height>35</height>
 				<font>font28_title</font>
-				<textcolor>blue</textcolor>
+				<textcolor>$VAR[MainColorOne]</textcolor>
 				<shadowcolor>black</shadowcolor>
 				<scroll>true</scroll>
 				<align>center</align>
@@ -180,7 +180,7 @@
 				<width>1220</width>
 				<height>35</height>
 				<font>font28_title</font>
-				<textcolor>blue</textcolor>
+				<textcolor>$VAR[MainColorOne]</textcolor>
 				<scroll>true</scroll>
 				<align>center</align>
 				<aligny>center</aligny>
@@ -231,7 +231,7 @@
 				<width>1220</width>
 				<height>35</height>
 				<font>font28_title</font>
-				<textcolor>blue</textcolor>
+				<textcolor>$VAR[MainColorOne]</textcolor>
 				<scroll>true</scroll>
 				<align>center</align>
 				<aligny>center</aligny>
@@ -437,7 +437,7 @@
 				<width>840</width>
 				<height>20</height>
 				<font>font24_title</font>
-				<textcolor>blue</textcolor>
+				<textcolor>$VAR[MainColorOne]</textcolor>
 				<shadowcolor>black</shadowcolor>
 				<scroll>true</scroll>
 				<align>center</align>
@@ -975,7 +975,7 @@
 					<align>right</align>
 					<aligny>center</aligny>
 					<font>font12</font>
-					<textcolor>blue</textcolor>
+					<textcolor>$VAR[MainColorOne]</textcolor>
 				</control>
 				<control type="label">
 					<description>Episodes Value</description>
@@ -999,7 +999,7 @@
 					<align>right</align>
 					<aligny>center</aligny>
 					<font>font12</font>
-					<textcolor>blue</textcolor>
+					<textcolor>$VAR[MainColorOne]</textcolor>
 				</control>
 				<control type="label">
 					<description>Aired Value</description>
@@ -1023,7 +1023,7 @@
 					<align>right</align>
 					<aligny>center</aligny>
 					<font>font12</font>
-					<textcolor>blue</textcolor>
+					<textcolor>$VAR[MainColorOne]</textcolor>
 				</control>
 				<control type="fadelabel">
 					<description>Genre Value</description>
@@ -1094,7 +1094,7 @@
 					<top>245</top>
 					<width>510</width>
 					<height>30</height>
-					<label>$INFO[ListItem.Season,[COLOR=blue] $LOCALIZE[20373] :[/COLOR] ] $INFO[ListItem.episode,[COLOR=blue] $LOCALIZE[20359] :[/COLOR] ] $INFO[ListItem.premiered,[COLOR=blue] $LOCALIZE[31322] :[/COLOR] ]</label>
+					<label>$INFO[ListItem.Season,[COLOR=$VAR[MainColorOne]] $LOCALIZE[20373] :[/COLOR] ] $INFO[ListItem.episode,[COLOR=blue] $LOCALIZE[20359] :[/COLOR] ] $INFO[ListItem.premiered,[COLOR=blue] $LOCALIZE[31322] :[/COLOR] ]</label>
 					<align>center</align>
 					<aligny>center</aligny>
 					<font>font12</font>
@@ -1464,7 +1464,7 @@
 					<align>right</align>
 					<aligny>center</aligny>
 					<font>font13_title</font>
-					<textcolor>blue</textcolor>
+					<textcolor>$VAR[MainColorOne]</textcolor>
 				</control>
 				<control type="label">
 					<description>Year Value</description>
@@ -1488,7 +1488,7 @@
 					<align>right</align>
 					<aligny>center</aligny>
 					<font>font13_title</font>
-					<textcolor>blue</textcolor>
+					<textcolor>$VAR[MainColorOne]</textcolor>
 				</control>
 				<control type="fadelabel">
 					<description>Genre Value</description>
@@ -1570,7 +1570,7 @@
 					<align>right</align>
 					<aligny>center</aligny>
 					<font>font13_title</font>
-					<textcolor>blue</textcolor>
+					<textcolor>$VAR[MainColorOne]</textcolor>
 				</control>
 				<control type="label">
 					<description>Aired Value</description>
@@ -1594,7 +1594,7 @@
 					<align>right</align>
 					<aligny>center</aligny>
 					<font>font13_title</font>
-					<textcolor>blue</textcolor>
+					<textcolor>$VAR[MainColorOne]</textcolor>
 				</control>
 				<control type="fadelabel">
 					<description>Episode Value</description>

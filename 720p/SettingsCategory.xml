@@ -288,7 +288,7 @@
 			</control>
 			<control type="label">
 				<include>WindowTitleCommons</include>
-				<label>[COLOR=blue] - [/COLOR]$INFO[Control.GetLabel(2)]</label>
+				<label>[COLOR=$VAR[MainColorOne]] - [/COLOR]$INFO[Control.GetLabel(2)]</label>
 			</control>
 		</control>
 		<include>Clock</include>

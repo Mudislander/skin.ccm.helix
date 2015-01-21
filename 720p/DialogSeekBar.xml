@@ -27,7 +27,7 @@
 				<align>center</align>
 				<aligny>center</aligny>
 				<font>font12_title</font>
-				<textcolor>blue</textcolor>
+				<textcolor>$VAR[MainColorOne]</textcolor>
 				<label>$LOCALIZE[21396]</label>
 				<visible>player.chaptercount</visible>
 			</control>
@@ -188,7 +188,7 @@
 				<align>left</align>
 				<aligny>center</aligny>
 				<font>font10_title</font>
-				<textcolor>blue</textcolor>
+				<textcolor>$VAR[MainColorOne]</textcolor>
 				<label>$LOCALIZE[31042]</label>
 				<visible>Player.Playing + !Player.Seeking + !Player.DisplayAfterSeek</visible>
 			</control>
@@ -201,7 +201,7 @@
 				<align>left</align>
 				<aligny>center</aligny>
 				<font>font10_title</font>
-				<textcolor>blue</textcolor>
+				<textcolor>$VAR[MainColorOne]</textcolor>
 				<label>31043</label>
 				<visible>[Player.Paused + !Player.Caching] + !Player.Seeking + !Player.DisplayAfterSeek</visible>
 			</control>
@@ -214,7 +214,7 @@
 				<align>left</align>
 				<aligny>center</aligny>
 				<font>font10_title</font>
-				<textcolor>blue</textcolor>
+				<textcolor>$VAR[MainColorOne]</textcolor>
 				<label>$LOCALIZE[15107] $INFO[Player.CacheLevel]%</label>
 				<visible>[Player.Paused + Player.Caching] + !Player.Seeking</visible>
 			</control>
@@ -227,7 +227,7 @@
 				<align>left</align>
 				<aligny>center</aligny>
 				<font>font10_title</font>
-				<textcolor>blue</textcolor>
+				<textcolor>$VAR[MainColorOne]</textcolor>
 				<label>$LOCALIZE[31046]</label>
 				<visible>Player.Seeking</visible>
 			</control>
@@ -240,7 +240,7 @@
 				<align>left</align>
 				<aligny>center</aligny>
 				<font>font10_title</font>
-				<textcolor>blue</textcolor>
+				<textcolor>$VAR[MainColorOne]</textcolor>
 				<label>$LOCALIZE[31046][COLOR=grey] $INFO[Player.SeekOffset][/COLOR]</label>
 				<visible>Player.DisplayAfterSeek + ![player.forwarding | player.rewinding]</visible>
 			</control>
@@ -253,7 +253,7 @@
 				<align>left</align>
 				<aligny>center</aligny>
 				<font>font10_title</font>
-				<textcolor>blue</textcolor>
+				<textcolor>$VAR[MainColorOne]</textcolor>
 				<label>31044</label>
 				<visible>Player.Forwarding</visible>
 			</control>
@@ -266,7 +266,7 @@
 				<align>left</align>
 				<aligny>center</aligny>
 				<font>font10_title</font>
-				<textcolor>blue</textcolor>
+				<textcolor>$VAR[MainColorOne]</textcolor>
 				<label>31045</label>
 				<visible>Player.Rewinding</visible>
 			</control>

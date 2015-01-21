@@ -692,7 +692,7 @@
 					<scroll>false</scroll>
 					<align>right</align>
 					<aligny>center</aligny>
-					<label>([COLOR=blue]$INFO[Container(2).NumItems][/COLOR]) $LOCALIZE[19019] - $LOCALIZE[31024] ([COLOR=blue]$INFO[Container(2).CurrentPage]/$INFO[Container(2).NumPages][/COLOR])</label>
+					<label>([COLOR=$VAR[MainColorOne]]$INFO[Container(2).NumItems][/COLOR]) $LOCALIZE[19019] - $LOCALIZE[31024] ([COLOR=$VAR[MainColorOne]]$INFO[Container(2).CurrentPage]/$INFO[Container(2).NumPages][/COLOR])</label>
 				</control>
 				<control type="label" id="36">
 					<description>Status Label</description>

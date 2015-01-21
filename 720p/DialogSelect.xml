@@ -329,7 +329,7 @@
 				<aligny>center</aligny>
 				<scroll>true</scroll>
 				<textcolor>grey</textcolor>
-				<label>([COLOR=blue]$INFO[Container(3).NumItems][/COLOR]) $LOCALIZE[31025] - $LOCALIZE[31024] ([COLOR=blue]$INFO[Container(3).CurrentPage]/$INFO[Container(3).NumPages][/COLOR])</label>
+				<label>([COLOR=$VAR[MainColorOne]]$INFO[Container(3).NumItems][/COLOR]) $LOCALIZE[31025] - $LOCALIZE[31024] ([COLOR=$VAR[MainColorOne]]$INFO[Container(3).CurrentPage]/$INFO[Container(3).NumPages][/COLOR])</label>
 				<animation effect="slide" end="-120,0" time="0" condition="!Control.IsVisible(5)">Conditional</animation>
 				<visible>IntegerGreaterThan(Container(3).NumItems,8)</visible>
 			</control>
@@ -344,7 +344,7 @@
 				<aligny>center</aligny>
 				<scroll>true</scroll>
 				<textcolor>grey</textcolor>
-				<label>([COLOR=blue]$INFO[Container(6).NumItems][/COLOR]) $LOCALIZE[31025] - $LOCALIZE[31024] ([COLOR=blue]$INFO[Container(6).CurrentPage]/$INFO[Container(6).NumPages][/COLOR])</label>
+				<label>([COLOR=$VAR[MainColorOne]]$INFO[Container(6).NumItems][/COLOR]) $LOCALIZE[31025] - $LOCALIZE[31024] ([COLOR=$VAR[MainColorOne]]$INFO[Container(6).CurrentPage]/$INFO[Container(6).NumPages][/COLOR])</label>
 				<wrapmultiline>true</wrapmultiline>
 				<animation effect="slide" end="-120,0" time="0" condition="!Control.IsVisible(5)">Conditional</animation>
 				<visible>IntegerGreaterThan(Container(6).NumItems,8)</visible>
