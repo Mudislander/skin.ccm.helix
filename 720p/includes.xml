@@ -9,6 +9,7 @@
 	<include file="IncludesBackgroundEffect.xml" />
 	<include file="IncludesHomeAddOnSystem.xml" />
 	<include file="IncludesCDWall.xml" />
+	<include file="IncludesOnScreenDisplay.xml" />
 	<include file="ViewsVideoLibrary.xml" />
 	<include file="ViewsMusicLibrary.xml" />
 	<include file="ViewsFileMode.xml" />

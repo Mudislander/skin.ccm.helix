@@ -1,28 +1,43 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <window>
+	<onload condition="!Skin.HasSetting(DisableSlideShowArt) + IsEmpty(Window.Property(ArtistSlideshowRunning))">RunScript(script.artistslideshow, daemon=True)</onload>
 	<defaultcontrol>-</defaultcontrol>
 	<allowoverlay>no</allowoverlay>
 	<controls>
-		<control type="visualisation" id="2">
-			<!-- FIX ME Music Visualization needs to have an id of 2 in this window to be able to lock or change preset -->
-			<description>visualisation</description>
-			<left>0</left>
-			<top>0</top>
-			<width>1280</width>
-			<height>720</height>
-		</control>
-		<control type="image">
-			<description>Fanart Image for Artist</description>
-			<left>0</left>
-			<top>0</top>
-			<width>1280</width>
-			<height>720</height>
-			<texture background="true">$INFO[Player.Art(fanart)]</texture>
-			<colordiffuse>AAFFFFFF</colordiffuse>
-			<!--visible>!IsEmpty(Player.Art(fanart)) + !Skin.HasSetting(HideVisualizationFanart)</visible-->
-			<visible>!IsEmpty(Player.Art(fanart))</visible>
-			<fadetime>600</fadetime>
-		</control>
+		<control type="group">
+            <visible>!Skin.HasSetting(HideHomeNowPlaying)</visible>
+            <include>ArtistExtraFanArt</include>
+        </control>
+		<control type="group">
+            <visible>Skin.HasSetting(NoDiffuseVizFanart) | IsEmpty(Visualisation.Name) | stringcompare(Visualisation.Name,Waveform) | stringcompare(Visualisation.Name,DirectX Spectrum) | stringcompare(Visualisation.Name,OpenGL Spectrum)</visible>
+            <include>AlbumArtMusicVizWall</include>
+        </control>
+		<include>MusicArtUnderVisualisation</include>
+        <control type="visualisation" id="2">
+            <description>visualisation</description>
+            <include>Dimensions_Fullscreen</include>
+        </control>
+        <control type="group">
+            <visible>!Skin.HasSetting(NoDiffuseVizFanart) + !IsEmpty(Visualisation.Name) + !stringcompare(Visualisation.Name,Waveform) + !stringcompare(Visualisation.Name,DirectX Spectrum) + !stringcompare(Visualisation.Name,OpenGL Spectrum)</visible>
+            <include>AlbumArtMusicVizWall</include>
+        </control>
+        <include>MusicArtOverVisualisation</include>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+		
 		<!-- media infos -->
 		<control type="group">
 			<animation effect="fade" time="200">VisibleChange</animation>

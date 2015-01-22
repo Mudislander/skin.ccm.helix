@@ -204,23 +204,23 @@ msgstr ""
 #empty strings from id 31062 to 31070
 
 msgctxt "#31067"
-msgid "Enable CD Wall as Default Background While Playing"
+msgid "Enable CD Wall as Fallback Background of Playing Albums"
 msgstr ""
 
 msgctxt "#31068"
-msgid "Enable Fanart Animation While Playing"
+msgid "Enable Fanart Animation of Playing Media"
 msgstr ""
 
 msgctxt "#31069"
-msgid "Hide Home Floor"
+msgid "Enable Home Floor"
 msgstr ""
 
 msgctxt "#31070"
-msgid "Show Background Fanart"
+msgid "Enable List Item Background Fanart"
 msgstr ""
 
 msgctxt "#31071"
-msgid "Show Now Playing Info"
+msgid "Enable Now Playing Info"
 msgstr ""
 
 msgctxt "#31072"
@@ -236,7 +236,7 @@ msgid "Enable Large Home Widgets"
 msgstr ""
 
 msgctxt "#31075"
-msgid "Hide Episode Thumbnails"
+msgid "Enable Episode Thumbnails"
 msgstr ""
 
 msgctxt "#31076"
@@ -260,7 +260,7 @@ msgid "Power Button Options"
 msgstr ""
 
 msgctxt "#31081"
-msgid "Hide Date and Clock Display"
+msgid "Enable Clock and Date Display"
 msgstr ""
 
 msgctxt "#31082"
@@ -399,10 +399,14 @@ msgid "Home Page Pictures Sub-menu"
 msgstr ""
 
 msgctxt "#31137"
-msgid "Lower Main Menu Bar"
+msgid "Enable Low Main Menu Bar"
 msgstr ""
 
-#empty strings from id 31138 to 31139
+#empty strings from id 31138 to 31138
+
+msgctxt "#31339"
+msgid "Enable Automatic Fullscreen Music Playback"
+msgstr ""
 
 msgctxt "#31140"
 msgid "Music OSD"
@@ -728,10 +732,14 @@ msgctxt "#31275"
 msgid "Enable Visible Horizontal SubMenu"
 msgstr ""
 
-#empty strings from id 31276 to 31281
+#empty strings from id 31276 to 3128
+
+msgctxt "#31280"
+msgid "Diffuse Music Visualization with Artist Fanart"
+msgstr ""
 
 msgctxt "#31281"
-msgid "Show Media Now Playing Background"
+msgid "Enable Fanart Background of Playing Media"
 msgstr ""
 
 msgctxt "#31282"

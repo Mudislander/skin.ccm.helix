@@ -21,6 +21,8 @@
 				<visible>IsEmpty(Skin.String(GlobalBackgroundPath))</visible>
 			</control>
 		</control>
+		
+		
 		<control type="group">
 			<visible>Skin.HasSetting(HolidayEffects)</visible>
 			<control type="image">
@@ -44,9 +46,16 @@
 				<visible>!IsEmpty(Skin.String(HolidayThemePath))</visible>
 			</control>
 		</control>
+		
+		
+		
+		
 		<control type="group">
+			
 			<visible>Skin.HasSetting(HideHomeNowPlaying) | !Player.HasAudio | Player.Paused | SubString(Window(videolibrary).Property(TvTunesIsAlive),TRUE)</visible>
+			
 			<visible>!Skin.HasSetting(SingleGlobalBackground) + !StringCompare(Window(Home).Property(MenuBackground),Theme) + !StringCompare(Container(9000).ListItem.Property(Background),Theme) + !Skin.HasSetting(HolidayEffects)</visible>
+			
 			<control type="group">
 				<include>BackgroundFade</include>
 				<fadetime>FanartCrossfadeTime</fadetime>
@@ -54,6 +63,7 @@
 				<include>LiveContentBackgrounds</include>
 				<visible>Window.IsVisible(Home) + StringCompare(Container(9000).ListItem.Property(Background),Live) + !StringCompare(Container(9000).ListItem.Property(HiLiteItem),Weather)</visible>
 			</control>
+			
 			<control type="multiimage">
 				<include>Dimensions_Fullscreen</include>
 				<imagepath background="true">$INFO[Skin.String(WeatherFanartDir)]$INFO[Window(Weather).Property(Current.FanartCode)]</imagepath>
@@ -64,6 +74,7 @@
 				<include>Window_OpenClose_Animation</include>
 				<visible>Window.IsVisible(Home) + StringCompare(Container(9000).ListItem.Property(Background),Live)  + StringCompare(Container(9000).ListItem.Property(HiLiteItem),Weather)</visible>
 			</control>
+			
 			<control type="multiimage">
 				<include>Dimensions_Fullscreen</include>
 				<aspectratio>scale</aspectratio>
@@ -74,6 +85,7 @@
 				<visible>Window.IsVisible(Home)</visible>
 				<visible>StringCompare(Container(9000).ListItem.Property(Background),Database) | StringCompare(Container(9000).ListItem.Property(Background),Default) | IsEmpty(Container(9000).ListItem.Property(Background))</visible>
 			</control>
+			
 			<control type="multiimage">
 				<include>Dimensions_Fullscreen</include>
 				<imagepath background="true">$VAR[WeatherBackground]</imagepath>
@@ -83,6 +95,7 @@
 				<visible>StringCompare(Window(Home).Property(MenuItemSelected),Weather)</visible>
 				<visible>Window.IsVisible(weather)</visible>
 			</control>
+			
 			<control type="multiimage">
 				<include>Dimensions_Fullscreen</include>
 				<aspectratio>scale</aspectratio>
@@ -94,6 +107,22 @@
 				<visible>!Window.IsVisible(Home) + !StringCompare(Window(Home).Property(MenuItemSelected),Weather) + !Container.Content(Seasons) + !Container.Content(Episodes)</visible>
 			</control>
 		</control>
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
 		<control type="group">
 			<visible>!Window.IsVisible(Home) + !Player.HasVideo + !Skin.HasSetting(HideBackGroundFanart)</visible>
 			<control type="image">
@@ -135,9 +164,15 @@
 				<visible>SubString(ListItem.FilenameAndPath,videodb://movies/genres) | SubString(ListItem.FilenameAndPath,videodb://tvshows/genres) | SubString(ListItem.FilenameAndPath,videodb://musicvideos/genres) | SubString(ListItem.FilenameAndPath,musicdb://genres)</visible>
 			</control>
 		</control>
+		
+		
+		
 		<control type="group">
-			<visible>!Skin.HasSetting(HideHomeNowPlaying) + Player.HasAudio + !SubString(Window(videolibrary).Property(TvTunesIsAlive),TRUE) + !Player.Paused + ![Window.IsVisible(PVR) + [Control.IsVisible(11) | Control.IsVisible(12)]]</visible>
-			<include condition="!Skin.HasSetting(HideBackgroundCDWall)">AlbumArtMusicVizWall</include>
+			
+			<visible>Window.IsVisible(Home) + !Skin.HasSetting(HideHomeNowPlaying) + Player.HasAudio + !SubString(Window(videolibrary).Property(TvTunesIsAlive),TRUE) + !Player.Paused + !Window.IsVisible(TVChannels) + !Window.IsVisible(RadioChannels)</visible>
+			
+			<include>AlbumArtMusicVizWall</include>
+			
 			<control type="multiimage">
 				<include>Dimensions_Fullscreen</include>
 				<timeperimage>10000</timeperimage>
@@ -158,14 +193,18 @@
 				<imagepath background="true">$INFO[Skin.String(PhysicalMusicFolder)]$INFO[MusicPlayer.Artist,,/extrafanart/]</imagepath>
 				<visible>Skin.HasSetting(DisableSlideShowArt) + IsEmpty(Control.GetLabel(5043))</visible>
 			</control>
+			
 			<control type="image">
 				<description>Fanart Image for Artist</description>
 				<include>Dimensions_Fullscreen</include>
 				<include condition="!Skin.HasSetting(NoAnimateVizFanart)">KBurnsAnimateFanart</include>
 				<texture background="true">$INFO[Player.Art(fanart)]</texture>
-				<visible>!IsEmpty(Player.Art(fanart)) + [IsEmpty(Control.GetLabel(5043)) + IsEmpty(Control.GetLabel(5044))] | !Skin.HasSetting(DisableSlideShowArt)</visible>
+				<visible>Window.IsVisible(Home) + !IsEmpty(Player.Art(fanart)) + [IsEmpty(Control.GetLabel(5043)) + IsEmpty(Control.GetLabel(5044))] | !Skin.HasSetting(DisableSlideShowArt)</visible>
 				<fadetime>600</fadetime>
 			</control>
+			
+			
+			
 			<control type="multiimage">
 				<include>Dimensions_Fullscreen</include>
 				<timeperimage>10000</timeperimage>
@@ -174,20 +213,22 @@
 				<aspectratio>keep</aspectratio>
 				<include condition="!Skin.HasSetting(NoAnimateVizFanart)">KBurnsAnimateFanart</include>
 				<imagepath background="true">$INFO[Window(Visualisation).Property(ArtistSlideshow)]</imagepath>
-				<visible>!Skin.HasSetting(HideHomeNowPlaying)</visible>
+				<visible>!Skin.HasSetting(HideHomeNowPlaying) + !Skin.HasSetting(DisableSlideShowArt)</visible>
 			</control>
-			<!--
-
-	ArtistSlideshow.ArtworkReady
-		<visible>Skin.HasSetting(disableslideshowart) | [!Skin.HasSetting(disableslideshowart) + !IsEmpty(Window(Visualisation).Property(ArtistSlideshowTransparent)) + IsEmpty(Window(Visualisation).Property(ArtworkReady))]</visible>
-	-->
-			<control type="visualisation">
+			
+			
+			<!--control type="visualisation">
 				<include>Dimensions_Fullscreen</include>
-				<visible>Window.IsVisible(Home)</visible>
 				<visible>!Player.IsInternetStream</visible>
 				<visible>!IsEmpty(Visualisation.Name) + stringcompare(Visualisation.Name,Waveform) | stringcompare(Visualisation.Name,DirectX Spectrum) | stringcompare(Visualisation.Name,OpenGL Spectrum)</visible>
-			</control>
+			</control-->
+		
+		
 		</control>
+		
+		
+		
+		
 		<control type="group">
 			<visible>!IsEmpty(Window(Home).Property(TVGuide.BackgroundFanart))</visible>
 			<visible>Window.IsActive(script-NextAired-TVGuide.xml)</visible>
@@ -248,16 +289,22 @@
 				<include>VisibleFadeEffect</include>
 			</control>
 		</control>
+		
+		
+		
 		<control type="image">
 			<include>Dimensions_Fullscreen</include>
 			<texture>special://skin/backgrounds/media-overlay.jpg</texture>
-			<visible>Player.HasVideo + [StringCompare(Container(9000).ListItem.Property(HiLiteItem),FullScreen) | Skin.HasSetting(HideHomeNowPlaying)] + ![Window.IsVisible(PVR) + [Control.IsVisible(11) | Control.IsVisible(12)]]</visible>
+			<visible>Player.HasVideo + !Skin.HasSetting(HideHomeNowPlaying) + !Window.IsVisible(TVChannels) + !Window.IsVisible(RadioChannels)</visible>
 			<include>VisibleFadeEffect</include>
 		</control>
 		<control type="videowindow">
 			<include>Dimensions_Fullscreen</include>
-			<visible>Player.HasVideo + [StringCompare(Container(9000).ListItem.Property(HiLiteItem),FullScreen) | Skin.HasSetting(HideHomeNowPlaying)] + ![Window.IsVisible(PVR) + [Control.IsVisible(11) | Control.IsVisible(12)]]</visible>
+			<visible>Player.HasVideo + !Skin.HasSetting(HideHomeNowPlaying) + !Window.IsVisible(TVChannels) + !Window.IsVisible(RadioChannels)</visible>
 		</control>
+		
+		
+		
 	</include>
 	<include name="ArtistExtraFanArt">
 		<control type="multiimage" id="5043">
@@ -279,6 +326,11 @@
 			<visible>Container.Content(Movies) | Container.Content(MusicVideos)</visible>
 		</control>
 	</include-->
+	
+	
+	
+	
+	
 	<include name="ContentPanelBackgrounds">
 		<control type="image">
 			<left>0</left>

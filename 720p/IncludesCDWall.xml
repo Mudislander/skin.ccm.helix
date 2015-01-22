@@ -2,12 +2,13 @@
 <includes>
 	<include name="AlbumArtMusicVizWall">
 		<control type="group">
-			<visible>!Skin.HasSetting(HideArtistArtOsd)</visible>
+			<visible>!Skin.HasSetting(HideHomeNowPlaying)</visible>
 			<include>ArtistExtraFanArt</include>
 		</control>
 		<control type="group">
+			<visible>!Skin.HasSetting(HideBackgroundCDWall)</visible>
 			<visible>!IsEmpty(Skin.String(UsrAlbumThumbsDir)) + !Window.IsVisible(Home)</visible>
-			<visible>Skin.HasSetting(HideArtistArtOsd) | [IsEmpty(Player.Art(fanart)) + IsEmpty(Control.GetLabel(5043)) + IsEmpty(Control.GetLabel(5044))]</visible>
+			<visible>Skin.HasSetting(HideHomeNowPlaying) | [IsEmpty(Player.Art(fanart)) + IsEmpty(Control.GetLabel(5043)) + IsEmpty(Control.GetLabel(5044))]</visible>
 			<visible>Skin.HasSetting(NoDiffuseVizFanart) | IsEmpty(Visualisation.Name) | stringcompare(Visualisation.Name,Waveform) | stringcompare(Visualisation.Name,DirectX Spectrum) | stringcompare(Visualisation.Name,OpenGL Spectrum)</visible>
 			<left>-35</left>
 			<top>-15</top>
@@ -508,8 +509,9 @@
 			</control>
 		</control>
 		<control type="group">
+			<visible>!Skin.HasSetting(HideBackgroundCDWall)</visible>
 			<visible>!IsEmpty(Skin.String(UsrAlbumThumbsDir)) + !Window.IsVisible(Home)</visible>
-			<visible>Skin.HasSetting(HideArtistArtOsd) | [IsEmpty(Player.Art(fanart)) + IsEmpty(Control.GetLabel(5043)) + IsEmpty(Control.GetLabel(5044))]</visible>
+			<visible>Skin.HasSetting(HideHomeNowPlaying) | [IsEmpty(Player.Art(fanart)) + IsEmpty(Control.GetLabel(5043)) + IsEmpty(Control.GetLabel(5044))]</visible>
 			<visible>!IsEmpty(Visualisation.Name) + !stringcompare(Visualisation.Name,Waveform) + !stringcompare(Visualisation.Name,DirectX Spectrum) + !stringcompare(Visualisation.Name,OpenGL Spectrum)</visible>
 			<left>-35</left>
 			<top>-15</top>
@@ -1415,8 +1417,9 @@
 			</control>
 		</control>
 		<control type="group">
+			<visible>!Skin.HasSetting(HideBackgroundCDWall)</visible>
 			<visible>IsEmpty(Skin.String(UsrAlbumThumbsDir)) | Window.IsVisible(Home)</visible>
-			<visible>Skin.HasSetting(HideArtistArtOsd) | [IsEmpty(Player.Art(fanart)) + IsEmpty(Control.GetLabel(5043)) + IsEmpty(Control.GetLabel(5044))]</visible>
+			<visible>Skin.HasSetting(HideHomeNowPlaying) | [IsEmpty(Player.Art(fanart)) + IsEmpty(Control.GetLabel(5043)) + IsEmpty(Control.GetLabel(5044))]</visible>
 			<visible>Skin.HasSetting(NoDiffuseVizFanart) | IsEmpty(Visualisation.Name) | stringcompare(Visualisation.Name,Waveform) | stringcompare(Visualisation.Name,DirectX Spectrum) | stringcompare(Visualisation.Name,OpenGL Spectrum)</visible>
 			<left>-35</left>
 			<top>-15</top>
@@ -2232,8 +2235,9 @@
 			</control>
 		</control>
 		<control type="group">
+			<visible>!Skin.HasSetting(HideBackgroundCDWall)</visible>
 			<visible>IsEmpty(Skin.String(UsrAlbumThumbsDir)) | Window.IsVisible(Home)</visible>
-			<visible>Skin.HasSetting(HideArtistArtOsd) | [IsEmpty(Player.Art(fanart)) + IsEmpty(Control.GetLabel(5043)) + IsEmpty(Control.GetLabel(5044))]</visible>
+			<visible>Skin.HasSetting(HideHomeNowPlaying) | [IsEmpty(Player.Art(fanart)) + IsEmpty(Control.GetLabel(5043)) + IsEmpty(Control.GetLabel(5044))]</visible>
 			<visible>!IsEmpty(Visualisation.Name) + !stringcompare(Visualisation.Name,Waveform) + !stringcompare(Visualisation.Name,DirectX Spectrum) + !stringcompare(Visualisation.Name,OpenGL Spectrum)</visible>
 			<left>-35</left>
 			<top>-15</top>
@@ -3141,14 +3145,15 @@
 		<control type="image">
 			<include>Dimensions_Fullscreen</include>
 			<texture background="true">cdwall-grid.png</texture>
-			<visible>Skin.HasSetting(HideArtistArtOsd) | [IsEmpty(Player.Art(fanart)) + IsEmpty(Control.GetLabel(5043)) + IsEmpty(Control.GetLabel(5044))]</visible>
+			<visible>!Skin.HasSetting(HideBackgroundCDWall)</visible>
+			<visible>Skin.HasSetting(HideHomeNowPlaying) | [IsEmpty(Player.Art(fanart)) + IsEmpty(Control.GetLabel(5043)) + IsEmpty(Control.GetLabel(5044))]</visible>
 		</control>
 		<control type="image">
 			<include>Dimensions_Fullscreen</include>
 			<aspectratio>stretch</aspectratio>
 			<colordiffuse>AAFFFFFF</colordiffuse>
 			<texture>black-back.png</texture>
-			<visible>Skin.HasSetting(HideArtistArtOsd) | [IsEmpty(Player.Art(fanart)) + IsEmpty(Control.GetLabel(5043)) + IsEmpty(Control.GetLabel(5044))]</visible>
+			<visible>Skin.HasSetting(HideHomeNowPlaying) | [IsEmpty(Player.Art(fanart)) + IsEmpty(Control.GetLabel(5043)) + IsEmpty(Control.GetLabel(5044))]</visible>
 		</control>
 	</include>
 </includes>
