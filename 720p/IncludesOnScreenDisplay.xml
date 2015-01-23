@@ -3,6 +3,7 @@
 	<include name="MusicArtUnderVisualisation">
 		<control type="group">
 			<visible>Skin.HasSetting(NoDiffuseVizFanart) | stringcompare(Visualisation.Name,Waveform) | stringcompare(Visualisation.Name,DirectX Spectrum) | stringcompare(Visualisation.Name,OpenGL Spectrum)</visible>
+			<visible>!Skin.HasSetting(HideHomeNowPlaying)</visible>
 			<control type="multiimage">
 				<include>Dimensions_Fullscreen</include>
 				<timeperimage>10000</timeperimage>
@@ -11,7 +12,7 @@
 				<aspectratio>keep</aspectratio>
 				<include condition="!Skin.HasSetting(NoAnimateVizFanart)">KBurnsAnimateFanart</include>
 				<imagepath background="true">$INFO[Player.FolderPath,,../extrafanart/]</imagepath>
-				<visible>!Skin.HasSetting(HideHomeNowPlaying) + Skin.HasSetting(DisableSlideShowArt) + !IsEmpty(Control.GetLabel(5043))</visible>
+				<visible>Skin.HasSetting(DisableSlideShowArt) + !IsEmpty(Control.GetLabel(5043))</visible>
 			</control>
 			<control type="multiimage">
 				<include>Dimensions_Fullscreen</include>
@@ -21,14 +22,13 @@
 				<aspectratio>keep</aspectratio>
 				<include condition="!Skin.HasSetting(NoAnimateVizFanart)">KBurnsAnimateFanart</include>
 				<imagepath background="true">$INFO[Skin.String(PhysicalMusicFolder)]$INFO[MusicPlayer.Artist,,/extrafanart/]</imagepath>
-				<visible>!Skin.HasSetting(HideHomeNowPlaying) + Skin.HasSetting(DisableSlideShowArt) + IsEmpty(Control.GetLabel(5043))</visible>
+				<visible>Skin.HasSetting(DisableSlideShowArt) + IsEmpty(Control.GetLabel(5043))</visible>
 			</control>
 			<control type="image">
 				<description>Fanart Image for Artist</description>
 				<include>Dimensions_Fullscreen</include>
 				<include condition="!Skin.HasSetting(NoAnimateVizFanart)">KBurnsAnimateFanart</include>
 				<texture background="true">$INFO[Player.Art(fanart)]</texture>
-				<visible>!Skin.HasSetting(HideHomeNowPlaying)</visible>
 				<visible>[!IsEmpty(Player.Art(fanart)) + IsEmpty(Control.GetLabel(5043)) + IsEmpty(Control.GetLabel(5044))] | [!Skin.HasSetting(DisableSlideShowArt) + IsEmpty(Window(Visualisation).Property(ArtworkReady))]</visible>
 				<fadetime>600</fadetime>
 			</control>
@@ -40,22 +40,13 @@
 				<aspectratio>keep</aspectratio>
 				<include condition="!Skin.HasSetting(NoAnimateVizFanart)">KBurnsAnimateFanart</include>
 				<imagepath background="true">$INFO[Window(Visualisation).Property(ArtistSlideshow)]</imagepath>
-				<visible>!Skin.HasSetting(DisableSlideShowArt) + !Skin.HasSetting(HideHomeNowPlaying) +  !IsEmpty(Window(Visualisation).Property(ArtworkReady))</visible>
+				<visible>!Skin.HasSetting(DisableSlideShowArt) + !IsEmpty(Window(Visualisation).Property(ArtworkReady))</visible>
 			</control>
-			<!--control type="image">
-                <include>VisibleFadeEffect</include>
-                <include>Dimensions_Fullscreen</include>
-                <aspectratio>stretch</aspectratio>
-                <include>TransparentEffect</include>
-                <texture>black-back.png</texture>
-                <visible>!Skin.String(MusicOSDInfo,never)</visible>
-                <visible>Skin.String(MusicOSDInfo,permanent) | [!IntegerGreaterThan(Player.time,5) | Player.ShowInfo | Window.IsActive(MusicOSD) | Player.Seeking | Player.displayAfterSeek | Player.Paused | Player.Forwarding | Player.Rewinding] + ![Window.IsVisible(AddonSettings) | Window.IsVisible(SelectDialog) | Window.IsVisible(VisualisationPresetList)]</visible>
-            </control-->
 		</control>
 	</include>
 	<include name="MusicArtOverVisualisation">
 		<control type="group">
-			<visible>!Skin.HasSetting(NoDiffuseVizFanart)</visible>
+			<visible>!Skin.HasSetting(HideHomeNowPlaying) + !Skin.HasSetting(NoDiffuseVizFanart)</visible>
 			<visible>!stringcompare(Visualisation.Name,Waveform) + !stringcompare(Visualisation.Name,DirectX Spectrum) + !stringcompare(Visualisation.Name,OpenGL Spectrum)</visible>
 			<control type="multiimage">
 				<include>Dimensions_Fullscreen</include>
@@ -66,7 +57,7 @@
 				<colordiffuse>AAFFFFFF</colordiffuse>
 				<include condition="!Skin.HasSetting(NoAnimateVizFanart)">KBurnsAnimateFanart</include>
 				<imagepath background="true">$INFO[Player.FolderPath,,../extrafanart/]</imagepath>
-				<visible>!Skin.HasSetting(HideHomeNowPlaying) + !IsEmpty(Control.GetLabel(5043))</visible>
+				<visible>!IsEmpty(Control.GetLabel(5043))</visible>
 				<visible>Skin.HasSetting(DisableSlideShowArt) | [!Skin.HasSetting(DisableSlideShowArt) + !IsEmpty(Window(Visualisation).Property(ArtistSlideshowTransparent)) + IsEmpty(Window(Visualisation).Property(ArtworkReady))]</visible>
 			</control>
 			<control type="multiimage">
@@ -78,7 +69,7 @@
 				<colordiffuse>AAFFFFFF</colordiffuse>
 				<include condition="!Skin.HasSetting(NoAnimateVizFanart)">KBurnsAnimateFanart</include>
 				<imagepath background="true">$INFO[Skin.String(PhysicalMusicFolder)]$INFO[MusicPlayer.Artist,,/extrafanart/]</imagepath>
-				<visible>!Skin.HasSetting(HideHomeNowPlaying) + IsEmpty(Control.GetLabel(5043))</visible>
+				<visible>IsEmpty(Control.GetLabel(5043))</visible>
 				<visible>Skin.HasSetting(DisableSlideShowArt) | [!Skin.HasSetting(DisableSlideShowArt) + !IsEmpty(Window(Visualisation).Property(ArtistSlideshowTransparent)) + IsEmpty(Window(Visualisation).Property(ArtworkReady))]</visible>
 			</control>
 			<control type="image">
@@ -88,7 +79,6 @@
 				<texture background="true">$INFO[Player.Art(fanart)]</texture>
 				<colordiffuse>AAFFFFFF</colordiffuse>
 				<fadetime>600</fadetime>
-				<visible>!Skin.HasSetting(HideHomeNowPlaying)</visible>
 				<visible>Skin.HasSetting(DisableSlideShowArt) | [!Skin.HasSetting(DisableSlideShowArt) + !IsEmpty(Window(Visualisation).Property(ArtistSlideshowTransparent)) + IsEmpty(Window(Visualisation).Property(ArtworkReady))]</visible>
 				<visible>!IsEmpty(Player.Art(fanart)) + IsEmpty(Control.GetLabel(5043)) + IsEmpty(Control.GetLabel(5044))</visible>
 			</control>
@@ -101,17 +91,8 @@
 				<include condition="!Skin.HasSetting(NoAnimateVizFanart)">KBurnsAnimateFanart</include>
 				<imagepath background="true">$INFO[Window(Visualisation).Property(ArtistSlideshow)]</imagepath>
 				<colordiffuse>AAFFFFFF</colordiffuse>
-				<visible>!Skin.HasSetting(DisableSlideShowArt) + !Skin.HasSetting(HideHomeNowPlaying) + !IsEmpty(Window(Visualisation).Property(ArtworkReady))</visible>
+				<visible>!Skin.HasSetting(DisableSlideShowArt) + !IsEmpty(Window(Visualisation).Property(ArtworkReady))</visible>
 			</control>
-			<!--control type="image">
-                <include>VisibleFadeEffect</include>
-                <include>Dimensions_Fullscreen</include>
-                <aspectratio>stretch</aspectratio>
-                <include>TransparentEffect</include>
-                <texture>black-back.png</texture>
-                <visible>!Skin.String(MusicOSDInfo,never)</visible>
-                <visible>Skin.String(MusicOSDInfo,permanent) | [!IntegerGreaterThan(Player.time,5) | Player.ShowInfo | Window.IsActive(MusicOSD) | Player.Seeking | Player.displayAfterSeek | Player.Paused | Player.Forwarding | Player.Rewinding] + ![Window.IsVisible(AddonSettings) | Window.IsVisible(SelectDialog) | Window.IsVisible(VisualisationPresetList)]</visible>
-            </control-->
 		</control>
 	</include>
 </includes>

@@ -293,18 +293,6 @@
 						<visible>System.Date(11-24,1-6)</visible>
 					</control>
 					<control type="radiobutton" id="103">
-						<width>750</width>
-						<height>40</height>
-						<font>font13</font>
-						<label>31070</label>
-						<textcolor>grey2</textcolor>
-						<focusedcolor>white</focusedcolor>
-						<texturefocus>MenuItemFO.png</texturefocus>
-						<texturenofocus>MenuItemNF.png</texturenofocus>
-						<onclick>Skin.ToggleSetting(HideBackGroundFanart)</onclick>
-						<selected>!Skin.HasSetting(HideBackGroundFanart)</selected>
-					</control>
-					<control type="radiobutton" id="104">
 						<description>Hide Clock</description>
 						<width>750</width>
 						<height>40</height>
@@ -317,7 +305,7 @@
 						<onclick>Skin.ToggleSetting(HideSystemTime)</onclick>
 						<selected>!Skin.HasSetting(HideSystemTime)</selected>
 					</control>
-					<control type="button" id="105">
+					<control type="button" id="104">
 						<description>Main Colour One</description>
 						<width>750</width>
 						<height>40</height>
@@ -327,25 +315,10 @@
 						<label>$LOCALIZE[31365]</label>
 						<label2>[COLOR=$VAR[MainColorOne]]$VAR[ColorOneName][/COLOR]</label2>
 						<onclick>ActivateWindow(2130)</onclick>
-						<!--
-						<onclick condition="IsEmpty(Skin.String(UsrColorOne))">Skin.SetString(UsrColorOne,FFF30000)</onclick>
-						
-						
-						<onclick condition="Skin.String(UsrColorOne,FFF30000)">Skin.SetString(UsrColorOne,ff0084ff)</onclick>
-						
-						
-						<onclick condition="Skin.String(UsrColorOne,ff0084ff)">Skin.SetString(UsrColorOne,FF6DF300)</onclick>
-						
-						
-						
-						
-						<onclick condition="Skin.String(UsrColorOne,FF6DF300)">Skin.Reset(UsrColorOne)</onclick>
-						
-						-->
 						<texturefocus>MenuItemFO.png</texturefocus>
 						<texturenofocus>MenuItemNF.png</texturenofocus>
 					</control>
-					<control type="radiobutton" id="106">
+					<control type="radiobutton" id="105">
 						<width>750</width>
 						<height>40</height>
 						<font>font13</font>
@@ -357,7 +330,7 @@
 						<onclick>Skin.ToggleSetting(HideHomeNowPlaying)</onclick>
 						<selected>!Skin.HasSetting(HideHomeNowPlaying)</selected>
 					</control>
-					<control type="radiobutton" id="107">
+					<control type="radiobutton" id="106">
 						<description>Fanart Animation</description>
 						<width>750</width>
 						<height>40</height>
@@ -370,7 +343,7 @@
 						<texturefocus>MenuItemFO.png</texturefocus>
 						<texturenofocus>MenuItemNF.png</texturenofocus>
 					</control>
-					<control type="radiobutton" id="108">
+					<control type="radiobutton" id="107">
 						<description>CD Wall Background</description>
 						<width>750</width>
 						<height>40</height>
@@ -383,7 +356,7 @@
 						<texturefocus>MenuItemFO.png</texturefocus>
 						<texturenofocus>MenuItemNF.png</texturenofocus>
 					</control>
-					<control type="radiobutton" id="109">
+					<control type="radiobutton" id="108">
 						<width>750</width>
 						<height>40</height>
 						<font>font13</font>
@@ -395,7 +368,7 @@
 						<onclick>Skin.ToggleSetting(HideNextSongsInfo)</onclick>
 						<selected>!Skin.HasSetting(HideNextSongsInfo)</selected>
 					</control>
-					<!--control type="radiobutton" id="110">
+					<!--control type="radiobutton" id="109">
 						<description>Manual MediaBlade Slide</description>
 						<width>750</width>
 						<height>40</height>
@@ -408,7 +381,7 @@
 						<onclick>Skin.ToggleSetting(ManualMenuSlide)</onclick>
 						<selected>Skin.HasSetting(ManualMenuSlide)</selected>
 					</control-->
-					<control type="radiobutton" id="111">
+					<control type="radiobutton" id="110">
 						<description>TVShow Thumbnails</description>
 						<width>750</width>
 						<height>40</height>
@@ -539,7 +512,7 @@
 						<texturenofocus>MenuItemNF.png</texturenofocus>
 					</control>
 					<control type="radiobutton" id="128">
-						<description>enable video info</description>
+						<description>enable now playing info</description>
 						<width>750</width>
 						<height>40</height>
 						<font>font13</font>
@@ -552,6 +525,19 @@
 						<texturenofocus>MenuItemNF.png</texturenofocus>
 					</control>
 					<control type="radiobutton" id="129">
+						<description>enable now TV Recording info</description>
+						<width>750</width>
+						<height>40</height>
+						<font>font13</font>
+						<textcolor>grey2</textcolor>
+						<focusedcolor>white</focusedcolor>
+						<label>31089</label>
+						<onclick>Skin.ToggleSetting(HideTVRecordingInfo)</onclick>
+						<selected>!Skin.HasSetting(HideTVRecordingInfo)</selected>
+						<texturefocus>MenuItemFO.png</texturefocus>
+						<texturenofocus>MenuItemNF.png</texturenofocus>
+					</control>
+					<control type="radiobutton" id="130">
 						<description>enable stats bar</description>
 						<width>750</width>
 						<height>40</height>
@@ -564,7 +550,7 @@
 						<texturefocus>MenuItemFO.png</texturefocus>
 						<texturenofocus>MenuItemNF.png</texturenofocus>
 					</control>
-					<control type="button" id="130">
+					<control type="button" id="131">
 						<description>Top Left Home Info</description>
 						<width>750</width>
 						<height>40</height>
@@ -583,7 +569,7 @@
 						<texturefocus>MenuItemFO.png</texturefocus>
 						<texturenofocus>MenuItemNF.png</texturenofocus>
 					</control>
-					<control type="radiobutton" id="131">
+					<control type="radiobutton" id="132">
 						<description>hide home floor</description>
 						<width>750</width>
 						<height>40</height>
@@ -596,7 +582,7 @@
 						<onclick>Skin.ToggleSetting(HideHomeFloor)</onclick>
 						<selected>!Skin.HasSetting(HideHomeFloor)</selected>
 					</control>
-					<control type="radiobutton" id="132">
+					<control type="radiobutton" id="133">
 						<description>enable raindrop effect</description>
 						<width>750</width>
 						<height>40</height>
@@ -609,17 +595,47 @@
 						<texturefocus>MenuItemFO.png</texturefocus>
 						<texturenofocus>MenuItemNF.png</texturenofocus>
 					</control>
-					<control type="label" id="133">
+					<control type="label" id="140">
 						<width>750</width>
 						<height>45</height>
 						<font>font13_title</font>
-						<label>31106</label>
+						<label>$LOCALIZE[31388]</label>
 						<textcolor>$VAR[MainColorOne]</textcolor>
 						<shadowcolor>black</shadowcolor>
 						<align>left</align>
 						<aligny>center</aligny>
 					</control>
-					<control type="radiobutton" id="134">
+					<control type="radiobutton" id="141">
+						<width>750</width>
+						<height>40</height>
+						<font>font13</font>
+						<label>31070</label>
+						<textcolor>grey2</textcolor>
+						<focusedcolor>white</focusedcolor>
+						<texturefocus>MenuItemFO.png</texturefocus>
+						<texturenofocus>MenuItemNF.png</texturenofocus>
+						<onclick>Skin.ToggleSetting(HideBackGroundFanart)</onclick>
+						<selected>!Skin.HasSetting(HideBackGroundFanart)</selected>
+					</control>
+					<control type="button" id="142">
+						<width>750</width>
+						<height>40</height>
+						<font>font13</font>
+						<label>$LOCALIZE[31249]</label>
+						<label2>[COLOR=selected]$INFO[Skin.String(MediaPanelTrans)]$VAR[TransparentValue][/COLOR]</label2>
+						<textcolor>grey2</textcolor>
+						<focusedcolor>white</focusedcolor>
+						<texturefocus>MenuItemFO.png</texturefocus>
+						<texturenofocus>MenuItemNF.png</texturenofocus>
+						<onclick condition="IsEmpty(Skin.String(MediaPanelTrans))">Skin.SetString(MediaPanelTrans,10)</onclick>
+						<onclick condition="Skin.String(MediaPanelTrans,10)">Skin.SetString(MediaPanelTrans,25)</onclick>
+						<onclick condition="Skin.String(MediaPanelTrans,25)">Skin.SetString(MediaPanelTrans,40)</onclick>
+						<onclick condition="Skin.String(MediaPanelTrans,40)">Skin.SetString(MediaPanelTrans,55)</onclick>
+						<onclick condition="Skin.String(MediaPanelTrans,55)">Skin.SetString(MediaPanelTrans,70)</onclick>
+						<onclick condition="Skin.String(MediaPanelTrans,70)">Skin.SetString(MediaPanelTrans,85)</onclick>
+						<onclick condition="Skin.String(MediaPanelTrans,85)">Skin.Reset(MediaPanelTrans)</onclick>
+					</control>
+					<control type="radiobutton" id="143">
 						<width>750</width>
 						<height>40</height>
 						<font>font13</font>
@@ -631,7 +647,7 @@
 						<onclick>Skin.ToggleSetting(AutoScroll)</onclick>
 						<selected>Skin.HasSetting(AutoScroll)</selected>
 					</control>
-					<control type="radiobutton" id="135">
+					<control type="radiobutton" id="144">
 						<width>750</width>
 						<height>40</height>
 						<font>font13</font>
@@ -643,7 +659,7 @@
 						<onclick>Skin.ToggleSetting(Show_SlideShow_Paused)</onclick>
 						<selected>!Skin.HasSetting(Show_SlideShow_Paused)</selected>
 					</control>
-					<control type="radiobutton" id="136">
+					<control type="radiobutton" id="145">
 						<width>750</width>
 						<height>40</height>
 						<font>font13</font>
@@ -655,7 +671,7 @@
 						<onclick>Skin.ToggleSetting(WindowedTrailer)</onclick>
 						<selected>Skin.HasSetting(WindowedTrailer)</selected>
 					</control>
-					<control type="radiobutton" id="137">
+					<control type="radiobutton" id="146">
 						<width>750</width>
 						<height>40</height>
 						<font>font13</font>
@@ -667,53 +683,17 @@
 						<onclick>Skin.ToggleSetting(HideFilenameFlagging)</onclick>
 						<selected>Skin.HasSetting(HideFilenameFlagging)</selected>
 					</control>
-					<!--control type="radiobutton" id="142">
-						<width>750</width>
-						<height>40</height>
-						<font>font13</font>
-						<label>31129</label>
-						<textcolor>grey2</textcolor>
-						<focusedcolor>white</focusedcolor>
-						<texturefocus>MenuItemFO.png</texturefocus>
-						<texturenofocus>MenuItemNF.png</texturenofocus>
-						<onclick>Skin.ToggleSetting(HideVisualizationFanart)</onclick>
-						<selected>Skin.HasSetting(HideVisualizationFanart)</selected>
-					</control-->
-					<!--control type="radiobutton" id="143">
-						<width>750</width>
-						<height>40</height>
-						<font>font13</font>
-						<label>31124</label>
-						<textcolor>grey2</textcolor>
-						<focusedcolor>white</focusedcolor>
-						<texturefocus>MenuItemFO.png</texturefocus>
-						<texturenofocus>MenuItemNF.png</texturenofocus>
-						<onclick>Skin.ToggleSetting(ShowBackgroundVideo)</onclick>
-						<selected>!Skin.HasSetting(ShowBackgroundVideo)</selected>
-					</control>
-					<control type="radiobutton" id="144">
-						<width>750</width>
-						<height>40</height>
-						<font>font13</font>
-						<label>31125</label>
-						<textcolor>grey2</textcolor>
-						<focusedcolor>white</focusedcolor>
-						<texturefocus>MenuItemFO.png</texturefocus>
-						<texturenofocus>MenuItemNF.png</texturenofocus>
-						<onclick>Skin.ToggleSetting(ShowBackgroundVis)</onclick>
-						<selected>!Skin.HasSetting(ShowBackgroundVis)</selected>
-					</control-->
-					<control type="label" id="146">
+					<control type="label" id="150">
 						<width>750</width>
 						<height>45</height>
 						<font>font13_title</font>
-						<label>**** Music Playing ******</label>
+						<label>$LOCALIZE[31386]</label>
 						<textcolor>$VAR[MainColorOne]</textcolor>
 						<shadowcolor>black</shadowcolor>
 						<align>left</align>
 						<aligny>center</aligny>
 					</control>
-					<control type="radiobutton" id="147">
+					<control type="radiobutton" id="151">
 						<description>Auto Music Viz</description>
 						<width>750</width>
 						<height>40</height>
@@ -726,7 +706,7 @@
 						<onclick>Skin.ToggleSetting(HideAutoMusicViz)</onclick>
 						<selected>!Skin.HasSetting(HideAutoMusicViz)</selected>
 					</control>
-					<control type="button" id="142">
+					<control type="button" id="152">
 						<width>750</width>
 						<height>40</height>
 						<font>font13</font>
@@ -740,7 +720,7 @@
 						<onclick condition="Skin.String(MusicOSDInfo,permanent)">Skin.SetString(MusicOSDInfo,never)</onclick>
 						<onclick condition="Skin.String(MusicOSDInfo,never)">Skin.Reset(MusicOSDInfo)</onclick>
 					</control>
-					<control type="radiobutton" id="146">
+					<control type="radiobutton" id="153">
 						<description>Enable CD Art</description>
 						<width>750</width>
 						<height>40</height>
@@ -753,7 +733,7 @@
 						<onclick>Skin.ToggleSetting(EnableCDArtWork)</onclick>
 						<selected>Skin.HasSetting(EnableCDArtWork)</selected>
 					</control>
-					<control type="radiobutton" id="147">
+					<control type="radiobutton" id="154">
 						<description>Diffuse Visualisation</description>
 						<width>750</width>
 						<height>40</height>
@@ -766,7 +746,69 @@
 						<onclick>Skin.ToggleSetting(NoDiffuseVizFanart)</onclick>
 						<selected>!Skin.HasSetting(NoDiffuseVizFanart)</selected>
 					</control>
-					<control type="label" id="150">
+					<control type="label" id="160">
+						<width>750</width>
+						<height>45</height>
+						<font>font13_title</font>
+						<label>$LOCALIZE[31387]</label>
+						<textcolor>$VAR[MainColorOne]</textcolor>
+						<shadowcolor>black</shadowcolor>
+						<align>left</align>
+						<aligny>center</aligny>
+					</control>
+					<control type="radiobutton" id="161">
+						<description>OSD Start Media Intro</description>
+						<width>750</width>
+						<height>40</height>
+						<font>font13</font>
+						<textcolor>grey2</textcolor>
+						<focusedcolor>white</focusedcolor>
+						<label>$LOCALIZE[31372] ***Not Yet Done ***</label>
+						<texturefocus>MenuItemFO.png</texturefocus>
+						<texturenofocus>MenuItemNF.png</texturenofocus>
+						<onclick>Skin.ToggleSetting(HideInfoStartOSD)</onclick>
+						<selected>!Skin.HasSetting(HideInfoStartOSD)</selected>
+					</control>
+					<control type="radiobutton" id="162">
+						<description>OSD Plot on Media Pause</description>
+						<width>750</width>
+						<height>40</height>
+						<font>font13</font>
+						<textcolor>grey2</textcolor>
+						<focusedcolor>white</focusedcolor>
+						<label>$LOCALIZE[31373] ***Not Yet Done ***</label>
+						<texturefocus>MenuItemFO.png</texturefocus>
+						<texturenofocus>MenuItemNF.png</texturenofocus>
+						<onclick>Skin.ToggleSetting(EnablePauseInfo)</onclick>
+						<selected>!Skin.HasSetting(EnablePauseInfo)</selected>
+					</control>
+					<control type="radiobutton" id="163">
+						<description>OSD Info on Seek bar</description>
+						<width>750</width>
+						<height>40</height>
+						<font>font13</font>
+						<textcolor>grey2</textcolor>
+						<focusedcolor>white</focusedcolor>
+						<label>$LOCALIZE[31374] ***Not Yet Done ***</label>
+						<texturefocus>MenuItemFO.png</texturefocus>
+						<texturenofocus>MenuItemNF.png</texturenofocus>
+						<onclick>Skin.ToggleSetting(HideSeekBarOSD)</onclick>
+						<selected>!Skin.HasSetting(HideSeekBarOSD)</selected>
+					</control>
+					<control type="radiobutton" id="164">
+						<description>Hide OSD Thumbnail</description>
+						<width>750</width>
+						<height>40</height>
+						<font>font13</font>
+						<textcolor>grey2</textcolor>
+						<focusedcolor>white</focusedcolor>
+						<label>$LOCALIZE[31383] ***Not Yet Done ***</label>
+						<texturefocus>MenuItemFO.png</texturefocus>
+						<texturenofocus>MenuItemNF.png</texturenofocus>
+						<onclick>Skin.ToggleSetting(HideArtWorkOSD)</onclick>
+						<selected>!Skin.HasSetting(HideArtWorkOSD)</selected>
+					</control>
+					<control type="label" id="170">
 						<width>750</width>
 						<height>45</height>
 						<font>font13_title</font>
@@ -776,7 +818,7 @@
 						<align>left</align>
 						<aligny>center</aligny>
 					</control>
-					<control type="radiobutton" id="151">
+					<control type="radiobutton" id="171">
 						<width>750</width>
 						<height>40</height>
 						<font>font13</font>
@@ -788,7 +830,7 @@
 						<onclick>Skin.ToggleSetting(HideHomePowerBtn)</onclick>
 						<selected>Skin.HasSetting(HideHomePowerBtn)</selected>
 					</control>
-					<control type="button" id="152">
+					<control type="button" id="172">
 						<description>Power Button Action</description>
 						<width>750</width>
 						<height>40</height>

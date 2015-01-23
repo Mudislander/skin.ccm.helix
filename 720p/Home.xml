@@ -130,6 +130,7 @@
 			<left>490r</left>
 			<top>70</top>
 			<visible>StringCompare(Container(9000).ListItem.Property(WidgetSet),None)</visible>
+			<visible>!Skin.HasSetting(HideTVRecordingInfo)</visible>
 			<include>VisibleFadeEffect</include>
 			<include>Window_OpenClose_Animation</include>
 			<animation effect="fade" start="100" end="0" time="200" condition="Window.IsActive(Favourites)">conditional</animation>
@@ -846,7 +847,8 @@
 		<control type="group">
 			<left>0</left>
 			<top>33r</top>
-			<visible>system.getbool(lookandfeel.enablerssfeeds)</visible>
+			<!--visible>system.getbool(lookandfeel.enablerssfeeds)</visible-->
+			<visible>system.getbool(lookandfeel.enablerssfeeds) | [Player.HasAudio + !IsEmpty(MusicPlayer.offset(1).Artist) + !Skin.HasSetting(HideNextSongsInfo)]</visible>
 			<include>Window_OpenClose_Animation</include>
 			<control type="rss">
 				<description>RSS feed</description>
@@ -859,7 +861,7 @@
 				<textcolor>$VAR[MainColorOne]</textcolor>
 				<titlecolor>blue</titlecolor>
 				<headlinecolor>white</headlinecolor>
-				<visible>!Skin.HasSetting(HideHomePowerBtn)</visible>
+				<visible>!Skin.HasSetting(HideHomePowerBtn) + [!Player.HasAudio | IsEmpty(MusicPlayer.offset(1).Artist) | Skin.HasSetting(HideNextSongsInfo)]</visible>
 			</control>
 			<control type="rss">
 				<description>RSS feed</description>
@@ -872,7 +874,39 @@
 				<textcolor>$VAR[MainColorOne]</textcolor>
 				<titlecolor>blue</titlecolor>
 				<headlinecolor>white</headlinecolor>
-				<visible>Skin.HasSetting(HideHomePowerBtn)</visible>
+				<visible>Skin.HasSetting(HideHomePowerBtn) + [!Player.HasAudio | IsEmpty(MusicPlayer.offset(1).Artist) | Skin.HasSetting(HideNextSongsInfo)]</visible>
+			</control>
+			<control type="fadelabel" id="1">
+				<description>Next Five Songs</description>
+				<left>100</left>
+				<top>0</top>
+				<height>30</height>
+				<width>1145</width>
+				<scroll>true</scroll>
+				<scrollout>true</scrollout>
+				<pauseatend>200</pauseatend>
+				<label>$VAR[NextFiveSongScroller]</label>
+				<font>font12</font>
+				<textcolor>white</textcolor>
+				<shadowcolor>black</shadowcolor>
+				<textoffsetx>20</textoffsetx>
+				<visible>!Skin.HasSetting(HideHomePowerBtn) + Player.HasAudio + !IsEmpty(MusicPlayer.offset(1).Artist) + !Skin.HasSetting(HideNextSongsInfo)</visible>
+			</control>
+			<control type="fadelabel" id="1">
+				<description>Next Five Songs</description>
+				<left>55</left>
+				<top>0</top>
+				<height>30</height>
+				<width>1190</width>
+				<scroll>true</scroll>
+				<scrollout>true</scrollout>
+				<pauseatend>200</pauseatend>
+				<label>$VAR[NextFiveSongScroller]</label>
+				<font>font12</font>
+				<textcolor>white</textcolor>
+				<shadowcolor>black</shadowcolor>
+				<textoffsetx>20</textoffsetx>
+				<visible>Skin.HasSetting(HideHomePowerBtn) + Player.HasAudio + !IsEmpty(MusicPlayer.offset(1).Artist) + !Skin.HasSetting(HideNextSongsInfo)</visible>
 			</control>
 			<control type="image">
 				<description>RSS background</description>

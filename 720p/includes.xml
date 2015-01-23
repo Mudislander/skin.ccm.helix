@@ -1456,6 +1456,14 @@
 		<font>font13</font>
 		<focusedcolor>black</focusedcolor>
 	</include>
+	<include name="TransparentEffect">
+		<animation effect="fade" start="100" end="40" time="0" condition="SubString(skin.string(MediaPanelTrans),85)">Conditional</animation>
+		<animation effect="fade" start="100" end="50" time="0" condition="SubString(skin.string(MediaPanelTrans),70)">Conditional</animation>
+		<animation effect="fade" start="100" end="60" time="0" condition="SubString(skin.string(MediaPanelTrans),55)">Conditional</animation>
+		<animation effect="fade" start="100" end="70" time="0" condition="SubString(skin.string(MediaPanelTrans),40)">Conditional</animation>
+		<animation effect="fade" start="100" end="80" time="0" condition="SubString(skin.string(MediaPanelTrans),25)">Conditional</animation>
+		<animation effect="fade" start="100" end="90" time="0" condition="SubString(skin.string(MediaPanelTrans),10)">Conditional</animation>
+	</include>
 	<include name="KBurnsAnimateFanart">
 		<animation effect="zoom" start="110" end="130" center="auto" time="16000" tween="cubic" easing="inout" pulse="true" condition="!Skin.HasSetting(NoAnimateFanart)">Conditional</animation>
 		<animation effect="slide" start="-10,-10" end="20,20" time="8000" tween="cubic" easing="inout" pulse="true" condition="!Skin.HasSetting(NoAnimateFanart)">Conditional</animation>

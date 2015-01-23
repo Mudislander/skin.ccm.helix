@@ -32,6 +32,7 @@
 				<width>1280</width>
 				<height>256</height>
 				<texture flipy="true" border="1">HomeNowPlayingBack.png</texture>
+				<visible>!Skin.String(MusicOSDInfo,never)</visible>
 			</control>
 			<control type="label">
 				<description>profile label</description>
@@ -46,9 +47,10 @@
 				<shadowcolor>black</shadowcolor>
 				<info>System.ProfileName</info>
 				<include>Window_OpenClose_Animation</include>
+				<visible>!Skin.String(MusicOSDInfo,never)</visible>
 				<visible>!StringCompare(System.ProfileName,Master user) + StringCompare(Skin.String(TopLeftHomeInfo),Profile)</visible>
 			</control>
-			<include>Clock</include>
+			<include condition="!Skin.String(MusicOSDInfo,never)">Clock</include>
 			<control type="label">
 				<description>Date label</description>
 				<right>20</right>
@@ -65,6 +67,7 @@
 				<animation effect="slide" start="0,0" end="-40,0" time="100" condition="Window.IsVisible(Mutebug)">conditional</animation>
 				<animation effect="slide" start="0,0" end="-70,0" time="0" condition="Window.IsVisible(MusicOSD)">conditional</animation>
 				<visible>!Skin.HasSetting(HideSystemTime)</visible>
+				<visible>!Skin.String(MusicOSDInfo,never)</visible>
 			</control>
 			<control type="image">
 				<left>0</left>
@@ -72,6 +75,7 @@
 				<width>1280</width>
 				<height>230</height>
 				<texture border="1">HomeNowPlayingBack.png</texture>
+				<visible>!Skin.String(MusicOSDInfo,never) | Window.IsActive(MusicOSD)</visible>
 			</control>
 			<control type="group">
 				<visible>!Skin.String(MusicOSDInfo,never)</visible>

@@ -2299,11 +2299,15 @@
 		<value>$LOCALIZE[13278]</value>
 		-->
 	</variable>
+	<variable name="TransparentValue">
+		<value condition="!IsEmpty(Skin.String(mediapaneltrans))">$LOCALIZE[31248]</value>
+		<value>$LOCALIZE[31257]</value>
+	</variable>
 	<variable name="OSDInfoType">
-		<value condition="IsEmpty(Skin.String(MusicOSDInfo))">$LOCALIZE[31015]</value>
+		<value condition="IsEmpty(Skin.String(MusicOSDInfo))">$LOCALIZE[31017]</value>
 		<value condition="Skin.String(MusicOSDInfo,permanent)">$LOCALIZE[31016]</value>
-		<value condition="Skin.String(MusicOSDInfo,never)">$LOCALIZE[31017]</value>
-		<value>$LOCALIZE[31015]</value>
+		<value condition="Skin.String(MusicOSDInfo,never)">$LOCALIZE[31015]</value>
+		<value>$LOCALIZE[31017]</value>
 	</variable>
 	<variable name="MusicHeaderLabel">
 		<value condition="MusicPartyMode.Enabled">[B]($LOCALIZE[589])[/B]</value>
