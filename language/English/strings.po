@@ -22,7 +22,11 @@ msgctxt "#31000"
 msgid "Change Your"
 msgstr ""
 
-#empty strings from id 31001 to 31002
+msgctxt "#31001"
+msgid ":"
+msgstr ""
+
+#empty strings from id 31002 to 31002
 
 msgctxt "#31003"
 msgid "Power Options"
@@ -58,6 +62,18 @@ msgstr ""
 
 msgctxt "#31014"
 msgid "Default Focused Menu Item"
+msgstr ""
+
+msgctxt "#31015"
+msgid "Never"
+msgstr ""
+
+msgctxt "#31016"
+msgid "Permanently"
+msgstr ""
+
+msgctxt "#31017"
+msgid "Info Button"
 msgstr ""
 
 #empty strings from id 31015 to 31021
@@ -110,7 +126,13 @@ msgctxt "#31033"
 msgid "Info"
 msgstr ""
 
-#empty strings from id 31034 to 31036
+msgctxt "#31034"
+msgid "Show Media Info on Fullscreen Playback"
+msgstr ""
+
+
+
+#empty strings from id 31035 to 31036
 
 msgctxt "#31037"
 msgid "Edit Menu Item"
@@ -275,7 +297,23 @@ msgctxt "#31084"
 msgid "Enable Kodi Intro Movie"
 msgstr ""
 
-#empty strings from id 31085 to 31099
+msgctxt "#31085"
+msgid "Shuffle On"
+msgstr ""
+
+msgctxt "#31086"
+msgid "Repeat All On"
+msgstr ""
+
+msgctxt "#31087"
+msgid "Repeat One On"
+msgstr ""
+
+msgctxt "#31088"
+msgid "of"
+msgstr ""
+
+#empty strings from id 31088 to 31099
 #Skin Settings labels
 
 msgctxt "#31100"
@@ -714,6 +752,14 @@ msgctxt "#31260"
 msgid "No Disc Media Detected"
 msgstr ""
 
+msgctxt "#31261"
+msgid "Next Tracks"
+msgstr ""
+
+msgctxt "#31267"
+msgid "Playing"
+msgstr ""
+
 #empty strings from id 31259 to 31271
 
 msgctxt "#31272"
@@ -732,7 +778,15 @@ msgctxt "#31275"
 msgid "Enable Visible Horizontal SubMenu"
 msgstr ""
 
-#empty strings from id 31276 to 3128
+#empty strings from id 31276 to 31277
+
+msgctxt "#31278"
+msgid "Enable CD Art Work"
+msgstr ""
+
+msgctxt "#31279"
+msgid "Enable Next 5 Songs Scroller"
+msgstr ""
 
 msgctxt "#31280"
 msgid "Diffuse Music Visualization with Artist Fanart"

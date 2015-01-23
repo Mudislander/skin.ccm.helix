@@ -2299,4 +2299,24 @@
 		<value>$LOCALIZE[13278]</value>
 		-->
 	</variable>
+	<variable name="OSDInfoType">
+		<value condition="IsEmpty(Skin.String(MusicOSDInfo))">$LOCALIZE[31015]</value>
+		<value condition="Skin.String(MusicOSDInfo,permanent)">$LOCALIZE[31016]</value>
+		<value condition="Skin.String(MusicOSDInfo,never)">$LOCALIZE[31017]</value>
+		<value>$LOCALIZE[31015]</value>
+	</variable>
+	<variable name="MusicHeaderLabel">
+		<value condition="MusicPartyMode.Enabled">[B]($LOCALIZE[589])[/B]</value>
+		<value condition="Playlist.IsRandom">[B]($LOCALIZE[31085])[/B] $INFO[musicplayer.playlistposition,$LOCALIZE[31267] $LOCALIZE[554]$LOCALIZE[31001] ]$INFO[musicplayer.playlistlength, $LOCALIZE[31088] ]</value>
+		<value condition="Playlist.IsRepeat">[B]($LOCALIZE[31086])[/B] $INFO[musicplayer.playlistposition,$LOCALIZE[31267] $LOCALIZE[554]$LOCALIZE[31001] ]$INFO[musicplayer.playlistlength, $LOCALIZE[31088] ]</value>
+		<value condition="Playlist.IsRepeatOne">[B]($LOCALIZE[31087])[/B] $INFO[musicplayer.playlistposition,$LOCALIZE[31267] $LOCALIZE[554]$LOCALIZE[31001] ]$INFO[musicplayer.playlistlength, $LOCALIZE[31088] ]</value>
+		<value>$INFO[musicplayer.playlistposition,$LOCALIZE[31267] $LOCALIZE[554]$LOCALIZE[31001] ]$INFO[musicplayer.playlistlength, $LOCALIZE[31088] ]</value>
+	</variable>
+	<variable name="NextFiveSongScroller" type="text">
+		<value condition="!IsEmpty(MusicPlayer.offset(5).Artist) + Player.HasAudio">[COLOR=white][B]$LOCALIZE[31261][/B][/COLOR][COLOR=$VAR[MainColorOne]][B]   1$LOCALIZE[31001][/B][/COLOR]  $INFO[MusicPlayer.offset(1).Artist] - $INFO[MusicPlayer.offset(1).Title]    [COLOR=$VAR[MainColorOne]][B]2$LOCALIZE[31001][/B][/COLOR]  $INFO[MusicPlayer.offset(2).Artist] - $INFO[MusicPlayer.offset(2).Title]    [COLOR=$VAR[MainColorOne]][B]3$LOCALIZE[31001][/B][/COLOR]  $INFO[MusicPlayer.offset(3).Artist] - $INFO[MusicPlayer.offset(3).Title]    [COLOR=$VAR[MainColorOne]][B]4$LOCALIZE[31001][/B][/COLOR]  $INFO[MusicPlayer.offset(4).Artist] - $INFO[MusicPlayer.offset(4).Title]    [COLOR=$VAR[MainColorOne]][B]5$LOCALIZE[31001][/B][/COLOR]  $INFO[MusicPlayer.offset(5).Artist] - $INFO[MusicPlayer.offset(5).Title]</value>
+		<value condition="!IsEmpty(MusicPlayer.offset(4).Artist) + IsEmpty(MusicPlayer.offset(5).Artist) + Player.HasAudio">[COLOR=white][B]$LOCALIZE[31261][/B][/COLOR][COLOR=$VAR[MainColorOne]][B]   1$LOCALIZE[31001][/B][/COLOR]  $INFO[MusicPlayer.offset(1).Artist] - $INFO[MusicPlayer.offset(1).Title]    [COLOR=$VAR[MainColorOne]][B]2$LOCALIZE[31001][/B][/COLOR]  $INFO[MusicPlayer.offset(2).Artist] - $INFO[MusicPlayer.offset(2).Title]    [COLOR=$VAR[MainColorOne]][B]3$LOCALIZE[31001][/B][/COLOR]  $INFO[MusicPlayer.offset(3).Artist] - $INFO[MusicPlayer.offset(3).Title]    [COLOR=$VAR[MainColorOne]][B]4$LOCALIZE[31001][/B][/COLOR]  $INFO[MusicPlayer.offset(4).Artist] - $INFO[MusicPlayer.offset(4).Title]</value>
+		<value condition="!IsEmpty(MusicPlayer.offset(3).Artist) + IsEmpty(MusicPlayer.offset(4).Artist) + IsEmpty(MusicPlayer.offset(5).Artist) + Player.HasAudio">[COLOR=white][B]$LOCALIZE[31261][/B][/COLOR][COLOR=$VAR[MainColorOne]][B]   1$LOCALIZE[31001][/B][/COLOR]  $INFO[MusicPlayer.offset(1).Artist] - $INFO[MusicPlayer.offset(1).Title]    [COLOR=$VAR[MainColorOne]][B]2$LOCALIZE[31001][/B][/COLOR]  $INFO[MusicPlayer.offset(2).Artist] - $INFO[MusicPlayer.offset(2).Title]     [COLOR=$VAR[MainColorOne]][B]3$LOCALIZE[31001][/B][/COLOR]  $INFO[MusicPlayer.offset(3).Artist] - $INFO[MusicPlayer.offset(3).Title]</value>
+		<value condition="!IsEmpty(MusicPlayer.offset(2).Artist) + IsEmpty(MusicPlayer.offset(3).Artist) + IsEmpty(MusicPlayer.offset(4).Artist) + IsEmpty(MusicPlayer.offset(5).Artist) + Player.HasAudio">[COLOR=white][B]$LOCALIZE[31261][/B][/COLOR][COLOR=$VAR[MainColorOne]][B]   1$LOCALIZE[31001][/B][/COLOR]  $INFO[MusicPlayer.offset(1).Artist] - $INFO[MusicPlayer.offset(1).Title]    [COLOR=$VAR[MainColorOne]][B]2$LOCALIZE[31001][/B][/COLOR]  $INFO[MusicPlayer.offset(2).Artist] - $INFO[MusicPlayer.offset(2).Title]</value>
+		<value condition="!IsEmpty(MusicPlayer.offset(1).Artist) + IsEmpty(MusicPlayer.offset(2).Artist) + IsEmpty(MusicPlayer.offset(3).Artist) + IsEmpty(MusicPlayer.offset(4).Artist) + IsEmpty(MusicPlayer.offset(5).Artist) + Player.HasAudio">[COLOR=white][B]$LOCALIZE[31261][/B][/COLOR][COLOR=$VAR[MainColorOne]][B]   1$LOCALIZE[31001][/B][/COLOR]  $INFO[MusicPlayer.offset(1).Artist] - $INFO[MusicPlayer.offset(1).Title]</value>
+	</variable>
 </includes>
