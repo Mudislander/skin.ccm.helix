@@ -27,6 +27,8 @@
 			<animation effect="fade" time="200">VisibleChange</animation>
 			<visible>![Window.IsVisible(AddonSettings) | Window.IsVisible(SelectDialog) | Window.IsVisible(VisualisationPresetList)]</visible>
 		</control>
+		
+		
 		<control type="slider" id="87">
 			<description>Seek Slider</description>
 			<left>430</left>
@@ -43,7 +45,15 @@
 			<visible>![Window.IsVisible(AddonSettings) | Window.IsVisible(SelectDialog) | Window.IsVisible(VisualisationPresetList)]</visible>
 		</control>
 		<control type="group" id="100">
-			<left>325</left>
+			<!--left>325</left-->
+			
+			8*55(440)				330r 5*55(275)   total =715  1280-715/2=282.5
+			
+			325+440=765   1280-330=950  950-765=185
+			
+			440+185+275=900   1280-900/2=190 each side  275+190=465 1280-465=815
+<left>130</left>			
+			
 			<top>60r</top>
 			<animation effect="fade" time="200">VisibleChange</animation>
 			<visible>![Window.IsVisible(AddonSettings) | Window.IsVisible(SelectDialog) | Window.IsVisible(VisualisationPresetList)]</visible>
@@ -229,8 +239,15 @@
 				<ondown>1000</ondown>
 			</control>
 		</control>
+		
+		
+		
 		<control type="group">
-			<left>300r</left>
+			<!--left>300r</left-->
+			
+	<left>525r</left>		
+			
+			
 			<top>60r</top>
 			<animation effect="fade" time="200">VisibleChange</animation>
 			<visible>![Window.IsVisible(AddonSettings) | Window.IsVisible(SelectDialog) | Window.IsVisible(VisualisationPresetList)]</visible>
