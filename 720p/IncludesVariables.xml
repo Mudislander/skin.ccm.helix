@@ -854,6 +854,9 @@
 	</variable>
 	<variable name="SubMenuSystemOne" type="text">
 		<value condition="!IsEmpty(Skin.String(SubSettings.1.Label))">$INFO[Skin.String(SubSettings.1.Label)]</value>
+		<value condition="IsEmpty(Skin.String(SubSettings.1.Label)) + System.HasAddon(script.raspbmc.settings)">$LOCALIZE[31011]</value>
+		<value condition="IsEmpty(Skin.String(SubSettings.1.Label)) + System.HasAddon(os.openelec.settings)">$LOCALIZE[31010]</value>
+		<value condition="IsEmpty(Skin.String(SubSettings.1.Label)) + System.HasAddon(service.openelec.settings)">$LOCALIZE[31010]</value>
 		<value>$LOCALIZE[5]</value>
 	</variable>
 	<variable name="SubMenuSystemTwo" type="text">

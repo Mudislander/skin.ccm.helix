@@ -902,7 +902,10 @@
 		<item>
 			<label>$VAR[SubMenuSystemOne]</label>
 			<onclick>SetProperty(SubMenuBackground,$VAR[SubMenuItemBackground],Home)</onclick>
-			<onclick condition="IsEmpty(Skin.String(SubSettings.1.Path))">ActivateWindow(Settings)</onclick>
+			<onclick condition="IsEmpty(Skin.String(subsystem.1.path)) + System.HasAddon(os.openelec.settings)">RunAddon(os.openelec.settings)</onclick>
+			<onclick condition="IsEmpty(Skin.String(subsystem.1.path)) + System.HasAddon(service.openelec.settings)">RunAddon(service.openelec.settings)</onclick>
+			<onclick condition="IsEmpty(Skin.String(subsystem.1.path)) + System.HasAddon(script.raspbmc.settings)">RunAddon(script.raspbmc.settings)</onclick>
+			<onclick condition="IsEmpty(Skin.String(subsystem.1.path)) + !System.HasAddon(os.openelec.settings) + !System.HasAddon(service.openelec.settings) + !System.HasAddon(script.raspbmc.settings)">ActivateWindow(Settings)</onclick>
 			<onclick condition="!IsEmpty(Skin.String(SubSettings.1.Path))">$INFO[Skin.String(SubSettings.1.Path)]</onclick>
 			<visible>!stringcompare(Skin.String(SubSettings.1.Path),Hidden)</visible>
 		</item>

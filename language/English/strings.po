@@ -54,6 +54,14 @@ msgctxt "#31009"
 msgid "Total Duration"
 msgstr ""
 
+msgctxt "#31010"
+msgid "OpenELEC OS"
+msgstr ""
+
+msgctxt "#31011"
+msgid "Raspberry OS"
+msgstr ""
+
 #empty strings from id 31010 to 31012
 
 msgctxt "#31013"
