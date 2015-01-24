@@ -128,13 +128,30 @@
 					<onclick>right</onclick>
 					<onclick>Filter</onclick>
 				</control>
-				<control type="radiobutton" id="99">
+				<!--control type="radiobutton" id="99">
 					<description>Show Info Toggle</description>
 					<textwidth>170</textwidth>
 					<include>ButtonCommonValues</include>
 					<label>31005</label>
 					<onclick>Skin.ToggleSetting(View508HideInfo)</onclick>
 					<selected>Skin.HasSetting(View508HideInfo)</selected>
+					<visible>Control.IsVisible(508)</visible>
+				</control-->
+				<control type="button" id="99">
+					<width>250</width>
+					<height>40</height>
+					<font>font13</font>
+					<label>$LOCALIZE[31123] $VAR[PopupInfoType]</label>
+					<textcolor>white</textcolor>
+					<focusedcolor>white</focusedcolor>
+					<texturefocus border="5">button-focus.png</texturefocus>
+					<texturenofocus>-</texturenofocus>
+					<pulseonselect>false</pulseonselect>
+					<onclick condition="IsEmpty(Skin.String(MediaPopupControl))">Skin.SetString(MediaPopupControl,Delayed)</onclick>
+					<onclick condition="Skin.String(MediaPopupControl,Delayed)">Skin.SetString(MediaPopupControl,Hidden)</onclick>
+					<onclick condition="Skin.String(MediaPopupControl,Hidden)">Skin.SetString(MediaPopupControl,Instant)</onclick>
+					<onclick condition="Skin.String(MediaPopupControl,Instant)">Skin.Reset(MediaPopupControl)</onclick>
+					<!--visible>Control.IsVisible(508) | Control.IsVisible(515) | Control.IsVisible(730)</visible-->
 					<visible>Control.IsVisible(508)</visible>
 				</control>
 				<control type="label" id="201">

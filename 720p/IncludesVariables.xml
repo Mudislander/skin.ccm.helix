@@ -78,8 +78,8 @@
 		<value>special://skin/backgrounds/SKINDEFAULT.jpg</value>
 	</variable>
 	<variable name="SearchBackground" type="text">
-		<value condition="Skin.HasSetting(SingleGlobalBackground) + !IsEmpty(Skin.String(globalbackgroundpath))">$INFO[Skin.String(globalbackgroundpath)]</value>
-		<value condition="Skin.HasSetting(SingleGlobalBackground) + IsEmpty(Skin.String(globalbackgroundpath))">$INFO[Skin.CurrentTheme,special://skin/backgrounds/,.jpg]</value>
+		<value condition="Skin.HasSetting(SingleGlobalBackground) + !IsEmpty(Skin.String(GlobalBackGroundPath))">$INFO[Skin.String(GlobalBackGroundPath)]</value>
+		<value condition="Skin.HasSetting(SingleGlobalBackground) + IsEmpty(Skin.String(GlobalBackGroundPath))">$INFO[Skin.CurrentTheme,special://skin/backgrounds/,.jpg]</value>
 		<value condition="Control.HasFocus(111) + !IsEmpty(Container(111).ListItem.Property(Fanart))">$INFO[Container(111).ListItem.Property(Fanart)]</value>
 		<value condition="Control.HasFocus(121) + !IsEmpty(Container(121).ListItem.Property(Fanart))">$INFO[Container(121).ListItem.Property(Fanart)]</value>
 		<value condition="Control.HasFocus(131) + !IsEmpty(Container(131).ListItem.Property(Fanart))">$INFO[Container(131).ListItem.Property(Fanart)]</value>
@@ -103,10 +103,11 @@
 		<value condition="Container(9000).HasFocus(10) + StringCompare(Container(9000).ListItem.Property(HiLiteItem),MusicPlayList) + StringCompare(Container(9000).ListItem.Property(PlayListType),Music)">$INFO[Window(Home).Property(HomePlayListTen.5.Art(thumb))]</value>
 		<value condition="Container(9000).HasFocus(11) + StringCompare(Container(9000).ListItem.Property(HiLiteItem),MusicPlayList) + StringCompare(Container(9000).ListItem.Property(PlayListType),Music)">$INFO[Window(Home).Property(HomePlayListEleven.5.Art(thumb))]</value>
 		<value condition="Container(9000).HasFocus(12) + StringCompare(Container(9000).ListItem.Property(HiLiteItem),MusicPlayList) + StringCompare(Container(9000).ListItem.Property(PlayListType),Music)">$INFO[Window(Home).Property(HomePlayListTwelve.5.Art(thumb))]</value>
+		<value condition="StringCompare(Container(9000).ListItem.Property(HiLiteItem),Concerts) + SubString(Window(Home).Property(SkinWidgets_RandomItems),true)">$INFO[Window(Home).Property(RandomMusicVideo.5.Art(thumb))]</value>
+		<value condition="!IsEmpty(Window(Home).Property(LatestMusicVideo.9.Thumb)) + StringCompare(Container(9000).ListItem.Property(HiLiteItem),Concerts)">$INFO[Window(Home).Property(LatestMusicVideo.5.Thumb)]</value>
 		<value condition="StringCompare(Container(9000).ListItem.Property(HiLiteItem),Music) + SubString(Window(Home).Property(SkinWidgets_RandomItems),true)">$INFO[Window(Home).Property(RandomAlbum.5.Art(thumb))]</value>
 		<value condition="!IsEmpty(Window(Home).Property(LatestAlbum.5.Thumb)) + StringCompare(Container(9000).ListItem.Property(HiLiteItem),Music)">$INFO[Window(Home).Property(LatestAlbum.5.Thumb)]</value>
-		<value condition="StringCompare(Container(9000).ListItem.Property(HiLiteItem),Music) | StringCompare(Container(9000).ListItem.Property(HiLiteItem),MusicPlayList)">CDCase/DefaultCDCover.png</value>
-		<value condition="StringCompare(Container(9000).ListItem.Property(HiLiteItem),Concerts)">$INFO[Window(Home).Property(RandomMusicVideo.5.Art(thumb))]</value>
+		<value condition="StringCompare(Container(9000).ListItem.Property(HiLiteItem),Music) | StringCompare(Container(9000).ListItem.Property(HiLiteItem),Concerts) | StringCompare(Container(9000).ListItem.Property(HiLiteItem),MusicPlayList)">CDCase/DefaultCDCover.png</value>
 		<value condition="SubString(Window(Home).Property(SkinWidgets_RandomItems),true) + [StringCompare(Container(9000).ListItem.Property(HiLiteItem),Movies) | StringCompare(Container(9000).ListItem.Property(HiLiteItem),Videos)]">$INFO[Window(Home).Property(RandomMovie.5.Art(poster))]</value>
 		<value condition="SubString(Window(Home).Property(SkinWidgets_RandomItems),true) + StringCompare(Container(9000).ListItem.Property(HiLiteItem),TVShows)">$INFO[Window(Home).Property(RandomEpisode.5.Art(tvshow.poster))]</value>
 		<value condition="StringCompare(Container(9000).ListItem.Property(HiLiteItem),TVShows)">$INFO[Window(Home).Property(LatestEpisode.5.ShowThumb)]</value>
@@ -150,10 +151,11 @@
 		<value condition="Container(9000).HasFocus(10) + StringCompare(Container(9000).ListItem.Property(HiLiteItem),MusicPlayList) + StringCompare(Container(9000).ListItem.Property(PlayListType),Music)">$INFO[Window(Home).Property(HomePlayListTen.9.Art(thumb))]</value>
 		<value condition="Container(9000).HasFocus(11) + StringCompare(Container(9000).ListItem.Property(HiLiteItem),MusicPlayList) + StringCompare(Container(9000).ListItem.Property(PlayListType),Music)">$INFO[Window(Home).Property(HomePlayListEleven.9.Art(thumb))]</value>
 		<value condition="Container(9000).HasFocus(12) + StringCompare(Container(9000).ListItem.Property(HiLiteItem),MusicPlayList) + StringCompare(Container(9000).ListItem.Property(PlayListType),Music)">$INFO[Window(Home).Property(HomePlayListTwelve.9.Art(thumb))]</value>
+		<value condition="StringCompare(Container(9000).ListItem.Property(HiLiteItem),Concerts) + SubString(Window(Home).Property(SkinWidgets_RandomItems),true)">$INFO[Window(Home).Property(RandomMusicVideo.9.Art(thumb))]</value>
+		<value condition="!IsEmpty(Window(Home).Property(LatestMusicVideo.9.Thumb)) + StringCompare(Container(9000).ListItem.Property(HiLiteItem),Concerts)">$INFO[Window(Home).Property(LatestMusicVideo.9.Thumb)]</value>
 		<value condition="StringCompare(Container(9000).ListItem.Property(HiLiteItem),Music) + SubString(Window(Home).Property(SkinWidgets_RandomItems),true)">$INFO[Window(Home).Property(RandomAlbum.9.Art(thumb))]</value>
 		<value condition="!IsEmpty(Window(Home).Property(LatestAlbum.9.Thumb)) + StringCompare(Container(9000).ListItem.Property(HiLiteItem),Music)">$INFO[Window(Home).Property(LatestAlbum.9.Thumb)]</value>
-		<value condition="StringCompare(Container(9000).ListItem.Property(HiLiteItem),Music) | StringCompare(Container(9000).ListItem.Property(HiLiteItem),MusicPlayList)">CDCase/DefaultCDCover.png</value>
-		<value condition="StringCompare(Container(9000).ListItem.Property(HiLiteItem),Concerts)">$INFO[Window(Home).Property(RandomMusicVideo.9.Art(thumb))]</value>
+		<value condition="StringCompare(Container(9000).ListItem.Property(HiLiteItem),Music) | StringCompare(Container(9000).ListItem.Property(HiLiteItem),Concerts) | StringCompare(Container(9000).ListItem.Property(HiLiteItem),MusicPlayList)">CDCase/DefaultCDCover.png</value>
 		<value condition="SubString(Window(Home).Property(SkinWidgets_RandomItems),true) + StringCompare(Container(9000).ListItem.Property(HiLiteItem),Movies)">$INFO[Window(Home).Property(RandomMovie.9.Art(poster))]</value>
 		<value condition="SubString(Window(Home).Property(SkinWidgets_RandomItems),true) + [StringCompare(Container(9000).ListItem.Property(HiLiteItem),TVShows) | StringCompare(Container(9000).ListItem.Property(HiLiteItem),Videos)]">$INFO[Window(Home).Property(RandomEpisode.9.Art(tvshow.poster))]</value>
 		<value condition="StringCompare(Container(9000).ListItem.Property(HiLiteItem),TVShows)">$INFO[Window(Home).Property(LatestEpisode.9.ShowThumb)]</value>
@@ -197,10 +199,11 @@
 		<value condition="Container(9000).HasFocus(10) + StringCompare(Container(9000).ListItem.Property(HiLiteItem),MusicPlayList) + StringCompare(Container(9000).ListItem.Property(PlayListType),Music)">$INFO[Window(Home).Property(HomePlayListTen.8.Art(thumb))]</value>
 		<value condition="Container(9000).HasFocus(11) + StringCompare(Container(9000).ListItem.Property(HiLiteItem),MusicPlayList) + StringCompare(Container(9000).ListItem.Property(PlayListType),Music)">$INFO[Window(Home).Property(HomePlayListEleven.8.Art(thumb))]</value>
 		<value condition="Container(9000).HasFocus(12) + StringCompare(Container(9000).ListItem.Property(HiLiteItem),MusicPlayList) + StringCompare(Container(9000).ListItem.Property(PlayListType),Music)">$INFO[Window(Home).Property(HomePlayListTwelve.8.Art(thumb))]</value>
+		<value condition="StringCompare(Container(9000).ListItem.Property(HiLiteItem),Concerts) + SubString(Window(Home).Property(SkinWidgets_RandomItems),true)">$INFO[Window(Home).Property(RandomMusicVideo.8.Art(thumb))]</value>
+		<value condition="!IsEmpty(Window(Home).Property(LatestMusicVideo.9.Thumb)) + StringCompare(Container(9000).ListItem.Property(HiLiteItem),Concerts)">$INFO[Window(Home).Property(LatestMusicVideo.8.Thumb)]</value>
 		<value condition="StringCompare(Container(9000).ListItem.Property(HiLiteItem),Music) + SubString(Window(Home).Property(SkinWidgets_RandomItems),true)">$INFO[Window(Home).Property(RandomAlbum.8.Art(thumb))]</value>
 		<value condition="!IsEmpty(Window(Home).Property(LatestAlbum.8.Thumb)) + StringCompare(Container(9000).ListItem.Property(HiLiteItem),Music)">$INFO[Window(Home).Property(LatestAlbum.8.Thumb)]</value>
-		<value condition="StringCompare(Container(9000).ListItem.Property(HiLiteItem),Music) | StringCompare(Container(9000).ListItem.Property(HiLiteItem),MusicPlayList)">CDCase/DefaultCDCover.png</value>
-		<value condition="StringCompare(Container(9000).ListItem.Property(HiLiteItem),Concerts)">$INFO[Window(Home).Property(RandomMusicVideo.8.Art(thumb))]</value>
+		<value condition="StringCompare(Container(9000).ListItem.Property(HiLiteItem),Music) | StringCompare(Container(9000).ListItem.Property(HiLiteItem),Concerts) | StringCompare(Container(9000).ListItem.Property(HiLiteItem),MusicPlayList)">CDCase/DefaultCDCover.png</value>
 		<value condition="SubString(Window(Home).Property(SkinWidgets_RandomItems),true) + [StringCompare(Container(9000).ListItem.Property(HiLiteItem),Movies) | StringCompare(Container(9000).ListItem.Property(HiLiteItem),Videos)]">$INFO[Window(Home).Property(RandomMovie.8.Art(poster))]</value>
 		<value condition="SubString(Window(Home).Property(SkinWidgets_RandomItems),true) + StringCompare(Container(9000).ListItem.Property(HiLiteItem),TVShows)">$INFO[Window(Home).Property(RandomEpisode.8.Art(tvshow.poster))]</value>
 		<value condition="StringCompare(Container(9000).ListItem.Property(HiLiteItem),TVShows)">$INFO[Window(Home).Property(LatestEpisode.8.ShowThumb)]</value>
@@ -244,10 +247,11 @@
 		<value condition="Container(9000).HasFocus(10) + StringCompare(Container(9000).ListItem.Property(HiLiteItem),MusicPlayList) + StringCompare(Container(9000).ListItem.Property(PlayListType),Music)">$INFO[Window(Home).Property(HomePlayListTen.7.Art(thumb))]</value>
 		<value condition="Container(9000).HasFocus(11) + StringCompare(Container(9000).ListItem.Property(HiLiteItem),MusicPlayList) + StringCompare(Container(9000).ListItem.Property(PlayListType),Music)">$INFO[Window(Home).Property(HomePlayListEleven.7.Art(thumb))]</value>
 		<value condition="Container(9000).HasFocus(12) + StringCompare(Container(9000).ListItem.Property(HiLiteItem),MusicPlayList) + StringCompare(Container(9000).ListItem.Property(PlayListType),Music)">$INFO[Window(Home).Property(HomePlayListTwelve.7.Art(thumb))]</value>
+		<value condition="StringCompare(Container(9000).ListItem.Property(HiLiteItem),Concerts) + SubString(Window(Home).Property(SkinWidgets_RandomItems),true)">$INFO[Window(Home).Property(RandomMusicVideo.7.Art(thumb))]</value>
+		<value condition="!IsEmpty(Window(Home).Property(LatestMusicVideo.9.Thumb)) + StringCompare(Container(9000).ListItem.Property(HiLiteItem),Concerts)">$INFO[Window(Home).Property(LatestMusicVideo.7.Thumb)]</value>
 		<value condition="StringCompare(Container(9000).ListItem.Property(HiLiteItem),Music) + SubString(Window(Home).Property(SkinWidgets_RandomItems),true)">$INFO[Window(Home).Property(RandomAlbum.7.Art(thumb))]</value>
 		<value condition="!IsEmpty(Window(Home).Property(LatestAlbum.7.Thumb)) + StringCompare(Container(9000).ListItem.Property(HiLiteItem),Music)">$INFO[Window(Home).Property(LatestAlbum.7.Thumb)]</value>
-		<value condition="StringCompare(Container(9000).ListItem.Property(HiLiteItem),Music) | StringCompare(Container(9000).ListItem.Property(HiLiteItem),MusicPlayList)">CDCase/DefaultCDCover.png</value>
-		<value condition="StringCompare(Container(9000).ListItem.Property(HiLiteItem),Concerts)">$INFO[Window(Home).Property(RandomMusicVideo.7.Art(thumb))]</value>
+		<value condition="StringCompare(Container(9000).ListItem.Property(HiLiteItem),Music) | StringCompare(Container(9000).ListItem.Property(HiLiteItem),Concerts) | StringCompare(Container(9000).ListItem.Property(HiLiteItem),MusicPlayList)">CDCase/DefaultCDCover.png</value>
 		<value condition="SubString(Window(Home).Property(SkinWidgets_RandomItems),true) + StringCompare(Container(9000).ListItem.Property(HiLiteItem),Movies)">$INFO[Window(Home).Property(RandomMovie.7.Art(poster))]</value>
 		<value condition="SubString(Window(Home).Property(SkinWidgets_RandomItems),true) + [StringCompare(Container(9000).ListItem.Property(HiLiteItem),TVShows) | StringCompare(Container(9000).ListItem.Property(HiLiteItem),Videos)]">$INFO[Window(Home).Property(RandomEpisode.7.Art(tvshow.poster))]</value>
 		<value condition="StringCompare(Container(9000).ListItem.Property(HiLiteItem),TVShows)">$INFO[Window(Home).Property(LatestEpisode.7.ShowThumb)]</value>
@@ -291,10 +295,11 @@
 		<value condition="Container(9000).HasFocus(10) + StringCompare(Container(9000).ListItem.Property(HiLiteItem),MusicPlayList) + StringCompare(Container(9000).ListItem.Property(PlayListType),Music)">$INFO[Window(Home).Property(HomePlayListTen.4.Art(thumb))]</value>
 		<value condition="Container(9000).HasFocus(11) + StringCompare(Container(9000).ListItem.Property(HiLiteItem),MusicPlayList) + StringCompare(Container(9000).ListItem.Property(PlayListType),Music)">$INFO[Window(Home).Property(HomePlayListEleven.4.Art(thumb))]</value>
 		<value condition="Container(9000).HasFocus(12) + StringCompare(Container(9000).ListItem.Property(HiLiteItem),MusicPlayList) + StringCompare(Container(9000).ListItem.Property(PlayListType),Music)">$INFO[Window(Home).Property(HomePlayListTwelve.4.Art(thumb))]</value>
+		<value condition="StringCompare(Container(9000).ListItem.Property(HiLiteItem),Concerts) + SubString(Window(Home).Property(SkinWidgets_RandomItems),true)">$INFO[Window(Home).Property(RandomMusicVideo.4.Art(thumb))]</value>
+		<value condition="!IsEmpty(Window(Home).Property(LatestMusicVideo.9.Thumb)) + StringCompare(Container(9000).ListItem.Property(HiLiteItem),Concerts)">$INFO[Window(Home).Property(LatestMusicVideo.4.Thumb)]</value>
 		<value condition="StringCompare(Container(9000).ListItem.Property(HiLiteItem),Music) + SubString(Window(Home).Property(SkinWidgets_RandomItems),true)">$INFO[Window(Home).Property(RandomAlbum.4.Art(thumb))]</value>
 		<value condition="!IsEmpty(Window(Home).Property(LatestAlbum.4.Thumb)) + StringCompare(Container(9000).ListItem.Property(HiLiteItem),Music)">$INFO[Window(Home).Property(LatestAlbum.4.Thumb)]</value>
-		<value condition="StringCompare(Container(9000).ListItem.Property(HiLiteItem),Music) | StringCompare(Container(9000).ListItem.Property(HiLiteItem),MusicPlayList)">CDCase/DefaultCDCover.png</value>
-		<value condition="StringCompare(Container(9000).ListItem.Property(HiLiteItem),Concerts)">$INFO[Window(Home).Property(RandomMusicVideo.4.Art(thumb))]</value>
+		<value condition="StringCompare(Container(9000).ListItem.Property(HiLiteItem),Music) | StringCompare(Container(9000).ListItem.Property(HiLiteItem),Concerts) | StringCompare(Container(9000).ListItem.Property(HiLiteItem),MusicPlayList)">CDCase/DefaultCDCover.png</value>
 		<value condition="SubString(Window(Home).Property(SkinWidgets_RandomItems),true) + [StringCompare(Container(9000).ListItem.Property(HiLiteItem),Movies) | StringCompare(Container(9000).ListItem.Property(HiLiteItem),Videos)]">$INFO[Window(Home).Property(RandomMovie.4.Art(poster))]</value>
 		<value condition="SubString(Window(Home).Property(SkinWidgets_RandomItems),true) + StringCompare(Container(9000).ListItem.Property(HiLiteItem),TVShows)">$INFO[Window(Home).Property(RandomEpisode.4.Art(tvshow.poster))]</value>
 		<value condition="StringCompare(Container(9000).ListItem.Property(HiLiteItem),TVShows)">$INFO[Window(Home).Property(LatestEpisode.4.ShowThumb)]</value>
@@ -338,10 +343,11 @@
 		<value condition="Container(9000).HasFocus(10) + StringCompare(Container(9000).ListItem.Property(HiLiteItem),MusicPlayList) + StringCompare(Container(9000).ListItem.Property(PlayListType),Music)">$INFO[Window(Home).Property(HomePlayListTen.6.Art(thumb))]</value>
 		<value condition="Container(9000).HasFocus(11) + StringCompare(Container(9000).ListItem.Property(HiLiteItem),MusicPlayList) + StringCompare(Container(9000).ListItem.Property(PlayListType),Music)">$INFO[Window(Home).Property(HomePlayListEleven.6.Art(thumb))]</value>
 		<value condition="Container(9000).HasFocus(12) + StringCompare(Container(9000).ListItem.Property(HiLiteItem),MusicPlayList) + StringCompare(Container(9000).ListItem.Property(PlayListType),Music)">$INFO[Window(Home).Property(HomePlayListTwelve.6.Art(thumb))]</value>
+		<value condition="StringCompare(Container(9000).ListItem.Property(HiLiteItem),Concerts) + SubString(Window(Home).Property(SkinWidgets_RandomItems),true)">$INFO[Window(Home).Property(RandomMusicVideo.6.Art(thumb))]</value>
+		<value condition="!IsEmpty(Window(Home).Property(LatestMusicVideo.9.Thumb)) + StringCompare(Container(9000).ListItem.Property(HiLiteItem),Concerts)">$INFO[Window(Home).Property(LatestMusicVideo.6.Thumb)]</value>
 		<value condition="StringCompare(Container(9000).ListItem.Property(HiLiteItem),Music) + SubString(Window(Home).Property(SkinWidgets_RandomItems),true)">$INFO[Window(Home).Property(RandomAlbum.6.Art(thumb))]</value>
 		<value condition="!IsEmpty(Window(Home).Property(LatestAlbum.6.Thumb)) + StringCompare(Container(9000).ListItem.Property(HiLiteItem),Music)">$INFO[Window(Home).Property(LatestAlbum.6.Thumb)]</value>
-		<value condition="StringCompare(Container(9000).ListItem.Property(HiLiteItem),Music) | StringCompare(Container(9000).ListItem.Property(HiLiteItem),MusicPlayList)">CDCase/DefaultCDCover.png</value>
-		<value condition="StringCompare(Container(9000).ListItem.Property(HiLiteItem),Concerts)">$INFO[Window(Home).Property(RandomMusicVideo.6.Art(thumb))]</value>
+		<value condition="StringCompare(Container(9000).ListItem.Property(HiLiteItem),Music) | StringCompare(Container(9000).ListItem.Property(HiLiteItem),Concerts) | StringCompare(Container(9000).ListItem.Property(HiLiteItem),MusicPlayList)">CDCase/DefaultCDCover.png</value>
 		<value condition="SubString(Window(Home).Property(SkinWidgets_RandomItems),true) + StringCompare(Container(9000).ListItem.Property(HiLiteItem),Movies)">$INFO[Window(Home).Property(RandomMovie.6.Art(poster))]</value>
 		<value condition="SubString(Window(Home).Property(SkinWidgets_RandomItems),true) + [StringCompare(Container(9000).ListItem.Property(HiLiteItem),TVShows) | StringCompare(Container(9000).ListItem.Property(HiLiteItem),Videos)]">$INFO[Window(Home).Property(RandomEpisode.6.Art(tvshow.poster))]</value>
 		<value condition="StringCompare(Container(9000).ListItem.Property(HiLiteItem),TVShows)">$INFO[Window(Home).Property(LatestEpisode.6.ShowThumb)]</value>
@@ -385,10 +391,11 @@
 		<value condition="Container(9000).HasFocus(10) + StringCompare(Container(9000).ListItem.Property(HiLiteItem),MusicPlayList) + StringCompare(Container(9000).ListItem.Property(PlayListType),Music)">$INFO[Window(Home).Property(HomePlayListTen.10.Art(thumb))]</value>
 		<value condition="Container(9000).HasFocus(11) + StringCompare(Container(9000).ListItem.Property(HiLiteItem),MusicPlayList) + StringCompare(Container(9000).ListItem.Property(PlayListType),Music)">$INFO[Window(Home).Property(HomePlayListEleven.10.Art(thumb))]</value>
 		<value condition="Container(9000).HasFocus(12) + StringCompare(Container(9000).ListItem.Property(HiLiteItem),MusicPlayList) + StringCompare(Container(9000).ListItem.Property(PlayListType),Music)">$INFO[Window(Home).Property(HomePlayListTwelve.10.Art(thumb))]</value>
+		<value condition="StringCompare(Container(9000).ListItem.Property(HiLiteItem),Concerts) + SubString(Window(Home).Property(SkinWidgets_RandomItems),true)">$INFO[Window(Home).Property(RandomMusicVideo.10.Art(thumb))]</value>
+		<value condition="!IsEmpty(Window(Home).Property(LatestMusicVideo.9.Thumb)) + StringCompare(Container(9000).ListItem.Property(HiLiteItem),Concerts)">$INFO[Window(Home).Property(LatestMusicVideo.10.Thumb)]</value>
 		<value condition="StringCompare(Container(9000).ListItem.Property(HiLiteItem),Music) + SubString(Window(Home).Property(SkinWidgets_RandomItems),true)">$INFO[Window(Home).Property(RandomAlbum.10.Art(thumb))]</value>
 		<value condition="!IsEmpty(Window(Home).Property(LatestAlbum.10.Thumb)) + StringCompare(Container(9000).ListItem.Property(HiLiteItem),Music)">$INFO[Window(Home).Property(LatestAlbum.10.Thumb)]</value>
-		<value condition="StringCompare(Container(9000).ListItem.Property(HiLiteItem),Music) | StringCompare(Container(9000).ListItem.Property(HiLiteItem),MusicPlayList)">CDCase/DefaultCDCover.png</value>
-		<value condition="StringCompare(Container(9000).ListItem.Property(HiLiteItem),Concerts)">$INFO[Window(Home).Property(RandomMusicVideo.10.Art(thumb))]</value>
+		<value condition="StringCompare(Container(9000).ListItem.Property(HiLiteItem),Music) | StringCompare(Container(9000).ListItem.Property(HiLiteItem),Concerts) | StringCompare(Container(9000).ListItem.Property(HiLiteItem),MusicPlayList)">CDCase/DefaultCDCover.png</value>
 		<value condition="SubString(Window(Home).Property(SkinWidgets_RandomItems),true) + [StringCompare(Container(9000).ListItem.Property(HiLiteItem),Movies) | StringCompare(Container(9000).ListItem.Property(HiLiteItem),Videos)]">$INFO[Window(Home).Property(RandomMovie.10.Art(poster))]</value>
 		<value condition="SubString(Window(Home).Property(SkinWidgets_RandomItems),true) + StringCompare(Container(9000).ListItem.Property(HiLiteItem),TVShows)">$INFO[Window(Home).Property(RandomEpisode.10.Art(tvshow.poster))]</value>
 		<value condition="StringCompare(Container(9000).ListItem.Property(HiLiteItem),TVShows)">$INFO[Window(Home).Property(LatestEpisode.10.ShowThumb)]</value>
@@ -432,10 +439,11 @@
 		<value condition="Container(9000).HasFocus(10) + StringCompare(Container(9000).ListItem.Property(HiLiteItem),MusicPlayList) + StringCompare(Container(9000).ListItem.Property(PlayListType),Music)">$INFO[Window(Home).Property(HomePlayListTen.3.Art(thumb))]</value>
 		<value condition="Container(9000).HasFocus(11) + StringCompare(Container(9000).ListItem.Property(HiLiteItem),MusicPlayList) + StringCompare(Container(9000).ListItem.Property(PlayListType),Music)">$INFO[Window(Home).Property(HomePlayListEleven.3.Art(thumb))]</value>
 		<value condition="Container(9000).HasFocus(12) + StringCompare(Container(9000).ListItem.Property(HiLiteItem),MusicPlayList) + StringCompare(Container(9000).ListItem.Property(PlayListType),Music)">$INFO[Window(Home).Property(HomePlayListTwelve.3.Art(thumb))]</value>
+		<value condition="StringCompare(Container(9000).ListItem.Property(HiLiteItem),Concerts) + SubString(Window(Home).Property(SkinWidgets_RandomItems),true)">$INFO[Window(Home).Property(RandomMusicVideo.3.Art(thumb))]</value>
+		<value condition="!IsEmpty(Window(Home).Property(LatestMusicVideo.9.Thumb)) + StringCompare(Container(9000).ListItem.Property(HiLiteItem),Concerts)">$INFO[Window(Home).Property(LatestMusicVideo.3.Thumb)]</value>
 		<value condition="StringCompare(Container(9000).ListItem.Property(HiLiteItem),Music) + SubString(Window(Home).Property(SkinWidgets_RandomItems),true)">$INFO[Window(Home).Property(RandomAlbum.3.Art(thumb))]</value>
 		<value condition="!IsEmpty(Window(Home).Property(LatestAlbum.3.Thumb)) + StringCompare(Container(9000).ListItem.Property(HiLiteItem),Music)">$INFO[Window(Home).Property(LatestAlbum.3.Thumb)]</value>
-		<value condition="StringCompare(Container(9000).ListItem.Property(HiLiteItem),Music) | StringCompare(Container(9000).ListItem.Property(HiLiteItem),MusicPlayList)">CDCase/DefaultCDCover.png</value>
-		<value condition="StringCompare(Container(9000).ListItem.Property(HiLiteItem),Concerts)">$INFO[Window(Home).Property(RandomMusicVideo.3.Art(thumb))]</value>
+		<value condition="StringCompare(Container(9000).ListItem.Property(HiLiteItem),Music) | StringCompare(Container(9000).ListItem.Property(HiLiteItem),Concerts) | StringCompare(Container(9000).ListItem.Property(HiLiteItem),MusicPlayList)">CDCase/DefaultCDCover.png</value>
 		<value condition="SubString(Window(Home).Property(SkinWidgets_RandomItems),true) + StringCompare(Container(9000).ListItem.Property(HiLiteItem),Movies)">$INFO[Window(Home).Property(RandomMovie.3.Art(poster))]</value>
 		<value condition="SubString(Window(Home).Property(SkinWidgets_RandomItems),true) + [StringCompare(Container(9000).ListItem.Property(HiLiteItem),TVShows) | StringCompare(Container(9000).ListItem.Property(HiLiteItem),Videos)]">$INFO[Window(Home).Property(RandomEpisode.3.Art(tvshow.poster))]</value>
 		<value condition="StringCompare(Container(9000).ListItem.Property(HiLiteItem),TVShows)">$INFO[Window(Home).Property(LatestEpisode.3.ShowThumb)]</value>
@@ -479,10 +487,11 @@
 		<value condition="Container(9000).HasFocus(10) + StringCompare(Container(9000).ListItem.Property(HiLiteItem),MusicPlayList) + StringCompare(Container(9000).ListItem.Property(PlayListType),Music)">$INFO[Window(Home).Property(HomePlayListTen.2.Art(thumb))]</value>
 		<value condition="Container(9000).HasFocus(11) + StringCompare(Container(9000).ListItem.Property(HiLiteItem),MusicPlayList) + StringCompare(Container(9000).ListItem.Property(PlayListType),Music)">$INFO[Window(Home).Property(HomePlayListEleven.2.Art(thumb))]</value>
 		<value condition="Container(9000).HasFocus(12) + StringCompare(Container(9000).ListItem.Property(HiLiteItem),MusicPlayList) + StringCompare(Container(9000).ListItem.Property(PlayListType),Music)">$INFO[Window(Home).Property(HomePlayListTwelve.2.Art(thumb))]</value>
+		<value condition="StringCompare(Container(9000).ListItem.Property(HiLiteItem),Concerts) + SubString(Window(Home).Property(SkinWidgets_RandomItems),true)">$INFO[Window(Home).Property(RandomMusicVideo.2.Art(thumb))]</value>
+		<value condition="!IsEmpty(Window(Home).Property(LatestMusicVideo.9.Thumb)) + StringCompare(Container(9000).ListItem.Property(HiLiteItem),Concerts)">$INFO[Window(Home).Property(LatestMusicVideo.2.Thumb)]</value>
 		<value condition="StringCompare(Container(9000).ListItem.Property(HiLiteItem),Music) + SubString(Window(Home).Property(SkinWidgets_RandomItems),true)">$INFO[Window(Home).Property(RandomAlbum.2.Art(thumb))]</value>
 		<value condition="!IsEmpty(Window(Home).Property(LatestAlbum.2.Thumb)) + StringCompare(Container(9000).ListItem.Property(HiLiteItem),Music)">$INFO[Window(Home).Property(LatestAlbum.2.Thumb)]</value>
-		<value condition="StringCompare(Container(9000).ListItem.Property(HiLiteItem),Music) | StringCompare(Container(9000).ListItem.Property(HiLiteItem),MusicPlayList)">CDCase/DefaultCDCover.png</value>
-		<value condition="StringCompare(Container(9000).ListItem.Property(HiLiteItem),Concerts)">$INFO[Window(Home).Property(RandomMusicVideo.2.Art(thumb))]</value>
+		<value condition="StringCompare(Container(9000).ListItem.Property(HiLiteItem),Music) | StringCompare(Container(9000).ListItem.Property(HiLiteItem),Concerts) | StringCompare(Container(9000).ListItem.Property(HiLiteItem),MusicPlayList)">CDCase/DefaultCDCover.png</value>
 		<value condition="SubString(Window(Home).Property(SkinWidgets_RandomItems),true) + [StringCompare(Container(9000).ListItem.Property(HiLiteItem),Movies) | StringCompare(Container(9000).ListItem.Property(HiLiteItem),Videos)]">$INFO[Window(Home).Property(RandomMovie.2.Art(poster))]</value>
 		<value condition="SubString(Window(Home).Property(SkinWidgets_RandomItems),true) + StringCompare(Container(9000).ListItem.Property(HiLiteItem),TVShows)">$INFO[Window(Home).Property(RandomEpisode.2.Art(tvshow.poster))]</value>
 		<value condition="StringCompare(Container(9000).ListItem.Property(HiLiteItem),TVShows)">$INFO[Window(Home).Property(LatestEpisode.2.ShowThumb)]</value>
@@ -526,10 +535,11 @@
 		<value condition="Container(9000).HasFocus(10) + StringCompare(Container(9000).ListItem.Property(HiLiteItem),MusicPlayList) + StringCompare(Container(9000).ListItem.Property(PlayListType),Music)">$INFO[Window(Home).Property(HomePlayListTen.1.Art(thumb))]</value>
 		<value condition="Container(9000).HasFocus(11) + StringCompare(Container(9000).ListItem.Property(HiLiteItem),MusicPlayList) + StringCompare(Container(9000).ListItem.Property(PlayListType),Music)">$INFO[Window(Home).Property(HomePlayListEleven.1.Art(thumb))]</value>
 		<value condition="Container(9000).HasFocus(12) + StringCompare(Container(9000).ListItem.Property(HiLiteItem),MusicPlayList) + StringCompare(Container(9000).ListItem.Property(PlayListType),Music)">$INFO[Window(Home).Property(HomePlayListTwelve.1.Art(thumb))]</value>
+		<value condition="StringCompare(Container(9000).ListItem.Property(HiLiteItem),Concerts) + SubString(Window(Home).Property(SkinWidgets_RandomItems),true)">$INFO[Window(Home).Property(RandomMusicVideo.1.Art(thumb))]</value>
+		<value condition="!IsEmpty(Window(Home).Property(LatestMusicVideo.9.Thumb)) + StringCompare(Container(9000).ListItem.Property(HiLiteItem),Concerts)">$INFO[Window(Home).Property(LatestMusicVideo.1.Thumb)]</value>
 		<value condition="StringCompare(Container(9000).ListItem.Property(HiLiteItem),Music) + SubString(Window(Home).Property(SkinWidgets_RandomItems),true)">$INFO[Window(Home).Property(RandomAlbum.1.Art(thumb))]</value>
 		<value condition="!IsEmpty(Window(Home).Property(LatestAlbum.1.Thumb)) + StringCompare(Container(9000).ListItem.Property(HiLiteItem),Music)">$INFO[Window(Home).Property(LatestAlbum.1.Thumb)]</value>
-		<value condition="StringCompare(Container(9000).ListItem.Property(HiLiteItem),Music) | StringCompare(Container(9000).ListItem.Property(HiLiteItem),MusicPlayList)">CDCase/DefaultCDCover.png</value>
-		<value condition="StringCompare(Container(9000).ListItem.Property(HiLiteItem),Concerts)">$INFO[Window(Home).Property(RandomMusicVideo.1.Art(thumb))]</value>
+		<value condition="StringCompare(Container(9000).ListItem.Property(HiLiteItem),Music) | StringCompare(Container(9000).ListItem.Property(HiLiteItem),Concerts) | StringCompare(Container(9000).ListItem.Property(HiLiteItem),MusicPlayList)">CDCase/DefaultCDCover.png</value>
 		<value condition="SubString(Window(Home).Property(SkinWidgets_RandomItems),true) + StringCompare(Container(9000).ListItem.Property(HiLiteItem),Movies)">$INFO[Window(Home).Property(RandomMovie.1.Art(poster))]</value>
 		<value condition="SubString(Window(Home).Property(SkinWidgets_RandomItems),true) + [StringCompare(Container(9000).ListItem.Property(HiLiteItem),TVShows) | StringCompare(Container(9000).ListItem.Property(HiLiteItem),Videos)]">$INFO[Window(Home).Property(RandomEpisode.1.Art(tvshow.poster))]</value>
 		<value condition="StringCompare(Container(9000).ListItem.Property(HiLiteItem),TVShows)">$INFO[Window(Home).Property(LatestEpisode.1.ShowThumb)]</value>
@@ -587,11 +597,12 @@
 		<value>$INFO[ListItem.ActualIcon]</value>
 	</variable>
 	<variable name="TopLeftInfoType">
+		<value condition="IsEmpty(Skin.String(TopLeftHomeInfo))">$LOCALIZE[31083]</value>
+		<value condition="StringCompare(Skin.String(TopLeftHomeInfo),Logo)">$LOCALIZE[31083]</value>
 		<value condition="StringCompare(Skin.String(TopLeftHomeInfo),Blank)">$LOCALIZE[19022]</value>
 		<value condition="StringCompare(Skin.String(TopLeftHomeInfo),Profile)">$LOCALIZE[31082]</value>
-		<value condition="StringCompare(Skin.String(TopLeftHomeInfo),Weather)">$LOCALIZE[24027]</value>
-		<value condition="StringCompare(Skin.String(TopLeftHomeInfo),Logo)">$LOCALIZE[31083]</value>
-		<value>$LOCALIZE[31083]</value>
+		<value condition="StringCompare(Skin.String(TopLeftHomeInfo),Weather) + !IsEmpty(Weather.Plugin)">$LOCALIZE[24027]</value>
+		<value condition="StringCompare(Skin.String(TopLeftHomeInfo),Weather) + IsEmpty(Weather.Plugin)">[COLOR=grey3]$LOCALIZE[24027][/COLOR]</value>
 	</variable>
 	<variable name="InfoBarStats" type="text">
 		<value condition="!Skin.HasSetting(DisableScriptPlaylist) + StringCompare(Container(9000).ListItem.Property(HiLiteItem),VideoPlayList) + Container(9000).Hasfocus(1)">[B][COLOR=$VAR[MainColorOne]]$LOCALIZE[31025]: [/COLOR][/B]$INFO[Window(Home).Property(HomePlayListOne.Count)]   [B][COLOR=$VAR[MainColorOne]]$LOCALIZE[16102]: [/COLOR][/B]$INFO[Window(Home).Property(HomePlayListOne.Watched)]    [B][COLOR=$VAR[MainColorOne]]$LOCALIZE[16101]: [/COLOR][/B]$INFO[Window(Home).Property(HomePlayListOne.Unwatched)]</value>
@@ -2276,7 +2287,7 @@
 		<value condition="StringCompare(Container(9005).ListItem.Property(HiLiteItem),Holiday) + stringcompare(Container(9005).ListItem.Thumb,special://skin/extras/Holiday/xmastree.jpg)">$LOCALIZE[31257]</value>
 		<value condition="StringCompare(Container(9005).ListItem.Property(HiLiteItem),StartUp) + Skin.HasSetting(HideStartUpBackground)">$LOCALIZE[31313]</value>
 		<value condition="StringCompare(Container(9005).ListItem.Property(HiLiteItem),StartUp) + stringcompare(Container(9005).ListItem.Thumb,special://skin/backgrounds/startup.jpg)">$LOCALIZE[31257]</value>
-		<value condition="StringCompare(Container(9005).ListItem.Property(HiLiteItem),Global) + IsEmpty(Skin.String(GlobalBackgroundPath))">$LOCALIZE[31366]</value>
+		<value condition="StringCompare(Container(9005).ListItem.Property(HiLiteItem),Global) + IsEmpty(Skin.String(GlobalBackGroundPath))">$LOCALIZE[31366]</value>
 		<value condition="!IsEmpty(Container(9005).ListItem.Thumb)">$INFO[Container(9005).ListItem.Thumb]</value>
 		<value>$LOCALIZE[31366]</value>
 	</variable>
@@ -2292,12 +2303,6 @@
 	<variable name="ColorOneName" type="text">
 		<value condition="IsEmpty(Skin.String(UsrColorOne))">$LOCALIZE[13278]</value>
 		<value condition="!IsEmpty(Skin.String(UsrColorOne))">$INFO[Skin.String(UsrColorOne)]</value>
-		<!--
-		<value condition="StringCompare(Skin.String(UsrColorOne),ff0084ff)">$LOCALIZE[762]</value>
-		<value condition="StringCompare(Skin.String(UsrColorOne),FFF30000)">$LOCALIZE[31367]</value>
-		<value condition="StringCompare(Skin.String(UsrColorOne),FF6DF300)">$LOCALIZE[31368]</value>
-		<value>$LOCALIZE[13278]</value>
-		-->
 	</variable>
 	<variable name="TransparentValue">
 		<value condition="!IsEmpty(Skin.String(mediapaneltrans))">$LOCALIZE[31248]</value>
@@ -2308,6 +2313,12 @@
 		<value condition="Skin.String(MusicOSDInfo,permanent)">$LOCALIZE[31016]</value>
 		<value condition="Skin.String(MusicOSDInfo,never)">$LOCALIZE[31015]</value>
 		<value>$LOCALIZE[31017]</value>
+	</variable>
+	<variable name="PopupInfoType">
+		<value condition="Skin.String(MediaPopupControl,Hidden)">$LOCALIZE[31328]</value>
+		<value condition="Skin.String(MediaPopupControl,Instant)">$LOCALIZE[31370]</value>
+		<value condition="Skin.String(MediaPopupControl,Delayed)">$LOCALIZE[31371]</value>
+		<value>$LOCALIZE[31257]</value>
 	</variable>
 	<variable name="MusicHeaderLabel">
 		<value condition="MusicPartyMode.Enabled">[B]($LOCALIZE[589])[/B]</value>

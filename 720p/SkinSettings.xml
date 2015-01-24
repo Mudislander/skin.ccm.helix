@@ -3,20 +3,10 @@
 	<defaultcontrol always="true">9000</defaultcontrol>
 	<include condition="!Skin.HasSetting(InitialSetUpRun)">DefaultInitialSetup</include>
 	<onload condition="System.HasAddon(script.favourites)">XBMC.RunScript(script.favourites)</onload>
-	<onload>SetProperty(MenuItemActive,Settings,Home)</onload>
 	<onload condition="stringcompare(Container(9011).Position,0) + !stringcompare(Skin.String(InitialMenuPosi),0)">Control.Move(9011,$INFO[Skin.String(InitialMenuPosi)])</onload>
 	<onunload condition="IsEmpty(Skin.String(WeatherFanartDir)) | SubString(Skin.String(WeatherFanartDir),skin.ccm.helix\extras\Weather\,right)">Skin.SetString(WeatherFanartDir,special://skin/extras/Weather/)</onunload>
 	<controls>
-		<control type="image">
-			<include>Dimensions_Fullscreen</include>
-			<aspectratio>scale</aspectratio>
-			<texture background="true">special://skin/backgrounds/settings.jpg</texture>
-			<include>BackgroundFade</include>
-			<fadetime>FanartCrossfadeTime</fadetime>
-			<include>Window_OpenClose_Animation</include>
-			<visible>!Skin.HasSetting(InitialSetUpRun)</visible>
-		</control>
-		<include condition="Skin.HasSetting(InitialSetUpRun)">CommonBackground</include>
+		<include>CommonBackground</include>
 		<control type="image">
 			<left>0</left>
 			<top>100r</top>
@@ -559,13 +549,11 @@
 						<focusedcolor>white</focusedcolor>
 						<label>$LOCALIZE[31072]</label>
 						<label2>[COLOR=selected]$VAR[TopLeftInfoType][/COLOR]</label2>
-						<onclick condition="IsEmpty(Skin.String(TopLeftHomeInfo)) + !IsEmpty(Weather.Plugin)">Skin.SetString(TopLeftHomeInfo,Weather)</onclick>
-						<onclick condition="IsEmpty(Skin.String(TopLeftHomeInfo)) + IsEmpty(Weather.Plugin)">Skin.SetString(TopLeftHomeInfo,Profile)</onclick>
+						<onclick condition="IsEmpty(Skin.String(TopLeftHomeInfo))">Skin.SetString(TopLeftHomeInfo,Weather)</onclick>
 						<onclick condition="Skin.String(TopLeftHomeInfo,Weather)">Skin.SetString(TopLeftHomeInfo,Profile)</onclick>
 						<onclick condition="Skin.String(TopLeftHomeInfo,Profile)">Skin.SetString(TopLeftHomeInfo,Blank)</onclick>
 						<onclick condition="Skin.String(TopLeftHomeInfo,Blank)">Skin.SetString(TopLeftHomeInfo,Logo)</onclick>
-						<onclick condition="Skin.String(TopLeftHomeInfo,Logo) + !IsEmpty(Weather.Plugin)">Skin.SetString(TopLeftHomeInfo,Weather)</onclick>
-						<onclick condition="Skin.String(TopLeftHomeInfo,Logo) + IsEmpty(Weather.Plugin)">Skin.SetString(TopLeftHomeInfo,Logo)</onclick>
+						<onclick condition="Skin.String(TopLeftHomeInfo,Logo)">Skin.SetString(TopLeftHomeInfo,Weather)</onclick>
 						<texturefocus>MenuItemFO.png</texturefocus>
 						<texturenofocus>MenuItemNF.png</texturenofocus>
 					</control>
@@ -746,6 +734,7 @@
 						<onclick>Skin.ToggleSetting(NoDiffuseVizFanart)</onclick>
 						<selected>!Skin.HasSetting(NoDiffuseVizFanart)</selected>
 					</control>
+					<!--
 					<control type="label" id="160">
 						<width>750</width>
 						<height>45</height>
@@ -808,6 +797,7 @@
 						<onclick>Skin.ToggleSetting(HideArtWorkOSD)</onclick>
 						<selected>!Skin.HasSetting(HideArtWorkOSD)</selected>
 					</control>
+					-->
 					<control type="label" id="170">
 						<width>750</width>
 						<height>45</height>
@@ -5277,7 +5267,7 @@
 								<label>$LOCALIZE[31363]</label>
 								<onclick>noop</onclick>
 								<icon>$INFO[Skin.CurrentTheme,special://skin/backgrounds/,.jpg]</icon>
-								<thumb>$INFO[Skin.String(GlobalBackgroundPath)]</thumb>
+								<thumb>$INFO[Skin.String(GlobalBackGroundPath)]</thumb>
 								<property name="HiLiteItem">Global</property>
 								<visible>Skin.HasSetting(SingleGlobalBackground) + !Skin.HasSetting(HolidayEffects)</visible>
 							</item>
@@ -6302,8 +6292,8 @@
 								<align>center</align>
 								<texturenofocus border="5">button-nofocus.png</texturenofocus>
 								<texturefocus border="5">button-focus.png</texturefocus>
-								<onclick>Skin.Reset(GlobalBackgroundPath)</onclick>
-								<onclick>Skin.SetImage(GlobalBackgroundPath)</onclick>
+								<onclick>Skin.Reset(GlobalBackGroundPath)</onclick>
+								<onclick>Skin.SetImage(GlobalBackGroundPath)</onclick>
 								<onleft>502</onleft>
 								<onright>501</onright>
 								<onup>504</onup>
@@ -6322,8 +6312,8 @@
 								<align>center</align>
 								<texturenofocus border="5">button-nofocus.png</texturenofocus>
 								<texturefocus border="5">button-focus.png</texturefocus>
-								<onclick>Skin.Reset(GlobalBackgroundPath)</onclick>
-								<onclick>Skin.SetPath(GlobalBackgroundPath)</onclick>
+								<onclick>Skin.Reset(GlobalBackGroundPath)</onclick>
+								<onclick>Skin.SetPath(GlobalBackGroundPath)</onclick>
 								<onleft>500</onleft>
 								<onright>502</onright>
 								<onup>504</onup>
@@ -6342,7 +6332,7 @@
 								<align>center</align>
 								<texturenofocus border="5">button-nofocus.png</texturenofocus>
 								<texturefocus border="5">button-focus.png</texturefocus>
-								<onclick>Skin.Reset(GlobalBackgroundPath)</onclick>
+								<onclick>Skin.Reset(GlobalBackGroundPath)</onclick>
 								<onleft>501</onleft>
 								<onright>500</onright>
 								<onup>504</onup>

@@ -958,12 +958,12 @@
 		<animation effect="rotate" end="720" center="auto" time="800" loop="true" reversible="false" condition="Player.Rewinding16x">Conditional</animation>
 		<animation effect="rotate" end="720" center="auto" time="400" loop="true" reversible="false" condition="Player.Rewinding32x">Conditional</animation>
 	</include>
-	<!--include name="MediaInfoPopup">
-		<animation effect="fade" start="0" end="100" time="1600" delay="2000" condition="IsEmpty(Skin.String(mediapopupcontrol))">Visible</animation>
-		<animation effect="fade" start="0" end="100" time="300" delay="300" condition="Skin.String(mediapopupcontrol,Instant)">Visible</animation>
-		<animation effect="fade" start="0" end="100" time="1600" delay="3000" condition="Skin.String(mediapopupcontrol,Delayed)">Visible</animation>
+	<include name="MediaInfoPopup">
+		<animation effect="fade" start="0" end="100" time="1600" delay="2000" condition="IsEmpty(Skin.String(MediaPopupControl))">Visible</animation>
+		<animation effect="fade" start="0" end="100" time="300" delay="300" condition="Skin.String(MediaPopupControl,Instant)">Visible</animation>
+		<animation effect="fade" start="0" end="100" time="1600" delay="3000" condition="Skin.String(MediaPopupControl,Delayed)">Visible</animation>
 		<animation effect="fade" start="100" end="0" time="0">Hidden</animation>
-	</include-->
+	</include>
 	<include name="VideoBoxDimensions">
 		<left>26</left>
 		<top>6</top>
@@ -1015,7 +1015,14 @@
 			<control type="image">
 				<include>Dimensions_Fullscreen</include>
 				<aspectratio>scale</aspectratio>
-				<texture fallback="special://skin/backgrounds/SKINDEFAULT.jpg">$INFO[Skin.String(globalbackgroundpath)]</texture>
+				<texture fallback="special://skin/backgrounds/SKINDEFAULT.jpg">$INFO[Skin.String(GlobalBackGroundPath)]</texture>
+				<visible>!IsEmpty(Skin.String(GlobalBackGroundPath))</visible>
+			</control>
+			<control type="image">
+				<include>Dimensions_Fullscreen</include>
+				<aspectratio>scale</aspectratio>
+				<texture fallback="special://skin/backgrounds/SKINDEFAULT.jpg">$INFO[Skin.CurrentTheme,special://skin/backgrounds/,.jpg]</texture>
+				<visible>IsEmpty(Skin.String(GlobalBackGroundPath))</visible>
 			</control>
 			<control type="group">
 				<left>-133</left>

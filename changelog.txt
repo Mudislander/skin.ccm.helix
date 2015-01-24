@@ -2,6 +2,7 @@ B]3.0.4[/B] [I]Jan 2015[/I]
 - Select Font Colour
 - Added Gray Theme
 - Tweaked Background Fanart Control
+- Tweaked Music OSD and Fullscreen Viz
 
 B]3.0.3[/B] [I]Jan 2015[/I]
 - Various BugFixes

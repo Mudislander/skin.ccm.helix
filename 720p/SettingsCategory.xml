@@ -3,7 +3,6 @@
 	<defaultcontrol>3</defaultcontrol>
 	<allowoverlay>no</allowoverlay>
 	<include condition="!Skin.HasSetting(InitialSetUpRun)">DefaultInitialSetup</include>
-	<onload>SetProperty(MenuItemActive,Settings,Home)</onload>
 	<controls>
 		<include>CommonBackground</include>
 		<control type="image">

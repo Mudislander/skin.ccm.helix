@@ -278,7 +278,7 @@ msgid "Hide Power Button"
 msgstr ""
 
 msgctxt "#31080"
-msgid "Power Button Options"
+msgid "Floor Button Options"
 msgstr ""
 
 msgctxt "#31081"
@@ -313,7 +313,11 @@ msgctxt "#31088"
 msgid "of"
 msgstr ""
 
-#empty strings from id 31088 to 31099
+msgctxt "#31089"
+msgid "Enable PVR Recording Info"
+msgstr ""
+
+#empty strings from id 31090 to 31099
 #Skin Settings labels
 
 msgctxt "#31100"
@@ -390,7 +394,11 @@ msgctxt "#31119"
 msgid "Hide Background Fanart"
 msgstr ""
 
-#empty strings from id 31120 to 31123
+#empty strings from id 31120 to 31122
+
+msgctxt "#31123"
+msgid "Popup:"
+msgstr ""
 
 msgctxt "#31124"
 msgid "Show Background \"Now Playing\" Video"
@@ -714,7 +722,15 @@ msgctxt "#31247"
 msgid "Move Menu Item"
 msgstr ""
 
-#empty strings from id 31246 to 31250
+msgctxt "#31248"
+msgid "% Transparency"
+msgstr ""
+
+msgctxt "#31249"
+msgid "Background Transparency"
+msgstr ""
+
+#empty strings from id 31250 to 31250
 
 msgctxt "#31251"
 msgid "Suggested"
@@ -781,7 +797,7 @@ msgstr ""
 #empty strings from id 31276 to 31277
 
 msgctxt "#31278"
-msgid "Enable CD Art Work"
+msgid "Enable CD Case and Disk Art"
 msgstr ""
 
 msgctxt "#31279"
@@ -956,16 +972,16 @@ msgctxt "#31325"
 msgid "Playlist Options"
 msgstr ""
 
-#msgctxt "#31326"
-#msgid "Created"
-#msgstr ""
-
 msgctxt "#31326"
 msgid "Select Widget Set"
 msgstr ""
 
 msgctxt "#31327"
 msgid "Hide Item"
+msgstr ""
+
+msgctxt "#31328"
+msgid "Hidden"
 msgstr ""
 
 #msgctxt "#31329"
@@ -1094,7 +1110,29 @@ msgctxt "#31368"
 msgid "Kryptonite"
 msgstr ""
 
-#empty strings from id 31367 to 31379
+#empty strings from id 31367 to 31369
+
+msgctxt "#31370"
+msgid "Instant"
+msgstr ""
+
+msgctxt "#31371"
+msgid "Delayed"
+msgstr ""
+
+msgctxt "#31372"
+msgid "Enable Video OSD Start Playing Introduction"
+msgstr ""
+
+msgctxt "#31373"
+msgid "Enable Video OSD Plot on Pause"
+msgstr ""
+
+msgctxt "#31374"
+msgid "Enable Video OSD Information on Pause"
+msgstr ""
+
+#empty strings from id 31375 to 31379
 
 msgctxt "#31380"
 msgid "Enable Playlist Widget Script"
@@ -1108,7 +1146,23 @@ msgctxt "#31382"
 msgid "Playlist widget should [B]Randomize[/B] the playlist sort order"
 msgstr ""
 
-#empty strings from id 31383 to 31389
+msgctxt "#31383"
+msgid "Enable Video Artwork on OSD"
+msgstr ""
+
+#empty strings from id 31384 to 31385
+
+msgctxt "#31386"
+msgid "Music OSD Settings"
+msgstr ""
+
+msgctxt "#31387"
+msgid "Video OSD Settings"
+msgstr ""
+
+msgctxt "#31388"
+msgid "Media View Settings"
+msgstr ""
 
 msgctxt "#31390"
 msgid "Skin default"
