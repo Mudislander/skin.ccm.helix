@@ -7581,7 +7581,7 @@
 				<label2>$INFO[Window.Property(RecentMusicVideo.1.Artist)]</label2>
 				<onclick>PlayList.Clear</onclick>
 				<onclick>PlayMedia($ESCINFO[Window.Property(RecentMusicVideo.1.File)])</onclick>
-				<icon>$INFO[Window.Property(RecentMusicVideo.1.Thumb)]</icon>
+				<icon fallback="CDCase\DefaultCDCover.png">$INFO[Window.Property(RecentMusicVideo.1.Thumb)]</icon>
 				<thumb>$INFO[Window.Property(RecentMusicVideo.1.Fanart)]</thumb>
 				<visible>!IsEmpty(Window.Property(RecentMusicVideo.1.Title)) + SubString(Window(Home).Property(SkinWidgets_RecentItems),true)</visible>
 			</item>
@@ -7590,7 +7590,7 @@
 				<label2>$INFO[Window.Property(RecentMusicVideo.2.Artist)]</label2>
 				<onclick>PlayList.Clear</onclick>
 				<onclick>PlayMedia($ESCINFO[Window.Property(RecentMusicVideo.2.File)])</onclick>
-				<icon>$INFO[Window.Property(RecentMusicVideo.2.Thumb)]</icon>
+				<icon fallback="CDCase\DefaultCDCover.png">$INFO[Window.Property(RecentMusicVideo.2.Thumb)]</icon>
 				<thumb>$INFO[Window.Property(RecentMusicVideo.2.Fanart)]</thumb>
 				<visible>!IsEmpty(Window.Property(RecentMusicVideo.2.Title)) + SubString(Window(Home).Property(SkinWidgets_RecentItems),true)</visible>
 			</item>
@@ -7599,7 +7599,7 @@
 				<label2>$INFO[Window.Property(RecentMusicVideo.3.Artist)]</label2>
 				<onclick>PlayList.Clear</onclick>
 				<onclick>PlayMedia($ESCINFO[Window.Property(RecentMusicVideo.3.File)])</onclick>
-				<icon>$INFO[Window.Property(RecentMusicVideo.3.Thumb)]</icon>
+				<icon fallback="CDCase\DefaultCDCover.png">$INFO[Window.Property(RecentMusicVideo.3.Thumb)]</icon>
 				<thumb>$INFO[Window.Property(RecentMusicVideo.3.Fanart)]</thumb>
 				<visible>!IsEmpty(Window.Property(RecentMusicVideo.3.Title)) + SubString(Window(Home).Property(SkinWidgets_RecentItems),true)</visible>
 			</item>
@@ -7608,7 +7608,7 @@
 				<label2>$INFO[Window.Property(RecentMusicVideo.4.Artist)]</label2>
 				<onclick>PlayList.Clear</onclick>
 				<onclick>PlayMedia($ESCINFO[Window.Property(RecentMusicVideo.4.File)])</onclick>
-				<icon>$INFO[Window.Property(RecentMusicVideo.4.Thumb)]</icon>
+				<icon fallback="CDCase\DefaultCDCover.png">$INFO[Window.Property(RecentMusicVideo.4.Thumb)]</icon>
 				<thumb>$INFO[Window.Property(RecentMusicVideo.4.Fanart)]</thumb>
 				<visible>!IsEmpty(Window.Property(RecentMusicVideo.4.Title)) + SubString(Window(Home).Property(SkinWidgets_RecentItems),true)</visible>
 			</item>
@@ -7617,7 +7617,7 @@
 				<label2>$INFO[Window.Property(RecentMusicVideo.5.Artist)]</label2>
 				<onclick>PlayList.Clear</onclick>
 				<onclick>PlayMedia($ESCINFO[Window.Property(RecentMusicVideo.5.File)])</onclick>
-				<icon>$INFO[Window.Property(RecentMusicVideo.5.Thumb)]</icon>
+				<icon fallback="CDCase\DefaultCDCover.png">$INFO[Window.Property(RecentMusicVideo.5.Thumb)]</icon>
 				<thumb>$INFO[Window.Property(RecentMusicVideo.5.Fanart)]</thumb>
 				<visible>!IsEmpty(Window.Property(RecentMusicVideo.5.Title)) + SubString(Window(Home).Property(SkinWidgets_RecentItems),true)</visible>
 			</item>
@@ -7626,7 +7626,7 @@
 				<label2>$INFO[Window.Property(RecentMusicVideo.6.Artist)]</label2>
 				<onclick>PlayList.Clear</onclick>
 				<onclick>PlayMedia($ESCINFO[Window.Property(RecentMusicVideo.6.File)])</onclick>
-				<icon>$INFO[Window.Property(RecentMusicVideo.6.Thumb)]</icon>
+				<icon fallback="CDCase\DefaultCDCover.png">$INFO[Window.Property(RecentMusicVideo.6.Thumb)]</icon>
 				<thumb>$INFO[Window.Property(RecentMusicVideo.6.Fanart)]</thumb>
 				<visible>!IsEmpty(Window.Property(RecentMusicVideo.6.Title)) + SubString(Window(Home).Property(SkinWidgets_RecentItems),true)</visible>
 			</item>
@@ -7635,7 +7635,7 @@
 				<label2>$INFO[Window.Property(RecentMusicVideo.7.Artist)]</label2>
 				<onclick>PlayList.Clear</onclick>
 				<onclick>PlayMedia($ESCINFO[Window.Property(RecentMusicVideo.7.File)])</onclick>
-				<icon>$INFO[Window.Property(RecentMusicVideo.7.Thumb)]</icon>
+				<icon fallback="CDCase\DefaultCDCover.png">$INFO[Window.Property(RecentMusicVideo.7.Thumb)]</icon>
 				<thumb>$INFO[Window.Property(RecentMusicVideo.7.Fanart)]</thumb>
 				<visible>!IsEmpty(Window.Property(RecentMusicVideo.7.Title)) + SubString(Window(Home).Property(SkinWidgets_RecentItems),true)</visible>
 			</item>
@@ -7644,7 +7644,7 @@
 				<label2>$INFO[Window.Property(RecentMusicVideo.8.Artist)]</label2>
 				<onclick>PlayList.Clear</onclick>
 				<onclick>PlayMedia($ESCINFO[Window.Property(RecentMusicVideo.8.File)])</onclick>
-				<icon>$INFO[Window.Property(RecentMusicVideo.8.Thumb)]</icon>
+				<icon fallback="CDCase\DefaultCDCover.png">$INFO[Window.Property(RecentMusicVideo.8.Thumb)]</icon>
 				<thumb>$INFO[Window.Property(RecentMusicVideo.8.Fanart)]</thumb>
 				<visible>!IsEmpty(Window.Property(RecentMusicVideo.8.Title)) + SubString(Window(Home).Property(SkinWidgets_RecentItems),true)</visible>
 			</item>
@@ -7653,7 +7653,7 @@
 				<label2>$INFO[Window.Property(RecentMusicVideo.9.Artist)]</label2>
 				<onclick>PlayList.Clear</onclick>
 				<onclick>PlayMedia($ESCINFO[Window.Property(RecentMusicVideo.9.File)])</onclick>
-				<icon>$INFO[Window.Property(RecentMusicVideo.9.Thumb)]</icon>
+				<icon fallback="CDCase\DefaultCDCover.png">$INFO[Window.Property(RecentMusicVideo.9.Thumb)]</icon>
 				<thumb>$INFO[Window.Property(RecentMusicVideo.9.Fanart)]</thumb>
 				<visible>!IsEmpty(Window.Property(RecentMusicVideo.9.Title)) + SubString(Window(Home).Property(SkinWidgets_RecentItems),true)</visible>
 			</item>
@@ -7662,7 +7662,7 @@
 				<label2>$INFO[Window.Property(RecentMusicVideo.10.Artist)]</label2>
 				<onclick>PlayList.Clear</onclick>
 				<onclick>PlayMedia($ESCINFO[Window.Property(RecentMusicVideo.10.File)])</onclick>
-				<icon>$INFO[Window.Property(RecentMusicVideo.10.Thumb)]</icon>
+				<icon fallback="CDCase\DefaultCDCover.png">$INFO[Window.Property(RecentMusicVideo.10.Thumb)]</icon>
 				<thumb>$INFO[Window.Property(RecentMusicVideo.10.Fanart)]</thumb>
 				<visible>!IsEmpty(Window.Property(RecentMusicVideo.10.Title)) + SubString(Window(Home).Property(SkinWidgets_RecentItems),true)</visible>
 			</item>
@@ -7671,7 +7671,7 @@
 				<label2>$INFO[Window.Property(LatestMusicVideo.1.Artist)]</label2>
 				<onclick>PlayList.Clear</onclick>
 				<onclick>PlayMedia($ESCINFO[Window.Property(LatestMusicVideo.1.Path)])</onclick>
-				<icon>$INFO[Window.Property(LatestMusicVideo.1.Thumb)]</icon>
+				<icon fallback="CDCase\DefaultCDCover.png">$INFO[Window.Property(LatestMusicVideo.1.Thumb)]</icon>
 				<thumb>$INFO[Window.Property(LatestMusicVideo.1.Fanart)]</thumb>
 				<visible>!IsEmpty(Window.Property(LatestMusicVideo.1.Title)) + !SubString(Window(Home).Property(SkinWidgets_RecentItems),true)</visible>
 			</item>
@@ -7680,7 +7680,7 @@
 				<label2>$INFO[Window.Property(LatestMusicVideo.2.Artist)]</label2>
 				<onclick>PlayList.Clear</onclick>
 				<onclick>PlayMedia($ESCINFO[Window.Property(LatestMusicVideo.2.Path)])</onclick>
-				<icon>$INFO[Window.Property(LatestMusicVideo.2.Thumb)]</icon>
+				<icon fallback="CDCase\DefaultCDCover.png">$INFO[Window.Property(LatestMusicVideo.2.Thumb)]</icon>
 				<thumb>$INFO[Window.Property(LatestMusicVideo.2.Fanart)]</thumb>
 				<visible>!IsEmpty(Window.Property(LatestMusicVideo.2.Title)) + !SubString(Window(Home).Property(SkinWidgets_RecentItems),true)</visible>
 			</item>
@@ -7689,7 +7689,7 @@
 				<label2>$INFO[Window.Property(LatestMusicVideo.3.Artist)]</label2>
 				<onclick>PlayList.Clear</onclick>
 				<onclick>PlayMedia($ESCINFO[Window.Property(LatestMusicVideo.3.Path)])</onclick>
-				<icon>$INFO[Window.Property(LatestMusicVideo.3.Thumb)]</icon>
+				<icon fallback="CDCase\DefaultCDCover.png">$INFO[Window.Property(LatestMusicVideo.3.Thumb)]</icon>
 				<thumb>$INFO[Window.Property(LatestMusicVideo.3.Fanart)]</thumb>
 				<visible>!IsEmpty(Window.Property(LatestMusicVideo.3.Title)) + !SubString(Window(Home).Property(SkinWidgets_RecentItems),true)</visible>
 			</item>
@@ -7698,7 +7698,7 @@
 				<label2>$INFO[Window.Property(LatestMusicVideo.4.Artist)]</label2>
 				<onclick>PlayList.Clear</onclick>
 				<onclick>PlayMedia($ESCINFO[Window.Property(LatestMusicVideo.4.Path)])</onclick>
-				<icon>$INFO[Window.Property(LatestMusicVideo.4.Thumb)]</icon>
+				<icon fallback="CDCase\DefaultCDCover.png">$INFO[Window.Property(LatestMusicVideo.4.Thumb)]</icon>
 				<thumb>$INFO[Window.Property(LatestMusicVideo.4.Fanart)]</thumb>
 				<visible>!IsEmpty(Window.Property(LatestMusicVideo.4.Title)) + !SubString(Window(Home).Property(SkinWidgets_RecentItems),true)</visible>
 			</item>
@@ -7707,7 +7707,7 @@
 				<label2>$INFO[Window.Property(LatestMusicVideo.5.Artist)]</label2>
 				<onclick>PlayList.Clear</onclick>
 				<onclick>PlayMedia($ESCINFO[Window.Property(LatestMusicVideo.5.Path)])</onclick>
-				<icon>$INFO[Window.Property(LatestMusicVideo.5.Thumb)]</icon>
+				<icon fallback="CDCase\DefaultCDCover.png">$INFO[Window.Property(LatestMusicVideo.5.Thumb)]</icon>
 				<thumb>$INFO[Window.Property(LatestMusicVideo.5.Fanart)]</thumb>
 				<visible>!IsEmpty(Window.Property(LatestMusicVideo.5.Title)) + !SubString(Window(Home).Property(SkinWidgets_RecentItems),true)</visible>
 			</item>
@@ -7716,7 +7716,7 @@
 				<label2>$INFO[Window.Property(LatestMusicVideo.6.Artist)]</label2>
 				<onclick>PlayList.Clear</onclick>
 				<onclick>PlayMedia($ESCINFO[Window.Property(LatestMusicVideo.6.Path)])</onclick>
-				<icon>$INFO[Window.Property(LatestMusicVideo.6.Thumb)]</icon>
+				<icon fallback="CDCase\DefaultCDCover.png">$INFO[Window.Property(LatestMusicVideo.6.Thumb)]</icon>
 				<thumb>$INFO[Window.Property(LatestMusicVideo.6.Fanart)]</thumb>
 				<visible>!IsEmpty(Window.Property(LatestMusicVideo.6.Title)) + !SubString(Window(Home).Property(SkinWidgets_RecentItems),true)</visible>
 			</item>
@@ -7725,7 +7725,7 @@
 				<label2>$INFO[Window.Property(LatestMusicVideo.7.Artist)]</label2>
 				<onclick>PlayList.Clear</onclick>
 				<onclick>PlayMedia($ESCINFO[Window.Property(LatestMusicVideo.7.Path)])</onclick>
-				<icon>$INFO[Window.Property(LatestMusicVideo.7.Thumb)]</icon>
+				<icon fallback="CDCase\DefaultCDCover.png">$INFO[Window.Property(LatestMusicVideo.7.Thumb)]</icon>
 				<thumb>$INFO[Window.Property(LatestMusicVideo.7.Fanart)]</thumb>
 				<visible>!IsEmpty(Window.Property(LatestMusicVideo.7.Title)) + !SubString(Window(Home).Property(SkinWidgets_RecentItems),true)</visible>
 			</item>
@@ -7734,7 +7734,7 @@
 				<label2>$INFO[Window.Property(LatestMusicVideo.8.Artist)]</label2>
 				<onclick>PlayList.Clear</onclick>
 				<onclick>PlayMedia($ESCINFO[Window.Property(LatestMusicVideo.8.Path)])</onclick>
-				<icon>$INFO[Window.Property(LatestMusicVideo.8.Thumb)]</icon>
+				<icon fallback="CDCase\DefaultCDCover.png">$INFO[Window.Property(LatestMusicVideo.8.Thumb)]</icon>
 				<thumb>$INFO[Window.Property(LatestMusicVideo.8.Fanart)]</thumb>
 				<visible>!IsEmpty(Window.Property(LatestMusicVideo.8.Title)) + !SubString(Window(Home).Property(SkinWidgets_RecentItems),true)</visible>
 			</item>
@@ -7743,7 +7743,7 @@
 				<label2>$INFO[Window.Property(LatestMusicVideo.9.Artist)]</label2>
 				<onclick>PlayList.Clear</onclick>
 				<onclick>PlayMedia($ESCINFO[Window.Property(LatestMusicVideo.9.Path)])</onclick>
-				<icon>$INFO[Window.Property(LatestMusicVideo.9.Thumb)]</icon>
+				<icon fallback="CDCase\DefaultCDCover.png">$INFO[Window.Property(LatestMusicVideo.9.Thumb)]</icon>
 				<thumb>$INFO[Window.Property(LatestMusicVideo.9.Fanart)]</thumb>
 				<visible>!IsEmpty(Window.Property(LatestMusicVideo.9.Title)) + !SubString(Window(Home).Property(SkinWidgets_RecentItems),true)</visible>
 			</item>
@@ -7752,7 +7752,7 @@
 				<label2>$INFO[Window.Property(LatestMusicVideo.10.Artist)]</label2>
 				<onclick>PlayList.Clear</onclick>
 				<onclick>PlayMedia($ESCINFO[Window.Property(LatestMusicVideo.10.Path)])</onclick>
-				<icon>$INFO[Window.Property(LatestMusicVideo.10.Thumb)]</icon>
+				<icon fallback="CDCase\DefaultCDCover.png">$INFO[Window.Property(LatestMusicVideo.10.Thumb)]</icon>
 				<thumb>$INFO[Window.Property(LatestMusicVideo.10.Fanart)]</thumb>
 				<visible>!IsEmpty(Window.Property(LatestMusicVideo.10.Title)) + !SubString(Window(Home).Property(SkinWidgets_RecentItems),true)</visible>
 			</item>
@@ -7765,7 +7765,7 @@
 				<label2>$INFO[Window.Property(RandomMusicVideo.1.Artist)]</label2>
 				<onclick>PlayList.Clear</onclick>
 				<onclick>PlayMedia($ESCINFO[Window(Home).Property(RandomMusicVideo.1.File)])</onclick>
-				<icon>$INFO[Window(Home).Property(RandomMusicVideo.1.Thumb)]</icon>
+				<icon fallback="CDCase\DefaultCDCover.png">$INFO[Window(Home).Property(RandomMusicVideo.1.Thumb)]</icon>
 				<thumb>$INFO[Window(Home).Property(RandomMusicVideo.1.Art(fanart))]</thumb>
 				<visible>!IsEmpty(Window(Home).Property(RandomMusicVideo.1.Title))</visible>
 			</item>
@@ -7774,7 +7774,7 @@
 				<label2>$INFO[Window.Property(RandomMusicVideo.2.Artist)]</label2>
 				<onclick>PlayList.Clear</onclick>
 				<onclick>PlayMedia($ESCINFO[Window(Home).Property(RandomMusicVideo.2.File)])</onclick>
-				<icon>$INFO[Window(Home).Property(RandomMusicVideo.2.Thumb)]</icon>
+				<icon fallback="CDCase\DefaultCDCover.png">$INFO[Window(Home).Property(RandomMusicVideo.2.Thumb)]</icon>
 				<thumb>$INFO[Window(Home).Property(RandomMusicVideo.2.Art(fanart))]</thumb>
 				<visible>!IsEmpty(Window(Home).Property(RandomMusicVideo.2.Title))</visible>
 			</item>
@@ -7783,7 +7783,7 @@
 				<label2>$INFO[Window.Property(RandomMusicVideo.3.Artist)]</label2>
 				<onclick>PlayList.Clear</onclick>
 				<onclick>PlayMedia($ESCINFO[Window(Home).Property(RandomMusicVideo.3.File)])</onclick>
-				<icon>$INFO[Window(Home).Property(RandomMusicVideo.3.Thumb)]</icon>
+				<icon fallback="CDCase\DefaultCDCover.png">$INFO[Window(Home).Property(RandomMusicVideo.3.Thumb)]</icon>
 				<thumb>$INFO[Window(Home).Property(RandomMusicVideo.3.Art(fanart))]</thumb>
 				<visible>!IsEmpty(Window(Home).Property(RandomMusicVideo.3.Title))</visible>
 			</item>
@@ -7792,7 +7792,7 @@
 				<label2>$INFO[Window.Property(RandomMusicVideo.4.Artist)]</label2>
 				<onclick>PlayList.Clear</onclick>
 				<onclick>PlayMedia($ESCINFO[Window(Home).Property(RandomMusicVideo.4.File)])</onclick>
-				<icon>$INFO[Window(Home).Property(RandomMusicVideo.4.Thumb)]</icon>
+				<icon fallback="CDCase\DefaultCDCover.png">$INFO[Window(Home).Property(RandomMusicVideo.4.Thumb)]</icon>
 				<thumb>$INFO[Window(Home).Property(RandomMusicVideo.4.Art(fanart))]</thumb>
 				<visible>!IsEmpty(Window(Home).Property(RandomMusicVideo.4.Title))</visible>
 			</item>
@@ -7801,7 +7801,7 @@
 				<label2>$INFO[Window.Property(RandomMusicVideo.5.Artist)]</label2>
 				<onclick>PlayList.Clear</onclick>
 				<onclick>PlayMedia($ESCINFO[Window(Home).Property(RandomMusicVideo.5.File)])</onclick>
-				<icon>$INFO[Window(Home).Property(RandomMusicVideo.5.Thumb)]</icon>
+				<icon fallback="CDCase\DefaultCDCover.png">$INFO[Window(Home).Property(RandomMusicVideo.5.Thumb)]</icon>
 				<thumb>$INFO[Window(Home).Property(RandomMusicVideo.5.Art(fanart))]</thumb>
 				<visible>!IsEmpty(Window(Home).Property(RandomMusicVideo.5.Title))</visible>
 			</item>
@@ -7810,7 +7810,7 @@
 				<label2>$INFO[Window.Property(RandomMusicVideo.6.Artist)]</label2>
 				<onclick>PlayList.Clear</onclick>
 				<onclick>PlayMedia($ESCINFO[Window(Home).Property(RandomMusicVideo.6.File)])</onclick>
-				<icon>$INFO[Window(Home).Property(RandomMusicVideo.6.Thumb)]</icon>
+				<icon fallback="CDCase\DefaultCDCover.png">$INFO[Window(Home).Property(RandomMusicVideo.6.Thumb)]</icon>
 				<thumb>$INFO[Window(Home).Property(RandomMusicVideo.6.Art(fanart))]</thumb>
 				<visible>!IsEmpty(Window(Home).Property(RandomMusicVideo.6.Title))</visible>
 			</item>
@@ -7819,7 +7819,7 @@
 				<label2>$INFO[Window.Property(RandomMusicVideo.7.Artist)]</label2>
 				<onclick>PlayList.Clear</onclick>
 				<onclick>PlayMedia($ESCINFO[Window(Home).Property(RandomMusicVideo.7.File)])</onclick>
-				<icon>$INFO[Window(Home).Property(RandomMusicVideo.7.Thumb)]</icon>
+				<icon fallback="CDCase\DefaultCDCover.png">$INFO[Window(Home).Property(RandomMusicVideo.7.Thumb)]</icon>
 				<thumb>$INFO[Window(Home).Property(RandomMusicVideo.7.Art(fanart))]</thumb>
 				<visible>!IsEmpty(Window(Home).Property(RandomMusicVideo.7.Title))</visible>
 			</item>
@@ -7828,7 +7828,7 @@
 				<label2>$INFO[Window.Property(RandomMusicVideo.8.Artist)]</label2>
 				<onclick>PlayList.Clear</onclick>
 				<onclick>PlayMedia($ESCINFO[Window(Home).Property(RandomMusicVideo.8.File)])</onclick>
-				<icon>$INFO[Window(Home).Property(RandomMusicVideo.8.Thumb)]</icon>
+				<icon fallback="CDCase\DefaultCDCover.png">$INFO[Window(Home).Property(RandomMusicVideo.8.Thumb)]</icon>
 				<thumb>$INFO[Window(Home).Property(RandomMusicVideo.8.Art(fanart))]</thumb>
 				<visible>!IsEmpty(Window(Home).Property(RandomMusicVideo.8.Title))</visible>
 			</item>
@@ -7837,7 +7837,7 @@
 				<label2>$INFO[Window.Property(RandomMusicVideo.9.Artist)]</label2>
 				<onclick>PlayList.Clear</onclick>
 				<onclick>PlayMedia($ESCINFO[Window(Home).Property(RandomMusicVideo.9.File)])</onclick>
-				<icon>$INFO[Window(Home).Property(RandomMusicVideo.9.Thumb)]</icon>
+				<icon fallback="CDCase\DefaultCDCover.png">$INFO[Window(Home).Property(RandomMusicVideo.9.Thumb)]</icon>
 				<thumb>$INFO[Window(Home).Property(RandomMusicVideo.9.Art(fanart))]</thumb>
 				<visible>!IsEmpty(Window(Home).Property(RandomMusicVideo.9.Title))</visible>
 			</item>
@@ -7846,7 +7846,7 @@
 				<label2>$INFO[Window.Property(RandomMusicVideo.10.Artist)]</label2>
 				<onclick>PlayList.Clear</onclick>
 				<onclick>PlayMedia($ESCINFO[Window(Home).Property(RandomMusicVideo.10.File)])</onclick>
-				<icon>$INFO[Window(Home).Property(RandomMusicVideo.10.Thumb)]</icon>
+				<icon fallback="CDCase\DefaultCDCover.png">$INFO[Window(Home).Property(RandomMusicVideo.10.Thumb)]</icon>
 				<thumb>$INFO[Window(Home).Property(RandomMusicVideo.10.Art(fanart))]</thumb>
 				<visible>!IsEmpty(Window(Home).Property(RandomMusicVideo.10.Title))</visible>
 			</item>
@@ -7859,7 +7859,7 @@
 				<label2>$INFO[Window.Property(RecommendedMusicVideo.1.Artist)]</label2>
 				<onclick>PlayList.Clear</onclick>
 				<onclick>PlayMedia($ESCINFO[Window(Home).Property(RecommendedMusicVideo.1.File)])</onclick>
-				<icon>$INFO[Window(Home).Property(RecommendedMusicVideo.1.Thumb)]</icon>
+				<icon fallback="CDCase\DefaultCDCover.png">$INFO[Window(Home).Property(RecommendedMusicVideo.1.Thumb)]</icon>
 				<thumb>$INFO[Window(Home).Property(RecommendedMusicVideo.1.Fanart)]</thumb>
 				<visible>!IsEmpty(Window(Home).Property(RecommendedMusicVideo.1.Title))</visible>
 			</item>
@@ -7868,7 +7868,7 @@
 				<label2>$INFO[Window.Property(RecommendedMusicVideo.1.Artist)]</label2>
 				<onclick>PlayList.Clear</onclick>
 				<onclick>PlayMedia($ESCINFO[Window(Home).Property(RecommendedMusicVideo.2.File)])</onclick>
-				<icon>$INFO[Window(Home).Property(RecommendedMusicVideo.2.Thumb)]</icon>
+				<icon fallback="CDCase\DefaultCDCover.png">$INFO[Window(Home).Property(RecommendedMusicVideo.2.Thumb)]</icon>
 				<thumb>$INFO[Window(Home).Property(RecommendedMusicVideo.2.Fanart)]</thumb>
 				<visible>!IsEmpty(Window(Home).Property(RecommendedMusicVideo.2.Title))</visible>
 			</item>
@@ -7877,7 +7877,7 @@
 				<label2>$INFO[Window.Property(RecommendedMusicVideo.1.Artist)]</label2>
 				<onclick>PlayList.Clear</onclick>
 				<onclick>PlayMedia($ESCINFO[Window(Home).Property(RecommendedMusicVideo.3.File)])</onclick>
-				<icon>$INFO[Window(Home).Property(RecommendedMusicVideo.3.Thumb)]</icon>
+				<icon fallback="CDCase\DefaultCDCover.png">$INFO[Window(Home).Property(RecommendedMusicVideo.3.Thumb)]</icon>
 				<thumb>$INFO[Window(Home).Property(RecommendedMusicVideo.3.Fanart)]</thumb>
 				<visible>!IsEmpty(Window(Home).Property(RecommendedMusicVideo.3.Title))</visible>
 			</item>
@@ -7886,7 +7886,7 @@
 				<label2>$INFO[Window.Property(RecommendedMusicVideo.1.Artist)]</label2>
 				<onclick>PlayList.Clear</onclick>
 				<onclick>PlayMedia($ESCINFO[Window(Home).Property(RecommendedMusicVideo.4.File)])</onclick>
-				<icon>$INFO[Window(Home).Property(RecommendedMusicVideo.4.Thumb)]</icon>
+				<icon fallback="CDCase\DefaultCDCover.png">$INFO[Window(Home).Property(RecommendedMusicVideo.4.Thumb)]</icon>
 				<thumb>$INFO[Window(Home).Property(RecommendedMusicVideo.4.Fanart)]</thumb>
 				<visible>!IsEmpty(Window(Home).Property(RecommendedMusicVideo.4.Title))</visible>
 			</item>
@@ -7895,7 +7895,7 @@
 				<label2>$INFO[Window.Property(RecommendedMusicVideo.1.Artist)]</label2>
 				<onclick>PlayList.Clear</onclick>
 				<onclick>PlayMedia($ESCINFO[Window(Home).Property(RecommendedMusicVideo.5.File)])</onclick>
-				<icon>$INFO[Window(Home).Property(RecommendedMusicVideo.5.Thumb)]</icon>
+				<icon fallback="CDCase\DefaultCDCover.png">$INFO[Window(Home).Property(RecommendedMusicVideo.5.Thumb)]</icon>
 				<thumb>$INFO[Window(Home).Property(RecommendedMusicVideo.5.Fanart)]</thumb>
 				<visible>!IsEmpty(Window(Home).Property(RecommendedMusicVideo.5.Title))</visible>
 			</item>
@@ -7904,7 +7904,7 @@
 				<label2>$INFO[Window.Property(RecommendedMusicVideo.1.Artist)]</label2>
 				<onclick>PlayList.Clear</onclick>
 				<onclick>PlayMedia($ESCINFO[Window(Home).Property(RecommendedMusicVideo.6.File)])</onclick>
-				<icon>$INFO[Window(Home).Property(RecommendedMusicVideo.6.Thumb)]</icon>
+				<icon fallback="CDCase\DefaultCDCover.png">$INFO[Window(Home).Property(RecommendedMusicVideo.6.Thumb)]</icon>
 				<thumb>$INFO[Window(Home).Property(RecommendedMusicVideo.6.Fanart)]</thumb>
 				<visible>!IsEmpty(Window(Home).Property(RecommendedMusicVideo.6.Title))</visible>
 			</item>
@@ -7913,7 +7913,7 @@
 				<label2>$INFO[Window.Property(RecommendedMusicVideo.1.Artist)]</label2>
 				<onclick>PlayList.Clear</onclick>
 				<onclick>PlayMedia($ESCINFO[Window(Home).Property(RecommendedMusicVideo.7.File)])</onclick>
-				<icon>$INFO[Window(Home).Property(RecommendedMusicVideo.7.Thumb)]</icon>
+				<icon fallback="CDCase\DefaultCDCover.png">$INFO[Window(Home).Property(RecommendedMusicVideo.7.Thumb)]</icon>
 				<thumb>$INFO[Window(Home).Property(RecommendedMusicVideo.7.Fanart)]</thumb>
 				<visible>!IsEmpty(Window(Home).Property(RecommendedMusicVideo.7.Title))</visible>
 			</item>
@@ -7922,7 +7922,7 @@
 				<label2>$INFO[Window.Property(RecommendedMusicVideo.1.Artist)]</label2>
 				<onclick>PlayList.Clear</onclick>
 				<onclick>PlayMedia($ESCINFO[Window(Home).Property(RecommendedMusicVideo.8.File)])</onclick>
-				<icon>$INFO[Window(Home).Property(RecommendedMusicVideo.8.Thumb)]</icon>
+				<icon fallback="CDCase\DefaultCDCover.png">$INFO[Window(Home).Property(RecommendedMusicVideo.8.Thumb)]</icon>
 				<thumb>$INFO[Window(Home).Property(RecommendedMusicVideo.8.Fanart)]</thumb>
 				<visible>!IsEmpty(Window(Home).Property(RecommendedMusicVideo.8.Title))</visible>
 			</item>
@@ -7931,7 +7931,7 @@
 				<label2>$INFO[Window.Property(RecommendedMusicVideo.1.Artist)]</label2>
 				<onclick>PlayList.Clear</onclick>
 				<onclick>PlayMedia($ESCINFO[Window(Home).Property(RecommendedMusicVideo.9.File)])</onclick>
-				<icon>$INFO[Window(Home).Property(RecommendedMusicVideo.9.Thumb)]</icon>
+				<icon fallback="CDCase\DefaultCDCover.png">$INFO[Window(Home).Property(RecommendedMusicVideo.9.Thumb)]</icon>
 				<thumb>$INFO[Window(Home).Property(RecommendedMusicVideo.9.Fanart)]</thumb>
 				<visible>!IsEmpty(Window(Home).Property(RecommendedMusicVideo.9.Title))</visible>
 			</item>
@@ -7940,7 +7940,7 @@
 				<label2>$INFO[Window.Property(RecommendedMusicVideo.1.Artist)]</label2>
 				<onclick>PlayList.Clear</onclick>
 				<onclick>PlayMedia($ESCINFO[Window(Home).Property(RecommendedMusicVideo.10.File)])</onclick>
-				<icon>$INFO[Window(Home).Property(RecommendedMusicVideo.10.Thumb)]</icon>
+				<icon fallback="CDCase\DefaultCDCover.png">$INFO[Window(Home).Property(RecommendedMusicVideo.10.Thumb)]</icon>
 				<thumb>$INFO[Window(Home).Property(RecommendedMusicVideo.10.Fanart)]</thumb>
 				<visible>!IsEmpty(Window(Home).Property(RecommendedMusicVideo.10.Title))</visible>
 			</item>

@@ -848,7 +848,7 @@
 			<left>0</left>
 			<top>33r</top>
 			<visible>system.getbool(lookandfeel.enablerssfeeds) | [Player.HasAudio + !IsEmpty(MusicPlayer.offset(1).Artist) + !Skin.HasSetting(HideNextSongsInfo)]</visible>
-			<animation effect="slide" start="0,0" end="0,35" time="150" condition="Player.Seeking | Player.DisplayAfterSeek | Player.Paused | Player.Forwarding | Player.Rewinding">Conditional</animation>
+			<animation effect="slide" start="0,0" end="0,35" time="150" condition="Skin.HasSetting(HidePopUpSeekBar) + [Player.Seeking | Player.DisplayAfterSeek | Player.Paused | Player.Forwarding | Player.Rewinding]">Conditional</animation>
 			<include>Window_OpenClose_Animation</include>
 			<control type="rss">
 				<description>RSS feed</description>

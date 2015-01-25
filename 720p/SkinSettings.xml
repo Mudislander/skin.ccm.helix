@@ -384,6 +384,19 @@
 						<onclick>Skin.ToggleSetting(HideEpisodeThumb)</onclick>
 						<selected>!Skin.HasSetting(HideEpisodeThumb)</selected>
 					</control>
+					<control type="radiobutton" id="111">
+						<description>Orig Popup Seektime Window</description>
+						<width>750</width>
+						<height>40</height>
+						<font>font13</font>
+						<textcolor>grey2</textcolor>
+						<focusedcolor>white</focusedcolor>
+						<label>$LOCALIZE[31066]</label>
+						<texturefocus>MenuItemFO.png</texturefocus>
+						<texturenofocus>MenuItemNF.png</texturenofocus>
+						<onclick>Skin.ToggleSetting(HidePopUpSeekBar)</onclick>
+						<selected>!Skin.HasSetting(HidePopUpSeekBar)</selected>
+					</control>
 					<control type="label" id="120">
 						<width>750</width>
 						<height>45</height>
@@ -720,6 +733,7 @@
 						<texturenofocus>MenuItemNF.png</texturenofocus>
 						<onclick>Skin.ToggleSetting(EnableCDArtWork)</onclick>
 						<selected>Skin.HasSetting(EnableCDArtWork)</selected>
+						<enable>!Skin.String(MusicOSDInfo,never)</enable>
 					</control>
 					<control type="radiobutton" id="154">
 						<description>Diffuse Visualisation</description>

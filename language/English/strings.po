@@ -231,7 +231,11 @@ msgctxt "#31061"
 msgid "Current Selected"
 msgstr ""
 
-#empty strings from id 31062 to 31070
+#empty strings from id 31062 to 31065
+
+msgctxt "#31066"
+msgid "Enable Original Confluence Popup Seek Bar"
+msgstr ""
 
 msgctxt "#31067"
 msgid "Enable CD Wall as Fallback Background of Playing Albums"

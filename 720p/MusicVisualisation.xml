@@ -76,12 +76,13 @@
 				<height>230</height>
 				<texture border="1">HomeNowPlayingBack.png</texture>
 				<visible>!Skin.String(MusicOSDInfo,never) | Window.IsActive(MusicOSD)</visible>
+				<animation effect="slide" end="0,60" time="0" tween="back" easing="out" condition="Skin.String(MusicOSDInfo,never) +  !Skin.HasSetting(HidePopUpSeekBar)" reversible="true">Conditional</animation>
 			</control>
 			<control type="group">
-				<visible>!Skin.String(MusicOSDInfo,never)</visible>
-				<visible>!Skin.HasSetting(HideAlbumThumbOSD) + Skin.HasSetting(EnableCDArtWork)</visible>
+				<visible>!Skin.String(MusicOSDInfo,never) + Skin.HasSetting(EnableCDArtWork)</visible>
 				<left>10</left>
 				<top>265r</top>
+				<animation effect="slide" start="0,0" end="0,20" time="0" condition="!Skin.HasSetting(HidePopUpSeekBar) + Skin.HasSetting(HideNextSongsInfo)">Conditional</animation>
 				<control type="image">
 					<description>Cd overlay</description>
 					<left>50</left>
@@ -112,6 +113,7 @@
 			</control>
 			<control type="image">
 				<description>orig cover image</description>
+				<animation effect="slide" start="0,0" end="0,20" time="0" condition="!Skin.HasSetting(HidePopUpSeekBar) + Skin.HasSetting(HideNextSongsInfo)">Conditional</animation>
 				<left>10</left>
 				<top>285r</top>
 				<width>300</width>
@@ -120,8 +122,7 @@
 				<aspectratio aligny="bottom">keep</aspectratio>
 				<bordertexture border="8">ThumbShadow.png</bordertexture>
 				<bordersize>8</bordersize>
-				<visible>!Skin.HasSetting(EnableCDArtWork) + !Skin.HasSetting(HideAlbumThumbOSD)</visible>
-				<visible>!Skin.String(MusicOSDInfo,never)</visible>
+				<visible>!Skin.String(MusicOSDInfo,never) + !Skin.HasSetting(EnableCDArtWork)</visible>
 			</control>
 			<control type="group">
 				<visible>!Skin.String(MusicOSDInfo,never)</visible>
@@ -135,7 +136,7 @@
 					<texture>$INFO[Player.FolderPath,,../logo.png]</texture>
 					<aspectratio aligny="bottom" align="left">keep</aspectratio>
 					<visible>IsEmpty(Skin.String(PhysicalMusicFolder))</visible>
-					<visible>!Skin.HasSetting(HideAlbumThumbOSD) + !Player.IsInternetStream</visible>
+					<visible>!Player.IsInternetStream</visible>
 				</control>
 				<control type="image">
 					<left>0</left>
@@ -145,7 +146,7 @@
 					<texture>$INFO[Skin.String(PhysicalMusicFolder)]$INFO[MusicPlayer.Artist]/logo.png</texture>
 					<aspectratio aligny="bottom" align="left">keep</aspectratio>
 					<visible>!IsEmpty(Skin.String(PhysicalMusicFolder))</visible>
-					<visible>!Skin.HasSetting(HideAlbumThumbOSD) + !Player.IsInternetStream</visible>
+					<!--visible>!Player.IsInternetStream</visible-->
 				</control>
 				<control type="label" id="1">
 					<description>Artist label</description>
@@ -219,7 +220,6 @@
 						</control>
 					</control>
 				</control>
-				<animation effect="slide" end="-150,0" time="0" tween="back" easing="out" condition="Skin.HasSetting(HideAlbumThumbOSD)" reversible="true">Conditional</animation>
 			</control>
 			<control type="label">
 				<left>0</left>
@@ -234,7 +234,7 @@
 				<textcolor>grey</textcolor>
 				<scroll>true</scroll>
 				<visible>[Skin.String(MusicOSDInfo,permanent) | MusicPlayer.HasNext] + !Window.IsVisible(MusicOSD) + !Window.IsVisible(script-XBMC_Lyrics-main.xml)</visible>
-				<visible>![Player.Seeking | Player.DisplayAfterSeek | Player.Paused | Player.Forwarding | Player.Rewinding]</visible>
+				<visible>!Skin.HasSetting(HidePopUpSeekBar) | [Skin.HasSetting(HidePopUpSeekBar) + ![Player.Seeking | Player.DisplayAfterSeek | Player.Paused | Player.Forwarding | Player.Rewinding]]</visible>
 				<visible>Skin.HasSetting(HideNextSongsInfo) + !Skin.String(MusicOSDInfo,never)</visible>
 				<animation effect="fade" time="200">VisibleChange</animation>
 			</control>
@@ -253,9 +253,9 @@
 				<font>font12</font>
 				<textcolor>white</textcolor>
 				<shadowcolor>black</shadowcolor>
-				<visible>[Skin.String(MusicOSDInfo,permanent) | MusicPlayer.HasNext] + !Window.IsVisible(MusicOSD) + !Window.IsVisible(script-XBMC_Lyrics-main.xml)</visible>
-				<visible>![Player.Seeking | Player.DisplayAfterSeek | Player.Paused | Player.Forwarding | Player.Rewinding]</visible>
 				<animation effect="fade" time="200">VisibleChange</animation>
+				<visible>[Skin.String(MusicOSDInfo,permanent) | MusicPlayer.HasNext] + !Window.IsVisible(MusicOSD) + !Window.IsVisible(script-XBMC_Lyrics-main.xml)</visible>
+				<visible>!Skin.HasSetting(HidePopUpSeekBar)|[Skin.HasSetting(HidePopUpSeekBar) + ![Player.Seeking | Player.DisplayAfterSeek | Player.Paused | Player.Forwarding | Player.Rewinding]]</visible>
 				<visible>!Skin.HasSetting(HideNextSongsInfo)</visible>
 				<visible>!Skin.String(MusicOSDInfo,never)</visible>
 			</control>
@@ -292,8 +292,7 @@
 				</control>
 				<visible>IntegerGreaterThan(Player.time,0)</visible>
 				<visible>!Skin.String(MusicOSDInfo,never) | Window.IsActive(MusicOSD)</visible>
-				<animation effect="slide" end="-150,0" time="0" tween="back" easing="out" condition="Skin.HasSetting(HideAlbumThumbOSD) + !Skin.String(MusicOSDInfo,never)" reversible="true">Conditional</animation>
-				<animation effect="slide" end="-150,0" time="0" tween="back" easing="out" condition="Skin.String(MusicOSDInfo,never)" reversible="true">Conditional</animation>
+				<animation effect="slide" end="-150,0" time="0" tween="back" easing="out" condition="Skin.String(MusicOSDInfo,never) +  !Skin.HasSetting(HidePopUpSeekBar)" reversible="true">Conditional</animation>
 			</control>
 		</control>
 		<!-- codec & viz infos -->
