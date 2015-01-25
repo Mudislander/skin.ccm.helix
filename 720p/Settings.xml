@@ -3,7 +3,6 @@
 	<defaultcontrol always="true">9000</defaultcontrol>
 	<allowoverlay>no</allowoverlay>
 	<include condition="!Skin.HasSetting(InitialSetUpRun)">DefaultInitialSetup</include>
-	
 	<controls>
 		<include>CommonBackground</include>
 		<control type="image">

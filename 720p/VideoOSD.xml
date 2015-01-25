@@ -293,6 +293,7 @@
 			<left>355r</left>
 			<top>60r</top>
 			<animation effect="fade" time="200">VisibleChange</animation>
+			<animation effect="slide" end="-225,0" time="0" tween="back" easing="out" condition="Skin.HasSetting(HidePopUpSeekBar)" reversible="true">Conditional</animation>
 			<visible>!StringCompare(Player.Filenameandpath,special://skin/extras/Intro/KODI-Intro-Video.mkv)</visible>
 			<visible>![Window.IsVisible(SliderDialog) | Window.IsVisible(OSDVideoSettings) | Window.IsVisible(OSDAudioSettings) | Window.IsVisible(VideoBookmarks)]</visible>
 			<visible>!VideoPlayer.Content(LiveTV)</visible>

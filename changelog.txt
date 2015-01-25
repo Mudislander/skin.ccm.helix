@@ -1,3 +1,7 @@
+B]3.0.5[/B] [I]Jan 2015[/I]
+- Various Background Fanart Bugfixes
+- Reintroduced Confluence Seekbar
+
 B]3.0.4[/B] [I]Jan 2015[/I]
 - Select Font Colour
 - Added Gray Theme
