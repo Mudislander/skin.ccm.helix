@@ -62,6 +62,7 @@
 				<width>250</width>
 				<height>600</height>
 				<onleft>9000</onleft>
+				<onright condition="!IsEmpty(Window.Property(SideBladeOpen))">ClearProperty(SideBladeOpen)</onright>
 				<onright>50</onright>
 				<onup>9000</onup>
 				<ondown>9000</ondown>

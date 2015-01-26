@@ -136,7 +136,7 @@
 			<width>42</width>
 			<height>128</height>
 			<font>-</font>
-			<texturefocus>HasSub.png</texturefocus>
+			<texturefocus>HasSubFocus.png</texturefocus>
 			<texturenofocus>HasSub.png</texturenofocus>
 			<onright>50</onright>
 			<onclick condition="Skin.HasSetting(ManualMenuSlide) + IsEmpty(Window.Property(SideBladeOpen))">SetProperty(SideBladeOpen,True)</onclick>

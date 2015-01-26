@@ -358,19 +358,19 @@
 						<onclick>Skin.ToggleSetting(HideNextSongsInfo)</onclick>
 						<selected>!Skin.HasSetting(HideNextSongsInfo)</selected>
 					</control>
-					<!--control type="radiobutton" id="109">
+					<control type="radiobutton" id="109">
 						<description>Manual MediaBlade Slide</description>
 						<width>750</width>
 						<height>40</height>
 						<font>font13</font>
 						<textcolor>grey2</textcolor>
 						<focusedcolor>white</focusedcolor>
-						<label>  ***** Manual Slide ****</label>
+						<label>$LOCALIZE[31002][COLOR=selected] ***Testing Mad Idea***[/COLOR]</label>
 						<texturefocus>MenuItemFO.png</texturefocus>
 						<texturenofocus>MenuItemNF.png</texturenofocus>
 						<onclick>Skin.ToggleSetting(ManualMenuSlide)</onclick>
 						<selected>Skin.HasSetting(ManualMenuSlide)</selected>
-					</control-->
+					</control>
 					<control type="radiobutton" id="110">
 						<description>TVShow Thumbnails</description>
 						<width>750</width>

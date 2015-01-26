@@ -125,6 +125,7 @@
 					<include>ButtonCommonValues</include>
 					<label>587</label>
 					<selected>Container.Filtered</selected>
+					<onclick condition="!IsEmpty(Window.Property(SideBladeOpen))">ClearProperty(SideBladeOpen)</onclick>
 					<onclick>right</onclick>
 					<onclick>Filter</onclick>
 				</control>
@@ -168,16 +169,19 @@
 					<textwidth>170</textwidth>
 					<include>ButtonCommonValues</include>
 					<label>20367</label>
+					<!--onclick condition="!IsEmpty(Window.Property(SideBladeOpen))">ClearProperty(SideBladeOpen)</onclick-->
 				</control>
 				<control type="button" id="8">
 					<description>Search</description>
 					<include>ButtonCommonValues</include>
 					<label>137</label>
+					<!--onclick condition="!IsEmpty(Window.Property(SideBladeOpen))">ClearProperty(SideBladeOpen)</onclick-->
 				</control>
 				<control type="radiobutton" id="16">
 					<description>PartyMode</description>
 					<label>589</label>
 					<include>ButtonCommonValues</include>
+					<!--onclick condition="!IsEmpty(Window.Property(SideBladeOpen))">ClearProperty(SideBladeOpen)</onclick-->
 					<visible>Container.Content(MusicVideos)</visible>
 				</control>
 				<control type="radiobutton" id="11">
@@ -185,6 +189,7 @@
 					<textwidth>170</textwidth>
 					<include>ButtonCommonValues</include>
 					<label>20336</label>
+					<!--onclick condition="!IsEmpty(Window.Property(SideBladeOpen))">ClearProperty(SideBladeOpen)</onclick-->
 					<onclick>mastermode</onclick>
 					<selected>system.ismaster</selected>
 					<visible>system.haslocks</visible>

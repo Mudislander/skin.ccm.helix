@@ -7,8 +7,10 @@
 			<top>80</top>
 			<width>1160</width>
 			<height>460</height>
+			<onup condition="Skin.HasSetting(ManualMenuSlide) + IsEmpty(Window.Property(SideBladeOpen))">SetProperty(SideBladeOpen,True)</onup>
 			<onup>9000</onup>
-			<ondown>61</ondown>
+			<ondown condition="Skin.HasSetting(ManualMenuSlide) + IsEmpty(Window.Property(SideBladeOpen))">SetProperty(SideBladeOpen,True)</ondown>
+			<ondown>2</ondown>
 			<usecontrolcoords>true</usecontrolcoords>
 			<include>VisibleFadeEffect</include>
 			<control type="fixedlist" id="501">
@@ -20,6 +22,7 @@
 				<height>390</height>
 				<onleft>501</onleft>
 				<onright>501</onright>
+				<onup condition="Skin.HasSetting(ManualMenuSlide) + IsEmpty(Window.Property(SideBladeOpen))">SetProperty(SideBladeOpen,True)</onup>
 				<onup>2</onup>
 				<ondown>60</ondown>
 				<viewtype label="31028">bigwrap</viewtype>
@@ -92,6 +95,7 @@
 				<textureslidernib>ScrollBarNib.png</textureslidernib>
 				<textureslidernibfocus>ScrollBarNib.png</textureslidernibfocus>
 				<onup>501</onup>
+				<ondown condition="Skin.HasSetting(ManualMenuSlide) + IsEmpty(Window.Property(SideBladeOpen))">SetProperty(SideBladeOpen,True)</ondown>
 				<ondown>9000</ondown>
 				<showonepage>false</showonepage>
 				<orientation>horizontal</orientation>
@@ -317,6 +321,7 @@
 				<height>250</height>
 				<onleft>508</onleft>
 				<onright>508</onright>
+				<onup condition="Skin.HasSetting(ManualMenuSlide) + IsEmpty(Window.Property(SideBladeOpen))">SetProperty(SideBladeOpen,True)</onup>
 				<onup>2</onup>
 				<ondown>60</ondown>
 				<viewtype label="31029">wrap</viewtype>
@@ -413,6 +418,7 @@
 				<textureslidernib>ScrollBarNib.png</textureslidernib>
 				<textureslidernibfocus>ScrollBarNib.png</textureslidernibfocus>
 				<onup>508</onup>
+				<ondown condition="Skin.HasSetting(ManualMenuSlide) + IsEmpty(Window.Property(SideBladeOpen))">SetProperty(SideBladeOpen,True)</ondown>
 				<ondown>2</ondown>
 				<showonepage>false</showonepage>
 				<orientation>horizontal</orientation>
@@ -766,6 +772,7 @@
 				<top>245</top>
 				<width>580</width>
 				<height>401</height>
+				<onleft condition="Skin.HasSetting(ManualMenuSlide) + IsEmpty(Window.Property(SideBladeOpen))">SetProperty(SideBladeOpen,True)</onleft>
 				<onleft>2</onleft>
 				<onright>60</onright>
 				<onup>503</onup>
@@ -947,6 +954,7 @@
 				<textureslidernib>ScrollBarNib.png</textureslidernib>
 				<textureslidernibfocus>ScrollBarNib.png</textureslidernibfocus>
 				<onleft>503</onleft>
+				<onright condition="Skin.HasSetting(ManualMenuSlide) + IsEmpty(Window.Property(SideBladeOpen))">SetProperty(SideBladeOpen,True)</onright>
 				<onright>2</onright>
 				<showonepage>false</showonepage>
 				<orientation>vertical</orientation>
@@ -1220,6 +1228,7 @@
 				<top>78</top>
 				<width>580</width>
 				<height>561</height>
+				<onleft condition="Skin.HasSetting(ManualMenuSlide) + IsEmpty(Window.Property(SideBladeOpen))">SetProperty(SideBladeOpen,True)</onleft>
 				<onleft>2</onleft>
 				<onright>60</onright>
 				<onup>504</onup>
@@ -1401,6 +1410,7 @@
 				<textureslidernib>ScrollBarNib.png</textureslidernib>
 				<textureslidernibfocus>ScrollBarNib.png</textureslidernibfocus>
 				<onleft>504</onleft>
+				<onright condition="Skin.HasSetting(ManualMenuSlide) + IsEmpty(Window.Property(SideBladeOpen))">SetProperty(SideBladeOpen,True)</onright>
 				<onright>2</onright>
 				<showonepage>false</showonepage>
 				<orientation>vertical</orientation>
@@ -1642,6 +1652,7 @@
 				<top>78</top>
 				<width>340</width>
 				<height>561</height>
+				<onleft condition="Skin.HasSetting(ManualMenuSlide) + IsEmpty(Window.Property(SideBladeOpen))">SetProperty(SideBladeOpen,True)</onleft>
 				<onleft>2</onleft>
 				<onright>60</onright>
 				<onup>515</onup>
@@ -1749,6 +1760,7 @@
 				<textureslidernib>ScrollBarNib.png</textureslidernib>
 				<textureslidernibfocus>ScrollBarNib.png</textureslidernibfocus>
 				<onleft>515</onleft>
+				<onright condition="Skin.HasSetting(ManualMenuSlide) + IsEmpty(Window.Property(SideBladeOpen))">SetProperty(SideBladeOpen,True)</onright>
 				<onright>2</onright>
 				<showonepage>false</showonepage>
 				<orientation>vertical</orientation>
