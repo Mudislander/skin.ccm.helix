@@ -26,6 +26,11 @@
 	<onload condition="!Skin.HasSetting(DisableScriptPlaylist) + !IsEmpty(Skin.String(HomeItem.12.Playlist))">XBMC.RunScript(script.randomandlastitems,playlist=$INFO[Skin.String(HomeItem.12.Playlist)],method=$VAR[PlaylistSortOrder],limit=12,unwatched=False,resume=False,property=HomePlaylistTwelve)</onload>
 	<onload condition="!IsEmpty(Weather.Plugin) + !Weather.IsFetched">Weather.Refresh</onload>
 	<onload condition="Window.Previous(Startup)">Control.Move(9000,$INFO[Skin.String(InitialMenuItem)])</onload>
+	
+	<!-- Temp turn off unused toggle -->
+	<onload condition="Skin.HasSetting(ManualMenuSlide)">Skin.Reset(ManualMenuSlide)</onload>
+	
+	
 	<controls>
 		<include>CommonBackground</include>
 		<include condition="Skin.HasSetting(EnableRainDropEffect) | Skin.HasSetting(HolidayEffects)">AnimatedBackgroundEffect</include>
@@ -957,7 +962,11 @@
 				<height>45</height>
 				<label>1036</label>
 				<font>-</font>
-				<onclick>ActivateWindow(Favourites)</onclick>
+				<onclick condition="IsEmpty(Skin.String(UsrFavBtnCmd.Path))">ActivateWindow(Favourites),return</onclick>
+				<onclick condition="!IsEmpty(Skin.String(UsrFavBtnCmd.Path))">$INFO[Skin.String(UsrFavBtnCmd.Path)]</onclick>
+				
+					
+				
 				<texturefocus border="5">floor_buttonFO.png</texturefocus>
 				<texturenofocus border="5">floor_button.png</texturenofocus>
 				<onleft>20</onleft>
@@ -973,6 +982,9 @@
 				<width>35</width>
 				<height>35</height>
 				<aspectratio>keep</aspectratio>
+				
+				<!--texture>$INFO[Skin.String(UsrFavBtnCmd.Icon)]</texture-->
+				
 				<texture>icon_favourites.png</texture>
 			</control>
 		</control>

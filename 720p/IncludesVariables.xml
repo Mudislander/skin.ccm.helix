@@ -77,19 +77,6 @@
 		<value condition="StringCompare(Window(Home).Property(MenuItemActive),ItemTwelve) + !IsEmpty(Skin.String(HomeItem.12.Fanart))">$INFO[Skin.String(HomeItem.12.Fanart)]</value>
 		<value>special://skin/backgrounds/SKINDEFAULT.jpg</value>
 	</variable>
-	<variable name="SearchBackground" type="text">
-		<value condition="Skin.HasSetting(SingleGlobalBackground) + !IsEmpty(Skin.String(GlobalBackGroundPath))">$INFO[Skin.String(GlobalBackGroundPath)]</value>
-		<value condition="Skin.HasSetting(SingleGlobalBackground) + IsEmpty(Skin.String(GlobalBackGroundPath))">$INFO[Skin.CurrentTheme,special://skin/backgrounds/,.jpg]</value>
-		<value condition="Control.HasFocus(111) + !IsEmpty(Container(111).ListItem.Property(Fanart))">$INFO[Container(111).ListItem.Property(Fanart)]</value>
-		<value condition="Control.HasFocus(121) + !IsEmpty(Container(121).ListItem.Property(Fanart))">$INFO[Container(121).ListItem.Property(Fanart)]</value>
-		<value condition="Control.HasFocus(131) + !IsEmpty(Container(131).ListItem.Property(Fanart))">$INFO[Container(131).ListItem.Property(Fanart)]</value>
-		<value condition="Control.HasFocus(141) + !IsEmpty(Container(141).ListItem.Property(Fanart))">$INFO[Container(141).ListItem.Property(Fanart)]</value>
-		<value condition="Control.HasFocus(151) + !IsEmpty(Container(151).ListItem.Property(Fanart))">$INFO[Container(151).ListItem.Property(Fanart)]</value>
-		<value condition="Control.HasFocus(161) + !IsEmpty(Container(161).ListItem.Property(Fanart))">$INFO[Container(161).ListItem.Property(Fanart)]</value>
-		<value condition="Control.HasFocus(171) + !IsEmpty(Container(171).ListItem.Property(Fanart))">$INFO[Container(171).ListItem.Property(Fanart)]</value>
-		<value condition="Control.HasFocus(181) + !IsEmpty(Container(181).ListItem.Property(Fanart))">$INFO[Container(181).ListItem.Property(Fanart)]</value>
-		<value>special://skin/backgrounds/search.jpg</value>
-	</variable>
 	<variable name="LiveContentOne">
 		<value condition="Container(9000).HasFocus(1) + StringCompare(Container(9000).ListItem.Property(HiLiteItem),MusicPlayList) + StringCompare(Container(9000).ListItem.Property(PlayListType),Music)">$INFO[Window(Home).Property(HomePlayListOne.5.Art(thumb))]</value>
 		<value condition="Container(9000).HasFocus(2) + StringCompare(Container(9000).ListItem.Property(HiLiteItem),MusicPlayList) + StringCompare(Container(9000).ListItem.Property(PlayListType),Music)">$INFO[Window(Home).Property(HomePlayListTwo.5.Art(thumb))]</value>
@@ -591,6 +578,11 @@
 		<value condition="StringCompare(Skin.String(PowerBtnAction),Reboot)">$LOCALIZE[13013]</value>
 		<value condition="StringCompare(Skin.String(PowerBtnAction),Logoff)">$LOCALIZE[20126]</value>
 		<value>$LOCALIZE[31077]</value>
+	</variable>
+	<variable name="FavBtnLabel">
+	<value condition="IsEmpty(Skin.String(UsrFavBtnCmd.Label))">$LOCALIZE[1036]</value>
+	<value condition="!IsEmpty(Skin.String(UsrFavBtnCmd.Label))">$INFO[Skin.String(UsrFavBtnCmd.Label)]</value>
+	<value>$LOCALIZE[1036]</value>
 	</variable>
 	<variable name="EpisodeThumbImage">
 		<value condition="Skin.HasSetting(HideEpisodeThumb)">$INFO[ListItem.Thumb]</value>

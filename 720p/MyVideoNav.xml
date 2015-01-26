@@ -4,6 +4,7 @@
 	<allowoverlay>no</allowoverlay>
 	<views>50,51,500,550,551,560,501,508,504,503,515,505,511</views>
 	<onload condition="!Skin.HasSetting(DisableTVTunes)">RunScript(script.tvtunes,backend=True)</onload>
+	<onunload>ClearProperty(SideBladeOpen)</onunload>
 	<controls>
 		<include>CommonBackground</include>
 		<include>ContentPanelBackgrounds</include>
@@ -76,9 +77,15 @@
 				<top>60</top>
 				<width>250</width>
 				<height>650</height>
+				
+				<onfocus condition="IsEmpty(Window.Property(SideBladeOpen))">SetProperty(SideBladeOpen,True)</onfocus>
+			
+				
 				<onleft>9000</onleft>
-				<onright condition="!IsEmpty(Window.Property(SideBladeOpen))">ClearProperty(SideBladeOpen)</onright>
+				
+				<onright>ClearProperty(SideBladeOpen)</onright>
 				<onright>50</onright>
+				
 				<onup>9000</onup>
 				<ondown>9000</ondown>
 				<onback>50</onback>
@@ -125,7 +132,7 @@
 					<include>ButtonCommonValues</include>
 					<label>587</label>
 					<selected>Container.Filtered</selected>
-					<onclick condition="!IsEmpty(Window.Property(SideBladeOpen))">ClearProperty(SideBladeOpen)</onclick>
+					
 					<onclick>right</onclick>
 					<onclick>Filter</onclick>
 				</control>
@@ -169,19 +176,19 @@
 					<textwidth>170</textwidth>
 					<include>ButtonCommonValues</include>
 					<label>20367</label>
-					<!--onclick condition="!IsEmpty(Window.Property(SideBladeOpen))">ClearProperty(SideBladeOpen)</onclick-->
+					
 				</control>
 				<control type="button" id="8">
 					<description>Search</description>
 					<include>ButtonCommonValues</include>
 					<label>137</label>
-					<!--onclick condition="!IsEmpty(Window.Property(SideBladeOpen))">ClearProperty(SideBladeOpen)</onclick-->
+					
 				</control>
 				<control type="radiobutton" id="16">
 					<description>PartyMode</description>
 					<label>589</label>
 					<include>ButtonCommonValues</include>
-					<!--onclick condition="!IsEmpty(Window.Property(SideBladeOpen))">ClearProperty(SideBladeOpen)</onclick-->
+					
 					<visible>Container.Content(MusicVideos)</visible>
 				</control>
 				<control type="radiobutton" id="11">
@@ -189,7 +196,7 @@
 					<textwidth>170</textwidth>
 					<include>ButtonCommonValues</include>
 					<label>20336</label>
-					<!--onclick condition="!IsEmpty(Window.Property(SideBladeOpen))">ClearProperty(SideBladeOpen)</onclick-->
+					
 					<onclick>mastermode</onclick>
 					<selected>system.ismaster</selected>
 					<visible>system.haslocks</visible>

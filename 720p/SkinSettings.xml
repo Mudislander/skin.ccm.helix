@@ -359,6 +359,20 @@
 						<selected>!Skin.HasSetting(HideNextSongsInfo)</selected>
 					</control>
 					<control type="radiobutton" id="109">
+						<description>Party Mode with Saver</description>
+						<width>750</width>
+						<height>40</height>
+						<font>font13</font>
+						<textcolor>grey2</textcolor>
+						<focusedcolor>white</focusedcolor>
+						<!--label>$LOCALIZE[31339]</label-->
+						<label>[COLOR=selected]Another Mad Idea - Play Party Mode Music on Screensaver[/COLOR]</label>
+						<texturefocus>MenuItemFO.png</texturefocus>
+						<texturenofocus>MenuItemNF.png</texturenofocus>
+						<onclick>Skin.ToggleSetting(AutoPartySaver)</onclick>
+						<selected>Skin.HasSetting(AutoPartySaver)</selected>
+					</control>
+					<!--control type="radiobutton" id="110">
 						<description>Manual MediaBlade Slide</description>
 						<width>750</width>
 						<height>40</height>
@@ -370,8 +384,8 @@
 						<texturenofocus>MenuItemNF.png</texturenofocus>
 						<onclick>Skin.ToggleSetting(ManualMenuSlide)</onclick>
 						<selected>Skin.HasSetting(ManualMenuSlide)</selected>
-					</control>
-					<control type="radiobutton" id="110">
+					</control-->
+					<control type="radiobutton" id="111">
 						<description>TVShow Thumbnails</description>
 						<width>750</width>
 						<height>40</height>
@@ -384,7 +398,7 @@
 						<onclick>Skin.ToggleSetting(HideEpisodeThumb)</onclick>
 						<selected>!Skin.HasSetting(HideEpisodeThumb)</selected>
 					</control>
-					<control type="radiobutton" id="111">
+					<control type="radiobutton" id="112">
 						<description>Orig Popup Seektime Window</description>
 						<width>750</width>
 						<height>40</height>
@@ -707,7 +721,11 @@
 						<onclick>Skin.ToggleSetting(HideAutoMusicViz)</onclick>
 						<selected>!Skin.HasSetting(HideAutoMusicViz)</selected>
 					</control>
-					<control type="button" id="152">
+					
+					
+					
+					
+					<control type="button" id="153">
 						<width>750</width>
 						<height>40</height>
 						<font>font13</font>
@@ -721,7 +739,7 @@
 						<onclick condition="Skin.String(MusicOSDInfo,permanent)">Skin.SetString(MusicOSDInfo,never)</onclick>
 						<onclick condition="Skin.String(MusicOSDInfo,never)">Skin.Reset(MusicOSDInfo)</onclick>
 					</control>
-					<control type="radiobutton" id="153">
+					<control type="radiobutton" id="154">
 						<description>Enable CD Art</description>
 						<width>750</width>
 						<height>40</height>
@@ -735,7 +753,7 @@
 						<selected>Skin.HasSetting(EnableCDArtWork)</selected>
 						<enable>!Skin.String(MusicOSDInfo,never)</enable>
 					</control>
-					<control type="radiobutton" id="154">
+					<control type="radiobutton" id="155">
 						<description>Diffuse Visualisation</description>
 						<width>750</width>
 						<height>40</height>
@@ -856,6 +874,33 @@
 						<texturenofocus>MenuItemNF.png</texturenofocus>
 						<enable>!Skin.HasSetting(HideHomePowerBtn)</enable>
 					</control>
+					
+					
+					
+					
+					
+					
+					<control type="button" id="173">
+						<width>750</width>
+						<height>40</height>
+						<font>font13</font>
+						<label>$LOCALIZE[31065]</label>
+						<label2>[COLOR=selected]$VAR[FavBtnLabel][/COLOR]</label2>
+						<textcolor>grey</textcolor>
+						<focusedcolor>white</focusedcolor>
+						<texturefocus>MenuItemFO.png</texturefocus>
+						<texturenofocus>MenuItemNF.png</texturenofocus>
+						
+						<onclick>SetProperty(UsrSelectBtn,UsrFavBtnCmd,Home)</onclick>
+						
+						<onclick>ActivateWindow(2119)</onclick>
+					</control>
+					
+					
+					
+					
+					
+					
 				</control>
 				<control type="scrollbar" id="60">
 					<left>1060</left>

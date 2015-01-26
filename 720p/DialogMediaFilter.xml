@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <window>
 	<defaultcontrol always="true">5</defaultcontrol>
-	<onload condition="!IsEmpty(Window.Property(SideBladeOpen))">ClearProperty(SideBladeOpen)</onload>
+	<onload>ClearProperty(SideBladeOpen)</onload>
 	<coordinates>
 		<system>1</system>
 		<left>240</left>
