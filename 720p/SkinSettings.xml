@@ -321,6 +321,19 @@
 						<selected>!Skin.HasSetting(HideHomeNowPlaying)</selected>
 					</control>
 					<control type="radiobutton" id="106">
+						<width>750</width>
+						<height>40</height>
+						<font>font13</font>
+						<label>$LOCALIZE[31277]</label>
+						<textcolor>grey2</textcolor>
+						<focusedcolor>white</focusedcolor>
+						<texturefocus>MenuItemFO.png</texturefocus>
+						<texturenofocus>MenuItemNF.png</texturenofocus>
+						<onclick>Skin.ToggleSetting(VizOnlyOnHome)</onclick>
+						<selected>Skin.HasSetting(VizOnlyOnHome)</selected>
+						<enable>!Skin.HasSetting(HideHomeNowPlaying)</enable>
+					</control>
+					<control type="radiobutton" id="107">
 						<description>Fanart Animation</description>
 						<width>750</width>
 						<height>40</height>
@@ -333,7 +346,7 @@
 						<texturefocus>MenuItemFO.png</texturefocus>
 						<texturenofocus>MenuItemNF.png</texturenofocus>
 					</control>
-					<control type="radiobutton" id="107">
+					<control type="radiobutton" id="108">
 						<description>CD Wall Background</description>
 						<width>750</width>
 						<height>40</height>
@@ -346,7 +359,7 @@
 						<texturefocus>MenuItemFO.png</texturefocus>
 						<texturenofocus>MenuItemNF.png</texturenofocus>
 					</control>
-					<control type="radiobutton" id="108">
+					<control type="radiobutton" id="109">
 						<width>750</width>
 						<height>40</height>
 						<font>font13</font>
@@ -358,7 +371,7 @@
 						<onclick>Skin.ToggleSetting(HideNextSongsInfo)</onclick>
 						<selected>!Skin.HasSetting(HideNextSongsInfo)</selected>
 					</control>
-					<control type="radiobutton" id="109">
+					<control type="radiobutton" id="110">
 						<description>Party Mode with Saver</description>
 						<width>750</width>
 						<height>40</height>
@@ -721,10 +734,6 @@
 						<onclick>Skin.ToggleSetting(HideAutoMusicViz)</onclick>
 						<selected>!Skin.HasSetting(HideAutoMusicViz)</selected>
 					</control>
-					
-					
-					
-					
 					<control type="button" id="153">
 						<width>750</width>
 						<height>40</height>
@@ -874,12 +883,6 @@
 						<texturenofocus>MenuItemNF.png</texturenofocus>
 						<enable>!Skin.HasSetting(HideHomePowerBtn)</enable>
 					</control>
-					
-					
-					
-					
-					
-					
 					<control type="button" id="173">
 						<width>750</width>
 						<height>40</height>
@@ -890,17 +893,9 @@
 						<focusedcolor>white</focusedcolor>
 						<texturefocus>MenuItemFO.png</texturefocus>
 						<texturenofocus>MenuItemNF.png</texturenofocus>
-						
 						<onclick>SetProperty(UsrSelectBtn,UsrFavBtnCmd,Home)</onclick>
-						
 						<onclick>ActivateWindow(2119)</onclick>
 					</control>
-					
-					
-					
-					
-					
-					
 				</control>
 				<control type="scrollbar" id="60">
 					<left>1060</left>

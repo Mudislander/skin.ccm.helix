@@ -580,9 +580,9 @@
 		<value>$LOCALIZE[31077]</value>
 	</variable>
 	<variable name="FavBtnLabel">
-	<value condition="IsEmpty(Skin.String(UsrFavBtnCmd.Label))">$LOCALIZE[1036]</value>
-	<value condition="!IsEmpty(Skin.String(UsrFavBtnCmd.Label))">$INFO[Skin.String(UsrFavBtnCmd.Label)]</value>
-	<value>$LOCALIZE[1036]</value>
+		<value condition="IsEmpty(Skin.String(UsrFavBtnCmd.Label))">$LOCALIZE[1036]</value>
+		<value condition="!IsEmpty(Skin.String(UsrFavBtnCmd.Label))">$INFO[Skin.String(UsrFavBtnCmd.Label)]</value>
+		<value>$LOCALIZE[1036]</value>
 	</variable>
 	<variable name="EpisodeThumbImage">
 		<value condition="Skin.HasSetting(HideEpisodeThumb)">$INFO[ListItem.Thumb]</value>

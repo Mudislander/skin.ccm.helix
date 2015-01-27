@@ -61,12 +61,13 @@
 				<top>110</top>
 				<width>250</width>
 				<height>600</height>
+				<onfocus condition="IsEmpty(Window.Property(SideBladeOpen))">SetProperty(SideBladeOpen,True)</onfocus>
 				<onleft>9000</onleft>
-				
+				<onright>ClearProperty(SideBladeOpen)</onright>
 				<onright>50</onright>
 				<onup>9000</onup>
 				<ondown>9000</ondown>
-				<onback>50</onback>
+				<onback>ClearProperty(SideBladeOpen)</onback>
 				<itemgap>0</itemgap>
 				<control type="label" id="200">
 					<width>250</width>

@@ -109,19 +109,17 @@
 		<texturenofocus border="5">button-nofocus.png</texturenofocus>
 		<pulseonselect>false</pulseonselect>
 	</include>
-	
-	
-	
 	<include name="SideBladeLeft">
 		<animation effect="slide" start="0,0" end="250,0" time="400" tween="quadratic" easing="out" condition="!IsEmpty(Window.Property(SideBladeOpen)) | ControlGroup(9000).HasFocus">Conditional</animation>
 		<animation effect="slide" start="0,0" end="-300,0" time="400" tween="quadratic" easing="out" condition="!IsEmpty(Window.Property(SideBladeOpen)) | ControlGroup(9000).HasFocus">WindowClose</animation>
-		<animation effect="slide" start="0,0" end="-50,0" time="300" tween="quadratic" easing="out" condition="IsEmpty(Window.Property(SideBladeOpen))">WindowClose</animation>
+		<animation effect="slide" start="0,0" end="-50,0" time="300" tween="quadratic" easing="out" condition="IsEmpty(Window.Property(SideBladeOpen)) | !ControlGroup(9000).HasFocus">WindowClose</animation>
 		<animation effect="slide" start="-50,0" end="0,0" time="300" tween="quadratic" easing="out">WindowOpen</animation>
 		<control type="button" id="8999">
 			<description>Fake button for mouse control</description>
 			<left>0</left>
 			<top>0</top>
-			<width>250</width>
+			<!--width>250</width-->
+			<width>1280</width>
 			<height>720</height>
 			<label>-</label>
 			<font>-</font>
@@ -131,9 +129,12 @@
 			<onup>9000</onup>
 			<ondown>9000</ondown>
 			<onleft>9000</onleft>
-			<onright condition="!IsEmpty(Window.Property(SideBladeOpen))">ClearProperty(SideBladeOpen)</onright>
-			<onback condition="!IsEmpty(Window.Property(SideBladeOpen))">ClearProperty(SideBladeOpen)</onback>
-			<visible>true</visible>
+			<onright>ClearProperty(SideBladeOpen)</onright>
+			<onback>ClearProperty(SideBladeOpen)</onback>
+			<!--onright condition="!IsEmpty(Window.Property(SideBladeOpen))">ClearProperty(SideBladeOpen)</onright>
+			<onback condition="!IsEmpty(Window.Property(SideBladeOpen))">ClearProperty(SideBladeOpen)</onback-->
+			<!--visible>true</visible-->
+			<visible>!IsEmpty(Window.Property(SideBladeOpen))</visible>
 		</control>
 		<control type="button" id="9001">
 			<left>250</left>
@@ -143,10 +144,7 @@
 			<font>-</font>
 			<texturefocus>HasSubFocus.png</texturefocus>
 			<texturenofocus>HasSub.png</texturenofocus>
-
-
 			<!--onfocus condition="IsEmpty(Window.Property(SideBladeOpen))">SetProperty(SideBladeOpen,True)</onfocus-->
-			
 			<onright>ClearProperty(SideBladeOpen)</onright>
 			<onleft>9000</onleft>
 			<onclick condition="IsEmpty(Window.Property(SideBladeOpen))">SetProperty(SideBladeOpen,True)</onclick>
@@ -169,11 +167,6 @@
 			<texture>Confluence_Logo.png</texture>
 		</control>
 	</include>
-	
-	
-	
-	
-	
 	<include name="MainWindowMouseButtons">
 		<control type="group">
 			<left>120r</left>

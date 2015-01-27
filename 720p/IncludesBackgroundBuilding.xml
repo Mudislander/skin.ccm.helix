@@ -163,7 +163,7 @@
 				<aspectratio>keep</aspectratio>
 				<include condition="!Skin.HasSetting(NoAnimateVizFanart)">KBurnsAnimateFanart</include>
 				<imagepath background="true">$INFO[Player.FolderPath,,../extrafanart/]</imagepath>
-				<visible>Skin.HasSetting(DisableSlideShowArt) + !IsEmpty(Control.GetLabel(5043))</visible>
+				<visible>!Skin.HasSetting(VizOnlyOnHome) + Skin.HasSetting(DisableSlideShowArt) + !IsEmpty(Control.GetLabel(5043))</visible>
 			</control>
 			<control type="multiimage">
 				<include>Dimensions_Fullscreen</include>
@@ -173,7 +173,7 @@
 				<aspectratio>keep</aspectratio>
 				<include condition="!Skin.HasSetting(NoAnimateVizFanart)">KBurnsAnimateFanart</include>
 				<imagepath background="true">$INFO[Skin.String(PhysicalMusicFolder)]$INFO[MusicPlayer.Artist,,/extrafanart/]</imagepath>
-				<visible>Skin.HasSetting(DisableSlideShowArt) + IsEmpty(Control.GetLabel(5043))</visible>
+				<visible>!Skin.HasSetting(VizOnlyOnHome) + Skin.HasSetting(DisableSlideShowArt) + IsEmpty(Control.GetLabel(5043))</visible>
 			</control>
 			<control type="image">
 				<description>Fanart Image for Artist</description>
@@ -181,7 +181,7 @@
 				<include condition="!Skin.HasSetting(NoAnimateVizFanart)">KBurnsAnimateFanart</include>
 				<texture background="true">$INFO[Player.Art(fanart)]</texture>
 				<fadetime>600</fadetime>
-				<visible>Window.IsVisible(Home) + !IsEmpty(Player.Art(fanart)) + [IsEmpty(Control.GetLabel(5043)) + IsEmpty(Control.GetLabel(5044))] | !Skin.HasSetting(DisableSlideShowArt)</visible>
+				<visible>Window.IsVisible(Home) + !Skin.HasSetting(VizOnlyOnHome) + !IsEmpty(Player.Art(fanart)) + [IsEmpty(Control.GetLabel(5043)) + IsEmpty(Control.GetLabel(5044))] | !Skin.HasSetting(DisableSlideShowArt)</visible>
 			</control>
 			<control type="multiimage">
 				<include>Dimensions_Fullscreen</include>
@@ -191,12 +191,12 @@
 				<aspectratio>keep</aspectratio>
 				<include condition="!Skin.HasSetting(NoAnimateVizFanart)">KBurnsAnimateFanart</include>
 				<imagepath background="true">$INFO[Window(Visualisation).Property(ArtistSlideshow)]</imagepath>
-				<visible>!Skin.HasSetting(HideHomeNowPlaying) + !Skin.HasSetting(DisableSlideShowArt) + !IsEmpty(Window(Visualisation).Property(ArtistSlideshow.ArtworkReady))</visible>
+				<visible>!Skin.HasSetting(VizOnlyOnHome) + !Skin.HasSetting(HideHomeNowPlaying) + !Skin.HasSetting(DisableSlideShowArt) + !IsEmpty(Window(Visualisation).Property(ArtistSlideshow.ArtworkReady))</visible>
 			</control>
 			<control type="visualisation">
 				<include>Dimensions_Fullscreen</include>
 				<visible>!Player.IsInternetStream</visible>
-				<visible>!IsEmpty(Visualisation.Name) + stringcompare(Visualisation.Name,Waveform) | stringcompare(Visualisation.Name,DirectX Spectrum) | stringcompare(Visualisation.Name,OpenGL Spectrum)</visible>
+				<visible>Skin.HasSetting(VizOnlyOnHome) | Skin.HasSetting(NoDiffuseVizFanart) | [!IsEmpty(Visualisation.Name) + stringcompare(Visualisation.Name,Waveform) | stringcompare(Visualisation.Name,DirectX Spectrum) | stringcompare(Visualisation.Name,OpenGL Spectrum)]</visible>
 			</control>
 		</control>
 		<control type="group">
