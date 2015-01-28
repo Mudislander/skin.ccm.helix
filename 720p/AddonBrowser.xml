@@ -3,6 +3,7 @@
 	<defaultcontrol always="true">50</defaultcontrol>
 	<allowoverlay>no</allowoverlay>
 	<views>50,51,550,551</views>
+	<onunload>ClearProperty(SideBladeOpen)</onunload>
 	<controls>
 		<include>CommonBackground</include>
 		<include>ContentPanelBackgrounds</include>
@@ -50,18 +51,20 @@
 			</control>
 		</control>
 		<control type="group">
-			<left>-250</left>
+			<left>-251</left>
 			<include>SideBladeLeft</include>
 			<control type="grouplist" id="9000">
 				<left>0</left>
 				<top>110</top>
 				<width>250</width>
 				<height>600</height>
-				<onleft>9000</onleft>
+				<onfocus condition="IsEmpty(Window.Property(SideBladeOpen))">SetProperty(SideBladeOpen,True)</onfocus>
+				<onleft>50</onleft>
+				<onright>ClearProperty(SideBladeOpen)</onright>
 				<onright>50</onright>
 				<onup>9000</onup>
 				<ondown>9000</ondown>
-				<onback>50</onback>
+				<onback>ClearProperty(SideBladeOpen)</onback>
 				<itemgap>0</itemgap>
 				<control type="label" id="200">
 					<width>250</width>

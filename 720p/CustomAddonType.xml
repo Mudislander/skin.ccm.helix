@@ -182,6 +182,20 @@
 						<onclick>Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Addon,AddonSetTen)</onclick>
 						<onclick>ClearProperty(UsrSelectBtn,Home)</onclick>
 					</item>
+					<item>
+						<description>User Addon Set 11</description>
+						<label fallback="31241">$INFO[Skin.String(UserSelectAddon.11.Label)]</label>
+						<onclick>Dialog.Close(2117)</onclick>
+						<onclick>Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Addon,AddonSetEleven)</onclick>
+						<onclick>ClearProperty(UsrSelectBtn,Home)</onclick>
+					</item>
+					<item>
+						<description>User Addon Set 12</description>
+						<label fallback="31242">$INFO[Skin.String(UserSelectAddon.12.Label)]</label>
+						<onclick>Dialog.Close(2117)</onclick>
+						<onclick>Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Addon,AddonSetTwelve)</onclick>
+						<onclick>ClearProperty(UsrSelectBtn,Home)</onclick>
+					</item>
 				</content>
 			</control>
 			<control type="scrollbar" id="60">

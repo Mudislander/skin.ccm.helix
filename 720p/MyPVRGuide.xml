@@ -3,6 +3,7 @@
 	<defaultcontrol always="true">10</defaultcontrol>
 	<allowoverlay>no</allowoverlay>
 	<views>10,11,12,13</views>
+	<onunload>ClearProperty(SideBladeOpen)</onunload>
 	<controls>
 		<include>CommonBackground</include>
 		<control type="image">

@@ -118,7 +118,6 @@
 			<description>Fake button for mouse control</description>
 			<left>0</left>
 			<top>0</top>
-			<!--width>250</width-->
 			<width>1280</width>
 			<height>720</height>
 			<label>-</label>
@@ -128,12 +127,9 @@
 			<onfocus condition="IsEmpty(Window.Property(SideBladeOpen))">SetProperty(SideBladeOpen,True)</onfocus>
 			<onup>9000</onup>
 			<ondown>9000</ondown>
-			<onleft>9000</onleft>
+			<onleft>50</onleft>
 			<onright>ClearProperty(SideBladeOpen)</onright>
 			<onback>ClearProperty(SideBladeOpen)</onback>
-			<!--onright condition="!IsEmpty(Window.Property(SideBladeOpen))">ClearProperty(SideBladeOpen)</onright>
-			<onback condition="!IsEmpty(Window.Property(SideBladeOpen))">ClearProperty(SideBladeOpen)</onback-->
-			<!--visible>true</visible-->
 			<visible>!IsEmpty(Window.Property(SideBladeOpen))</visible>
 		</control>
 		<control type="button" id="9001">
@@ -144,9 +140,8 @@
 			<font>-</font>
 			<texturefocus>HasSubFocus.png</texturefocus>
 			<texturenofocus>HasSub.png</texturenofocus>
-			<!--onfocus condition="IsEmpty(Window.Property(SideBladeOpen))">SetProperty(SideBladeOpen,True)</onfocus-->
 			<onright>ClearProperty(SideBladeOpen)</onright>
-			<onleft>9000</onleft>
+			<onleft>50</onleft>
 			<onclick condition="IsEmpty(Window.Property(SideBladeOpen))">SetProperty(SideBladeOpen,True)</onclick>
 			<onclick condition="!IsEmpty(Window.Property(SideBladeOpen))">ClearProperty(SideBladeOpen)</onclick>
 		</control>

@@ -1177,6 +1177,8 @@
 		<value condition="stringcompare(Skin.String(HomeItem.1.Addon),AddonSetEight)">$LOCALIZE[31237]</value>
 		<value condition="stringcompare(Skin.String(HomeItem.1.Addon),AddonSetNine)">$LOCALIZE[31238]</value>
 		<value condition="stringcompare(Skin.String(HomeItem.1.Addon),AddonSetTen)">$LOCALIZE[31239]</value>
+		<value condition="stringcompare(Skin.String(HomeItem.1.Addon),AddonSetEleven)">$LOCALIZE[31241]</value>
+		<value condition="stringcompare(Skin.String(HomeItem.1.Addon),AddonSetTwelve)">$LOCALIZE[31242]</value>
 		<value>$LOCALIZE[31254]</value>
 	</variable>
 	<variable name="UsrDefItemTwoAddOnLabel" type="text">
@@ -1200,6 +1202,8 @@
 		<value condition="stringcompare(Skin.String(HomeItem.2.Addon),AddonSetEight)">$LOCALIZE[31237]</value>
 		<value condition="stringcompare(Skin.String(HomeItem.2.Addon),AddonSetNine)">$LOCALIZE[31238]</value>
 		<value condition="stringcompare(Skin.String(HomeItem.2.Addon),AddonSetTen)">$LOCALIZE[31239]</value>
+		<value condition="stringcompare(Skin.String(HomeItem.2.Addon),AddonSetEleven)">$LOCALIZE[31241]</value>
+		<value condition="stringcompare(Skin.String(HomeItem.2.Addon),AddonSetTwelve)">$LOCALIZE[31242]</value>
 		<value>$LOCALIZE[31254]</value>
 	</variable>
 	<variable name="UsrDefItemThreeAddOnLabel" type="text">
@@ -1223,6 +1227,8 @@
 		<value condition="stringcompare(Skin.String(HomeItem.3.Addon),AddonSetEight)">$LOCALIZE[31237]</value>
 		<value condition="stringcompare(Skin.String(HomeItem.3.Addon),AddonSetNine)">$LOCALIZE[31238]</value>
 		<value condition="stringcompare(Skin.String(HomeItem.3.Addon),AddonSetTen)">$LOCALIZE[31239]</value>
+		<value condition="stringcompare(Skin.String(HomeItem.3.Addon),AddonSetEleven)">$LOCALIZE[31241]</value>
+		<value condition="stringcompare(Skin.String(HomeItem.3.Addon),AddonSetTwelve)">$LOCALIZE[31242]</value>
 		<value>$LOCALIZE[31254]</value>
 	</variable>
 	<variable name="UsrDefItemFourAddOnLabel" type="text">
@@ -1246,6 +1252,8 @@
 		<value condition="stringcompare(Skin.String(HomeItem.4.Addon),AddonSetEight)">$LOCALIZE[31237]</value>
 		<value condition="stringcompare(Skin.String(HomeItem.4.Addon),AddonSetNine)">$LOCALIZE[31238]</value>
 		<value condition="stringcompare(Skin.String(HomeItem.4.Addon),AddonSetTen)">$LOCALIZE[31239]</value>
+		<value condition="stringcompare(Skin.String(HomeItem.4.Addon),AddonSetEleven)">$LOCALIZE[31241]</value>
+		<value condition="stringcompare(Skin.String(HomeItem.4.Addon),AddonSetTwelve)">$LOCALIZE[31242]</value>
 		<value>$LOCALIZE[31254]</value>
 	</variable>
 	<variable name="UsrDefItemFiveAddOnLabel" type="text">
@@ -1269,6 +1277,8 @@
 		<value condition="stringcompare(Skin.String(HomeItem.5.Addon),AddonSetEight)">$LOCALIZE[31237]</value>
 		<value condition="stringcompare(Skin.String(HomeItem.5.Addon),AddonSetNine)">$LOCALIZE[31238]</value>
 		<value condition="stringcompare(Skin.String(HomeItem.5.Addon),AddonSetTen)">$LOCALIZE[31239]</value>
+		<value condition="stringcompare(Skin.String(HomeItem.5.Addon),AddonSetEleven)">$LOCALIZE[31241]</value>
+		<value condition="stringcompare(Skin.String(HomeItem.5.Addon),AddonSetTwelve)">$LOCALIZE[31242]</value>
 		<value>$LOCALIZE[31254]</value>
 	</variable>
 	<variable name="UsrDefItemSixAddOnLabel" type="text">
@@ -1292,6 +1302,8 @@
 		<value condition="stringcompare(Skin.String(HomeItem.6.Addon),AddonSetEight)">$LOCALIZE[31237]</value>
 		<value condition="stringcompare(Skin.String(HomeItem.6.Addon),AddonSetNine)">$LOCALIZE[31238]</value>
 		<value condition="stringcompare(Skin.String(HomeItem.6.Addon),AddonSetTen)">$LOCALIZE[31239]</value>
+		<value condition="stringcompare(Skin.String(HomeItem.6.Addon),AddonSetEleven)">$LOCALIZE[31241]</value>
+		<value condition="stringcompare(Skin.String(HomeItem.6.Addon),AddonSetTwelve)">$LOCALIZE[31242]</value>
 		<value>$LOCALIZE[31254]</value>
 	</variable>
 	<variable name="UsrDefItemSevenAddOnLabel" type="text">
@@ -1315,6 +1327,8 @@
 		<value condition="stringcompare(Skin.String(HomeItem.7.Addon),AddonSetEight)">$LOCALIZE[31237]</value>
 		<value condition="stringcompare(Skin.String(HomeItem.7.Addon),AddonSetNine)">$LOCALIZE[31238]</value>
 		<value condition="stringcompare(Skin.String(HomeItem.7.Addon),AddonSetTen)">$LOCALIZE[31239]</value>
+		<value condition="stringcompare(Skin.String(HomeItem.7.Addon),AddonSetEleven)">$LOCALIZE[31241]</value>
+		<value condition="stringcompare(Skin.String(HomeItem.7.Addon),AddonSetTwelve)">$LOCALIZE[31242]</value>
 		<value>$LOCALIZE[31254]</value>
 	</variable>
 	<variable name="UsrDefItemEightAddOnLabel" type="text">
@@ -1338,6 +1352,8 @@
 		<value condition="stringcompare(Skin.String(HomeItem.8.Addon),AddonSetEight)">$LOCALIZE[31237]</value>
 		<value condition="stringcompare(Skin.String(HomeItem.8.Addon),AddonSetNine)">$LOCALIZE[31238]</value>
 		<value condition="stringcompare(Skin.String(HomeItem.8.Addon),AddonSetTen)">$LOCALIZE[31239]</value>
+		<value condition="stringcompare(Skin.String(HomeItem.8.Addon),AddonSetEleven)">$LOCALIZE[31241]</value>
+		<value condition="stringcompare(Skin.String(HomeItem.8.Addon),AddonSetTwelve)">$LOCALIZE[31242]</value>
 		<value>$LOCALIZE[31254]</value>
 	</variable>
 	<variable name="UsrDefItemNineAddOnLabel" type="text">
@@ -1361,6 +1377,8 @@
 		<value condition="stringcompare(Skin.String(HomeItem.9.Addon),AddonSetEight)">$LOCALIZE[31237]</value>
 		<value condition="stringcompare(Skin.String(HomeItem.9.Addon),AddonSetNine)">$LOCALIZE[31238]</value>
 		<value condition="stringcompare(Skin.String(HomeItem.9.Addon),AddonSetTen)">$LOCALIZE[31239]</value>
+		<value condition="stringcompare(Skin.String(HomeItem.9.Addon),AddonSetEleven)">$LOCALIZE[31241]</value>
+		<value condition="stringcompare(Skin.String(HomeItem.9.Addon),AddonSetTwelve)">$LOCALIZE[31242]</value>
 		<value>$LOCALIZE[31254]</value>
 	</variable>
 	<variable name="UsrDefItemTenAddOnLabel" type="text">
@@ -1384,6 +1402,8 @@
 		<value condition="stringcompare(Skin.String(HomeItem.10.Addon),AddonSetEight)">$LOCALIZE[31237]</value>
 		<value condition="stringcompare(Skin.String(HomeItem.10.Addon),AddonSetNine)">$LOCALIZE[31238]</value>
 		<value condition="stringcompare(Skin.String(HomeItem.10.Addon),AddonSetTen)">$LOCALIZE[31239]</value>
+		<value condition="stringcompare(Skin.String(HomeItem.10.Addon),AddonSetEleven)">$LOCALIZE[31241]</value>
+		<value condition="stringcompare(Skin.String(HomeItem.10.Addon),AddonSetTwelve)">$LOCALIZE[31242]</value>
 		<value>$LOCALIZE[31254]</value>
 	</variable>
 	<variable name="UsrDefItemElevenAddOnLabel" type="text">
@@ -1407,6 +1427,8 @@
 		<value condition="stringcompare(Skin.String(HomeItem.11.Addon),AddonSetEight)">$LOCALIZE[31237]</value>
 		<value condition="stringcompare(Skin.String(HomeItem.11.Addon),AddonSetNine)">$LOCALIZE[31238]</value>
 		<value condition="stringcompare(Skin.String(HomeItem.11.Addon),AddonSetTen)">$LOCALIZE[31239]</value>
+		<value condition="stringcompare(Skin.String(HomeItem.11.Addon),AddonSetEleven)">$LOCALIZE[31241]</value>
+		<value condition="stringcompare(Skin.String(HomeItem.11.Addon),AddonSetTwelve)">$LOCALIZE[31242]</value>
 		<value>$LOCALIZE[31254]</value>
 	</variable>
 	<variable name="UsrDefItemTwelveAddOnLabel" type="text">
@@ -1430,6 +1452,8 @@
 		<value condition="stringcompare(Skin.String(HomeItem.12.Addon),AddonSetEight)">$LOCALIZE[31237]</value>
 		<value condition="stringcompare(Skin.String(HomeItem.12.Addon),AddonSetNine)">$LOCALIZE[31238]</value>
 		<value condition="stringcompare(Skin.String(HomeItem.12.Addon),AddonSetTen)">$LOCALIZE[31239]</value>
+		<value condition="stringcompare(Skin.String(HomeItem.12.Addon),AddonSetEleven)">$LOCALIZE[31241]</value>
+		<value condition="stringcompare(Skin.String(HomeItem.12.Addon),AddonSetTwelve)">$LOCALIZE[31242]</value>
 		<value>$LOCALIZE[31254]</value>
 	</variable>
 	<variable name="UsrDefItemOneWidgetLabel" type="text">

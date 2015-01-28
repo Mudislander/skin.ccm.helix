@@ -70,7 +70,7 @@
 			</control>
 		</control>
 		<control type="group">
-			<left>-250</left>
+			<left>-251</left>
 			<include>SideBladeLeft</include>
 			<control type="grouplist" id="9000">
 				<left>0</left>
@@ -78,7 +78,7 @@
 				<width>250</width>
 				<height>650</height>
 				<onfocus condition="IsEmpty(Window.Property(SideBladeOpen))">SetProperty(SideBladeOpen,True)</onfocus>
-				<onleft>9000</onleft>
+				<onleft>50</onleft>
 				<onright>ClearProperty(SideBladeOpen)</onright>
 				<onright>50</onright>
 				<onup>9000</onup>
