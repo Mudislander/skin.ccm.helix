@@ -216,7 +216,7 @@
 				<fadetime>600</fadetime>
 				<texture background="true">special://skin/backgrounds/system.jpg</texture>
 			</control>
-			<control type="image">
+			<!--control type="image">
 				<left>272</left>
 				<top>62</top>
 				<width>600</width>
@@ -224,7 +224,7 @@
 				<aspectratio>stretch</aspectratio>
 				<texture>GlassOverlay.png</texture>
 				<colordiffuse>AAFFFFFF</colordiffuse>
-			</control>
+			</control-->
 			<control type="image">
 				<left>268</left>
 				<top>510</top>

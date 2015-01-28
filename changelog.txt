@@ -1,3 +1,9 @@
+B]3.0.6[/B] [I]Jan 2015[/I]
+- Slideblade stays open on mouse click
+- Addon sets increased to 12
+- Bugfix missing Addon sets while media playing
+- Added PartyMode during ScreenSaver
+
 B]3.0.5[/B] [I]Jan 2015[/I]
 - Various Background Fanart Bugfixes
 - Reintroduced Confluence Seekbar

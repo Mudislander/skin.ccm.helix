@@ -73,6 +73,7 @@
 	</include>
 	<include name="PVRSideBlade">
 		<control type="group">
+			<visible>!Skin.HasSetting(KioskMode)</visible>
 			<left>-251</left>
 			<include>SideBladeLeft</include>
 			<control type="grouplist" id="9000">

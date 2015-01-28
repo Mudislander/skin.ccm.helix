@@ -8,6 +8,7 @@
 	<controls>
 		<include>CommonBackground</include>
 		<include>ContentPanelBackgrounds</include>
+		<include>ScrollOffsetLabel</include>
 		<control type="group">
 			<include>Window_OpenClose_Animation</include>
 			<include>CommonRootView</include>
@@ -41,7 +42,6 @@
 		<include>CommonNowPlaying</include>
 		<include>MainWindowMouseButtons</include>
 		<include>BehindDialogFadeOut</include>
-		<include>ScrollOffsetLabel</include>
 		<control type="image">
 			<description>Section header image</description>
 			<left>20</left>
@@ -70,6 +70,7 @@
 			</control>
 		</control>
 		<control type="group">
+			<visible>!Skin.HasSetting(KioskMode)</visible>
 			<left>-251</left>
 			<include>SideBladeLeft</include>
 			<control type="grouplist" id="9000">
