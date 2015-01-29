@@ -8,7 +8,6 @@
 	<controls>
 		<include>CommonBackground</include>
 		<include>ContentPanelBackgrounds</include>
-		<include>ScrollOffsetLabel</include>
 		<control type="group">
 			<include>Window_OpenClose_Animation</include>
 			<include>CommonRootView</include>
@@ -42,6 +41,7 @@
 		<include>CommonNowPlaying</include>
 		<include>MainWindowMouseButtons</include>
 		<include>BehindDialogFadeOut</include>
+		<include>ScrollOffsetLabel</include>
 		<control type="image">
 			<description>Section header image</description>
 			<left>20</left>
