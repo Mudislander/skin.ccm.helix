@@ -526,7 +526,6 @@
 						<texturenofocus>MenuItemNF.png</texturenofocus>
 						<onclick>Skin.ToggleSetting(VizOnlyOnHome)</onclick>
 						<selected>Skin.HasSetting(VizOnlyOnHome)</selected>
-						<enable>!Skin.HasSetting(HideHomeNowPlaying)</enable>
 					</control>
 					<control type="radiobutton" id="128">
 						<description>enable now playing info</description>
@@ -632,7 +631,19 @@
 						<onclick>Skin.ToggleSetting(HideBackGroundFanart)</onclick>
 						<selected>!Skin.HasSetting(HideBackGroundFanart)</selected>
 					</control>
-					<control type="button" id="142">
+					<control type="radiobutton" id="142">
+						<width>750</width>
+						<height>40</height>
+						<font>font13</font>
+						<label>$LOCALIZE[31012]</label>
+						<textcolor>grey2</textcolor>
+						<focusedcolor>white</focusedcolor>
+						<texturefocus>MenuItemFO.png</texturefocus>
+						<texturenofocus>MenuItemNF.png</texturenofocus>
+						<onclick>Skin.ToggleSetting(UseDiscTypeCase)</onclick>
+						<selected>Skin.HasSetting(UseDiscTypeCase)</selected>
+					</control>
+					<control type="button" id="143">
 						<width>750</width>
 						<height>40</height>
 						<font>font13</font>
@@ -650,7 +661,7 @@
 						<onclick condition="Skin.String(MediaPanelTrans,70)">Skin.SetString(MediaPanelTrans,85)</onclick>
 						<onclick condition="Skin.String(MediaPanelTrans,85)">Skin.Reset(MediaPanelTrans)</onclick>
 					</control>
-					<control type="radiobutton" id="143">
+					<control type="radiobutton" id="144">
 						<width>750</width>
 						<height>40</height>
 						<font>font13</font>
@@ -662,7 +673,7 @@
 						<onclick>Skin.ToggleSetting(AutoScroll)</onclick>
 						<selected>Skin.HasSetting(AutoScroll)</selected>
 					</control>
-					<control type="radiobutton" id="144">
+					<control type="radiobutton" id="145">
 						<width>750</width>
 						<height>40</height>
 						<font>font13</font>
@@ -674,7 +685,7 @@
 						<onclick>Skin.ToggleSetting(Show_SlideShow_Paused)</onclick>
 						<selected>!Skin.HasSetting(Show_SlideShow_Paused)</selected>
 					</control>
-					<control type="radiobutton" id="145">
+					<control type="radiobutton" id="146">
 						<width>750</width>
 						<height>40</height>
 						<font>font13</font>
@@ -686,7 +697,7 @@
 						<onclick>Skin.ToggleSetting(WindowedTrailer)</onclick>
 						<selected>Skin.HasSetting(WindowedTrailer)</selected>
 					</control>
-					<control type="radiobutton" id="146">
+					<control type="radiobutton" id="147">
 						<width>750</width>
 						<height>40</height>
 						<font>font13</font>
@@ -983,6 +994,10 @@
 						<onclick>Skin.SetString(HomeItem.1.Display,$VAR[MenuOneBackgroundType])</onclick>
 						<enable>!Skin.HasSetting(HolidayEffects) + !Skin.HasSetting(SingleGlobalBackground)</enable>
 						<visible>!IsEmpty(Skin.String(HomeItem.1.Label))</visible>
+						<!--				
+	StringCompare(Skin.String(HomeItem.1.Type),Weather)
+	Weather Music MusicPlayList Videos VideoPlayList Movies TVShows
+	-->
 					</control>
 					<control type="button" id="205">
 						<width>750</width>

@@ -64,7 +64,11 @@ msgctxt "#31011"
 msgid "Raspberry OS"
 msgstr ""
 
-#empty strings from id 31010 to 31012
+#empty strings from id 31010 to 31011
+
+msgctxt "#31012"
+msgid "Enable Disk Type Media Cases"
+msgstr ""
 
 msgctxt "#31013"
 msgid "Enable Single Global Background"
@@ -978,7 +982,9 @@ msgctxt "#31317"
 msgid "Clear Menu Option"
 msgstr ""
 
-#empty string with id 31318
+msgctxt "#31318"
+msgid "Up One Level"
+msgstr ""
 
 msgctxt "#31319"
 msgid "Selected Profile"
@@ -1389,7 +1395,15 @@ msgctxt "#31611"
 msgid "Record minutes after end"
 msgstr ""
 
-#empty strings from id 31612 to 31900
+#empty strings from id 31612 to 31646
+
+msgctxt "#31647"
+msgid "Coverflow"
+msgstr ""
+
+#empty strings from id 31648 to 31900
+
+
 #Weather plugin
 
 msgctxt "#31901"
@@ -1538,8 +1552,6 @@ msgstr ""
 #msgid "Set Fanart Path"
 #msgstr ""
 
-
-
 msgctxt "#31958"
 msgid "DVD Drive"
 msgstr ""
@@ -1558,6 +1570,10 @@ msgstr ""
 
 msgctxt "#31964"
 msgid "Click button to play[CR][CR]Movie trailer"
+msgstr ""
+
+msgctxt "#31969"
+msgid "Airs"
 msgstr ""
 
 

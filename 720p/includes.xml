@@ -11,6 +11,7 @@
 	<include file="IncludesCDWall.xml" />
 	<include file="IncludesOnScreenDisplay.xml" />
 	<include file="ViewsVideoLibrary.xml" />
+	<include file="ViewsCoverFlow.xml" />
 	<include file="ViewsMusicLibrary.xml" />
 	<include file="ViewsFileMode.xml" />
 	<include file="ViewsPictures.xml" />
@@ -345,7 +346,7 @@
 				<scroll>false</scroll>
 				<align>right</align>
 				<aligny>center</aligny>
-				<label>$INFO[Container.NumItems,([COLOR=blue],[/COLOR]) $LOCALIZE[31025]]$INFO[Container.CurrentPage, - $LOCALIZE[31024] ([COLOR=blue]]$INFO[Container.NumPages,/,[/COLOR])]</label>
+				<label>$INFO[Container.NumItems,([COLOR=white],[/COLOR]) $LOCALIZE[31025]]$INFO[Container.CurrentPage, - $LOCALIZE[31024] ([COLOR=white]]$INFO[Container.NumPages,/,[/COLOR])]</label>
 				<include>Window_OpenClose_Animation</include>
 			</control>
 			<control type="label">
@@ -359,8 +360,53 @@
 				<scroll>false</scroll>
 				<align>right</align>
 				<aligny>center</aligny>
-				<label>$INFO[Container.TotalTime,$LOCALIZE[31009] ([COLOR=blue],[/COLOR])]</label>
+				<label>$INFO[Container.TotalTime,$LOCALIZE[31009] ([COLOR=white],[/COLOR])]</label>
 				<include>Window_OpenClose_Animation</include>
+			</control>
+		</control>
+	</include>
+	<include name="NextAired">
+		<control type="group">
+			<visible>!Skin.HasSetting(DisableTVNextAired) + !Player.HasMedia + !IsEmpty(Window(Home).Property(NextAired.NextDate)) + [Container.Content(TVShows) | Container.Content(Seasons) | Container.Content(Episodes)]</visible>
+			<animation effect="slide" start="0,0" end="22,0" time="0" condition="Control.IsVisible(51) | Control.IsVisible(500) | Control.IsVisible(505)">Conditional</animation>
+			<include>VisibleFadeEffect</include>
+			<left>60</left>
+			<top>670</top>
+			<control type="image">
+				<left>0</left>
+				<top>1</top>
+				<width>35</width>
+				<height>35</height>
+				<fadetime>200</fadetime>
+				<aspectratio align="center" aligny="center">keep</aspectratio>
+				<texture background="true">arrow-big-right.png</texture>
+				<visible>!IsEmpty(Window(Home).Property(NextAired.NextDate))</visible>
+			</control>
+			<control type="label">
+				<left>40</left>
+				<top>0</top>
+				<width>500</width>
+				<height>20</height>
+				<align>left</align>
+				<aligny>center</aligny>
+				<font>font12</font>
+				<textcolor>grey</textcolor>
+				<shadowcolor>black</shadowcolor>
+				<label>$INFO[Window(Home).Property(NextAired.NextNumber),[COLOR=white]$LOCALIZE[209]:[/COLOR] ]$INFO[Window(Home).Property(NextAired.NextTitle), • ]</label>
+				<visible>!IsEmpty(Window(Home).Property(NextAired.NextDate))</visible>
+			</control>
+			<control type="label">
+				<left>40</left>
+				<top>20</top>
+				<width>500</width>
+				<height>20</height>
+				<align>left</align>
+				<aligny>center</aligny>
+				<font>font12</font>
+				<textcolor>grey</textcolor>
+				<shadowcolor>black</shadowcolor>
+				<label>$INFO[Window(Home).Property(NextAired.NextDate),[COLOR=white]$LOCALIZE[31969]:[/COLOR] ]$INFO[Window(Home).Property(NextAired.AirTime), • ]</label>
+				<visible>!IsEmpty(Window(Home).Property(NextAired.NextDate))</visible>
 			</control>
 		</control>
 	</include>
