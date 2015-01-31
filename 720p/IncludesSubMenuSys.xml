@@ -6,8 +6,7 @@
 			<top>70</top>
 			<onup>9000</onup>
 			<ondown condition="!Skin.HasSetting(LowerMainMenuBar)">9002</ondown>
-			<ondown condition="Skin.HasSetting(LowerMainMenuBar) + !Skin.HasSetting(HideHomePowerBtn)">20</ondown>
-			<ondown condition="Skin.HasSetting(LowerMainMenuBar) + Skin.HasSetting(HideHomePowerBtn)">21</ondown>
+			<ondown condition="Skin.HasSetting(LowerMainMenuBar)">21</ondown>
 			<control type="group">
 				<visible>StringCompare(Container(9000).ListItem.Property(SubMenu),Videos) + IntegerGreaterThan(Container(9010).NumItems,0)</visible>
 				<include>SubMenuAnimation</include>
@@ -534,8 +533,7 @@
 		<orientation>Horizontal</orientation>
 		<onup>9000</onup>
 		<ondown condition="!Skin.HasSetting(LowerMainMenuBar)">9002</ondown>
-		<ondown condition="Skin.HasSetting(LowerMainMenuBar) + !Skin.HasSetting(HideHomePowerBtn)">20</ondown>
-		<ondown condition="Skin.HasSetting(LowerMainMenuBar) + Skin.HasSetting(HideHomePowerBtn)">21</ondown>
+		<ondown condition="Skin.HasSetting(LowerMainMenuBar)">21</ondown>
 		<hitrect x="0" y="0" w="1280" h="44" />
 	</include>
 	<include name="SubMenuCommonLayout">
