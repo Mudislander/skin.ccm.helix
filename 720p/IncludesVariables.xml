@@ -2526,6 +2526,68 @@
 		<value condition="!IsEmpty(Container(9005).ListItem.Thumb)">$INFO[Container(9005).ListItem.Thumb]</value>
 		<value>$LOCALIZE[31366]</value>
 	</variable>
+	<variable name="StatusBanner">
+		<!-- Watched -->
+		<!--<value>$INFO[System.Language,Watched/,.png]</value> NOT WORK ?? -->
+		<value condition="StringCompare(ListItem.Overlay,OverlayWatched.png) + !ListItem.IsResumable + StringCompare(System.Language,English)">Watched/English</value>
+		<value condition="StringCompare(ListItem.Overlay,OverlayWatched.png) + !ListItem.IsResumable + StringCompare(System.Language,Afrikaans)">Watched/Afrikaans</value>
+		<value condition="StringCompare(ListItem.Overlay,OverlayWatched.png) + !ListItem.IsResumable + StringCompare(System.Language,Albanian)">Watched/Albanian</value>
+		<value condition="StringCompare(ListItem.Overlay,OverlayWatched.png) + !ListItem.IsResumable + StringCompare(System.Language,Amharic)">Watched/Amharic</value>
+		<value condition="StringCompare(ListItem.Overlay,OverlayWatched.png) + !ListItem.IsResumable + StringCompare(System.Language,Arabic)">Watched/Arabic</value>
+		<value condition="StringCompare(ListItem.Overlay,OverlayWatched.png) + !ListItem.IsResumable + StringCompare(System.Language,Basque)">Watched/Basque</value>
+		<value condition="StringCompare(ListItem.Overlay,OverlayWatched.png) + !ListItem.IsResumable + StringCompare(System.Language,Bosnian)">Watched/Bosnian</value>
+		<value condition="StringCompare(ListItem.Overlay,OverlayWatched.png) + !ListItem.IsResumable + StringCompare(System.Language,Bulgarian)">Watched/Bulgarian</value>
+		<value condition="StringCompare(ListItem.Overlay,OverlayWatched.png) + !ListItem.IsResumable + StringCompare(System.Language,Catalan)">Watched/Catalan</value>
+		<value condition="StringCompare(ListItem.Overlay,OverlayWatched.png) + !ListItem.IsResumable + SubString(System.Language,Chinese (Simple))">Watched/Chinese (Simple)</value>
+		<value condition="StringCompare(ListItem.Overlay,OverlayWatched.png) + !ListItem.IsResumable + StringCompare(System.Language,Croatian)">Watched/Croatian</value>
+		<value condition="StringCompare(ListItem.Overlay,OverlayWatched.png) + !ListItem.IsResumable + StringCompare(System.Language,Czech)">Watched/Czech</value>
+		<value condition="StringCompare(ListItem.Overlay,OverlayWatched.png) + !ListItem.IsResumable + StringCompare(System.Language,Danish)">Watched/Danish</value>
+		<value condition="StringCompare(ListItem.Overlay,OverlayWatched.png) + !ListItem.IsResumable + StringCompare(System.Language,Dutch)">Watched/Dutch</value>
+		<value condition="StringCompare(ListItem.Overlay,OverlayWatched.png) + !ListItem.IsResumable + StringCompare(System.Language,Estonian)">Watched/Estonian</value>
+		<value condition="StringCompare(ListItem.Overlay,OverlayWatched.png) + !ListItem.IsResumable + StringCompare(System.Language,Faroese)">Watched/Faroese</value>
+		<value condition="StringCompare(ListItem.Overlay,OverlayWatched.png) + !ListItem.IsResumable + StringCompare(System.Language,Finnish)">Watched/Finnish</value>
+		<value condition="StringCompare(ListItem.Overlay,OverlayWatched.png) + !ListItem.IsResumable + StringCompare(System.Language,French)">Watched/French</value>
+		<value condition="StringCompare(ListItem.Overlay,OverlayWatched.png) + !ListItem.IsResumable + StringCompare(System.Language,Galician)">Watched/Galician</value>
+		<value condition="StringCompare(ListItem.Overlay,OverlayWatched.png) + !ListItem.IsResumable + StringCompare(System.Language,German)">Watched/German</value>
+		<value condition="StringCompare(ListItem.Overlay,OverlayWatched.png) + !ListItem.IsResumable + StringCompare(System.Language,Greek)">Watched/Greek</value>
+		<value condition="StringCompare(ListItem.Overlay,OverlayWatched.png) + !ListItem.IsResumable + StringCompare(System.Language,Hebrew)">Watched/Hebrew</value>
+		<value condition="StringCompare(ListItem.Overlay,OverlayWatched.png) + !ListItem.IsResumable + StringCompare(System.Language,Hungarian)">Watched/Hungarian</value>
+		<value condition="StringCompare(ListItem.Overlay,OverlayWatched.png) + !ListItem.IsResumable + StringCompare(System.Language,Icelandic)">Watched/Icelandic</value>
+		<value condition="StringCompare(ListItem.Overlay,OverlayWatched.png) + !ListItem.IsResumable + StringCompare(System.Language,Indonesian)">Watched/Indonesian</value>
+		<value condition="StringCompare(ListItem.Overlay,OverlayWatched.png) + !ListItem.IsResumable + StringCompare(System.Language,Italian)">Watched/Italian</value>
+		<value condition="StringCompare(ListItem.Overlay,OverlayWatched.png) + !ListItem.IsResumable + StringCompare(System.Language,Japanese)">Watched/Japanese</value>
+		<value condition="StringCompare(ListItem.Overlay,OverlayWatched.png) + !ListItem.IsResumable + StringCompare(System.Language,Korean)">Watched/Korean</value>
+		<value condition="StringCompare(ListItem.Overlay,OverlayWatched.png) + !ListItem.IsResumable + StringCompare(System.Language,Lithuanian)">Watched/Lithuanian</value>
+		<value condition="StringCompare(ListItem.Overlay,OverlayWatched.png) + !ListItem.IsResumable + StringCompare(System.Language,Macedonian)">Watched/Macedonian</value>
+		<value condition="StringCompare(ListItem.Overlay,OverlayWatched.png) + !ListItem.IsResumable + StringCompare(System.Language,Maltese)">Watched/Maltese</value>
+		<value condition="StringCompare(ListItem.Overlay,OverlayWatched.png) + !ListItem.IsResumable + StringCompare(System.Language,Norwegian)">Watched/Norwegian</value>
+		<value condition="StringCompare(ListItem.Overlay,OverlayWatched.png) + !ListItem.IsResumable +  SubString(System.Language,Iran)">Watched/Iran</value>
+		<value condition="StringCompare(ListItem.Overlay,OverlayWatched.png) + !ListItem.IsResumable + StringCompare(System.Language,Polish)">Watched/Polish</value>
+		<value condition="StringCompare(ListItem.Overlay,OverlayWatched.png) + !ListItem.IsResumable + SubString(System.Language,Portuguese)">Watched/Portuguese</value>
+		<value condition="StringCompare(ListItem.Overlay,OverlayWatched.png) + !ListItem.IsResumable + StringCompare(System.Language,Romanian)">Watched/Romanian</value>
+		<value condition="StringCompare(ListItem.Overlay,OverlayWatched.png) + !ListItem.IsResumable + StringCompare(System.Language,Russian)">Watched/Russian</value>
+		<value condition="StringCompare(ListItem.Overlay,OverlayWatched.png) + !ListItem.IsResumable + StringCompare(System.Language,Serbian)">Watched/Serbian</value>
+		<value condition="StringCompare(ListItem.Overlay,OverlayWatched.png) + !ListItem.IsResumable + SubString(System.Language,Serbian) + SubString(System.Language,Cyrillic)">Watched/SerbCyrillic</value>
+		<value condition="StringCompare(ListItem.Overlay,OverlayWatched.png) + !ListItem.IsResumable + StringCompare(System.Language,Slovak)">Watched/Slovak</value>
+		<value condition="StringCompare(ListItem.Overlay,OverlayWatched.png) + !ListItem.IsResumable + StringCompare(System.Language,Slovenian)">Watched/Slovenian</value>
+		<value condition="StringCompare(ListItem.Overlay,OverlayWatched.png) + !ListItem.IsResumable + SubString(System.Language,Spanish) + SubString(System.Language,Mexico)">Watched/Mexico</value>
+		<value condition="StringCompare(ListItem.Overlay,OverlayWatched.png) + !ListItem.IsResumable + SubString(System.Language,Spanish)">Watched/Spanish</value>
+		<value condition="StringCompare(ListItem.Overlay,OverlayWatched.png) + !ListItem.IsResumable + StringCompare(System.Language,Swedish)">Watched/Swedish</value>
+		<value condition="StringCompare(ListItem.Overlay,OverlayWatched.png) + !ListItem.IsResumable + StringCompare(System.Language,Tajik)">Watched/Tajik</value>
+		<value condition="StringCompare(ListItem.Overlay,OverlayWatched.png) + !ListItem.IsResumable + SubString(System.Language,Tamil)">Watched/Tamil</value>
+		<value condition="StringCompare(ListItem.Overlay,OverlayWatched.png) + !ListItem.IsResumable + StringCompare(System.Language,Thai)">Watched/Thai</value>
+		<value condition="StringCompare(ListItem.Overlay,OverlayWatched.png) + !ListItem.IsResumable + StringCompare(System.Language,Turkish)">Watched/Turkish</value>
+		<value condition="StringCompare(ListItem.Overlay,OverlayWatched.png) + !ListItem.IsResumable + StringCompare(System.Language,Ukrainian)">Watched/Ukrainian</value>
+		<value condition="StringCompare(ListItem.Overlay,OverlayWatched.png) + !ListItem.IsResumable + StringCompare(System.Language,Vietnamese)">Watched/Vietnamese</value>
+		<value condition="StringCompare(ListItem.Overlay,OverlayWatched.png) + !ListItem.IsResumable + StringCompare(System.Language,Welsh)">Watched/Welsh</value>
+		<value condition="StringCompare(ListItem.Overlay,OverlayWatched.png) + !ListItem.IsResumable">Watched/English</value>
+		<!-- New -->
+		<value condition="!StringCompare(ListItem.Overlay,OverlayWatched.png) + !Skin.HasSetting(HideNewMediaStat) + !ListItem.IsResumable + StringCompare(System.Language,English)">UnWatched/English</value>
+		<value condition="!StringCompare(ListItem.Overlay,OverlayWatched.png) + !Skin.HasSetting(HideNewMediaStat) + !ListItem.IsResumable">UnWatched/English</value>
+		<!-- In Progress -->
+		<value condition="ListItem.IsResumable + StringCompare(System.Language,English)">InProgress/English</value>
+		<value condition="ListItem.IsResumable">InProgress/English</value>
+	</variable>
 	<variable name="WeatherFanArtDirLabel" type="text">
 		<value condition="IsEmpty(Skin.String(WeatherFanartDir)) | StringCompare(Skin.String(WeatherFanartDir),special://skin/extras/Weather/) | SubString(Skin.String(WeatherFanartDir),skin.ccm.helix\extras\Weather\,right)">$LOCALIZE[31257]</value>
 		<value>$INFO[Skin.String(WeatherFanartDir)]</value>
