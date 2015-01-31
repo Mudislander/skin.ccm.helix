@@ -240,8 +240,8 @@
 		</control>
 		<control type="sliderex" id="13">
 			<description>Default Slider</description>
-			<posx>0</posx>
-			<posy>0</posy>
+			<left>0</left>
+			<top>0</top>
 			<height>40</height>
 			<font>font13</font>
 			<textcolor>grey2</textcolor>
@@ -274,6 +274,7 @@
 			<height>35</height>
 			<aspectratio>keep</aspectratio>
 			<texture>icon_system.png</texture>
+			<animation effect="fade" start="100" end="0" time="200" condition="Window.IsVisible(infodialog)">Conditional</animation>
 		</control>
 		<control type="grouplist">
 			<left>65</left>

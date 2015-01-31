@@ -21,7 +21,7 @@
 				</visible>
 				<visible>StringCompare(Container(9000).ListItem.Property(WidgetSet),RecentMovies)</visible>
 				<include>VisibleFadeEffect</include>
-				<control type="label">
+				<!--control type="label">
 					<left>180</left>
 					<top>220</top>
 					<height>20</height>
@@ -33,7 +33,7 @@
 					<textcolor>white</textcolor>
 					<shadowcolor>black</shadowcolor>
 					<visible>IntegerGreaterThan(Container(8000).NumItems,0)</visible>
-				</control>
+				</control-->
 				<control type="list" id="8000">
 					<animation effect="slide" start="0,0" end="90,0" time="0" condition="StringCompare(Container(8000).NumItems,4)">conditional</animation>
 					<animation effect="slide" start="0,0" end="180,0" time="0" condition="StringCompare(Container(8000).NumItems,3)">conditional</animation>
@@ -270,7 +270,7 @@
 				</visible>
 				<visible>StringCompare(Container(9000).ListItem.Property(WidgetSet),RandomMovies)</visible>
 				<include>VisibleFadeEffect</include>
-				<control type="label">
+				<!--control type="label">
 					<left>180</left>
 					<top>220</top>
 					<height>20</height>
@@ -282,7 +282,7 @@
 					<textcolor>white</textcolor>
 					<shadowcolor>black</shadowcolor>
 					<visible>IntegerGreaterThan(Container(8002).NumItems,0)</visible>
-				</control>
+				</control-->
 				<control type="list" id="8002">
 					<animation effect="slide" start="0,0" end="90,0" time="0" condition="StringCompare(Container(8002).NumItems,4)">conditional</animation>
 					<animation effect="slide" start="0,0" end="180,0" time="0" condition="StringCompare(Container(8002).NumItems,3)">conditional</animation>
@@ -519,7 +519,7 @@
 				</visible>
 				<visible>StringCompare(Container(9000).ListItem.Property(WidgetSet),SuggestedMovies)</visible>
 				<include>VisibleFadeEffect</include>
-				<control type="label">
+				<!--control type="label">
 					<left>180</left>
 					<top>220</top>
 					<height>20</height>
@@ -531,7 +531,7 @@
 					<textcolor>white</textcolor>
 					<shadowcolor>black</shadowcolor>
 					<visible>IntegerGreaterThan(Container(8004).NumItems,0)</visible>
-				</control>
+				</control-->
 				<control type="list" id="8004">
 					<animation effect="slide" start="0,0" end="90,0" time="0" condition="StringCompare(Container(8004).NumItems,4)">conditional</animation>
 					<animation effect="slide" start="0,0" end="180,0" time="0" condition="StringCompare(Container(8004).NumItems,3)">conditional</animation>
@@ -768,7 +768,7 @@
 				</visible>
 				<visible>StringCompare(Container(9000).ListItem.Property(WidgetSet),UnWatchedMovies)</visible>
 				<include>VisibleFadeEffect</include>
-				<control type="label">
+				<!--control type="label">
 					<left>180</left>
 					<top>220</top>
 					<height>20</height>
@@ -780,7 +780,7 @@
 					<textcolor>white</textcolor>
 					<shadowcolor>black</shadowcolor>
 					<visible>IntegerGreaterThan(Container(8006).NumItems,0)</visible>
-				</control>
+				</control-->
 				<control type="list" id="8006">
 					<animation effect="slide" start="0,0" end="90,0" time="0" condition="StringCompare(Container(8006).NumItems,4)">conditional</animation>
 					<animation effect="slide" start="0,0" end="180,0" time="0" condition="StringCompare(Container(8006).NumItems,3)">conditional</animation>
@@ -1017,7 +1017,7 @@
 				</visible>
 				<visible>StringCompare(Container(9000).ListItem.Property(WidgetSet),RecentEpisodes)</visible>
 				<include>VisibleFadeEffect</include>
-				<control type="label">
+				<!--control type="label">
 					<left>240</left>
 					<top>220</top>
 					<height>20</height>
@@ -1029,7 +1029,7 @@
 					<textcolor>white</textcolor>
 					<shadowcolor>black</shadowcolor>
 					<visible>IntegerGreaterThan(Container(8008).NumItems,0)</visible>
-				</control>
+				</control-->
 				<control type="list" id="8008">
 					<animation effect="slide" start="0,0" end="120,0" time="0" condition="StringCompare(Container(8008).NumItems,3)">conditional</animation>
 					<animation effect="slide" start="0,0" end="240,0" time="0" condition="StringCompare(Container(8008).NumItems,2)">conditional</animation>
@@ -1357,7 +1357,7 @@
 				</visible>
 				<visible>StringCompare(Container(9000).ListItem.Property(WidgetSet),RandomEpisodes)</visible>
 				<include>VisibleFadeEffect</include>
-				<control type="label">
+				<!--control type="label">
 					<left>240</left>
 					<top>220</top>
 					<height>20</height>
@@ -1369,7 +1369,7 @@
 					<textcolor>white</textcolor>
 					<shadowcolor>black</shadowcolor>
 					<visible>IntegerGreaterThan(Container(8010).NumItems,0)</visible>
-				</control>
+				</control-->
 				<control type="list" id="8010">
 					<animation effect="slide" start="0,0" end="120,0" time="0" condition="StringCompare(Container(8010).NumItems,3)">conditional</animation>
 					<animation effect="slide" start="0,0" end="240,0" time="0" condition="StringCompare(Container(8010).NumItems,2)">conditional</animation>
@@ -1697,7 +1697,7 @@
 				</visible>
 				<visible>StringCompare(Container(9000).ListItem.Property(WidgetSet),SuggestedEpisodes)</visible>
 				<include>VisibleFadeEffect</include>
-				<control type="label">
+				<!--control type="label">
 					<left>240</left>
 					<top>220</top>
 					<height>20</height>
@@ -1709,7 +1709,7 @@
 					<textcolor>white</textcolor>
 					<shadowcolor>black</shadowcolor>
 					<visible>IntegerGreaterThan(Container(8012).NumItems,0)</visible>
-				</control>
+				</control-->
 				<control type="list" id="8012">
 					<animation effect="slide" start="0,0" end="120,0" time="0" condition="StringCompare(Container(8012).NumItems,3)">conditional</animation>
 					<animation effect="slide" start="0,0" end="240,0" time="0" condition="StringCompare(Container(8012).NumItems,2)">conditional</animation>
@@ -2037,7 +2037,7 @@
 				</visible>
 				<visible>StringCompare(Container(9000).ListItem.Property(WidgetSet),RecentAlbums)</visible>
 				<include>VisibleFadeEffect</include>
-				<control type="label">
+				<!--control type="label">
 					<left>160</left>
 					<top>220</top>
 					<height>20</height>
@@ -2049,7 +2049,7 @@
 					<textcolor>white</textcolor>
 					<shadowcolor>black</shadowcolor>
 					<visible>IntegerGreaterThan(Container(8014).NumItems,0)</visible>
-				</control>
+				</control-->
 				<control type="list" id="8014">
 					<animation effect="slide" start="0,0" end="100,0" time="0" condition="StringCompare(Container(8014).NumItems,3)">conditional</animation>
 					<animation effect="slide" start="0,0" end="200,0" time="0" condition="StringCompare(Container(8014).NumItems,2)">conditional</animation>
@@ -2374,7 +2374,7 @@
 				</visible>
 				<visible>StringCompare(Container(9000).ListItem.Property(WidgetSet),RandomAlbums)</visible>
 				<include>VisibleFadeEffect</include>
-				<control type="label">
+				<!--control type="label">
 					<left>160</left>
 					<top>220</top>
 					<height>20</height>
@@ -2386,7 +2386,7 @@
 					<textcolor>white</textcolor>
 					<shadowcolor>black</shadowcolor>
 					<visible>IntegerGreaterThan(Container(8016).NumItems,0)</visible>
-				</control>
+				</control-->
 				<control type="list" id="8016">
 					<animation effect="slide" start="0,0" end="100,0" time="0" condition="StringCompare(Container(8016).NumItems,3)">conditional</animation>
 					<animation effect="slide" start="0,0" end="200,0" time="0" condition="StringCompare(Container(8016).NumItems,2)">conditional</animation>
@@ -2711,7 +2711,7 @@
 				</visible>
 				<visible>StringCompare(Container(9000).ListItem.Property(WidgetSet),SuggestedAlbums)</visible>
 				<include>VisibleFadeEffect</include>
-				<control type="label">
+				<!--control type="label">
 					<left>160</left>
 					<top>220</top>
 					<height>20</height>
@@ -2723,7 +2723,7 @@
 					<textcolor>white</textcolor>
 					<shadowcolor>black</shadowcolor>
 					<visible>IntegerGreaterThan(Container(8018).NumItems,0)</visible>
-				</control>
+				</control-->
 				<control type="list" id="8018">
 					<animation effect="slide" start="0,0" end="100,0" time="0" condition="StringCompare(Container(8018).NumItems,3)">conditional</animation>
 					<animation effect="slide" start="0,0" end="200,0" time="0" condition="StringCompare(Container(8018).NumItems,2)">conditional</animation>
@@ -3048,7 +3048,7 @@
 				</visible>
 				<visible>StringCompare(Container(9000).ListItem.Property(WidgetSet),RecentConcerts)</visible>
 				<include>VisibleFadeEffect</include>
-				<control type="label">
+				<!--control type="label">
 					<left>240</left>
 					<top>220</top>
 					<height>20</height>
@@ -3060,7 +3060,7 @@
 					<textcolor>white</textcolor>
 					<shadowcolor>black</shadowcolor>
 					<visible>IntegerGreaterThan(Container(8020).NumItems,0)</visible>
-				</control>
+				</control-->
 				<control type="list" id="8020">
 					<animation effect="slide" start="0,0" end="120,0" time="0" condition="StringCompare(Container(8020).NumItems,3)">conditional</animation>
 					<animation effect="slide" start="0,0" end="240,0" time="0" condition="StringCompare(Container(8020).NumItems,2)">conditional</animation>
@@ -3388,7 +3388,7 @@
 				</visible>
 				<visible>StringCompare(Container(9000).ListItem.Property(WidgetSet),RandomConcerts)</visible>
 				<include>VisibleFadeEffect</include>
-				<control type="label">
+				<!--control type="label">
 					<left>240</left>
 					<top>220</top>
 					<height>20</height>
@@ -3400,7 +3400,7 @@
 					<textcolor>white</textcolor>
 					<shadowcolor>black</shadowcolor>
 					<visible>IntegerGreaterThan(Container(8022).NumItems,0)</visible>
-				</control>
+				</control-->
 				<control type="list" id="8022">
 					<animation effect="slide" start="0,0" end="120,0" time="0" condition="StringCompare(Container(8022).NumItems,3)">conditional</animation>
 					<animation effect="slide" start="0,0" end="240,0" time="0" condition="StringCompare(Container(8022).NumItems,2)">conditional</animation>
@@ -3728,7 +3728,7 @@
 				</visible>
 				<visible>StringCompare(Container(9000).ListItem.Property(WidgetSet),SuggestedConcerts)</visible>
 				<include>VisibleFadeEffect</include>
-				<control type="label">
+				<!--control type="label">
 					<left>240</left>
 					<top>220</top>
 					<height>20</height>
@@ -3740,7 +3740,7 @@
 					<textcolor>white</textcolor>
 					<shadowcolor>black</shadowcolor>
 					<visible>IntegerGreaterThan(Container(8024).NumItems,0)</visible>
-				</control>
+				</control-->
 				<control type="list" id="8024">
 					<animation effect="slide" start="0,0" end="120,0" time="0" condition="StringCompare(Container(8024).NumItems,3)">conditional</animation>
 					<animation effect="slide" start="0,0" end="240,0" time="0" condition="StringCompare(Container(8024).NumItems,2)">conditional</animation>
@@ -4069,7 +4069,7 @@
 				</visible>
 				<visible>StringCompare(Container(9000).ListItem.Property(PlayListType),Movie)</visible>
 				<include>VisibleFadeEffect</include>
-				<control type="label">
+				<!--control type="label">
 					<description>Recent Title label</description>
 					<left>180</left>
 					<top>220</top>
@@ -4083,8 +4083,8 @@
 					<shadowcolor>black</shadowcolor>
 					<visible>IntegerGreaterThan(Container(8026).NumItems,0)</visible>
 					<visible>!Skin.HasSetting(EnableRandomPlaylist)</visible>
-				</control>
-				<control type="label">
+				</control-->
+				<!--control type="label">
 					<description>Random Title label</description>
 					<left>180</left>
 					<top>220</top>
@@ -4097,7 +4097,7 @@
 					<textcolor>white</textcolor>
 					<shadowcolor>black</shadowcolor>
 					<visible>Skin.HasSetting(EnableRandomPlaylist) + !IsEmpty(Container(8026).ListItem.Label)</visible>
-				</control>
+				</control-->
 				<control type="list" id="8026">
 					<visible>Container(9000).HasFocus(1)</visible>
 					<animation effect="slide" start="0,0" end="90,0" time="0" condition="StringCompare(Container(8026).NumItems,4)">conditional</animation>
@@ -4770,7 +4770,7 @@
 				<visible>StringCompare(Container(9000).ListItem.Property(WidgetSet),VideoPlayList) + !Skin.HasSetting(DisableScriptPlayList)</visible>
 				<visible>StringCompare(Container(9000).ListItem.Property(PlayListType),Episode)</visible>
 				<include>VisibleFadeEffect</include>
-				<control type="label">
+				<!--control type="label">
 					<description>Random Title label</description>
 					<left>240</left>
 					<top>220</top>
@@ -4798,7 +4798,7 @@
 					<textcolor>white</textcolor>
 					<shadowcolor>black</shadowcolor>
 					<visible>!Skin.HasSetting(EnableRandomPlaylist) + !IsEmpty(Container(8028).ListItem.Label)</visible>
-				</control>
+				</control-->
 				<control type="list" id="8028">
 					<visible>Container(9000).HasFocus(1)</visible>
 					<animation effect="slide" start="0,0" end="120,0" time="0" condition="StringCompare(Container(8028).NumItems,3)">conditional</animation>
@@ -5482,7 +5482,7 @@
 				</visible-->
 				<visible>StringCompare(Container(9000).ListItem.Property(WidgetSet),Weather)</visible>
 				<include>VisibleFadeEffect</include>
-				<control type="label">
+				<!--control type="label">
 					<description>Title label</description>
 					<left>210</left>
 					<top>220</top>
@@ -5495,7 +5495,7 @@
 					<textcolor>white</textcolor>
 					<shadowcolor>black</shadowcolor>
 					<visible>IntegerGreaterThan(Container(8030).NumItems,0)</visible>
-				</control>
+				</control-->
 				<control type="list" id="8030">
 					<animation effect="slide" start="0,0" end="120,0" time="0" condition="StringCompare(Container(8030).NumItems,3)">conditional</animation>
 					<animation effect="slide" start="0,0" end="240,0" time="0" condition="StringCompare(Container(8030).NumItems,2)">conditional</animation>

@@ -3,8 +3,11 @@
 	<animation effect="fade" start="0" end="100" time="200">WindowOpen</animation>
 	<animation effect="fade" start="100" end="0" time="200">WindowClose</animation>
 	<coordinates>
-		<left>860</left>
-		<top>640</top>
+		<!--left>860</left>
+		<top>640</top-->
+		
+		<left>1</left>
+		<top>1</top>
 	</coordinates>
 	<controls>
 		<control type="group">

@@ -416,7 +416,11 @@ msgctxt "#31119"
 msgid "Hide Background Fanart"
 msgstr ""
 
-#empty strings from id 31120 to 31122
+#empty strings from id 31120 to 31121
+
+msgctxt "#31122"
+msgid "Enable Busy Animation"
+msgstr ""
 
 msgctxt "#31123"
 msgid "Popup:"
@@ -490,8 +494,13 @@ msgctxt "#31142"
 msgid "Settings level"
 msgstr ""
 
-#empty strings from id 31143 to 31184
+#empty strings from id 31143 to 31151
 
+msgctxt "#31152"
+msgid "Enable Kiosk Mode"
+msgstr ""
+
+#empty strings from id 31153 to 31184
 #Widget Names 31185
 
 msgctxt "#31185"

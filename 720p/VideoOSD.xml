@@ -582,7 +582,7 @@
 				<aligny>center</aligny>
 				<font>font13</font>
 				<label>449</label>
-				<radioposx>200</radioposx>
+				<radioleft>200</radioleft>
 				<texturefocus border="25,5,25,5">SubMenuBack-MiddleFO.png</texturefocus>
 				<texturenofocus border="25,5,25,5">SubMenuBack-MiddleNF.png</texturenofocus>
 				<onclick>ShowSubtitles</onclick>
@@ -657,7 +657,7 @@
 				<aligny>center</aligny>
 				<font>font13</font>
 				<label>31362</label>
-				<radioposx>200</radioposx>
+				<radioleft>200</radioleft>
 				<texturefocus border="25,5,25,5">SubMenuBack-MiddleFO.png</texturefocus>
 				<texturenofocus border="25,5,25,5">SubMenuBack-MiddleNF.png</texturenofocus>
 				<onclick>ToggleStereoMode</onclick>
@@ -683,7 +683,7 @@
 				<aligny>center</aligny>
 				<font>font13</font>
 				<label>31360</label>
-				<radioposx>200</radioposx>
+				<radioleft>200</radioleft>
 				<texturefocus border="25,5,25,5">SubMenuBack-MiddleFO.png</texturefocus>
 				<texturenofocus border="25,5,25,5">SubMenuBack-MiddleNF.png</texturenofocus>
 				<onclick>StereoModeToMono</onclick>
@@ -756,7 +756,7 @@
 				<aligny>center</aligny>
 				<font>font13</font>
 				<label>31362</label>
-				<radioposx>200</radioposx>
+				<radioleft>200</radioleft>
 				<texturefocus border="25,5,25,5">SubMenuBack-MiddleFO.png</texturefocus>
 				<texturenofocus border="25,5,25,5">SubMenuBack-MiddleNF.png</texturenofocus>
 				<onclick>ToggleStereoMode</onclick>
@@ -782,7 +782,7 @@
 				<aligny>center</aligny>
 				<font>font13</font>
 				<label>31360</label>
-				<radioposx>200</radioposx>
+				<radioleft>200</radioleft>
 				<texturefocus border="25,5,25,5">SubMenuBack-MiddleFO.png</texturefocus>
 				<texturenofocus border="25,5,25,5">SubMenuBack-MiddleNF.png</texturenofocus>
 				<onclick>StereoModeToMono</onclick>

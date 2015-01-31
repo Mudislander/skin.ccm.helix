@@ -3,31 +3,31 @@
 	<defaultcontrol always="true">10</defaultcontrol>
 	<coordinates>
 		<system>1</system>
-		<posx>240</posx>
-		<posy>100</posy>
+		<left>240</left>
+		<top>100</top>
 	</coordinates>
 	<include>DialogEffect</include>
 	<controls>
 		<control type="image">
 			<description>background image</description>
-			<posx>0</posx>
-			<posy>0</posy>
+			<left>0</left>
+			<top>0</top>
 			<width>800</width>
 			<height>500</height>
 			<texture border="40">DialogBack.png</texture>
 		</control>
 		<control type="image">
 			<description>Dialog Header image</description>
-			<posx>40</posx>
-			<posy>16</posy>
+			<left>40</left>
+			<top>16</top>
 			<width>720</width>
 			<height>40</height>
 			<texture>dialogheader.png</texture>
 		</control>
 		<control type="label">
 			<description>header label</description>
-			<posx>40</posx>
-			<posy>20</posy>
+			<left>40</left>
+			<top>20</top>
 			<width>720</width>
 			<height>30</height>
 			<font>font13_title</font>
@@ -39,8 +39,8 @@
 		</control>
 		<control type="button">
 			<description>Close Window button</description>
-			<posx>710</posx>
-			<posy>15</posy>
+			<left>710</left>
+			<top>15</top>
 			<width>64</width>
 			<height>32</height>
 			<label>-</label>
@@ -56,8 +56,8 @@
 		</control>
 		<control type="radiobutton" id="10">
 			<description>Enable transcoding</description>
-			<posx>40</posx>
-			<posy>50</posy>
+			<left>40</left>
+			<top>50</top>
 			<height>40</height>
 			<width>720</width>
 			<label>$LOCALIZE[31601]</label>
@@ -73,8 +73,8 @@
 		</control>
 		<control type="spincontrolex" id="11">
 			<description>Audio codec</description>
-			<posx>40</posx>
-			<posy>100</posy>
+			<left>40</left>
+			<top>100</top>
 			<width>720</width>
 			<height>40</height>
 			<font>font13</font>
@@ -90,8 +90,8 @@
 		</control>
 		<control type="spincontrolex" id="12">
 			<description>Video codec</description>
-			<posx>40</posx>
-			<posy>150</posy>
+			<left>40</left>
+			<top>150</top>
 			<width>720</width>
 			<height>40</height>
 			<font>font13</font>
@@ -108,8 +108,8 @@
 		</control>
 		<control type="spincontrolex" id="13">
 			<description>Resolution</description>
-			<posx>40</posx>
-			<posy>200</posy>
+			<left>40</left>
+			<top>200</top>
 			<width>720</width>
 			<height>40</height>
 			<font>font13</font>
@@ -125,12 +125,12 @@
 			<ondown>1</ondown>
 		</control>
 		<control type="group" id="9001">
-			<posx>190</posx>
-			<posy>435</posy>
+			<left>190</left>
+			<top>435</top>
 			<control type="button" id="1">
 				<description>Ok Button</description>
-				<posx>0</posx>
-				<posy>0</posy>
+				<left>0</left>
+				<top>0</top>
 				<width>200</width>
 				<height>40</height>
 				<align>center</align>
@@ -146,8 +146,8 @@
 			</control>
 			<control type="button" id="2">
 				<description>Cancel Button</description>
-				<posx>210</posx>
-				<posy>0</posy>
+				<left>210</left>
+				<top>0</top>
 				<width>200</width>
 				<height>40</height>
 				<align>center</align>

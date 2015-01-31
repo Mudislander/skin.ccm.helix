@@ -193,7 +193,7 @@
 						<ondown>303</ondown>
 						<texturenofocus border="3">KeyboardKeyNF.png</texturenofocus>
 						<texturefocus border="5">KeyboardKey.png</texturefocus>
-						<radioposy>5</radioposy>
+						<radiotop>5</radiotop>
 						<radiowidth>20</radiowidth>
 						<radioheight>20</radioheight>
 						<align>center</align>
@@ -288,7 +288,7 @@
 						<ondown>307</ondown>
 						<texturenofocus border="3">KeyboardKeyNF.png</texturenofocus>
 						<texturefocus border="5">KeyboardKey.png</texturefocus>
-						<radioposy>5</radioposy>
+						<radiotop>5</radiotop>
 						<radiowidth>20</radiowidth>
 						<radioheight>20</radioheight>
 						<align>center</align>
@@ -397,7 +397,7 @@
 						<ondown>300</ondown>
 						<texturenofocus border="3">KeyboardKeyNF.png</texturenofocus>
 						<texturefocus border="5">KeyboardKey.png</texturefocus>
-						<radioposy>5</radioposy>
+						<radiotop>5</radiotop>
 						<radiowidth>20</radiowidth>
 						<radioheight>20</radioheight>
 						<align>center</align>

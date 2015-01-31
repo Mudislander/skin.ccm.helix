@@ -23,6 +23,7 @@
 			<height>35</height>
 			<aspectratio>keep</aspectratio>
 			<texture>icon_system.png</texture>
+			<animation effect="fade" start="100" end="0" time="200" condition="Window.IsVisible(infodialog)">Conditional</animation>
 		</control>
 		<control type="grouplist">
 			<left>65</left>
@@ -385,18 +386,23 @@
 						<onclick>Skin.ToggleSetting(HideEpisodeThumb)</onclick>
 						<selected>!Skin.HasSetting(HideEpisodeThumb)</selected>
 					</control>
+					
 					<control type="radiobutton" id="112">
 						<width>750</width>
 						<height>40</height>
 						<font>font13</font>
-						<label>$LOCALIZE[31414]</label>
+						<label>31122</label>
 						<textcolor>grey2</textcolor>
 						<focusedcolor>white</focusedcolor>
 						<texturefocus>MenuItemFO.png</texturefocus>
 						<texturenofocus>MenuItemNF.png</texturenofocus>
-						<onclick>Skin.ToggleSetting(HideOsdProfileClock)</onclick>
-						<selected>!Skin.HasSetting(HideOsdProfileClock)</selected>
+						<onclick>Skin.ToggleSetting(HideBusyAnimation)</onclick>
+						<enable>!Skin.HasSetting(EnableMinSpec)</enable>
+						<selected>!Skin.HasSetting(HideBusyAnimation)</selected>
 					</control>
+					
+				
+					
 					<control type="radiobutton" id="113">
 						<description>Orig Popup Seektime Window</description>
 						<width>750</width>
@@ -635,6 +641,21 @@
 						<width>750</width>
 						<height>40</height>
 						<font>font13</font>
+						<label>31152</label>
+						<textcolor>grey2</textcolor>
+						<focusedcolor>white</focusedcolor>
+						<texturefocus>MenuItemFO.png</texturefocus>
+						<texturenofocus>MenuItemNF.png</texturenofocus>
+						<onclick>Skin.ToggleSetting(KioskMode)</onclick>
+						<selected>Skin.HasSetting(KioskMode)</selected>
+					</control>
+					
+					
+					
+					<control type="radiobutton" id="142">
+						<width>750</width>
+						<height>40</height>
+						<font>font13</font>
 						<label>31070</label>
 						<textcolor>grey2</textcolor>
 						<focusedcolor>white</focusedcolor>
@@ -643,7 +664,7 @@
 						<onclick>Skin.ToggleSetting(HideBackGroundFanart)</onclick>
 						<selected>!Skin.HasSetting(HideBackGroundFanart)</selected>
 					</control>
-					<control type="radiobutton" id="142">
+					<control type="radiobutton" id="144">
 						<width>750</width>
 						<height>40</height>
 						<font>font13</font>
@@ -655,7 +676,7 @@
 						<onclick>Skin.ToggleSetting(UseDiscTypeCase)</onclick>
 						<selected>Skin.HasSetting(UseDiscTypeCase)</selected>
 					</control>
-					<control type="button" id="143">
+					<control type="button" id="145">
 						<width>750</width>
 						<height>40</height>
 						<font>font13</font>
@@ -673,7 +694,7 @@
 						<onclick condition="Skin.String(MediaPanelTrans,70)">Skin.SetString(MediaPanelTrans,85)</onclick>
 						<onclick condition="Skin.String(MediaPanelTrans,85)">Skin.Reset(MediaPanelTrans)</onclick>
 					</control>
-					<control type="radiobutton" id="144">
+					<control type="radiobutton" id="146">
 						<width>750</width>
 						<height>40</height>
 						<font>font13</font>
@@ -685,7 +706,7 @@
 						<onclick>Skin.ToggleSetting(AutoScroll)</onclick>
 						<selected>Skin.HasSetting(AutoScroll)</selected>
 					</control>
-					<control type="radiobutton" id="145">
+					<control type="radiobutton" id="147">
 						<width>750</width>
 						<height>40</height>
 						<font>font13</font>
@@ -697,7 +718,7 @@
 						<onclick>Skin.ToggleSetting(Show_SlideShow_Paused)</onclick>
 						<selected>!Skin.HasSetting(Show_SlideShow_Paused)</selected>
 					</control>
-					<control type="radiobutton" id="146">
+					<control type="radiobutton" id="148">
 						<width>750</width>
 						<height>40</height>
 						<font>font13</font>
@@ -709,7 +730,7 @@
 						<onclick>Skin.ToggleSetting(WindowedTrailer)</onclick>
 						<selected>Skin.HasSetting(WindowedTrailer)</selected>
 					</control>
-					<control type="radiobutton" id="147">
+					<control type="radiobutton" id="149">
 						<width>750</width>
 						<height>40</height>
 						<font>font13</font>

@@ -5,7 +5,7 @@
 	<animation effect="slide" start="0,0" end="0,-70" delay="400" time="100">WindowClose</animation>
 	<controls>
 		<control type="group">
-			<left>720</left>
+			<left>680</left>
 			<top>0</top>
 			<animation effect="slide" end="0,-80" time="200" condition="Window.IsVisible(FullscreenVideo) | Window.IsVisible(Visualisation)">conditional</animation>
 			<control type="image">

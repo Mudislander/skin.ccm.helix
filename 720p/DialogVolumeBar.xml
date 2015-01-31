@@ -5,7 +5,7 @@
 	<animation effect="slide" start="0,0" end="0,-40" delay="400" time="100">WindowClose</animation>
 	<controls>
 		<control type="group">
-			<left>820</left>
+			<left>780</left>
 			<top>0</top>
 			<control type="image">
 				<left>0</left>
@@ -13,6 +13,7 @@
 				<width>300</width>
 				<height>50</height>
 				<texture flipy="true" border="20,20,20,2">InfoMessagePanel.png</texture>
+				<visible>!Skin.HasSetting(HidePopUpSeekBar)</visible>
 			</control>
 			<control type="group">
 				<visible>!player.passthrough</visible>

@@ -1096,7 +1096,11 @@
 					<top>245</top>
 					<width>510</width>
 					<height>30</height>
-					<label>$INFO[ListItem.Season,[COLOR=$VAR[MainColorOne]] $LOCALIZE[20373] :[/COLOR] ] $INFO[ListItem.episode,[COLOR=blue] $LOCALIZE[20359] :[/COLOR] ] $INFO[ListItem.premiered,[COLOR=blue] $LOCALIZE[31322] :[/COLOR] ]</label>
+					
+					<label>$INFO[ListItem.Season,[COLOR=blue] $LOCALIZE[20373] :[/COLOR] ] $INFO[ListItem.episode,[COLOR=blue] $LOCALIZE[20359] :[/COLOR] ] $INFO[ListItem.premiered,[COLOR=blue] $LOCALIZE[31322] :[/COLOR] ]</label>
+					<!--label>$VAR[CoverFlowInfo]</label-->
+					
+					
 					<align>center</align>
 					<aligny>center</aligny>
 					<font>font12</font>
