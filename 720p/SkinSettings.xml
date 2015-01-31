@@ -14,6 +14,7 @@
 			<height>100</height>
 			<texture>floor.png</texture>
 			<include>VisibleFadeEffect</include>
+			<visible>!Skin.HasSetting(HideHomeFloor)</visible>
 		</control>
 		<control type="image">
 			<description>Section header image</description>
@@ -386,7 +387,6 @@
 						<onclick>Skin.ToggleSetting(HideEpisodeThumb)</onclick>
 						<selected>!Skin.HasSetting(HideEpisodeThumb)</selected>
 					</control>
-					
 					<control type="radiobutton" id="112">
 						<width>750</width>
 						<height>40</height>
@@ -397,13 +397,22 @@
 						<texturefocus>MenuItemFO.png</texturefocus>
 						<texturenofocus>MenuItemNF.png</texturenofocus>
 						<onclick>Skin.ToggleSetting(HideBusyAnimation)</onclick>
-						<enable>!Skin.HasSetting(EnableMinSpec)</enable>
 						<selected>!Skin.HasSetting(HideBusyAnimation)</selected>
 					</control>
-					
-				
-					
 					<control type="radiobutton" id="113">
+						<description>hide home floor</description>
+						<width>750</width>
+						<height>40</height>
+						<font>font13</font>
+						<textcolor>grey2</textcolor>
+						<focusedcolor>white</focusedcolor>
+						<texturefocus>MenuItemFO.png</texturefocus>
+						<texturenofocus>MenuItemNF.png</texturenofocus>
+						<label>$LOCALIZE[31069]</label>
+						<onclick>Skin.ToggleSetting(HideHomeFloor)</onclick>
+						<selected>!Skin.HasSetting(HideHomeFloor)</selected>
+					</control>
+					<control type="radiobutton" id="114">
 						<description>Orig Popup Seektime Window</description>
 						<width>750</width>
 						<height>40</height>
@@ -601,19 +610,6 @@
 						<texturefocus>MenuItemFO.png</texturefocus>
 						<texturenofocus>MenuItemNF.png</texturenofocus>
 					</control>
-					<control type="radiobutton" id="132">
-						<description>hide home floor</description>
-						<width>750</width>
-						<height>40</height>
-						<font>font13</font>
-						<textcolor>grey2</textcolor>
-						<focusedcolor>white</focusedcolor>
-						<texturefocus>MenuItemFO.png</texturefocus>
-						<texturenofocus>MenuItemNF.png</texturenofocus>
-						<label>$LOCALIZE[31069]</label>
-						<onclick>Skin.ToggleSetting(HideHomeFloor)</onclick>
-						<selected>!Skin.HasSetting(HideHomeFloor)</selected>
-					</control>
 					<control type="radiobutton" id="133">
 						<description>enable raindrop effect</description>
 						<width>750</width>
@@ -649,9 +645,6 @@
 						<onclick>Skin.ToggleSetting(KioskMode)</onclick>
 						<selected>Skin.HasSetting(KioskMode)</selected>
 					</control>
-					
-					
-					
 					<control type="radiobutton" id="142">
 						<width>750</width>
 						<height>40</height>

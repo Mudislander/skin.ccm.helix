@@ -14,6 +14,7 @@
 			<texture>floor.png</texture>
 			<animation effect="fade" time="250" condition="Window.Previous(Home)">WindowOpen</animation>
 			<animation effect="fade" time="250" condition="Window.Next(Home)">WindowClose</animation>
+			<visible>!Skin.HasSetting(HideHomeFloor)</visible>
 		</control>
 		<control type="group">
 			<include>Window_OpenClose_Animation</include>
@@ -25,6 +26,7 @@
 				<texture>floor.png</texture>
 				<animation effect="fade" time="250" condition="Window.Previous(Home)">WindowOpen</animation>
 				<animation effect="fade" time="250" condition="Window.Next(Home)">WindowClose</animation>
+				<visible>!Skin.HasSetting(HideHomeFloor)</visible>
 			</control>
 			<control type="group">
 				<include>Window_OpenClose_Animation</include>

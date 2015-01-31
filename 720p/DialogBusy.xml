@@ -9,7 +9,7 @@
 	</coordinates>
 	<controls>
 		<control type="group">
-		<visible>!Skin.HasSetting(HidePopUpSeekBar)</visible>
+			<visible>!Skin.HasSetting(HidePopUpSeekBar)</visible>
 			<left>1070</left>
 			<top>640</top>
 			<control type="image">
@@ -41,7 +41,6 @@
 				<aligny>center</aligny>
 				<label>$LOCALIZE[31004]</label>
 				<font>font12</font>
-				
 			</control>
 			<control type="progress" id="10">
 				<description>Progressbar</description>
@@ -51,11 +50,6 @@
 				<height>8</height>
 			</control>
 		</control>
-		
-		
-		
-		
-		
 		<control type="group">
 			<left>165r</left>
 			<top>5</top>
@@ -92,8 +86,5 @@
 				<height>8</height>
 			</control>
 		</control>
-		
-		
-		
 	</controls>
 </window>
