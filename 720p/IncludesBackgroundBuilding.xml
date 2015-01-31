@@ -2,7 +2,8 @@
 <includes>
 	<include name="CommonBackground">
 		<control type="group">
-			<visible>[Skin.HasSetting(SingleGlobalBackground) | StringCompare(Window(Home).Property(MenuBackground),Theme) | StringCompare(Container(9000).ListItem.Property(Background),Theme)] + !Skin.HasSetting(HolidayEffects)</visible>
+			<!--visible>[Skin.HasSetting(SingleGlobalBackground) | StringCompare(Window(Home).Property(MenuBackground),Theme) | StringCompare(Container(9000).ListItem.Property(Background),Theme)] + !Skin.HasSetting(HolidayEffects)</visible-->
+			<visible>Skin.HasSetting(SingleGlobalBackground) + !Skin.HasSetting(HolidayEffects)</visible>
 			<control type="multiimage">
 				<include>Dimensions_Fullscreen</include>
 				<imagepath background="true">$INFO[Skin.String(GlobalBackGroundPath)]</imagepath>
@@ -93,6 +94,16 @@
 				<!--visible>!StringCompare(Window(Home).Property(MenuBackground),Database)</visible-->
 				<visible>!Window.IsVisible(Home) + !StringCompare(Window(Home).Property(MenuItemSelected),Weather) + !Container.Content(Seasons) + !Container.Content(Episodes)</visible>
 			</control>
+		</control>
+		<control type="multiimage">
+			<include>Dimensions_Fullscreen</include>
+			<aspectratio>scale</aspectratio>
+			<imagepath background="true">$VAR[CommonMenuItemBackground]</imagepath>
+			<timeperimage>8000</timeperimage>
+			<randomize>true</randomize>
+			<fadetime>1000</fadetime>
+			<!--visible>[StringCompare(ListItem.Label,..) | IsEmpty(ListItem.Property(Fanart_Image))] + Container.Content(Episodes) + IsEmpty(Fanart.Image)</visible-->
+			<visible>!Window.IsVisible(Home) + !Player.HasVideo + Skin.HasSetting(HideBackGroundFanart)</visible>
 		</control>
 		<control type="group">
 			<visible>!Window.IsVisible(Home) + !Player.HasVideo + !Skin.HasSetting(HideBackGroundFanart)</visible>

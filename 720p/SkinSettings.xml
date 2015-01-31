@@ -386,6 +386,18 @@
 						<selected>!Skin.HasSetting(HideEpisodeThumb)</selected>
 					</control>
 					<control type="radiobutton" id="112">
+						<width>750</width>
+						<height>40</height>
+						<font>font13</font>
+						<label>$LOCALIZE[31414]</label>
+						<textcolor>grey2</textcolor>
+						<focusedcolor>white</focusedcolor>
+						<texturefocus>MenuItemFO.png</texturefocus>
+						<texturenofocus>MenuItemNF.png</texturenofocus>
+						<onclick>Skin.ToggleSetting(HideOsdProfileClock)</onclick>
+						<selected>!Skin.HasSetting(HideOsdProfileClock)</selected>
+					</control>
+					<control type="radiobutton" id="113">
 						<description>Orig Popup Seektime Window</description>
 						<width>750</width>
 						<height>40</height>
@@ -773,7 +785,6 @@
 						<onclick>Skin.ToggleSetting(NoDiffuseVizFanart)</onclick>
 						<selected>!Skin.HasSetting(NoDiffuseVizFanart)</selected>
 					</control>
-					<!--
 					<control type="label" id="160">
 						<width>750</width>
 						<height>45</height>
@@ -791,7 +802,7 @@
 						<font>font13</font>
 						<textcolor>grey2</textcolor>
 						<focusedcolor>white</focusedcolor>
-						<label>$LOCALIZE[31372] ***Not Yet Done ***</label>
+						<label>$LOCALIZE[31372]</label>
 						<texturefocus>MenuItemFO.png</texturefocus>
 						<texturenofocus>MenuItemNF.png</texturenofocus>
 						<onclick>Skin.ToggleSetting(HideInfoStartOSD)</onclick>
@@ -804,7 +815,7 @@
 						<font>font13</font>
 						<textcolor>grey2</textcolor>
 						<focusedcolor>white</focusedcolor>
-						<label>$LOCALIZE[31373] ***Not Yet Done ***</label>
+						<label>$LOCALIZE[31373]</label>
 						<texturefocus>MenuItemFO.png</texturefocus>
 						<texturenofocus>MenuItemNF.png</texturenofocus>
 						<onclick>Skin.ToggleSetting(EnablePauseInfo)</onclick>
@@ -817,7 +828,7 @@
 						<font>font13</font>
 						<textcolor>grey2</textcolor>
 						<focusedcolor>white</focusedcolor>
-						<label>$LOCALIZE[31374] ***Not Yet Done ***</label>
+						<label>$LOCALIZE[31374]</label>
 						<texturefocus>MenuItemFO.png</texturefocus>
 						<texturenofocus>MenuItemNF.png</texturenofocus>
 						<onclick>Skin.ToggleSetting(HideSeekBarOSD)</onclick>
@@ -830,13 +841,12 @@
 						<font>font13</font>
 						<textcolor>grey2</textcolor>
 						<focusedcolor>white</focusedcolor>
-						<label>$LOCALIZE[31383] ***Not Yet Done ***</label>
+						<label>$LOCALIZE[31383]</label>
 						<texturefocus>MenuItemFO.png</texturefocus>
 						<texturenofocus>MenuItemNF.png</texturenofocus>
 						<onclick>Skin.ToggleSetting(HideArtWorkOSD)</onclick>
 						<selected>!Skin.HasSetting(HideArtWorkOSD)</selected>
 					</control>
-					-->
 					<control type="label" id="170">
 						<width>750</width>
 						<height>45</height>
@@ -7203,7 +7213,7 @@
 					<texturesliderbarfocus border="0,14,0,14">ScrollBarV_bar_focus.png</texturesliderbarfocus>
 					<textureslidernib>ScrollBarNib.png</textureslidernib>
 					<textureslidernibfocus>ScrollBarNib.png</textureslidernibfocus>
-					<onleft>9002</onleft>
+					<onleft>9006</onleft>
 					<onright>9000</onright>
 					<showonepage>false</showonepage>
 					<orientation>vertical</orientation>

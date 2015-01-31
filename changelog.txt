@@ -1,3 +1,8 @@
+B]3.0.7[/B] [I]Jan 2015[/I]
+- Bugfix Backgrounds
+- CoverFlow View
+-NextAiredInfo
+
 B]3.0.6[/B] [I]Jan 2015[/I]
 - Slideblade stays open on mouse click
 - Addon sets increased to 12

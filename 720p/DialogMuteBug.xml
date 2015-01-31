@@ -15,7 +15,8 @@
 			<height>45</height>
 			<aspectratio>keep</aspectratio>
 			<texture>icon-mute.png</texture>
-			<animation effect="slide" start="0,0" end="-70,0" time="0" condition="Window.IsVisible(MusicOSD)">conditional</animation>
+			<animation effect="slide" start="0,0" end="-80,0" time="0" condition="Window.IsVisible(MusicOSD)">conditional</animation>
+			<animation effect="slide" start="0,0" end="-80,0" time="0" condition="Window.IsVisible(VideoOSD)">conditional</animation>
 		</control>
 	</controls>
 </window>

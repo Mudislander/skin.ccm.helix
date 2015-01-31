@@ -26,8 +26,6 @@
 	<onload condition="!Skin.HasSetting(DisableScriptPlaylist) + !IsEmpty(Skin.String(HomeItem.12.Playlist))">XBMC.RunScript(script.randomandlastitems,playlist=$INFO[Skin.String(HomeItem.12.Playlist)],method=$VAR[PlaylistSortOrder],limit=12,unwatched=False,resume=False,property=HomePlaylistTwelve)</onload>
 	<onload condition="!IsEmpty(Weather.Plugin) + !Weather.IsFetched">Weather.Refresh</onload>
 	<onload condition="Window.Previous(Startup)">Control.Move(9000,$INFO[Skin.String(InitialMenuItem)])</onload>
-	<!-- Temp turn off unused toggle -->
-	<onload condition="Skin.HasSetting(ManualMenuSlide)">Skin.Reset(ManualMenuSlide)</onload>
 	<controls>
 		<include>CommonBackground</include>
 		<include condition="Skin.HasSetting(EnableRainDropEffect) | Skin.HasSetting(HolidayEffects)">AnimatedBackgroundEffect</include>
@@ -289,7 +287,7 @@
 					<width>150</width>
 					<height>300</height>
 					<aspectratio aligny="bottom">keep</aspectratio>
-					<texture fallback="DefaultVideoCover.png">$INFO[Player.Art(thumb)]</texture>
+					<texture fallback="DefaultVideoCover.png">$VAR[StreamingVideoIcon]</texture>
 					<bordertexture border="8">ThumbBorder.png</bordertexture>
 					<bordersize>5</bordersize>
 				</control>
@@ -299,7 +297,7 @@
 					<top>285</top>
 					<height>30</height>
 					<width>1000</width>
-					<label>$INFO[Player.Title]</label>
+					<label>$VAR[VideoNowPlaying]</label>
 					<align>left</align>
 					<aligny>center</aligny>
 					<font>font13_title</font>

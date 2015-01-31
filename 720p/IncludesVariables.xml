@@ -58,7 +58,6 @@
 		<value condition="Container(9000).Hasfocus(10) + !IsEmpty(Skin.String(HomeItem.10.Fanart))">$INFO[Skin.String(HomeItem.10.Fanart)]</value>
 		<value condition="Container(9000).Hasfocus(12) + !IsEmpty(Skin.String(HomeItem.12.Fanart))">$INFO[Skin.String(HomeItem.12.Fanart)]</value>
 		<value>$INFO[Skin.CurrentTheme,special://skin/backgrounds/,.jpg]</value>
-		<!--value>special://skin/backgrounds/SKINDEFAULT.jpg</value-->
 	</variable>
 	<variable name="WeatherBackground" type="text">
 		<value condition="StringCompare(Window(Home).Property(MenuBackground),Live) + Control.HasFocus(51)">$INFO[Skin.String(WeatherFanartDir)]$INFO[Container(51).ListItem.Property(FanArt)]</value>
@@ -76,7 +75,6 @@
 		<value condition="StringCompare(Window(Home).Property(MenuItemActive),ItemTen) + !IsEmpty(Skin.String(HomeItem.10.Fanart))">$INFO[Skin.String(HomeItem.10.Fanart)]</value>
 		<value condition="StringCompare(Window(Home).Property(MenuItemActive),ItemEleven) + !IsEmpty(Skin.String(HomeItem.11.Fanart))">$INFO[Skin.String(HomeItem.11.Fanart)]</value>
 		<value condition="StringCompare(Window(Home).Property(MenuItemActive),ItemTwelve) + !IsEmpty(Skin.String(HomeItem.12.Fanart))">$INFO[Skin.String(HomeItem.12.Fanart)]</value>
-		<!--value>special://skin/backgrounds/SKINDEFAULT.jpg</value-->
 		<value>$INFO[Skin.CurrentTheme,special://skin/backgrounds/,.jpg]</value>
 	</variable>
 	<variable name="LiveContentOne">
@@ -559,6 +557,27 @@
 		<value condition="Library.HasContent(Movies)">$INFO[Window(Home).Property(LatestMovie.1.Thumb)]</value>
 		<value>DefaultVideoCover.png</value>
 	</variable>
+	<variable name="VideoPlayerCase">
+		<value condition="!Skin.HasSetting(UseDiscTypeCase) + [VideoPlayer.Content(LiveTV) | VideoPlayer.Content(Episodes)]">TVseries</value>
+		<value condition="Skin.HasSetting(UseDiscTypeCase) + VideoPlayer.IsStereoscopic">3DCase</value>
+		<value condition="Skin.HasSetting(UseDiscTypeCase) + [SubString(Player.FilenameAndPath,.3D.) | SubString(Player.FilenameAndPath,.3DBD.) | SubString(Player.FilenameAndPath,.SBS.)]">3DCase</value>
+		<value condition="Skin.HasSetting(UseDiscTypeCase) + [SubString(Player.FilenameAndPath,bluray) | SubString(Player.FilenameAndPath,bdrip) | SubString(Player.FilenameAndPath,bd25) | SubString(Player.FilenameAndPath,bd50)]">bd</value>
+		<value condition="Skin.HasSetting(UseDiscTypeCase) + [StringCompare(VideoPlayer.VideoResolution,1080) | StringCompare(VideoPlayer.VideoResolution,720)]">bd</value>
+		<value condition="Skin.HasSetting(UseDiscTypeCase) + SubString(Player.FilenameAndPath,hddvd)">hddvd</value>
+		<value condition="Skin.HasSetting(UseDiscTypeCase) + SubString(Player.FilenameAndPath,dvd)">dvd</value>
+		<value condition="Skin.HasSetting(UseDiscTypeCase) + [StringCompare(VideoPlayer.VideoResolution,480) | StringCompare(VideoPlayer.VideoResolution,540) | StringCompare(VideoPlayer.VideoResolution,576)]">dvd</value>
+		<value condition="substring(Player.FilenameAndPath,.avi,right)">avi</value>
+		<value condition="substring(Player.FilenameAndPath,.divx,right)">divx</value>
+		<value condition="substring(Player.FilenameAndPath,.h264,right)">h264</value>
+		<value condition="substring(Player.FilenameAndPath,.mkv,right)">mkv</value>
+		<value condition="substring(Player.FilenameAndPath,.mov,right)">mov</value>
+		<value condition="substring(Player.FilenameAndPath,.mp4,right)">mp4</value>
+		<value condition="substring(Player.FilenameAndPath,.mpeg,right)">mpeg</value>
+		<value condition="substring(Player.FilenameAndPath,.qt,right)">qt</value>
+		<value condition="substring(Player.FilenameAndPath,.wmv,right)">wmv</value>
+		<value condition="substring(Player.FilenameAndPath,.xvid,right)">xvid</value>
+		<value>dv</value>
+	</variable>
 	<variable name="VideoListCase">
 		<value condition="!Skin.HasSetting(UseDiscTypeCase) + [Container.Content(tvshows) | Container.Content(seasons) | Container.Content(episodes)]">TVseries</value>
 		<value condition="!Skin.HasSetting(UseDiscTypeCase) + !IsEmpty(ListItem.FileExtension)">$INFO[ListItem.FileExtension]</value>
@@ -698,6 +717,31 @@
 		<value condition="Skin.HasSetting(UseDiscTypeCase) + [SubString(Container(555).ListItem(4).FilenameAndPath,pdtv) | SubString(Container(555).ListItem(4).FilenameAndPath,hdtv) | SubString(Container(555).ListItem(4).FilenameAndPath,dsr)]">TVseries</value>
 		<value condition="Container.Content(tvshows) | Container.Content(seasons)">TVseries</value>
 		<value>dv</value>
+	</variable>
+	<variable name="CommonMediaPlaying">
+		<value condition="StringCompare(VideoPlayer.Title,player.swf playpath=105Test1 live=true)">[B]$LOCALIZE[31206][/B]  ([COLOR=$VAR[MainColorOne]]$LOCALIZE[31212][/COLOR])</value>
+		<value condition="StringCompare(VideoPlayer.Title,player.swf playpath=rmc1 live=true)">[B]$LOCALIZE[31221][/B]  ([COLOR=$VAR[MainColorOne]]$LOCALIZE[31212][/COLOR])</value>
+		<value condition="Player.IsInternetStream + SubString(VideoPlayer.Title,Virgin 1,Left)">[B]$LOCALIZE[31222][/B]  ([COLOR=$VAR[MainColorOne]]$LOCALIZE[31212][/COLOR])</value>
+		<value>[B]$INFO[MusicPlayer.Title]$INFO[VideoPlayer.Title][/B]  ([COLOR=$VAR[MainColorOne]]$INFO[Player.Time] / $INFO[Player.Duration,][/COLOR])</value>
+	</variable>
+	<variable name="VideoNowPlaying">
+		<value condition="StringCompare(VideoPlayer.Title,player.swf playpath=105Test1 live=true)">$LOCALIZE[31206]</value>
+		<value condition="StringCompare(VideoPlayer.Title,player.swf playpath=rmc1 live=true)">$LOCALIZE[31221]</value>
+		<value condition="Player.IsInternetStream + SubString(VideoPlayer.Title,Virgin 1,Left)">$LOCALIZE[31222]</value>
+		<value condition="VideoPlayer.Content(Movies) + !IsEmpty(VideoPlayer.Year) + !Skin.HasSetting(HideYearTitle)">$INFO[VideoPlayer.Title] ($INFO[VideoPlayer.Year])</value>
+		<value>$INFO[Player.Title]</value>
+	</variable>
+	<variable name="VideoPlayingDescription" type="text">
+		<value condition="!IsEmpty(VideoPlayer.PlotOutline)">$INFO[VideoPlayer.PlotOutline]</value>
+		<value condition="!IsEmpty(VideoPlayer.Plot )">$INFO[VideoPlayer.Plot]</value>
+		<value>$LOCALIZE[161]</value>
+	</variable>
+	<variable name="StreamingVideoIcon">
+		<value condition="StringCompare(VideoPlayer.Title,player.swf playpath=105Test1 live=true)">special://skin/extras/Streaming/Radio105NetworkTV.png</value>
+		<value condition="StringCompare(VideoPlayer.Title,player.swf playpath=rmc1 live=true)">special://skin/extras/Streaming/RadioMontecarloTV.png</value>
+		<value condition="SubString(VideoPlayer.Title,Virgin 1,Left)">special://skin/extras/Streaming/Virgin.png</value>
+		<value condition="!IsEmpty(Player.Art(poster))">$INFO[Player.Art(poster)]</value>
+		<value>$INFO[Player.Art(thumb)]</value>
 	</variable>
 	<variable name="HomePowerBtnCommand">
 		<value condition="StringCompare(Skin.String(PowerBtnAction),Menu)">ActivateWindow(ShutdownMenu)</value>

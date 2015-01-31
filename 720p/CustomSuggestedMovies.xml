@@ -63,14 +63,6 @@
 				<texture background="true">$INFO[Container(450).ListItem.Property(Logo)]</texture>
 				<visible>!IsEmpty(Container(450).ListItem.Property(Logo))</visible>
 			</control>
-			<!--control type="image">
-                <left>78r</left>
-                <top>43</top>
-                <width>40</width>
-                <height>40</height>
-                <texture diffuse="poster-diffuse.png">$VAR[PartlyWatched,MediaStatus/,.png]</texture>
-                <visible>!Skin.HasSetting(disablewatchedcheck)</visible>
-            </control-->
 			<control type="list" id="450">
 				<left>390r</left>
 				<top>280</top>

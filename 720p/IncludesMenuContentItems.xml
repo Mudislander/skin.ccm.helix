@@ -1197,7 +1197,7 @@
 				<visible>StringCompare(Window.Property(MenuItemType),MoviesMenu)</visible>
 			</item>
 			<!-- TVShows Menu -->
-			<item>
+			<!--item>
 				<description>PseudoTV</description>
 				<label>$LOCALIZE[24000] - $LOCALIZE[31204]</label>
 				<include>ClearButtonChoice</include>
@@ -1213,7 +1213,7 @@
 				<include>CloseMenuChoice</include>
 				<visible>System.HasAddon(script.pseudotv)</visible>
 				<visible>StringCompare(Window.Property(MenuItemType),TVShowsMenu)</visible>
-			</item>
+			</item-->
 			<item>
 				<description>Suggested TVShows</description>
 				<label>$LOCALIZE[31194]</label>

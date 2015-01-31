@@ -206,7 +206,7 @@
 					<include>HomeAddonSetFive</include>
 				</content>
 			</control>
-			<!--control type="list" id="705">
+			<control type="list" id="705">
 				<animation effect="slide" start="0,0" end="82,0" time="0" condition="StringCompare(Container(705).NumItems,6)">conditional</animation>
 				<animation effect="slide" start="0,0" end="164,0" time="0" condition="StringCompare(Container(705).NumItems,5)">conditional</animation>
 				<animation effect="slide" start="0,0" end="246,0" time="0" condition="StringCompare(Container(705).NumItems,4)">conditional</animation>
@@ -227,7 +227,7 @@
 				<content>
 					<include>HomeAddonSetFive</include>
 				</content>
-			</control-->
+			</control>
 			<control type="list" id="706">
 				<animation effect="slide" start="0,0" end="82,0" time="0" condition="StringCompare(Container(706).NumItems,6)">conditional</animation>
 				<animation effect="slide" start="0,0" end="164,0" time="0" condition="StringCompare(Container(706).NumItems,5)">conditional</animation>
