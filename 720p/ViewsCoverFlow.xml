@@ -4,7 +4,7 @@
 		<control type="image">
 			<include>Dimensions_Fullscreen</include>
 			<texture background="true">black_content.png</texture>
-			<include>TransparentEffect</include>
+			<include condition="!IsEmpty(Skin.String(MediaPanelTrans))">TransparentEffect</include>
 			<visible>Control.IsVisible(555)</visible>
 		</control>
 		<control type="group" id="7001">

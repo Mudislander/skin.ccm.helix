@@ -2,7 +2,7 @@
 <window>
 	<defaultcontrol always="true">50</defaultcontrol>
 	<allowoverlay>no</allowoverlay>
-	<views>50,51,500,555,732,550,551,560,501,508,504,503,515,505,511</views>
+	<views>50,51,500,555,732,724,550,551,560,501,508,504,503,515,505,511</views>
 	<onload condition="!Skin.HasSetting(DisableTVTunes)">RunScript(script.tvtunes,backend=True)</onload>
 	<onload condition="!Skin.HasSetting(DisableTVNextAired)">RunScript(script.tv.show.next.aired,backend=True,silent=True)</onload>
 	<onunload>ClearProperty(SideBladeOpen)</onunload>
@@ -21,9 +21,13 @@
 			<!-- view id = 555 -->
 			<include>FullWallView</include>
 			<!-- view id = 732 -->
+			<include>Lowlist</include>
+			<!-- view id = 724 -->
 			<include>PosterWrapView</include>
 			<!-- view id = 501 -->
-			<include>PosterWrapView2_Fanart</include>
+			<!--include>PosterWrapView2_Fanart</include-->
+			<include condition="Skin.HasSetting(WrapMediaViews)">PosterWrapViewFanart</include>
+			<include condition="!Skin.HasSetting(WrapMediaViews)">PosterListViewFanart</include>
 			<!-- view id = 508 -->
 			<include>MediaListView3</include>
 			<!-- view id = 503 -->
@@ -147,7 +151,16 @@
 					<selected>Skin.HasSetting(View508HideInfo)</selected>
 					<visible>Control.IsVisible(508)</visible>
 				</control-->
-				<control type="button" id="99">
+				<!--control type="radiobutton" id="99">
+					<description>Wrap Media Views</description>
+					<textwidth>170</textwidth>
+					<include>ButtonCommonValues</include>
+					<label>31952</label>
+					<onclick>Skin.ToggleSetting(WrapMediaViews)</onclick>
+					<selected>Skin.HasSetting(WrapMediaViews)</selected>
+					<visible>Control.IsVisible(508) | Control.IsVisible(509)</visible>
+				</control-->
+				<control type="button" id="100">
 					<width>250</width>
 					<height>40</height>
 					<font>font13</font>
@@ -164,15 +177,33 @@
 					<!--visible>Control.IsVisible(508) | Control.IsVisible(515) | Control.IsVisible(730)</visible-->
 					<visible>Control.IsVisible(508)</visible>
 				</control>
+				<control type="radiobutton" id="101">
+					<description>TVShow Banners Banners</description>
+					<textwidth>170</textwidth>
+					<include>ButtonCommonValues</include>
+					<label>31090</label>
+					<onclick>Skin.ToggleSetting(Enable515WideBanners)</onclick>
+					<selected>Skin.HasSetting(Enable515WideBanners)</selected>
+					<visible>Control.IsVisible(515) + !Container.Content(Episodes)</visible>
+				</control>
 				<control type="radiobutton" id="104">
 					<description>Show Watched Banners</description>
 					<textwidth>170</textwidth>
 					<include>ButtonCommonValues</include>
 					<label>31323</label>
-					<onclick>Skin.ToggleSetting(HideStatusBanner)</onclick>
-					<selected>!Skin.HasSetting(HideStatusBanner)</selected>
+					<onclick>Skin.ToggleSetting(EnableStatusBanner)</onclick>
+					<selected>Skin.HasSetting(EnableStatusBanner)</selected>
 					<!--visible>Control.IsVisible(501) | Control.IsVisible(508) | Control.IsVisible(732)</visible-->
 					<visible>Control.IsVisible(732)</visible>
+				</control>
+				<control type="radiobutton" id="106">
+					<description>Show Logo Toggle</description>
+					<textwidth>170</textwidth>
+					<include>ButtonCommonValues</include>
+					<label>31324</label>
+					<onclick>Skin.ToggleSetting(View515Hidelogo)</onclick>
+					<selected>Skin.HasSetting(View515Hidelogo)</selected>
+					<visible>Control.IsVisible(515) + !Container.Content(Seasons) + !Container.Content(Episodes)</visible>
 				</control>
 				<control type="label" id="201">
 					<width>250</width>

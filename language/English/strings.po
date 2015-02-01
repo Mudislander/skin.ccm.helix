@@ -341,7 +341,11 @@ msgctxt "#31089"
 msgid "Enable PVR Recording Info"
 msgstr ""
 
-#empty strings from id 31090 to 31099
+msgctxt "#31090"
+msgid "Use Wide Banners"
+msgstr ""
+
+#empty strings from id 31091 to 31099
 #Skin Settings labels
 
 msgctxt "#31100"
@@ -965,18 +969,6 @@ msgid "No Background"
 msgstr ""
 
 
-
-
-
-
-
-
-
-
-
-
-
-
 msgctxt "#31314"
 msgid "Content Scanning Options"
 msgstr ""
@@ -1014,10 +1006,12 @@ msgid "Aired"
 msgstr ""
 
 msgctxt "#31323"
-msgid "Use Banners"
+msgid "Watched Banners"
 msgstr ""
 
-#empty strings from id 31324 to 31324
+msgctxt "#31324"
+msgid "Hide Logo"
+msgstr ""
 
 msgctxt "#31325"
 msgid "Playlist Options"
@@ -1420,7 +1414,11 @@ msgctxt "#31647"
 msgid "Coverflow"
 msgstr ""
 
-#empty strings from id 31648 to 31900
+msgctxt "#31648"
+msgid "Low List"
+msgstr ""
+
+#empty strings from id 31649 to 31900
 
 
 #Weather plugin
@@ -1570,6 +1568,26 @@ msgstr ""
 #msgctxt "#31949"
 #msgid "Set Fanart Path"
 #msgstr ""
+
+msgctxt "#31950"
+msgid "Enable Additional Media Art"
+msgstr ""
+
+msgctxt "#31951"
+msgid "Enable DVD Cases"
+msgstr ""
+
+msgctxt "#31952"
+msgid "Wrap Around Media Lists"
+msgstr ""
+
+msgctxt "#31953"
+msgid "Enable New Media Banners"
+msgstr ""
+
+msgctxt "#31954"
+msgid "Enable Shorter Plot Outline"
+msgstr ""
 
 msgctxt "#31958"
 msgid "DVD Drive"

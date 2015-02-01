@@ -157,7 +157,7 @@
 					<font>font13</font>
 					<align>justify</align>
 					<textcolor>white</textcolor>
-					<label>$INFO[ListItem.Plot]</label>
+					<label>$VAR[VideoDescription]</label>
 					<autoscroll time="2000" delay="3000" repeat="5000">Skin.HasSetting(AutoScroll)</autoscroll>
 				</control>
 			</control>

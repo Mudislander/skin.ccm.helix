@@ -860,7 +860,7 @@
 				<font>font12</font>
 				<urlset>1</urlset>
 				<textcolor>$VAR[MainColorOne]</textcolor>
-				<titlecolor>blue</titlecolor>
+				<titlecolor>$VAR[MainColorOne]</titlecolor>
 				<headlinecolor>white</headlinecolor>
 				<visible>!Skin.HasSetting(HideHomePowerBtn) + [!Player.HasAudio | IsEmpty(MusicPlayer.offset(1).Artist) | Skin.HasSetting(HideNextSongsInfo)]</visible>
 			</control>
@@ -873,7 +873,7 @@
 				<font>font12</font>
 				<urlset>1</urlset>
 				<textcolor>$VAR[MainColorOne]</textcolor>
-				<titlecolor>blue</titlecolor>
+				<titlecolor>$VAR[MainColorOne]</titlecolor>
 				<headlinecolor>white</headlinecolor>
 				<visible>Skin.HasSetting(HideHomePowerBtn) + [!Player.HasAudio | IsEmpty(MusicPlayer.offset(1).Artist) | Skin.HasSetting(HideNextSongsInfo)]</visible>
 			</control>

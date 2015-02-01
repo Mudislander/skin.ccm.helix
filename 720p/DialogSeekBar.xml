@@ -29,7 +29,7 @@
 				<align>center</align>
 				<aligny>center</aligny>
 				<font>font12_title</font>
-				<textcolor>blue</textcolor>
+				<textcolor>$VAR[MainColorOne]</textcolor>
 				<label>$LOCALIZE[21396]</label>
 				<visible>player.chaptercount</visible>
 			</control>

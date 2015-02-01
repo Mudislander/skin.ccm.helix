@@ -649,6 +649,18 @@
 						<width>750</width>
 						<height>40</height>
 						<font>font13</font>
+						<label>31952</label>
+						<textcolor>grey2</textcolor>
+						<focusedcolor>white</focusedcolor>
+						<texturefocus>MenuItemFO.png</texturefocus>
+						<texturenofocus>MenuItemNF.png</texturenofocus>
+						<onclick>Skin.ToggleSetting(WrapMediaViews)</onclick>
+						<selected>Skin.HasSetting(WrapMediaViews)</selected>
+					</control>
+					<control type="radiobutton" id="143">
+						<width>750</width>
+						<height>40</height>
+						<font>font13</font>
 						<label>31070</label>
 						<textcolor>grey2</textcolor>
 						<focusedcolor>white</focusedcolor>
@@ -661,6 +673,30 @@
 						<width>750</width>
 						<height>40</height>
 						<font>font13</font>
+						<label>31950</label>
+						<textcolor>grey2</textcolor>
+						<focusedcolor>white</focusedcolor>
+						<texturefocus>MenuItemFO.png</texturefocus>
+						<texturenofocus>MenuItemNF.png</texturenofocus>
+						<onclick>Skin.ToggleSetting(AdditionalMediaFanart)</onclick>
+						<selected>Skin.HasSetting(AdditionalMediaFanart)</selected>
+					</control>
+					<control type="radiobutton" id="145">
+						<width>750</width>
+						<height>40</height>
+						<font>font13</font>
+						<label>$LOCALIZE[31951]</label>
+						<textcolor>grey2</textcolor>
+						<focusedcolor>white</focusedcolor>
+						<texturefocus>MenuItemFO.png</texturefocus>
+						<texturenofocus>MenuItemNF.png</texturenofocus>
+						<onclick>Skin.ToggleSetting(EnableDVDCases)</onclick>
+						<selected>Skin.HasSetting(EnableDVDCases)</selected>
+					</control>
+					<control type="radiobutton" id="146">
+						<width>750</width>
+						<height>40</height>
+						<font>font13</font>
 						<label>$LOCALIZE[31012]</label>
 						<textcolor>grey2</textcolor>
 						<focusedcolor>white</focusedcolor>
@@ -669,7 +705,20 @@
 						<onclick>Skin.ToggleSetting(UseDiscTypeCase)</onclick>
 						<selected>Skin.HasSetting(UseDiscTypeCase)</selected>
 					</control>
-					<control type="button" id="145">
+					<control type="radiobutton" id="147">
+						<width>750</width>
+						<height>40</height>
+						<font>font13</font>
+						<label>$LOCALIZE[31953]</label>
+						<textcolor>grey2</textcolor>
+						<focusedcolor>white</focusedcolor>
+						<texturefocus>MenuItemFO.png</texturefocus>
+						<texturenofocus>MenuItemNF.png</texturenofocus>
+						<onclick>Skin.ToggleSetting(HideNewMediaStat)</onclick>
+						<selected>!Skin.HasSetting(HideNewMediaStat)</selected>
+						<enable>!stringcompare(Skin.String(WatchStatusType),Hidden)</enable>
+					</control>
+					<control type="button" id="148">
 						<width>750</width>
 						<height>40</height>
 						<font>font13</font>
@@ -687,7 +736,19 @@
 						<onclick condition="Skin.String(MediaPanelTrans,70)">Skin.SetString(MediaPanelTrans,85)</onclick>
 						<onclick condition="Skin.String(MediaPanelTrans,85)">Skin.Reset(MediaPanelTrans)</onclick>
 					</control>
-					<control type="radiobutton" id="146">
+					<control type="radiobutton" id="149">
+						<width>750</width>
+						<height>40</height>
+						<font>font13</font>
+						<label>31954</label>
+						<textcolor>grey2</textcolor>
+						<focusedcolor>white</focusedcolor>
+						<texturefocus>MenuItemFO.png</texturefocus>
+						<texturenofocus>MenuItemNF.png</texturenofocus>
+						<onclick>Skin.ToggleSetting(MediaShortDescription)</onclick>
+						<selected>Skin.HasSetting(MediaShortDescription)</selected>
+					</control>
+					<control type="radiobutton" id="150">
 						<width>750</width>
 						<height>40</height>
 						<font>font13</font>
@@ -699,7 +760,7 @@
 						<onclick>Skin.ToggleSetting(AutoScroll)</onclick>
 						<selected>Skin.HasSetting(AutoScroll)</selected>
 					</control>
-					<control type="radiobutton" id="147">
+					<control type="radiobutton" id="151">
 						<width>750</width>
 						<height>40</height>
 						<font>font13</font>
@@ -711,7 +772,7 @@
 						<onclick>Skin.ToggleSetting(Show_SlideShow_Paused)</onclick>
 						<selected>!Skin.HasSetting(Show_SlideShow_Paused)</selected>
 					</control>
-					<control type="radiobutton" id="148">
+					<control type="radiobutton" id="152">
 						<width>750</width>
 						<height>40</height>
 						<font>font13</font>
@@ -723,7 +784,7 @@
 						<onclick>Skin.ToggleSetting(WindowedTrailer)</onclick>
 						<selected>Skin.HasSetting(WindowedTrailer)</selected>
 					</control>
-					<control type="radiobutton" id="149">
+					<control type="radiobutton" id="153">
 						<width>750</width>
 						<height>40</height>
 						<font>font13</font>
@@ -735,7 +796,7 @@
 						<onclick>Skin.ToggleSetting(HideFilenameFlagging)</onclick>
 						<selected>Skin.HasSetting(HideFilenameFlagging)</selected>
 					</control>
-					<control type="label" id="150">
+					<control type="label" id="154">
 						<width>750</width>
 						<height>45</height>
 						<font>font13_title</font>
@@ -745,7 +806,7 @@
 						<align>left</align>
 						<aligny>center</aligny>
 					</control>
-					<control type="radiobutton" id="151">
+					<control type="radiobutton" id="155">
 						<description>Auto Music Viz</description>
 						<width>750</width>
 						<height>40</height>
@@ -758,7 +819,7 @@
 						<onclick>Skin.ToggleSetting(HideAutoMusicViz)</onclick>
 						<selected>!Skin.HasSetting(HideAutoMusicViz)</selected>
 					</control>
-					<control type="button" id="153">
+					<control type="button" id="156">
 						<width>750</width>
 						<height>40</height>
 						<font>font13</font>
@@ -772,7 +833,7 @@
 						<onclick condition="Skin.String(MusicOSDInfo,permanent)">Skin.SetString(MusicOSDInfo,never)</onclick>
 						<onclick condition="Skin.String(MusicOSDInfo,never)">Skin.Reset(MusicOSDInfo)</onclick>
 					</control>
-					<control type="radiobutton" id="154">
+					<control type="radiobutton" id="157">
 						<description>Enable CD Art</description>
 						<width>750</width>
 						<height>40</height>
@@ -786,7 +847,7 @@
 						<selected>Skin.HasSetting(EnableCDArtWork)</selected>
 						<enable>!Skin.String(MusicOSDInfo,never)</enable>
 					</control>
-					<control type="radiobutton" id="155">
+					<control type="radiobutton" id="158">
 						<description>Diffuse Visualisation</description>
 						<width>750</width>
 						<height>40</height>

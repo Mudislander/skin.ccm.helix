@@ -9,13 +9,13 @@
 			<visible>![Window.IsActive(VideoOSD) | Window.IsVisible(osdvideosettings) | Window.IsVisible(osdaudiosettings) | Window.IsVisible(videobookmarks) | Window.IsVisible(PVROSDChannels) | Window.IsVisible(PVROSDGuide)]</visible>
 			<visible>!Player.Paused  + !Player.ShowInfo</visible>
 			<animation effect="fade" time="200">VisibleChange</animation>
-			<control type="image" id="1">
+			<!--control type="image" id="1">
 				<left>-100</left>
 				<top>230r</top>
 				<width>1480</width>
 				<height>230</height>
 				<texture>NowPlayingBack.png</texture>
-			</control>
+			</control-->
 			<control type="image" id="1">
 				<left>0</left>
 				<top>230r</top>
@@ -42,7 +42,7 @@
 				<include>VisibleFadeEffect</include>
 				<include>Dimensions_Fullscreen</include>
 				<aspectratio>stretch</aspectratio>
-				<include>TransparentEffect</include>
+				<include condition="!IsEmpty(Skin.String(MediaPanelTrans))">TransparentEffect</include>
 				<texture>black-back.png</texture>
 				<visible>Player.Paused + !Player.Caching</visible>
 			</control>
@@ -51,7 +51,7 @@
 				<top>-60</top>
 				<width>1480</width>
 				<height>160</height>
-				<include>TransparentEffect</include>
+				<include condition="!IsEmpty(Skin.String(MediaPanelTrans))">TransparentEffect</include>
 				<texture flipy="true" border="1">HomeNowPlayingBack.png</texture>
 				<visible>!Skin.HasSetting(HideSystemTime)</visible>
 				<visible>Player.ShowInfo | !Skin.HasSetting(HideSeekBarOSD) | Window.IsActive(VideoOSD)</visible>

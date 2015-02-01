@@ -275,7 +275,7 @@
 					<align>justify</align>
 					<textcolor>grey</textcolor>
 					<autoscroll delay="10000" time="3000" repeat="6000">true</autoscroll>
-					<label>$INFO[ListItem.Plot]</label>
+					<label>$VAR[VideoDescription]</label>
 				</control>
 			</control>
 		</control>
@@ -580,7 +580,7 @@
 							<textcolor>grey2</textcolor>
 							<shadowcolor>black</shadowcolor>
 							<pagecontrol>-</pagecontrol>
-							<label>$INFO[ListItem.Plot]</label>
+							<label>$VAR[VideoDescription]</label>
 						</control>
 						<control type="image">
 							<left>970</left>
@@ -958,7 +958,7 @@
 							<textcolor>grey2</textcolor>
 							<shadowcolor>black</shadowcolor>
 							<pagecontrol>-</pagecontrol>
-							<label>$INFO[ListItem.Plot]</label>
+							<label>$VAR[VideoDescription]</label>
 						</control>
 						<control type="image">
 							<left>970</left>
@@ -1283,7 +1283,7 @@
 							<textcolor>grey2</textcolor>
 							<shadowcolor>black</shadowcolor>
 							<pagecontrol>-</pagecontrol>
-							<label>$INFO[ListItem.Plot]</label>
+							<label>$VAR[VideoDescription]</label>
 						</control>
 						<control type="image">
 							<left>970</left>

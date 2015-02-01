@@ -736,6 +736,13 @@
 		<value condition="!IsEmpty(VideoPlayer.Plot )">$INFO[VideoPlayer.Plot]</value>
 		<value>$LOCALIZE[161]</value>
 	</variable>
+	<variable name="VideoDescription" type="text">
+		<value condition="Container.Content(Seasons)">$INFO[Container.ShowPlot]</value>
+		<value condition="Skin.HasSetting(MediaShortDescription) + !IsEmpty(ListItem.PlotOutline)">$INFO[ListItem.PlotOutline]</value>
+		<value condition="Skin.HasSetting(MediaShortDescription) + !IsEmpty(ListItem.Tagline)">$INFO[ListItem.Tagline]</value>
+		<value condition="!IsEmpty(ListItem.Plot)">$INFO[ListItem.Plot]</value>
+		<value>$LOCALIZE[161]</value>
+	</variable>
 	<variable name="StreamingVideoIcon">
 		<value condition="StringCompare(VideoPlayer.Title,player.swf playpath=105Test1 live=true)">special://skin/extras/Streaming/Radio105NetworkTV.png</value>
 		<value condition="StringCompare(VideoPlayer.Title,player.swf playpath=rmc1 live=true)">special://skin/extras/Streaming/RadioMontecarloTV.png</value>
@@ -2528,7 +2535,6 @@
 	</variable>
 	<variable name="StatusBanner">
 		<!-- Watched -->
-		<!--<value>$INFO[System.Language,Watched/,.png]</value> NOT WORK ?? -->
 		<value condition="StringCompare(ListItem.Overlay,OverlayWatched.png) + !ListItem.IsResumable + StringCompare(System.Language,English)">Watched/English</value>
 		<value condition="StringCompare(ListItem.Overlay,OverlayWatched.png) + !ListItem.IsResumable + StringCompare(System.Language,Afrikaans)">Watched/Afrikaans</value>
 		<value condition="StringCompare(ListItem.Overlay,OverlayWatched.png) + !ListItem.IsResumable + StringCompare(System.Language,Albanian)">Watched/Albanian</value>
@@ -2538,7 +2544,7 @@
 		<value condition="StringCompare(ListItem.Overlay,OverlayWatched.png) + !ListItem.IsResumable + StringCompare(System.Language,Bosnian)">Watched/Bosnian</value>
 		<value condition="StringCompare(ListItem.Overlay,OverlayWatched.png) + !ListItem.IsResumable + StringCompare(System.Language,Bulgarian)">Watched/Bulgarian</value>
 		<value condition="StringCompare(ListItem.Overlay,OverlayWatched.png) + !ListItem.IsResumable + StringCompare(System.Language,Catalan)">Watched/Catalan</value>
-		<value condition="StringCompare(ListItem.Overlay,OverlayWatched.png) + !ListItem.IsResumable + SubString(System.Language,Chinese (Simple))">Watched/Chinese (Simple)</value>
+		<value condition="StringCompare(ListItem.Overlay,OverlayWatched.png) + !ListItem.IsResumable + SubString(System.Language,Chinese)">Watched/ChineseSimple</value>
 		<value condition="StringCompare(ListItem.Overlay,OverlayWatched.png) + !ListItem.IsResumable + StringCompare(System.Language,Croatian)">Watched/Croatian</value>
 		<value condition="StringCompare(ListItem.Overlay,OverlayWatched.png) + !ListItem.IsResumable + StringCompare(System.Language,Czech)">Watched/Czech</value>
 		<value condition="StringCompare(ListItem.Overlay,OverlayWatched.png) + !ListItem.IsResumable + StringCompare(System.Language,Danish)">Watched/Danish</value>
@@ -2583,6 +2589,26 @@
 		<value condition="StringCompare(ListItem.Overlay,OverlayWatched.png) + !ListItem.IsResumable">Watched/English</value>
 		<!-- New -->
 		<value condition="!StringCompare(ListItem.Overlay,OverlayWatched.png) + !Skin.HasSetting(HideNewMediaStat) + !ListItem.IsResumable + StringCompare(System.Language,English)">UnWatched/English</value>
+		<value condition="!StringCompare(ListItem.Overlay,OverlayWatched.png) + !Skin.HasSetting(HideNewMediaStat) + !ListItem.IsResumable + SubString(System.Language,Chinese)">UnWatched/ChineseSimple</value>
+		<value condition="!StringCompare(ListItem.Overlay,OverlayWatched.png) + !Skin.HasSetting(HideNewMediaStat) + !ListItem.IsResumable + StringCompare(System.Language,Danish)">UnWatched/Danish</value>
+		<value condition="!StringCompare(ListItem.Overlay,OverlayWatched.png) + !Skin.HasSetting(HideNewMediaStat) + !ListItem.IsResumable + StringCompare(System.Language,Dutch)">UnWatched/Dutch</value>
+		<value condition="!StringCompare(ListItem.Overlay,OverlayWatched.png) + !Skin.HasSetting(HideNewMediaStat) + !ListItem.IsResumable + StringCompare(System.Language,French)">UnWatched/French</value>
+		<value condition="!StringCompare(ListItem.Overlay,OverlayWatched.png) + !Skin.HasSetting(HideNewMediaStat) + !ListItem.IsResumable + SubString(System.Language,French) + SubString(System.Language,Canada)">UnWatched/FrenchCanada</value>
+		<value condition="!StringCompare(ListItem.Overlay,OverlayWatched.png) + !Skin.HasSetting(HideNewMediaStat) + !ListItem.IsResumable + StringCompare(System.Language,Galician)">UnWatched/Galician</value>
+		<value condition="!StringCompare(ListItem.Overlay,OverlayWatched.png) + !Skin.HasSetting(HideNewMediaStat) + !ListItem.IsResumable + StringCompare(System.Language,German)">UnWatched/German</value>
+		<value condition="!StringCompare(ListItem.Overlay,OverlayWatched.png) + !Skin.HasSetting(HideNewMediaStat) + !ListItem.IsResumable + StringCompare(System.Language,Greek)">UnWatched/Greek</value>
+		<value condition="!StringCompare(ListItem.Overlay,OverlayWatched.png) + !Skin.HasSetting(HideNewMediaStat) + !ListItem.IsResumable + StringCompare(System.Language,Hebrew)">UnWatched/Hebrew</value>
+		<value condition="!StringCompare(ListItem.Overlay,OverlayWatched.png) + !Skin.HasSetting(HideNewMediaStat) + !ListItem.IsResumable + StringCompare(System.Language,Hungarian)">UnWatched/Hungarian</value>
+		<value condition="!StringCompare(ListItem.Overlay,OverlayWatched.png) + !Skin.HasSetting(HideNewMediaStat) + !ListItem.IsResumable + StringCompare(System.Language,Italian)">UnWatched/Italian</value>
+		<value condition="!StringCompare(ListItem.Overlay,OverlayWatched.png) + !Skin.HasSetting(HideNewMediaStat) + !ListItem.IsResumable + StringCompare(System.Language,Korean)">UnWatched/Korean</value>
+		<value condition="!StringCompare(ListItem.Overlay,OverlayWatched.png) + !Skin.HasSetting(HideNewMediaStat) + !ListItem.IsResumable + StringCompare(System.Language,Lithuanian)">UnWatched/Lithuanian</value>
+		<value condition="!StringCompare(ListItem.Overlay,OverlayWatched.png) + !Skin.HasSetting(HideNewMediaStat) + !ListItem.IsResumable + StringCompare(System.Language,Malay)">UnWatched/Malay</value>
+		<value condition="!StringCompare(ListItem.Overlay,OverlayWatched.png) + !Skin.HasSetting(HideNewMediaStat) + !ListItem.IsResumable + StringCompare(System.Language,Polish)">UnWatched/Polish</value>
+		<value condition="!StringCompare(ListItem.Overlay,OverlayWatched.png) + !Skin.HasSetting(HideNewMediaStat) + !ListItem.IsResumable + StringCompare(System.Language,Portuguese)">UnWatched/Portuguese</value>
+		<value condition="!StringCompare(ListItem.Overlay,OverlayWatched.png) + !Skin.HasSetting(HideNewMediaStat) + !ListItem.IsResumable + SubString(System.Language,Portuguese) + SubString(System.Language,Brazil)">UnWatched/PortugueseBrazil</value>
+		<value condition="!StringCompare(ListItem.Overlay,OverlayWatched.png) + !Skin.HasSetting(HideNewMediaStat) + !ListItem.IsResumable + StringCompare(System.Language,Russian)">UnWatched/Russian</value>
+		<value condition="!StringCompare(ListItem.Overlay,OverlayWatched.png) + !Skin.HasSetting(HideNewMediaStat) + !ListItem.IsResumable + StringCompare(System.Language,Spanish)">UnWatched/Spanish</value>
+		<value condition="!StringCompare(ListItem.Overlay,OverlayWatched.png) + !Skin.HasSetting(HideNewMediaStat) + !ListItem.IsResumable + StringCompare(System.Language,Swedish)">UnWatched/Swedish</value>
 		<value condition="!StringCompare(ListItem.Overlay,OverlayWatched.png) + !Skin.HasSetting(HideNewMediaStat) + !ListItem.IsResumable">UnWatched/English</value>
 		<!-- In Progress -->
 		<value condition="ListItem.IsResumable + StringCompare(System.Language,English)">InProgress/English</value>
@@ -2630,5 +2656,9 @@
 		<value condition="!IsEmpty(MusicPlayer.offset(3).Artist) + IsEmpty(MusicPlayer.offset(4).Artist) + IsEmpty(MusicPlayer.offset(5).Artist) + Player.HasAudio">[COLOR=$VAR[MainColorOne]][B]$LOCALIZE[31261][/B][/COLOR][COLOR=$VAR[MainColorOne]][B]   1$LOCALIZE[31001][/B][/COLOR]  $INFO[MusicPlayer.offset(1).Artist] - $INFO[MusicPlayer.offset(1).Title]    [COLOR=$VAR[MainColorOne]][B]2$LOCALIZE[31001][/B][/COLOR]  $INFO[MusicPlayer.offset(2).Artist] - $INFO[MusicPlayer.offset(2).Title]     [COLOR=$VAR[MainColorOne]][B]3$LOCALIZE[31001][/B][/COLOR]  $INFO[MusicPlayer.offset(3).Artist] - $INFO[MusicPlayer.offset(3).Title]</value>
 		<value condition="!IsEmpty(MusicPlayer.offset(2).Artist) + IsEmpty(MusicPlayer.offset(3).Artist) + IsEmpty(MusicPlayer.offset(4).Artist) + IsEmpty(MusicPlayer.offset(5).Artist) + Player.HasAudio">[COLOR=$VAR[MainColorOne]][B]$LOCALIZE[31261][/B][/COLOR][COLOR=$VAR[MainColorOne]][B]   1$LOCALIZE[31001][/B][/COLOR]  $INFO[MusicPlayer.offset(1).Artist] - $INFO[MusicPlayer.offset(1).Title]    [COLOR=$VAR[MainColorOne]][B]2$LOCALIZE[31001][/B][/COLOR]  $INFO[MusicPlayer.offset(2).Artist] - $INFO[MusicPlayer.offset(2).Title]</value>
 		<value condition="!IsEmpty(MusicPlayer.offset(1).Artist) + IsEmpty(MusicPlayer.offset(2).Artist) + IsEmpty(MusicPlayer.offset(3).Artist) + IsEmpty(MusicPlayer.offset(4).Artist) + IsEmpty(MusicPlayer.offset(5).Artist) + Player.HasAudio">[COLOR=$VAR[MainColorOne]][B]$LOCALIZE[31261][/B][/COLOR][COLOR=$VAR[MainColorOne]][B]   1$LOCALIZE[31001][/B][/COLOR]  $INFO[MusicPlayer.offset(1).Artist] - $INFO[MusicPlayer.offset(1).Title]</value>
+	</variable>
+	<variable name="MediaRuntime">
+		<value condition="[Container.Content(Movies) | Container.Content(Episodes) | Container.Content(MusicVideos)] + !substring(ListItem.Duration,min)">$INFO[ListItem.Duration,, $LOCALIZE[12391]]</value>
+		<value condition="[Container.Content(Movies) | Container.Content(Episodes) | Container.Content(MusicVideos)] + substring(ListItem.Duration,min)">$INFO[ListItem.Duration]</value>
 	</variable>
 </includes>
