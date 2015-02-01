@@ -95,6 +95,8 @@
 				<visible>!Window.IsVisible(Home) + !StringCompare(Window(Home).Property(MenuItemSelected),Weather) + !Container.Content(Seasons) + !Container.Content(Episodes)</visible>
 			</control>
 		</control>
+		
+		
 		<control type="multiimage">
 			<include>Dimensions_Fullscreen</include>
 			<aspectratio>scale</aspectratio>
@@ -103,8 +105,10 @@
 			<randomize>true</randomize>
 			<fadetime>1000</fadetime>
 			<!--visible>[StringCompare(ListItem.Label,..) | IsEmpty(ListItem.Property(Fanart_Image))] + Container.Content(Episodes) + IsEmpty(Fanart.Image)</visible-->
-			<visible>!Window.IsVisible(Home) + !Player.HasVideo + Skin.HasSetting(HideBackGroundFanart)</visible>
+			<visible>!Skin.HasSetting(SingleGlobalBackground) + !Skin.HasSetting(HolidayEffects) + !Window.IsVisible(Home) + !Player.HasVideo + Skin.HasSetting(HideBackGroundFanart)</visible>
 		</control>
+		
+		
 		<control type="group">
 			<visible>!Window.IsVisible(Home) + !Player.HasVideo + !Skin.HasSetting(HideBackGroundFanart)</visible>
 			<control type="multiimage">
