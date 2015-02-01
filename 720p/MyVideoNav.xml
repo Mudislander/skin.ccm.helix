@@ -26,10 +26,8 @@
 			<include>PosterWrapView</include>
 			<!-- view id = 501 -->
 			<!--include>PosterWrapView2_Fanart</include-->
-			
 			<include condition="Skin.HasSetting(WrapMediaViews)">PosterWrapViewFanart</include>
 			<include condition="!Skin.HasSetting(WrapMediaViews)">PosterListViewFanart</include>
-			
 			<!-- view id = 508 -->
 			<include>MediaListView3</include>
 			<!-- view id = 503 -->
