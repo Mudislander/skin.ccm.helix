@@ -80,7 +80,7 @@
 				<animation effect="slide" end="0,60" time="0" tween="back" easing="out" condition="Skin.String(MusicOSDInfo,never) +  !Skin.HasSetting(HidePopUpSeekBar)" reversible="true">Conditional</animation>
 			</control>
 			<control type="group">
-				<visible>!Skin.String(MusicOSDInfo,never) + Skin.HasSetting(EnableCDArtWork)</visible>
+				<visible>!Skin.String(MusicOSDInfo,never) + Skin.HasSetting(EnableCDArtWork) + !Player.IsInternetStream</visible>
 				<left>10</left>
 				<top>265r</top>
 				<animation effect="slide" start="0,0" end="0,20" time="0" condition="!Skin.HasSetting(HidePopUpSeekBar) + Skin.HasSetting(HideNextSongsInfo)">Conditional</animation>
@@ -123,7 +123,7 @@
 				<aspectratio aligny="bottom">keep</aspectratio>
 				<bordertexture border="8">ThumbShadow.png</bordertexture>
 				<bordersize>8</bordersize>
-				<visible>!Skin.String(MusicOSDInfo,never) + !Skin.HasSetting(EnableCDArtWork)</visible>
+				<visible>!Skin.String(MusicOSDInfo,never) + [!Skin.HasSetting(EnableCDArtWork) | Player.IsInternetStream]</visible>
 			</control>
 			<control type="group">
 				<visible>!Skin.String(MusicOSDInfo,never)</visible>
