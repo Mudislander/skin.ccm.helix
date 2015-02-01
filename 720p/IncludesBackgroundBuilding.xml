@@ -211,7 +211,7 @@
 		</control>
 		<control type="group">
 			<visible>Window.IsVisible(Home) + !Skin.HasSetting(HideHomeNowPlaying) + Player.HasAudio + !SubString(Window(videolibrary).Property(TvTunesIsAlive),TRUE) + !Player.Paused + !Window.IsVisible(TVChannels) + !Window.IsVisible(RadioChannels)</visible>
-			<include>AlbumArtMusicVizWall</include>
+			<!--include>AlbumArtMusicVizWall</include>
 			<control type="multiimage">
 				<include>Dimensions_Fullscreen</include>
 				<timeperimage>10000</timeperimage>
@@ -249,11 +249,30 @@
 				<include condition="!Skin.HasSetting(NoAnimateVizFanart)">KBurnsAnimateFanart</include>
 				<imagepath background="true">$INFO[Window(Visualisation).Property(ArtistSlideshow)]</imagepath>
 				<visible>!Skin.HasSetting(HideHomeNowPlaying) + !Skin.HasSetting(DisableSlideShowArt) + !IsEmpty(Window(Visualisation).Property(ArtistSlideshow.ArtworkReady))</visible>
+			</control-->
+			<control type="group">
+				<visible>!Skin.HasSetting(HideHomeNowPlaying)</visible>
+				<include>ArtistExtraFanArt</include>
 			</control>
+			<control type="group">
+				<visible>Skin.HasSetting(NoDiffuseVizFanart) | IsEmpty(Visualisation.Name) | stringcompare(Visualisation.Name,Waveform) | stringcompare(Visualisation.Name,DirectX Spectrum) | stringcompare(Visualisation.Name,OpenGL Spectrum)</visible>
+				<include>AlbumArtMusicVizWall</include>
+			</control>
+			<include>MusicArtUnderVisualisation</include>
+			<control type="visualisation" id="2">
+				<description>visualisation</description>
+				<include>Dimensions_Fullscreen</include>
+				<visible>Skin.HasSetting(VizOnlyOnHome)</visible>
+			</control>
+			<control type="group">
+				<visible>!Skin.HasSetting(NoDiffuseVizFanart) + !IsEmpty(Visualisation.Name) + !stringcompare(Visualisation.Name,Waveform) + !stringcompare(Visualisation.Name,DirectX Spectrum) + !stringcompare(Visualisation.Name,OpenGL Spectrum)</visible>
+				<include>AlbumArtMusicVizWall</include>
+			</control>
+			<include>MusicArtOverVisualisation</include>
 		</control>
 		<control type="visualisation">
 			<include>Dimensions_Fullscreen</include>
-			<visible>Window.IsVisible(Home) + Skin.HasSetting(VizOnlyOnHome) + Player.HasAudio + !SubString(Window(videolibrary).Property(TvTunesIsAlive),TRUE) + !Player.Paused + !Window.IsVisible(TVChannels) + !Window.IsVisible(RadioChannels)</visible>
+			<visible>Window.IsVisible(Home) + Skin.HasSetting(HideHomeNowPlaying) + Skin.HasSetting(VizOnlyOnHome) + Player.HasAudio + !SubString(Window(videolibrary).Property(TvTunesIsAlive),TRUE) + !Player.Paused + !Window.IsVisible(TVChannels) + !Window.IsVisible(RadioChannels)</visible>
 		</control>
 		<control type="group">
 			<visible>!IsEmpty(Window(Home).Property(TVGuide.BackgroundFanart))</visible>
