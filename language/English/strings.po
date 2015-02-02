@@ -1247,7 +1247,10 @@ msgctxt "#31398"
 msgid "Configure script.tv.show.next.aired"
 msgstr ""
 
-#empty strings from id 31399 to 31399
+msgctxt "#31399"
+msgid "Roboto"
+msgstr ""
+
 #Description Labels
 
 msgctxt "#31400"
