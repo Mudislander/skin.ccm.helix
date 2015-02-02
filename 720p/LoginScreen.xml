@@ -165,12 +165,12 @@
 			</control>
 			<control type="image">
 				<description>LOGO</description>
-				<left>265</left>
-				<top>580</top>
-				<width>220</width>
-				<height>80</height>
+				<left>290</left>
+				<top>590</top>
+				<width>150</width>
+				<height>55</height>
 				<aspectratio>keep</aspectratio>
-				<texture>Confluence_Logo.png</texture>
+				<texture>ccm_logo.png</texture>
 			</control>
 			<control type="group">
 				<left>940</left>

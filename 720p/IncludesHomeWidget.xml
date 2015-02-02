@@ -2171,12 +2171,12 @@
 					<include>RecentAlbumContent</include>
 				</control>
 				<control type="button">
-					<include>SmallWidgetPosterLeft</include>
+					<include>SmallWidgetAlbumLeft</include>
 					<onclick>Control.Move(8014,-1)</onclick>
 					<visible>Container(8014).HasPrevious</visible>
 				</control>
 				<control type="button">
-					<include>SmallWidgetPosterRight</include>
+					<include>SmallWidgetAlbumRight</include>
 					<onclick>Control.Move(8014,1)</onclick>
 					<visible>Container(8014).HasNext</visible>
 					<include>VisibleFadeEffect</include>
@@ -2337,12 +2337,12 @@
 					<include>RecentAlbumContent</include>
 				</control>
 				<control type="button">
-					<include>WidgetArrowAlbumLeft</include>
+					<include>LargeWidgetAlbumLeft</include>
 					<onclick>Control.Move(8015,-1)</onclick>
 					<visible>Control.HasFocus(8015) + Container(8015).HasPrevious</visible>
 				</control>
 				<control type="button">
-					<include>WidgetArrowAlbumRight</include>
+					<include>LargeWidgetAlbumRight</include>
 					<onclick>Control.Move(8015,1)</onclick>
 					<visible>Control.HasFocus(8015) + Container(8015).HasNext</visible>
 				</control>
@@ -2506,12 +2506,12 @@
 					<include>RandomAlbumContent</include>
 				</control>
 				<control type="button">
-					<include>SmallWidgetPosterLeft</include>
+					<include>SmallWidgetAlbumLeft</include>
 					<onclick>Control.Move(8016,-1)</onclick>
 					<visible>Container(8016).HasPrevious</visible>
 				</control>
 				<control type="button">
-					<include>SmallWidgetPosterRight</include>
+					<include>SmallWidgetAlbumRight</include>
 					<onclick>Control.Move(8016,1)</onclick>
 					<visible>Container(8016).HasNext</visible>
 					<include>VisibleFadeEffect</include>
@@ -2672,12 +2672,12 @@
 					<include>RandomAlbumContent</include>
 				</control>
 				<control type="button">
-					<include>WidgetArrowAlbumLeft</include>
+					<include>LargeWidgetAlbumLeft</include>
 					<onclick>Control.Move(8017,-1)</onclick>
 					<visible>Control.HasFocus(8017) + Container(8017).HasPrevious</visible>
 				</control>
 				<control type="button">
-					<include>WidgetArrowAlbumRight</include>
+					<include>LargeWidgetAlbumRight</include>
 					<onclick>Control.Move(8017,1)</onclick>
 					<visible>Control.HasFocus(8017) + Container(8017).HasNext</visible>
 				</control>
@@ -2841,12 +2841,12 @@
 					<include>SuggestedAlbumContent</include>
 				</control>
 				<control type="button">
-					<include>SmallWidgetPosterLeft</include>
+					<include>SmallWidgetAlbumLeft</include>
 					<onclick>Control.Move(8018,-1)</onclick>
 					<visible>Container(8018).HasPrevious</visible>
 				</control>
 				<control type="button">
-					<include>SmallWidgetPosterRight</include>
+					<include>SmallWidgetAlbumRight</include>
 					<onclick>Control.Move(8018,1)</onclick>
 					<visible>Container(8018).HasNext</visible>
 					<include>VisibleFadeEffect</include>
@@ -3007,12 +3007,12 @@
 					<include>SuggestedAlbumContent</include>
 				</control>
 				<control type="button">
-					<include>WidgetArrowAlbumLeft</include>
+					<include>LargeWidgetAlbumLeft</include>
 					<onclick>Control.Move(8019,-1)</onclick>
 					<visible>Control.HasFocus(8019) + Container(8019).HasPrevious</visible>
 				</control>
 				<control type="button">
-					<include>WidgetArrowAlbumRight</include>
+					<include>LargeWidgetAlbumRight</include>
 					<onclick>Control.Move(8019,1)</onclick>
 					<visible>Control.HasFocus(8019) + Container(8019).HasNext</visible>
 				</control>
@@ -6008,7 +6008,25 @@
 		<texturenofocus>arrow-big-right.png</texturenofocus>
 		<include>VisibleFadeEffect</include>
 	</include>
-	<include name="WidgetArrowAlbumLeft">
+	<include name="SmallWidgetAlbumLeft">
+		<left>-40</left>
+		<top>90</top>
+		<width>30</width>
+		<height>40</height>
+		<texturefocus>arrow-big-left.png</texturefocus>
+		<texturenofocus>arrow-big-left.png</texturenofocus>
+		<include>VisibleFadeEffect</include>
+	</include>
+	<include name="SmallWidgetAlbumRight">
+		<left>810</left>
+		<top>90</top>
+		<width>30</width>
+		<height>40</height>
+		<texturefocus>arrow-big-right.png</texturefocus>
+		<texturenofocus>arrow-big-right.png</texturenofocus>
+		<include>VisibleFadeEffect</include>
+	</include>
+	<include name="LargeWidgetAlbumLeft">
 		<left>2</left>
 		<top>105</top>
 		<width>30</width>
@@ -6017,7 +6035,7 @@
 		<texturenofocus>arrow-big-left.png</texturenofocus>
 		<include>VisibleFadeEffect</include>
 	</include>
-	<include name="WidgetArrowAlbumRight">
+	<include name="LargeWidgetAlbumRight">
 		<left>1248</left>
 		<top>105</top>
 		<width>30</width>

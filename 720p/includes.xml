@@ -159,14 +159,10 @@
 			<description>LOGO</description>
 			<left>40</left>
 			<top>10</top>
-			<!--left>15</left>
-			<top>0</top-->
-			<!--width>220</width>
-			<height>80</height-->
-			<width>151</width>
+			<width>150</width>
 			<height>55</height>
 			<aspectratio>keep</aspectratio>
-			<texture>Confluence_Logo.png</texture>
+			<texture>ccm_logo.png</texture>
 		</control>
 	</include>
 	<include name="MainWindowMouseButtons">

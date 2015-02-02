@@ -4,9 +4,9 @@
 		<control type="group" id="9002">
 			<onup condition="!Skin.HasSetting(LowerMainMenuBar)">9001</onup>
 			<onup condition="Skin.HasSetting(LowerMainMenuBar)">9003</onup>
-			<ondown>21</ondown>
 			<ondown condition="Skin.HasSetting(LowerMainMenuBar) + !Skin.HasSetting(DisableGlobalSearch)">608</ondown>
 			<ondown condition="Skin.HasSetting(LowerMainMenuBar) + Skin.HasSetting(DisableGlobalSearch)">603</ondown>
+			<ondown condition="!Skin.HasSetting(LowerMainMenuBar)">21</ondown>
 			<control type="list" id="700">
 				<animation effect="slide" start="0,0" end="82,0" time="0" condition="StringCompare(Container(700).NumItems,6)">conditional</animation>
 				<animation effect="slide" start="0,0" end="164,0" time="0" condition="StringCompare(Container(700).NumItems,5)">conditional</animation>
@@ -20,7 +20,7 @@
 				<onright>700</onright>
 				<onup condition="!Skin.HasSetting(LowerMainMenuBar)">9001</onup>
 				<onup condition="Skin.HasSetting(LowerMainMenuBar)">9003</onup>
-				<ondown>21</ondown>
+				<ondown condition="!Skin.HasSetting(LowerMainMenuBar)">21</ondown>
 				<ondown condition="Skin.HasSetting(LowerMainMenuBar) + !Skin.HasSetting(DisableGlobalSearch)">608</ondown>
 				<ondown condition="Skin.HasSetting(LowerMainMenuBar) + Skin.HasSetting(DisableGlobalSearch)">603</ondown>
 				<include>HomeAddonsCommonLayout</include>
@@ -41,7 +41,7 @@
 				<onright>700</onright>
 				<onup condition="!Skin.HasSetting(LowerMainMenuBar)">9001</onup>
 				<onup condition="Skin.HasSetting(LowerMainMenuBar)">9003</onup>
-				<ondown>21</ondown>
+				<ondown condition="!Skin.HasSetting(LowerMainMenuBar)">21</ondown>
 				<ondown condition="Skin.HasSetting(LowerMainMenuBar) + !Skin.HasSetting(DisableGlobalSearch)">608</ondown>
 				<ondown condition="Skin.HasSetting(LowerMainMenuBar) + Skin.HasSetting(DisableGlobalSearch)">603</ondown>
 				<include>AddonsMediaPlayingLayout</include>
@@ -62,7 +62,7 @@
 				<onright>701</onright>
 				<onup condition="!Skin.HasSetting(LowerMainMenuBar)">9001</onup>
 				<onup condition="Skin.HasSetting(LowerMainMenuBar)">9003</onup>
-				<ondown>21</ondown>
+				<ondown condition="!Skin.HasSetting(LowerMainMenuBar)">21</ondown>
 				<ondown condition="Skin.HasSetting(LowerMainMenuBar) + !Skin.HasSetting(DisableGlobalSearch)">608</ondown>
 				<ondown condition="Skin.HasSetting(LowerMainMenuBar) + Skin.HasSetting(DisableGlobalSearch)">603</ondown>
 				<include>HomeAddonsCommonLayout</include>
@@ -83,7 +83,7 @@
 				<onright>701</onright>
 				<onup condition="!Skin.HasSetting(LowerMainMenuBar)">9001</onup>
 				<onup condition="Skin.HasSetting(LowerMainMenuBar)">9003</onup>
-				<ondown>21</ondown>
+				<ondown condition="!Skin.HasSetting(LowerMainMenuBar)">21</ondown>
 				<ondown condition="Skin.HasSetting(LowerMainMenuBar) + !Skin.HasSetting(DisableGlobalSearch)">608</ondown>
 				<ondown condition="Skin.HasSetting(LowerMainMenuBar) + Skin.HasSetting(DisableGlobalSearch)">603</ondown>
 				<include>AddonsMediaPlayingLayout</include>
@@ -104,7 +104,7 @@
 				<onright>702</onright>
 				<onup condition="!Skin.HasSetting(LowerMainMenuBar)">9001</onup>
 				<onup condition="Skin.HasSetting(LowerMainMenuBar)">9003</onup>
-				<ondown>21</ondown>
+				<ondown condition="!Skin.HasSetting(LowerMainMenuBar)">21</ondown>
 				<ondown condition="Skin.HasSetting(LowerMainMenuBar) + !Skin.HasSetting(DisableGlobalSearch)">608</ondown>
 				<ondown condition="Skin.HasSetting(LowerMainMenuBar) + Skin.HasSetting(DisableGlobalSearch)">603</ondown>
 				<include>HomeAddonsCommonLayout</include>
@@ -125,7 +125,7 @@
 				<onright>702</onright>
 				<onup condition="!Skin.HasSetting(LowerMainMenuBar)">9001</onup>
 				<onup condition="Skin.HasSetting(LowerMainMenuBar)">9003</onup>
-				<ondown>21</ondown>
+				<ondown condition="!Skin.HasSetting(LowerMainMenuBar)">21</ondown>
 				<ondown condition="Skin.HasSetting(LowerMainMenuBar) + !Skin.HasSetting(DisableGlobalSearch)">608</ondown>
 				<ondown condition="Skin.HasSetting(LowerMainMenuBar) + Skin.HasSetting(DisableGlobalSearch)">603</ondown>
 				<include>AddonsMediaPlayingLayout</include>
@@ -146,7 +146,7 @@
 				<onright>704</onright>
 				<onup condition="!Skin.HasSetting(LowerMainMenuBar)">9001</onup>
 				<onup condition="Skin.HasSetting(LowerMainMenuBar)">9003</onup>
-				<ondown>21</ondown>
+				<ondown condition="!Skin.HasSetting(LowerMainMenuBar)">21</ondown>
 				<ondown condition="Skin.HasSetting(LowerMainMenuBar) + !Skin.HasSetting(DisableGlobalSearch)">608</ondown>
 				<ondown condition="Skin.HasSetting(LowerMainMenuBar) + Skin.HasSetting(DisableGlobalSearch)">603</ondown>
 				<include>HomeAddonsCommonLayout</include>
@@ -167,7 +167,7 @@
 				<onright>704</onright>
 				<onup condition="!Skin.HasSetting(LowerMainMenuBar)">9001</onup>
 				<onup condition="Skin.HasSetting(LowerMainMenuBar)">9003</onup>
-				<ondown>21</ondown>
+				<ondown condition="!Skin.HasSetting(LowerMainMenuBar)">21</ondown>
 				<ondown condition="Skin.HasSetting(LowerMainMenuBar) + !Skin.HasSetting(DisableGlobalSearch)">608</ondown>
 				<ondown condition="Skin.HasSetting(LowerMainMenuBar) + Skin.HasSetting(DisableGlobalSearch)">603</ondown>
 				<include>AddonsMediaPlayingLayout</include>
@@ -188,7 +188,7 @@
 				<onright>705</onright>
 				<onup condition="!Skin.HasSetting(LowerMainMenuBar)">9001</onup>
 				<onup condition="Skin.HasSetting(LowerMainMenuBar)">9003</onup>
-				<ondown>21</ondown>
+				<ondown condition="!Skin.HasSetting(LowerMainMenuBar)">21</ondown>
 				<ondown condition="Skin.HasSetting(LowerMainMenuBar) + !Skin.HasSetting(DisableGlobalSearch)">608</ondown>
 				<ondown condition="Skin.HasSetting(LowerMainMenuBar) + Skin.HasSetting(DisableGlobalSearch)">603</ondown>
 				<include>HomeAddonsCommonLayout</include>
@@ -209,7 +209,7 @@
 				<onright>705</onright>
 				<onup condition="!Skin.HasSetting(LowerMainMenuBar)">9001</onup>
 				<onup condition="Skin.HasSetting(LowerMainMenuBar)">9003</onup>
-				<ondown>21</ondown>
+				<ondown condition="!Skin.HasSetting(LowerMainMenuBar)">21</ondown>
 				<ondown condition="Skin.HasSetting(LowerMainMenuBar) + !Skin.HasSetting(DisableGlobalSearch)">608</ondown>
 				<ondown condition="Skin.HasSetting(LowerMainMenuBar) + Skin.HasSetting(DisableGlobalSearch)">603</ondown>
 				<include>AddonsMediaPlayingLayout</include>
@@ -230,7 +230,7 @@
 				<onright>706</onright>
 				<onup condition="!Skin.HasSetting(LowerMainMenuBar)">9001</onup>
 				<onup condition="Skin.HasSetting(LowerMainMenuBar)">9003</onup>
-				<ondown>21</ondown>
+				<ondown condition="!Skin.HasSetting(LowerMainMenuBar)">21</ondown>
 				<ondown condition="Skin.HasSetting(LowerMainMenuBar) + !Skin.HasSetting(DisableGlobalSearch)">608</ondown>
 				<ondown condition="Skin.HasSetting(LowerMainMenuBar) + Skin.HasSetting(DisableGlobalSearch)">603</ondown>
 				<include>HomeAddonsCommonLayout</include>
@@ -251,7 +251,7 @@
 				<onright>706</onright>
 				<onup condition="!Skin.HasSetting(LowerMainMenuBar)">9001</onup>
 				<onup condition="Skin.HasSetting(LowerMainMenuBar)">9003</onup>
-				<ondown>21</ondown>
+				<ondown condition="!Skin.HasSetting(LowerMainMenuBar)">21</ondown>
 				<ondown condition="Skin.HasSetting(LowerMainMenuBar) + !Skin.HasSetting(DisableGlobalSearch)">608</ondown>
 				<ondown condition="Skin.HasSetting(LowerMainMenuBar) + Skin.HasSetting(DisableGlobalSearch)">603</ondown>
 				<include>AddonsMediaPlayingLayout</include>
@@ -272,7 +272,7 @@
 				<onright>707</onright>
 				<onup condition="!Skin.HasSetting(LowerMainMenuBar)">9001</onup>
 				<onup condition="Skin.HasSetting(LowerMainMenuBar)">9003</onup>
-				<ondown>21</ondown>
+				<ondown condition="!Skin.HasSetting(LowerMainMenuBar)">21</ondown>
 				<ondown condition="Skin.HasSetting(LowerMainMenuBar) + !Skin.HasSetting(DisableGlobalSearch)">608</ondown>
 				<ondown condition="Skin.HasSetting(LowerMainMenuBar) + Skin.HasSetting(DisableGlobalSearch)">603</ondown>
 				<include>HomeAddonsCommonLayout</include>
@@ -293,7 +293,7 @@
 				<onright>707</onright>
 				<onup condition="!Skin.HasSetting(LowerMainMenuBar)">9001</onup>
 				<onup condition="Skin.HasSetting(LowerMainMenuBar)">9003</onup>
-				<ondown>21</ondown>
+				<ondown condition="!Skin.HasSetting(LowerMainMenuBar)">21</ondown>
 				<ondown condition="Skin.HasSetting(LowerMainMenuBar) + !Skin.HasSetting(DisableGlobalSearch)">608</ondown>
 				<ondown condition="Skin.HasSetting(LowerMainMenuBar) + Skin.HasSetting(DisableGlobalSearch)">603</ondown>
 				<include>AddonsMediaPlayingLayout</include>
@@ -314,7 +314,7 @@
 				<onright>708</onright>
 				<onup condition="!Skin.HasSetting(LowerMainMenuBar)">9001</onup>
 				<onup condition="Skin.HasSetting(LowerMainMenuBar)">9003</onup>
-				<ondown>21</ondown>
+				<ondown condition="!Skin.HasSetting(LowerMainMenuBar)">21</ondown>
 				<ondown condition="Skin.HasSetting(LowerMainMenuBar) + !Skin.HasSetting(DisableGlobalSearch)">608</ondown>
 				<ondown condition="Skin.HasSetting(LowerMainMenuBar) + Skin.HasSetting(DisableGlobalSearch)">603</ondown>
 				<include>HomeAddonsCommonLayout</include>
@@ -335,7 +335,7 @@
 				<onright>708</onright>
 				<onup condition="!Skin.HasSetting(LowerMainMenuBar)">9001</onup>
 				<onup condition="Skin.HasSetting(LowerMainMenuBar)">9003</onup>
-				<ondown>21</ondown>
+				<ondown condition="!Skin.HasSetting(LowerMainMenuBar)">21</ondown>
 				<ondown condition="Skin.HasSetting(LowerMainMenuBar) + !Skin.HasSetting(DisableGlobalSearch)">608</ondown>
 				<ondown condition="Skin.HasSetting(LowerMainMenuBar) + Skin.HasSetting(DisableGlobalSearch)">603</ondown>
 				<include>AddonsMediaPlayingLayout</include>
@@ -356,7 +356,7 @@
 				<onright>709</onright>
 				<onup condition="!Skin.HasSetting(LowerMainMenuBar)">9001</onup>
 				<onup condition="Skin.HasSetting(LowerMainMenuBar)">9003</onup>
-				<ondown>21</ondown>
+				<ondown condition="!Skin.HasSetting(LowerMainMenuBar)">21</ondown>
 				<ondown condition="Skin.HasSetting(LowerMainMenuBar) + !Skin.HasSetting(DisableGlobalSearch)">608</ondown>
 				<ondown condition="Skin.HasSetting(LowerMainMenuBar) + Skin.HasSetting(DisableGlobalSearch)">603</ondown>
 				<include>HomeAddonsCommonLayout</include>
@@ -377,7 +377,7 @@
 				<onright>709</onright>
 				<onup condition="!Skin.HasSetting(LowerMainMenuBar)">9001</onup>
 				<onup condition="Skin.HasSetting(LowerMainMenuBar)">9003</onup>
-				<ondown>21</ondown>
+				<ondown condition="!Skin.HasSetting(LowerMainMenuBar)">21</ondown>
 				<ondown condition="Skin.HasSetting(LowerMainMenuBar) + !Skin.HasSetting(DisableGlobalSearch)">608</ondown>
 				<ondown condition="Skin.HasSetting(LowerMainMenuBar) + Skin.HasSetting(DisableGlobalSearch)">603</ondown>
 				<include>AddonsMediaPlayingLayout</include>
@@ -398,7 +398,7 @@
 				<onright>710</onright>
 				<onup condition="!Skin.HasSetting(LowerMainMenuBar)">9001</onup>
 				<onup condition="Skin.HasSetting(LowerMainMenuBar)">9003</onup>
-				<ondown>21</ondown>
+				<ondown condition="!Skin.HasSetting(LowerMainMenuBar)">21</ondown>
 				<ondown condition="Skin.HasSetting(LowerMainMenuBar) + !Skin.HasSetting(DisableGlobalSearch)">608</ondown>
 				<ondown condition="Skin.HasSetting(LowerMainMenuBar) + Skin.HasSetting(DisableGlobalSearch)">603</ondown>
 				<include>HomeAddonsCommonLayout</include>
@@ -419,7 +419,7 @@
 				<onright>710</onright>
 				<onup condition="!Skin.HasSetting(LowerMainMenuBar)">9001</onup>
 				<onup condition="Skin.HasSetting(LowerMainMenuBar)">9003</onup>
-				<ondown>21</ondown>
+				<ondown condition="!Skin.HasSetting(LowerMainMenuBar)">21</ondown>
 				<ondown condition="Skin.HasSetting(LowerMainMenuBar) + !Skin.HasSetting(DisableGlobalSearch)">608</ondown>
 				<ondown condition="Skin.HasSetting(LowerMainMenuBar) + Skin.HasSetting(DisableGlobalSearch)">603</ondown>
 				<include>AddonsMediaPlayingLayout</include>
@@ -440,7 +440,7 @@
 				<onright>711</onright>
 				<onup condition="!Skin.HasSetting(LowerMainMenuBar)">9001</onup>
 				<onup condition="Skin.HasSetting(LowerMainMenuBar)">9003</onup>
-				<ondown>21</ondown>
+				<ondown condition="!Skin.HasSetting(LowerMainMenuBar)">21</ondown>
 				<ondown condition="Skin.HasSetting(LowerMainMenuBar) + !Skin.HasSetting(DisableGlobalSearch)">608</ondown>
 				<ondown condition="Skin.HasSetting(LowerMainMenuBar) + Skin.HasSetting(DisableGlobalSearch)">603</ondown>
 				<include>HomeAddonsCommonLayout</include>
@@ -461,7 +461,7 @@
 				<onright>711</onright>
 				<onup condition="!Skin.HasSetting(LowerMainMenuBar)">9001</onup>
 				<onup condition="Skin.HasSetting(LowerMainMenuBar)">9003</onup>
-				<ondown>21</ondown>
+				<ondown condition="!Skin.HasSetting(LowerMainMenuBar)">21</ondown>
 				<ondown condition="Skin.HasSetting(LowerMainMenuBar) + !Skin.HasSetting(DisableGlobalSearch)">608</ondown>
 				<ondown condition="Skin.HasSetting(LowerMainMenuBar) + Skin.HasSetting(DisableGlobalSearch)">603</ondown>
 				<include>AddonsMediaPlayingLayout</include>
@@ -470,7 +470,7 @@
 				</content>
 			</control>
 			<control type="list" id="712"># Twelve
-				<animation effect="slide" start="0,0" end="82,0" time="0" condition="StringCompare(Container(712).NumItems,6)">conditional</animation><animation effect="slide" start="0,0" end="164,0" time="0" condition="StringCompare(Container(712).NumItems,5)">conditional</animation><animation effect="slide" start="0,0" end="246,0" time="0" condition="StringCompare(Container(712).NumItems,4)">conditional</animation><animation effect="slide" start="0,0" end="328,0" time="0" condition="StringCompare(Container(712).NumItems,3)">conditional</animation><animation effect="slide" start="0,0" end="410,0" time="0" condition="StringCompare(Container(712).NumItems,2)">conditional</animation><animation effect="slide" start="0,0" end="492,0" time="0" condition="StringCompare(Container(712).NumItems,1)">conditional</animation><visible>StringCompare(Container(9000).ListItem.Property(AddOnSet),AddonSetTwelve)</visible><visible>!Skin.HasSetting(LowerMainMenuBar) | !Player.HasMedia | Skin.HasSetting(HideNowPlayingInfo)</visible><onleft>712</onleft><onright>712</onright><onup condition="!Skin.HasSetting(LowerMainMenuBar)">9001</onup><onup condition="Skin.HasSetting(LowerMainMenuBar)">9003</onup><ondown>21</ondown><ondown condition="Skin.HasSetting(LowerMainMenuBar) + !Skin.HasSetting(DisableGlobalSearch)">608</ondown><ondown condition="Skin.HasSetting(LowerMainMenuBar) + Skin.HasSetting(DisableGlobalSearch)">603</ondown><include>HomeAddonsCommonLayout</include><content><include>HomeAddonSetTwelve</include></content></control>
+				<animation effect="slide" start="0,0" end="82,0" time="0" condition="StringCompare(Container(712).NumItems,6)">conditional</animation><animation effect="slide" start="0,0" end="164,0" time="0" condition="StringCompare(Container(712).NumItems,5)">conditional</animation><animation effect="slide" start="0,0" end="246,0" time="0" condition="StringCompare(Container(712).NumItems,4)">conditional</animation><animation effect="slide" start="0,0" end="328,0" time="0" condition="StringCompare(Container(712).NumItems,3)">conditional</animation><animation effect="slide" start="0,0" end="410,0" time="0" condition="StringCompare(Container(712).NumItems,2)">conditional</animation><animation effect="slide" start="0,0" end="492,0" time="0" condition="StringCompare(Container(712).NumItems,1)">conditional</animation><visible>StringCompare(Container(9000).ListItem.Property(AddOnSet),AddonSetTwelve)</visible><visible>!Skin.HasSetting(LowerMainMenuBar) | !Player.HasMedia | Skin.HasSetting(HideNowPlayingInfo)</visible><onleft>712</onleft><onright>712</onright><onup condition="!Skin.HasSetting(LowerMainMenuBar)">9001</onup><onup condition="Skin.HasSetting(LowerMainMenuBar)">9003</onup><ondown condition="!Skin.HasSetting(LowerMainMenuBar)">21</ondown><ondown condition="Skin.HasSetting(LowerMainMenuBar) + !Skin.HasSetting(DisableGlobalSearch)">608</ondown><ondown condition="Skin.HasSetting(LowerMainMenuBar) + Skin.HasSetting(DisableGlobalSearch)">603</ondown><include>HomeAddonsCommonLayout</include><content><include>HomeAddonSetTwelve</include></content></control>
 			<control type="list" id="712">
 				<animation effect="slide" start="0,0" end="82,0" time="0" condition="StringCompare(Container(712).NumItems,6)">conditional</animation>
 				<animation effect="slide" start="0,0" end="164,0" time="0" condition="StringCompare(Container(712).NumItems,5)">conditional</animation>
@@ -484,7 +484,7 @@
 				<onright>712</onright>
 				<onup condition="!Skin.HasSetting(LowerMainMenuBar)">9001</onup>
 				<onup condition="Skin.HasSetting(LowerMainMenuBar)">9003</onup>
-				<ondown>21</ondown>
+				<ondown condition="!Skin.HasSetting(LowerMainMenuBar)">21</ondown>
 				<ondown condition="Skin.HasSetting(LowerMainMenuBar) + !Skin.HasSetting(DisableGlobalSearch)">608</ondown>
 				<ondown condition="Skin.HasSetting(LowerMainMenuBar) + Skin.HasSetting(DisableGlobalSearch)">603</ondown>
 				<include>AddonsMediaPlayingLayout</include>
