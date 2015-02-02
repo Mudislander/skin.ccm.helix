@@ -46,7 +46,9 @@ msgctxt "#31006"
 msgid "View Options"
 msgstr ""
 
-#empty string with id 31007
+msgctxt "#31007"
+msgid ".."
+msgstr ""
 
 msgctxt "#31008"
 msgid "Full screen"
@@ -761,7 +763,9 @@ msgctxt "#31245"
 msgid "Next Aired Episodes"
 msgstr ""
 
-#empty strings from id 31244 to 31246
+msgctxt "#31246"
+msgid "Add Year to Movie Title in Media List Titles"
+msgstr ""
 
 msgctxt "#31247"
 msgid "Move Menu Item"
@@ -775,7 +779,9 @@ msgctxt "#31249"
 msgid "Background Transparency"
 msgstr ""
 
-#empty strings from id 31250 to 31250
+msgctxt "#31250"
+msgid "Replace Symbol \"..\" In Media List Titles With"
+msgstr ""
 
 msgctxt "#31251"
 msgid "Suggested"
@@ -1591,6 +1597,10 @@ msgstr ""
 
 msgctxt "#31958"
 msgid "DVD Drive"
+msgstr ""
+
+msgctxt "#31959"
+msgid "All Seasons"
 msgstr ""
 
 msgctxt "#31961"

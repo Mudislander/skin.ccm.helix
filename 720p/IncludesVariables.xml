@@ -824,14 +824,6 @@
 		<value condition="IsEmpty(ListItem.Duration) + IsEmpty(ListItem.RatingAndVotes) + !IsEmpty(ListItem.LastPlayed)">[B]$LOCALIZE[568] [/B][COLOR=white]$INFO[ListItem.LastPlayed][/COLOR]</value>
 		<value condition="IsEmpty(ListItem.Duration) + !IsEmpty(ListItem.RatingAndVotes) + IsEmpty(ListItem.LastPlayed)">[B]$LOCALIZE[563] [/B][COLOR=white]$INFO[ListItem.RatingAndVotes][/COLOR]</value>
 	</variable>
-	<variable name="DescriptiveLabel" type="text">
-		<value condition="StringCompare(ListItem.label,..)">$LOCALIZE[31318]</value>
-		<value condition="!IsEmpty(ListItem.Year) + !Skin.HasSetting(HideYearTitle) + Container.Content(Movies)">$INFO[ListItem.label] ([COLOR=white]$INFO[ListItem.Year][/COLOR])</value>
-		<value condition="Container.Content(Seasons) | Container.Content(Episodes)">$INFO[ListItem.TVShowTitle] - $INFO[ListItem.label]</value>
-		<value condition="!IsEmpty(Window.Property(current.actor.agelong)) + [Container.Content(Actors) | Container.Content(Directors)]">$INFO[ListItem.label] ([COLOR=white]$INFO[Window.Property(current.actor.agelong)][/COLOR])</value>
-		<value condition="!IsEmpty(ListItem.Property(date))">$INFO[ListItem.label] ([COLOR=white]$INFO[ListItem.Property(date)][/COLOR])</value>
-		<value>$INFO[ListItem.label]</value>
-	</variable>
 	<variable name="GenreLabelFanart">
 		<value condition="substring(ListItem.Label,Holiday) | substring(ListItem.Label,Christmas)">christmas</value>
 		<value condition="substring(ListItem.Label,Sci)">sciencefiction</value>
@@ -2660,5 +2652,16 @@
 	<variable name="MediaRuntime">
 		<value condition="[Container.Content(Movies) | Container.Content(Episodes) | Container.Content(MusicVideos)] + !substring(ListItem.Duration,min)">$INFO[ListItem.Duration,, $LOCALIZE[12391]]</value>
 		<value condition="[Container.Content(Movies) | Container.Content(Episodes) | Container.Content(MusicVideos)] + substring(ListItem.Duration,min)">$INFO[ListItem.Duration]</value>
+	</variable>
+	<variable name="UserParentDirName" type="text">
+		<value condition="!IsEmpty(Skin.String(UserParentDir))">$INFO[Skin.String(UserParentDir)]</value>
+		<value>$LOCALIZE[31007]</value>
+	</variable>
+	<variable name="DescriptiveLabel" type="text">
+		<value condition="StringCompare(ListItem.label,..)">$VAR[UserParentDirName]</value>
+		<value condition="StringCompare(ListItem.label,$LOCALIZE[20366])">$INFO[ListItem.TVShowTitle] - $LOCALIZE[31959]</value>
+		<value condition="!IsEmpty(ListItem.Year) + !Skin.HasSetting(HideYearTitle) + Container.Content(Movies)">$INFO[ListItem.label] ([COLOR=white]$INFO[ListItem.Year][/COLOR])</value>
+		<value condition="Container.Content(Seasons) | Container.Content(Episodes)">$INFO[ListItem.TVShowTitle] - $INFO[ListItem.label]</value>
+		<value>$INFO[ListItem.label]</value>
 	</variable>
 </includes>

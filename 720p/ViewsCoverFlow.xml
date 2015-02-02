@@ -1277,7 +1277,8 @@
 		<control type="wraplist" id="555">
 			<description>Fake list to control coverflow movement</description>
 			<include>Window_OpenClose_Animation</include>
-			<visible>Container.Content(Movies) | Container.Content(Seasons) | Container.Content(TVShows) | Container.Content(MusicVideos)</visible>
+			<!--visible>Container.Content(Movies) | Container.Content(Seasons) | Container.Content(TVShows) | Container.Content(MusicVideos)</visible-->
+			<visible>Container.Content(Movies) | Container.Content(TVShows) | Container.Content(MusicVideos)</visible>
 			<left>490</left>
 			<top>200</top>
 			<width>306</width>
@@ -1393,7 +1394,22 @@
 				<align>center</align>
 				<aligny>center</aligny>
 				<label>$INFO[ListItem.Tagline]</label>
-				<visible>!IsEmpty(ListItem.Tagline)</visible>
+				<visible>!IsEmpty(ListItem.Tagline) + !Container.Content(TVShows)</visible>
+			</control>
+			<control type="label">
+				<left>40</left>
+				<top>130</top>
+				<width>1200</width>
+				<height>35</height>
+				<font>font13</font>
+				<textcolor>white</textcolor>
+				<shadowcolor>black</shadowcolor>
+				<wrapmultiline>true</wrapmultiline>
+				<scroll>false</scroll>
+				<align>center</align>
+				<aligny>center</aligny>
+				<label fallback="416">[COLOR=$VAR[MainColorOne]]$LOCALIZE[20360]:[/COLOR] $INFO[listitem.episode] [COLOR=grey] ($INFO[ListItem.Property(WatchedEpisodes),, $LOCALIZE[16102]] - $INFO[ListItem.Property(UnWatchedEpisodes), , $LOCALIZE[16101]])[/COLOR]</label>
+				<visible>Container.Content(TVShows)</visible>
 			</control>
 			<control type="label">
 				<left>40</left>

@@ -279,7 +279,8 @@
 		<control type="group">
 			<left>0</left>
 			<top>350</top>
-			<visible>Control.IsVisible(508) + [[ListItem.IsFolder + Container.Content(Movies)] | Skin.String(MediaPopupControl,Hidden) | Container.Content(Sets)]</visible>
+			<!--visible>Control.IsVisible(508) + [[ListItem.IsFolder + Container.Content(Movies)] | Skin.String(MediaPopupControl,Hidden) | Container.Content(Sets)]</visible-->
+			<visible>Control.IsVisible(508) + [Skin.String(MediaPopupControl,Hidden) | Container.Content(Sets)]</visible>
 			<include>VisibleFadeEffect</include>
 			<control type="image">
 				<left>0</left>
@@ -294,12 +295,13 @@
 				<width>1200</width>
 				<height>20</height>
 				<font>font24_title</font>
-				<textcolor>white</textcolor>
+				<textcolor>$VAR[MainColorOne]</textcolor>
 				<shadowcolor>black</shadowcolor>
 				<scroll>true</scroll>
 				<align>center</align>
 				<aligny>center</aligny>
-				<label>$INFO[ListItem.Label]</label>
+				<!--label>$INFO[ListItem.Label]</label-->
+				<label>$VAR[DescriptiveLabel]</label>
 				<animation effect="slide" start="0,0" end="0,25" time="200" condition="!Control.HasFocus(508)">conditional</animation>
 			</control>
 		</control>
@@ -423,7 +425,7 @@
 				<scroll>true</scroll>
 				<align>center</align>
 				<aligny>center</aligny>
-				<label>$INFO[ListItem.Label]</label>
+				<label>$VAR[DescriptiveLabel]</label>
 			</control>
 			<control type="group">
 				<left>40</left>
@@ -1954,11 +1956,11 @@
 					<width>540</width>
 					<height>30</height>
 					<font>font24_title</font>
-					<textcolor>white</textcolor>
+					<textcolor>$VAR[MainColorOne]</textcolor>
 					<shadowcolor>black</shadowcolor>
 					<align>left</align>
 					<aligny>center</aligny>
-					<label>$INFO[ListItem.Label]</label>
+					<label>$VAR[DescriptiveLabel]</label>
 					<visible>Skin.HasSetting(View515Hidelogo) | IsEmpty(ListItem.Title) | IsEmpty(ListItem.Art(clearlogo))</visible>
 				</control>
 				<control type="textbox">
@@ -2019,11 +2021,11 @@
 					<width>540</width>
 					<height>30</height>
 					<font>font24_title</font>
-					<textcolor>white</textcolor>
+					<textcolor>$VAR[MainColorOne]</textcolor>
 					<shadowcolor>black</shadowcolor>
 					<align>left</align>
 					<aligny>center</aligny>
-					<label>$INFO[ListItem.Label]</label>
+					<label>$VAR[DescriptiveLabel]</label>
 				</control>
 				<control type="textbox">
 					<description>Description Value for Video</description>
@@ -2068,11 +2070,11 @@
 					<width>730</width>
 					<height>30</height>
 					<font>font24_title</font>
-					<textcolor>white</textcolor>
+					<textcolor>$VAR[MainColorOne]</textcolor>
 					<shadowcolor>black</shadowcolor>
 					<align>left</align>
 					<aligny>center</aligny>
-					<label>$INFO[ListItem.Label]</label>
+					<label>$VAR[DescriptiveLabel]</label>
 				</control>
 				<control type="textbox">
 					<description>Description Value for Video</description>
@@ -2117,11 +2119,11 @@
 					<width>400</width>
 					<height>30</height>
 					<font>font24_title</font>
-					<textcolor>white</textcolor>
+					<textcolor>$VAR[MainColorOne]</textcolor>
 					<shadowcolor>black</shadowcolor>
 					<align>left</align>
 					<aligny>center</aligny>
-					<label>$INFO[ListItem.Label]</label>
+					<label>$VAR[DescriptiveLabel]</label>
 				</control>
 				<control type="textbox">
 					<description>Description Value for Video</description>
@@ -2172,6 +2174,7 @@
 				<texture background="true">black-back.png</texture>
 			</control>
 			<control type="panel" id="732">
+				<hitrect x="0" y="-55" w="1280" h="720" />
 				<left>29</left>
 				<top>55</top>
 				<width>1251</width>
@@ -2219,6 +2222,15 @@
 						<visible>Skin.HasSetting(EnableStatusBanner) + !IsEmpty(ListItem.Overlay)</visible>
 					</control>
 					<control type="image">
+						<left>105</left>
+						<top>170</top>
+						<width>30</width>
+						<height>30</height>
+						<aspectratio>keep</aspectratio>
+						<texture>$INFO[ListItem.Overlay]</texture>
+						<visible>!Skin.HasSetting(EnableStatusBanner) + !IsEmpty(ListItem.Overlay) + !ListItem.IsResumable</visible>
+					</control>
+					<control type="image">
 						<left>0</left>
 						<top>0</top>
 						<width>139</width>
@@ -2230,15 +2242,6 @@
 						<colordiffuse>AAFFFFFF</colordiffuse>
 						<include condition="!IsEmpty(Skin.String(MediaPanelTrans))">TransparentEffect</include>
 						<visible>!StringCompare(ListItem.Label,..)</visible>
-					</control>
-					<control type="image">
-						<left>85</left>
-						<top>150</top>
-						<width>50</width>
-						<height>50</height>
-						<aspectratio>keep</aspectratio>
-						<texture>$INFO[ListItem.Overlay]</texture>
-						<visible>!Skin.HasSetting(EnableStatusBanner) + !IsEmpty(ListItem.Overlay) + !ListItem.IsResumable</visible>
 					</control>
 				</itemlayout>
 				<focusedlayout height="205" width="142">
@@ -2272,10 +2275,10 @@
 							<visible>Skin.HasSetting(EnableStatusBanner) + !IsEmpty(ListItem.Overlay)</visible>
 						</control>
 						<control type="image">
-							<left>85</left>
-							<top>150</top>
-							<width>50</width>
-							<height>50</height>
+							<left>105</left>
+							<top>170</top>
+							<width>30</width>
+							<height>30</height>
 							<aspectratio>keep</aspectratio>
 							<texture>$INFO[ListItem.Overlay]</texture>
 							<visible>!Skin.HasSetting(EnableStatusBanner) + !IsEmpty(ListItem.Overlay) + !ListItem.IsResumable</visible>

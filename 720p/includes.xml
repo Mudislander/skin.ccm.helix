@@ -157,10 +157,14 @@
 		</control>
 		<control type="image">
 			<description>LOGO</description>
-			<left>15</left>
-			<top>0</top>
-			<width>220</width>
-			<height>80</height>
+			<left>40</left>
+			<top>10</top>
+			<!--left>15</left>
+			<top>0</top-->
+			<!--width>220</width>
+			<height>80</height-->
+			<width>151</width>
+			<height>55</height>
 			<aspectratio>keep</aspectratio>
 			<texture>Confluence_Logo.png</texture>
 		</control>
