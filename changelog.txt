@@ -1,3 +1,9 @@
+B]3.0.8[/B] [I]Feb 2015[/I]
+- On going battle with backgrounds
+- New Media Views
+- Introduced Logos, banners etc.
+- Changed default logo, background and font
+
 B]3.0.7[/B] [I]Jan 2015[/I]
 - Bugfix Backgrounds
 - CoverFlow View
