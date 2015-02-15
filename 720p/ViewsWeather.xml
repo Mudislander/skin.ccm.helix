@@ -569,7 +569,7 @@
 						<width>600</width>
 						<height>30</height>
 						<font>font13_title</font>
-						<textcolor>$VAR[MainColorOne]</textcolor>
+						<textcolor>blue</textcolor>
 						<align>center</align>
 						<aligny>center</aligny>
 						<label>$INFO[Window.Property(36Hour.1.Heading)]</label>
@@ -634,7 +634,7 @@
 						<width>600</width>
 						<height>30</height>
 						<font>font13_title</font>
-						<textcolor>$VAR[MainColorOne]</textcolor>
+						<textcolor>blue</textcolor>
 						<align>center</align>
 						<aligny>center</aligny>
 						<label>$INFO[Window.Property(36Hour.2.Heading)]</label>
@@ -699,7 +699,7 @@
 						<width>600</width>
 						<height>30</height>
 						<font>font13_title</font>
-						<textcolor>$VAR[MainColorOne]</textcolor>
+						<textcolor>blue</textcolor>
 						<align>center</align>
 						<aligny>center</aligny>
 						<label>$INFO[Window.Property(36Hour.3.Heading)]</label>
@@ -791,7 +791,7 @@
 						<width>600</width>
 						<height>30</height>
 						<font>font13_title</font>
-						<textcolor>$VAR[MainColorOne]</textcolor>
+						<textcolor>blue</textcolor>
 						<align>center</align>
 						<aligny>center</aligny>
 						<label>$INFO[Window.Property(Weekend.1.LongDay)] - $INFO[Window.Property(Weekend.1.ShortDate)]</label>
@@ -878,7 +878,7 @@
 						<width>600</width>
 						<height>30</height>
 						<font>font13_title</font>
-						<textcolor>$VAR[MainColorOne]</textcolor>
+						<textcolor>blue</textcolor>
 						<align>center</align>
 						<aligny>center</aligny>
 						<label>$INFO[Window.Property(Weekend.2.LongDay)] - $INFO[Window.Property(Weekend.2.ShortDate)]</label>
@@ -1576,7 +1576,7 @@
 				<width>570</width>
 				<height>30</height>
 				<font>font13_title</font>
-				<textcolor>$VAR[MainColorOne]</textcolor>
+				<textcolor>blue</textcolor>
 				<align>center</align>
 				<aligny>center</aligny>
 				<label>$LOCALIZE[33050]</label>

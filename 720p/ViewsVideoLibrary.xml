@@ -123,7 +123,7 @@
 				<width>1220</width>
 				<height>35</height>
 				<font>font28_title</font>
-				<textcolor>$VAR[MainColorOne]</textcolor>
+				<textcolor>blue</textcolor>
 				<shadowcolor>black</shadowcolor>
 				<scroll>true</scroll>
 				<align>center</align>
@@ -180,7 +180,7 @@
 				<width>1220</width>
 				<height>35</height>
 				<font>font28_title</font>
-				<textcolor>$VAR[MainColorOne]</textcolor>
+				<textcolor>blue</textcolor>
 				<scroll>true</scroll>
 				<align>center</align>
 				<aligny>center</aligny>
@@ -231,7 +231,7 @@
 				<width>1220</width>
 				<height>35</height>
 				<font>font28_title</font>
-				<textcolor>$VAR[MainColorOne]</textcolor>
+				<textcolor>blue</textcolor>
 				<scroll>true</scroll>
 				<align>center</align>
 				<aligny>center</aligny>
@@ -295,13 +295,13 @@
 				<width>1200</width>
 				<height>20</height>
 				<font>font24_title</font>
-				<textcolor>$VAR[MainColorOne]</textcolor>
+				<textcolor>blue</textcolor>
 				<shadowcolor>black</shadowcolor>
 				<scroll>true</scroll>
 				<align>center</align>
 				<aligny>center</aligny>
-				<!--label>$INFO[ListItem.Label]</label-->
-				<label>$VAR[DescriptiveLabel]</label>
+				
+				<value>$INFO[ListItem.label]</value>
 				<animation effect="slide" start="0,0" end="0,25" time="200" condition="!Control.HasFocus(508)">conditional</animation>
 			</control>
 		</control>
@@ -420,12 +420,12 @@
 				<width>840</width>
 				<height>20</height>
 				<font>font24_title</font>
-				<textcolor>$VAR[MainColorOne]</textcolor>
+				<textcolor>blue</textcolor>
 				<shadowcolor>black</shadowcolor>
 				<scroll>true</scroll>
 				<align>center</align>
 				<aligny>center</aligny>
-				<label>$VAR[DescriptiveLabel]</label>
+				<value>$INFO[ListItem.label]</value>
 			</control>
 			<control type="group">
 				<left>40</left>
@@ -1035,7 +1035,7 @@
 					<align>right</align>
 					<aligny>center</aligny>
 					<font>font12</font>
-					<textcolor>$VAR[MainColorOne]</textcolor>
+					<textcolor>blue</textcolor>
 				</control>
 				<control type="label">
 					<description>Episodes Value</description>
@@ -1059,7 +1059,7 @@
 					<align>right</align>
 					<aligny>center</aligny>
 					<font>font12</font>
-					<textcolor>$VAR[MainColorOne]</textcolor>
+					<textcolor>blue</textcolor>
 				</control>
 				<control type="label">
 					<description>Aired Value</description>
@@ -1083,7 +1083,7 @@
 					<align>right</align>
 					<aligny>center</aligny>
 					<font>font12</font>
-					<textcolor>$VAR[MainColorOne]</textcolor>
+					<textcolor>blue</textcolor>
 				</control>
 				<control type="fadelabel">
 					<description>Genre Value</description>
@@ -1525,7 +1525,7 @@
 					<align>right</align>
 					<aligny>center</aligny>
 					<font>font13_title</font>
-					<textcolor>$VAR[MainColorOne]</textcolor>
+					<textcolor>blue</textcolor>
 				</control>
 				<control type="label">
 					<description>Year Value</description>
@@ -1549,7 +1549,7 @@
 					<align>right</align>
 					<aligny>center</aligny>
 					<font>font13_title</font>
-					<textcolor>$VAR[MainColorOne]</textcolor>
+					<textcolor>blue</textcolor>
 				</control>
 				<control type="fadelabel">
 					<description>Genre Value</description>
@@ -1631,7 +1631,7 @@
 					<align>right</align>
 					<aligny>center</aligny>
 					<font>font13_title</font>
-					<textcolor>$VAR[MainColorOne]</textcolor>
+					<textcolor>blue</textcolor>
 				</control>
 				<control type="label">
 					<description>Aired Value</description>
@@ -1655,7 +1655,7 @@
 					<align>right</align>
 					<aligny>center</aligny>
 					<font>font13_title</font>
-					<textcolor>$VAR[MainColorOne]</textcolor>
+					<textcolor>blue</textcolor>
 				</control>
 				<control type="fadelabel">
 					<description>Episode Value</description>
@@ -1956,11 +1956,11 @@
 					<width>540</width>
 					<height>30</height>
 					<font>font24_title</font>
-					<textcolor>$VAR[MainColorOne]</textcolor>
+					<textcolor>blue</textcolor>
 					<shadowcolor>black</shadowcolor>
 					<align>left</align>
 					<aligny>center</aligny>
-					<label>$VAR[DescriptiveLabel]</label>
+					<value>$INFO[ListItem.label]</value>
 					<visible>Skin.HasSetting(View515Hidelogo) | IsEmpty(ListItem.Title) | IsEmpty(ListItem.Art(clearlogo))</visible>
 				</control>
 				<control type="textbox">
@@ -2021,11 +2021,11 @@
 					<width>540</width>
 					<height>30</height>
 					<font>font24_title</font>
-					<textcolor>$VAR[MainColorOne]</textcolor>
+					<textcolor>blue</textcolor>
 					<shadowcolor>black</shadowcolor>
 					<align>left</align>
 					<aligny>center</aligny>
-					<label>$VAR[DescriptiveLabel]</label>
+					<value>$INFO[ListItem.label]</value>
 				</control>
 				<control type="textbox">
 					<description>Description Value for Video</description>
@@ -2070,11 +2070,11 @@
 					<width>730</width>
 					<height>30</height>
 					<font>font24_title</font>
-					<textcolor>$VAR[MainColorOne]</textcolor>
+					<textcolor>blue</textcolor>
 					<shadowcolor>black</shadowcolor>
 					<align>left</align>
 					<aligny>center</aligny>
-					<label>$VAR[DescriptiveLabel]</label>
+					<value>$INFO[ListItem.label]</value>
 				</control>
 				<control type="textbox">
 					<description>Description Value for Video</description>
@@ -2119,11 +2119,11 @@
 					<width>400</width>
 					<height>30</height>
 					<font>font24_title</font>
-					<textcolor>$VAR[MainColorOne]</textcolor>
+					<textcolor>blue</textcolor>
 					<shadowcolor>black</shadowcolor>
 					<align>left</align>
 					<aligny>center</aligny>
-					<label>$VAR[DescriptiveLabel]</label>
+					<value>$INFO[ListItem.label]</value>
 				</control>
 				<control type="textbox">
 					<description>Description Value for Video</description>

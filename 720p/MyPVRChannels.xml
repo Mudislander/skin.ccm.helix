@@ -138,7 +138,7 @@
 					<align>right</align>
 					<aligny>center</aligny>
 					<font>font10_title</font>
-					<textcolor>$VAR[MainColorOne]</textcolor>
+					<textcolor>blue</textcolor>
 					<visible>Container(50).ListItem.HasEpg</visible>
 					<label>$INFO[Container(50).ListItem.StartTime]</label>
 				</control>
@@ -159,7 +159,7 @@
 					<align>left</align>
 					<aligny>center</aligny>
 					<font>font10_title</font>
-					<textcolor>$VAR[MainColorOne]</textcolor>
+					<textcolor>blue</textcolor>
 					<visible>Container(50).ListItem.HasEpg</visible>
 					<label>$INFO[Container(50).ListItem.EndTime]</label>
 				</control>

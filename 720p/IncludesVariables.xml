@@ -558,167 +558,17 @@
 		<value>DefaultVideoCover.png</value>
 	</variable>
 	<variable name="VideoPlayerCase">
-		<value condition="!Skin.HasSetting(UseDiscTypeCase) + [VideoPlayer.Content(LiveTV) | VideoPlayer.Content(Episodes)]">TVseries</value>
-		<value condition="Skin.HasSetting(UseDiscTypeCase) + VideoPlayer.IsStereoscopic">3DCase</value>
-		<value condition="Skin.HasSetting(UseDiscTypeCase) + [SubString(Player.FilenameAndPath,.3D.) | SubString(Player.FilenameAndPath,.3DBD.) | SubString(Player.FilenameAndPath,.SBS.)]">3DCase</value>
-		<value condition="Skin.HasSetting(UseDiscTypeCase) + [SubString(Player.FilenameAndPath,bluray) | SubString(Player.FilenameAndPath,bdrip) | SubString(Player.FilenameAndPath,bd25) | SubString(Player.FilenameAndPath,bd50)]">bd</value>
-		<value condition="Skin.HasSetting(UseDiscTypeCase) + [StringCompare(VideoPlayer.VideoResolution,1080) | StringCompare(VideoPlayer.VideoResolution,720)]">bd</value>
-		<value condition="Skin.HasSetting(UseDiscTypeCase) + SubString(Player.FilenameAndPath,hddvd)">hddvd</value>
-		<value condition="Skin.HasSetting(UseDiscTypeCase) + SubString(Player.FilenameAndPath,dvd)">dvd</value>
-		<value condition="Skin.HasSetting(UseDiscTypeCase) + [StringCompare(VideoPlayer.VideoResolution,480) | StringCompare(VideoPlayer.VideoResolution,540) | StringCompare(VideoPlayer.VideoResolution,576)]">dvd</value>
-		<value condition="substring(Player.FilenameAndPath,.avi,right)">avi</value>
-		<value condition="substring(Player.FilenameAndPath,.divx,right)">divx</value>
-		<value condition="substring(Player.FilenameAndPath,.h264,right)">h264</value>
-		<value condition="substring(Player.FilenameAndPath,.mkv,right)">mkv</value>
-		<value condition="substring(Player.FilenameAndPath,.mov,right)">mov</value>
-		<value condition="substring(Player.FilenameAndPath,.mp4,right)">mp4</value>
-		<value condition="substring(Player.FilenameAndPath,.mpeg,right)">mpeg</value>
-		<value condition="substring(Player.FilenameAndPath,.qt,right)">qt</value>
-		<value condition="substring(Player.FilenameAndPath,.wmv,right)">wmv</value>
-		<value condition="substring(Player.FilenameAndPath,.xvid,right)">xvid</value>
-		<value>dv</value>
+		<value condition="VideoPlayer.IsStereoscopic">3DCase</value>
+		<value condition="[SubString(Player.FilenameAndPath,.3D.) | SubString(Player.FilenameAndPath,.3DBD.) | SubString(Player.FilenameAndPath,.SBS.)]">3DCase</value>
+		<value condition="[SubString(Player.FilenameAndPath,bluray) | SubString(Player.FilenameAndPath,bdrip) | SubString(Player.FilenameAndPath,bd25) | SubString(Player.FilenameAndPath,bd50)]">bd</value>
+		<value condition="[StringCompare(VideoPlayer.VideoResolution,1080) | StringCompare(VideoPlayer.VideoResolution,720)]">bd</value>
+		<value condition="SubString(Player.FilenameAndPath,hddvd)">hddvd</value>
+		<value condition="SubString(Player.FilenameAndPath,dvd)">dvd</value>
+		<value condition="[StringCompare(VideoPlayer.VideoResolution,480) | StringCompare(VideoPlayer.VideoResolution,540) | StringCompare(VideoPlayer.VideoResolution,576)]">dvd</value>
+		<value>dvd</value>
 	</variable>
-	<variable name="VideoListCase">
-		<value condition="!Skin.HasSetting(UseDiscTypeCase) + [Container.Content(tvshows) | Container.Content(seasons) | Container.Content(episodes)]">TVseries</value>
-		<value condition="!Skin.HasSetting(UseDiscTypeCase) + !IsEmpty(ListItem.FileExtension)">$INFO[ListItem.FileExtension]</value>
-		<value condition="Skin.HasSetting(UseDiscTypeCase) + [SubString(ListItem.FilenameAndPath,.3D.) | SubString(ListItem.FilenameAndPath,.3DBD.) | SubString(ListItem.FilenameAndPath,.SBS.)]">3DCase</value>
-		<value condition="Skin.HasSetting(UseDiscTypeCase) + ListItem.IsStereoscopic">3DCase</value>
-		<value condition="Skin.HasSetting(UseDiscTypeCase) + [SubString(ListItem.FilenameAndPath,bluray) | SubString(ListItem.FilenameAndPath,bdrip) | SubString(ListItem.FilenameAndPath,bd25) | SubString(ListItem.FilenameAndPath,bd50)]">bd</value>
-		<value condition="Skin.HasSetting(UseDiscTypeCase) + [StringCompare(ListItem.VideoResolution,1080) | StringCompare(ListItem.VideoResolution,720)]">bd</value>
-		<value condition="Skin.HasSetting(UseDiscTypeCase) + SubString(ListItem.FilenameAndPath,hddvd)">hddvd</value>
-		<value condition="Skin.HasSetting(UseDiscTypeCase) + SubString(ListItem.FilenameAndPath,dvd)">dvd</value>
-		<value condition="Skin.HasSetting(UseDiscTypeCase) + [StringCompare(ListItem.VideoResolution,480) | StringCompare(ListItem.VideoResolution,540) | StringCompare(ListItem.VideoResolution,576)]">dvd</value>
-		<value condition="Skin.HasSetting(UseDiscTypeCase) + [SubString(ListItem.FilenameAndPath,pdtv) | SubString(ListItem.FilenameAndPath,hdtv) | SubString(ListItem.FilenameAndPath,dsr)]">TVseries</value>
-		<value condition="Container.Content(tvshows) | Container.Content(seasons)">TVseries</value>
-		<value>dv</value>
-	</variable>
-	<variable name="CoverFlowCaseOne">
-		<value condition="!Skin.HasSetting(UseDiscTypeCase) + [Container.Content(tvshows) | Container.Content(seasons) | Container.Content(episodes)]">TVseries</value>
-		<value condition="!Skin.HasSetting(UseDiscTypeCase) + !IsEmpty(Container(555).ListItem(-4).FileExtension)">$INFO[Container(555).ListItem(-4).FileExtension]</value>
-		<value condition="Skin.HasSetting(UseDiscTypeCase) + [SubString(Container(555).ListItem(-4).FilenameAndPath,.3D.) | SubString(Container(555).ListItem(-4).FilenameAndPath,.3DBD.) | SubString(Container(555).ListItem(-4).FilenameAndPath,.SBS.)]">3DCase</value>
-		<value condition="Skin.HasSetting(UseDiscTypeCase) + Container(555).ListItem(-4).IsStereoscopic">3DCase</value>
-		<value condition="Skin.HasSetting(UseDiscTypeCase) + [SubString(Container(555).ListItem(-4).FilenameAndPath,bluray) | SubString(Container(555).ListItem(-4).FilenameAndPath,bdrip) | SubString(Container(555).ListItem(-4).FilenameAndPath,bd25) | SubString(Container(555).ListItem(-4).FilenameAndPath,bd50)]">bd</value>
-		<value condition="Skin.HasSetting(UseDiscTypeCase) + [StringCompare(Container(555).ListItem(-4).VideoResolution,1080) | StringCompare(Container(555).ListItem(-4).VideoResolution,720)]">bd</value>
-		<value condition="Skin.HasSetting(UseDiscTypeCase) + SubString(Container(555).ListItem(-4).FilenameAndPath,hddvd)">hddvd</value>
-		<value condition="Skin.HasSetting(UseDiscTypeCase) + SubString(Container(555).ListItem(-4).FilenameAndPath,dvd)">dvd</value>
-		<value condition="Skin.HasSetting(UseDiscTypeCase) + [StringCompare(Container(555).ListItem(-4).VideoResolution,480) | StringCompare(Container(555).ListItem(-4).VideoResolution,540) | StringCompare(Container(555).ListItem(-4).VideoResolution,576)]">dvd</value>
-		<value condition="Skin.HasSetting(UseDiscTypeCase) + [SubString(Container(555).ListItem(-4).FilenameAndPath,pdtv) | SubString(Container(555).ListItem(-4).FilenameAndPath,hdtv) | SubString(Container(555).ListItem(-4).FilenameAndPath,dsr)]">TVseries</value>
-		<value condition="Container.Content(tvshows) | Container.Content(seasons)">TVseries</value>
-		<value>dv</value>
-	</variable>
-	<variable name="CoverFlowCaseTwo">
-		<value condition="!Skin.HasSetting(UseDiscTypeCase) + [Container.Content(tvshows) | Container.Content(seasons) | Container.Content(episodes)]">TVseries</value>
-		<value condition="!Skin.HasSetting(UseDiscTypeCase) + !IsEmpty(Container(555).ListItem(-3).FileExtension)">$INFO[Container(555).ListItem(-3).FileExtension]</value>
-		<value condition="Skin.HasSetting(UseDiscTypeCase) + [SubString(Container(555).ListItem(-3).FilenameAndPath,.3D.) | SubString(Container(555).ListItem(-3).FilenameAndPath,.3DBD.) | SubString(Container(555).ListItem(-3).FilenameAndPath,.SBS.)]">3DCase</value>
-		<value condition="Skin.HasSetting(UseDiscTypeCase) + Container(555).ListItem(-3).IsStereoscopic">3DCase</value>
-		<value condition="Skin.HasSetting(UseDiscTypeCase) + [SubString(Container(555).ListItem(-3).FilenameAndPath,bluray) | SubString(Container(555).ListItem(-3).FilenameAndPath,bdrip) | SubString(Container(555).ListItem(-3).FilenameAndPath,bd25) | SubString(Container(555).ListItem(-3).FilenameAndPath,bd50)]">bd</value>
-		<value condition="Skin.HasSetting(UseDiscTypeCase) + [StringCompare(Container(555).ListItem(-3).VideoResolution,1080) | StringCompare(Container(555).ListItem(-3).VideoResolution,720)]">bd</value>
-		<value condition="Skin.HasSetting(UseDiscTypeCase) + SubString(Container(555).ListItem(-3).FilenameAndPath,hddvd)">hddvd</value>
-		<value condition="Skin.HasSetting(UseDiscTypeCase) + SubString(Container(555).ListItem(-3).FilenameAndPath,dvd)">dvd</value>
-		<value condition="Skin.HasSetting(UseDiscTypeCase) + [StringCompare(Container(555).ListItem(-3).VideoResolution,480) | StringCompare(Container(555).ListItem(-3).VideoResolution,540) | StringCompare(Container(555).ListItem(-3).VideoResolution,576)]">dvd</value>
-		<value condition="Skin.HasSetting(UseDiscTypeCase) + [SubString(Container(555).ListItem(-3).FilenameAndPath,pdtv) | SubString(Container(555).ListItem(-3).FilenameAndPath,hdtv) | SubString(Container(555).ListItem(-3).FilenameAndPath,dsr)]">TVseries</value>
-		<value condition="Container.Content(tvshows) | Container.Content(seasons)">TVseries</value>
-		<value>dv</value>
-	</variable>
-	<variable name="CoverFlowCaseThree">
-		<value condition="!Skin.HasSetting(UseDiscTypeCase) + [Container.Content(tvshows) | Container.Content(seasons) | Container.Content(episodes)]">TVseries</value>
-		<value condition="!Skin.HasSetting(UseDiscTypeCase) + !IsEmpty(Container(555).ListItem(-2).FileExtension)">$INFO[Container(555).ListItem(-2).FileExtension]</value>
-		<value condition="Skin.HasSetting(UseDiscTypeCase) + [SubString(Container(555).ListItem(-2).FilenameAndPath,.3D.) | SubString(Container(555).ListItem(-2).FilenameAndPath,.3DBD.) | SubString(Container(555).ListItem(-2).FilenameAndPath,.SBS.)]">3DCase</value>
-		<value condition="Skin.HasSetting(UseDiscTypeCase) + Container(555).ListItem(-2).IsStereoscopic">3DCase</value>
-		<value condition="Skin.HasSetting(UseDiscTypeCase) + [SubString(Container(555).ListItem(-2).FilenameAndPath,bluray) | SubString(Container(555).ListItem(-2).FilenameAndPath,bdrip) | SubString(Container(555).ListItem(-2).FilenameAndPath,bd25) | SubString(Container(555).ListItem(-2).FilenameAndPath,bd50)]">bd</value>
-		<value condition="Skin.HasSetting(UseDiscTypeCase) + [StringCompare(Container(555).ListItem(-2).VideoResolution,1080) | StringCompare(Container(555).ListItem(-2).VideoResolution,720)]">bd</value>
-		<value condition="Skin.HasSetting(UseDiscTypeCase) + SubString(Container(555).ListItem(-2).FilenameAndPath,hddvd)">hddvd</value>
-		<value condition="Skin.HasSetting(UseDiscTypeCase) + SubString(Container(555).ListItem(-2).FilenameAndPath,dvd)">dvd</value>
-		<value condition="Skin.HasSetting(UseDiscTypeCase) + [StringCompare(Container(555).ListItem(-2).VideoResolution,480) | StringCompare(Container(555).ListItem(-2).VideoResolution,540) | StringCompare(Container(555).ListItem(-2).VideoResolution,576)]">dvd</value>
-		<value condition="Skin.HasSetting(UseDiscTypeCase) + [SubString(Container(555).ListItem(-2).FilenameAndPath,pdtv) | SubString(Container(555).ListItem(-2).FilenameAndPath,hdtv) | SubString(Container(555).ListItem(-2).FilenameAndPath,dsr)]">TVseries</value>
-		<value condition="Container.Content(tvshows) | Container.Content(seasons)">TVseries</value>
-		<value>dv</value>
-	</variable>
-	<variable name="CoverFlowCaseFour">
-		<value condition="!Skin.HasSetting(UseDiscTypeCase) + [Container.Content(tvshows) | Container.Content(seasons) | Container.Content(episodes)]">TVseries</value>
-		<value condition="!Skin.HasSetting(UseDiscTypeCase) + !IsEmpty(Container(555).ListItem(-1).FileExtension)">$INFO[Container(555).ListItem(-1).FileExtension]</value>
-		<value condition="Skin.HasSetting(UseDiscTypeCase) + [SubString(Container(555).ListItem(-1).FilenameAndPath,.3D.) | SubString(Container(555).ListItem(-1).FilenameAndPath,.3DBD.) | SubString(Container(555).ListItem(-1).FilenameAndPath,.SBS.)]">3DCase</value>
-		<value condition="Skin.HasSetting(UseDiscTypeCase) + Container(555).ListItem(-1).IsStereoscopic">3DCase</value>
-		<value condition="Skin.HasSetting(UseDiscTypeCase) + [SubString(Container(555).ListItem(-1).FilenameAndPath,bluray) | SubString(Container(555).ListItem(-1).FilenameAndPath,bdrip) | SubString(Container(555).ListItem(-1).FilenameAndPath,bd25) | SubString(Container(555).ListItem(-1).FilenameAndPath,bd50)]">bd</value>
-		<value condition="Skin.HasSetting(UseDiscTypeCase) + [StringCompare(Container(555).ListItem(-1).VideoResolution,1080) | StringCompare(Container(555).ListItem(-1).VideoResolution,720)]">bd</value>
-		<value condition="Skin.HasSetting(UseDiscTypeCase) + SubString(Container(555).ListItem(-1).FilenameAndPath,hddvd)">hddvd</value>
-		<value condition="Skin.HasSetting(UseDiscTypeCase) + SubString(Container(555).ListItem(-1).FilenameAndPath,dvd)">dvd</value>
-		<value condition="Skin.HasSetting(UseDiscTypeCase) + [StringCompare(Container(555).ListItem(-1).VideoResolution,480) | StringCompare(Container(555).ListItem(-1).VideoResolution,540) | StringCompare(Container(555).ListItem(-1).VideoResolution,576)]">dvd</value>
-		<value condition="Skin.HasSetting(UseDiscTypeCase) + [SubString(Container(555).ListItem(-1).FilenameAndPath,pdtv) | SubString(Container(555).ListItem(-1).FilenameAndPath,hdtv) | SubString(Container(555).ListItem(-1).FilenameAndPath,dsr)]">TVseries</value>
-		<value condition="Container.Content(tvshows) | Container.Content(seasons)">TVseries</value>
-		<value>dv</value>
-	</variable>
-	<variable name="CoverFlowCaseFive">
-		<value condition="!Skin.HasSetting(UseDiscTypeCase) + [Container.Content(tvshows) | Container.Content(seasons) | Container.Content(episodes)]">TVseries</value>
-		<value condition="!Skin.HasSetting(UseDiscTypeCase) + !IsEmpty(Container(555).ListItem(0).FileExtension)">$INFO[Container(555).ListItem(0).FileExtension]</value>
-		<value condition="Skin.HasSetting(UseDiscTypeCase) + [SubString(Container(555).ListItem(0).FilenameAndPath,.3D.) | SubString(Container(555).ListItem(0).FilenameAndPath,.3DBD.) | SubString(Container(555).ListItem(0).FilenameAndPath,.SBS.)]">3DCase</value>
-		<value condition="Skin.HasSetting(UseDiscTypeCase) + Container(555).ListItem(0).IsStereoscopic">3DCase</value>
-		<value condition="Skin.HasSetting(UseDiscTypeCase) + [SubString(Container(555).ListItem(0).FilenameAndPath,bluray) | SubString(Container(555).ListItem(0).FilenameAndPath,bdrip) | SubString(Container(555).ListItem(0).FilenameAndPath,bd25) | SubString(Container(555).ListItem(0).FilenameAndPath,bd50)]">bd</value>
-		<value condition="Skin.HasSetting(UseDiscTypeCase) + [StringCompare(Container(555).ListItem(0).VideoResolution,1080) | StringCompare(Container(555).ListItem(0).VideoResolution,720)]">bd</value>
-		<value condition="Skin.HasSetting(UseDiscTypeCase) + SubString(Container(555).ListItem(0).FilenameAndPath,hddvd)">hddvd</value>
-		<value condition="Skin.HasSetting(UseDiscTypeCase) + SubString(Container(555).ListItem(0).FilenameAndPath,dvd)">dvd</value>
-		<value condition="Skin.HasSetting(UseDiscTypeCase) + [StringCompare(Container(555).ListItem(0).VideoResolution,480) | StringCompare(Container(555).ListItem(0).VideoResolution,540) | StringCompare(Container(555).ListItem(0).VideoResolution,576)]">dvd</value>
-		<value condition="Skin.HasSetting(UseDiscTypeCase) + [SubString(Container(555).ListItem(0).FilenameAndPath,pdtv) | SubString(Container(555).ListItem(0).FilenameAndPath,hdtv) | SubString(Container(555).ListItem(0).FilenameAndPath,dsr)]">TVseries</value>
-		<value condition="Container.Content(tvshows) | Container.Content(seasons)">TVseries</value>
-		<value>dv</value>
-	</variable>
-	<variable name="CoverFlowCaseSix">
-		<value condition="!Skin.HasSetting(UseDiscTypeCase) + [Container.Content(tvshows) | Container.Content(seasons) | Container.Content(episodes)]">TVseries</value>
-		<value condition="!Skin.HasSetting(UseDiscTypeCase) + !IsEmpty(Container(555).ListItem(1).FileExtension)">$INFO[Container(555).ListItem(1).FileExtension]</value>
-		<value condition="Skin.HasSetting(UseDiscTypeCase) + [SubString(Container(555).ListItem(1).FilenameAndPath,.3D.) | SubString(Container(555).ListItem(1).FilenameAndPath,.3DBD.) | SubString(Container(555).ListItem(1).FilenameAndPath,.SBS.)]">3DCase</value>
-		<value condition="Skin.HasSetting(UseDiscTypeCase) + Container(555).ListItem(1).IsStereoscopic">3DCase</value>
-		<value condition="Skin.HasSetting(UseDiscTypeCase) + [SubString(Container(555).ListItem(1).FilenameAndPath,bluray) | SubString(Container(555).ListItem(1).FilenameAndPath,bdrip) | SubString(Container(555).ListItem(1).FilenameAndPath,bd25) | SubString(Container(555).ListItem(1).FilenameAndPath,bd50)]">bd</value>
-		<value condition="Skin.HasSetting(UseDiscTypeCase) + [StringCompare(Container(555).ListItem(1).VideoResolution,1080) | StringCompare(Container(555).ListItem(1).VideoResolution,720)]">bd</value>
-		<value condition="Skin.HasSetting(UseDiscTypeCase) + SubString(Container(555).ListItem(1).FilenameAndPath,hddvd)">hddvd</value>
-		<value condition="Skin.HasSetting(UseDiscTypeCase) + SubString(Container(555).ListItem(1).FilenameAndPath,dvd)">dvd</value>
-		<value condition="Skin.HasSetting(UseDiscTypeCase) + [StringCompare(Container(555).ListItem(1).VideoResolution,480) | StringCompare(Container(555).ListItem(1).VideoResolution,540) | StringCompare(Container(555).ListItem(1).VideoResolution,576)]">dvd</value>
-		<value condition="Skin.HasSetting(UseDiscTypeCase) + [SubString(Container(555).ListItem(1).FilenameAndPath,pdtv) | SubString(Container(555).ListItem(1).FilenameAndPath,hdtv) | SubString(Container(555).ListItem(1).FilenameAndPath,dsr)]">TVseries</value>
-		<value condition="Container.Content(tvshows) | Container.Content(seasons)">TVseries</value>
-		<value>dv</value>
-	</variable>
-	<variable name="CoverFlowCaseSeven">
-		<value condition="!Skin.HasSetting(UseDiscTypeCase) + [Container.Content(tvshows) | Container.Content(seasons) | Container.Content(episodes)]">TVseries</value>
-		<value condition="!Skin.HasSetting(UseDiscTypeCase) + !IsEmpty(Container(555).ListItem(2).FileExtension)">$INFO[Container(555).ListItem(2).FileExtension]</value>
-		<value condition="Skin.HasSetting(UseDiscTypeCase) + [SubString(Container(555).ListItem(2).FilenameAndPath,.3D.) | SubString(Container(555).ListItem(2).FilenameAndPath,.3DBD.) | SubString(Container(555).ListItem(2).FilenameAndPath,.SBS.)]">3DCase</value>
-		<value condition="Skin.HasSetting(UseDiscTypeCase) + Container(555).ListItem(2).IsStereoscopic">3DCase</value>
-		<value condition="Skin.HasSetting(UseDiscTypeCase) + [SubString(Container(555).ListItem(2).FilenameAndPath,bluray) | SubString(Container(555).ListItem(2).FilenameAndPath,bdrip) | SubString(Container(555).ListItem(2).FilenameAndPath,bd25) | SubString(Container(555).ListItem(2).FilenameAndPath,bd50)]">bd</value>
-		<value condition="Skin.HasSetting(UseDiscTypeCase) + [StringCompare(Container(555).ListItem(2).VideoResolution,1080) | StringCompare(Container(555).ListItem(2).VideoResolution,720)]">bd</value>
-		<value condition="Skin.HasSetting(UseDiscTypeCase) + SubString(Container(555).ListItem(2).FilenameAndPath,hddvd)">hddvd</value>
-		<value condition="Skin.HasSetting(UseDiscTypeCase) + SubString(Container(555).ListItem(2).FilenameAndPath,dvd)">dvd</value>
-		<value condition="Skin.HasSetting(UseDiscTypeCase) + [StringCompare(Container(555).ListItem(2).VideoResolution,480) | StringCompare(Container(555).ListItem(2).VideoResolution,540) | StringCompare(Container(555).ListItem(2).VideoResolution,576)]">dvd</value>
-		<value condition="Skin.HasSetting(UseDiscTypeCase) + [SubString(Container(555).ListItem(2).FilenameAndPath,pdtv) | SubString(Container(555).ListItem(2).FilenameAndPath,hdtv) | SubString(Container(555).ListItem(2).FilenameAndPath,dsr)]">TVseries</value>
-		<value condition="Container.Content(tvshows) | Container.Content(seasons)">TVseries</value>
-		<value>dv</value>
-	</variable>
-	<variable name="CoverFlowCaseEight">
-		<value condition="!Skin.HasSetting(UseDiscTypeCase) + [Container.Content(tvshows) | Container.Content(seasons) | Container.Content(episodes)]">TVseries</value>
-		<value condition="!Skin.HasSetting(UseDiscTypeCase) + !IsEmpty(Container(555).ListItem(3).FileExtension)">$INFO[Container(555).ListItem(3).FileExtension]</value>
-		<value condition="Skin.HasSetting(UseDiscTypeCase) + [SubString(Container(555).ListItem(3).FilenameAndPath,.3D.) | SubString(Container(555).ListItem(3).FilenameAndPath,.3DBD.) | SubString(Container(555).ListItem(3).FilenameAndPath,.SBS.)]">3DCase</value>
-		<value condition="Skin.HasSetting(UseDiscTypeCase) + Container(555).ListItem(3).IsStereoscopic">3DCase</value>
-		<value condition="Skin.HasSetting(UseDiscTypeCase) + [SubString(Container(555).ListItem(3).FilenameAndPath,bluray) | SubString(Container(555).ListItem(3).FilenameAndPath,bdrip) | SubString(Container(555).ListItem(3).FilenameAndPath,bd25) | SubString(Container(555).ListItem(3).FilenameAndPath,bd50)]">bd</value>
-		<value condition="Skin.HasSetting(UseDiscTypeCase) + [StringCompare(Container(555).ListItem(3).VideoResolution,1080) | StringCompare(Container(555).ListItem(3).VideoResolution,720)]">bd</value>
-		<value condition="Skin.HasSetting(UseDiscTypeCase) + SubString(Container(555).ListItem(3).FilenameAndPath,hddvd)">hddvd</value>
-		<value condition="Skin.HasSetting(UseDiscTypeCase) + SubString(Container(555).ListItem(3).FilenameAndPath,dvd)">dvd</value>
-		<value condition="Skin.HasSetting(UseDiscTypeCase) + [StringCompare(Container(555).ListItem(3).VideoResolution,480) | StringCompare(Container(555).ListItem(3).VideoResolution,540) | StringCompare(Container(555).ListItem(3).VideoResolution,576)]">dvd</value>
-		<value condition="Skin.HasSetting(UseDiscTypeCase) + [SubString(Container(555).ListItem(3).FilenameAndPath,pdtv) | SubString(Container(555).ListItem(3).FilenameAndPath,hdtv) | SubString(Container(555).ListItem(3).FilenameAndPath,dsr)]">TVseries</value>
-		<value condition="Container.Content(tvshows) | Container.Content(seasons)">TVseries</value>
-		<value>dv</value>
-	</variable>
-	<variable name="CoverFlowCaseNine">
-		<value condition="!Skin.HasSetting(UseDiscTypeCase) + [Container.Content(tvshows) | Container.Content(seasons) | Container.Content(episodes)]">TVseries</value>
-		<value condition="!Skin.HasSetting(UseDiscTypeCase) + !IsEmpty(Container(555).ListItem(4).FileExtension)">$INFO[Container(555).ListItem(4).FileExtension]</value>
-		<value condition="Skin.HasSetting(UseDiscTypeCase) + [SubString(Container(555).ListItem(4).FilenameAndPath,.3D.) | SubString(Container(555).ListItem(4).FilenameAndPath,.3DBD.) | SubString(Container(555).ListItem(4).FilenameAndPath,.SBS.)]">3DCase</value>
-		<value condition="Skin.HasSetting(UseDiscTypeCase) + Container(555).ListItem(4).IsStereoscopic">3DCase</value>
-		<value condition="Skin.HasSetting(UseDiscTypeCase) + [SubString(Container(555).ListItem(4).FilenameAndPath,bluray) | SubString(Container(555).ListItem(4).FilenameAndPath,bdrip) | SubString(Container(555).ListItem(4).FilenameAndPath,bd25) | SubString(Container(555).ListItem(4).FilenameAndPath,bd50)]">bd</value>
-		<value condition="Skin.HasSetting(UseDiscTypeCase) + [StringCompare(Container(555).ListItem(4).VideoResolution,1080) | StringCompare(Container(555).ListItem(4).VideoResolution,720)]">bd</value>
-		<value condition="Skin.HasSetting(UseDiscTypeCase) + SubString(Container(555).ListItem(4).FilenameAndPath,hddvd)">hddvd</value>
-		<value condition="Skin.HasSetting(UseDiscTypeCase) + SubString(Container(555).ListItem(4).FilenameAndPath,dvd)">dvd</value>
-		<value condition="Skin.HasSetting(UseDiscTypeCase) + [StringCompare(Container(555).ListItem(4).VideoResolution,480) | StringCompare(Container(555).ListItem(4).VideoResolution,540) | StringCompare(Container(555).ListItem(4).VideoResolution,576)]">dvd</value>
-		<value condition="Skin.HasSetting(UseDiscTypeCase) + [SubString(Container(555).ListItem(4).FilenameAndPath,pdtv) | SubString(Container(555).ListItem(4).FilenameAndPath,hdtv) | SubString(Container(555).ListItem(4).FilenameAndPath,dsr)]">TVseries</value>
-		<value condition="Container.Content(tvshows) | Container.Content(seasons)">TVseries</value>
-		<value>dv</value>
-	</variable>
-	<variable name="CommonMediaPlaying">
+	
+		<variable name="CommonMediaPlaying">
 		<value condition="StringCompare(VideoPlayer.Title,player.swf playpath=105Test1 live=true)">[B]$LOCALIZE[31206][/B]  ([COLOR=$VAR[MainColorOne]]$LOCALIZE[31212][/COLOR])</value>
 		<value condition="StringCompare(VideoPlayer.Title,player.swf playpath=rmc1 live=true)">[B]$LOCALIZE[31221][/B]  ([COLOR=$VAR[MainColorOne]]$LOCALIZE[31212][/COLOR])</value>
 		<value condition="Player.IsInternetStream + SubString(VideoPlayer.Title,Virgin 1,Left)">[B]$LOCALIZE[31222][/B]  ([COLOR=$VAR[MainColorOne]]$LOCALIZE[31212][/COLOR])</value>
@@ -739,7 +589,7 @@
 	<variable name="VideoDescription" type="text">
 		<value condition="Container.Content(Seasons)">$INFO[Container.ShowPlot]</value>
 		<value condition="Skin.HasSetting(MediaShortDescription) + !IsEmpty(ListItem.PlotOutline)">$INFO[ListItem.PlotOutline]</value>
-		<value condition="Skin.HasSetting(MediaShortDescription) + !IsEmpty(ListItem.Tagline)">$INFO[ListItem.Tagline]</value>
+		<!--value condition="Skin.HasSetting(MediaShortDescription) + !IsEmpty(ListItem.Tagline)">$INFO[ListItem.Tagline]</value-->
 		<value condition="!IsEmpty(ListItem.Plot)">$INFO[ListItem.Plot]</value>
 		<value>$LOCALIZE[161]</value>
 	</variable>
@@ -2580,6 +2430,7 @@
 		<value condition="StringCompare(ListItem.Overlay,OverlayWatched.png) + !ListItem.IsResumable + StringCompare(System.Language,Welsh)">Watched/Welsh</value>
 		<value condition="StringCompare(ListItem.Overlay,OverlayWatched.png) + !ListItem.IsResumable">Watched/English</value>
 		<!-- New -->
+		<!--
 		<value condition="!StringCompare(ListItem.Overlay,OverlayWatched.png) + !Skin.HasSetting(HideNewMediaStat) + !ListItem.IsResumable + StringCompare(System.Language,English)">UnWatched/English</value>
 		<value condition="!StringCompare(ListItem.Overlay,OverlayWatched.png) + !Skin.HasSetting(HideNewMediaStat) + !ListItem.IsResumable + SubString(System.Language,Chinese)">UnWatched/ChineseSimple</value>
 		<value condition="!StringCompare(ListItem.Overlay,OverlayWatched.png) + !Skin.HasSetting(HideNewMediaStat) + !ListItem.IsResumable + StringCompare(System.Language,Danish)">UnWatched/Danish</value>
@@ -2602,6 +2453,7 @@
 		<value condition="!StringCompare(ListItem.Overlay,OverlayWatched.png) + !Skin.HasSetting(HideNewMediaStat) + !ListItem.IsResumable + StringCompare(System.Language,Spanish)">UnWatched/Spanish</value>
 		<value condition="!StringCompare(ListItem.Overlay,OverlayWatched.png) + !Skin.HasSetting(HideNewMediaStat) + !ListItem.IsResumable + StringCompare(System.Language,Swedish)">UnWatched/Swedish</value>
 		<value condition="!StringCompare(ListItem.Overlay,OverlayWatched.png) + !Skin.HasSetting(HideNewMediaStat) + !ListItem.IsResumable">UnWatched/English</value>
+		-->
 		<!-- In Progress -->
 		<value condition="ListItem.IsResumable + StringCompare(System.Language,English)">InProgress/English</value>
 		<value condition="ListItem.IsResumable">InProgress/English</value>
@@ -2611,14 +2463,14 @@
 		<value>$INFO[Skin.String(WeatherFanartDir)]</value>
 	</variable>
 	<variable name="MainColorOne" type="text">
-		<value condition="IsEmpty(Skin.String(UsrColorOne))">blue</value>
-		<value condition="!IsEmpty(Skin.String(UsrColorOne))">$INFO[Skin.String(UsrColorOne)]</value>
+		<!--value condition="IsEmpty(Skin.String(UsrColorOne))">blue</value-->
+		<!--value condition="!IsEmpty(Skin.String(UsrColorOne))">$INFO[Skin.String(UsrColorOne)]</value-->
 		<value>blue</value>
 	</variable>
-	<variable name="ColorOneName" type="text">
+	<!--variable name="ColorOneName" type="text">
 		<value condition="IsEmpty(Skin.String(UsrColorOne))">$LOCALIZE[13278]</value>
 		<value condition="!IsEmpty(Skin.String(UsrColorOne))">$INFO[Skin.String(UsrColorOne)]</value>
-	</variable>
+	</variable-->
 	<variable name="TransparentValue">
 		<value condition="!IsEmpty(Skin.String(mediapaneltrans))">$LOCALIZE[31248]</value>
 		<value>$LOCALIZE[31257]</value>
@@ -2653,14 +2505,14 @@
 		<value condition="[Container.Content(Movies) | Container.Content(Episodes) | Container.Content(MusicVideos)] + !substring(ListItem.Duration,min)">$INFO[ListItem.Duration,, $LOCALIZE[12391]]</value>
 		<value condition="[Container.Content(Movies) | Container.Content(Episodes) | Container.Content(MusicVideos)] + substring(ListItem.Duration,min)">$INFO[ListItem.Duration]</value>
 	</variable>
-	<variable name="UserParentDirName" type="text">
+	<!--variable name="UserParentDirName" type="text">
 		<value condition="!IsEmpty(Skin.String(UserParentDir))">$INFO[Skin.String(UserParentDir)]</value>
 		<value>$LOCALIZE[31007]</value>
-	</variable>
+	</variable-->
 	<variable name="DescriptiveLabel" type="text">
-		<value condition="StringCompare(ListItem.label,..)">$VAR[UserParentDirName]</value>
+		
 		<value condition="StringCompare(ListItem.label,$LOCALIZE[20366])">$INFO[ListItem.TVShowTitle] - $LOCALIZE[31959]</value>
-		<value condition="!IsEmpty(ListItem.Year) + !Skin.HasSetting(HideYearTitle) + Container.Content(Movies)">$INFO[ListItem.label] ([COLOR=white]$INFO[ListItem.Year][/COLOR])</value>
+		
 		<value condition="Container.Content(Seasons) | Container.Content(Episodes)">$INFO[ListItem.TVShowTitle] - $INFO[ListItem.label]</value>
 		<value>$INFO[ListItem.label]</value>
 	</variable>

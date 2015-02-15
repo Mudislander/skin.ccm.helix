@@ -1,3 +1,14 @@
+B]3.0.9[/B] [I]Feb 2015[/I]
+- Removed Adjustable Font Colour
+- Removed darker screen on video pause
+- Removed Video Info on Subtitle adjust
+- Returned Original Confluence Background
+- Returned Default Font to Roboto
+- Removed Replace .. in Listnames
+- Removed Year in Title Option
+- Removed DVD Case choice and Option
+- Removed Coveflow - does not match other views
+
 B]3.0.8[/B] [I]Feb 2015[/I]
 - On going battle with backgrounds
 - New Media Views

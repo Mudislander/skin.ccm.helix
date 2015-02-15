@@ -11,7 +11,7 @@
 	<include file="IncludesCDWall.xml" />
 	<include file="IncludesOnScreenDisplay.xml" />
 	<include file="ViewsVideoLibrary.xml" />
-	<include file="ViewsCoverFlow.xml" />
+	<!--include file="ViewsCoverFlow.xml" /-->
 	<include file="ViewsLowlist.xml" />
 	<include file="ViewsMusicLibrary.xml" />
 	<include file="ViewsFileMode.xml" />
@@ -162,7 +162,7 @@
 			<width>150</width>
 			<height>55</height>
 			<aspectratio>keep</aspectratio>
-			<texture>ccm_logo.png</texture>
+			<texture>Confluence_Logo.png</texture>
 		</control>
 	</include>
 	<include name="MainWindowMouseButtons">
@@ -663,7 +663,7 @@
 			<height>35</height>
 			<font>font12</font>
 			<label>31023</label>
-			<textcolor>$VAR[MainColorOne]</textcolor>
+			<textcolor>blue</textcolor>
 			<align>center</align>
 			<aligny>center</aligny>
 			<visible>Player.HasMedia</visible>

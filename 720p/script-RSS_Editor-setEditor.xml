@@ -62,7 +62,7 @@
 			<align>center</align>
 			<aligny>center</aligny>
 			<font>font12</font>
-			<textcolor>$VAR[MainColorOne]</textcolor>
+			<textcolor>blue</textcolor>
 			<shadowcolor>black</shadowcolor>
 		</control>
 		<control type="list" id="10">

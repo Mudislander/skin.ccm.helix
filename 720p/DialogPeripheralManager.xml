@@ -109,7 +109,7 @@
 						<align>left</align>
 						<aligny>center</aligny>
 						<font>font12</font>
-						<textcolor>$VAR[MainColorOne]</textcolor>
+						<textcolor>blue</textcolor>
 					</control>
 					<control type="label">
 						<description>class</description>
@@ -121,7 +121,7 @@
 						<align>left</align>
 						<aligny>center</aligny>
 						<font>font12</font>
-						<textcolor>$VAR[MainColorOne]</textcolor>
+						<textcolor>blue</textcolor>
 					</control>
 				</itemlayout>
 				<focusedlayout height="85" width="550">
@@ -165,7 +165,7 @@
 						<align>left</align>
 						<aligny>center</aligny>
 						<font>font12</font>
-						<textcolor>$VAR[MainColorOne]</textcolor>
+						<textcolor>blue</textcolor>
 					</control>
 					<control type="label">
 						<description>class</description>
@@ -177,7 +177,7 @@
 						<align>left</align>
 						<aligny>center</aligny>
 						<font>font12</font>
-						<textcolor>$VAR[MainColorOne]</textcolor>
+						<textcolor>blue</textcolor>
 					</control>
 				</focusedlayout>
 			</control>

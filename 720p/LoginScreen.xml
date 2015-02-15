@@ -170,7 +170,7 @@
 				<width>150</width>
 				<height>55</height>
 				<aspectratio>keep</aspectratio>
-				<texture>ccm_logo.png</texture>
+				<texture>Confluence_Logo.png</texture>
 			</control>
 			<control type="group">
 				<left>940</left>

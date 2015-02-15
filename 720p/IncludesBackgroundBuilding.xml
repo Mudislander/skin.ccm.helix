@@ -169,7 +169,7 @@
 				<visible>SubString(ListItem.FilenameAndPath,videodb://movies/genres) | SubString(ListItem.FilenameAndPath,videodb://tvshows/genres) | SubString(ListItem.FilenameAndPath,videodb://musicvideos/genres) | SubString(ListItem.FilenameAndPath,musicdb://genres)</visible>
 			</control>
 		</control>
-		<control type="group">
+		<!--control type="group">
 			<visible>!Window.IsVisible(Home) + !Player.HasVideo + Skin.HasSetting(AdditionalMediaFanart)</visible>
 			<control type="image">
 				<left>-350</left>
@@ -205,7 +205,7 @@
 				<texture background="true">$INFO[ListItem.Art(tvshow.characterart)]</texture>
 				<visible>IsEmpty(ListItem.Art(discart)) + !IsEmpty(ListItem.Art(tvshow.characterart)) + Container.Content(Episodes)</visible>
 			</control>
-		</control>
+		</control-->
 		<control type="visualisation">
 			<include>Dimensions_Fullscreen</include>
 			<visible>Window.IsVisible(Home) + Skin.HasSetting(VizOnlyOnHome) + Player.HasAudio + !SubString(Window(videolibrary).Property(TvTunesIsAlive),TRUE) + !Player.Paused + !Window.IsVisible(TVChannels) + !Window.IsVisible(RadioChannels)</visible>

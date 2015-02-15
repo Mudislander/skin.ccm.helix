@@ -72,7 +72,7 @@
 			<width>460</width>
 			<align>left</align>
 			<font>font13_title</font>
-			<textcolor>$VAR[MainColorOne]</textcolor>
+			<textcolor>blue</textcolor>
 			<label>$LOCALIZE[20093]</label>
 		</control>
 		<control type="label" id="102">
@@ -91,7 +91,7 @@
 			<width>460</width>
 			<align>left</align>
 			<font>font13_title</font>
-			<textcolor>$VAR[MainColorOne]</textcolor>
+			<textcolor>blue</textcolor>
 			<label>$LOCALIZE[20070]</label>
 		</control>
 		<control type="label" id="103">

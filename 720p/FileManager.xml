@@ -82,7 +82,7 @@
 				<label>A</label>
 				<align>left</align>
 				<aligny>center</aligny>
-				<textcolor>$VAR[MainColorOne]</textcolor>
+				<textcolor>blue</textcolor>
 				<shadowcolor>black</shadowcolor>
 			</control>
 			<control type="label" id="101">
@@ -256,7 +256,7 @@
 				<label>B</label>
 				<align>right</align>
 				<aligny>center</aligny>
-				<textcolor>$VAR[MainColorOne]</textcolor>
+				<textcolor>blue</textcolor>
 				<shadowcolor>black</shadowcolor>
 			</control>
 			<control type="label" id="102">

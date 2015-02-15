@@ -73,7 +73,7 @@
 				<font>font24</font>
 				<align>center</align>
 				<aligny>center</aligny>
-				<textcolor>$VAR[MainColorOne]</textcolor>
+				<textcolor>blue</textcolor>
 				<scroll>true</scroll>
 			</control>
 		</control>

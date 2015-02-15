@@ -1587,7 +1587,7 @@ msgid "Enable DVD Cases"
 msgstr ""
 
 msgctxt "#31952"
-msgid "Wrap Around Media Lists"
+msgid "Wrap Around Lists on Video FanArt View"
 msgstr ""
 
 msgctxt "#31953"

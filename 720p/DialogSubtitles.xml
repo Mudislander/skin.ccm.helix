@@ -337,7 +337,7 @@
 					<font>font13</font>
 					<align>center</align>
 					<aligny>top</aligny>
-					<textcolor>$VAR[MainColorOne]</textcolor>
+					<textcolor>blue</textcolor>
 					<shadowcolor>black</shadowcolor>
 					<wrapmultiline>true</wrapmultiline>
 				</control>

@@ -40,7 +40,7 @@
 				<font>font14</font>
 				<align>center</align>
 				<aligny>center</aligny>
-				<textcolor>$VAR[MainColorOne]</textcolor>
+				<textcolor>blue</textcolor>
 				<label>[B]$LOCALIZE[31199][/B]</label>
 			</control>
 			<control type="image">

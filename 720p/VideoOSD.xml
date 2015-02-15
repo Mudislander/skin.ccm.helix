@@ -527,7 +527,7 @@
 					<height>15</height>
 					<font>font12</font>
 					<label>24012</label>
-					<textcolor>$VAR[MainColorOne]</textcolor>
+					<textcolor>blue</textcolor>
 					<align>center</align>
 					<aligny>center</aligny>
 				</control>
@@ -645,7 +645,7 @@
 					<height>15</height>
 					<font>font12</font>
 					<label>36501</label>
-					<textcolor>$VAR[MainColorOne]</textcolor>
+					<textcolor>blue</textcolor>
 					<align>center</align>
 					<aligny>center</aligny>
 				</control>
@@ -744,7 +744,7 @@
 					<height>15</height>
 					<font>font12</font>
 					<label>36501</label>
-					<textcolor>$VAR[MainColorOne]</textcolor>
+					<textcolor>blue</textcolor>
 					<align>center</align>
 					<aligny>center</aligny>
 				</control>

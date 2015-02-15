@@ -174,7 +174,7 @@
 					<align>right</align>
 					<aligny>center</aligny>
 					<font>font12_title</font>
-					<textcolor>$VAR[MainColorOne]</textcolor>
+					<textcolor>blue</textcolor>
 					<shadowcolor>black</shadowcolor>
 				</control>
 				<control type="label">
@@ -241,7 +241,7 @@
 					<align>right</align>
 					<aligny>center</aligny>
 					<font>font12_title</font>
-					<textcolor>$VAR[MainColorOne]</textcolor>
+					<textcolor>blue</textcolor>
 					<shadowcolor>black</shadowcolor>
 				</control>
 				<control type="label">
@@ -859,8 +859,8 @@
 				<width>1145</width>
 				<font>font12</font>
 				<urlset>1</urlset>
-				<textcolor>$VAR[MainColorOne]</textcolor>
-				<titlecolor>$VAR[MainColorOne]</titlecolor>
+				<textcolor>blue</textcolor>
+				<titlecolor>blue</titlecolor>
 				<headlinecolor>white</headlinecolor>
 				<visible>!Skin.HasSetting(HideHomePowerBtn) + [!Player.HasAudio | IsEmpty(MusicPlayer.offset(1).Artist) | Skin.HasSetting(HideNextSongsInfo)]</visible>
 			</control>
@@ -872,8 +872,8 @@
 				<width>1190</width>
 				<font>font12</font>
 				<urlset>1</urlset>
-				<textcolor>$VAR[MainColorOne]</textcolor>
-				<titlecolor>$VAR[MainColorOne]</titlecolor>
+				<textcolor>blue</textcolor>
+				<titlecolor>blue</titlecolor>
 				<headlinecolor>white</headlinecolor>
 				<visible>Skin.HasSetting(HideHomePowerBtn) + [!Player.HasAudio | IsEmpty(MusicPlayer.offset(1).Artist) | Skin.HasSetting(HideNextSongsInfo)]</visible>
 			</control>

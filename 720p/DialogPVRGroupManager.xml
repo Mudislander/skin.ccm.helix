@@ -77,7 +77,7 @@
 						<label>31506</label>
 						<align>center</align>
 						<aligny>center</aligny>
-						<textcolor>$VAR[MainColorOne]</textcolor>
+						<textcolor>blue</textcolor>
 					</control>
 					<control type="image">
 						<left>0</left>
@@ -180,7 +180,7 @@
 						<font>font13</font>
 						<align>center</align>
 						<aligny>center</aligny>
-						<textcolor>$VAR[MainColorOne]</textcolor>
+						<textcolor>blue</textcolor>
 					</control>
 					<control type="image">
 						<left>0</left>
@@ -299,7 +299,7 @@
 						<font>font13</font>
 						<align>center</align>
 						<aligny>center</aligny>
-						<textcolor>$VAR[MainColorOne]</textcolor>
+						<textcolor>blue</textcolor>
 					</control>
 					<control type="image">
 						<left>0</left>

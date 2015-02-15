@@ -225,9 +225,9 @@
 						<aspectratio>stretch</aspectratio>
 						<fadetime>IconCrossfadeTime</fadetime>
 						<texture background="true" diffuse="ClearCase/EmptyCaseMask.png">$VAR[PosterThumb]</texture>
-						<visible>!Skin.HasSetting(EnableDVDCases)</visible>
+						<!--visible>!Skin.HasSetting(EnableDVDCases)</visible-->
 					</control>
-					<control type="image">
+					<!--control type="image">
 						<left>33</left>
 						<top>15</top>
 						<width>217</width>
@@ -236,8 +236,8 @@
 						<fadetime>IconCrossfadeTime</fadetime>
 						<texture background="true" diffuse="ClearCase/EmptyCaseMask.png">$VAR[PosterThumb]</texture>
 						<visible>Skin.HasSetting(EnableDVDCases)</visible>
-					</control>
-					<control type="image">
+					</control-->
+					<!--control type="image">
 						<left>0</left>
 						<top>0</top>
 						<width>260</width>
@@ -245,7 +245,7 @@
 						<aspectratio>stretch</aspectratio>
 						<texture fallback="ClearCase/dv.png">$VAR[VideoListCase,ClearCase/,.png]</texture>
 						<visible>Skin.HasSetting(EnableDVDCases)</visible>
-					</control>
+					</control-->
 				</control>
 				<control type="grouplist">
 					<description>Media Codec Flagging Images</description>

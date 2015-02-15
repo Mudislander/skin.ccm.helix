@@ -160,7 +160,7 @@
 						<align>right</align>
 						<aligny>center</aligny>
 						<font>font13</font>
-						<textcolor>$VAR[MainColorOne]</textcolor>
+						<textcolor>blue</textcolor>
 					</control>
 					<control type="fadelabel">
 						<description>Author Value</description>
@@ -185,7 +185,7 @@
 						<align>right</align>
 						<aligny>center</aligny>
 						<font>font13</font>
-						<textcolor>$VAR[MainColorOne]</textcolor>
+						<textcolor>blue</textcolor>
 					</control>
 					<control type="label">
 						<description>Version Value</description>
@@ -392,7 +392,7 @@
 						<align>right</align>
 						<aligny>center</aligny>
 						<font>font13</font>
-						<textcolor>$VAR[MainColorOne]</textcolor>
+						<textcolor>blue</textcolor>
 					</control>
 					<control type="fadelabel">
 						<description>Author Value</description>
@@ -417,7 +417,7 @@
 						<align>right</align>
 						<aligny>center</aligny>
 						<font>font13</font>
-						<textcolor>$VAR[MainColorOne]</textcolor>
+						<textcolor>blue</textcolor>
 					</control>
 					<control type="label">
 						<description>Version Value</description>
