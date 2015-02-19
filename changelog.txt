@@ -1,4 +1,7 @@
-B]3.0.9[/B] [I]Feb 2015[/I]
+[B]3.0.10[/B]
+- Updated language files from Transifex
+
+[B]3.0.9[/[B] [I]Feb 2015[/I]
 - Removed Adjustable Font Colour
 - Removed darker screen on video pause
 - Removed Video Info on Subtitle adjust
@@ -9,37 +12,37 @@ B]3.0.9[/B] [I]Feb 2015[/I]
 - Removed DVD Case choice and Option
 - Removed Coveflow - does not match other views
 
-B]3.0.8[/B] [I]Feb 2015[/I]
+[B]3.0.8[/[B] [I]Feb 2015[/I]
 - On going battle with backgrounds
 - New Media Views
 - Introduced Logos, banners etc.
 - Changed default logo, background and font
 
-B]3.0.7[/B] [I]Jan 2015[/I]
+[B]3.0.7[/[B] [I]Jan 2015[/I]
 - Bugfix Backgrounds
 - CoverFlow View
 -NextAiredInfo
 
-B]3.0.6[/B] [I]Jan 2015[/I]
+[B]3.0.6[/[B] [I]Jan 2015[/I]
 - Slideblade stays open on mouse click
 - Addon sets increased to 12
 - Bugfix missing Addon sets while media playing
 - Added PartyMode during ScreenSaver
 
-B]3.0.5[/B] [I]Jan 2015[/I]
+[B]3.0.5[/[B] [I]Jan 2015[/I]
 - Various Background Fanart Bugfixes
 - Reintroduced Confluence Seekbar
 
-B]3.0.4[/B] [I]Jan 2015[/I]
+[B]3.0.4[/[B] [I]Jan 2015[/I]
 - Select Font Colour
 - Added Gray Theme
 - Tweaked Background Fanart Control
 - Tweaked Music OSD and Fullscreen Viz
 
-B]3.0.3[/B] [I]Jan 2015[/I]
+[B]3.0.3[/[B] [I]Jan 2015[/I]
 - Various BugFixes
 
-B]3.0.2[/B] [I]Jan 2015[/I]
+[B]3.0.2[/[B] [I]Jan 2015[/I]
 - Option to Lower Menu
 - Option Large Widgets
 - Added stats Bar
@@ -50,12 +53,11 @@ B]3.0.2[/B] [I]Jan 2015[/I]
 - Support file pvr.wmc
 
 
-B]3.0.1[/B] [I]Jan 2015[/I]
+[B]3.0.1[/[B] [I]Jan 2015[/I]
 - Bugfix Home Addon icons
 
-B]3.0.0[/B] [I]Jan 2015[/I]
+[B]3.0.0[/[B] [I]Jan 2015[/I]
 
 - Initial Commit to GitHub
 - Utilized graphics by uNiversal
 - Added User selectable main menu items
-
