@@ -17,15 +17,12 @@
 			<!-- view id = 51 -->
 			<include>ThumbnailView</include>
 			<!-- view id = 500 -->
-			<!--include>Coverflowview</include-->
-			<!-- view id = 555 -->
 			<include>FullWallView</include>
 			<!-- view id = 732 -->
 			<include>Lowlist</include>
 			<!-- view id = 724 -->
 			<include>PosterWrapView</include>
 			<!-- view id = 501 -->
-			<!--include>PosterWrapView2_Fanart</include-->
 			<include condition="Skin.HasSetting(WrapMediaViews)">PosterWrapViewFanart</include>
 			<include condition="!Skin.HasSetting(WrapMediaViews)">PosterListViewFanart</include>
 			<!-- view id = 508 -->
@@ -142,24 +139,6 @@
 					<onclick>right</onclick>
 					<onclick>Filter</onclick>
 				</control>
-				<!--control type="radiobutton" id="99">
-					<description>Show Info Toggle</description>
-					<textwidth>170</textwidth>
-					<include>ButtonCommonValues</include>
-					<label>31005</label>
-					<onclick>Skin.ToggleSetting(View508HideInfo)</onclick>
-					<selected>Skin.HasSetting(View508HideInfo)</selected>
-					<visible>Control.IsVisible(508)</visible>
-				</control-->
-				<!--control type="radiobutton" id="99">
-					<description>Wrap Media Views</description>
-					<textwidth>170</textwidth>
-					<include>ButtonCommonValues</include>
-					<label>31952</label>
-					<onclick>Skin.ToggleSetting(WrapMediaViews)</onclick>
-					<selected>Skin.HasSetting(WrapMediaViews)</selected>
-					<visible>Control.IsVisible(508) | Control.IsVisible(509)</visible>
-				</control-->
 				<control type="button" id="100">
 					<width>250</width>
 					<height>40</height>
@@ -174,7 +153,6 @@
 					<onclick condition="Skin.String(MediaPopupControl,Delayed)">Skin.SetString(MediaPopupControl,Hidden)</onclick>
 					<onclick condition="Skin.String(MediaPopupControl,Hidden)">Skin.SetString(MediaPopupControl,Instant)</onclick>
 					<onclick condition="Skin.String(MediaPopupControl,Instant)">Skin.Reset(MediaPopupControl)</onclick>
-					<!--visible>Control.IsVisible(508) | Control.IsVisible(515) | Control.IsVisible(730)</visible-->
 					<visible>Control.IsVisible(508)</visible>
 				</control>
 				<control type="radiobutton" id="101">
@@ -193,7 +171,6 @@
 					<label>31323</label>
 					<onclick>Skin.ToggleSetting(EnableStatusBanner)</onclick>
 					<selected>Skin.HasSetting(EnableStatusBanner)</selected>
-					<!--visible>Control.IsVisible(501) | Control.IsVisible(508) | Control.IsVisible(732)</visible-->
 					<visible>Control.IsVisible(732)</visible>
 				</control>
 				<control type="radiobutton" id="106">

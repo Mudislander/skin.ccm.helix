@@ -53,7 +53,8 @@
 				<width>440</width>
 				<height>480</height>
 				<onup>450</onup>
-				<onleft>Dialog.Close(2115)</onleft>
+				<!--onleft>Dialog.Close(2115)</onleft-->
+				<onleft>450</onleft>
 				<onright>60</onright>
 				<ondown>450</ondown>
 				<pagecontrol>60</pagecontrol>

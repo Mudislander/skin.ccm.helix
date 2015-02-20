@@ -345,7 +345,12 @@ msgctxt "#31090"
 msgid "Use Wide Banners"
 msgstr ""
 
-#empty strings from id 31091 to 31099
+#empty strings from id 31091 to 31098
+
+msgctxt "#31099"
+msgid "Enable [COLOR=grey3](Slower)[/COLOR] File System Search for Additional Artwork"
+msgstr ""
+
 #Skin Settings labels
 
 msgctxt "#31100"
@@ -847,14 +852,18 @@ msgid "Diffuse Music Visualization with Artist Fanart"
 msgstr ""
 
 msgctxt "#31281"
-msgid "Enable Fanart Background of Playing Media"
+msgid "Enable Background Playing Media"
 msgstr ""
 
 msgctxt "#31282"
 msgid "Home Menu"
 msgstr ""
 
-#empty strings from id 31283 to 31289
+msgctxt "#31283"
+msgid "Enable Background Video in PVR Windows"
+msgstr ""
+
+#empty strings from id 31284 to 31289
 
 msgctxt "#31290"
 msgid "Menu Item"
@@ -1102,7 +1111,11 @@ msgctxt "#31356"
 msgid "Download Subtitles"
 msgstr ""
 
-#empty strings from id 31357 to 31359
+#empty strings from id 31357 to 31358
+
+msgctxt "#31359"
+msgid "User Video OSD Button"
+msgstr ""
 
 # Stereoscopic labels
 msgctxt "#31360"
@@ -1160,7 +1173,7 @@ msgid "Enable Video OSD Plot on Pause"
 msgstr ""
 
 msgctxt "#31374"
-msgid "Enable Video OSD Information on Pause"
+msgid "Enable Video Codec Info on Pause and OSD Menu"
 msgstr ""
 
 #empty strings from id 31375 to 31379
@@ -1178,7 +1191,7 @@ msgid "Playlist widget should [B]Randomize[/B] the playlist sort order"
 msgstr ""
 
 msgctxt "#31383"
-msgid "Enable Video Artwork on OSD"
+msgid "Enable Video Artwork to Show With OSD Information"
 msgstr ""
 
 #empty strings from id 31384 to 31385
@@ -1307,7 +1320,11 @@ msgctxt "#31423"
 msgid "Select the profile that will be used at startup when the login screen is disabled."
 msgstr ""
 
-#empty strings from id 31424 to 31500
+#empty strings from id 31424 to 31499
+
+msgctxt "#31500"
+msgid "Aspect Ratio"
+msgstr ""
 
 msgctxt "#31501"
 msgid "Scheduled Time"

@@ -279,7 +279,6 @@
 		<control type="group">
 			<left>0</left>
 			<top>350</top>
-			<!--visible>Control.IsVisible(508) + [[ListItem.IsFolder + Container.Content(Movies)] | Skin.String(MediaPopupControl,Hidden) | Container.Content(Sets)]</visible-->
 			<visible>Control.IsVisible(508) + [Skin.String(MediaPopupControl,Hidden) | Container.Content(Sets)]</visible>
 			<include>VisibleFadeEffect</include>
 			<control type="image">
@@ -300,8 +299,7 @@
 				<scroll>true</scroll>
 				<align>center</align>
 				<aligny>center</aligny>
-				
-				<value>$INFO[ListItem.label]</value>
+				<label>$INFO[ListItem.label]</label>
 				<animation effect="slide" start="0,0" end="0,25" time="200" condition="!Control.HasFocus(508)">conditional</animation>
 			</control>
 		</control>
@@ -425,7 +423,7 @@
 				<scroll>true</scroll>
 				<align>center</align>
 				<aligny>center</aligny>
-				<value>$INFO[ListItem.label]</value>
+				<label>$INFO[ListItem.label]</label>
 			</control>
 			<control type="group">
 				<left>40</left>
@@ -1748,7 +1746,6 @@
 						<visible>ListItem.IsResumable</visible>
 					</control>
 				</itemlayout>
-				<!--focusedlayout height="40" width="345"-->
 				<focusedlayout condition="Container.Content(Episodes) | !Skin.HasSetting(Enable515WideBanners)" height="40" width="345">
 					<control type="image">
 						<left>0</left>
@@ -1947,8 +1944,8 @@
 					<height>80</height>
 					<aspectratio align="left" aligny="bottom">keep</aspectratio>
 					<fadetime>IconCrossfadeTime</fadetime>
-					<texture background="true">$INFO[ListItem.Art(clearlogo)]</texture>
-					<visible>!Skin.HasSetting(View515Hidelogo) + !IsEmpty(ListItem.Title) + !IsEmpty(ListItem.Art(clearlogo))</visible>
+					<texture background="true">$VAR[MediaLogoArt]</texture>
+					<visible>!Skin.HasSetting(View515Hidelogo) + !IsEmpty(ListItem.Title)</visible>
 				</control>
 				<control type="label">
 					<left>10</left>
@@ -1960,8 +1957,8 @@
 					<shadowcolor>black</shadowcolor>
 					<align>left</align>
 					<aligny>center</aligny>
-					<value>$INFO[ListItem.label]</value>
-					<visible>Skin.HasSetting(View515Hidelogo) | IsEmpty(ListItem.Title) | IsEmpty(ListItem.Art(clearlogo))</visible>
+					<label>$INFO[ListItem.label]</label>
+					<visible>Skin.HasSetting(View515Hidelogo) | IsEmpty(ListItem.Title)</visible>
 				</control>
 				<control type="textbox">
 					<description>Description Value for Video</description>
@@ -2025,7 +2022,7 @@
 					<shadowcolor>black</shadowcolor>
 					<align>left</align>
 					<aligny>center</aligny>
-					<value>$INFO[ListItem.label]</value>
+					<label>$INFO[ListItem.label]</label>
 				</control>
 				<control type="textbox">
 					<description>Description Value for Video</description>
@@ -2074,7 +2071,7 @@
 					<shadowcolor>black</shadowcolor>
 					<align>left</align>
 					<aligny>center</aligny>
-					<value>$INFO[ListItem.label]</value>
+					<label>$INFO[ListItem.label]</label>
 				</control>
 				<control type="textbox">
 					<description>Description Value for Video</description>
@@ -2123,7 +2120,7 @@
 					<shadowcolor>black</shadowcolor>
 					<align>left</align>
 					<aligny>center</aligny>
-					<value>$INFO[ListItem.label]</value>
+					<label>$INFO[ListItem.label]</label>
 				</control>
 				<control type="textbox">
 					<description>Description Value for Video</description>

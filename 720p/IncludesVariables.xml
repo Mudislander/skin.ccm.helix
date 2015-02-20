@@ -567,8 +567,7 @@
 		<value condition="[StringCompare(VideoPlayer.VideoResolution,480) | StringCompare(VideoPlayer.VideoResolution,540) | StringCompare(VideoPlayer.VideoResolution,576)]">dvd</value>
 		<value>dvd</value>
 	</variable>
-	
-		<variable name="CommonMediaPlaying">
+	<variable name="CommonMediaPlaying">
 		<value condition="StringCompare(VideoPlayer.Title,player.swf playpath=105Test1 live=true)">[B]$LOCALIZE[31206][/B]  ([COLOR=$VAR[MainColorOne]]$LOCALIZE[31212][/COLOR])</value>
 		<value condition="StringCompare(VideoPlayer.Title,player.swf playpath=rmc1 live=true)">[B]$LOCALIZE[31221][/B]  ([COLOR=$VAR[MainColorOne]]$LOCALIZE[31212][/COLOR])</value>
 		<value condition="Player.IsInternetStream + SubString(VideoPlayer.Title,Virgin 1,Left)">[B]$LOCALIZE[31222][/B]  ([COLOR=$VAR[MainColorOne]]$LOCALIZE[31212][/COLOR])</value>
@@ -920,6 +919,10 @@
 	<variable name="SubMenuSystemFive" type="text">
 		<value condition="!IsEmpty(Skin.String(SubSettings.5.Label))">$INFO[Skin.String(SubSettings.5.Label)]</value>
 		<value>$LOCALIZE[166] $LOCALIZE[5]</value>
+	</variable>
+	<variable name="SubMenuSystemSix" type="text">
+		<value condition="!IsEmpty(Skin.String(SubSettings.6.Label))">$INFO[Skin.String(SubSettings.6.Label)]</value>
+		<value>$LOCALIZE[10040]</value>
 	</variable>
 	<variable name="MenuOneBackgroundLabel" type="text">
 		<value condition="StringCompare(Skin.String(HomeItem.1.Display),Theme) | Skin.HasSetting(HolidayEffects) | Skin.HasSetting(SingleGlobalBackground)">$LOCALIZE[31366]</value>
@@ -2467,13 +2470,22 @@
 		<!--value condition="!IsEmpty(Skin.String(UsrColorOne))">$INFO[Skin.String(UsrColorOne)]</value-->
 		<value>blue</value>
 	</variable>
-	<!--variable name="ColorOneName" type="text">
-		<value condition="IsEmpty(Skin.String(UsrColorOne))">$LOCALIZE[13278]</value>
-		<value condition="!IsEmpty(Skin.String(UsrColorOne))">$INFO[Skin.String(UsrColorOne)]</value>
-	</variable-->
 	<variable name="TransparentValue">
 		<value condition="!IsEmpty(Skin.String(mediapaneltrans))">$LOCALIZE[31248]</value>
 		<value>$LOCALIZE[31257]</value>
+	</variable>
+	<variable name="UsrOSDBtnLabel">
+		<value condition="Skin.String(OSDBtnUsrCmd,AspectRatio)">$LOCALIZE[31500]</value>
+		<value>$LOCALIZE[31328]</value>
+	</variable>
+	<variable name="UsrOSDBtnCmdOne">
+		<value condition="Skin.String(OSDBtnUsrCmd,AspectRatio)">Dialog.Close(VideoOSD,true)</value>
+	</variable>
+	<variable name="UsrOSDBtnCmdTwo">
+		<value condition="Skin.String(OSDBtnUsrCmd,AspectRatio)">AspectRatio</value>
+	</variable>
+	<variable name="UsrOSDBtnCmdThree">
+		<value condition="Skin.String(OSDBtnUsrCmd,AspectRatio)">AspectRatio</value>
 	</variable>
 	<variable name="OSDInfoType">
 		<value condition="IsEmpty(Skin.String(MusicOSDInfo))">$LOCALIZE[31017]</value>
@@ -2505,15 +2517,12 @@
 		<value condition="[Container.Content(Movies) | Container.Content(Episodes) | Container.Content(MusicVideos)] + !substring(ListItem.Duration,min)">$INFO[ListItem.Duration,, $LOCALIZE[12391]]</value>
 		<value condition="[Container.Content(Movies) | Container.Content(Episodes) | Container.Content(MusicVideos)] + substring(ListItem.Duration,min)">$INFO[ListItem.Duration]</value>
 	</variable>
-	<!--variable name="UserParentDirName" type="text">
-		<value condition="!IsEmpty(Skin.String(UserParentDir))">$INFO[Skin.String(UserParentDir)]</value>
-		<value>$LOCALIZE[31007]</value>
-	</variable-->
-	<variable name="DescriptiveLabel" type="text">
-		
-		<value condition="StringCompare(ListItem.label,$LOCALIZE[20366])">$INFO[ListItem.TVShowTitle] - $LOCALIZE[31959]</value>
-		
-		<value condition="Container.Content(Seasons) | Container.Content(Episodes)">$INFO[ListItem.TVShowTitle] - $INFO[ListItem.label]</value>
-		<value>$INFO[ListItem.label]</value>
+	<variable name="MediaLogoArt">
+		<value condition="Skin.HasSetting(EnableFileSysArt)">$INFO[ListItem.Path,,logo.png]</value>
+		<value>$INFO[ListItem.Art(clearlogo)]</value>
+	</variable>
+	<variable name="MediaBannerArt">
+		<value condition="Skin.HasSetting(EnableFileSysArt)">$INFO[ListItem.Path,,banner.jpg]</value>
+		<value>$INFO[ListItem.Art(banner)]</value>
 	</variable>
 </includes>

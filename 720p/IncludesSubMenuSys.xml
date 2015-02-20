@@ -900,10 +900,10 @@
 		<item>
 			<label>$VAR[SubMenuSystemOne]</label>
 			<onclick>SetProperty(SubMenuBackground,$VAR[SubMenuItemBackground],Home)</onclick>
-			<onclick condition="IsEmpty(Skin.String(subsystem.1.path)) + System.HasAddon(os.openelec.settings)">RunAddon(os.openelec.settings)</onclick>
-			<onclick condition="IsEmpty(Skin.String(subsystem.1.path)) + System.HasAddon(service.openelec.settings)">RunAddon(service.openelec.settings)</onclick>
-			<onclick condition="IsEmpty(Skin.String(subsystem.1.path)) + System.HasAddon(script.raspbmc.settings)">RunAddon(script.raspbmc.settings)</onclick>
-			<onclick condition="IsEmpty(Skin.String(subsystem.1.path)) + !System.HasAddon(os.openelec.settings) + !System.HasAddon(service.openelec.settings) + !System.HasAddon(script.raspbmc.settings)">ActivateWindow(Settings)</onclick>
+			<onclick condition="IsEmpty(Skin.String(SubSettings.1.Path)) + System.HasAddon(os.openelec.settings)">RunAddon(os.openelec.settings)</onclick>
+			<onclick condition="IsEmpty(Skin.String(SubSettings.1.Path)) + System.HasAddon(service.openelec.settings)">RunAddon(service.openelec.settings)</onclick>
+			<onclick condition="IsEmpty(Skin.String(SubSettings.1.Path)) + System.HasAddon(script.raspbmc.settings)">RunAddon(script.raspbmc.settings)</onclick>
+			<onclick condition="IsEmpty(Skin.String(SubSettings.1.Path)) + !System.HasAddon(os.openelec.settings) + !System.HasAddon(service.openelec.settings) + !System.HasAddon(script.raspbmc.settings)">ActivateWindow(Settings)</onclick>
 			<onclick condition="!IsEmpty(Skin.String(SubSettings.1.Path))">$INFO[Skin.String(SubSettings.1.Path)]</onclick>
 			<visible>!stringcompare(Skin.String(SubSettings.1.Path),Hidden)</visible>
 		</item>
@@ -936,10 +936,10 @@
 			<visible>!stringcompare(Skin.String(SubSettings.5.Path),Hidden)</visible>
 		</item>
 		<item>
-			<label>$INFO[Skin.String(SubSettings.6.Label)]</label>
+			<label>$VAR[SubMenuSystemSix]</label>
 			<onclick>SetProperty(SubMenuBackground,$VAR[SubMenuItemBackground],Home)</onclick>
-			<onclick>$INFO[Skin.String(SubSettings.6.Path)]</onclick>
-			<visible>!IsEmpty(Skin.String(SubSettings.6.Path))</visible>
+			<onclick condition="IsEmpty(Skin.String(SubSettings.6.Path))">ActivateWindow(AddonBrowser)</onclick>
+			<onclick condition="!IsEmpty(Skin.String(SubSettings.6.Path))">$INFO[Skin.String(SubSettings.6.Path)]</onclick>
 			<visible>!stringcompare(Skin.String(SubSettings.6.Path),Hidden)</visible>
 		</item>
 		<item>

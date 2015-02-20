@@ -332,12 +332,12 @@
 		<control type="image">
 			<include>Dimensions_Fullscreen</include>
 			<texture>special://skin/backgrounds/media-overlay.jpg</texture>
-			<visible>Player.HasVideo + !Skin.HasSetting(HideHomeNowPlaying) + !Window.IsVisible(TVChannels) + !Window.IsVisible(RadioChannels)</visible>
+			<visible>Player.HasVideo + !Skin.HasSetting(HideHomeNowPlaying) + !Window.IsVisible(RadioChannels) + !Window.IsVisible(TVChannels) | [Player.HasVideo + Window.IsVisible(TVChannels) + !Skin.HasSetting(HidePVRNowPlaying)]</visible>
 			<include>VisibleFadeEffect</include>
 		</control>
 		<control type="videowindow">
 			<include>Dimensions_Fullscreen</include>
-			<visible>Player.HasVideo + !Skin.HasSetting(HideHomeNowPlaying) + !Window.IsVisible(TVChannels) + !Window.IsVisible(RadioChannels)</visible>
+			<visible>Player.HasVideo + !Skin.HasSetting(HideHomeNowPlaying) + !Window.IsVisible(RadioChannels) + !Window.IsVisible(TVChannels) | [Window.IsVisible(TVChannels) + !Skin.HasSetting(HidePVRNowPlaying)]</visible>
 		</control>
 	</include>
 	<include name="ArtistExtraFanArt">

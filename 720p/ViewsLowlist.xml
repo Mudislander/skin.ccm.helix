@@ -11,18 +11,12 @@
 				<height>160</height>
 				<onleft>9000</onleft>
 				<onright>60</onright>
-				<!--
-                <onright condition="!Skin.HasSetting(KioskMode)">60</onright>
-                <onright condition="Skin.HasSetting(KioskMode) + Skin.HasSetting(DisableHomeReturnButtons)">9000</onright>
-                <onright condition="Skin.HasSetting(KioskMode) + !Skin.HasSetting(DisableHomeReturnButtons)">82</onright>
-				-->
 				<onup>724</onup>
 				<ondown>724</ondown>
 				<viewtype label="$LOCALIZE[31648]">list</viewtype>
 				<pagecontrol>60</pagecontrol>
 				<scrolltime>200</scrolltime>
 				<visible>Container.Content(Movies) | Container.Content(Seasons) | Container.Content(TVShows) | Container.Content(MusicVideos)</visible>
-				<!--visible>[Window.IsVisible(Videos) + !Container.Content(Episodes)] | SubString(Container.FolderPath,program.advanced.launcher)</visible-->
 				<visible>!Container.Content(LiveTV)</visible>
 				<itemlayout height="40" width="480">
 					<control type="image">
@@ -55,7 +49,6 @@
 						<align>right</align>
 						<aligny>center</aligny>
 						<label>$INFO[ListItem.Label2]</label>
-						<!--visible>!SubString(Container.FolderPath,program.advanced.launcher)</visible-->
 					</control>
 					<!--control type="group">
 						<control type="image">
@@ -177,10 +170,9 @@
 				<textureslidernibfocus>ScrollBarNib.png</textureslidernibfocus>
 				<onleft>724</onleft>
 				<onright>9000</onright>
-				<!--onright condition="Skin.HasSetting(DisableHomeReturnButtons)">9000</onright>
-				<onright condition="!Skin.HasSetting(DisableHomeReturnButtons)">82</onright-->
 				<showonepage>true</showonepage>
 				<orientation>vertical</orientation>
+				<visible>Control.IsVisible(724)</visible>
 			</control>
 			<control type="group">
 				<visible>Control.IsVisible(724)</visible>

@@ -9,7 +9,7 @@
 		<control type="group">
 			<visible>!Skin.HasSetting(HidePopUpSeekBar)</visible>
 			<visible>player.chaptercount + Window.IsVisible(FullScreenVideo)</visible>
-			<left>705r</left>
+			<left>755r</left>
 			<top>-6</top>
 			<include>VisibleFadeEffect</include>
 			<control type="image">
@@ -48,8 +48,8 @@
 			</control>
 		</control>
 		<control type="group">
-			<animation effect="slide" start="0,0" end="195,665" time="0" condition="Skin.HasSetting(HidePopUpSeekBar)">Conditional</animation>
-			<left>560r</left>
+			<animation effect="slide" start="0,0" end="245,665" time="0" condition="Skin.HasSetting(HidePopUpSeekBar)">Conditional</animation>
+			<left>610r</left>
 			<top>-6</top>
 			<control type="image">
 				<left>0</left>

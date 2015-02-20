@@ -40,15 +40,17 @@
 			<textureslidernib>osd_slider_nibNF.png</textureslidernib>
 			<textureslidernibfocus>osd_slider_nib.png</textureslidernibfocus>
 			<animation effect="fade" time="200">VisibleChange</animation>
+			<animation effect="slide" end="-145,0" time="0" tween="back" easing="out" condition="Skin.HasSetting(HideArtWorkOSD) | Skin.HasSetting(HideSeekBarOSD) + !Player.ShowInfo" reversible="true">Conditional</animation>
 			<visible>!StringCompare(VideoPlayer.Title,KODI-Intro-Video.mkv)</visible>
 			<visible>![Window.IsVisible(SliderDialog) | Window.IsVisible(OSDVideoSettings) | Window.IsVisible(OSDAudioSettings) | Window.IsVisible(VideoBookmarks) | VideoPlayer.Content(LiveTV)]</visible>
 		</control>
 		<!-- !LiveTV -->
 		<control type="group" id="100">
-			<left>325</left>
+			<left>315</left>
 			<top>60r</top>
 			<defaultcontrol always="true">202</defaultcontrol>
 			<animation effect="fade" time="200">VisibleChange</animation>
+			<animation effect="slide" end="-135,0" time="0" tween="back" easing="out" condition="Skin.HasSetting(HideArtWorkOSD) | Skin.HasSetting(HideSeekBarOSD) + !Player.ShowInfo" reversible="true">Conditional</animation>
 			<visible>!StringCompare(VideoPlayer.Title,KODI-Intro-Video.mkv)</visible>
 			<visible>![Window.IsVisible(SliderDialog) | Window.IsVisible(OSDVideoSettings) | Window.IsVisible(OSDAudioSettings) | Window.IsVisible(VideoBookmarks)]</visible>
 			<visible>!VideoPlayer.Content(LiveTV)</visible>
@@ -149,10 +151,12 @@
 		</control>
 		<!-- LiveTV -->
 		<control type="group" id="100">
-			<left>325</left>
+			<left>315</left>
 			<top>60r</top>
 			<defaultcontrol always="true">301</defaultcontrol>
 			<animation effect="fade" time="200">VisibleChange</animation>
+			<animation effect="slide" end="-55,0" time="0" tween="back" easing="out" condition="Skin.HasSetting(HideArtWorkOSD) | Skin.HasSetting(HideSeekBarOSD) + !Player.ShowInfo" reversible="true">Conditional</animation>
+			<animation effect="slide" end="-85,0" time="0" tween="back" easing="out" condition="!Skin.HasSetting(HidePopUpSeekBar) + Skin.HasSetting(HideArtWorkOSD)" reversible="true">Conditional</animation>
 			<visible>![Window.IsVisible(SliderDialog) | Window.IsVisible(OSDVideoSettings) | Window.IsVisible(OSDAudioSettings) | Window.IsVisible(VideoBookmarks) | Window.IsVisible(PVROSDChannels) | Window.IsVisible(PVROSDGuide)]</visible>
 			<visible>VideoPlayer.Content(LiveTV)</visible>
 			<control type="button" id="300">
@@ -290,7 +294,7 @@
 		</control>
 		<!-- !LiveTV -->
 		<control type="group">
-			<left>355r</left>
+			<left>410r</left>
 			<top>60r</top>
 			<animation effect="fade" time="200">VisibleChange</animation>
 			<animation effect="slide" end="-225,0" time="0" tween="back" easing="out" condition="Skin.HasSetting(HidePopUpSeekBar)" reversible="true">Conditional</animation>
@@ -308,12 +312,30 @@
 				<texturefocus>OSDStereoscopicFO.png</texturefocus>
 				<texturenofocus>OSDStereoscopicNF.png</texturenofocus>
 				<onleft>205</onleft>
-				<onright>250</onright>
+				<onright>256</onright>
 				<onup>501</onup>
 				<ondown>1000</ondown>
 			</control>
-			<control type="button" id="250">
+			<control type="button" id="256">
+				<visible>Skin.String(OSDBtnUsrCmd)</visible>
 				<left>55</left>
+				<top>0</top>
+				<width>55</width>
+				<height>55</height>
+				<label>36501</label>
+				<font>-</font>
+				<texturefocus>OSDPresetSettingsFO.png</texturefocus>
+				<texturenofocus>OSDPresetSettingsNF.png</texturenofocus>
+				<onleft>255</onleft>
+				<onright>250</onright>
+				<onup>1000</onup>
+				<ondown>1000</ondown>
+				<onclick condition="Skin.String(OSDBtnUsrCmd)">$VAR[UsrOSDBtnCmdOne]</onclick>
+				<onclick condition="Skin.String(OSDBtnUsrCmd)">$VAR[UsrOSDBtnCmdTwo]</onclick>
+				<onclick condition="Skin.String(OSDBtnUsrCmd)">$VAR[UsrOSDBtnCmdThree]</onclick>
+			</control>
+			<control type="button" id="250">
+				<left>110</left>
 				<top>0</top>
 				<width>55</width>
 				<height>55</height>
@@ -321,13 +343,13 @@
 				<font>-</font>
 				<texturefocus>OSDSubtitlesFO.png</texturefocus>
 				<texturenofocus>OSDSubtitlesNF.png</texturenofocus>
-				<onleft>255</onleft>
+				<onleft>256</onleft>
 				<onright>251</onright>
 				<onup>404</onup>
 				<ondown>1000</ondown>
 			</control>
 			<control type="button" id="251">
-				<left>110</left>
+				<left>165</left>
 				<top>0</top>
 				<width>55</width>
 				<height>55</height>
@@ -342,7 +364,7 @@
 				<onclick>ActivateWindow(OSDVideoSettings)</onclick>
 			</control>
 			<control type="button" id="252">
-				<left>165</left>
+				<left>220</left>
 				<top>0</top>
 				<width>55</width>
 				<height>55</height>
@@ -357,7 +379,7 @@
 				<onclick>ActivateWindow(OSDAudioSettings)</onclick>
 			</control>
 			<control type="button" id="253">
-				<left>220</left>
+				<left>275</left>
 				<top>0</top>
 				<width>55</width>
 				<height>55</height>
@@ -372,7 +394,7 @@
 				<onclick>ActivateWindow(VideoBookmarks)</onclick>
 			</control>
 			<control type="button" id="254">
-				<left>275</left>
+				<left>330</left>
 				<top>0</top>
 				<width>55</width>
 				<height>55</height>
@@ -394,6 +416,8 @@
 			<left>300r</left>
 			<top>60r</top>
 			<animation effect="fade" time="200">VisibleChange</animation>
+			<animation effect="slide" end="-225,0" time="0" tween="back" easing="out" condition="Skin.HasSetting(HidePopUpSeekBar)" reversible="true">Conditional</animation>
+			<animation effect="slide" end="-135,0" time="0" tween="back" easing="out" condition="!Skin.HasSetting(HidePopUpSeekBar) + Skin.HasSetting(HideArtWorkOSD) | Skin.HasSetting(HideSeekBarOSD) + !Player.ShowInfo" reversible="true">Conditional</animation>
 			<visible>![Window.IsVisible(SliderDialog) | Window.IsVisible(OSDVideoSettings) | Window.IsVisible(OSDAudioSettings) | Window.IsVisible(VideoBookmarks) | Window.IsVisible(PVROSDChannels) | Window.IsVisible(PVROSDGuide)]</visible>
 			<visible>VideoPlayer.Content(LiveTV)</visible>
 			<control type="button" id="354">
@@ -582,7 +606,7 @@
 				<aligny>center</aligny>
 				<font>font13</font>
 				<label>449</label>
-				<radioleft>200</radioleft>
+				<radioposx>200</radioposx>
 				<texturefocus border="25,5,25,5">SubMenuBack-MiddleFO.png</texturefocus>
 				<texturenofocus border="25,5,25,5">SubMenuBack-MiddleNF.png</texturenofocus>
 				<onclick>ShowSubtitles</onclick>

@@ -11,7 +11,6 @@
 	<include file="IncludesCDWall.xml" />
 	<include file="IncludesOnScreenDisplay.xml" />
 	<include file="ViewsVideoLibrary.xml" />
-	<!--include file="ViewsCoverFlow.xml" /-->
 	<include file="ViewsLowlist.xml" />
 	<include file="ViewsMusicLibrary.xml" />
 	<include file="ViewsFileMode.xml" />
