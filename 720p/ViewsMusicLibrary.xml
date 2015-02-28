@@ -114,8 +114,8 @@
 				<textureslidernib>ScrollBarNib.png</textureslidernib>
 				<textureslidernibfocus>ScrollBarNib.png</textureslidernibfocus>
 				<onleft>506</onleft>
-				<onright>2</onright>
-				<showonepage>false</showonepage>
+				<onright>800</onright>
+				<showonepage>true</showonepage>
 				<orientation>vertical</orientation>
 				<visible>Control.IsVisible(506)</visible>
 			</control>
@@ -354,8 +354,8 @@
 				<textureslidernib>ScrollBarNib.png</textureslidernib>
 				<textureslidernibfocus>ScrollBarNib.png</textureslidernibfocus>
 				<onup>509</onup>
-				<ondown>2</ondown>
-				<showonepage>false</showonepage>
+				<ondown>803</ondown>
+				<showonepage>true</showonepage>
 				<orientation>horizontal</orientation>
 				<visible>Control.IsVisible(509)</visible>
 			</control>
@@ -610,8 +610,8 @@
 				<textureslidernib>ScrollBarNib.png</textureslidernib>
 				<textureslidernibfocus>ScrollBarNib.png</textureslidernibfocus>
 				<onleft>511</onleft>
-				<onright>2</onright>
-				<showonepage>false</showonepage>
+				<onright>800</onright>
+				<showonepage>true</showonepage>
 				<orientation>vertical</orientation>
 				<visible>Control.IsVisible(511)</visible>
 			</control>
@@ -792,8 +792,8 @@
 				<textureslidernib>ScrollBarNib.png</textureslidernib>
 				<textureslidernibfocus>ScrollBarNib.png</textureslidernibfocus>
 				<onleft>512</onleft>
-				<onright>2</onright>
-				<showonepage>false</showonepage>
+				<onright>800</onright>
+				<showonepage>true</showonepage>
 				<orientation>vertical</orientation>
 				<visible>Control.IsVisible(512)</visible>
 			</control>
@@ -1026,8 +1026,8 @@
 				<textureslidernib>ScrollBarNib.png</textureslidernib>
 				<textureslidernibfocus>ScrollBarNib.png</textureslidernibfocus>
 				<onleft>513</onleft>
-				<onright>2</onright>
-				<showonepage>false</showonepage>
+				<onright>800</onright>
+				<showonepage>true</showonepage>
 				<orientation>vertical</orientation>
 				<visible>Control.IsVisible(513)</visible>
 			</control>

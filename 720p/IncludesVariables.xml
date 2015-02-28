@@ -12,7 +12,7 @@
 		<value condition="StringCompare(Container(9000).ListItem.Property(HiLiteItem),TVShows) + StringCompare(Container(9000).ListItem.Property(Background),Database) + !IsEmpty(Window(Home).Property(RandomEpisode.1.Art(tvshow.Fanart)))">$INFO[Window(Home).Property(RandomEpisode.1.Art(tvshow.Fanart))]</value>
 		<value condition="StringCompare(Container(9000).ListItem.Property(HiLiteItem),Music) + StringCompare(Container(9000).ListItem.Property(Background),Database) + !IsEmpty(Skin.String(UsrArtistsFanArtDir)) + !Skin.HasSetting(EnableFanartScript)">$INFO[Skin.String(UsrArtistsFanArtDir)]</value>
 		<value condition="StringCompare(Container(9000).ListItem.Property(HiLiteItem),Music) + StringCompare(Container(9000).ListItem.Property(Background),Database) + !IsEmpty(Window(Home).Property(script.grab.Fanart.Music.Fanart)) + Skin.HasSetting(EnableFanartScript)">$INFO[Window(Home).Property(script.grab.Fanart.Music.Fanart)]</value>
-		<value condition="StringCompare(Container(9000).ListItem.Property(HiLiteItem),,Music) + StringCompare(Container(9000).ListItem.Property(Background),Database) + !IsEmpty(Window(Home).Property(RandomAlbum.1.Fanart))">$INFO[Window(Home).Property(RandomAlbum.1.Fanart)]</value>
+		<value condition="StringCompare(Container(9000).ListItem.Property(HiLiteItem),Music) + StringCompare(Container(9000).ListItem.Property(Background),Database) + !IsEmpty(Window(Home).Property(RandomAlbum.1.Fanart))">$INFO[Window(Home).Property(RandomAlbum.1.Fanart)]</value>
 		<value condition="StringCompare(Container(9000).ListItem.Property(HiLiteItem),Concerts) + StringCompare(Container(9000).ListItem.Property(Background),Database) + !IsEmpty(Skin.String(UsrConcertsFanArtDir))">$INFO[Skin.String(UsrConcertsFanArtDir)]</value>
 		<value condition="StringCompare(Container(9000).ListItem.Property(HiLiteItem),Concerts) + StringCompare(Container(9000).ListItem.Property(Background),Database) + !IsEmpty(Window(Home).Property(RandomMusicVideo.1.Fanart))">$INFO[Window(Home).Property(RandomMusicVideo.1.Fanart)]</value>
 		<value condition="Container(9000).Hasfocus(1) + !IsEmpty(Skin.String(HomeItem.1.Fanart))">$INFO[Skin.String(HomeItem.1.Fanart)]</value>
@@ -588,7 +588,6 @@
 	<variable name="VideoDescription" type="text">
 		<value condition="Container.Content(Seasons)">$INFO[Container.ShowPlot]</value>
 		<value condition="Skin.HasSetting(MediaShortDescription) + !IsEmpty(ListItem.PlotOutline)">$INFO[ListItem.PlotOutline]</value>
-		<!--value condition="Skin.HasSetting(MediaShortDescription) + !IsEmpty(ListItem.Tagline)">$INFO[ListItem.Tagline]</value-->
 		<value condition="!IsEmpty(ListItem.Plot)">$INFO[ListItem.Plot]</value>
 		<value>$LOCALIZE[161]</value>
 	</variable>
@@ -625,6 +624,19 @@
 		<value condition="IsEmpty(Skin.String(UsrFavBtnCmd.Label))">$LOCALIZE[1036]</value>
 		<value condition="!IsEmpty(Skin.String(UsrFavBtnCmd.Label))">$INFO[Skin.String(UsrFavBtnCmd.Label)]</value>
 		<value>$LOCALIZE[1036]</value>
+	</variable>
+	<variable name="FavBtnCommand">
+		
+		
+		<value condition="IsEmpty(Skin.String(UsrFavBtnCmd.Path))">ActivateWindow(Favourites),return</value>
+		
+		<value condition="Skin.String(UsrFavBtnCmd.Path,LastVideo) + Skin.String(LastVideoPlayed)">$INFO[Skin.String(LastVideoPlayed)]</value>
+		<value condition="Skin.String(UsrFavBtnCmd.Path,AutoSuggest) + StringCompare(Container(9000).ListItem.Property(HiLiteItem),Movies)">ActivateWindow(2125)</value>
+		<value condition="Skin.String(UsrFavBtnCmd.Path,AutoSuggest) + StringCompare(Container(9000).ListItem.Property(HiLiteItem),TVShows)">ActivateWindow(2124)</value>
+		<value condition="Skin.String(UsrFavBtnCmd.Path,AutoSuggest) + StringCompare(Container(9000).ListItem.Property(HiLiteItem),Music)">ActivateWindow(2123)</value>
+		<value condition="Skin.String(UsrFavBtnCmd.Path,AutoSuggest) + StringCompare(Container(9000).ListItem.Property(HiLiteItem),Concerts)">ActivateWindow(2126)</value>
+		<value condition="Skin.String(UsrFavBtnCmd.Path,AutoSuggest)">ActivateWindow(Favourites),return</value>
+		<value>$INFO[Skin.String(UsrFavBtnCmd.Path)]</value>
 	</variable>
 	<variable name="EpisodeThumbImage">
 		<value condition="Skin.HasSetting(HideEpisodeThumb)">$INFO[ListItem.Thumb]</value>
@@ -663,7 +675,6 @@
 		<value condition="!substring(System.CPUTemperature,?)">[B][COLOR=$VAR[MainColorOne]]IP: [/COLOR][/B]$INFO[Network.IPAddress]    [B][COLOR=$VAR[MainColorOne]]$LOCALIZE[401]: [/COLOR][/B]$INFO[System.CPUTemperature]    [B][COLOR=$VAR[MainColorOne]]$LOCALIZE[155]: [/COLOR][/B]$INFO[System.UsedSpacePercent]</value>
 		<value>[COLOR=$VAR[MainColorOne]][B]IP:[/B][/COLOR]$INFO[Network.IPAddress]    [COLOR=$VAR[MainColorOne]][B]RAM:[/B][/COLOR]$INFO[system.memory(used.percent)]    [COLOR=$VAR[MainColorOne]][B]$LOCALIZE[155]:[/B][/COLOR]$INFO[System.UsedSpacePercent]</value>
 	</variable>
-	<!--label>$INFO[ListItem.Season,[COLOR=blue] $LOCALIZE[20373] :[/COLOR] ] $INFO[ListItem.episode,[COLOR=blue] $LOCALIZE[20359] :[/COLOR] ] $INFO[ListItem.premiered,[COLOR=blue] $LOCALIZE[31322] :[/COLOR] ]</label-->
 	<variable name="CoverFlowInfo">
 		<value condition="!IsEmpty(ListItem.Duration) + !IsEmpty(ListItem.RatingAndVotes) + !IsEmpty(ListItem.LastPlayed)">[B]$LOCALIZE[2050][/B] [COLOR=white]$INFO[ListItem.Duration] $LOCALIZE[12391][/COLOR]  [B]$LOCALIZE[563] [/B][COLOR=white]$INFO[ListItem.RatingAndVotes][/COLOR]  [B]$LOCALIZE[568] [/B][COLOR=white]$INFO[ListItem.LastPlayed][/COLOR]</value>
 		<value condition="!IsEmpty(ListItem.Duration) + !IsEmpty(ListItem.RatingAndVotes) + IsEmpty(ListItem.LastPlayed)">[B]$LOCALIZE[2050][/B] [COLOR=white]$INFO[ListItem.Duration] $LOCALIZE[12391][/COLOR]  [B]$LOCALIZE[563] [/B][COLOR=white]$INFO[ListItem.RatingAndVotes][/COLOR]</value>
@@ -2517,12 +2528,185 @@
 		<value condition="[Container.Content(Movies) | Container.Content(Episodes) | Container.Content(MusicVideos)] + !substring(ListItem.Duration,min)">$INFO[ListItem.Duration,, $LOCALIZE[12391]]</value>
 		<value condition="[Container.Content(Movies) | Container.Content(Episodes) | Container.Content(MusicVideos)] + substring(ListItem.Duration,min)">$INFO[ListItem.Duration]</value>
 	</variable>
-	<variable name="MediaLogoArt">
-		<value condition="Skin.HasSetting(EnableFileSysArt)">$INFO[ListItem.Path,,logo.png]</value>
-		<value>$INFO[ListItem.Art(clearlogo)]</value>
+	<variable name="UsrMPAACountry" type="text">
+		<value condition="IsEmpty(Skin.String(MPAACertificate))">$LOCALIZE[31328]</value>
+		<value condition="stringcompare(Skin.String(MPAACertificate),USA)">$LOCALIZE[31700]</value>
+		<value condition="stringcompare(Skin.String(MPAACertificate),UK)">$LOCALIZE[31701]</value>
+		<value condition="stringcompare(Skin.String(MPAACertificate),Aus)">$LOCALIZE[31703]</value>
+		<value condition="stringcompare(Skin.String(MPAACertificate),Bra)">$LOCALIZE[31706]</value>
+		<value condition="stringcompare(Skin.String(MPAACertificate),Can)">$LOCALIZE[31708]</value>
+		<value condition="stringcompare(Skin.String(MPAACertificate),DK)">$LOCALIZE[31707]</value>
+		<value condition="stringcompare(Skin.String(MPAACertificate),DE)">$LOCALIZE[31702]</value>
+		<value condition="stringcompare(Skin.String(MPAACertificate),HK)">$LOCALIZE[31705]</value>
+		<value condition="stringcompare(Skin.String(MPAACertificate),Ire)">$LOCALIZE[31709]</value>
+		<value condition="stringcompare(Skin.String(MPAACertificate),Jpn)">$LOCALIZE[31704]</value>
+		<value condition="stringcompare(Skin.String(MPAACertificate),NL)">$LOCALIZE[31710]</value>
+		<value condition="stringcompare(Skin.String(MPAACertificate),Fr)">$LOCALIZE[31711]</value>
 	</variable>
-	<variable name="MediaBannerArt">
-		<value condition="Skin.HasSetting(EnableFileSysArt)">$INFO[ListItem.Path,,banner.jpg]</value>
-		<value>$INFO[ListItem.Art(banner)]</value>
+	<variable name="RatingMPAA">
+		<value condition="substring(ListItem.Mpaa,TV-Y7) | substring(ListItem.Mpaa,TV-Y7-FV)">TV/tv-y7</value>
+		<value condition="substring(ListItem.Mpaa,TV-Y)">TV/tv-y</value>
+		<value condition="substring(ListItem.Mpaa,TV-G)">TV/tv-g</value>
+		<value condition="substring(ListItem.Mpaa,TV-PG)">TV/tv-pg</value>
+		<value condition="substring(ListItem.Mpaa,TV-14)">TV/tv-14</value>
+		<value condition="substring(ListItem.Mpaa,TV-MA)">TV/tv-ma</value>
+		<value condition="substring(ListItem.mpaa,제한)">$INFO[Skin.String(MPAACertificate)]/r18</value>
+		<value condition="substring(ListItem.mpaa,불가)">$INFO[Skin.String(MPAACertificate)]/18</value>
+		<value condition="substring(ListItem.mpaa,전체)">$INFO[Skin.String(MPAACertificate)]/u</value>
+		<value condition="substring(Listitem.mpaa,X18)">$INFO[Skin.String(MPAACertificate)]/x18</value>
+		<value condition="substring(listitem.mpaa,18)">$INFO[Skin.String(MPAACertificate)]/18</value>
+		<value condition="substring(listitem.mpaa,10) + stringcompare(Skin.String(MPAACertificate),Fr)">$INFO[Skin.String(MPAACertificate)]/10</value>
+		<value condition="substring(listitem.mpaa,10) + !stringcompare(Skin.String(MPAACertificate),Fr)">$INFO[Skin.String(MPAACertificate)]/pg</value>
+		<value condition="substring(listitem.mpaa,12A)">$INFO[Skin.String(MPAACertificate)]/12a</value>
+		<value condition="substring(listitem.mpaa,12)">$INFO[Skin.String(MPAACertificate)]/12</value>
+		<value condition="substring(listitem.mpaa,PG13) | substring(listitem.mpaa,PG-13)">$INFO[Skin.String(MPAACertificate)]/pg13</value>
+		<value condition="substring(listitem.mpaa,13)">$INFO[Skin.String(MPAACertificate)]/13</value>
+		<value condition="substring(listitem.mpaa,15)">$INFO[Skin.String(MPAACertificate)]/15</value>
+		<value condition="substring(listitem.mpaa,16)">$INFO[Skin.String(MPAACertificate)]/16</value>
+		<value condition="substring(listitem.mpaa,6) + [stringcompare(Skin.String(MPAACertificate),DE) | stringcompare(Skin.String(MPAACertificate),NL)]">$INFO[Skin.String(MPAACertificate)]/6</value>
+		<value condition="substring(listitem.mpaa,6) + !stringcompare(Skin.String(MPAACertificate),DE) + !stringcompare(Skin.String(MPAACertificate),NL)">$INFO[Skin.String(MPAACertificate)]/u</value>
+		<value condition="substring(listitem.mpaa,17)">$INFO[Skin.String(MPAACertificate)]/18</value>
+		<value condition="substring(listitem.mpaa,3)">$INFO[Skin.String(MPAACertificate)]/u</value>
+		<value condition="substring(listitem.mpaa,0)">$INFO[Skin.String(MPAACertificate)]/0</value>
+		<value condition="substring(listitem.mpaa, PG )">$INFO[Skin.String(MPAACertificate)]/pg</value>
+		<value condition="substring(listitem.mpaa,Not Rated)">$INFO[Skin.String(MPAACertificate)]/notrated</value>
+		<value condition="substring(listitem.mpaa,restricted)">$INFO[Skin.String(MPAACertificate)]/restricted</value>
+		<value condition="substring(listitem.mpaa,x18) | substring(listitem.mpaa,r18)">$INFO[Skin.String(MPAACertificate)]/r18</value>
+		<value condition="substring(listitem.mpaa, U )">$INFO[Skin.String(MPAACertificate)]/u</value>
+		<value condition="substring(listitem.mpaa, G )">$INFO[Skin.String(MPAACertificate)]/g</value>
+	</variable>
+	<variable name="VideoListCase">
+		<value condition="ListItem.IsStereoscopic">3D</value>
+		<value condition="SubString(ListItem.FilenameAndPath,bluray) | SubString(ListItem.FilenameAndPath,bdrip) | SubString(ListItem.FilenameAndPath,bd25) | SubString(ListItem.FilenameAndPath,bd50)">bd</value>
+		<value condition="SubString(ListItem.FilenameAndPath,.3D.) | SubString(ListItem.FilenameAndPath,.3DBD.) | SubString(ListItem.FilenameAndPath,.SBS.)">3DCase</value>
+		<value condition="SubString(ListItem.FilenameAndPath,hddvd)">hddvd</value>
+		<value condition="SubString(ListItem.FilenameAndPath,dvd)">dvd</value>
+		<value condition="SubString(ListItem.FilenameAndPath,pdtv) | SubString(ListItem.FilenameAndPath,hdtv) | SubString(ListItem.FilenameAndPath,dsr)">TVseries</value>
+		<value condition="!IsEmpty(ListItem.FileExtension)">$INFO[ListItem.FileExtension]</value>
+		<value condition="Container.Content(tvshows) | Container.Content(seasons) | Container.Content(Episodes)">TVseries</value>
+		<value>dv</value>
+	</variable>
+	<variable name="UPnPServerType" type="text">
+		<value condition="Skin.String(UPnPServer,WinHomeServer)">$LOCALIZE[31144]</value>
+		<value condition="Skin.String(UPnPServer,Plex)">$LOCALIZE[31145]</value>
+		<value>$LOCALIZE[31143]</value>
+	</variable>
+	<variable name="UPnPPathDesc" type="text">
+		<value condition="!IsEmpty(Skin.String(UPnP_Name))">$INFO[Skin.String(UPnP_Name)]</value>
+		<value condition="!IsEmpty(Skin.String(UPnP_Path))">$INFO[Skin.String(UPnP_Path)]</value>
+		<value>$LOCALIZE[31150]</value>
+	</variable>
+	
+	
+	<variable name="PingMacDesc" type="text">
+		<value condition="!IsEmpty(Skin.String(PingMacAddr))">$INFO[Skin.String(PingMacAddr)]</value>
+		<value>$LOCALIZE[31092]</value>
+	</variable>
+	
+	
+	<variable name="VideoFilesCmd" type="text">
+		<value condition="Skin.String(UPnPServer,Kodi)">ActivateWindow(VideoLibrary,"$INFO[Skin.String(UPnP_Path)]sources%3a%2f%2fvideo%2f/",return)</value>
+		<value condition="Skin.String(UPnPServer,WinHomeServer)">ActivateWindow(VideoLibrary,"$INFO[Skin.String(UPnP_Path)]2/",return)</value>
+	</variable>
+	<variable name="MoviesPlayListCmd" type="text">
+		<value condition="Skin.String(UPnPServer,Kodi)">ActivateWindow(VideoLibrary,"$INFO[Skin.String(UPnP_Path)]library%3a%2f%2fvideo%2fplaylists.xml%2f/",return)</value>
+		<value condition="Skin.String(UPnPServer,WinHomeServer)">ActivateWindow(VideoLibrary,"$INFO[Skin.String(UPnP_Path)]10/",return)</value>
+	</variable>
+	<variable name="MoviesTitleCmd" type="text">
+		<value condition="Skin.String(UPnPServer,Kodi)">ActivateWindow(VideoLibrary,"$INFO[Skin.String(UPnP_Path)]library%3a%2f%2fvideo%2fmovies%2ftitles.xml%2f/",return)</value>
+		<value condition="Skin.String(UPnPServer,WinHomeServer)">ActivateWindow(VideoLibrary,"$INFO[Skin.String(UPnP_Path)]8/",return)</value>
+		<value condition="Skin.String(UPnPServer,Plex)">ActivateWindow(VideoLibrary,"$INFO[Skin.String(UPnP_Path)]fc6f18be426dd2a0c75b/",return)</value>
+	</variable>
+	<variable name="MoviesActorsCmd" type="text">
+		<value condition="Skin.String(UPnPServer,Kodi)">ActivateWindow(VideoLibrary,"$INFO[Skin.String(UPnP_Path)]library%3a%2f%2fvideo%2fmovies%2factors.xml%2f/",return)</value>
+		<value condition="Skin.String(UPnPServer,WinHomeServer)">ActivateWindow(VideoLibrary,"$INFO[Skin.String(UPnP_Path)]A/",return)</value>
+	</variable>
+	<variable name="MoviesSetsCmd" type="text">
+		<value condition="Skin.String(UPnPServer,Kodi)">ActivateWindow(VideoLibrary,"$INFO[Skin.String(UPnP_Path)]library%3a%2f%2fvideo%2fmovies%2fsets.xml%2f/",return)</value>
+	</variable>
+	<variable name="MoviesGenreCmd" type="text">
+		<value condition="Skin.String(UPnPServer,Kodi)">ActivateWindow(VideoLibrary,"$INFO[Skin.String(UPnP_Path)]library%3a%2f%2fvideo%2fmovies%2fgenres.xml%2f/",return)</value>
+		<value condition="Skin.String(UPnPServer,WinHomeServer)">ActivateWindow(VideoLibrary,"$INFO[Skin.String(UPnP_Path)]9/",return)</value>
+	</variable>
+	<variable name="MoviesTagsCmd" type="text">
+		<value condition="Skin.String(UPnPServer,Kodi)">ActivateWindow(VideoLibrary,"$INFO[Skin.String(UPnP_Path)]library%3a%2f%2fvideo%2fmovies%2ftags.xml%2f/",return)</value>
+	</variable>
+	<variable name="MoviesYearsCmd" type="text">
+		<value condition="Skin.String(UPnPServer,Kodi)">ActivateWindow(VideoLibrary,"$INFO[Skin.String(UPnP_Path)]library%3a%2f%2fvideo%2fmovies%2fyears.xml%2f/",return)</value>
+	</variable>
+	<variable name="MoviesRecentCmd" type="text">
+		<value condition="Skin.String(UPnPServer,Kodi)">ActivateWindow(VideoLibrary,"$INFO[Skin.String(UPnP_Path)]library%3a%2f%2fvideo%2frecentlyaddedmovies.xml%2f/",return)</value>
+	</variable>
+	<variable name="TVShowInProgressCmd" type="text">
+		<value condition="Skin.String(UPnPServer,Kodi)">ActivateWindow(VideoLibrary,"$INFO[Skin.String(UPnP_Path)]library%3a%2f%2fvideo%2finprogressshows.xml%2f/",return)</value>
+	</variable>
+	<variable name="TVShowRecentCmd" type="text">
+		<value condition="Skin.String(UPnPServer,Kodi)">ActivateWindow(VideoLibrary,"$INFO[Skin.String(UPnP_Path)]library%3a%2f%2fvideo%2frecentlyaddedepisodes.xml%2f/",return)</value>
+	</variable>
+	<variable name="TVShowTitleCmd" type="text">
+		<value condition="Skin.String(UPnPServer,Kodi)">ActivateWindow(VideoLibrary,"$INFO[Skin.String(UPnP_Path)]library%3a%2f%2fvideo%2ftvshows%2ftitles.xml%2f/",return)</value>
+		<value condition="Skin.String(UPnPServer,WinHomeServer)">ActivateWindow(VideoLibrary,"$INFO[Skin.String(UPnP_Path)]E/",return)</value>
+	</variable>
+	<variable name="TVShowActorsCmd" type="text">
+		<value condition="Skin.String(UPnPServer,Kodi)">ActivateWindow(VideoLibrary,"$INFO[Skin.String(UPnP_Path)]library%3a%2f%2fvideo%2ftvshows%2factors.xml%2f/",return)</value>
+	</variable>
+	<variable name="TVShowGenreCmd" type="text">
+		<value condition="Skin.String(UPnPServer,Kodi)">ActivateWindow(VideoLibrary,"$INFO[Skin.String(UPnP_Path)]library%3a%2f%2fvideo%2ftvshows%2fgenres.xml%2f/",return)</value>
+	</variable>
+	<variable name="TVShowTagsCmd" type="text">
+		<value condition="Skin.String(UPnPServer,Kodi)">ActivateWindow(VideoLibrary,"$INFO[Skin.String(UPnP_Path)]library%3a%2f%2fvideo%2ftvshows%2ftags.xml%2f/",return)</value>
+	</variable>
+	<variable name="TVShowYearsCmd" type="text">
+		<value condition="Skin.String(UPnPServer,Kodi)">ActivateWindow(VideoLibrary,"$INFO[Skin.String(UPnP_Path)]library%3a%2f%2fvideo%2ftvshows%2fyears.xml%2f/",return)</value>
+	</variable>
+	<variable name="MusicLibraryCmd" type="text">
+		<value condition="Skin.String(UPnPServer,Kodi)">ActivateWindow(Music,"$INFO[Skin.String(UPnP_Path)]musicdb%3a%2f%2f/",return)</value>
+		<value condition="Skin.String(UPnPServer,WinHomeServer)">ActivateWindow(Music,"$INFO[Skin.String(UPnP_Path)]1/",return)</value>
+	</variable>
+	<variable name="MusicAlbumsCmd" type="text">
+		<value condition="Skin.String(UPnPServer,Kodi)">ActivateWindow(Music,"$INFO[Skin.String(UPnP_Path)]musicdb%3a%2f%2falbums%2f/",return)</value>
+		<value condition="Skin.String(UPnPServer,WinHomeServer)">ActivateWindow(Music,"$INFO[Skin.String(UPnP_Path)]7/",return)</value>
+	</variable>
+	<variable name="MusicArtistsCmd" type="text">
+		<value condition="Skin.String(UPnPServer,Kodi)">ActivateWindow(Music,"$INFO[Skin.String(UPnP_Path)]musicdb%3a%2f%2fartists%2f/",return)</value>
+		<value condition="Skin.String(UPnPServer,WinHomeServer)">ActivateWindow(Music,"$INFO[Skin.String(UPnP_Path)]6/",return)</value>
+	</variable>
+	<variable name="MusicCompilationsCmd" type="text">
+		<value condition="Skin.String(UPnPServer,Kodi)">ActivateWindow(Music,"$INFO[Skin.String(UPnP_Path)]musicdb%3a%2f%2fcompilations%2f/",return)</value>
+	</variable>
+	<variable name="MusicGenreCmd" type="text">
+		<value condition="Skin.String(UPnPServer,Kodi)">ActivateWindow(Music,"$INFO[Skin.String(UPnP_Path)]musicdb%3a%2f%2fgenres%2f/",return)</value>
+		<value condition="Skin.String(UPnPServer,WinHomeServer)">ActivateWindow(Music,"$INFO[Skin.String(UPnP_Path)]5/",return)</value>
+	</variable>
+	<variable name="MusicPlaylistCmd" type="text">
+		<value condition="Skin.String(UPnPServer,Kodi)">ActivateWindow(Music,"$INFO[Skin.String(UPnP_Path)]special%3a%2f%2fmusicplaylists%2f/",return)</value>
+		<value condition="Skin.String(UPnPServer,WinHomeServer)">ActivateWindow(Music,"$INFO[Skin.String(UPnP_Path)]F/",return)</value>
+	</variable>
+	<variable name="MusicRecentAddCmd" type="text">
+		<value condition="Skin.String(UPnPServer,Kodi)">ActivateWindow(Music,"$INFO[Skin.String(UPnP_Path)]musicdb%3a%2f%2frecentlyaddedalbums%2f/",return)</value>
+	</variable>
+	<variable name="MusicRecentPlayCmd" type="text">
+		<value condition="Skin.String(UPnPServer,Kodi)">ActivateWindow(Music,"$INFO[Skin.String(UPnP_Path)]musicdb%3a%2f%2frecentlyplayedalbums%2f/",return)</value>
+	</variable>
+	<variable name="MusicTop100SongsCmd" type="text">
+		<value condition="Skin.String(UPnPServer,Kodi)">ActivateWindow(Music,"$INFO[Skin.String(UPnP_Path)]musicdb%3a%2f%2ftop100%2fsongs%2f/",return)</value>
+	</variable>
+	<variable name="ConcertsLibraryCmd" type="text">
+		<value condition="Skin.String(UPnPServer,Kodi)">ActivateWindow(VideoLibrary,"$INFO[Skin.String(UPnP_Path)]library%3a%2f%2fvideo%2fmusicvideos%2f/",return)</value>
+	</variable>
+	<variable name="ConcertsYearsCmd" type="text">
+		<value condition="Skin.String(UPnPServer,Kodi)">ActivateWindow(VideoLibrary,"$INFO[Skin.String(UPnP_Path)]library%3a%2f%2fvideo%2fmusicvideos%2fyears.xml%2f/",return)</value>
+	</variable>
+	<variable name="ConcertsTitleCmd" type="text">
+		<value condition="Skin.String(UPnPServer,Kodi)">ActivateWindow(VideoLibrary,"$INFO[Skin.String(UPnP_Path)]library%3a%2f%2fvideo%2fmusicvideos%2ftitles.xml%2f/",return)</value>
+	</variable>
+	<variable name="ConcertsTagsCmd" type="text">
+		<value condition="Skin.String(UPnPServer,Kodi)">ActivateWindow(VideoLibrary,"$INFO[Skin.String(UPnP_Path)]library%3a%2f%2fvideo%2fmusicvideos%2ftags.xml%2f/",return)</value>
+	</variable>
+	<variable name="ConcertsGenreCmd" type="text">
+		<value condition="Skin.String(UPnPServer,Kodi)">ActivateWindow(VideoLibrary,"$INFO[Skin.String(UPnP_Path)]library%3a%2f%2fvideo%2fmusicvideos%2fgenres.xml%2f/",return)</value>
+	</variable>
+	<variable name="ConcertsRecentCmd" type="text">
+		<value condition="Skin.String(UPnPServer,Kodi)">ActivateWindow(VideoLibrary,"$INFO[Skin.String(UPnP_Path)]library%3a%2f%2fvideo%2frecentlyaddedmusicvideos.xml%2f/",return)</value>
 	</variable>
 </includes>

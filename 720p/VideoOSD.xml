@@ -41,7 +41,7 @@
 			<textureslidernibfocus>osd_slider_nib.png</textureslidernibfocus>
 			<animation effect="fade" time="200">VisibleChange</animation>
 			<animation effect="slide" end="-145,0" time="0" tween="back" easing="out" condition="Skin.HasSetting(HideArtWorkOSD) | Skin.HasSetting(HideSeekBarOSD) + !Player.ShowInfo" reversible="true">Conditional</animation>
-			<visible>!StringCompare(VideoPlayer.Title,KODI-Intro-Video.mkv)</visible>
+			<visible>!StringCompare(VideoPlayer.Title,KODI-Intro-Video.mp4)</visible>
 			<visible>![Window.IsVisible(SliderDialog) | Window.IsVisible(OSDVideoSettings) | Window.IsVisible(OSDAudioSettings) | Window.IsVisible(VideoBookmarks) | VideoPlayer.Content(LiveTV)]</visible>
 		</control>
 		<!-- !LiveTV -->
@@ -51,7 +51,7 @@
 			<defaultcontrol always="true">202</defaultcontrol>
 			<animation effect="fade" time="200">VisibleChange</animation>
 			<animation effect="slide" end="-135,0" time="0" tween="back" easing="out" condition="Skin.HasSetting(HideArtWorkOSD) | Skin.HasSetting(HideSeekBarOSD) + !Player.ShowInfo" reversible="true">Conditional</animation>
-			<visible>!StringCompare(VideoPlayer.Title,KODI-Intro-Video.mkv)</visible>
+			<visible>!StringCompare(VideoPlayer.Title,KODI-Intro-Video.mp4)</visible>
 			<visible>![Window.IsVisible(SliderDialog) | Window.IsVisible(OSDVideoSettings) | Window.IsVisible(OSDAudioSettings) | Window.IsVisible(VideoBookmarks)]</visible>
 			<visible>!VideoPlayer.Content(LiveTV)</visible>
 			<control type="button" id="200">
@@ -298,7 +298,7 @@
 			<top>60r</top>
 			<animation effect="fade" time="200">VisibleChange</animation>
 			<animation effect="slide" end="-225,0" time="0" tween="back" easing="out" condition="Skin.HasSetting(HidePopUpSeekBar)" reversible="true">Conditional</animation>
-			<visible>!StringCompare(VideoPlayer.Title,KODI-Intro-Video.mkv)</visible>
+			<visible>!StringCompare(VideoPlayer.Title,KODI-Intro-Video.mp4)</visible>
 			<visible>![Window.IsVisible(SliderDialog) | Window.IsVisible(OSDVideoSettings) | Window.IsVisible(OSDAudioSettings) | Window.IsVisible(VideoBookmarks)]</visible>
 			<visible>!VideoPlayer.Content(LiveTV)</visible>
 			<control type="button" id="255">

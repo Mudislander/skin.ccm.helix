@@ -508,7 +508,7 @@
 				<textureslidernib>ScrollBarNib.png</textureslidernib>
 				<textureslidernibfocus>ScrollBarNib.png</textureslidernibfocus>
 				<onleft>51</onleft>
-				<onright>9000</onright>
+				<onright>800</onright>
 				<showonepage>true</showonepage>
 				<orientation>vertical</orientation>
 				<visible>Control.IsVisible(51)</visible>
@@ -1333,7 +1333,7 @@
 				<textureslidernib>ScrollBarNib.png</textureslidernib>
 				<textureslidernibfocus>ScrollBarNib.png</textureslidernibfocus>
 				<onleft>52</onleft>
-				<onright>9000</onright>
+				<onright>800</onright>
 				<showonepage>true</showonepage>
 				<orientation>vertical</orientation>
 				<include>VisibleFadeEffect</include>

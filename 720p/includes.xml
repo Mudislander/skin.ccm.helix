@@ -36,6 +36,9 @@
 		<value condition="Window.IsActive(videolibrary) + !StringCompare(Playlist.Length(video),0)">ActivateWindow(videoplaylist)</value>
 		<value>ActivateWindow(musicplaylist)</value>
 	</variable>
+	<include name="LoadTvTunes">
+		<onload condition="System.HasAddon(script.tvtunes) + !SubString(Window(10025).Property(CinemaExperienceRunning),True)">RunScript(script.tvtunes,backend=True)</onload>
+	</include>
 	<variable name="SelectBack">
 		<value condition="![Window.IsVisible(FullscreenVideo) | Window.IsVisible(Visualisation)]">DialogBack.png</value>
 		<value>DialogBack2.png</value>
@@ -164,62 +167,93 @@
 			<texture>Confluence_Logo.png</texture>
 		</control>
 	</include>
-	<include name="MainWindowMouseButtons">
+	<include name="FloorReturnButtons">
 		<control type="group">
-			<left>120r</left>
+			<left>190r</left>
 			<top>55r</top>
-			<animation effect="fade" time="250" condition="Window.Previous(Home)">WindowOpen</animation>
-			<animation effect="fade" time="250" condition="Window.Next(Home)">WindowClose</animation>
-			<visible>system.getbool(input.enablemouse)</visible>
-			<control type="button">
+			<animation effect="fade" time="250" condition="Window.Previous(home)">WindowOpen</animation>
+			<animation effect="fade" time="250" condition="Window.Next(home)">WindowClose</animation>
+			<control type="button" id="801">
+				<description>Trailer Button</description>
+				<left>45</left>
+				<top>0</top>
+				<width>45</width>
+				<height>45</height>
+				<onclick>PlayMedia("$INFO[ListItem.Trailer]")</onclick>
+				<texturefocus border="5">FloorButtons/FloorTrailerFO.png</texturefocus>
+				<texturenofocus border="5">FloorButtons/FloorTrailerNF.png</texturenofocus>
+				<onleft>804</onleft>
+				<onright>803</onright>
+				<onup>800</onup>
+				<ondown>800</ondown>
+				<visible>!Skin.HasSetting(HideTrailerBtn)</visible>
+				<visible>!Player.HasMedia + !IsEmpty(ListItem.Trailer)</visible>
+				<visible>!Container.Content(TVShows) + !Container.Content(Seasons) + !Container.Content(Episodes)</visible>
+				<visible>![Control.IsVisible(500) | Control.IsVisible(529) | Control.IsVisible(594) | Control.IsVisible(732)]</visible>
+			</control>
+			<control type="button" id="803">
 				<description>Back push button</description>
-				<left>0</left>
+				<left>90</left>
 				<top>0</top>
 				<width>45</width>
 				<height>45</height>
-				<label>1036</label>
-				<font>-</font>
 				<onclick>back</onclick>
-				<texturefocus border="5">floor_buttonFO.png</texturefocus>
-				<texturenofocus border="5">floor_button.png</texturenofocus>
-				<onleft>50</onleft>
-				<onright>50</onright>
-				<onup>50</onup>
-				<ondown>50</ondown>
+				<texturefocus border="5">FloorButtons/FloorBackFO.png</texturefocus>
+				<texturenofocus border="5">FloorButtons/FloorBackNF.png</texturenofocus>
+				<onleft>801</onleft>
+				<onright>804</onright>
+				<onup>800</onup>
+				<ondown>800</ondown>
 			</control>
-			<control type="image">
-				<description>Back Icon</description>
-				<left>5</left>
-				<top>5</top>
-				<width>35</width>
-				<height>35</height>
-				<aspectratio>keep</aspectratio>
-				<texture>icon_back.png</texture>
-			</control>
-			<control type="button">
+			<control type="button" id="804">
 				<description>Home push button</description>
-				<left>55</left>
+				<left>135</left>
 				<top>0</top>
 				<width>45</width>
 				<height>45</height>
-				<label>31003</label>
-				<font>-</font>
+				<onclick>Dialog.Close(all,true)</onclick>
 				<onclick>ActivateWindow(home)</onclick>
-				<texturefocus border="5">floor_buttonFO.png</texturefocus>
-				<texturenofocus border="5">floor_button.png</texturenofocus>
-				<onleft>50</onleft>
-				<onright>50</onright>
-				<onup>50</onup>
-				<ondown>50</ondown>
+				<texturefocus border="5">FloorButtons/FloorHomeFO.png</texturefocus>
+				<texturenofocus border="5">FloorButtons/FloorHomeNF.png</texturenofocus>
+				<onleft>803</onleft>
+				<onright>801</onright>
+				<onup>800</onup>
+				<ondown>800</ondown>
 			</control>
-			<control type="image">
-				<description>Home Icon</description>
-				<left>60</left>
-				<top>5</top>
-				<width>35</width>
-				<height>35</height>
-				<aspectratio>keep</aspectratio>
-				<texture>icon_home.png</texture>
+		</control>
+	</include>
+	<include name="CommonPageCount">
+		<control type="group">
+			<!--animation effect="slide" start="0,0" end="-90,0" time="0" condition="system.getbool(input.enablemouse)">Conditional</animation-->
+			<animation effect="slide" start="0,0" end="-70,0" time="0" condition="!Skin.HasSetting(DisableFloorBtns)">Conditional</animation>
+			<animation effect="slide" start="0,0" end="-45,0" time="0" condition="!Skin.HasSetting(HideTrailerBtn)">Conditional</animation>
+			<control type="label">
+				<description>Page Count Label</description>
+				<right>40</right>
+				<top>53r</top>
+				<width>500</width>
+				<height>20</height>
+				<font>font12</font>
+				<textcolor>grey</textcolor>
+				<scroll>false</scroll>
+				<align>right</align>
+				<aligny>center</aligny>
+				<label>$INFO[Container.NumItems,([COLOR=white],[/COLOR]) $LOCALIZE[31025]]$INFO[Container.CurrentPage, - $LOCALIZE[31024] ([COLOR=white]]$INFO[Container.NumPages,/,[/COLOR])]</label>
+				<include>Window_OpenClose_Animation</include>
+			</control>
+			<control type="label">
+				<description>Container Duration Label</description>
+				<right>40</right>
+				<top>32r</top>
+				<width>500</width>
+				<height>20</height>
+				<font>font12</font>
+				<textcolor>grey</textcolor>
+				<scroll>false</scroll>
+				<align>right</align>
+				<aligny>center</aligny>
+				<label>$INFO[Container.TotalTime,$LOCALIZE[31009] ([COLOR=white],[/COLOR])]</label>
+				<include>Window_OpenClose_Animation</include>
 			</control>
 		</control>
 	</include>
@@ -259,7 +293,6 @@
 				<top>53r</top>
 				<width>700</width>
 				<height>20</height>
-				<!--label>$INFO[Player.Title] - ([COLOR=$VAR[MainColorOne]]$INFO[Player.Time] / $INFO[Player.Duration,][/COLOR])</label-->
 				<label>$VAR[CommonMediaPlaying]</label>
 				<align>left</align>
 				<aligny>center</aligny>
@@ -331,39 +364,6 @@
 				<textcolor>grey</textcolor>
 				<shadowcolor>black</shadowcolor>
 				<visible>Player.HasVideo + VideoPlayer.Content(LiveTV)</visible>
-			</control>
-		</control>
-	</include>
-	<include name="CommonPageCount">
-		<control type="group">
-			<animation effect="slide" start="0,0" end="-90,0" time="0" condition="system.getbool(input.enablemouse)">Conditional</animation>
-			<control type="label">
-				<description>Page Count Label</description>
-				<right>40</right>
-				<top>53r</top>
-				<width>500</width>
-				<height>20</height>
-				<font>font12</font>
-				<textcolor>grey</textcolor>
-				<scroll>false</scroll>
-				<align>right</align>
-				<aligny>center</aligny>
-				<label>$INFO[Container.NumItems,([COLOR=white],[/COLOR]) $LOCALIZE[31025]]$INFO[Container.CurrentPage, - $LOCALIZE[31024] ([COLOR=white]]$INFO[Container.NumPages,/,[/COLOR])]</label>
-				<include>Window_OpenClose_Animation</include>
-			</control>
-			<control type="label">
-				<description>Container Duration Label</description>
-				<right>40</right>
-				<top>32r</top>
-				<width>500</width>
-				<height>20</height>
-				<font>font12</font>
-				<textcolor>grey</textcolor>
-				<scroll>false</scroll>
-				<align>right</align>
-				<aligny>center</aligny>
-				<label>$INFO[Container.TotalTime,$LOCALIZE[31009] ([COLOR=white],[/COLOR])]</label>
-				<include>Window_OpenClose_Animation</include>
 			</control>
 		</control>
 	</include>

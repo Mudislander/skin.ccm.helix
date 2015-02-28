@@ -5,7 +5,10 @@
 	<onload condition="System.HasAddon(script.favourites)">XBMC.RunScript(script.favourites)</onload>
 	<onload condition="stringcompare(Container(9011).Position,0) + !stringcompare(Skin.String(InitialMenuPosi),0)">Control.Move(9011,$INFO[Skin.String(InitialMenuPosi)])</onload>
 	<onunload condition="IsEmpty(Skin.String(WeatherFanartDir)) | SubString(Skin.String(WeatherFanartDir),skin.ccm.helix\extras\Weather\,right)">Skin.SetString(WeatherFanartDir,special://skin/extras/Weather/)</onunload>
+	<onunload condition="!Skin.HasSetting(DisableFanartScript)">RunScript(script.grab.fanart,mode=random,refresh=$INFO[Skin.String(FanArtCycleRate)])</onunload>
+	<onunload condition="Skin.HasSetting(EnablePingWOL) + Skin.String(PingMacAddr)">WakeOnLan($INFO[Skin.String(PingMacAddr)])</onunload>
 	<controls>
+	
 		<include>CommonBackground</include>
 		<control type="image">
 			<left>0</left>
@@ -95,6 +98,14 @@
 				<aspectratio>keep</aspectratio>
 				<texture>Confluence_Logo.png</texture>
 			</control>
+			<control type="button" id="800">
+			<include>InvisibleButton</include>
+			<onleft>801</onleft>
+			<onright>804</onright>
+			<onup>50</onup>
+			<ondown>50</ondown>
+			<visible>false</visible>
+		</control>
 			<control type="list" id="9000">
 				<left>10</left>
 				<top>90</top>
@@ -644,7 +655,25 @@
 						<onclick>Skin.ToggleSetting(KioskMode)</onclick>
 						<selected>Skin.HasSetting(KioskMode)</selected>
 					</control>
-					<control type="radiobutton" id="142">
+					<control type="button" id="142">
+						<width>750</width>
+						<height>40</height>
+						<font>font13</font>
+						<label>$LOCALIZE[31698]</label>
+						<label2>[COLOR=selected]$VAR[UsrMPAACountry][/COLOR]</label2>
+						<textcolor>grey2</textcolor>
+						<focusedcolor>white</focusedcolor>
+						<texturefocus>MenuItemFO.png</texturefocus>
+						<texturenofocus>MenuItemNF.png</texturenofocus>
+						<onclick condition="IsEmpty(Skin.String(MPAACertificate))">Skin.SetString(MPAACertificate,UK)</onclick>
+						<onclick condition="Skin.String(MPAACertificate,UK)">Skin.SetString(MPAACertificate,Aus)</onclick>
+						<onclick condition="Skin.String(MPAACertificate,Aus)">Skin.SetString(MPAACertificate,Fr)</onclick>
+						<onclick condition="Skin.String(MPAACertificate,Fr)">Skin.SetString(MPAACertificate,DE)</onclick>
+						<onclick condition="Skin.String(MPAACertificate,DE)">Skin.SetString(MPAACertificate,NL)</onclick>
+						<onclick condition="Skin.String(MPAACertificate,NL)">Skin.SetString(MPAACertificate,USA)</onclick>
+						<onclick condition="Skin.String(MPAACertificate,USA)">Skin.Reset(MPAACertificate)</onclick>
+					</control>
+					<control type="radiobutton" id="143">
 						<width>750</width>
 						<height>40</height>
 						<font>font13</font>
@@ -656,7 +685,7 @@
 						<onclick>Skin.ToggleSetting(WrapMediaViews)</onclick>
 						<selected>Skin.HasSetting(WrapMediaViews)</selected>
 					</control>
-					<control type="radiobutton" id="143">
+					<control type="radiobutton" id="144">
 						<width>750</width>
 						<height>40</height>
 						<font>font13</font>
@@ -796,7 +825,26 @@
 						<onclick>Skin.ToggleSetting(WindowedTrailer)</onclick>
 						<selected>Skin.HasSetting(WindowedTrailer)</selected>
 					</control>
+					
+					
+					
 					<control type="radiobutton" id="155">
+						<width>750</width>
+						<height>40</height>
+						<font>font13</font>
+						<label>31021</label>
+						<textcolor>grey2</textcolor>
+						<focusedcolor>white</focusedcolor>
+						<texturefocus>MenuItemFO.png</texturefocus>
+						<texturenofocus>MenuItemNF.png</texturenofocus>
+						<onclick>Skin.ToggleSetting(HideTrailerBtn)</onclick>
+						<selected>!Skin.HasSetting(HideTrailerBtn)</selected>
+					</control>
+					
+					
+					
+					
+					<control type="radiobutton" id="156">
 						<width>750</width>
 						<height>40</height>
 						<font>font13</font>
@@ -808,18 +856,7 @@
 						<onclick>Skin.ToggleSetting(HideFilenameFlagging)</onclick>
 						<selected>Skin.HasSetting(HideFilenameFlagging)</selected>
 					</control>
-					<control type="radiobutton" id="156">
-						<width>750</width>
-						<height>40</height>
-						<font>font13</font>
-						<label>31099</label>
-						<textcolor>grey2</textcolor>
-						<focusedcolor>white</focusedcolor>
-						<texturefocus>MenuItemFO.png</texturefocus>
-						<texturenofocus>MenuItemNF.png</texturenofocus>
-						<onclick>Skin.ToggleSetting(EnableFileSysArt)</onclick>
-						<selected>Skin.HasSetting(EnableFileSysArt)</selected>
-					</control>
+					
 					<control type="label" id="157">
 						<width>750</width>
 						<height>45</height>
@@ -1029,7 +1066,7 @@
 					<textureslidernib>ScrollBarNib.png</textureslidernib>
 					<textureslidernibfocus>ScrollBarNib.png</textureslidernibfocus>
 					<onleft>9001</onleft>
-					<onright>9000</onright>
+					<onright>800</onright>
 					<showonepage>false</showonepage>
 					<orientation>vertical</orientation>
 					<visible>Container(9000).Hasfocus(1)</visible>
@@ -2202,7 +2239,7 @@
 					<textureslidernib>ScrollBarNib.png</textureslidernib>
 					<textureslidernibfocus>ScrollBarNib.png</textureslidernibfocus>
 					<onleft>9002</onleft>
-					<onright>9000</onright>
+					<onright>800</onright>
 					<showonepage>false</showonepage>
 					<orientation>vertical</orientation>
 					<visible>Container(9000).Hasfocus(2)</visible>
@@ -4055,7 +4092,7 @@
 					<textureslidernib>ScrollBarNib.png</textureslidernib>
 					<textureslidernibfocus>ScrollBarNib.png</textureslidernibfocus>
 					<onleft>9003</onleft>
-					<onright>9000</onright>
+					<onright>800</onright>
 					<showonepage>false</showonepage>
 					<orientation>vertical</orientation>
 					<visible>Container(9000).Hasfocus(3)</visible>
@@ -5326,7 +5363,19 @@
 							<align>left</align>
 							<aligny>center</aligny>
 						</control>
-						<control type="button" id="800">
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						
+						<control type="button" id="850">
 							<width>750</width>
 							<height>40</height>
 							<font>font13</font>
@@ -5338,7 +5387,7 @@
 							<texturenofocus>MenuItemNF.png</texturenofocus>
 							<onclick>Skin.SetString(UserSelectAddon.12.Label)</onclick>
 						</control>
-						<control type="button" id="801">
+						<control type="button" id="851">
 							<width>750</width>
 							<height>40</height>
 							<font>font13</font>
@@ -5351,7 +5400,7 @@
 							<onclick>SetProperty(UsrSelectBtn,AddonSetTwelve.1,Home)</onclick>
 							<onclick>ActivateWindow(2119)</onclick>
 						</control>
-						<control type="button" id="802">
+						<control type="button" id="852">
 							<width>750</width>
 							<height>40</height>
 							<font>font13</font>
@@ -5364,7 +5413,7 @@
 							<onclick>SetProperty(UsrSelectBtn,AddonSetTwelve.2,Home)</onclick>
 							<onclick>ActivateWindow(2119)</onclick>
 						</control>
-						<control type="button" id="803">
+						<control type="button" id="853">
 							<width>750</width>
 							<height>40</height>
 							<font>font13</font>
@@ -5377,7 +5426,7 @@
 							<onclick>SetProperty(UsrSelectBtn,AddonSetTwelve.3,Home)</onclick>
 							<onclick>ActivateWindow(2119)</onclick>
 						</control>
-						<control type="button" id="804">
+						<control type="button" id="854">
 							<width>750</width>
 							<height>40</height>
 							<font>font13</font>
@@ -5390,7 +5439,7 @@
 							<onclick>SetProperty(UsrSelectBtn,AddonSetTwelve.4,Home)</onclick>
 							<onclick>ActivateWindow(2119)</onclick>
 						</control>
-						<control type="button" id="805">
+						<control type="button" id="855">
 							<width>750</width>
 							<height>40</height>
 							<font>font13</font>
@@ -5403,7 +5452,7 @@
 							<onclick>SetProperty(UsrSelectBtn,AddonSetTwelve.5,Home)</onclick>
 							<onclick>ActivateWindow(2119)</onclick>
 						</control>
-						<control type="button" id="806">
+						<control type="button" id="856">
 							<width>750</width>
 							<height>40</height>
 							<font>font13</font>
@@ -5416,7 +5465,7 @@
 							<onclick>SetProperty(UsrSelectBtn,AddonSetTwelve.6,Home)</onclick>
 							<onclick>ActivateWindow(2119)</onclick>
 						</control>
-						<control type="button" id="807">
+						<control type="button" id="857">
 							<width>750</width>
 							<height>40</height>
 							<font>font13</font>
@@ -5442,7 +5491,7 @@
 					<textureslidernib>ScrollBarNib.png</textureslidernib>
 					<textureslidernibfocus>ScrollBarNib.png</textureslidernibfocus>
 					<onleft>9004</onleft>
-					<onright>9000</onright>
+					<onright>800</onright>
 					<showonepage>false</showonepage>
 					<orientation>vertical</orientation>
 					<visible>Container(9000).Hasfocus(4)</visible>
@@ -6907,7 +6956,127 @@
 					<onright>60</onright>
 					<onup>9006</onup>
 					<ondown>9006</ondown>
+					
+					
 					<control type="label" id="600">
+						<width>750</width>
+						<height>45</height>
+						<font>font13_title</font>
+						<label>31091</label>
+						<textcolor>blue</textcolor>
+						<shadowcolor>black</shadowcolor>
+						<align>left</align>
+						<aligny>center</aligny>
+					</control>
+					
+					<control type="radiobutton" id="601">
+						<description>Enable WOL Ping</description>
+						<width>750</width>
+						<height>40</height>
+						<textcolor>grey2</textcolor>
+						<focusedcolor>white</focusedcolor>
+						<texturefocus>MenuItemFO.png</texturefocus>
+						<texturenofocus>MenuItemNF.png</texturenofocus>
+						<label>31094</label>
+						<onclick>CancelAlarm(WOLPingAlarm,true)</onclick>
+						<onclick condition="!Skin.String(WOLPingTimer)">Skin.SetString(WOLPingTimer,30)</onclick>
+						
+						
+						<onclick>Skin.ToggleSetting(EnablePingWOL)</onclick>
+						<selected>Skin.HasSetting(EnablePingWOL)</selected>
+						<enable>System.HasNetwork</enable>
+					</control>
+					
+					
+					<control type="button" id="602">
+						<description>WOL PC</description>
+						<label>31093</label>
+						<label2>[COLOR=selected]$VAR[PingMacDesc][/COLOR]</label2>
+						<width>750</width>
+						<height>40</height>
+						<font>font13</font>
+						<textcolor>grey2</textcolor>
+						<focusedcolor>white</focusedcolor>
+						<texturefocus>MenuItemFO.png</texturefocus>
+						<texturenofocus>MenuItemNF.png</texturenofocus>
+						
+						<onclick>Skin.SetString(PingMacAddr)</onclick>
+						<enable>Skin.HasSetting(EnablePingWOL)</enable>
+					</control>
+					
+					
+					<control type="button" id="603">
+						<description>WOL Ping Timer</description>
+						<label>31095</label>
+						<label2>[COLOR=selected]$INFO[Skin.String(WOLPingTimer)][/COLOR] $LOCALIZE[12391]</label2>
+						<width>750</width>
+						<height>40</height>
+						<font>font13</font>
+						<textcolor>grey2</textcolor>
+						<focusedcolor>white</focusedcolor>
+						<texturefocus>MenuItemFO.png</texturefocus>
+						<texturenofocus>MenuItemNF.png</texturenofocus>
+						
+						<onclick>Skin.SetNumeric(WOLPingTimer)</onclick> 
+						<enable>Skin.HasSetting(EnablePingWOL)</enable>
+					</control>
+					<control type="label" id="605">
+						<width>750</width>
+						<height>45</height>
+						<font>font13_title</font>
+						<label>31147</label>
+						<textcolor>blue</textcolor>
+						<shadowcolor>black</shadowcolor>
+						<align>left</align>
+						<aligny>center</aligny>
+					</control>
+					<control type="radiobutton" id="606">
+						<description>Set UPnP Library Mode</description>
+						<width>750</width>
+						<height>40</height>
+						<textcolor>grey2</textcolor>
+						<focusedcolor>white</focusedcolor>
+						<texturefocus>MenuItemFO.png</texturefocus>
+						<texturenofocus>MenuItemNF.png</texturenofocus>
+						<label>31148</label>
+						<onclick>Skin.Reset(UPnP_Path)</onclick>
+						<onclick>Skin.Reset(UPnP_Name)</onclick>
+						<onclick>Skin.SetString(UPnPServer,Kodi)</onclick>
+						<onclick>Skin.ToggleSetting(UPnP_Mode)</onclick>
+						<selected>Skin.HasSetting(UPnP_Mode)</selected>
+					</control>
+					<control type="button" id="607">
+						<description>UPnP Library Path</description>
+						<label>15311</label>
+						<label2>[COLOR=selected]$VAR[UPnPPathDesc][/COLOR]</label2>
+						<width>750</width>
+						<height>40</height>
+						<font>font13</font>
+						<textcolor>grey2</textcolor>
+						<focusedcolor>white</focusedcolor>
+						<texturefocus>MenuItemFO.png</texturefocus>
+						<texturenofocus>MenuItemNF.png</texturenofocus>
+						
+						<onclick>ActivateWindow(2132)</onclick>
+						<enable>Skin.HasSetting(UPnP_Mode)</enable>
+					</control>
+					<control type="button" id="608">
+						<width>750</width>
+						<height>40</height>
+						<font>font13</font>
+						<label>$LOCALIZE[31149]</label>
+						<label2>[COLOR=selected]$VAR[UPnPServerType][/COLOR]</label2>
+						<textcolor>grey2</textcolor>
+						<focusedcolor>white</focusedcolor>
+						<texturefocus>MenuItemFO.png</texturefocus>
+						<texturenofocus>MenuItemNF.png</texturenofocus>
+						<onclick condition="IsEmpty(Skin.String(UPnPServer))">Skin.SetString(UPnPServer,Kodi)</onclick>
+						<onclick condition="Skin.String(UPnPServer,Kodi)">Skin.SetString(UPnPServer,Plex)</onclick>
+						<onclick condition="Skin.String(UPnPServer,Plex)">Skin.SetString(UPnPServer,WinHomeServer)</onclick>
+						<onclick condition="Skin.String(UPnPServer,WinHomeServer)">Skin.SetString(UPnPServer,Kodi)</onclick>
+						<enable>Skin.HasSetting(UPnP_Mode)</enable>
+					</control>
+					<control type="label" id="610">
 						<width>750</width>
 						<height>45</height>
 						<font>font13_title</font>
@@ -6917,7 +7086,7 @@
 						<align>left</align>
 						<aligny>center</aligny>
 					</control>
-					<control type="button" id="601">
+					<control type="button" id="611">
 						<description>Physical Music Folder</description>
 						<width>750</width>
 						<height>40</height>
@@ -6931,7 +7100,7 @@
 						<texturefocus>MenuItemFO.png</texturefocus>
 						<texturenofocus>MenuItemNF.png</texturenofocus>
 					</control>
-					<control type="label" id="602">
+					<control type="label" id="612">
 						<width>750</width>
 						<height>45</height>
 						<font>font13_title</font>
@@ -6941,7 +7110,7 @@
 						<align>left</align>
 						<aligny>center</aligny>
 					</control>
-					<control type="radiobutton" id="603">
+					<control type="radiobutton" id="613">
 						<width>750</width>
 						<height>40</height>
 						<font>font13</font>
@@ -6954,20 +7123,24 @@
 						<selected>Skin.HasSetting(EnableFanartScript)</selected>
 						<enable>System.HasAddon(script.grab.fanart)</enable>
 					</control>
-					<!--control type="button" id="604">
+					
+					
+					
+					<control type="button" id="614">
 						<width>750</width>
 						<height>40</height>
 						<font>font13</font>
-						<label> - $LOCALIZE[31923]</label>
+						<label>$LOCALIZE[31939]</label>
+						<label2>[COLOR=selected]$INFO[Skin.String(FanArtCycleRate)][/COLOR] $LOCALIZE[31940]</label2>
 						<textcolor>grey2</textcolor>
 						<focusedcolor>white</focusedcolor>
 						<texturefocus>MenuItemFO.png</texturefocus>
 						<texturenofocus>MenuItemNF.png</texturenofocus>
-						<onclick>Addon.OpenSettings(script.grab.fanart)</onclick>
+						
+						<onclick>Skin.SetNumeric(FanArtCycleRate)</onclick> 
 						<enable>Skin.HasSetting(EnableFanartScript)</enable>
-						<visible>System.HasAddon(script.grab.fanart)</visible>
-					</control-->
-					<control type="button" id="605">
+					</control>
+					<control type="button" id="615">
 						<description>User Album Thumbnails Path</description>
 						<width>750</width>
 						<height>40</height>
@@ -6981,7 +7154,7 @@
 						<texturefocus>MenuItemFO.png</texturefocus>
 						<texturenofocus>MenuItemNF.png</texturenofocus>
 					</control>
-					<control type="button" id="606">
+					<control type="button" id="616">
 						<description>User Movie FanArt Path</description>
 						<width>750</width>
 						<height>40</height>
@@ -6996,7 +7169,7 @@
 						<texturenofocus>MenuItemNF.png</texturenofocus>
 						<enable>!Skin.HasSetting(EnableFanartScript)</enable>
 					</control>
-					<control type="button" id="607">
+					<control type="button" id="617">
 						<description>User TVShow FanArt Path</description>
 						<width>750</width>
 						<height>40</height>
@@ -7011,7 +7184,7 @@
 						<texturenofocus>MenuItemNF.png</texturenofocus>
 						<enable>!Skin.HasSetting(EnableFanartScript)</enable>
 					</control>
-					<control type="button" id="608">
+					<control type="button" id="618">
 						<description>User Artists FanArt Path</description>
 						<width>750</width>
 						<height>40</height>
@@ -7026,7 +7199,7 @@
 						<texturenofocus>MenuItemNF.png</texturenofocus>
 						<enable>!Skin.HasSetting(EnableFanartScript)</enable>
 					</control>
-					<control type="button" id="609">
+					<control type="button" id="619">
 						<description>User Concerts FanArt Path</description>
 						<width>750</width>
 						<height>40</height>
@@ -7040,7 +7213,7 @@
 						<texturefocus>MenuItemFO.png</texturefocus>
 						<texturenofocus>MenuItemNF.png</texturenofocus>
 					</control>
-					<control type="button" id="610">
+					<control type="button" id="620">
 						<description>User Weather FanArt Path</description>
 						<width>750</width>
 						<height>40</height>
@@ -7054,7 +7227,7 @@
 						<texturefocus>MenuItemFO.png</texturefocus>
 						<texturenofocus>MenuItemNF.png</texturenofocus>
 					</control>
-					<control type="label" id="611">
+					<control type="label" id="630">
 						<width>750</width>
 						<height>45</height>
 						<font>font13_title</font>
@@ -7064,7 +7237,7 @@
 						<align>left</align>
 						<aligny>center</aligny>
 					</control>
-					<control type="radiobutton" id="612">
+					<control type="radiobutton" id="631">
 						<width>750</width>
 						<height>40</height>
 						<font>font13</font>
@@ -7077,7 +7250,7 @@
 						<onclick>Skin.Reset(EnableStartUpPlaylistPath)</onclick>
 						<selected>!Skin.HasSetting(HideKodiIntro)</selected>
 					</control>
-					<control type="radiobutton" id="613">
+					<control type="radiobutton" id="632">
 						<width>750</width>
 						<height>40</height>
 						<font>font13</font>
@@ -7089,7 +7262,7 @@
 						<onclick>Skin.ToggleSetting(UseStartUpPlaylistPath)</onclick>
 						<selected>Skin.HasSetting(UseStartUpPlaylistPath)</selected>
 					</control>
-					<control type="button" id="614">
+					<control type="button" id="633">
 						<description>Startup Playlist Path</description>
 						<width>750</width>
 						<height>40</height>
@@ -7103,7 +7276,7 @@
 						<texturenofocus>MenuItemNF.png</texturenofocus>
 						<enable>Skin.HasSetting(UseStartUpPlaylistPath)</enable>
 					</control>
-					<control type="label" id="615">
+					<control type="label" id="634">
 						<width>750</width>
 						<height>45</height>
 						<font>font13_title</font>
@@ -7113,7 +7286,7 @@
 						<align>left</align>
 						<aligny>center</aligny>
 					</control>
-					<control type="button" id="621">
+					<control type="button" id="635">
 						<width>750</width>
 						<height>40</height>
 						<font>font13</font>
@@ -7125,7 +7298,7 @@
 						<texturenofocus>MenuItemNF.png</texturenofocus>
 						<onclick>Skin.SetAddon(LyricScript_Path,xbmc.python.lyrics)</onclick>
 					</control>
-					<control type="button" id="622">
+					<control type="button" id="636">
 						<width>750</width>
 						<height>40</height>
 						<font>font13</font>
@@ -7137,7 +7310,7 @@
 						<enable>!IsEmpty(Skin.String(LyricScript_Path))</enable>
 						<onclick>Addon.OpenSettings($INFO[Skin.String(LyricScript_Path)])</onclick>
 					</control>
-					<control type="radiobutton" id="625">
+					<control type="radiobutton" id="637">
 						<width>750</width>
 						<height>40</height>
 						<font>font13</font>
@@ -7150,7 +7323,7 @@
 						<selected>!Skin.HasSetting(DisableTVTunes)</selected>
 						<enable>System.HasAddon(script.tvtunes)</enable>
 					</control>
-					<control type="button" id="626">
+					<control type="button" id="638">
 						<width>750</width>
 						<height>40</height>
 						<font>font13</font>
@@ -7163,7 +7336,7 @@
 						<enable>!Skin.HasSetting(DisableTVTunes)</enable>
 						<visible>System.HasAddon(script.tvtunes)</visible>
 					</control>
-					<control type="radiobutton" id="627">
+					<control type="radiobutton" id="639">
 						<width>750</width>
 						<height>40</height>
 						<font>font13</font>
@@ -7176,7 +7349,7 @@
 						<selected>!Skin.HasSetting(DisableSlideShowArt)</selected>
 						<enable>System.HasAddon(script.artistslideshow)</enable>
 					</control>
-					<control type="button" id="628">
+					<control type="button" id="640">
 						<width>750</width>
 						<height>40</height>
 						<font>font13</font>
@@ -7189,7 +7362,7 @@
 						<enable>!Skin.HasSetting(DisableSlideShowArt)</enable>
 						<visible>System.HasAddon(script.artistslideshow)</visible>
 					</control>
-					<control type="radiobutton" id="629">
+					<control type="radiobutton" id="641">
 						<width>750</width>
 						<height>40</height>
 						<font>font13</font>
@@ -7202,7 +7375,7 @@
 						<selected>!Skin.HasSetting(DisableGlobalSearch)</selected>
 						<enable>System.HasAddon(script.globalsearch)</enable>
 					</control>
-					<control type="button" id="630">
+					<control type="button" id="642">
 						<width>750</width>
 						<height>40</height>
 						<font>font13</font>
@@ -7215,7 +7388,7 @@
 						<enable>!Skin.HasSetting(DisableGlobalSearch)</enable>
 						<visible>System.HasAddon(script.globalsearch)</visible>
 					</control>
-					<control type="radiobutton" id="633">
+					<control type="radiobutton" id="643">
 						<width>750</width>
 						<height>40</height>
 						<font>font13</font>
@@ -7228,7 +7401,7 @@
 						<selected>!Skin.HasSetting(DisableTVNextAired)</selected>
 						<enable>System.HasAddon(script.tv.show.next.aired)</enable>
 					</control>
-					<control type="button" id="634">
+					<control type="button" id="644">
 						<width>750</width>
 						<height>40</height>
 						<font>font13</font>
@@ -7241,7 +7414,7 @@
 						<enable>!Skin.HasSetting(DisableTVNextAired)</enable>
 						<visible>System.HasAddon(script.tv.show.next.aired)</visible>
 					</control>
-					<control type="radiobutton" id="635">
+					<control type="radiobutton" id="645">
 						<width>750</width>
 						<height>40</height>
 						<font>font13</font>
@@ -7254,7 +7427,7 @@
 						<selected>!Skin.HasSetting(DisableWatchitLater)</selected>
 						<enable>System.HasAddon(script.simpleplaylists)</enable>
 					</control>
-					<control type="button" id="636">
+					<control type="button" id="646">
 						<width>750</width>
 						<height>40</height>
 						<font>font13</font>
@@ -7267,7 +7440,7 @@
 						<enable>!Skin.HasSetting(DisableWatchitLater)</enable>
 						<visible>System.HasAddon(script.simpleplaylists)</visible>
 					</control>
-					<control type="radiobutton" id="637">
+					<control type="radiobutton" id="647">
 						<width>750</width>
 						<height>40</height>
 						<font>font13</font>
@@ -7280,7 +7453,7 @@
 						<selected>!Skin.HasSetting(DisableScriptPlaylist)</selected>
 						<enable>System.HasAddon(script.randomandlastitems)</enable>
 					</control>
-					<control type="button" id="638">
+					<control type="button" id="648">
 						<width>750</width>
 						<height>40</height>
 						<font>font13</font>
@@ -7293,7 +7466,7 @@
 						<enable>!Skin.HasSetting(DisableScriptPlaylist)</enable>
 						<visible>System.HasAddon(script.randomandlastitems)</visible>
 					</control>
-					<control type="label" id="639">
+					<control type="label" id="649">
 						<width>750</width>
 						<height>45</height>
 						<font>font13_title</font>
@@ -7303,7 +7476,7 @@
 						<align>left</align>
 						<aligny>center</aligny>
 					</control>
-					<control type="button" id="640">
+					<control type="button" id="660">
 						<width>750</width>
 						<height>40</height>
 						<font>font13</font>
@@ -7327,7 +7500,7 @@
 					<textureslidernib>ScrollBarNib.png</textureslidernib>
 					<textureslidernibfocus>ScrollBarNib.png</textureslidernibfocus>
 					<onleft>9006</onleft>
-					<onright>9000</onright>
+					<onright>800</onright>
 					<showonepage>false</showonepage>
 					<orientation>vertical</orientation>
 					<visible>Container(9000).Hasfocus(6)</visible>
@@ -7340,7 +7513,7 @@
 					<height>530</height>
 					<itemgap>-1</itemgap>
 					<onleft>9000</onleft>
-					<onright>9000</onright>
+					<onright>800</onright>
 					<onup>9000</onup>
 					<ondown>9000</ondown>
 					<control type="image" id="801">
@@ -7368,12 +7541,7 @@
 				</control>
 			</control>
 			<control type="list" id="9011">
-				<!--onleft>9001</onleft>
-                    <onright>9001</onright>
-                    <onup>9001</onup>
-                    <ondown>9001</ondown-->
-				<!--visible>Container(9000).Hasfocus(1)</visible-->
-				<visible>false</visible>
+						<visible>false</visible>
 				<itemlayout height="1" width="750"></itemlayout>
 				<focusedlayout height="1" width="750"></focusedlayout>
 				<content>
@@ -7465,7 +7633,7 @@
 			</control>
 		</control>
 		<include>CommonNowPlaying</include>
-		<include>MainWindowMouseButtons</include>
+		<include>FloorReturnButtons</include>
 		<include>BehindDialogFadeOut</include>
 		<include>Clock</include>
 	</controls>

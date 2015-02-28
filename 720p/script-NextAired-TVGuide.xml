@@ -491,7 +491,7 @@
 			</control>
 		</control>
 		<include>CommonNowPlaying</include>
-		<include>MainWindowMouseButtons</include>
+		<include>FloorReturnButtons</include>
 		<include>BehindDialogFadeOut</include>
 		<control type="group">
 			<visible>!Skin.HasSetting(KioskMode)</visible>

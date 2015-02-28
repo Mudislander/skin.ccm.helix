@@ -49,7 +49,7 @@
 				</control>
 			</control>
 		</control>
-		<include>MainWindowMouseButtons</include>
+		<include>FloorReturnButtons</include>
 		<include>PVRHeader</include>
 		<control type="group" id="50">
 			<include>Window_OpenClose_Animation</include>

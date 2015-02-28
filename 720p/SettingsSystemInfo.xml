@@ -331,7 +331,7 @@
 			</control>
 		</control>
 		<include>CommonNowPlaying</include>
-		<include>MainWindowMouseButtons</include>
+		<include>FloorReturnButtons</include>
 		<control type="image">
 			<description>Section header image</description>
 			<left>20</left>

@@ -38,7 +38,7 @@
 		</control>
 		<include>CommonPageCount</include>
 		<include>CommonNowPlaying</include>
-		<include>MainWindowMouseButtons</include>
+		<include>FloorReturnButtons</include>
 		<include>BehindDialogFadeOut</include>
 		<include>ScrollOffsetLabel</include>
 		<control type="image">
@@ -68,6 +68,14 @@
 				<label>[COLOR=$VAR[MainColorOne]] - [/COLOR]$INFO[Container.FolderName]</label>
 				<visible>!IsEmpty(Container.FolderName)</visible>
 			</control>
+		</control>
+		<control type="button" id="800">
+			<include>InvisibleButton</include>
+			<onleft>801</onleft>
+			<onright>804</onright>
+			<onup>50</onup>
+			<ondown>50</ondown>
+			<visible>false</visible>
 		</control>
 		<control type="group">
 			<visible>!Skin.HasSetting(KioskMode)</visible>

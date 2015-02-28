@@ -8,7 +8,7 @@
 			<width>1160</width>
 			<height>460</height>
 			<onup>9000</onup>
-			<ondown>2</ondown>
+			<ondown>803</ondown>
 			<usecontrolcoords>true</usecontrolcoords>
 			<include>VisibleFadeEffect</include>
 			<control type="fixedlist" id="501">
@@ -92,8 +92,8 @@
 				<textureslidernib>ScrollBarNib.png</textureslidernib>
 				<textureslidernibfocus>ScrollBarNib.png</textureslidernibfocus>
 				<onup>501</onup>
-				<ondown>9000</ondown>
-				<showonepage>false</showonepage>
+				<ondown>803</ondown>
+				<showonepage>true</showonepage>
 				<orientation>horizontal</orientation>
 				<visible>Control.IsVisible(501)</visible>
 			</control>
@@ -117,6 +117,16 @@
 		</control>
 		<control type="group">
 			<visible>Control.IsVisible(501) + [Container.Content(Movies) | Container.Content(Sets)]</visible>
+			<control type="image">
+				<left>30</left>
+				<top>500</top>
+				<width>1220</width>
+				<height>75</height>
+				<aspectratio align="center" aligny="bottom">keep</aspectratio>
+				<texture background="true">$INFO[ListItem.Art(clearlogo)]</texture>
+				<fadetime>FanartCrossfadeTime</fadetime>
+				<visible>!IsEmpty(ListItem.Art(clearlogo)) + !Skin.HasSetting(View515Hidelogo)</visible>
+			</control>
 			<control type="label">
 				<left>30</left>
 				<top>500</top>
@@ -129,6 +139,7 @@
 				<align>center</align>
 				<aligny>center</aligny>
 				<label>$INFO[ListItem.Label]</label>
+				<visible>IsEmpty(ListItem.Art(clearlogo)) | Skin.HasSetting(View515Hidelogo)</visible>
 			</control>
 			<control type="label">
 				<left>0</left>
@@ -142,6 +153,7 @@
 				<align>center</align>
 				<aligny>center</aligny>
 				<label>$INFO[ListItem.Year]</label>
+				<visible>IsEmpty(ListItem.Art(clearlogo)) | Skin.HasSetting(View515Hidelogo)</visible>
 			</control>
 			<control type="label">
 				<left>0</left>
@@ -164,6 +176,7 @@
 				<align>center</align>
 				<itemgap>2</itemgap>
 				<orientation>horizontal</orientation>
+				<include>VideoMPAAFlaggingConditions</include>
 				<include>VideoCodecFlaggingConditions</include>
 				<include>AudioCodecFlaggingConditions</include>
 				<include>AudioChannelsFlaggingConditions</include>
@@ -225,6 +238,16 @@
 		</control>
 		<control type="group">
 			<visible>Control.IsVisible(501) + Container.Content(TVShows)</visible>
+			<control type="image">
+				<left>30</left>
+				<top>500</top>
+				<width>1220</width>
+				<height>75</height>
+				<aspectratio align="center" aligny="bottom">keep</aspectratio>
+				<texture background="true">$INFO[ListItem.Art(clearlogo)]</texture>
+				<fadetime>FanartCrossfadeTime</fadetime>
+				<visible>!IsEmpty(ListItem.Art(clearlogo)) + !Skin.HasSetting(View515Hidelogo)</visible>
+			</control>
 			<control type="label">
 				<left>30</left>
 				<top>500</top>
@@ -236,6 +259,7 @@
 				<align>center</align>
 				<aligny>center</aligny>
 				<label>$INFO[ListItem.Label]</label>
+				<visible>IsEmpty(ListItem.Art(clearlogo)) | Skin.HasSetting(View515Hidelogo)</visible>
 			</control>
 			<control type="label">
 				<left>0</left>
@@ -248,6 +272,7 @@
 				<align>center</align>
 				<aligny>center</aligny>
 				<label>$INFO[ListItem.Genre]</label>
+				<visible>IsEmpty(ListItem.Art(clearlogo)) | Skin.HasSetting(View515Hidelogo)</visible>
 			</control>
 			<control type="label">
 				<left>0</left>
@@ -342,8 +367,8 @@
 				<textureslidernib>ScrollBarNib.png</textureslidernib>
 				<textureslidernibfocus>ScrollBarNib.png</textureslidernibfocus>
 				<onup>508</onup>
-				<ondown>2</ondown>
-				<showonepage>false</showonepage>
+				<ondown>803</ondown>
+				<showonepage>true</showonepage>
 				<orientation>horizontal</orientation>
 				<visible>Control.IsVisible(508)</visible>
 			</control>
@@ -388,8 +413,8 @@
 				<textureslidernib>ScrollBarNib.png</textureslidernib>
 				<textureslidernibfocus>ScrollBarNib.png</textureslidernibfocus>
 				<onup>508</onup>
-				<ondown>2</ondown>
-				<showonepage>false</showonepage>
+				<ondown>803</ondown>
+				<showonepage>true</showonepage>
 				<orientation>horizontal</orientation>
 				<visible>Control.IsVisible(508)</visible>
 			</control>
@@ -1003,8 +1028,8 @@
 				<textureslidernib>ScrollBarNib.png</textureslidernib>
 				<textureslidernibfocus>ScrollBarNib.png</textureslidernibfocus>
 				<onleft>503</onleft>
-				<onright>2</onright>
-				<showonepage>false</showonepage>
+				<onright>800</onright>
+				<showonepage>true</showonepage>
 				<orientation>vertical</orientation>
 				<visible>Control.IsVisible(503)</visible>
 			</control>
@@ -1139,6 +1164,7 @@
 					<align>center</align>
 					<itemgap>2</itemgap>
 					<orientation>horizontal</orientation>
+					<include>VideoMPAAFlaggingConditions</include>
 					<include>VideoCodecFlaggingConditions</include>
 					<include>AudioCodecFlaggingConditions</include>
 					<include>AudioChannelsFlaggingConditions</include>
@@ -1246,6 +1272,7 @@
 					<align>center</align>
 					<itemgap>2</itemgap>
 					<orientation>horizontal</orientation>
+					<include>VideoMPAAFlaggingConditions</include>
 					<include>VideoCodecFlaggingConditions</include>
 					<include>AudioCodecFlaggingConditions</include>
 					<include>AudioChannelsFlaggingConditions</include>
@@ -1458,8 +1485,8 @@
 				<textureslidernib>ScrollBarNib.png</textureslidernib>
 				<textureslidernibfocus>ScrollBarNib.png</textureslidernibfocus>
 				<onleft>504</onleft>
-				<onright>2</onright>
-				<showonepage>false</showonepage>
+				<onright>800</onright>
+				<showonepage>true</showonepage>
 				<orientation>vertical</orientation>
 				<visible>Control.IsVisible(504)</visible>
 			</control>
@@ -1467,6 +1494,21 @@
 				<left>710</left>
 				<top>70</top>
 				<visible>Control.IsVisible(504) + [Container.Content(Movies) | Container.Content(TVShows)]</visible>
+				<control type="multiimage">
+					<left>0</left>
+					<top>0</top>
+					<width>510</width>
+					<height>286</height>
+					<aspectratio>keep</aspectratio>
+					<fadetime>IconCrossfadeTime</fadetime>
+					<timeperimage>5000</timeperimage>
+					<randomize>true</randomize>
+					<imagepath background="true">$INFO[ListItem.path,,extrathumbs/]</imagepath>
+					<bordertexture background="true" border="8">ThumbShadow.png</bordertexture>
+					<bordersize>8</bordersize>
+					<visible>!IsEmpty(Control.GetLabel(5045))</visible>
+					<visible>!Skin.HasSetting(Disable504FanArt) + Container.Content(Movies)</visible>
+				</control>
 				<control type="image">
 					<left>0</left>
 					<top>0</top>
@@ -1475,6 +1517,7 @@
 					<aspectratio>scale</aspectratio>
 					<fadetime>IconCrossfadeTime</fadetime>
 					<texture background="true" fallback="Fanart_Fallback_Small.jpg">$INFO[ListItem.Art(fanart)]</texture>
+					<visible>IsEmpty(Control.GetLabel(5045)) | Skin.HasSetting(Disable504FanArt)</visible>
 					<visible>Container.Content(Movies)</visible>
 					<bordertexture background="true" border="8">ThumbShadow.png</bordertexture>
 					<bordersize>8</bordersize>
@@ -1499,6 +1542,7 @@
 					<align>center</align>
 					<itemgap>2</itemgap>
 					<orientation>horizontal</orientation>
+					<include>VideoMPAAFlaggingConditions</include>
 					<include>VideoCodecFlaggingConditions</include>
 					<include>AudioCodecFlaggingConditions</include>
 					<include>AudioChannelsFlaggingConditions</include>
@@ -1605,6 +1649,7 @@
 					<align>center</align>
 					<itemgap>2</itemgap>
 					<orientation>horizontal</orientation>
+					<include>VideoMPAAFlaggingConditions</include>
 					<include>VideoCodecFlaggingConditions</include>
 					<include>AudioCodecFlaggingConditions</include>
 					<include>AudioChannelsFlaggingConditions</include>
@@ -1919,8 +1964,8 @@
 				<textureslidernib>ScrollBarNib.png</textureslidernib>
 				<textureslidernibfocus>ScrollBarNib.png</textureslidernibfocus>
 				<onleft>515</onleft>
-				<onright>2</onright>
-				<showonepage>false</showonepage>
+				<onright>800</onright>
+				<showonepage>true</showonepage>
 				<orientation>vertical</orientation>
 				<visible>Control.IsVisible(515)</visible>
 			</control>
@@ -1928,6 +1973,19 @@
 				<left>470</left>
 				<top>70</top>
 				<visible>Control.IsVisible(515) + Container.Content(Movies)</visible>
+				<control type="multiimage">
+					<left>0</left>
+					<top>0</top>
+					<width>750</width>
+					<height>420</height>
+					<aspectratio scalediffuse="false">scale</aspectratio>
+					<fadetime>FanartCrossfadeTime</fadetime>
+					<timeperimage>5000</timeperimage>
+					<randomize>true</randomize>
+					<imagepath diffuse="Fanart_Diffuse.png" background="true">$INFO[ListItem.path,,extrathumbs/]</imagepath>
+					<visible>!IsEmpty(Control.GetLabel(5045))</visible>
+					<visible>!Skin.HasSetting(Disable504FanArt)</visible>
+				</control>
 				<control type="image">
 					<left>0</left>
 					<top>0</top>
@@ -1936,6 +1994,7 @@
 					<aspectratio scalediffuse="false">scale</aspectratio>
 					<fadetime>IconCrossfadeTime</fadetime>
 					<texture diffuse="Fanart_Diffuse.png" background="true" fallback="Fanart_Fallback_Small.jpg">$INFO[ListItem.Art(fanart)]</texture>
+					<visible>IsEmpty(Control.GetLabel(5045)) | Skin.HasSetting(Disable504FanArt)</visible>
 				</control>
 				<control type="image">
 					<left>10</left>
@@ -1944,7 +2003,7 @@
 					<height>80</height>
 					<aspectratio align="left" aligny="bottom">keep</aspectratio>
 					<fadetime>IconCrossfadeTime</fadetime>
-					<texture background="true">$VAR[MediaLogoArt]</texture>
+					<texture background="true">$INFO[ListItem.Art(clearlogo)]</texture>
 					<visible>!Skin.HasSetting(View515Hidelogo) + !IsEmpty(ListItem.Title)</visible>
 				</control>
 				<control type="label">
@@ -1980,6 +2039,7 @@
 					<align>left</align>
 					<itemgap>2</itemgap>
 					<orientation>horizontal</orientation>
+					<include>VideoMPAAFlaggingConditions</include>
 					<include>VideoCodecFlaggingConditions</include>
 					<include>AudioCodecFlaggingConditions</include>
 					<include>AudioChannelsFlaggingConditions</include>
@@ -2012,6 +2072,16 @@
 					<fadetime>IconCrossfadeTime</fadetime>
 					<texture diffuse="Fanart_Diffuse.png" background="true" fallback="Fanart_Fallback_Small.jpg">$INFO[ListItem.Art(fanart)]</texture>
 				</control>
+				<control type="image">
+					<left>10</left>
+					<top>345</top>
+					<width>540</width>
+					<height>80</height>
+					<aspectratio align="left" aligny="bottom">keep</aspectratio>
+					<fadetime>IconCrossfadeTime</fadetime>
+					<texture background="true">$INFO[ListItem.Art(clearlogo)]</texture>
+					<visible>!Skin.HasSetting(View515Hidelogo) + !IsEmpty(ListItem.Title)</visible>
+				</control>
 				<control type="label">
 					<left>10</left>
 					<top>395</top>
@@ -2023,6 +2093,7 @@
 					<align>left</align>
 					<aligny>center</aligny>
 					<label>$INFO[ListItem.label]</label>
+					<visible>Skin.HasSetting(View515Hidelogo) | IsEmpty(ListItem.Title)</visible>
 				</control>
 				<control type="textbox">
 					<description>Description Value for Video</description>
@@ -2142,6 +2213,7 @@
 					<align>left</align>
 					<itemgap>2</itemgap>
 					<orientation>horizontal</orientation>
+					<include>VideoMPAAFlaggingConditions</include>
 					<include>VideoCodecFlaggingConditions</include>
 					<include>AudioCodecFlaggingConditions</include>
 					<include>AudioChannelsFlaggingConditions</include>

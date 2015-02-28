@@ -113,14 +113,110 @@
 						<onclick>Skin.Reset($INFO[Window(Home).Property(UsrSelectBtn)].Path)</onclick>
 						<onclick>Skin.Reset($INFO[Window(Home).Property(UsrSelectBtn)].Icon)</onclick>
 						<onclick>ClearProperty(UsrSelectBtn,home)</onclick>
+						<visible>!StringCompare(Window(Home).Property(UsrSelectBtn),UsrFavBtnCmd)</visible>
+					</item>
+					<item>
+						<description>Favourites Window</description>
+						<label>$LOCALIZE[31338]</label>
+						<onclick>Dialog.Close(2119)</onclick>
+						
+						<onclick>Skin.SetString(UsrFavBtnCmd.Path,ActivateWindow(Favourites),return)</onclick>
+						<onclick>Skin.SetString(UsrFavBtnCmd.Label,$LOCALIZE[31338])</onclick>
+						<onclick>ClearProperty(UsrSelectBtn,home)</onclick>
+						<visible>StringCompare(Window(Home).Property(UsrSelectBtn),UsrFavBtnCmd)</visible>
 					</item>
 					<item>
 						<description>Favourites</description>
-						<label>$LOCALIZE[1036]</label>
+						<label>$LOCALIZE[31329] $LOCALIZE[1036]</label>
 						<onclick>Dialog.Close(2119)</onclick>
 						<onclick>RunScript(script.favourites,changetitle=true&amp;property=$INFO[Window(Home).Property(UsrSelectBtn)])</onclick>
 						<onclick>ClearProperty(UsrSelectBtn,home)</onclick>
 						<visible>System.HasAddon(script.favourites)</visible>
+					</item>
+					<item>
+						<description>Last Video Played</description>
+						<label>$LOCALIZE[31018]</label>
+						<onclick>Dialog.Close(2119)</onclick>
+						<onclick>Skin.SetString(UsrFavBtnCmd.Path,LastVideo)</onclick>
+						<onclick>Skin.SetString(UsrFavBtnCmd.Label,$LOCALIZE[31018])</onclick>
+						<onclick>ClearProperty(UsrSelectBtn,home)</onclick>
+						<visible>StringCompare(Window(Home).Property(UsrSelectBtn),UsrFavBtnCmd)</visible>
+					</item>
+					<item>
+						<description>Suggested Movies</description>
+						<label>$LOCALIZE[31197]</label>
+						<onclick>Dialog.Close(2119)</onclick>
+						<onclick>Skin.SetString(UsrFavBtnCmd.Path,ActivateWindow(2125))</onclick>
+						<onclick>Skin.SetString(UsrFavBtnCmd.Label,$LOCALIZE[31197])</onclick>
+						<onclick>ClearProperty(UsrSelectBtn,home)</onclick>
+						<visible>StringCompare(Window(Home).Property(UsrSelectBtn),UsrFavBtnCmd)</visible>
+						<visible>Library.HasContent(Movies)</visible>
+					</item>
+					<item>
+						<description>Suggested TV Episodes</description>
+						<label>$LOCALIZE[31194]</label>
+						<onclick>Dialog.Close(2119)</onclick>
+						<onclick>Skin.SetString(UsrFavBtnCmd.Path,ActivateWindow(2124))</onclick>
+						<onclick>Skin.SetString(UsrFavBtnCmd.Label,$LOCALIZE[31194])</onclick>
+						<onclick>ClearProperty(UsrSelectBtn,home)</onclick>
+						<visible>StringCompare(Window(Home).Property(UsrSelectBtn),UsrFavBtnCmd)</visible>
+						<visible>Library.HasContent(TVShows)</visible>
+					</item>
+					<item>
+						<description>Suggested Music</description>
+						<label>$LOCALIZE[31191]</label>
+						<onclick>Dialog.Close(2119)</onclick>
+						<onclick>Skin.SetString(UsrFavBtnCmd.Path,ActivateWindow(2123))</onclick>
+						<onclick>Skin.SetString(UsrFavBtnCmd.Label,$LOCALIZE[31191])</onclick>
+						<onclick>ClearProperty(UsrSelectBtn,home)</onclick>
+						<visible>StringCompare(Window(Home).Property(UsrSelectBtn),UsrFavBtnCmd)</visible>
+						<visible>Library.HasContent(Music)</visible>
+					</item>
+					<item>
+						<description>Suggested Concerts</description>
+						<label>$LOCALIZE[31199]</label>
+						<onclick>Dialog.Close(2119)</onclick>
+						<onclick>Skin.SetString(UsrFavBtnCmd.Path,ActivateWindow(2126))</onclick>
+						<onclick>Skin.SetString(UsrFavBtnCmd.Label,$LOCALIZE[31199])</onclick>
+						<onclick>ClearProperty(UsrSelectBtn,home)</onclick>
+						<visible>StringCompare(Window(Home).Property(UsrSelectBtn),UsrFavBtnCmd)</visible>
+						<visible>Library.HasContent(MusicVideos)</visible>
+					</item>
+					<item>
+						<description>Auto Suggested Media</description>
+						<label>$LOCALIZE[31020]</label>
+						<onclick>Dialog.Close(2119)</onclick>
+						<onclick>Skin.SetString(UsrFavBtnCmd.Path,AutoSuggest)</onclick>
+						<onclick>Skin.SetString(UsrFavBtnCmd.Label,$LOCALIZE[31020])</onclick>
+						<onclick>ClearProperty(UsrSelectBtn,home)</onclick>
+						<visible>StringCompare(Window(Home).Property(UsrSelectBtn),UsrFavBtnCmd)</visible>
+					</item>
+					<item>
+						<description>Eject DVD</description>
+						<label>$LOCALIZE[31019] DVD</label>
+						<onclick>Dialog.Close(2119)</onclick>
+						<onclick>Skin.SetString(UsrFavBtnCmd.Path,EjectTray())</onclick>
+						<onclick>Skin.SetString(UsrFavBtnCmd.Label,$LOCALIZE[31019] DVD)</onclick>
+						<onclick>ClearProperty(UsrSelectBtn,home)</onclick>
+						<visible>StringCompare(Window(Home).Property(UsrSelectBtn),UsrFavBtnCmd)</visible>
+					</item>
+					<item>
+						<description>Skin Settings</description>
+						<label>$LOCALIZE[166] $LOCALIZE[5]</label>
+						<onclick>Dialog.Close(2119)</onclick>
+						<onclick>Skin.SetString(UsrFavBtnCmd.Path,ActivateWindow(SkinSettings),return)</onclick>
+						<onclick>Skin.SetString(UsrFavBtnCmd.Label,$LOCALIZE[166] $LOCALIZE[5])</onclick>
+						<onclick>ClearProperty(UsrSelectBtn,home)</onclick>
+						<visible>StringCompare(Window(Home).Property(UsrSelectBtn),UsrFavBtnCmd)</visible>
+					</item>
+					<item>
+						<description>Shutdown Menu</description>
+						<label>$LOCALIZE[31077]</label>
+						<onclick>Dialog.Close(2119)</onclick>
+						<onclick>Skin.SetString(UsrFavBtnCmd.Path,ActivateWindow(ShutdownMenu))</onclick>
+						<onclick>Skin.SetString(UsrFavBtnCmd.Label,$LOCALIZE[31077])</onclick>
+						<onclick>ClearProperty(UsrSelectBtn,home)</onclick>
+						<visible>StringCompare(Window(Home).Property(UsrSelectBtn),UsrFavBtnCmd)</visible>
 					</item>
 					<item>
 						<description>Video addons</description>
