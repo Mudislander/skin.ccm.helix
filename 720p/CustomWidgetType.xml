@@ -193,6 +193,17 @@
 						<onclick>ClearProperty(UsrSelectBtn,Home)</onclick>
 						<visible>Library.HasContent(TVShows)</visible>
 					</item>
+					<item>
+						<description>Next Aired Episodes</description>
+						<label>$LOCALIZE[31245]</label>
+						<onclick>Dialog.Close(2118)</onclick>
+						<onclick>Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Widget,NextAired)</onclick>
+						<onclick>ClearProperty(UsrSelectBtn,Home)</onclick>
+						<visible>Library.HasContent(TVShows)</visible>
+						<visible>!Skin.HasSetting(DisableTVNextAired)</visible>
+					</item>
+					
+					
 					<!--item>
                         <description>Recent Songs</description>
                         <label>$LOCALIZE[31187]</label>
@@ -259,14 +270,7 @@
 						<onclick>ClearProperty(UsrSelectBtn,Home)</onclick>
 						<visible>Library.HasContent(MusicVideos)</visible>
 					</item>
-					<!--item>
-                        <description>Next Aired</description>
-                        <label>$LOCALIZE[31245]</label>
-                        <onclick>Dialog.Close(2118)</onclick>
-                        <onclick>Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Widget,NextAired)</onclick>
-                        <onclick>ClearProperty(UsrSelectBtn,Home)</onclick>
-                        <visible>!Skin.HasSetting(DisableTVNextAired)</visible>
-                    </item-->
+					
 				</content>
 			</control>
 			<control type="scrollbar" id="60">
