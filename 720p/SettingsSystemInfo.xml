@@ -282,7 +282,7 @@
 					<width>730</width>
 					<label>144</label>
 					<align>right</align>
-					<textcolor>blue</textcolor>
+					<textcolor>$VAR[MainColorOne]</textcolor>
 					<shadowcolor>black</shadowcolor>
 					<font>font13_title</font>
 				</control>

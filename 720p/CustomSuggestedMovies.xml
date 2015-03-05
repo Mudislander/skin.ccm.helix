@@ -40,7 +40,7 @@
 				<font>font14</font>
 				<align>center</align>
 				<aligny>center</aligny>
-				<textcolor>blue</textcolor>
+				<textcolor>$VAR[MainColorOne]</textcolor>
 				<label>[B]$LOCALIZE[31197][/B]</label>
 			</control>
 			<control type="image">
@@ -61,7 +61,7 @@
 				<height>100</height>
 				<aspectratio align="center" aligny="bottom">keep</aspectratio>
 				<texture background="true">$INFO[Container(450).ListItem.Property(Logo)]</texture>
-				<visible>!IsEmpty(Container(450).ListItem.Property(Logo))</visible>
+				<visible>!IsEmpty(Container(450).ListItem.Property(Logo)) + !Skin.HasSetting(DisableLogoArt)</visible>
 			</control>
 			<control type="list" id="450">
 				<left>390r</left>

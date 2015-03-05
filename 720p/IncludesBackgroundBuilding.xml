@@ -292,7 +292,7 @@
 				</control>
 			</control>
 			<control type="group">
-				<visible>Container.Content(Episodes) + Skin.HasSetting(EpisodeBackground) + !stringcompare(ListItem.Label,..)</visible>
+				<visible>Container.Content(Episodes)  + !Control.IsVisible(515) + Skin.HasSetting(EpisodeBackground) + !stringcompare(ListItem.Label,..)</visible>
 				<include>Window_OpenClose_Animation</include>
 				<control type="image">
 					<include>Dimensions_Fullscreen</include>
@@ -319,7 +319,7 @@
 					<include>VisibleFadeEffect</include>
 					<aspectratio>stretch</aspectratio>
 					<texture>black-back.png</texture>
-					<visible>!Skin.HasSetting(HideListItemArtWork)</visible>
+					<visible>!Skin.HasSetting(HideListItemArtWork) + !Skin.HasSetting(DisableClearArt)</visible>
 					<visible>!IsEmpty(ListItem.Art(clearart)) | !IsEmpty(ListItem.Art(characterart)) | !IsEmpty(ListItem.Art(tvshow.clearlogo)) | !IsEmpty(ListItem.Art(tvshow.clearlogo))</visible>
 				</control>
 				<control type="image">
@@ -332,7 +332,7 @@
 					<aspectratio>stretch</aspectratio>
 					<texture background="true">$INFO[ListItem.Art(discart)]</texture>
 					<animation effect="rotate" end="-45" center="auto" time="0" condition="true">Conditional</animation>
-					<visible>!IsEmpty(ListItem.Art(discart))</visible>
+					<visible>!Skin.HasSetting(DisableDiscArt) + !IsEmpty(ListItem.Art(discart))</visible>
 				</control>
 				<control type="image">
 					<left>140</left>
@@ -344,7 +344,7 @@
 					<aspectratio align="left" aligny="bottom">keep</aspectratio>
 					<texture background="true">$INFO[ListItem.Art(clearart)]</texture>
 					<animation effect="slide" end="0,50" time="0" condition="Control.IsVisible(51)">conditional</animation>
-					<visible>!IsEmpty(ListItem.Art(clearart))</visible>
+					<visible>!Skin.HasSetting(DisableClearArt) + !IsEmpty(ListItem.Art(clearart))</visible>
 				</control>
 				<control type="image">
 					<left>140</left>
@@ -356,7 +356,7 @@
 					<aspectratio align="left" aligny="bottom">keep</aspectratio>
 					<texture background="true">$INFO[ListItem.Art(tvshow.clearart)]</texture>
 					<animation effect="slide" end="0,50" time="0" condition="Control.IsVisible(51)">conditional</animation>
-					<visible>IsEmpty(ListItem.Art(clearart)) + !IsEmpty(ListItem.Art(tvshow.clearart))</visible>
+					<visible>!Skin.HasSetting(DisableClearArt) + IsEmpty(ListItem.Art(clearart)) + !IsEmpty(ListItem.Art(tvshow.clearart))</visible>
 				</control>
 				<control type="image">
 					<left>252r</left>
@@ -367,7 +367,7 @@
 					<texture background="true">$INFO[ListItem.Art(clearlogo)]</texture>
 					<fadetime>FanartCrossfadeTime</fadetime>
 					<animation effect="rotate" start="0" end="-45" center="auto" time="0" condition="true">Conditional</animation>
-					<visible>!IsEmpty(ListItem.Art(clearlogo)) + !Control.IsVisible(51)</visible>
+					<visible>!Skin.HasSetting(DisableLogoArt) + !IsEmpty(ListItem.Art(clearlogo)) + !Control.IsVisible(51)</visible>
 				</control>
 				<control type="image">
 					<left>252r</left>
@@ -378,7 +378,7 @@
 					<texture background="true">$INFO[ListItem.Art(tvshow.clearlogo)]</texture>
 					<fadetime>FanartCrossfadeTime</fadetime>
 					<animation effect="rotate" start="0" end="-45" center="auto" time="0" condition="true">Conditional</animation>
-					<visible>IsEmpty(ListItem.Art(clearlogo)) + !IsEmpty(ListItem.Art(tvshow.clearlogo)) + !Control.IsVisible(51)</visible>
+					<visible>!Skin.HasSetting(DisableLogoArt) + IsEmpty(ListItem.Art(clearlogo)) + !IsEmpty(ListItem.Art(tvshow.clearlogo)) + !Control.IsVisible(51)</visible>
 				</control>
 			</control>
 		</control>

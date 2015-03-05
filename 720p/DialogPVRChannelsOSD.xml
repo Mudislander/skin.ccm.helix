@@ -52,7 +52,7 @@
 				<label>$LOCALIZE[19023] - $INFO[VideoPlayer.ChannelGroup]</label>
 				<align>center</align>
 				<aligny>center</aligny>
-				<textcolor>blue</textcolor>
+				<textcolor>$VAR[MainColorOne]</textcolor>
 				<shadowcolor>black</shadowcolor>
 				<visible>!pvr.IsPlayingRadio</visible>
 			</control>
@@ -66,7 +66,7 @@
 				<label>$LOCALIZE[19024] - $INFO[MusicPlayer.ChannelGroup]</label>
 				<align>center</align>
 				<aligny>center</aligny>
-				<textcolor>blue</textcolor>
+				<textcolor>$VAR[MainColorOne]</textcolor>
 				<shadowcolor>black</shadowcolor>
 				<visible>pvr.IsPlayingRadio</visible>
 			</control>
@@ -168,8 +168,8 @@
 						<width>60</width>
 						<height>20</height>
 						<font>font10_title</font>
-						<textcolor>blue</textcolor>
-						<selectedcolor>blue</selectedcolor>
+						<textcolor>$VAR[MainColorOne]</textcolor>
+						<selectedcolor>$VAR[MainColorOne]</selectedcolor>
 						<aligny>center</aligny>
 						<label>$INFO[ListItem.StartTime]</label>
 						<visible>ListItem.HasEpg</visible>
@@ -190,8 +190,8 @@
 						<width>60</width>
 						<height>20</height>
 						<font>font10_title</font>
-						<textcolor>blue</textcolor>
-						<selectedcolor>blue</selectedcolor>
+						<textcolor>$VAR[MainColorOne]</textcolor>
+						<selectedcolor>$VAR[MainColorOne]</selectedcolor>
 						<aligny>center</aligny>
 						<label>$INFO[ListItem.EndTime]</label>
 						<visible>ListItem.HasEpg</visible>
@@ -288,8 +288,8 @@
 						<width>60</width>
 						<height>20</height>
 						<font>font10_title</font>
-						<textcolor>blue</textcolor>
-						<selectedcolor>blue</selectedcolor>
+						<textcolor>$VAR[MainColorOne]</textcolor>
+						<selectedcolor>$VAR[MainColorOne]</selectedcolor>
 						<aligny>center</aligny>
 						<label>$INFO[ListItem.StartTime]</label>
 						<visible>ListItem.HasEpg</visible>
@@ -310,8 +310,8 @@
 						<width>60</width>
 						<height>20</height>
 						<font>font10_title</font>
-						<textcolor>blue</textcolor>
-						<selectedcolor>blue</selectedcolor>
+						<textcolor>$VAR[MainColorOne]</textcolor>
+						<selectedcolor>$VAR[MainColorOne]</selectedcolor>
 						<aligny>center</aligny>
 						<label>$INFO[ListItem.EndTime]</label>
 						<visible>ListItem.HasEpg</visible>

@@ -36,7 +36,7 @@
 				<width>470</width>
 				<height>25</height>
 				<font>font13_title</font>
-				<textcolor>blue</textcolor>
+				<textcolor>$VAR[MainColorOne]</textcolor>
 				<label>[COLOR=$VAR[MainColorOne]]$LOCALIZE[19031] :[/COLOR] [COLOR=selected]$INFO[MusicPlayer.offset(1).Title][/COLOR]</label>
 				<align>center</align>
 				<aligny>center</aligny>

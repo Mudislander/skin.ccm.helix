@@ -40,7 +40,7 @@
 				<font>font13_title</font>
 				<align>center</align>
 				<aligny>center</aligny>
-				<textcolor>blue</textcolor>
+				<textcolor>$VAR[MainColorOne]</textcolor>
 				<shadowcolor>black</shadowcolor>
 				<label>$LOCALIZE[31318]</label>
 			</control>
@@ -119,7 +119,6 @@
 						<description>Favourites Window</description>
 						<label>$LOCALIZE[31338]</label>
 						<onclick>Dialog.Close(2119)</onclick>
-						
 						<onclick>Skin.SetString(UsrFavBtnCmd.Path,ActivateWindow(Favourites),return)</onclick>
 						<onclick>Skin.SetString(UsrFavBtnCmd.Label,$LOCALIZE[31338])</onclick>
 						<onclick>ClearProperty(UsrSelectBtn,home)</onclick>

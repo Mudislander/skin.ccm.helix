@@ -263,7 +263,7 @@
 					<font>font12</font>
 					<align>justify</align>
 					<textcolor>white</textcolor>
-					<label>$VAR[VideoDescription,[B][COLOR=blue]$LOCALIZE[207]: [/COLOR][/B]]</label>
+					<label>$VAR[VideoDescription,[B]$LOCALIZE[207]: [/B]]</label>
 					<autoscroll time="3600" delay="6000" repeat="6000">!Skin.HasSetting(StopAutoScroll)</autoscroll>
 					<visible>!StringCompare(ListItem.Label,..)</visible>
 				</control>
@@ -288,7 +288,7 @@
 					<scroll>false</scroll>
 					<align>right</align>
 					<aligny>top</aligny>
-					<label>$VAR[MediaRuntime,[B][COLOR=blue]$LOCALIZE[2050]: [/COLOR][/B]]</label>
+					<label>$VAR[MediaRuntime,[B]$LOCALIZE[2050]: [/B]]</label>
 					<visible>!IsEmpty(ListItem.Duration)</visible>
 				</control>
 			</control>

@@ -559,6 +559,16 @@
 	</variable>
 	<variable name="VideoPlayerCase">
 		<value condition="VideoPlayer.IsStereoscopic">3DCase</value>
+		<value condition="!Skin.HasSetting(UseDiscTypeCase) + substring(Player.Filenameandpath,.avi,right)">avi</value>
+        <value condition="!Skin.HasSetting(UseDiscTypeCase) + substring(Player.Filenameandpath,.divx,right)">divx</value>
+        <value condition="!Skin.HasSetting(UseDiscTypeCase) + substring(Player.Filenameandpath,.h264,right)">h264</value>
+        <value condition="!Skin.HasSetting(UseDiscTypeCase) + substring(Player.Filenameandpath,.mkv,right)">mkv</value>
+        <value condition="!Skin.HasSetting(UseDiscTypeCase) + substring(Player.Filenameandpath,.mov,right)">mov</value>
+        <value condition="!Skin.HasSetting(UseDiscTypeCase) + substring(Player.Filenameandpath,.mp4,right)">mp4</value>
+        <value condition="!Skin.HasSetting(UseDiscTypeCase) + substring(Player.Filenameandpath,.mpeg,right)">mpeg</value>
+        <value condition="!Skin.HasSetting(UseDiscTypeCase) + substring(Player.Filenameandpath,.qt,right)">qt</value>
+        <value condition="!Skin.HasSetting(UseDiscTypeCase) + substring(Player.Filenameandpath,.wmv,right)">wmv</value>
+        <value condition="!Skin.HasSetting(UseDiscTypeCase) + substring(Player.Filenameandpath,.xvid,right)">xvid</value>
 		<value condition="[SubString(Player.FilenameAndPath,.3D.) | SubString(Player.FilenameAndPath,.3DBD.) | SubString(Player.FilenameAndPath,.SBS.)]">3DCase</value>
 		<value condition="[SubString(Player.FilenameAndPath,bluray) | SubString(Player.FilenameAndPath,bdrip) | SubString(Player.FilenameAndPath,bd25) | SubString(Player.FilenameAndPath,bd50)]">bd</value>
 		<value condition="[StringCompare(VideoPlayer.VideoResolution,1080) | StringCompare(VideoPlayer.VideoResolution,720)]">bd</value>
@@ -626,10 +636,7 @@
 		<value>$LOCALIZE[1036]</value>
 	</variable>
 	<variable name="FavBtnCommand">
-		
-		
 		<value condition="IsEmpty(Skin.String(UsrFavBtnCmd.Path))">ActivateWindow(Favourites),return</value>
-		
 		<value condition="Skin.String(UsrFavBtnCmd.Path,LastVideo) + Skin.String(LastVideoPlayed)">$INFO[Skin.String(LastVideoPlayed)]</value>
 		<value condition="Skin.String(UsrFavBtnCmd.Path,AutoSuggest) + StringCompare(Container(9000).ListItem.Property(HiLiteItem),Movies)">ActivateWindow(2125)</value>
 		<value condition="Skin.String(UsrFavBtnCmd.Path,AutoSuggest) + StringCompare(Container(9000).ListItem.Property(HiLiteItem),TVShows)">ActivateWindow(2124)</value>
@@ -1527,11 +1534,10 @@
 		<value condition="stringcompare(Skin.String(HomeItem.1.Widget),RecentMovies)">$LOCALIZE[31198]</value>
 		<value condition="stringcompare(Skin.String(HomeItem.1.Widget),RandomMovies)">$LOCALIZE[31196]</value>
 		<value condition="stringcompare(Skin.String(HomeItem.1.Widget),SuggestedMovies)">$LOCALIZE[31197]</value>
+		<value condition="stringcompare(Skin.String(HomeItem.1.Widget),UPnPMovies)">$LOCALIZE[31115] $LOCALIZE[342]</value>
 		<value condition="stringcompare(Skin.String(HomeItem.1.Widget),RecentEpisodes)">$LOCALIZE[31195]</value>
 		<value condition="stringcompare(Skin.String(HomeItem.1.Widget),RandomEpisodes)">$LOCALIZE[31193]</value>
 		<value condition="stringcompare(Skin.String(HomeItem.1.Widget),SuggestedEpisodes)">$LOCALIZE[31194]</value>
-		<value condition="stringcompare(Skin.String(HomeItem.1.Widget),RecentSongs)">$LOCALIZE[31253] $LOCALIZE[182]</value>
-		<value condition="stringcompare(Skin.String(HomeItem.1.Widget),RandomSongs)">$LOCALIZE[590] $LOCALIZE[182]</value>
 		<value condition="stringcompare(Skin.String(HomeItem.1.Widget),RandomArtists)">$LOCALIZE[590] $LOCALIZE[133]</value>
 		<value condition="stringcompare(Skin.String(HomeItem.1.Widget),RecentAlbums)">$LOCALIZE[31192]</value>
 		<value condition="stringcompare(Skin.String(HomeItem.1.Widget),RandomAlbums)">$LOCALIZE[31190]</value>
@@ -1545,18 +1551,16 @@
 		<value condition="stringcompare(Skin.String(HomeItem.1.Widget),Weather)">$LOCALIZE[8]</value>
 		<value condition="stringcompare(Skin.String(HomeItem.1.Widget),Favourites)">$LOCALIZE[1036]</value>
 		<value condition="stringcompare(Skin.String(HomeItem.1.Widget),NextAired)">$LOCALIZE[31245]</value>
-		<value condition="stringcompare(Skin.String(HomeItem.1.Widget),RomGames)">$LOCALIZE[31246]</value>
 		<value>$LOCALIZE[31254]</value>
 	</variable>
 	<variable name="UsrDefItemTwoWidgetLabel" type="text">
 		<value condition="stringcompare(Skin.String(HomeItem.2.Widget),RecentMovies)">$LOCALIZE[31198]</value>
 		<value condition="stringcompare(Skin.String(HomeItem.2.Widget),RandomMovies)">$LOCALIZE[31196]</value>
 		<value condition="stringcompare(Skin.String(HomeItem.2.Widget),SuggestedMovies)">$LOCALIZE[31197]</value>
+		<value condition="stringcompare(Skin.String(HomeItem.2.Widget),UPnPMovies)">$LOCALIZE[31115] $LOCALIZE[342]</value>
 		<value condition="stringcompare(Skin.String(HomeItem.2.Widget),RecentEpisodes)">$LOCALIZE[31195]</value>
 		<value condition="stringcompare(Skin.String(HomeItem.2.Widget),RandomEpisodes)">$LOCALIZE[31193]</value>
 		<value condition="stringcompare(Skin.String(HomeItem.2.Widget),SuggestedEpisodes)">$LOCALIZE[31194]</value>
-		<value condition="stringcompare(Skin.String(HomeItem.2.Widget),RecentSongs)">$LOCALIZE[31253] $LOCALIZE[182]</value>
-		<value condition="stringcompare(Skin.String(HomeItem.2.Widget),RandomSongs)">$LOCALIZE[590] $LOCALIZE[182]</value>
 		<value condition="stringcompare(Skin.String(HomeItem.2.Widget),RandomArtists)">$LOCALIZE[590] $LOCALIZE[133]</value>
 		<value condition="stringcompare(Skin.String(HomeItem.2.Widget),RecentAlbums)">$LOCALIZE[31192]</value>
 		<value condition="stringcompare(Skin.String(HomeItem.2.Widget),RandomAlbums)">$LOCALIZE[31190]</value>
@@ -1570,18 +1574,16 @@
 		<value condition="stringcompare(Skin.String(HomeItem.2.Widget),Weather)">$LOCALIZE[8]</value>
 		<value condition="stringcompare(Skin.String(HomeItem.2.Widget),Favourites)">$LOCALIZE[1036]</value>
 		<value condition="stringcompare(Skin.String(HomeItem.2.Widget),NextAired)">$LOCALIZE[31245]</value>
-		<value condition="stringcompare(Skin.String(HomeItem.2.Widget),RomGames)">$LOCALIZE[31246]</value>
 		<value>$LOCALIZE[31254]</value>
 	</variable>
 	<variable name="UsrDefItemThreeWidgetLabel" type="text">
 		<value condition="stringcompare(Skin.String(HomeItem.3.Widget),RecentMovies)">$LOCALIZE[31198]</value>
 		<value condition="stringcompare(Skin.String(HomeItem.3.Widget),RandomMovies)">$LOCALIZE[31196]</value>
 		<value condition="stringcompare(Skin.String(HomeItem.3.Widget),SuggestedMovies)">$LOCALIZE[31197]</value>
+		<value condition="stringcompare(Skin.String(HomeItem.3.Widget),UPnPMovies)">$LOCALIZE[31115] $LOCALIZE[342]</value>
 		<value condition="stringcompare(Skin.String(HomeItem.3.Widget),RecentEpisodes)">$LOCALIZE[31195]</value>
 		<value condition="stringcompare(Skin.String(HomeItem.3.Widget),RandomEpisodes)">$LOCALIZE[31193]</value>
 		<value condition="stringcompare(Skin.String(HomeItem.3.Widget),SuggestedEpisodes)">$LOCALIZE[31194]</value>
-		<value condition="stringcompare(Skin.String(HomeItem.3.Widget),RecentSongs)">$LOCALIZE[31253] $LOCALIZE[182]</value>
-		<value condition="stringcompare(Skin.String(HomeItem.3.Widget),RandomSongs)">$LOCALIZE[590] $LOCALIZE[182]</value>
 		<value condition="stringcompare(Skin.String(HomeItem.3.Widget),RandomArtists)">$LOCALIZE[590] $LOCALIZE[133]</value>
 		<value condition="stringcompare(Skin.String(HomeItem.3.Widget),RecentAlbums)">$LOCALIZE[31192]</value>
 		<value condition="stringcompare(Skin.String(HomeItem.3.Widget),RandomAlbums)">$LOCALIZE[31190]</value>
@@ -1595,18 +1597,16 @@
 		<value condition="stringcompare(Skin.String(HomeItem.3.Widget),Weather)">$LOCALIZE[8]</value>
 		<value condition="stringcompare(Skin.String(HomeItem.3.Widget),Favourites)">$LOCALIZE[1036]</value>
 		<value condition="stringcompare(Skin.String(HomeItem.3.Widget),NextAired)">$LOCALIZE[31245]</value>
-		<value condition="stringcompare(Skin.String(HomeItem.3.Widget),RomGames)">$LOCALIZE[31246]</value>
 		<value>$LOCALIZE[31254]</value>
 	</variable>
 	<variable name="UsrDefItemFourWidgetLabel" type="text">
 		<value condition="stringcompare(Skin.String(HomeItem.4.Widget),RecentMovies)">$LOCALIZE[31198]</value>
 		<value condition="stringcompare(Skin.String(HomeItem.4.Widget),RandomMovies)">$LOCALIZE[31196]</value>
 		<value condition="stringcompare(Skin.String(HomeItem.4.Widget),SuggestedMovies)">$LOCALIZE[31197]</value>
+		<value condition="stringcompare(Skin.String(HomeItem.4.Widget),UPnPMovies)">$LOCALIZE[31115] $LOCALIZE[342]</value>
 		<value condition="stringcompare(Skin.String(HomeItem.4.Widget),RecentEpisodes)">$LOCALIZE[31195]</value>
 		<value condition="stringcompare(Skin.String(HomeItem.4.Widget),RandomEpisodes)">$LOCALIZE[31193]</value>
 		<value condition="stringcompare(Skin.String(HomeItem.4.Widget),SuggestedEpisodes)">$LOCALIZE[31194]</value>
-		<value condition="stringcompare(Skin.String(HomeItem.4.Widget),RecentSongs)">$LOCALIZE[31253] $LOCALIZE[182]</value>
-		<value condition="stringcompare(Skin.String(HomeItem.4.Widget),RandomSongs)">$LOCALIZE[590] $LOCALIZE[182]</value>
 		<value condition="stringcompare(Skin.String(HomeItem.4.Widget),RandomArtists)">$LOCALIZE[590] $LOCALIZE[133]</value>
 		<value condition="stringcompare(Skin.String(HomeItem.4.Widget),RecentAlbums)">$LOCALIZE[31192]</value>
 		<value condition="stringcompare(Skin.String(HomeItem.4.Widget),RandomAlbums)">$LOCALIZE[31190]</value>
@@ -1620,18 +1620,16 @@
 		<value condition="stringcompare(Skin.String(HomeItem.4.Widget),Weather)">$LOCALIZE[8]</value>
 		<value condition="stringcompare(Skin.String(HomeItem.4.Widget),Favourites)">$LOCALIZE[1036]</value>
 		<value condition="stringcompare(Skin.String(HomeItem.4.Widget),NextAired)">$LOCALIZE[31245]</value>
-		<value condition="stringcompare(Skin.String(HomeItem.4.Widget),RomGames)">$LOCALIZE[31246]</value>
 		<value>$LOCALIZE[31254]</value>
 	</variable>
 	<variable name="UsrDefItemFiveWidgetLabel" type="text">
 		<value condition="stringcompare(Skin.String(HomeItem.5.Widget),RecentMovies)">$LOCALIZE[31198]</value>
 		<value condition="stringcompare(Skin.String(HomeItem.5.Widget),RandomMovies)">$LOCALIZE[31196]</value>
 		<value condition="stringcompare(Skin.String(HomeItem.5.Widget),SuggestedMovies)">$LOCALIZE[31197]</value>
+		<value condition="stringcompare(Skin.String(HomeItem.5.Widget),UPnPMovies)">$LOCALIZE[31115] $LOCALIZE[342]</value>
 		<value condition="stringcompare(Skin.String(HomeItem.5.Widget),RecentEpisodes)">$LOCALIZE[31195]</value>
 		<value condition="stringcompare(Skin.String(HomeItem.5.Widget),RandomEpisodes)">$LOCALIZE[31193]</value>
 		<value condition="stringcompare(Skin.String(HomeItem.5.Widget),SuggestedEpisodes)">$LOCALIZE[31194]</value>
-		<value condition="stringcompare(Skin.String(HomeItem.5.Widget),RecentSongs)">$LOCALIZE[31253] $LOCALIZE[182]</value>
-		<value condition="stringcompare(Skin.String(HomeItem.5.Widget),RandomSongs)">$LOCALIZE[590] $LOCALIZE[182]</value>
 		<value condition="stringcompare(Skin.String(HomeItem.5.Widget),RandomArtists)">$LOCALIZE[590] $LOCALIZE[133]</value>
 		<value condition="stringcompare(Skin.String(HomeItem.5.Widget),RecentAlbums)">$LOCALIZE[31192]</value>
 		<value condition="stringcompare(Skin.String(HomeItem.5.Widget),RandomAlbums)">$LOCALIZE[31190]</value>
@@ -1645,18 +1643,16 @@
 		<value condition="stringcompare(Skin.String(HomeItem.5.Widget),Weather)">$LOCALIZE[8]</value>
 		<value condition="stringcompare(Skin.String(HomeItem.5.Widget),Favourites)">$LOCALIZE[1036]</value>
 		<value condition="stringcompare(Skin.String(HomeItem.5.Widget),NextAired)">$LOCALIZE[31245]</value>
-		<value condition="stringcompare(Skin.String(HomeItem.5.Widget),RomGames)">$LOCALIZE[31246]</value>
 		<value>$LOCALIZE[31254]</value>
 	</variable>
 	<variable name="UsrDefItemSixWidgetLabel" type="text">
 		<value condition="stringcompare(Skin.String(HomeItem.6.Widget),RecentMovies)">$LOCALIZE[31198]</value>
 		<value condition="stringcompare(Skin.String(HomeItem.6.Widget),RandomMovies)">$LOCALIZE[31196]</value>
 		<value condition="stringcompare(Skin.String(HomeItem.6.Widget),SuggestedMovies)">$LOCALIZE[31197]</value>
+		<value condition="stringcompare(Skin.String(HomeItem.6.Widget),UPnPMovies)">$LOCALIZE[31115] $LOCALIZE[342]</value>
 		<value condition="stringcompare(Skin.String(HomeItem.6.Widget),RecentEpisodes)">$LOCALIZE[31195]</value>
 		<value condition="stringcompare(Skin.String(HomeItem.6.Widget),RandomEpisodes)">$LOCALIZE[31193]</value>
 		<value condition="stringcompare(Skin.String(HomeItem.6.Widget),SuggestedEpisodes)">$LOCALIZE[31194]</value>
-		<value condition="stringcompare(Skin.String(HomeItem.6.Widget),RecentSongs)">$LOCALIZE[31253] $LOCALIZE[182]</value>
-		<value condition="stringcompare(Skin.String(HomeItem.6.Widget),RandomSongs)">$LOCALIZE[590] $LOCALIZE[182]</value>
 		<value condition="stringcompare(Skin.String(HomeItem.6.Widget),RandomArtists)">$LOCALIZE[590] $LOCALIZE[133]</value>
 		<value condition="stringcompare(Skin.String(HomeItem.6.Widget),RecentAlbums)">$LOCALIZE[31192]</value>
 		<value condition="stringcompare(Skin.String(HomeItem.6.Widget),RandomAlbums)">$LOCALIZE[31190]</value>
@@ -1670,18 +1666,16 @@
 		<value condition="stringcompare(Skin.String(HomeItem.6.Widget),Weather)">$LOCALIZE[8]</value>
 		<value condition="stringcompare(Skin.String(HomeItem.6.Widget),Favourites)">$LOCALIZE[1036]</value>
 		<value condition="stringcompare(Skin.String(HomeItem.6.Widget),NextAired)">$LOCALIZE[31245]</value>
-		<value condition="stringcompare(Skin.String(HomeItem.6.Widget),RomGames)">$LOCALIZE[31246]</value>
 		<value>$LOCALIZE[31254]</value>
 	</variable>
 	<variable name="UsrDefItemSevenWidgetLabel" type="text">
 		<value condition="stringcompare(Skin.String(HomeItem.7.Widget),RecentMovies)">$LOCALIZE[31198]</value>
 		<value condition="stringcompare(Skin.String(HomeItem.7.Widget),RandomMovies)">$LOCALIZE[31196]</value>
 		<value condition="stringcompare(Skin.String(HomeItem.7.Widget),SuggestedMovies)">$LOCALIZE[31197]</value>
+		<value condition="stringcompare(Skin.String(HomeItem.7.Widget),UPnPMovies)">$LOCALIZE[31115] $LOCALIZE[342]</value>
 		<value condition="stringcompare(Skin.String(HomeItem.7.Widget),RecentEpisodes)">$LOCALIZE[31195]</value>
 		<value condition="stringcompare(Skin.String(HomeItem.7.Widget),RandomEpisodes)">$LOCALIZE[31193]</value>
 		<value condition="stringcompare(Skin.String(HomeItem.7.Widget),SuggestedEpisodes)">$LOCALIZE[31194]</value>
-		<value condition="stringcompare(Skin.String(HomeItem.7.Widget),RecentSongs)">$LOCALIZE[31253] $LOCALIZE[182]</value>
-		<value condition="stringcompare(Skin.String(HomeItem.7.Widget),RandomSongs)">$LOCALIZE[590] $LOCALIZE[182]</value>
 		<value condition="stringcompare(Skin.String(HomeItem.7.Widget),RandomArtists)">$LOCALIZE[590] $LOCALIZE[133]</value>
 		<value condition="stringcompare(Skin.String(HomeItem.7.Widget),RecentAlbums)">$LOCALIZE[31192]</value>
 		<value condition="stringcompare(Skin.String(HomeItem.7.Widget),RandomAlbums)">$LOCALIZE[31190]</value>
@@ -1695,18 +1689,16 @@
 		<value condition="stringcompare(Skin.String(HomeItem.7.Widget),Weather)">$LOCALIZE[8]</value>
 		<value condition="stringcompare(Skin.String(HomeItem.7.Widget),Favourites)">$LOCALIZE[1036]</value>
 		<value condition="stringcompare(Skin.String(HomeItem.7.Widget),NextAired)">$LOCALIZE[31245]</value>
-		<value condition="stringcompare(Skin.String(HomeItem.7.Widget),RomGames)">$LOCALIZE[31246]</value>
 		<value>$LOCALIZE[31254]</value>
 	</variable>
 	<variable name="UsrDefItemEightWidgetLabel" type="text">
 		<value condition="stringcompare(Skin.String(HomeItem.8.Widget),RecentMovies)">$LOCALIZE[31198]</value>
 		<value condition="stringcompare(Skin.String(HomeItem.8.Widget),RandomMovies)">$LOCALIZE[31196]</value>
 		<value condition="stringcompare(Skin.String(HomeItem.8.Widget),SuggestedMovies)">$LOCALIZE[31197]</value>
+		<value condition="stringcompare(Skin.String(HomeItem.8.Widget),UPnPMovies)">$LOCALIZE[31115] $LOCALIZE[342]</value>
 		<value condition="stringcompare(Skin.String(HomeItem.8.Widget),RecentEpisodes)">$LOCALIZE[31195]</value>
 		<value condition="stringcompare(Skin.String(HomeItem.8.Widget),RandomEpisodes)">$LOCALIZE[31193]</value>
 		<value condition="stringcompare(Skin.String(HomeItem.8.Widget),SuggestedEpisodes)">$LOCALIZE[31194]</value>
-		<value condition="stringcompare(Skin.String(HomeItem.8.Widget),RecentSongs)">$LOCALIZE[31253] $LOCALIZE[182]</value>
-		<value condition="stringcompare(Skin.String(HomeItem.8.Widget),RandomSongs)">$LOCALIZE[590] $LOCALIZE[182]</value>
 		<value condition="stringcompare(Skin.String(HomeItem.8.Widget),RandomArtists)">$LOCALIZE[590] $LOCALIZE[133]</value>
 		<value condition="stringcompare(Skin.String(HomeItem.8.Widget),RecentAlbums)">$LOCALIZE[31192]</value>
 		<value condition="stringcompare(Skin.String(HomeItem.8.Widget),RandomAlbums)">$LOCALIZE[31190]</value>
@@ -1720,18 +1712,16 @@
 		<value condition="stringcompare(Skin.String(HomeItem.8.Widget),Weather)">$LOCALIZE[8]</value>
 		<value condition="stringcompare(Skin.String(HomeItem.8.Widget),Favourites)">$LOCALIZE[1036]</value>
 		<value condition="stringcompare(Skin.String(HomeItem.8.Widget),NextAired)">$LOCALIZE[31245]</value>
-		<value condition="stringcompare(Skin.String(HomeItem.8.Widget),RomGames)">$LOCALIZE[31246]</value>
 		<value>$LOCALIZE[31254]</value>
 	</variable>
 	<variable name="UsrDefItemNineWidgetLabel" type="text">
 		<value condition="stringcompare(Skin.String(HomeItem.9.Widget),RecentMovies)">$LOCALIZE[31198]</value>
 		<value condition="stringcompare(Skin.String(HomeItem.9.Widget),RandomMovies)">$LOCALIZE[31196]</value>
 		<value condition="stringcompare(Skin.String(HomeItem.9.Widget),SuggestedMovies)">$LOCALIZE[31197]</value>
+		<value condition="stringcompare(Skin.String(HomeItem.9.Widget),UPnPMovies)">$LOCALIZE[31115] $LOCALIZE[342]</value>
 		<value condition="stringcompare(Skin.String(HomeItem.9.Widget),RecentEpisodes)">$LOCALIZE[31195]</value>
 		<value condition="stringcompare(Skin.String(HomeItem.9.Widget),RandomEpisodes)">$LOCALIZE[31193]</value>
 		<value condition="stringcompare(Skin.String(HomeItem.9.Widget),SuggestedEpisodes)">$LOCALIZE[31194]</value>
-		<value condition="stringcompare(Skin.String(HomeItem.9.Widget),RecentSongs)">$LOCALIZE[31253] $LOCALIZE[182]</value>
-		<value condition="stringcompare(Skin.String(HomeItem.9.Widget),RandomSongs)">$LOCALIZE[590] $LOCALIZE[182]</value>
 		<value condition="stringcompare(Skin.String(HomeItem.9.Widget),RandomArtists)">$LOCALIZE[590] $LOCALIZE[133]</value>
 		<value condition="stringcompare(Skin.String(HomeItem.9.Widget),RecentAlbums)">$LOCALIZE[31192]</value>
 		<value condition="stringcompare(Skin.String(HomeItem.9.Widget),RandomAlbums)">$LOCALIZE[31190]</value>
@@ -1745,18 +1735,16 @@
 		<value condition="stringcompare(Skin.String(HomeItem.9.Widget),Weather)">$LOCALIZE[8]</value>
 		<value condition="stringcompare(Skin.String(HomeItem.9.Widget),Favourites)">$LOCALIZE[1036]</value>
 		<value condition="stringcompare(Skin.String(HomeItem.9.Widget),NextAired)">$LOCALIZE[31245]</value>
-		<value condition="stringcompare(Skin.String(HomeItem.9.Widget),RomGames)">$LOCALIZE[31246]</value>
 		<value>$LOCALIZE[31254]</value>
 	</variable>
 	<variable name="UsrDefItemTenWidgetLabel" type="text">
 		<value condition="stringcompare(Skin.String(HomeItem.10.Widget),RecentMovies)">$LOCALIZE[31198]</value>
 		<value condition="stringcompare(Skin.String(HomeItem.10.Widget),RandomMovies)">$LOCALIZE[31196]</value>
 		<value condition="stringcompare(Skin.String(HomeItem.10.Widget),SuggestedMovies)">$LOCALIZE[31197]</value>
+		<value condition="stringcompare(Skin.String(HomeItem.10.Widget),UPnPMovies)">$LOCALIZE[31115] $LOCALIZE[342]</value>
 		<value condition="stringcompare(Skin.String(HomeItem.10.Widget),RecentEpisodes)">$LOCALIZE[31195]</value>
 		<value condition="stringcompare(Skin.String(HomeItem.10.Widget),RandomEpisodes)">$LOCALIZE[31193]</value>
 		<value condition="stringcompare(Skin.String(HomeItem.10.Widget),SuggestedEpisodes)">$LOCALIZE[31194]</value>
-		<value condition="stringcompare(Skin.String(HomeItem.10.Widget),RecentSongs)">$LOCALIZE[31253] $LOCALIZE[182]</value>
-		<value condition="stringcompare(Skin.String(HomeItem.10.Widget),RandomSongs)">$LOCALIZE[590] $LOCALIZE[182]</value>
 		<value condition="stringcompare(Skin.String(HomeItem.10.Widget),RandomArtists)">$LOCALIZE[590] $LOCALIZE[133]</value>
 		<value condition="stringcompare(Skin.String(HomeItem.10.Widget),RecentAlbums)">$LOCALIZE[31192]</value>
 		<value condition="stringcompare(Skin.String(HomeItem.10.Widget),RandomAlbums)">$LOCALIZE[31190]</value>
@@ -1770,18 +1758,16 @@
 		<value condition="stringcompare(Skin.String(HomeItem.10.Widget),Weather)">$LOCALIZE[8]</value>
 		<value condition="stringcompare(Skin.String(HomeItem.10.Widget),Favourites)">$LOCALIZE[1036]</value>
 		<value condition="stringcompare(Skin.String(HomeItem.10.Widget),NextAired)">$LOCALIZE[31245]</value>
-		<value condition="stringcompare(Skin.String(HomeItem.10.Widget),RomGames)">$LOCALIZE[31246]</value>
 		<value>$LOCALIZE[31254]</value>
 	</variable>
 	<variable name="UsrDefItemElevenWidgetLabel" type="text">
 		<value condition="stringcompare(Skin.String(HomeItem.11.Widget),RecentMovies)">$LOCALIZE[31198]</value>
 		<value condition="stringcompare(Skin.String(HomeItem.11.Widget),RandomMovies)">$LOCALIZE[31196]</value>
 		<value condition="stringcompare(Skin.String(HomeItem.11.Widget),SuggestedMovies)">$LOCALIZE[31197]</value>
+		<value condition="stringcompare(Skin.String(HomeItem.11.Widget),UPnPMovies)">$LOCALIZE[31115] $LOCALIZE[342]</value>
 		<value condition="stringcompare(Skin.String(HomeItem.11.Widget),RecentEpisodes)">$LOCALIZE[31195]</value>
 		<value condition="stringcompare(Skin.String(HomeItem.11.Widget),RandomEpisodes)">$LOCALIZE[31193]</value>
 		<value condition="stringcompare(Skin.String(HomeItem.11.Widget),SuggestedEpisodes)">$LOCALIZE[31194]</value>
-		<value condition="stringcompare(Skin.String(HomeItem.11.Widget),RecentSongs)">$LOCALIZE[31253] $LOCALIZE[182]</value>
-		<value condition="stringcompare(Skin.String(HomeItem.11.Widget),RandomSongs)">$LOCALIZE[590] $LOCALIZE[182]</value>
 		<value condition="stringcompare(Skin.String(HomeItem.11.Widget),RandomArtists)">$LOCALIZE[590] $LOCALIZE[133]</value>
 		<value condition="stringcompare(Skin.String(HomeItem.11.Widget),RecentAlbums)">$LOCALIZE[31192]</value>
 		<value condition="stringcompare(Skin.String(HomeItem.11.Widget),RandomAlbums)">$LOCALIZE[31190]</value>
@@ -1795,18 +1781,16 @@
 		<value condition="stringcompare(Skin.String(HomeItem.11.Widget),Weather)">$LOCALIZE[8]</value>
 		<value condition="stringcompare(Skin.String(HomeItem.11.Widget),Favourites)">$LOCALIZE[1036]</value>
 		<value condition="stringcompare(Skin.String(HomeItem.11.Widget),NextAired)">$LOCALIZE[31245]</value>
-		<value condition="stringcompare(Skin.String(HomeItem.11.Widget),RomGames)">$LOCALIZE[31246]</value>
 		<value>$LOCALIZE[31254]</value>
 	</variable>
 	<variable name="UsrDefItemTwelveWidgetLabel" type="text">
 		<value condition="stringcompare(Skin.String(HomeItem.12.Widget),RecentMovies)">$LOCALIZE[31198]</value>
 		<value condition="stringcompare(Skin.String(HomeItem.12.Widget),RandomMovies)">$LOCALIZE[31196]</value>
 		<value condition="stringcompare(Skin.String(HomeItem.12.Widget),SuggestedMovies)">$LOCALIZE[31197]</value>
+		<value condition="stringcompare(Skin.String(HomeItem.12.Widget),UPnPMovies)">$LOCALIZE[31115] $LOCALIZE[342]</value>
 		<value condition="stringcompare(Skin.String(HomeItem.12.Widget),RecentEpisodes)">$LOCALIZE[31195]</value>
 		<value condition="stringcompare(Skin.String(HomeItem.12.Widget),RandomEpisodes)">$LOCALIZE[31193]</value>
 		<value condition="stringcompare(Skin.String(HomeItem.12.Widget),SuggestedEpisodes)">$LOCALIZE[31194]</value>
-		<value condition="stringcompare(Skin.String(HomeItem.12.Widget),RecentSongs)">$LOCALIZE[31253] $LOCALIZE[182]</value>
-		<value condition="stringcompare(Skin.String(HomeItem.12.Widget),RandomSongs)">$LOCALIZE[590] $LOCALIZE[182]</value>
 		<value condition="stringcompare(Skin.String(HomeItem.12.Widget),RandomArtists)">$LOCALIZE[590] $LOCALIZE[133]</value>
 		<value condition="stringcompare(Skin.String(HomeItem.12.Widget),RecentAlbums)">$LOCALIZE[31192]</value>
 		<value condition="stringcompare(Skin.String(HomeItem.12.Widget),RandomAlbums)">$LOCALIZE[31190]</value>
@@ -1820,7 +1804,6 @@
 		<value condition="stringcompare(Skin.String(HomeItem.12.Widget),Weather)">$LOCALIZE[8]</value>
 		<value condition="stringcompare(Skin.String(HomeItem.12.Widget),Favourites)">$LOCALIZE[1036]</value>
 		<value condition="stringcompare(Skin.String(HomeItem.12.Widget),NextAired)">$LOCALIZE[31245]</value>
-		<value condition="stringcompare(Skin.String(HomeItem.12.Widget),RomGames)">$LOCALIZE[31246]</value>
 		<value>$LOCALIZE[31254]</value>
 	</variable>
 	<variable name="MenuOneBackgroundType" type="text">
@@ -2391,60 +2374,60 @@
 	</variable>
 	<variable name="StatusBanner">
 		<!-- Watched -->
-		<value condition="StringCompare(ListItem.Overlay,OverlayWatched.png) + !ListItem.IsResumable + StringCompare(System.Language,English)">Watched/English</value>
-		<value condition="StringCompare(ListItem.Overlay,OverlayWatched.png) + !ListItem.IsResumable + StringCompare(System.Language,Afrikaans)">Watched/Afrikaans</value>
-		<value condition="StringCompare(ListItem.Overlay,OverlayWatched.png) + !ListItem.IsResumable + StringCompare(System.Language,Albanian)">Watched/Albanian</value>
-		<value condition="StringCompare(ListItem.Overlay,OverlayWatched.png) + !ListItem.IsResumable + StringCompare(System.Language,Amharic)">Watched/Amharic</value>
-		<value condition="StringCompare(ListItem.Overlay,OverlayWatched.png) + !ListItem.IsResumable + StringCompare(System.Language,Arabic)">Watched/Arabic</value>
-		<value condition="StringCompare(ListItem.Overlay,OverlayWatched.png) + !ListItem.IsResumable + StringCompare(System.Language,Basque)">Watched/Basque</value>
-		<value condition="StringCompare(ListItem.Overlay,OverlayWatched.png) + !ListItem.IsResumable + StringCompare(System.Language,Bosnian)">Watched/Bosnian</value>
-		<value condition="StringCompare(ListItem.Overlay,OverlayWatched.png) + !ListItem.IsResumable + StringCompare(System.Language,Bulgarian)">Watched/Bulgarian</value>
-		<value condition="StringCompare(ListItem.Overlay,OverlayWatched.png) + !ListItem.IsResumable + StringCompare(System.Language,Catalan)">Watched/Catalan</value>
-		<value condition="StringCompare(ListItem.Overlay,OverlayWatched.png) + !ListItem.IsResumable + SubString(System.Language,Chinese)">Watched/ChineseSimple</value>
-		<value condition="StringCompare(ListItem.Overlay,OverlayWatched.png) + !ListItem.IsResumable + StringCompare(System.Language,Croatian)">Watched/Croatian</value>
-		<value condition="StringCompare(ListItem.Overlay,OverlayWatched.png) + !ListItem.IsResumable + StringCompare(System.Language,Czech)">Watched/Czech</value>
-		<value condition="StringCompare(ListItem.Overlay,OverlayWatched.png) + !ListItem.IsResumable + StringCompare(System.Language,Danish)">Watched/Danish</value>
-		<value condition="StringCompare(ListItem.Overlay,OverlayWatched.png) + !ListItem.IsResumable + StringCompare(System.Language,Dutch)">Watched/Dutch</value>
-		<value condition="StringCompare(ListItem.Overlay,OverlayWatched.png) + !ListItem.IsResumable + StringCompare(System.Language,Estonian)">Watched/Estonian</value>
-		<value condition="StringCompare(ListItem.Overlay,OverlayWatched.png) + !ListItem.IsResumable + StringCompare(System.Language,Faroese)">Watched/Faroese</value>
-		<value condition="StringCompare(ListItem.Overlay,OverlayWatched.png) + !ListItem.IsResumable + StringCompare(System.Language,Finnish)">Watched/Finnish</value>
-		<value condition="StringCompare(ListItem.Overlay,OverlayWatched.png) + !ListItem.IsResumable + StringCompare(System.Language,French)">Watched/French</value>
-		<value condition="StringCompare(ListItem.Overlay,OverlayWatched.png) + !ListItem.IsResumable + StringCompare(System.Language,Galician)">Watched/Galician</value>
-		<value condition="StringCompare(ListItem.Overlay,OverlayWatched.png) + !ListItem.IsResumable + StringCompare(System.Language,German)">Watched/German</value>
-		<value condition="StringCompare(ListItem.Overlay,OverlayWatched.png) + !ListItem.IsResumable + StringCompare(System.Language,Greek)">Watched/Greek</value>
-		<value condition="StringCompare(ListItem.Overlay,OverlayWatched.png) + !ListItem.IsResumable + StringCompare(System.Language,Hebrew)">Watched/Hebrew</value>
-		<value condition="StringCompare(ListItem.Overlay,OverlayWatched.png) + !ListItem.IsResumable + StringCompare(System.Language,Hungarian)">Watched/Hungarian</value>
-		<value condition="StringCompare(ListItem.Overlay,OverlayWatched.png) + !ListItem.IsResumable + StringCompare(System.Language,Icelandic)">Watched/Icelandic</value>
-		<value condition="StringCompare(ListItem.Overlay,OverlayWatched.png) + !ListItem.IsResumable + StringCompare(System.Language,Indonesian)">Watched/Indonesian</value>
-		<value condition="StringCompare(ListItem.Overlay,OverlayWatched.png) + !ListItem.IsResumable + StringCompare(System.Language,Italian)">Watched/Italian</value>
-		<value condition="StringCompare(ListItem.Overlay,OverlayWatched.png) + !ListItem.IsResumable + StringCompare(System.Language,Japanese)">Watched/Japanese</value>
-		<value condition="StringCompare(ListItem.Overlay,OverlayWatched.png) + !ListItem.IsResumable + StringCompare(System.Language,Korean)">Watched/Korean</value>
-		<value condition="StringCompare(ListItem.Overlay,OverlayWatched.png) + !ListItem.IsResumable + StringCompare(System.Language,Lithuanian)">Watched/Lithuanian</value>
-		<value condition="StringCompare(ListItem.Overlay,OverlayWatched.png) + !ListItem.IsResumable + StringCompare(System.Language,Macedonian)">Watched/Macedonian</value>
-		<value condition="StringCompare(ListItem.Overlay,OverlayWatched.png) + !ListItem.IsResumable + StringCompare(System.Language,Maltese)">Watched/Maltese</value>
-		<value condition="StringCompare(ListItem.Overlay,OverlayWatched.png) + !ListItem.IsResumable + StringCompare(System.Language,Norwegian)">Watched/Norwegian</value>
-		<value condition="StringCompare(ListItem.Overlay,OverlayWatched.png) + !ListItem.IsResumable +  SubString(System.Language,Iran)">Watched/Iran</value>
-		<value condition="StringCompare(ListItem.Overlay,OverlayWatched.png) + !ListItem.IsResumable + StringCompare(System.Language,Polish)">Watched/Polish</value>
-		<value condition="StringCompare(ListItem.Overlay,OverlayWatched.png) + !ListItem.IsResumable + SubString(System.Language,Portuguese)">Watched/Portuguese</value>
-		<value condition="StringCompare(ListItem.Overlay,OverlayWatched.png) + !ListItem.IsResumable + StringCompare(System.Language,Romanian)">Watched/Romanian</value>
-		<value condition="StringCompare(ListItem.Overlay,OverlayWatched.png) + !ListItem.IsResumable + StringCompare(System.Language,Russian)">Watched/Russian</value>
-		<value condition="StringCompare(ListItem.Overlay,OverlayWatched.png) + !ListItem.IsResumable + StringCompare(System.Language,Serbian)">Watched/Serbian</value>
-		<value condition="StringCompare(ListItem.Overlay,OverlayWatched.png) + !ListItem.IsResumable + SubString(System.Language,Serbian) + SubString(System.Language,Cyrillic)">Watched/SerbCyrillic</value>
-		<value condition="StringCompare(ListItem.Overlay,OverlayWatched.png) + !ListItem.IsResumable + StringCompare(System.Language,Slovak)">Watched/Slovak</value>
-		<value condition="StringCompare(ListItem.Overlay,OverlayWatched.png) + !ListItem.IsResumable + StringCompare(System.Language,Slovenian)">Watched/Slovenian</value>
-		<value condition="StringCompare(ListItem.Overlay,OverlayWatched.png) + !ListItem.IsResumable + SubString(System.Language,Spanish) + SubString(System.Language,Mexico)">Watched/Mexico</value>
-		<value condition="StringCompare(ListItem.Overlay,OverlayWatched.png) + !ListItem.IsResumable + SubString(System.Language,Spanish)">Watched/Spanish</value>
-		<value condition="StringCompare(ListItem.Overlay,OverlayWatched.png) + !ListItem.IsResumable + StringCompare(System.Language,Swedish)">Watched/Swedish</value>
-		<value condition="StringCompare(ListItem.Overlay,OverlayWatched.png) + !ListItem.IsResumable + StringCompare(System.Language,Tajik)">Watched/Tajik</value>
-		<value condition="StringCompare(ListItem.Overlay,OverlayWatched.png) + !ListItem.IsResumable + SubString(System.Language,Tamil)">Watched/Tamil</value>
-		<value condition="StringCompare(ListItem.Overlay,OverlayWatched.png) + !ListItem.IsResumable + StringCompare(System.Language,Thai)">Watched/Thai</value>
-		<value condition="StringCompare(ListItem.Overlay,OverlayWatched.png) + !ListItem.IsResumable + StringCompare(System.Language,Turkish)">Watched/Turkish</value>
-		<value condition="StringCompare(ListItem.Overlay,OverlayWatched.png) + !ListItem.IsResumable + StringCompare(System.Language,Ukrainian)">Watched/Ukrainian</value>
-		<value condition="StringCompare(ListItem.Overlay,OverlayWatched.png) + !ListItem.IsResumable + StringCompare(System.Language,Vietnamese)">Watched/Vietnamese</value>
-		<value condition="StringCompare(ListItem.Overlay,OverlayWatched.png) + !ListItem.IsResumable + StringCompare(System.Language,Welsh)">Watched/Welsh</value>
-		<value condition="StringCompare(ListItem.Overlay,OverlayWatched.png) + !ListItem.IsResumable">Watched/English</value>
+		<value condition="StringCompare(ListItem.Overlay,OverlayWatched.png) + !Skin.HasSetting(HideWatchedMediaStat) + !ListItem.IsResumable + StringCompare(System.Language,English)">Watched/English</value>
+		<value condition="StringCompare(ListItem.Overlay,OverlayWatched.png) + !Skin.HasSetting(HideWatchedMediaStat) + !ListItem.IsResumable + StringCompare(System.Language,Afrikaans)">Watched/Afrikaans</value>
+		<value condition="StringCompare(ListItem.Overlay,OverlayWatched.png) + !Skin.HasSetting(HideWatchedMediaStat) + !ListItem.IsResumable + StringCompare(System.Language,Albanian)">Watched/Albanian</value>
+		<value condition="StringCompare(ListItem.Overlay,OverlayWatched.png) + !Skin.HasSetting(HideWatchedMediaStat) + !ListItem.IsResumable + StringCompare(System.Language,Amharic)">Watched/Amharic</value>
+		<value condition="StringCompare(ListItem.Overlay,OverlayWatched.png) + !Skin.HasSetting(HideWatchedMediaStat) + !ListItem.IsResumable + StringCompare(System.Language,Arabic)">Watched/Arabic</value>
+		<value condition="StringCompare(ListItem.Overlay,OverlayWatched.png) + !Skin.HasSetting(HideWatchedMediaStat) + !ListItem.IsResumable + StringCompare(System.Language,Basque)">Watched/Basque</value>
+		<value condition="StringCompare(ListItem.Overlay,OverlayWatched.png) + !Skin.HasSetting(HideWatchedMediaStat) + !ListItem.IsResumable + StringCompare(System.Language,Bosnian)">Watched/Bosnian</value>
+		<value condition="StringCompare(ListItem.Overlay,OverlayWatched.png) + !Skin.HasSetting(HideWatchedMediaStat) + !ListItem.IsResumable + StringCompare(System.Language,Bulgarian)">Watched/Bulgarian</value>
+		<value condition="StringCompare(ListItem.Overlay,OverlayWatched.png) + !Skin.HasSetting(HideWatchedMediaStat) + !ListItem.IsResumable + StringCompare(System.Language,Catalan)">Watched/Catalan</value>
+		<value condition="StringCompare(ListItem.Overlay,OverlayWatched.png) + !Skin.HasSetting(HideWatchedMediaStat) + !ListItem.IsResumable + SubString(System.Language,Chinese)">Watched/ChineseSimple</value>
+		<value condition="StringCompare(ListItem.Overlay,OverlayWatched.png) + !Skin.HasSetting(HideWatchedMediaStat) + !ListItem.IsResumable + StringCompare(System.Language,Croatian)">Watched/Croatian</value>
+		<value condition="StringCompare(ListItem.Overlay,OverlayWatched.png) + !Skin.HasSetting(HideWatchedMediaStat) + !ListItem.IsResumable + StringCompare(System.Language,Czech)">Watched/Czech</value>
+		<value condition="StringCompare(ListItem.Overlay,OverlayWatched.png) + !Skin.HasSetting(HideWatchedMediaStat) + !ListItem.IsResumable + StringCompare(System.Language,Danish)">Watched/Danish</value>
+		<value condition="StringCompare(ListItem.Overlay,OverlayWatched.png) + !Skin.HasSetting(HideWatchedMediaStat) + !ListItem.IsResumable + StringCompare(System.Language,Dutch)">Watched/Dutch</value>
+		<value condition="StringCompare(ListItem.Overlay,OverlayWatched.png) + !Skin.HasSetting(HideWatchedMediaStat) + !ListItem.IsResumable + StringCompare(System.Language,Estonian)">Watched/Estonian</value>
+		<value condition="StringCompare(ListItem.Overlay,OverlayWatched.png) + !Skin.HasSetting(HideWatchedMediaStat) + !ListItem.IsResumable + StringCompare(System.Language,Faroese)">Watched/Faroese</value>
+		<value condition="StringCompare(ListItem.Overlay,OverlayWatched.png) + !Skin.HasSetting(HideWatchedMediaStat) + !ListItem.IsResumable + StringCompare(System.Language,Finnish)">Watched/Finnish</value>
+		<value condition="StringCompare(ListItem.Overlay,OverlayWatched.png) + !Skin.HasSetting(HideWatchedMediaStat) + !ListItem.IsResumable + StringCompare(System.Language,French)">Watched/French</value>
+		<value condition="StringCompare(ListItem.Overlay,OverlayWatched.png) + !Skin.HasSetting(HideWatchedMediaStat) + !ListItem.IsResumable + StringCompare(System.Language,Galician)">Watched/Galician</value>
+		<value condition="StringCompare(ListItem.Overlay,OverlayWatched.png) + !Skin.HasSetting(HideWatchedMediaStat) + !ListItem.IsResumable + StringCompare(System.Language,German)">Watched/German</value>
+		<value condition="StringCompare(ListItem.Overlay,OverlayWatched.png) + !Skin.HasSetting(HideWatchedMediaStat) + !ListItem.IsResumable + StringCompare(System.Language,Greek)">Watched/Greek</value>
+		<value condition="StringCompare(ListItem.Overlay,OverlayWatched.png) + !Skin.HasSetting(HideWatchedMediaStat) + !ListItem.IsResumable + StringCompare(System.Language,Hebrew)">Watched/Hebrew</value>
+		<value condition="StringCompare(ListItem.Overlay,OverlayWatched.png) + !Skin.HasSetting(HideWatchedMediaStat) + !ListItem.IsResumable + StringCompare(System.Language,Hungarian)">Watched/Hungarian</value>
+		<value condition="StringCompare(ListItem.Overlay,OverlayWatched.png) + !Skin.HasSetting(HideWatchedMediaStat) + !ListItem.IsResumable + StringCompare(System.Language,Icelandic)">Watched/Icelandic</value>
+		<value condition="StringCompare(ListItem.Overlay,OverlayWatched.png) + !Skin.HasSetting(HideWatchedMediaStat) + !ListItem.IsResumable + StringCompare(System.Language,Indonesian)">Watched/Indonesian</value>
+		<value condition="StringCompare(ListItem.Overlay,OverlayWatched.png) + !Skin.HasSetting(HideWatchedMediaStat) + !ListItem.IsResumable + StringCompare(System.Language,Italian)">Watched/Italian</value>
+		<value condition="StringCompare(ListItem.Overlay,OverlayWatched.png) + !Skin.HasSetting(HideWatchedMediaStat) + !ListItem.IsResumable + StringCompare(System.Language,Japanese)">Watched/Japanese</value>
+		<value condition="StringCompare(ListItem.Overlay,OverlayWatched.png) + !Skin.HasSetting(HideWatchedMediaStat) + !ListItem.IsResumable + StringCompare(System.Language,Korean)">Watched/Korean</value>
+		<value condition="StringCompare(ListItem.Overlay,OverlayWatched.png) + !Skin.HasSetting(HideWatchedMediaStat) + !ListItem.IsResumable + StringCompare(System.Language,Lithuanian)">Watched/Lithuanian</value>
+		<value condition="StringCompare(ListItem.Overlay,OverlayWatched.png) + !Skin.HasSetting(HideWatchedMediaStat) + !ListItem.IsResumable + StringCompare(System.Language,Macedonian)">Watched/Macedonian</value>
+		<value condition="StringCompare(ListItem.Overlay,OverlayWatched.png) + !Skin.HasSetting(HideWatchedMediaStat) + !ListItem.IsResumable + StringCompare(System.Language,Maltese)">Watched/Maltese</value>
+		<value condition="StringCompare(ListItem.Overlay,OverlayWatched.png) + !Skin.HasSetting(HideWatchedMediaStat) + !ListItem.IsResumable + StringCompare(System.Language,Norwegian)">Watched/Norwegian</value>
+		<value condition="StringCompare(ListItem.Overlay,OverlayWatched.png) + !Skin.HasSetting(HideWatchedMediaStat) + !ListItem.IsResumable +  SubString(System.Language,Iran)">Watched/Iran</value>
+		<value condition="StringCompare(ListItem.Overlay,OverlayWatched.png) + !Skin.HasSetting(HideWatchedMediaStat) + !ListItem.IsResumable + StringCompare(System.Language,Polish)">Watched/Polish</value>
+		<value condition="StringCompare(ListItem.Overlay,OverlayWatched.png) + !Skin.HasSetting(HideWatchedMediaStat) + !ListItem.IsResumable + SubString(System.Language,Portuguese)">Watched/Portuguese</value>
+		<value condition="StringCompare(ListItem.Overlay,OverlayWatched.png) + !Skin.HasSetting(HideWatchedMediaStat) + !ListItem.IsResumable + StringCompare(System.Language,Romanian)">Watched/Romanian</value>
+		<value condition="StringCompare(ListItem.Overlay,OverlayWatched.png) + !Skin.HasSetting(HideWatchedMediaStat) + !ListItem.IsResumable + StringCompare(System.Language,Russian)">Watched/Russian</value>
+		<value condition="StringCompare(ListItem.Overlay,OverlayWatched.png) + !Skin.HasSetting(HideWatchedMediaStat) + !ListItem.IsResumable + StringCompare(System.Language,Serbian)">Watched/Serbian</value>
+		<value condition="StringCompare(ListItem.Overlay,OverlayWatched.png) + !Skin.HasSetting(HideWatchedMediaStat) + !ListItem.IsResumable + SubString(System.Language,Serbian) + SubString(System.Language,Cyrillic)">Watched/SerbCyrillic</value>
+		<value condition="StringCompare(ListItem.Overlay,OverlayWatched.png) + !Skin.HasSetting(HideWatchedMediaStat) + !ListItem.IsResumable + StringCompare(System.Language,Slovak)">Watched/Slovak</value>
+		<value condition="StringCompare(ListItem.Overlay,OverlayWatched.png) + !Skin.HasSetting(HideWatchedMediaStat) + !ListItem.IsResumable + StringCompare(System.Language,Slovenian)">Watched/Slovenian</value>
+		<value condition="StringCompare(ListItem.Overlay,OverlayWatched.png) + !Skin.HasSetting(HideWatchedMediaStat) + !ListItem.IsResumable + SubString(System.Language,Spanish) + SubString(System.Language,Mexico)">Watched/Mexico</value>
+		<value condition="StringCompare(ListItem.Overlay,OverlayWatched.png) + !Skin.HasSetting(HideWatchedMediaStat) + !ListItem.IsResumable + SubString(System.Language,Spanish)">Watched/Spanish</value>
+		<value condition="StringCompare(ListItem.Overlay,OverlayWatched.png) + !Skin.HasSetting(HideWatchedMediaStat) + !ListItem.IsResumable + StringCompare(System.Language,Swedish)">Watched/Swedish</value>
+		<value condition="StringCompare(ListItem.Overlay,OverlayWatched.png) + !Skin.HasSetting(HideWatchedMediaStat) + !ListItem.IsResumable + StringCompare(System.Language,Tajik)">Watched/Tajik</value>
+		<value condition="StringCompare(ListItem.Overlay,OverlayWatched.png) + !Skin.HasSetting(HideWatchedMediaStat) + !ListItem.IsResumable + SubString(System.Language,Tamil)">Watched/Tamil</value>
+		<value condition="StringCompare(ListItem.Overlay,OverlayWatched.png) + !Skin.HasSetting(HideWatchedMediaStat) + !ListItem.IsResumable + StringCompare(System.Language,Thai)">Watched/Thai</value>
+		<value condition="StringCompare(ListItem.Overlay,OverlayWatched.png) + !Skin.HasSetting(HideWatchedMediaStat) + !ListItem.IsResumable + StringCompare(System.Language,Turkish)">Watched/Turkish</value>
+		<value condition="StringCompare(ListItem.Overlay,OverlayWatched.png) + !Skin.HasSetting(HideWatchedMediaStat) + !ListItem.IsResumable + StringCompare(System.Language,Ukrainian)">Watched/Ukrainian</value>
+		<value condition="StringCompare(ListItem.Overlay,OverlayWatched.png) + !Skin.HasSetting(HideWatchedMediaStat) + !ListItem.IsResumable + StringCompare(System.Language,Vietnamese)">Watched/Vietnamese</value>
+		<value condition="StringCompare(ListItem.Overlay,OverlayWatched.png) + !Skin.HasSetting(HideWatchedMediaStat) + !ListItem.IsResumable + StringCompare(System.Language,Welsh)">Watched/Welsh</value>
+		<value condition="StringCompare(ListItem.Overlay,OverlayWatched.png) + !Skin.HasSetting(HideWatchedMediaStat) + !ListItem.IsResumable">Watched/English</value>
 		<!-- New -->
-		<!--
+		
 		<value condition="!StringCompare(ListItem.Overlay,OverlayWatched.png) + !Skin.HasSetting(HideNewMediaStat) + !ListItem.IsResumable + StringCompare(System.Language,English)">UnWatched/English</value>
 		<value condition="!StringCompare(ListItem.Overlay,OverlayWatched.png) + !Skin.HasSetting(HideNewMediaStat) + !ListItem.IsResumable + SubString(System.Language,Chinese)">UnWatched/ChineseSimple</value>
 		<value condition="!StringCompare(ListItem.Overlay,OverlayWatched.png) + !Skin.HasSetting(HideNewMediaStat) + !ListItem.IsResumable + StringCompare(System.Language,Danish)">UnWatched/Danish</value>
@@ -2467,7 +2450,7 @@
 		<value condition="!StringCompare(ListItem.Overlay,OverlayWatched.png) + !Skin.HasSetting(HideNewMediaStat) + !ListItem.IsResumable + StringCompare(System.Language,Spanish)">UnWatched/Spanish</value>
 		<value condition="!StringCompare(ListItem.Overlay,OverlayWatched.png) + !Skin.HasSetting(HideNewMediaStat) + !ListItem.IsResumable + StringCompare(System.Language,Swedish)">UnWatched/Swedish</value>
 		<value condition="!StringCompare(ListItem.Overlay,OverlayWatched.png) + !Skin.HasSetting(HideNewMediaStat) + !ListItem.IsResumable">UnWatched/English</value>
-		-->
+		
 		<!-- In Progress -->
 		<value condition="ListItem.IsResumable + StringCompare(System.Language,English)">InProgress/English</value>
 		<value condition="ListItem.IsResumable">InProgress/English</value>
@@ -2477,9 +2460,13 @@
 		<value>$INFO[Skin.String(WeatherFanartDir)]</value>
 	</variable>
 	<variable name="MainColorOne" type="text">
-		<!--value condition="IsEmpty(Skin.String(UsrColorOne))">blue</value-->
-		<!--value condition="!IsEmpty(Skin.String(UsrColorOne))">$INFO[Skin.String(UsrColorOne)]</value-->
+		<value condition="IsEmpty(Skin.String(UsrColorOne))">blue</value>
+		<value condition="!IsEmpty(Skin.String(UsrColorOne))">$INFO[Skin.String(UsrColorOne)]</value>
 		<value>blue</value>
+	</variable>
+	<variable name="ColorOneName" type="text">
+		<value condition="IsEmpty(Skin.String(UsrColorOne))">$LOCALIZE[13278]</value>
+		<value condition="!IsEmpty(Skin.String(UsrColorOne))">$INFO[Skin.String(UsrColorOne)]</value>
 	</variable>
 	<variable name="TransparentValue">
 		<value condition="!IsEmpty(Skin.String(mediapaneltrans))">$LOCALIZE[31248]</value>
@@ -2575,7 +2562,7 @@
 		<value condition="substring(listitem.mpaa, U )">$INFO[Skin.String(MPAACertificate)]/u</value>
 		<value condition="substring(listitem.mpaa, G )">$INFO[Skin.String(MPAACertificate)]/g</value>
 	</variable>
-	<variable name="VideoListCase">
+	<!--variable name="VideoListCase">
 		<value condition="ListItem.IsStereoscopic">3D</value>
 		<value condition="SubString(ListItem.FilenameAndPath,bluray) | SubString(ListItem.FilenameAndPath,bdrip) | SubString(ListItem.FilenameAndPath,bd25) | SubString(ListItem.FilenameAndPath,bd50)">bd</value>
 		<value condition="SubString(ListItem.FilenameAndPath,.3D.) | SubString(ListItem.FilenameAndPath,.3DBD.) | SubString(ListItem.FilenameAndPath,.SBS.)">3DCase</value>
@@ -2585,7 +2572,35 @@
 		<value condition="!IsEmpty(ListItem.FileExtension)">$INFO[ListItem.FileExtension]</value>
 		<value condition="Container.Content(tvshows) | Container.Content(seasons) | Container.Content(Episodes)">TVseries</value>
 		<value>dv</value>
+	</variable-->
+	
+	
+	<variable name="VideoListCase">
+		<value condition="!Skin.HasSetting(UseDiscTypeCase) + [Container.Content(tvshows) | Container.Content(seasons) | Container.Content(episodes)]">TVseries</value>
+		<value condition="!Skin.HasSetting(UseDiscTypeCase) + !IsEmpty(ListItem.FileExtension)">$INFO[ListItem.FileExtension]</value>
+		
+		<value condition="Skin.HasSetting(UseDiscTypeCase) + [SubString(ListItem.FilenameAndPath,.3D.) | SubString(ListItem.FilenameAndPath,.3DBD.) | SubString(ListItem.FilenameAndPath,.SBS.)]">3DCase</value>
+		<value condition="Skin.HasSetting(UseDiscTypeCase) + ListItem.IsStereoscopic">3DCase</value>
+		<value condition="Skin.HasSetting(UseDiscTypeCase) + [SubString(ListItem.FilenameAndPath,bluray) | SubString(ListItem.FilenameAndPath,bdrip) | SubString(ListItem.FilenameAndPath,bd25) | SubString(ListItem.FilenameAndPath,bd50)]">bd</value>
+		<value condition="Skin.HasSetting(UseDiscTypeCase) + [StringCompare(ListItem.VideoResolution,1080) | StringCompare(ListItem.VideoResolution,720)]">bd</value>
+		<value condition="Skin.HasSetting(UseDiscTypeCase) + SubString(ListItem.FilenameAndPath,hddvd)">hddvd</value>
+		<value condition="Skin.HasSetting(UseDiscTypeCase) + SubString(ListItem.FilenameAndPath,dvd)">dvd</value>
+		<value condition="Skin.HasSetting(UseDiscTypeCase) + [StringCompare(ListItem.VideoResolution,480) | StringCompare(ListItem.VideoResolution,540) | StringCompare(ListItem.VideoResolution,576)]">dvd</value>
+		<value condition="Skin.HasSetting(UseDiscTypeCase) + [SubString(ListItem.FilenameAndPath,pdtv) | SubString(ListItem.FilenameAndPath,hdtv) | SubString(ListItem.FilenameAndPath,dsr)]">TVseries</value>
+		
+		<value condition="Container.Content(tvshows) | Container.Content(seasons)">TVseries</value>
+		<value>dv</value>
 	</variable>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 	<variable name="UPnPServerType" type="text">
 		<value condition="Skin.String(UPnPServer,WinHomeServer)">$LOCALIZE[31144]</value>
 		<value condition="Skin.String(UPnPServer,Plex)">$LOCALIZE[31145]</value>
@@ -2596,14 +2611,10 @@
 		<value condition="!IsEmpty(Skin.String(UPnP_Path))">$INFO[Skin.String(UPnP_Path)]</value>
 		<value>$LOCALIZE[31150]</value>
 	</variable>
-	
-	
 	<variable name="PingMacDesc" type="text">
 		<value condition="!IsEmpty(Skin.String(PingMacAddr))">$INFO[Skin.String(PingMacAddr)]</value>
 		<value>$LOCALIZE[31092]</value>
 	</variable>
-	
-	
 	<variable name="VideoFilesCmd" type="text">
 		<value condition="Skin.String(UPnPServer,Kodi)">ActivateWindow(VideoLibrary,"$INFO[Skin.String(UPnP_Path)]sources%3a%2f%2fvideo%2f/",return)</value>
 		<value condition="Skin.String(UPnPServer,WinHomeServer)">ActivateWindow(VideoLibrary,"$INFO[Skin.String(UPnP_Path)]2/",return)</value>

@@ -194,7 +194,7 @@
 					<top>510</top>
 					<width>640</width>
 					<height>15</height>
-					<label>$INFO[ListItem.PictureDateTime,[COLOR=blue]$LOCALIZE[31948][/COLOR] - ]</label>
+					<label>$INFO[ListItem.PictureDateTime,[COLOR=$VAR[MainColorOne]]$LOCALIZE[31948][/COLOR] - ]</label>
 					<align>left</align>
 					<aligny>center</aligny>
 					<font>font13</font>
@@ -207,7 +207,7 @@
 					<top>535</top>
 					<width>640</width>
 					<height>15</height>
-					<label>$INFO[ListItem.PictureResolution,[COLOR=blue]$LOCALIZE[31999][/COLOR] - ]</label>
+					<label>$INFO[ListItem.PictureResolution,[COLOR=$VAR[MainColorOne]]$LOCALIZE[31999][/COLOR] - ]</label>
 					<align>left</align>
 					<aligny>center</aligny>
 					<font>font13</font>

@@ -8,7 +8,8 @@
 	<onload condition="!IsEmpty(Window(Home).Property(SubMenuBackground))">ClearProperty(SubMenuBackground,Home)</onload>
 	<onload condition="!IsEmpty(Window(Home).Property(MenuBackground))">ClearProperty(MenuBackground,Home)</onload>
 	<onload condition="Skin.HasSetting(HolidayEffects) + System.Date(1-6,11-23)">Skin.Reset(HolidayEffects)</onload>
-	<onload condition="Skin.HasSetting(EnablePingWOL) + Skin.String(WOLPingTimer) + Skin.String(PingMacAddr)">AlarmClock(WOLPingAlarm,WakeOnLan($INFO[Skin.String(PingMacAddr)]),$INFO[Skin.String(WOLPingTimer)]:00,silent,loop)</onload>
+	<onload condition="IsEmpty(Window.Property(PingAlarmSet)) + Skin.HasSetting(EnablePingWOL) + Skin.String(WOLPingTimer) + Skin.String(PingMacAddr)">AlarmClock(WOLPingAlarm,WakeOnLan($INFO[Skin.String(PingMacAddr)]),$INFO[Skin.String(WOLPingTimer)]:00,silent,loop)</onload>
+	<onload condition="Skin.HasSetting(EnablePingWOL) + Skin.String(WOLPingTimer) + Skin.String(PingMacAddr)">SetProperty(PingAlarmSet,1)</onload>
 	<onload condition="System.HasAddon(script.favourites)">XBMC.RunScript(script.favourites)</onload>
 	<onload condition="IsEmpty(Skin.String(WeatherFanartDir))">Skin.SetString(WeatherFanartDir,special://skin/extras/Weather/)</onload>
 	<onload condition="!Skin.HasSetting(DisableSlideShowArt) + IsEmpty(Window.Property(ArtistSlideshowRunning))">RunScript(script.artistslideshow, daemon=True)</onload>
@@ -28,7 +29,33 @@
 	<onload condition="!IsEmpty(Weather.Plugin) + !Weather.IsFetched">Weather.Refresh</onload>
 	<onload condition="Window.Previous(Startup)">Control.Move(9000,$INFO[Skin.String(InitialMenuItem)])</onload>
 	<controls>
-	
+		<control type="group">
+			<control type="wraplist" id="8034">
+				<content target="video" limit="10">$INFO[Skin.String(UPnP_Path)]library%3a%2f%2fvideo%2frecentlyaddedmovies.xml%2f/</content>
+			</control>
+			<!--
+			<control type="wraplist" id="8051">
+				<content target="video" limit="10">$INFO[Skin.String(UPnP_Path)]library%3a%2f%2fvideo%2frecentlyaddedepisodes.xml%2f/</content>
+			</control>
+			
+			<control type="wraplist" id="8053">
+				<content target="video" limit="10">$INFO[Skin.String(UPnP_Path)]library%3a%2f%2fvideo%2fmusicvideos%2ftitles.xml%2f/</content>
+			</control>
+			<control type="wraplist" id="8054">
+				<content target="music" limit="12">$INFO[Skin.String(UPnP_Path)]musicdb%3a%2f%2frecentlyplayedalbums%2f/</content>
+			</control>
+			<control type="wraplist" id="8052">
+				<content target="music" limit="50">$INFO[Skin.String(UPnP_Path)]musicdb%3a%2f%2fartists%2f/</content>
+			</control>
+			<control type="wraplist" id="8055">
+				<content target="video" limit="50">$INFO[Skin.String(UPnP_Path)]library%3a%2f%2fvideo%2fmovies%2ftitles.xml%2f/</content>
+			</control>
+			<control type="wraplist" id="8056">
+				<content target="video" limit="50">$INFO[Skin.String(UPnP_Path)]library%3a%2f%2fvideo%2ftvshows%2ftitles.xml%2f/</content>
+			</control>
+			-->
+			<visible>Skin.HasSetting(UPnP_Mode) + Skin.String(UPnPServer,Kodi)</visible>
+		</control>
 		<include>CommonBackground</include>
 		<include condition="Skin.HasSetting(EnableRainDropEffect) | Skin.HasSetting(HolidayEffects)">AnimatedBackgroundEffect</include>
 		<control type="image">
@@ -176,7 +203,7 @@
 					<align>right</align>
 					<aligny>center</aligny>
 					<font>font12_title</font>
-					<textcolor>blue</textcolor>
+					<textcolor>$VAR[MainColorOne]</textcolor>
 					<shadowcolor>black</shadowcolor>
 				</control>
 				<control type="label">
@@ -243,7 +270,7 @@
 					<align>right</align>
 					<aligny>center</aligny>
 					<font>font12_title</font>
-					<textcolor>blue</textcolor>
+					<textcolor>$VAR[MainColorOne]</textcolor>
 					<shadowcolor>black</shadowcolor>
 				</control>
 				<control type="label">
@@ -480,6 +507,153 @@
 					<textcolor>white</textcolor>
 					<shadowcolor>black</shadowcolor>
 				</control>
+			</control>
+		</control>
+		<!-- Suggested Movie Info -->
+		<control type="group">
+			<left>0</left>
+			<top>60</top>
+			<visible>![!Skin.HasSetting(LowerMainMenuBar) + Skin.HasSetting(EnableLargeWidgets)]</visible>
+			<visible>!Player.HasMedia + !IsEmpty(Window(Home).Property(RecommendedMovie.1.Title)) + !Skin.HasSetting(HideSuggestedMedia)</visible>
+			<visible>!IntegerGreaterThan(Window(Home).Property(RecommendedMovie.1.PercentPlayed),95)</visible>
+			<visible>StringCompare(Container(9000).ListItem.Property(HiLiteItem),Movies)</visible>
+			<include>VisibleFadeEffect</include>
+			<include>Window_OpenClose_Animation</include>
+			<animation effect="slide" start="0,0" end="0,160" time="0" condition="Skin.HasSetting(LowerMainMenuBar)">Conditional</animation>
+			<control type="image">
+				<description>Cover image</description>
+				<left>20</left>
+				<top>45</top>
+				<width>120</width>
+				<height>300</height>
+				<aspectratio aligny="bottom">keep</aspectratio>
+				<texture fallback="DefaultVideoCover.png">$INFO[Window(Home).Property(RecommendedMovie.1.Art(poster))]</texture>
+				<bordertexture border="8">ThumbBorder.png</bordertexture>
+				<bordersize>5</bordersize>
+			</control>
+			<control type="label">
+				<description>NowPlaying label</description>
+				<left>160</left>
+				<top>235</top>
+				<height>25</height>
+				<width>1000</width>
+				<label>$LOCALIZE[31269] $LOCALIZE[20338]</label>
+				<align>left</align>
+				<aligny>center</aligny>
+				<font>font12_title</font>
+				<textcolor>$VAR[MainColorOne]</textcolor>
+				<shadowcolor>black</shadowcolor>
+			</control>
+			<control type="label">
+				<description>Title label</description>
+				<left>160</left>
+				<top>255</top>
+				<height>30</height>
+				<width>1000</width>
+				<label>$INFO[Window(Home).Property(RecommendedMovie.1.Title)]$INFO[Window(Home).Property(RecommendedMovie.1.Year),[COLOR=grey] (,)[/COLOR]]</label>
+				<align>left</align>
+				<aligny>center</aligny>
+				<font>font13_title</font>
+				<textcolor>white</textcolor>
+				<shadowcolor>black</shadowcolor>
+			</control>
+			<control type="label">
+				<description>Studio label</description>
+				<left>160</left>
+				<top>285</top>
+				<height>25</height>
+				<width>1000</width>
+				<label>$INFO[Window(Home).Property(RecommendedMovie.1.Studio)]</label>
+				<align>left</align>
+				<aligny>center</aligny>
+				<font>font12</font>
+				<textcolor>white</textcolor>
+				<shadowcolor>black</shadowcolor>
+			</control>
+			<control type="label">
+				<description>Time Label</description>
+				<left>160</left>
+				<top>310</top>
+				<height>30</height>
+				<width>300</width>
+				<label>$INFO[Window(Home).Property(RecommendedMovie.1.PercentPlayed),$LOCALIZE[31268] ]$INFO[Window(Home).Property(RecommendedMovie.1.Runtime), $LOCALIZE[1443] , $LOCALIZE[12391]]</label>
+				<align>left</align>
+				<aligny>center</aligny>
+				<font>font12</font>
+				<textcolor>white</textcolor>
+				<shadowcolor>black</shadowcolor>
+			</control>
+		</control>
+		<!-- Suggested Episode Info -->
+		<control type="group">
+			<left>0</left>
+			<top>60</top>
+			<visible>![!Skin.HasSetting(LowerMainMenuBar) + Skin.HasSetting(EnableLargeWidgets)]</visible>
+			<visible>!Player.HasMedia + !IsEmpty(Window(Home).Property(RecommendedEpisode.1.Title)) + !Skin.HasSetting(HideSuggestedMedia)</visible>
+			<visible>StringCompare(Container(9000).ListItem.Property(HiLiteItem),TVShows)</visible>
+			<include>VisibleFadeEffect</include>
+			<include>Window_OpenClose_Animation</include>
+			<animation effect="slide" start="0,0" end="0,160" time="0" condition="Skin.HasSetting(LowerMainMenuBar)">Conditional</animation>
+			<control type="image">
+				<description>Cover image</description>
+				<left>20</left>
+				<top>45</top>
+				<width>120</width>
+				<height>300</height>
+				<aspectratio aligny="bottom">keep</aspectratio>
+				<texture fallback="DefaultVideoCover.png">$INFO[Window(Home).Property(RecommendedEpisode.1.Art(tvshow.poster))]</texture>
+				<bordertexture border="8">ThumbBorder.png</bordertexture>
+				<bordersize>5</bordersize>
+			</control>
+			<control type="label">
+				<left>160</left>
+				<top>235</top>
+				<height>25</height>
+				<width>1000</width>
+				<label>$LOCALIZE[31251] $LOCALIZE[20359]</label>
+				<align>left</align>
+				<aligny>center</aligny>
+				<font>font12_title</font>
+				<textcolor>$VAR[MainColorOne]</textcolor>
+				<shadowcolor>black</shadowcolor>
+			</control>
+			<control type="label">
+				<description>TV Show Season Ep Label</description>
+				<left>160</left>
+				<top>260</top>
+				<height>25</height>
+				<width>1000</width>
+				<label>$INFO[Window(Home).Property(RecommendedEpisode.1.Title)]</label>
+				<align>left</align>
+				<aligny>center</aligny>
+				<font>font12</font>
+				<textcolor>white</textcolor>
+				<shadowcolor>black</shadowcolor>
+			</control>
+			<control type="label">
+				<description>Title label</description>
+				<left>160</left>
+				<top>280</top>
+				<height>30</height>
+				<width>1000</width>
+				<label>$INFO[Window(Home).Property(RecommendedEpisode.1.TVshowTitle)]</label>
+				<align>left</align>
+				<aligny>center</aligny>
+				<font>font13_title</font>
+				<textcolor>white</textcolor>
+				<shadowcolor>black</shadowcolor>
+			</control>
+			<control type="label">
+				<left>160</left>
+				<top>310</top>
+				<height>30</height>
+				<width>300</width>
+				<label>$INFO[Window(Home).Property(RecommendedEpisode.1.Episode),$LOCALIZE[20359] ]$INFO[Window(Home).Property(RecommendedEpisode.1.Season), $LOCALIZE[1443] $LOCALIZE[20373] ]</label>
+				<align>left</align>
+				<aligny>center</aligny>
+				<font>font12</font>
+				<textcolor>white</textcolor>
+				<shadowcolor>black</shadowcolor>
 			</control>
 		</control>
 		<include>HomeWidgetDisplay</include>
@@ -861,8 +1035,8 @@
 				<width>1145</width>
 				<font>font12</font>
 				<urlset>1</urlset>
-				<textcolor>blue</textcolor>
-				<titlecolor>blue</titlecolor>
+				<textcolor>$VAR[MainColorOne]</textcolor>
+				<titlecolor>$VAR[MainColorOne]</titlecolor>
 				<headlinecolor>white</headlinecolor>
 				<visible>!Skin.HasSetting(HideHomePowerBtn) + [!Player.HasAudio | IsEmpty(MusicPlayer.offset(1).Artist) | Skin.HasSetting(HideNextSongsInfo)]</visible>
 			</control>
@@ -874,8 +1048,8 @@
 				<width>1190</width>
 				<font>font12</font>
 				<urlset>1</urlset>
-				<textcolor>blue</textcolor>
-				<titlecolor>blue</titlecolor>
+				<textcolor>$VAR[MainColorOne]</textcolor>
+				<titlecolor>$VAR[MainColorOne]</titlecolor>
 				<headlinecolor>white</headlinecolor>
 				<visible>Skin.HasSetting(HideHomePowerBtn) + [!Player.HasAudio | IsEmpty(MusicPlayer.offset(1).Artist) | Skin.HasSetting(HideNextSongsInfo)]</visible>
 			</control>
@@ -976,7 +1150,6 @@
 				<width>35</width>
 				<height>35</height>
 				<aspectratio>keep</aspectratio>
-				<!--texture>$INFO[Skin.String(UsrFavBtnCmd.Icon)]</texture-->
 				<texture>icon_favourites.png</texture>
 			</control>
 		</control>

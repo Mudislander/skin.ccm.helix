@@ -40,7 +40,7 @@
 				<font>font13_title</font>
 				<align>center</align>
 				<aligny>center</aligny>
-				<textcolor>blue</textcolor>
+				<textcolor>$VAR[MainColorOne]</textcolor>
 				<shadowcolor>black</shadowcolor>
 				<label>$LOCALIZE[31326]</label>
 			</control>
@@ -170,6 +170,14 @@
 						<visible>Library.HasContent(Movies)</visible>
 					</item>
 					<item>
+						<description>UPnP Movies</description>
+						<label>$LOCALIZE[31115] $LOCALIZE[342]</label>
+						<onclick>Dialog.Close(2118)</onclick>
+						<onclick>Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Widget,UPnPMovies)</onclick>
+						<onclick>ClearProperty(UsrSelectBtn,Home)</onclick>
+						<visible>Skin.HasSetting(UPnP_Mode) + Skin.String(UPnPServer,Kodi)</visible>
+					</item>
+					<item>
 						<description>Recent Episodes</description>
 						<label>$LOCALIZE[31195]</label>
 						<onclick>Dialog.Close(2118)</onclick>
@@ -202,22 +210,6 @@
 						<visible>Library.HasContent(TVShows)</visible>
 						<visible>!Skin.HasSetting(DisableTVNextAired)</visible>
 					</item>
-					
-					
-					<!--item>
-                        <description>Recent Songs</description>
-                        <label>$LOCALIZE[31187]</label>
-                        <onclick>Dialog.Close(2118)</onclick>
-                        <onclick>Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Widget,RecentSongs)</onclick>
-                        <onclick>ClearProperty(UsrSelectBtn,Home)</onclick>
-                    </item-->
-					<!--item>
-                        <description>Random Songs</description>
-                        <label>$LOCALIZE[31185]</label>
-                        <onclick>Dialog.Close(2118)</onclick>
-                        <onclick>Skin.SetString($INFO[Window(Home).Property(UsrSelectBtn)].Widget,RandomSongs)</onclick>
-                        <onclick>ClearProperty(UsrSelectBtn,Home)</onclick>
-                    </item-->
 					<item>
 						<description>Recent Albums</description>
 						<label>$LOCALIZE[31192]</label>
@@ -270,7 +262,6 @@
 						<onclick>ClearProperty(UsrSelectBtn,Home)</onclick>
 						<visible>Library.HasContent(MusicVideos)</visible>
 					</item>
-					
 				</content>
 			</control>
 			<control type="scrollbar" id="60">

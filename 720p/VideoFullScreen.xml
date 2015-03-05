@@ -1,8 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <window>
 	<defaultcontrol>-</defaultcontrol>
-	<!--onunload>Skin.SetString(LastVideoPlayed,$INFO[Player.Folderpath]$INFO[Player.Filename])</onunload-->
-	<!--onunload>Skin.SetString(UsrFavBtnCmd.Path,PlayMedia(&quot;$INFO[Player.Folderpath]$INFO[Player.Filename]&quot;))</onunload-->
 	<onunload>Skin.SetString(LastVideoPlayed,PlayMedia("$INFO[Player.Filenameandpath]"))</onunload>
 	<controls>
 		<!-- Intro infos -->
@@ -400,7 +398,7 @@
 				<align>left</align>
 				<aligny>center</aligny>
 				<font>font13_title</font>
-				<textcolor>blue</textcolor>
+				<textcolor>$VAR[MainColorOne]</textcolor>
 			</control>
 			<control type="label">
 				<description>Backend</description>

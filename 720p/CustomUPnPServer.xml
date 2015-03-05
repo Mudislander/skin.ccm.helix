@@ -7,28 +7,11 @@
 		<top>0</top>
 	</coordinates>
 	<onload condition="Skin.HasSetting(EnablePingWOL) + Skin.String(PingMacAddr)">WakeOnLan($INFO[Skin.String(PingMacAddr)])</onload>
-	
-	<!-- TEMP -->
-	<onload>Container(8050).Refresh</onload>
-	<!-- END OF TEMP -->
-	
-	
 	<controls>
-	
-	
-	
-	
-	
-	
-	
 		<control type="group">
-		
-		<control type="list" id="8050">
-			<content>upnp://</content>
-		</control>
-		
-		
-		
+			<control type="list" id="8050">
+				<content>upnp://</content>
+			</control>
 			<animation effect="slide" start="400,0" end="0,0" time="400" tween="quadratic" easing="out">WindowOpen</animation>
 			<animation effect="slide" start="0,0" end="400,0" time="400" tween="quadratic" easing="out">WindowClose</animation>
 			<control type="image">
@@ -63,12 +46,10 @@
 				<font>font13_title</font>
 				<align>center</align>
 				<aligny>center</aligny>
-				<textcolor>blue</textcolor>
+				<textcolor>$VAR[MainColorOne]</textcolor>
 				<shadowcolor>black</shadowcolor>
 				<label>$LOCALIZE[31150]</label>
 			</control>
-			
-			
 			<control type="image">
 				<left>390r</left>
 				<top>80</top>
@@ -80,20 +61,11 @@
 				<bordertexture border="8">ThumbShadow.png</bordertexture>
 				<bordersize>8</bordersize>
 			</control>
-			
-			
 			<control type="list" id="450">
-			<left>390r</left>
+				<left>390r</left>
 				<top>290</top>
 				<width>355</width>
 				<height>360</height>
-			
-				<!--left>390r</left>
-				<top>130</top>
-				<width>440</width>
-				<height>480</height-->
-				
-				
 				<onup>450</onup>
 				<onleft>Dialog.Close(2132)</onleft>
 				<onright>60</onright>
@@ -149,9 +121,7 @@
 						<info>ListItem.Label</info>
 					</control>
 				</focusedlayout>
-	
 				<content>
-				
 					<item>
 						<description>Clear Setting</description>
 						<label>$LOCALIZE[31317]</label>
@@ -161,19 +131,12 @@
 						<onclick>Skin.Reset(UPnP_Name)</onclick>
 						<onclick>Dialog.Close(2132)</onclick>
 					</item>
-					
-					
-					
-					
-					
 					<item>
 						<label>$INFO[Container(8050).ListItem(0).label]</label>
 						<icon>$INFO[Container(8050).ListItem(0).icon]</icon>
 						<thumb>$INFO[Container(8050).ListItem(0).thumb]</thumb>
 						<onclick>Skin.SetString(UPnP_Path,$INFO[Container(8050).ListItem(0).FileNameAndPath])</onclick>
-						
 						<onclick>Skin.SetString(UPnP_Name,$INFO[Container(8050).ListItem(0).label])</onclick>
-						
 						<onclick>Dialog.Close(2132)</onclick>
 						<visible>IntegerGreaterThan(Container(8050).NumItems,0)</visible>
 					</item>
@@ -258,9 +221,6 @@
 						<onclick>Dialog.Close(2132)</onclick>
 						<visible>IntegerGreaterThan(Container(8050).NumItems,9)</visible>
 					</item>
-					
-					
-					
 					<item>
 						<label>$INFO[Container(8050).ListItem(10).label]</label>
 						<icon>$INFO[Container(8050).ListItem(10).icon]</icon>
@@ -351,36 +311,18 @@
 						<onclick>Dialog.Close(2132)</onclick>
 						<visible>IntegerGreaterThan(Container(8050).NumItems,19)</visible>
 					</item>
-					
-					
-					
 					<item>
 						<description>Manual Browse</description>
 						<label>$LOCALIZE[1015]</label>
 						<icon>DefaultNetwork.png</icon>
 						<thumb>DefaultNetwork.png</thumb>
-						
 						<onclick>Dialog.Close(2132)</onclick>
 						<onclick>Skin.Reset(UPnP_Path)</onclick>
 						<onclick>Skin.Reset(UPnP_Name)</onclick>
 						<onclick>Skin.SetPath(UPnP_Path)</onclick>
 					</item>
-					
-					
-					
-					
-					
-					
-					
-					
-					
-	
 				</content>
 			</control>
-			
-			
-			
-			
 			<control type="scrollbar" id="60">
 				<left>1250</left>
 				<top>280</top>

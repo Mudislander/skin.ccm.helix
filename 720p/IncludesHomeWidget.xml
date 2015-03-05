@@ -133,7 +133,7 @@
 							<width>150</width>
 							<height>20</height>
 							<font>font12</font>
-							<textcolor>blue</textcolor>
+							<textcolor>$VAR[MainColorOne]</textcolor>
 							<selectedcolor>selected</selectedcolor>
 							<align>center</align>
 							<aligny>center</aligny>
@@ -380,7 +380,7 @@
 							<width>150</width>
 							<height>20</height>
 							<font>font12</font>
-							<textcolor>blue</textcolor>
+							<textcolor>$VAR[MainColorOne]</textcolor>
 							<selectedcolor>selected</selectedcolor>
 							<align>center</align>
 							<aligny>center</aligny>
@@ -559,7 +559,7 @@
 							<top>10</top>
 							<width>160</width>
 							<height>170</height>
-							<texture background="true">$INFO[ListItem.ActualIcon]</texture>
+							<texture background="true">$INFO[ListItem.Art(poster)]</texture>
 							<aspectratio>keep</aspectratio>
 							<bordertexture border="5">button-nofocus.png</bordertexture>
 							<bordersize>5</bordersize>
@@ -591,7 +591,7 @@
 							<top>10</top>
 							<width>160</width>
 							<height>170</height>
-							<texture background="true">$INFO[ListItem.ActualIcon]</texture>
+							<texture background="true">$INFO[ListItem.Art(poster)]</texture>
 							<aspectratio>keep</aspectratio>
 							<bordertexture border="5">folder-focus.png</bordertexture>
 							<bordersize>5</bordersize>
@@ -602,7 +602,7 @@
 							<top>10</top>
 							<width>160</width>
 							<height>170</height>
-							<texture>$INFO[ListItem.ActualIcon]</texture>
+							<texture>$INFO[ListItem.Art(poster)]</texture>
 							<aspectratio>keep</aspectratio>
 							<bordertexture border="5">button-nofocus.png</bordertexture>
 							<bordersize>5</bordersize>
@@ -627,7 +627,7 @@
 							<width>150</width>
 							<height>20</height>
 							<font>font12</font>
-							<textcolor>blue</textcolor>
+							<textcolor>$VAR[MainColorOne]</textcolor>
 							<selectedcolor>selected</selectedcolor>
 							<align>center</align>
 							<aligny>center</aligny>
@@ -635,7 +635,8 @@
 							<visible>Control.HasFocus(8004)</visible>
 						</control>
 					</focusedlayout>
-					<include>SuggestedVideoContent</include>
+					<!--include>SuggestedVideoContent</include-->
+					<content target="video">plugin://service.library.data.provider?type=recommendedmovies&amp;reload=$INFO[Window(home).Property(recommendedmovies)]</content>
 				</control>
 				<control type="button">
 					<include>SmallWidgetPosterLeft</include>
@@ -874,7 +875,7 @@
 							<width>150</width>
 							<height>20</height>
 							<font>font12</font>
-							<textcolor>blue</textcolor>
+							<textcolor>$VAR[MainColorOne]</textcolor>
 							<selectedcolor>selected</selectedcolor>
 							<align>center</align>
 							<aligny>center</aligny>
@@ -1059,6 +1060,15 @@
 							<bordertexture border="5">button-nofocus.png</bordertexture>
 							<bordersize>5</bordersize>
 						</control>
+						<control type="image">
+							<left>15</left>
+							<top>15</top>
+							<width>210</width>
+							<height>145</height>
+							<aspectratio align="center" aligny="bottom">keep</aspectratio>
+							<texture>$INFO[ListItem.Property(Logo)]</texture>
+							<visible>!Skin.HasSetting(DisableLogoArt)</visible>
+						</control>
 						<control type="label">
 							<left>20</left>
 							<top>168</top>
@@ -1116,6 +1126,15 @@
 							<bordersize>5</bordersize>
 							<visible>!Control.HasFocus(8008)</visible>
 						</control>
+						<control type="image">
+							<left>15</left>
+							<top>15</top>
+							<width>210</width>
+							<height>145</height>
+							<aspectratio align="center" aligny="bottom">keep</aspectratio>
+							<texture>$INFO[ListItem.Property(Logo)]</texture>
+							<visible>!Skin.HasSetting(DisableLogoArt)</visible>
+						</control>
 						<control type="label">
 							<left>20</left>
 							<top>168</top>
@@ -1148,7 +1167,7 @@
 							<width>200</width>
 							<height>20</height>
 							<font>font12</font>
-							<textcolor>blue</textcolor>
+							<textcolor>$VAR[MainColorOne]</textcolor>
 							<selectedcolor>selected</selectedcolor>
 							<align>center</align>
 							<aligny>center</aligny>
@@ -1233,6 +1252,15 @@
 							<bordertexture border="5">button-nofocus.png</bordertexture>
 							<bordersize>5</bordersize>
 						</control>
+						<control type="image">
+							<left>15</left>
+							<top>15</top>
+							<width>270</width>
+							<height>205</height>
+							<aspectratio align="center" aligny="bottom">keep</aspectratio>
+							<texture>$INFO[ListItem.Property(Logo)]</texture>
+							<visible>!Skin.HasSetting(DisableLogoArt)</visible>
+						</control>
 						<control type="label">
 							<left>10</left>
 							<top>230</top>
@@ -1283,6 +1311,15 @@
 							<bordersize>5</bordersize>
 							<visible>!Control.HasFocus(8009)</visible>
 						</control>
+						<control type="image">
+							<left>15</left>
+							<top>15</top>
+							<width>270</width>
+							<height>205</height>
+							<aspectratio align="center" aligny="bottom">keep</aspectratio>
+							<texture>$INFO[ListItem.Property(Logo)]</texture>
+							<visible>!Skin.HasSetting(DisableLogoArt)</visible>
+						</control>
 						<control type="label">
 							<left>10</left>
 							<top>230</top>
@@ -1315,7 +1352,7 @@
 							<width>280</width>
 							<height>20</height>
 							<font>font12</font>
-							<textcolor>blue</textcolor>
+							<textcolor>$VAR[MainColorOne]</textcolor>
 							<selectedcolor>selected</selectedcolor>
 							<align>center</align>
 							<aligny>center</aligny>
@@ -1397,6 +1434,15 @@
 							<bordertexture border="5">button-nofocus.png</bordertexture>
 							<bordersize>5</bordersize>
 						</control>
+						<control type="image">
+							<left>15</left>
+							<top>15</top>
+							<width>210</width>
+							<height>145</height>
+							<aspectratio align="center" aligny="bottom">keep</aspectratio>
+							<texture>$INFO[ListItem.Property(Logo)]</texture>
+							<visible>!Skin.HasSetting(DisableLogoArt)</visible>
+						</control>
 						<control type="label">
 							<left>20</left>
 							<top>168</top>
@@ -1454,6 +1500,15 @@
 							<bordersize>5</bordersize>
 							<visible>!Control.HasFocus(8010)</visible>
 						</control>
+						<control type="image">
+							<left>15</left>
+							<top>15</top>
+							<width>210</width>
+							<height>145</height>
+							<aspectratio align="center" aligny="bottom">keep</aspectratio>
+							<texture>$INFO[ListItem.Property(Logo)]</texture>
+							<visible>!Skin.HasSetting(DisableLogoArt)</visible>
+						</control>
 						<control type="label">
 							<left>20</left>
 							<top>168</top>
@@ -1486,7 +1541,7 @@
 							<width>200</width>
 							<height>20</height>
 							<font>font12</font>
-							<textcolor>blue</textcolor>
+							<textcolor>$VAR[MainColorOne]</textcolor>
 							<selectedcolor>selected</selectedcolor>
 							<align>center</align>
 							<aligny>center</aligny>
@@ -1571,6 +1626,15 @@
 							<bordertexture border="5">button-nofocus.png</bordertexture>
 							<bordersize>5</bordersize>
 						</control>
+						<control type="image">
+							<left>15</left>
+							<top>15</top>
+							<width>270</width>
+							<height>205</height>
+							<aspectratio align="center" aligny="bottom">keep</aspectratio>
+							<texture>$INFO[ListItem.Property(Logo)]</texture>
+							<visible>!Skin.HasSetting(DisableLogoArt)</visible>
+						</control>
 						<control type="label">
 							<left>10</left>
 							<top>230</top>
@@ -1621,6 +1685,15 @@
 							<bordersize>5</bordersize>
 							<visible>!Control.HasFocus(8011)</visible>
 						</control>
+						<control type="image">
+							<left>15</left>
+							<top>15</top>
+							<width>270</width>
+							<height>205</height>
+							<aspectratio align="center" aligny="bottom">keep</aspectratio>
+							<texture>$INFO[ListItem.Property(Logo)]</texture>
+							<visible>!Skin.HasSetting(DisableLogoArt)</visible>
+						</control>
 						<control type="label">
 							<left>10</left>
 							<top>230</top>
@@ -1653,7 +1726,7 @@
 							<width>280</width>
 							<height>20</height>
 							<font>font12</font>
-							<textcolor>blue</textcolor>
+							<textcolor>$VAR[MainColorOne]</textcolor>
 							<selectedcolor>selected</selectedcolor>
 							<align>center</align>
 							<aligny>center</aligny>
@@ -1735,6 +1808,15 @@
 							<bordertexture border="5">button-nofocus.png</bordertexture>
 							<bordersize>5</bordersize>
 						</control>
+						<control type="image">
+							<left>15</left>
+							<top>15</top>
+							<width>210</width>
+							<height>145</height>
+							<aspectratio align="center" aligny="bottom">keep</aspectratio>
+							<texture>$INFO[ListItem.Property(Logo)]</texture>
+							<visible>!Skin.HasSetting(DisableLogoArt)</visible>
+						</control>
 						<control type="label">
 							<left>20</left>
 							<top>168</top>
@@ -1792,6 +1874,15 @@
 							<bordersize>5</bordersize>
 							<visible>!Control.HasFocus(8012)</visible>
 						</control>
+						<control type="image">
+							<left>15</left>
+							<top>15</top>
+							<width>210</width>
+							<height>145</height>
+							<aspectratio align="center" aligny="bottom">keep</aspectratio>
+							<texture>$INFO[ListItem.Property(Logo)]</texture>
+							<visible>!Skin.HasSetting(DisableLogoArt)</visible>
+						</control>
 						<control type="label">
 							<left>20</left>
 							<top>168</top>
@@ -1824,7 +1915,7 @@
 							<width>200</width>
 							<height>20</height>
 							<font>font12</font>
-							<textcolor>blue</textcolor>
+							<textcolor>$VAR[MainColorOne]</textcolor>
 							<selectedcolor>selected</selectedcolor>
 							<align>center</align>
 							<aligny>center</aligny>
@@ -1909,6 +2000,15 @@
 							<bordertexture border="5">button-nofocus.png</bordertexture>
 							<bordersize>5</bordersize>
 						</control>
+						<control type="image">
+							<left>15</left>
+							<top>15</top>
+							<width>270</width>
+							<height>205</height>
+							<aspectratio align="center" aligny="bottom">keep</aspectratio>
+							<texture>$INFO[ListItem.Property(Logo)]</texture>
+							<visible>!Skin.HasSetting(DisableLogoArt)</visible>
+						</control>
 						<control type="label">
 							<left>10</left>
 							<top>230</top>
@@ -1959,6 +2059,15 @@
 							<bordersize>5</bordersize>
 							<visible>!Control.HasFocus(8013)</visible>
 						</control>
+						<control type="image">
+							<left>15</left>
+							<top>15</top>
+							<width>270</width>
+							<height>205</height>
+							<aspectratio align="center" aligny="bottom">keep</aspectratio>
+							<texture>$INFO[ListItem.Property(Logo)]</texture>
+							<visible>!Skin.HasSetting(DisableLogoArt)</visible>
+						</control>
 						<control type="label">
 							<left>10</left>
 							<top>230</top>
@@ -1991,7 +2100,7 @@
 							<width>280</width>
 							<height>20</height>
 							<font>font12</font>
-							<textcolor>blue</textcolor>
+							<textcolor>$VAR[MainColorOne]</textcolor>
 							<selectedcolor>selected</selectedcolor>
 							<align>center</align>
 							<aligny>center</aligny>
@@ -2160,7 +2269,7 @@
 							<width>180</width>
 							<height>20</height>
 							<font>font12</font>
-							<textcolor>blue</textcolor>
+							<textcolor>$VAR[MainColorOne]</textcolor>
 							<selectedcolor>selected</selectedcolor>
 							<align>center</align>
 							<aligny>center</aligny>
@@ -2326,7 +2435,7 @@
 							<width>225</width>
 							<height>20</height>
 							<font>font12</font>
-							<textcolor>blue</textcolor>
+							<textcolor>$VAR[MainColorOne]</textcolor>
 							<selectedcolor>selected</selectedcolor>
 							<align>center</align>
 							<aligny>center</aligny>
@@ -2495,7 +2604,7 @@
 							<width>180</width>
 							<height>20</height>
 							<font>font12</font>
-							<textcolor>blue</textcolor>
+							<textcolor>$VAR[MainColorOne]</textcolor>
 							<selectedcolor>selected</selectedcolor>
 							<align>center</align>
 							<aligny>center</aligny>
@@ -2661,7 +2770,7 @@
 							<width>225</width>
 							<height>20</height>
 							<font>font12</font>
-							<textcolor>blue</textcolor>
+							<textcolor>$VAR[MainColorOne]</textcolor>
 							<selectedcolor>selected</selectedcolor>
 							<align>center</align>
 							<aligny>center</aligny>
@@ -2830,7 +2939,7 @@
 							<width>180</width>
 							<height>20</height>
 							<font>font12</font>
-							<textcolor>blue</textcolor>
+							<textcolor>$VAR[MainColorOne]</textcolor>
 							<selectedcolor>selected</selectedcolor>
 							<align>center</align>
 							<aligny>center</aligny>
@@ -2996,7 +3105,7 @@
 							<width>225</width>
 							<height>20</height>
 							<font>font12</font>
-							<textcolor>blue</textcolor>
+							<textcolor>$VAR[MainColorOne]</textcolor>
 							<selectedcolor>selected</selectedcolor>
 							<align>center</align>
 							<aligny>center</aligny>
@@ -3167,7 +3276,7 @@
 							<width>200</width>
 							<height>20</height>
 							<font>font12</font>
-							<textcolor>blue</textcolor>
+							<textcolor>$VAR[MainColorOne]</textcolor>
 							<selectedcolor>selected</selectedcolor>
 							<align>center</align>
 							<aligny>center</aligny>
@@ -3334,7 +3443,7 @@
 							<width>280</width>
 							<height>20</height>
 							<font>font12</font>
-							<textcolor>blue</textcolor>
+							<textcolor>$VAR[MainColorOne]</textcolor>
 							<selectedcolor>selected</selectedcolor>
 							<align>center</align>
 							<aligny>center</aligny>
@@ -3505,7 +3614,7 @@
 							<width>200</width>
 							<height>20</height>
 							<font>font12</font>
-							<textcolor>blue</textcolor>
+							<textcolor>$VAR[MainColorOne]</textcolor>
 							<selectedcolor>selected</selectedcolor>
 							<align>center</align>
 							<aligny>center</aligny>
@@ -3672,7 +3781,7 @@
 							<width>280</width>
 							<height>20</height>
 							<font>font12</font>
-							<textcolor>blue</textcolor>
+							<textcolor>$VAR[MainColorOne]</textcolor>
 							<selectedcolor>selected</selectedcolor>
 							<align>center</align>
 							<aligny>center</aligny>
@@ -3843,7 +3952,7 @@
 							<width>200</width>
 							<height>20</height>
 							<font>font12</font>
-							<textcolor>blue</textcolor>
+							<textcolor>$VAR[MainColorOne]</textcolor>
 							<selectedcolor>selected</selectedcolor>
 							<align>center</align>
 							<aligny>center</aligny>
@@ -4010,7 +4119,7 @@
 							<width>280</width>
 							<height>20</height>
 							<font>font12</font>
-							<textcolor>blue</textcolor>
+							<textcolor>$VAR[MainColorOne]</textcolor>
 							<selectedcolor>selected</selectedcolor>
 							<align>center</align>
 							<aligny>center</aligny>
@@ -5464,7 +5573,7 @@
 							<width>140</width>
 							<height>20</height>
 							<font>font12</font>
-							<textcolor>blue</textcolor>
+							<textcolor>$VAR[MainColorOne]</textcolor>
 							<shadowcolor>black</shadowcolor>
 							<selectedcolor>selected</selectedcolor>
 							<align>center</align>
@@ -5535,7 +5644,7 @@
 							<width>140</width>
 							<height>20</height>
 							<font>font12</font>
-							<textcolor>blue</textcolor>
+							<textcolor>$VAR[MainColorOne]</textcolor>
 							<shadowcolor>black</shadowcolor>
 							<selectedcolor>selected</selectedcolor>
 							<align>center</align>
@@ -5574,7 +5683,7 @@
 							<width>200</width>
 							<height>20</height>
 							<font>font10</font>
-							<textcolor>blue</textcolor>
+							<textcolor>$VAR[MainColorOne]</textcolor>
 							<selectedcolor>selected</selectedcolor>
 							<align>center</align>
 							<aligny>center</aligny>
@@ -5585,14 +5694,7 @@
 					<include>WeatherForecastContent</include>
 				</control>
 			</control>
-		
-		
-		
-		
-		
-<!-- ####################################### -->		
-		
-		<control type="group">
+			<control type="group">
 				<left>160</left>
 				<top>60</top>
 				<visible>!Skin.HasSetting(DisableTVNextAired)</visible>
@@ -5660,6 +5762,7 @@
 							<height>145</height>
 							<aspectratio align="center" aligny="bottom">keep</aspectratio>
 							<texture>$INFO[ListItem.Property(Logo)]</texture>
+							<visible>!Skin.HasSetting(DisableLogoArt)</visible>
 						</control>
 						<control type="label">
 							<left>20</left>
@@ -5725,6 +5828,7 @@
 							<height>145</height>
 							<aspectratio align="center" aligny="bottom">keep</aspectratio>
 							<texture>$INFO[ListItem.Property(Logo)]</texture>
+							<visible>!Skin.HasSetting(DisableLogoArt)</visible>
 						</control>
 						<control type="label">
 							<left>20</left>
@@ -5758,7 +5862,7 @@
 							<width>200</width>
 							<height>20</height>
 							<font>font12</font>
-							<textcolor>blue</textcolor>
+							<textcolor>$VAR[MainColorOne]</textcolor>
 							<selectedcolor>selected</selectedcolor>
 							<align>center</align>
 							<aligny>center</aligny>
@@ -5850,6 +5954,7 @@
 							<height>205</height>
 							<aspectratio align="center" aligny="bottom">keep</aspectratio>
 							<texture>$INFO[ListItem.Property(Logo)]</texture>
+							<visible>!Skin.HasSetting(DisableLogoArt)</visible>
 						</control>
 						<control type="label">
 							<left>10</left>
@@ -5901,7 +6006,6 @@
 							<bordersize>5</bordersize>
 							<visible>!Control.HasFocus(8033)</visible>
 						</control>
-						
 						<control type="image">
 							<left>15</left>
 							<top>15</top>
@@ -5909,8 +6013,8 @@
 							<height>205</height>
 							<aspectratio align="center" aligny="bottom">keep</aspectratio>
 							<texture>$INFO[ListItem.Property(Logo)]</texture>
+							<visible>!Skin.HasSetting(DisableLogoArt)</visible>
 						</control>
-						
 						<control type="label">
 							<left>10</left>
 							<top>230</top>
@@ -5943,7 +6047,7 @@
 							<width>280</width>
 							<height>20</height>
 							<font>font12</font>
-							<textcolor>blue</textcolor>
+							<textcolor>$VAR[MainColorOne]</textcolor>
 							<selectedcolor>selected</selectedcolor>
 							<align>center</align>
 							<aligny>center</aligny>
@@ -5964,9 +6068,255 @@
 					<visible>Control.HasFocus(8033) + Container(8033).HasNext</visible>
 				</control>
 			</control>
-
-<!-- ####################################### -->		
-		
+			<control type="group">
+				<left>190</left>
+				<top>60</top>
+				<visible>Skin.HasSetting(UPnP_Mode) + Skin.String(UPnPServer,Kodi)</visible>
+				<visible>
+					!Skin.HasSetting(EnableLargeWidgets) | 
+					[Skin.HasSetting(EnableLargeWidgets) + Player.HasMedia + !Skin.HasSetting(LowerMainMenuBar) + !Skin.HasSetting(HideNowPlayingInfo)]
+				</visible>
+				<visible>StringCompare(Container(9000).ListItem.Property(WidgetSet),UPnPMovies)</visible>
+				<include>VisibleFadeEffect</include>
+				<!--control type="label">
+					<left>180</left>
+					<top>220</top>
+					<height>20</height>
+					<width>540</width>
+					<label>31198</label>
+					<align>center</align>
+					<aligny>center</aligny>
+					<font>font12_title</font>
+					<textcolor>white</textcolor>
+					<shadowcolor>black</shadowcolor>
+					<visible>IntegerGreaterThan(Container(8035).NumItems,0)</visible>
+				</control-->
+				<control type="list" id="8035">
+					<animation effect="slide" start="0,0" end="90,0" time="0" condition="StringCompare(Container(8035).NumItems,4)">conditional</animation>
+					<animation effect="slide" start="0,0" end="180,0" time="0" condition="StringCompare(Container(8035).NumItems,3)">conditional</animation>
+					<animation effect="slide" start="0,0" end="270,0" time="0" condition="StringCompare(Container(8035).NumItems,2)">conditional</animation>
+					<animation effect="slide" start="0,0" end="360,0" time="0" condition="StringCompare(Container(8035).NumItems,1)">conditional</animation>
+					<left>0</left>
+					<top>0</top>
+					<width>900</width>
+					<height>220</height>
+					<onleft>8035</onleft>
+					<onright>8035</onright>
+					<onup>21</onup>
+					<ondown condition="Skin.HasSetting(LowerMainMenuBar)">9002</ondown>
+					<ondown condition="!Skin.HasSetting(LowerMainMenuBar) + !Skin.HasSetting(DisableGlobalSearch)">608</ondown>
+					<ondown condition="!Skin.HasSetting(LowerMainMenuBar) + Skin.HasSetting(DisableGlobalSearch)">603</ondown>
+					<viewtype label="535">list</viewtype>
+					<pagecontrol>-</pagecontrol>
+					<scrolltime>200</scrolltime>
+					<orientation>Horizontal</orientation>
+					<itemlayout height="220" width="180">
+						<control type="image">
+							<left>0</left>
+							<top>0</top>
+							<width>180</width>
+							<height>220</height>
+							<texture border="15">RecentAddedBack.png</texture>
+						</control>
+						<control type="image">
+							<left>10</left>
+							<top>10</top>
+							<width>160</width>
+							<height>170</height>
+							<texture background="true">$INFO[ListItem..Art(poster)]</texture>
+							<aspectratio>keep</aspectratio>
+							<bordertexture border="5">button-nofocus.png</bordertexture>
+							<bordersize>5</bordersize>
+						</control>
+						<control type="label">
+							<left>15</left>
+							<top>185</top>
+							<width>150</width>
+							<height>20</height>
+							<font>font12</font>
+							<textcolor>white</textcolor>
+							<shadowcolor>black</shadowcolor>
+							<selectedcolor>selected</selectedcolor>
+							<align>center</align>
+							<aligny>center</aligny>
+							<label>$INFO[ListItem.Label]</label>
+						</control>
+					</itemlayout>
+					<focusedlayout height="220" width="180">
+						<control type="image">
+							<left>0</left>
+							<top>0</top>
+							<width>180</width>
+							<height>220</height>
+							<texture border="15">RecentAddedBack.png</texture>
+						</control>
+						<control type="image">
+							<left>10</left>
+							<top>10</top>
+							<width>160</width>
+							<height>170</height>
+							<texture background="true">$INFO[ListItem.Art(poster)]</texture>
+							<aspectratio>keep</aspectratio>
+							<bordertexture border="5">folder-focus.png</bordertexture>
+							<bordersize>5</bordersize>
+							<visible>Control.HasFocus(8035)</visible>
+						</control>
+						<control type="image">
+							<left>10</left>
+							<top>10</top>
+							<width>160</width>
+							<height>170</height>
+							<texture>$INFO[ListItem.Art(poster)]</texture>
+							<aspectratio>keep</aspectratio>
+							<bordertexture border="5">button-nofocus.png</bordertexture>
+							<bordersize>5</bordersize>
+							<visible>!Control.HasFocus(8035)</visible>
+						</control>
+						<control type="label">
+							<left>15</left>
+							<top>185</top>
+							<width>150</width>
+							<height>20</height>
+							<font>font12</font>
+							<textcolor>white</textcolor>
+							<shadowcolor>black</shadowcolor>
+							<selectedcolor>selected</selectedcolor>
+							<align>center</align>
+							<aligny>center</aligny>
+							<label>$INFO[ListItem.Label]</label>
+						</control>
+						<control type="label">
+							<left>15</left>
+							<top>185</top>
+							<width>150</width>
+							<height>20</height>
+							<font>font12</font>
+							<textcolor>$VAR[MainColorOne]</textcolor>
+							<selectedcolor>selected</selectedcolor>
+							<align>center</align>
+							<aligny>center</aligny>
+							<label>$INFO[ListItem.Label]</label>
+							<visible>Control.HasFocus(8035)</visible>
+						</control>
+					</focusedlayout>
+					<!--include>UPnPVideoContent</include-->
+					<content target="video" limit="10">$INFO[Skin.String(UPnP_Path)]library%3a%2f%2fvideo%2frecentlyaddedmovies.xml%2f/</content>
+				</control>
+				<control type="button">
+					<include>SmallWidgetPosterLeft</include>
+					<onclick>Control.Move(8035,-1)</onclick>
+					<visible>Container(8035).HasPrevious</visible>
+				</control>
+				<control type="button">
+					<include>SmallWidgetPosterRight</include>
+					<onclick>Control.Move(8035,1)</onclick>
+					<visible>Container(8035).HasNext</visible>
+					<include>VisibleFadeEffect</include>
+				</control>
+			</control>
+			<control type="group">
+				<left>0</left>
+				<top>54</top>
+				<visible>Skin.HasSetting(UPnP_Mode) + Skin.String(UPnPServer,Kodi)</visible>
+				<visible>
+				[Skin.HasSetting(EnableLargeWidgets) + !Player.HasMedia] | 
+				[Skin.HasSetting(EnableLargeWidgets) + Skin.HasSetting(LowerMainMenuBar) + Player.HasMedia] | 
+				[Skin.HasSetting(EnableLargeWidgets) + Skin.HasSetting(HideNowPlayingInfo)+ Player.HasMedia]
+				</visible>
+				<visible>StringCompare(Container(9000).ListItem.Property(WidgetSet),UPnPMovies)</visible>
+				<include>VisibleFadeEffect</include>
+				<!--control type="label">
+					<left>370</left>
+					<top>284</top>
+					<height>20</height>
+					<width>540</width>
+					<label>31198</label>
+					<align>center</align>
+					<aligny>center</aligny>
+					<font>font12_title</font>
+					<textcolor>white</textcolor>
+					<shadowcolor>black</shadowcolor>
+					<visible>IntegerGreaterThan(Container(8036).NumItems,0)</visible>
+				</control-->
+				<control type="image">
+					<left>-20</left>
+					<top>-5</top>
+					<width>1320</width>
+					<height>295</height>
+					<texture border="5">ContentPanel.png</texture>
+					<visible>IntegerGreaterThan(Container(8036).NumItems,0)</visible>
+				</control>
+				<control type="list" id="8036">
+					<animation effect="slide" start="0,0" end="485,0" time="0" condition="StringCompare(Container(8036).NumItems,1)">conditional</animation>
+					<animation effect="slide" start="0,0" end="387,0" time="0" condition="StringCompare(Container(8036).NumItems,2)">conditional</animation>
+					<animation effect="slide" start="0,0" end="290,0" time="0" condition="StringCompare(Container(8036).NumItems,3)">conditional</animation>
+					<animation effect="slide" start="0,0" end="192,0" time="0" condition="StringCompare(Container(8036).NumItems,4)">conditional</animation>
+					<animation effect="slide" start="0,0" end="96,0" time="0" condition="StringCompare(Container(8036).NumItems,5)">conditional</animation>
+					<left>58</left>
+					<top>0</top>
+					<width>1170</width>
+					<height>320</height>
+					<onleft>8036</onleft>
+					<onright>8036</onright>
+					<onup>21</onup>
+					<ondown condition="Skin.HasSetting(LowerMainMenuBar)">9002</ondown>
+					<ondown condition="!Skin.HasSetting(LowerMainMenuBar) + !Skin.HasSetting(DisableGlobalSearch)">608</ondown>
+					<ondown condition="!Skin.HasSetting(LowerMainMenuBar) + Skin.HasSetting(DisableGlobalSearch)">603</ondown>
+					<viewtype label="535">list</viewtype>
+					<pagecontrol>-</pagecontrol>
+					<scrolltime tween="cubic" easing="out">500</scrolltime>
+					<orientation>Horizontal</orientation>
+					<itemlayout height="285" width="195">
+						<control type="image">
+							<left>9</left>
+							<top>8</top>
+							<width>176</width>
+							<height>268</height>
+							<aspectratio>scale</aspectratio>
+							<texture background="true">$INFO[ListItem.Art(poster)]</texture>
+							<bordertexture border="5">button-nofocus.png</bordertexture>
+							<bordersize>5</bordersize>
+						</control>
+					</itemlayout>
+					<focusedlayout height="285" width="195">
+						<control type="image">
+							<left>9</left>
+							<top>8</top>
+							<width>176</width>
+							<height>268</height>
+							<aspectratio>scale</aspectratio>
+							<texture background="true">$INFO[ListItem.Art(poster)]</texture>
+							<bordertexture border="5">folder-focus.png</bordertexture>
+							<bordersize>5</bordersize>
+							<visible>Control.HasFocus(8036)</visible>
+						</control>
+						<control type="image">
+							<left>9</left>
+							<top>8</top>
+							<width>176</width>
+							<height>268</height>
+							<aspectratio>scale</aspectratio>
+							<texture background="true">$INFO[ListItem.Art(poster)]</texture>
+							<bordertexture border="5">button-nofocus.png</bordertexture>
+							<bordersize>5</bordersize>
+							<visible>!Control.HasFocus(8036)</visible>
+						</control>
+					</focusedlayout>
+					<!--include>UPnPVideoContent</include-->
+					<content target="video" limit="10">$INFO[Skin.String(UPnP_Path)]library%3a%2f%2fvideo%2frecentlyaddedmovies.xml%2f/</content>
+				</control>
+				<control type="button">
+					<include>LargeWidgetPosterLeft</include>
+					<onclick>Control.Move(8036,-1)</onclick>
+					<visible>Container(8036).HasPrevious</visible>
+				</control>
+				<control type="button">
+					<include>LargeWidgetPosterRight</include>
+					<onclick>Control.Move(8036,1)</onclick>
+					<visible>Container(8036).HasNext</visible>
+					<include>VisibleFadeEffect</include>
+				</control>
+			</control>
 		</control>
 	</include>
 	<include name="MovieSmallWidgetLayout">
@@ -6051,7 +6401,7 @@
 				<width>150</width>
 				<height>20</height>
 				<font>font12</font>
-				<textcolor>blue</textcolor>
+				<textcolor>$VAR[MainColorOne]</textcolor>
 				<selectedcolor>selected</selectedcolor>
 				<align>center</align>
 				<aligny>center</aligny>
@@ -6219,7 +6569,7 @@
 				<width>200</width>
 				<height>20</height>
 				<font>font12</font>
-				<textcolor>blue</textcolor>
+				<textcolor>$VAR[MainColorOne]</textcolor>
 				<selectedcolor>selected</selectedcolor>
 				<align>center</align>
 				<aligny>center</aligny>
@@ -6322,7 +6672,7 @@
 				<width>280</width>
 				<height>20</height>
 				<font>font12</font>
-				<textcolor>blue</textcolor>
+				<textcolor>$VAR[MainColorOne]</textcolor>
 				<selectedcolor>selected</selectedcolor>
 				<align>center</align>
 				<aligny>center</aligny>
@@ -6621,6 +6971,178 @@
 				<thumb>$INFO[Window.Property(LatestMovie.10.Fanart)]</thumb>
 				<visible>!IsEmpty(Window.Property(LatestMovie.10.Title)) + !SubString(Window(Home).Property(SkinWidgets_RecentItems),true)</visible>
 			</item>
+		</content>
+	</include>
+	<include name="UPnPVideoContent">
+		<content>
+			<item>
+				<label>$INFO[Container(8034).ListItem(0).FilenameAndPath]</label>
+				<!--onclick>$VAR[MoviesRecentCmd]</onclick-->
+				<onclick>PlayMedia("$INFO[Container(8034).ListItem(0).FilenameAndPath]")</onclick>
+				<icon>$INFO[Container(8034).ListItem(0).Art(poster)]</icon>
+				<thumb>$INFO[Container(8034).ListItem(0).Art(fanart)]</thumb>
+			</item>
+			<item>
+				<label>$INFO[Container(8034).ListItem(1).Label]</label>
+				<onclick>$VAR[MoviesRecentCmd]</onclick>
+				<!--onclick>PlayMedia($ESCINFO[Container(8034).ListItem(1).FilenameAndPath])</onclick-->
+				<icon>$INFO[Container(8034).ListItem(1).Art(poster)]</icon>
+				<thumb>$INFO[Container(8034).ListItem(1).Art(fanart)]</thumb>
+			</item>
+			<item>
+				<label>$INFO[Container(8034).ListItem(2).Title]</label>
+				<onclick>$VAR[MoviesRecentCmd]</onclick>
+				<!--onclick>PlayMedia($ESCINFO[Container(8034).ListItem(2).File])</onclick-->
+				<!--onclick>PlayMedia($INFO[Container(8034).ListItem(2).FilenameAndPath])</onclick-->
+				<icon>$INFO[Container(8034).ListItem(2).Art(poster)]</icon>
+				<thumb>$INFO[Container(8034).ListItem(2).Art(fanart)]</thumb>
+			</item>
+			<item>
+				<label>$INFO[Container(8034).ListItem(3).Title]</label>
+				<onclick>$VAR[MoviesRecentCmd]</onclick>
+				<!--onclick>PlayMedia($ESCINFO[Container(8034).ListItem(3).File])</onclick-->
+				<!--onclick>PlayMedia($INFO[Container(8034).ListItem(3).FilenameAndPath])</onclick-->
+				<icon>$INFO[Container(8034).ListItem(3).Art(poster)]</icon>
+				<thumb>$INFO[Container(8034).ListItem(3).Art(fanart)]</thumb>
+			</item>
+			<item>
+				<label>$INFO[Container(8034).ListItem(4).Title]</label>
+				<onclick>$VAR[MoviesRecentCmd]</onclick>
+				<!--onclick>PlayMedia($ESCINFO[Container(8034).ListItem(4).File])</onclick-->
+				<!--onclick>PlayMedia($INFO[Container(8034).ListItem(4).FilenameAndPath])</onclick-->
+				<icon>$INFO[Container(8034).ListItem(4).Art(poster)]</icon>
+				<thumb>$INFO[Container(8034).ListItem(4).Art(fanart)]</thumb>
+			</item>
+			<item>
+				<label>$INFO[Container(8034).ListItem(5).Title]</label>
+				<onclick>$VAR[MoviesRecentCmd]</onclick>
+				<!--onclick>PlayMedia($ESCINFO[Container(8034).ListItem(5).File])</onclick-->
+				<!--onclick>PlayMedia($INFO[Container(8034).ListItem(5).FilenameAndPath])</onclick-->
+				<icon>$INFO[Container(8034).ListItem(5).Art(poster)]</icon>
+				<thumb>$INFO[Container(8034).ListItem(5).Art(fanart)]</thumb>
+			</item>
+			<item>
+				<label>$INFO[Container(8034).ListItem(6).Title]</label>
+				<onclick>$VAR[MoviesRecentCmd]</onclick>
+				<!--onclick>PlayMedia($ESCINFO[Container(8034).ListItem(6).File])</onclick-->
+				<!--onclick>PlayMedia($INFO[Container(8034).ListItem(6).FilenameAndPath])</onclick-->
+				<icon>$INFO[Container(8034).ListItem(6).Art(poster)]</icon>
+				<thumb>$INFO[Container(8034).ListItem(6).Art(fanart)]</thumb>
+			</item>
+			<item>
+				<label>$INFO[Container(8034).ListItem(7).Title]</label>
+				<onclick>$VAR[MoviesRecentCmd]</onclick>
+				<!--onclick>PlayMedia($ESCINFO[Container(8034).ListItem(7).File])</onclick-->
+				<!--onclick>PlayMedia($INFO[Container(8034).ListItem(7).FilenameAndPath])</onclick-->
+				<icon>$INFO[Container(8034).ListItem(7).Art(poster)]</icon>
+				<thumb>$INFO[Container(8034).ListItem(7).Art(fanart)]</thumb>
+			</item>
+			<item>
+				<label>$INFO[Container(8034).ListItem(8).Title]</label>
+				<onclick>$VAR[MoviesRecentCmd]</onclick>
+				<!--onclick>PlayMedia($ESCINFO[Container(8034).ListItem(8).File])</onclick-->
+				<!--onclick>PlayMedia($INFO[Container(8034).ListItem(8).FilenameAndPath])</onclick-->
+				<icon>$INFO[Container(8034).ListItem(8).Art(poster)]</icon>
+				<thumb>$INFO[Container(8034).ListItem(8).Art(fanart)]</thumb>
+			</item>
+			<item>
+				<label>$INFO[Container(8034).ListItem(9).Title]</label>
+				<onclick>$VAR[MoviesRecentCmd]</onclick>
+				<!--onclick>PlayMedia($ESCINFO[Container(8034).ListItem(9).File])</onclick-->
+				<!--onclick>PlayMedia($INFO[Container(8034).ListItem(9).FilenameAndPath])</onclick-->
+				<icon>$INFO[Container(8034).ListItem(9).Art(poster)]</icon>
+				<thumb>$INFO[Container(8034).ListItem(9).Art(fanart)]</thumb>
+			</item>
+			<!--item>
+				<label>$INFO[Window(Home).Property(RecentMovie.1.Title)]</label>
+				<label2></label2>
+				<onclick>PlayList.Clear</onclick>
+				<onclick>PlayMedia($ESCINFO[Window(Home).Property(RecentMovie.1.File)])</onclick>
+				<icon>$INFO[Window(Home).Property(RecentMovie.1.Art(poster))]</icon>
+				<thumb>$INFO[Window(Home).Property(RecentMovie.1.Art(fanart))]</thumb>
+				<visible>!IsEmpty(Window(Home).Property(RecentMovie.1.Title)) + SubString(Window(Home).Property(SkinWidgets_RecentItems),true)</visible>
+			</item>
+			<item>
+				<label>$INFO[Window(Home).Property(RecentMovie.2.Title)]</label>
+				<label2></label2>
+				<onclick>PlayList.Clear</onclick>
+				<onclick>PlayMedia($ESCINFO[Window(Home).Property(RecentMovie.2.File)])</onclick>
+				<icon>$INFO[Window(Home).Property(RecentMovie.2.Art(poster))]</icon>
+				<thumb>$INFO[Window(Home).Property(RecentMovie.2.Art(fanart))]</thumb>
+				<visible>!IsEmpty(Window(Home).Property(RecentMovie.2.Title)) + SubString(Window(Home).Property(SkinWidgets_RecentItems),true)</visible>
+			</item>
+			<item>
+				<label>$INFO[Window(Home).Property(RecentMovie.3.Title)]</label>
+				<label2></label2>
+				<onclick>PlayList.Clear</onclick>
+				<onclick>PlayMedia($ESCINFO[Window(Home).Property(RecentMovie.3.File)])</onclick>
+				<icon>$INFO[Window(Home).Property(RecentMovie.3.Art(poster))]</icon>
+				<thumb>$INFO[Window(Home).Property(RecentMovie.3.Art(fanart))]</thumb>
+				<visible>!IsEmpty(Window(Home).Property(RecentMovie.3.Title)) + SubString(Window(Home).Property(SkinWidgets_RecentItems),true)</visible>
+			</item>
+			<item>
+				<label>$INFO[Window(Home).Property(RecentMovie.4.Title)]</label>
+				<label2></label2>
+				<onclick>PlayList.Clear</onclick>
+				<onclick>PlayMedia($ESCINFO[Window(Home).Property(RecentMovie.4.File)])</onclick>
+				<icon>$INFO[Window(Home).Property(RecentMovie.4.Art(poster))]</icon>
+				<thumb>$INFO[Window(Home).Property(RecentMovie.4.Art(fanart))]</thumb>
+				<visible>!IsEmpty(Window(Home).Property(RecentMovie.4.Title)) + SubString(Window(Home).Property(SkinWidgets_RecentItems),true)</visible>
+			</item>
+			<item>
+				<label>$INFO[Window(Home).Property(RecentMovie.5.Title)]</label>
+				<label2></label2>
+				<onclick>PlayList.Clear</onclick>
+				<onclick>PlayMedia($ESCINFO[Window(Home).Property(RecentMovie.5.File)])</onclick>
+				<icon>$INFO[Window(Home).Property(RecentMovie.5.Art(poster))]</icon>
+				<thumb>$INFO[Window(Home).Property(RecentMovie.5.Art(fanart))]</thumb>
+				<visible>!IsEmpty(Window(Home).Property(RecentMovie.5.Title)) + SubString(Window(Home).Property(SkinWidgets_RecentItems),true)</visible>
+			</item>
+			<item>
+				<label>$INFO[Window(Home).Property(RecentMovie.6.Title)]</label>
+				<label2></label2>
+				<onclick>PlayList.Clear</onclick>
+				<onclick>PlayMedia($ESCINFO[Window(Home).Property(RecentMovie.6.File)])</onclick>
+				<icon>$INFO[Window(Home).Property(RecentMovie.6.Art(poster))]</icon>
+				<thumb>$INFO[Window(Home).Property(RecentMovie.6.Art(fanart))]</thumb>
+				<visible>!IsEmpty(Window(Home).Property(RecentMovie.6.Title)) + SubString(Window(Home).Property(SkinWidgets_RecentItems),true)</visible>
+			</item>
+			<item>
+				<label>$INFO[Window(Home).Property(RecentMovie.7.Title)]</label>
+				<label2></label2>
+				<onclick>PlayList.Clear</onclick>
+				<onclick>PlayMedia($ESCINFO[Window(Home).Property(RecentMovie.7.File)])</onclick>
+				<icon>$INFO[Window(Home).Property(RecentMovie.7.Art(poster))]</icon>
+				<thumb>$INFO[Window(Home).Property(RecentMovie.7.Art(fanart))]</thumb>
+				<visible>!IsEmpty(Window(Home).Property(RecentMovie.7.Title)) + SubString(Window(Home).Property(SkinWidgets_RecentItems),true)</visible>
+			</item>
+			<item>
+				<label>$INFO[Window(Home).Property(RecentMovie.8.Title)]</label>
+				<label2></label2>
+				<onclick>PlayList.Clear</onclick>
+				<onclick>PlayMedia($ESCINFO[Window(Home).Property(RecentMovie.8.File)])</onclick>
+				<icon>$INFO[Window(Home).Property(RecentMovie.8.Art(poster))]</icon>
+				<thumb>$INFO[Window(Home).Property(RecentMovie.8.Art(fanart))]</thumb>
+				<visible>!IsEmpty(Window(Home).Property(RecentMovie.8.Title)) + SubString(Window(Home).Property(SkinWidgets_RecentItems),true)</visible>
+			</item>
+			<item>
+				<label>$INFO[Window(Home).Property(RecentMovie.9.Title)]</label>
+				<label2></label2>
+				<onclick>PlayList.Clear</onclick>
+				<onclick>PlayMedia($ESCINFO[Window(Home).Property(RecentMovie.9.File)])</onclick>
+				<icon>$INFO[Window(Home).Property(RecentMovie.9.Art(poster))]</icon>
+				<thumb>$INFO[Window(Home).Property(RecentMovie.9.Art(fanart))]</thumb>
+				<visible>!IsEmpty(Window(Home).Property(RecentMovie.9.Title)) + SubString(Window(Home).Property(SkinWidgets_RecentItems),true)</visible>
+			</item>
+			<item>
+				<label>$INFO[Window(Home).Property(RecentMovie.10.Title)]</label>
+				<label2></label2>
+				<onclick>PlayList.Clear</onclick>
+				<onclick>PlayMedia($ESCINFO[Window(Home).Property(RecentMovie.10.File)])</onclick>
+				<icon>$INFO[Window(Home).Property(RecentMovie.10.Art(poster))]</icon>
+				<thumb>$INFO[Window(Home).Property(RecentMovie.10.Art(fanart))]</thumb>
+				<visible>!IsEmpty(Window(Home).Property(RecentMovie.10.Title)) + SubString(Window(Home).Property(SkinWidgets_RecentItems),true)</visible>
+			</item-->
 		</content>
 	</include>
 	<include name="RandomVideoContent">
@@ -10539,94 +11061,88 @@
 			</item>
 		</content>
 	</include>
-<include name="NextAiredContent">
-                <content>
-                    <item>
-                        <label>$INFO[Window(home).Property(NextAired.1.Label)] $INFO[Window(home).Property(NextAired.1.NextNumber)]</label>
-                        <label2>$INFO[Window(home).Property(NextAired.1.NextDay)] $INFO[Window(home).Property(NextAired.1.ShortTime)]</label2>
-                        <icon>$INFO[Window(home).Property(NextAired.1.Art(fanart))]</icon>
- 						<property name="Logo">$INFO[Window(home).Property(NextAired.1.Art(clearlogo))]</property>
-						<onclick>ActivateWindow(VideoLibrary,$INFO[Window(home).Property(NextAired.2.Library)],return)</onclick>
-						<visible>!IsEmpty(Window(home).Property(NextAired.1.NextDay))</visible>
-                    </item>
-                    <item>
-                        <label>$INFO[Window(home).Property(NextAired.2.Label)] $INFO[Window(home).Property(NextAired.2.NextNumber)]</label>
-                        <label2>$INFO[Window(home).Property(NextAired.2.NextDay)] $INFO[Window(home).Property(NextAired.2.ShortTime)]</label2>
-                        <icon>$INFO[Window(home).Property(NextAired.2.Art(fanart))]</icon>
- 						<property name="Logo">$INFO[Window(home).Property(NextAired.2.Art(clearlogo))]</property>
-						<onclick>ActivateWindow(VideoLibrary,$INFO[Window(home).Property(NextAired.2.Library)],return)</onclick>
-						<visible>!IsEmpty(Window(home).Property(NextAired.2.NextDay))</visible>
-                    </item>
-                    <item>
-                        <label>$INFO[Window(home).Property(NextAired.3.Label)] $INFO[Window(home).Property(NextAired.3.NextNumber)]</label>
-                        <label2>$INFO[Window(home).Property(NextAired.3.NextDay)] $INFO[Window(home).Property(NextAired.3.ShortTime)]</label2>
-                        <icon>$INFO[Window(home).Property(NextAired.3.Art(fanart))]</icon>
- 						<property name="Logo">$INFO[Window(home).Property(NextAired.3.Art(clearlogo))]</property>
-						<onclick>ActivateWindow(VideoLibrary,$INFO[Window(home).Property(NextAired.2.Library)],return)</onclick>
-						<visible>!IsEmpty(Window(home).Property(NextAired.3.NextDay))</visible>
-                    </item>
-                   <item>
-                        <label>$INFO[Window(home).Property(NextAired.4.Label)] $INFO[Window(home).Property(NextAired.4.NextNumber)]</label>
-                        <label2>$INFO[Window(home).Property(NextAired.4.NextDay)] $INFO[Window(home).Property(NextAired.4.ShortTime)]</label2>
-                        <icon>$INFO[Window(home).Property(NextAired.4.Art(fanart))]</icon>
- 						<property name="Logo">$INFO[Window(home).Property(NextAired.4.Art(clearlogo))]</property>
-						<onclick>ActivateWindow(VideoLibrary,$INFO[Window(home).Property(NextAired.2.Library)],return)</onclick>
-						<visible>!IsEmpty(Window(home).Property(NextAired.4.NextDay))</visible>
-                    </item>
-                    <item>
-                        <label>$INFO[Window(home).Property(NextAired.5.Label)] $INFO[Window(home).Property(NextAired.5.NextNumber)]</label>
-                        <label2>$INFO[Window(home).Property(NextAired.5.NextDay)] $INFO[Window(home).Property(NextAired.5.ShortTime)]</label2>
-                        <icon>$INFO[Window(home).Property(NextAired.5.Art(fanart))]</icon>
- 						<property name="Logo">$INFO[Window(home).Property(NextAired.5.Art(clearlogo))]</property>
-						<onclick>ActivateWindow(VideoLibrary,$INFO[Window(home).Property(NextAired.2.Library)],return)</onclick>
-						<visible>!IsEmpty(Window(home).Property(NextAired.5.NextDay))</visible>
-                    </item>
-                    <item>
-                        <label>$INFO[Window(home).Property(NextAired.6.Label)] $INFO[Window(home).Property(NextAired.6.NextNumber)]</label>
-                        <label2>$INFO[Window(home).Property(NextAired.6.NextDay)] $INFO[Window(home).Property(NextAired.6.ShortTime)]</label2>
-                        <icon>$INFO[Window(home).Property(NextAired.6.Art(fanart))]</icon>
- 						<property name="Logo">$INFO[Window(home).Property(NextAired.6.Art(clearlogo))]</property>
-						<onclick>ActivateWindow(VideoLibrary,$INFO[Window(home).Property(NextAired.2.Library)],return)</onclick>
-						<visible>!IsEmpty(Window(home).Property(NextAired.6.NextDay))</visible>
-                    </item>
-                    <item>
-                        <label>$INFO[Window(home).Property(NextAired.7.Label)] $INFO[Window(home).Property(NextAired.7.NextNumber)]</label>
-                        <label2>$INFO[Window(home).Property(NextAired.7.NextDay)] $INFO[Window(home).Property(NextAired.7.ShortTime)]</label2>
-                        <icon>$INFO[Window(home).Property(NextAired.7.Art(fanart))]</icon>
- 						<property name="Logo">$INFO[Window(home).Property(NextAired.7.Art(clearlogo))]</property>
-						<onclick>ActivateWindow(VideoLibrary,$INFO[Window(home).Property(NextAired.2.Library)],return)</onclick>
-						<visible>!IsEmpty(Window(home).Property(NextAired.7.NextDay))</visible>
-                    </item>
-                    <item>
-                        <label>$INFO[Window(home).Property(NextAired.8.Label)] $INFO[Window(home).Property(NextAired.8.NextNumber)]</label>
-                        <label2>$INFO[Window(home).Property(NextAired.8.NextDay)] $INFO[Window(home).Property(NextAired.8.ShortTime)]</label2>
-                        <icon>$INFO[Window(home).Property(NextAired.8.Art(fanart))]</icon>
- 						<property name="Logo">$INFO[Window(home).Property(NextAired.8.Art(clearlogo))]</property>
-						<onclick>ActivateWindow(VideoLibrary,$INFO[Window(home).Property(NextAired.2.Library)],return)</onclick>
-						<visible>!IsEmpty(Window(home).Property(NextAired.8.NextDay))</visible>
-                    </item>
-                    <item>
-                        <label>$INFO[Window(home).Property(NextAired.9.Label)] $INFO[Window(home).Property(NextAired.9.NextNumber)]</label>
-                        <label2>$INFO[Window(home).Property(NextAired.9.NextDay)] $INFO[Window(home).Property(NextAired.9.ShortTime)]</label2>
-                        <icon>$INFO[Window(home).Property(NextAired.9.Art(fanart))]</icon>
- 						<property name="Logo">$INFO[Window(home).Property(NextAired.9.Art(clearlogo))]</property>
-						<onclick>ActivateWindow(VideoLibrary,$INFO[Window(home).Property(NextAired.2.Library)],return)</onclick>
-						<visible>!IsEmpty(Window(home).Property(NextAired.9.NextDay))</visible>
-                    </item>
-                    <item>
-                        <label>$INFO[Window(home).Property(NextAired.10.Label)] $INFO[Window(home).Property(NextAired.10.NextNumber)]</label>
-                        <label2>$INFO[Window(home).Property(NextAired.10.NextDay)] $INFO[Window(home).Property(NextAired.10.ShortTime)]</label2>
-                        <icon>$INFO[Window(home).Property(NextAired.10.Art(fanart))]</icon>
- 						<property name="Logo">$INFO[Window(home).Property(NextAired.10.Art(clearlogo))]</property>
-						<onclick>ActivateWindow(VideoLibrary,$INFO[Window(home).Property(NextAired.2.Library)],return)</onclick>
-						<visible>!IsEmpty(Window(home).Property(NextAired.10.NextDay))</visible>
-                    </item>
-                </content>
-    </include>
-	
-	
-	
-	
-	
-	
-	</includes>
+	<include name="NextAiredContent">
+		<content>
+			<item>
+				<label>$INFO[Window(home).Property(NextAired.1.Label)] $INFO[Window(home).Property(NextAired.1.NextNumber)]</label>
+				<label2>$INFO[Window(home).Property(NextAired.1.NextDay)] $INFO[Window(home).Property(NextAired.1.ShortTime)]</label2>
+				<icon>$INFO[Window(home).Property(NextAired.1.Art(fanart))]</icon>
+				<property name="Logo">$INFO[Window(home).Property(NextAired.1.Art(clearlogo))]</property>
+				<onclick>ActivateWindow(VideoLibrary,$INFO[Window(home).Property(NextAired.1.Library)],return)</onclick>
+				<visible>!IsEmpty(Window(home).Property(NextAired.1.NextDay))</visible>
+			</item>
+			<item>
+				<label>$INFO[Window(home).Property(NextAired.2.Label)] $INFO[Window(home).Property(NextAired.2.NextNumber)]</label>
+				<label2>$INFO[Window(home).Property(NextAired.2.NextDay)] $INFO[Window(home).Property(NextAired.2.ShortTime)]</label2>
+				<icon>$INFO[Window(home).Property(NextAired.2.Art(fanart))]</icon>
+				<property name="Logo">$INFO[Window(home).Property(NextAired.2.Art(clearlogo))]</property>
+				<onclick>ActivateWindow(VideoLibrary,$INFO[Window(home).Property(NextAired.2.Library)],return)</onclick>
+				<visible>!IsEmpty(Window(home).Property(NextAired.2.NextDay))</visible>
+			</item>
+			<item>
+				<label>$INFO[Window(home).Property(NextAired.3.Label)] $INFO[Window(home).Property(NextAired.3.NextNumber)]</label>
+				<label2>$INFO[Window(home).Property(NextAired.3.NextDay)] $INFO[Window(home).Property(NextAired.3.ShortTime)]</label2>
+				<icon>$INFO[Window(home).Property(NextAired.3.Art(fanart))]</icon>
+				<property name="Logo">$INFO[Window(home).Property(NextAired.3.Art(clearlogo))]</property>
+				<onclick>ActivateWindow(VideoLibrary,$INFO[Window(home).Property(NextAired.3.Library)],return)</onclick>
+				<visible>!IsEmpty(Window(home).Property(NextAired.3.NextDay))</visible>
+			</item>
+			<item>
+				<label>$INFO[Window(home).Property(NextAired.4.Label)] $INFO[Window(home).Property(NextAired.4.NextNumber)]</label>
+				<label2>$INFO[Window(home).Property(NextAired.4.NextDay)] $INFO[Window(home).Property(NextAired.4.ShortTime)]</label2>
+				<icon>$INFO[Window(home).Property(NextAired.4.Art(fanart))]</icon>
+				<property name="Logo">$INFO[Window(home).Property(NextAired.4.Art(clearlogo))]</property>
+				<onclick>ActivateWindow(VideoLibrary,$INFO[Window(home).Property(NextAired.4.Library)],return)</onclick>
+				<visible>!IsEmpty(Window(home).Property(NextAired.4.NextDay))</visible>
+			</item>
+			<item>
+				<label>$INFO[Window(home).Property(NextAired.5.Label)] $INFO[Window(home).Property(NextAired.5.NextNumber)]</label>
+				<label2>$INFO[Window(home).Property(NextAired.5.NextDay)] $INFO[Window(home).Property(NextAired.5.ShortTime)]</label2>
+				<icon>$INFO[Window(home).Property(NextAired.5.Art(fanart))]</icon>
+				<property name="Logo">$INFO[Window(home).Property(NextAired.5.Art(clearlogo))]</property>
+				<onclick>ActivateWindow(VideoLibrary,$INFO[Window(home).Property(NextAired.5.Library)],return)</onclick>
+				<visible>!IsEmpty(Window(home).Property(NextAired.5.NextDay))</visible>
+			</item>
+			<item>
+				<label>$INFO[Window(home).Property(NextAired.6.Label)] $INFO[Window(home).Property(NextAired.6.NextNumber)]</label>
+				<label2>$INFO[Window(home).Property(NextAired.6.NextDay)] $INFO[Window(home).Property(NextAired.6.ShortTime)]</label2>
+				<icon>$INFO[Window(home).Property(NextAired.6.Art(fanart))]</icon>
+				<property name="Logo">$INFO[Window(home).Property(NextAired.6.Art(clearlogo))]</property>
+				<onclick>ActivateWindow(VideoLibrary,$INFO[Window(home).Property(NextAired.6.Library)],return)</onclick>
+				<visible>!IsEmpty(Window(home).Property(NextAired.6.NextDay))</visible>
+			</item>
+			<item>
+				<label>$INFO[Window(home).Property(NextAired.7.Label)] $INFO[Window(home).Property(NextAired.7.NextNumber)]</label>
+				<label2>$INFO[Window(home).Property(NextAired.7.NextDay)] $INFO[Window(home).Property(NextAired.7.ShortTime)]</label2>
+				<icon>$INFO[Window(home).Property(NextAired.7.Art(fanart))]</icon>
+				<property name="Logo">$INFO[Window(home).Property(NextAired.7.Art(clearlogo))]</property>
+				<onclick>ActivateWindow(VideoLibrary,$INFO[Window(home).Property(NextAired.7.Library)],return)</onclick>
+				<visible>!IsEmpty(Window(home).Property(NextAired.7.NextDay))</visible>
+			</item>
+			<item>
+				<label>$INFO[Window(home).Property(NextAired.8.Label)] $INFO[Window(home).Property(NextAired.8.NextNumber)]</label>
+				<label2>$INFO[Window(home).Property(NextAired.8.NextDay)] $INFO[Window(home).Property(NextAired.8.ShortTime)]</label2>
+				<icon>$INFO[Window(home).Property(NextAired.8.Art(fanart))]</icon>
+				<property name="Logo">$INFO[Window(home).Property(NextAired.8.Art(clearlogo))]</property>
+				<onclick>ActivateWindow(VideoLibrary,$INFO[Window(home).Property(NextAired.8.Library)],return)</onclick>
+				<visible>!IsEmpty(Window(home).Property(NextAired.8.NextDay))</visible>
+			</item>
+			<item>
+				<label>$INFO[Window(home).Property(NextAired.9.Label)] $INFO[Window(home).Property(NextAired.9.NextNumber)]</label>
+				<label2>$INFO[Window(home).Property(NextAired.9.NextDay)] $INFO[Window(home).Property(NextAired.9.ShortTime)]</label2>
+				<icon>$INFO[Window(home).Property(NextAired.9.Art(fanart))]</icon>
+				<property name="Logo">$INFO[Window(home).Property(NextAired.9.Art(clearlogo))]</property>
+				<onclick>ActivateWindow(VideoLibrary,$INFO[Window(home).Property(NextAired.9.Library)],return)</onclick>
+				<visible>!IsEmpty(Window(home).Property(NextAired.9.NextDay))</visible>
+			</item>
+			<item>
+				<label>$INFO[Window(home).Property(NextAired.10.Label)] $INFO[Window(home).Property(NextAired.10.NextNumber)]</label>
+				<label2>$INFO[Window(home).Property(NextAired.10.NextDay)] $INFO[Window(home).Property(NextAired.10.ShortTime)]</label2>
+				<icon>$INFO[Window(home).Property(NextAired.10.Art(fanart))]</icon>
+				<property name="Logo">$INFO[Window(home).Property(NextAired.10.Art(clearlogo))]</property>
+				<onclick>ActivateWindow(VideoLibrary,$INFO[Window(home).Property(NextAired.10.Library)],return)</onclick>
+				<visible>!IsEmpty(Window(home).Property(NextAired.10.NextDay))</visible>
+			</item>
+		</content>
+	</include>
+</includes>

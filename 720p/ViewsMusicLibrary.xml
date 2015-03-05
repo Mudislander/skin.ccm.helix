@@ -196,7 +196,7 @@
 					<top>480</top>
 					<width>290</width>
 					<height>25</height>
-					<label>$INFO[listitem.TrackNumber,[COLOR=blue]$LOCALIZE[31946]: [/COLOR]]</label>
+					<label>$INFO[listitem.TrackNumber,[COLOR=$VAR[MainColorOne]]$LOCALIZE[31946]: [/COLOR]]</label>
 					<align>center</align>
 					<aligny>center</aligny>
 					<font>font13</font>
@@ -209,7 +209,7 @@
 					<top>505</top>
 					<width>290</width>
 					<height>25</height>
-					<label>$INFO[listitem.Year,[COLOR=blue]$LOCALIZE[345]: [/COLOR]]</label>
+					<label>$INFO[listitem.Year,[COLOR=$VAR[MainColorOne]]$LOCALIZE[345]: [/COLOR]]</label>
 					<align>center</align>
 					<aligny>center</aligny>
 					<font>font13</font>
@@ -391,7 +391,7 @@
 				<width>840</width>
 				<height>20</height>
 				<font>font24_title</font>
-				<textcolor>blue</textcolor>
+				<textcolor>$VAR[MainColorOne]</textcolor>
 				<shadowcolor>black</shadowcolor>
 				<scroll>true</scroll>
 				<align>center</align>
@@ -701,7 +701,7 @@
 					<top>530</top>
 					<width>290</width>
 					<height>25</height>
-					<label>$INFO[listitem.Year,[COLOR=blue]$LOCALIZE[345]: [/COLOR]]</label>
+					<label>$INFO[listitem.Year,[COLOR=$VAR[MainColorOne]]$LOCALIZE[345]: [/COLOR]]</label>
 					<align>center</align>
 					<aligny>center</aligny>
 					<font>font13_title</font>
@@ -823,7 +823,7 @@
 						<align>right</align>
 						<aligny>center</aligny>
 						<font>font13_title</font>
-						<textcolor>blue</textcolor>
+						<textcolor>$VAR[MainColorOne]</textcolor>
 						<visible>!IsEmpty(ListItem.Property(Artist_Born))</visible>
 					</control>
 					<control type="label">
@@ -849,7 +849,7 @@
 						<align>right</align>
 						<aligny>center</aligny>
 						<font>font13_title</font>
-						<textcolor>blue</textcolor>
+						<textcolor>$VAR[MainColorOne]</textcolor>
 						<visible>!IsEmpty(ListItem.Property(Artist_Formed))</visible>
 					</control>
 					<control type="label">
@@ -875,7 +875,7 @@
 						<align>right</align>
 						<aligny>center</aligny>
 						<font>font13_title</font>
-						<textcolor>blue</textcolor>
+						<textcolor>$VAR[MainColorOne]</textcolor>
 					</control>
 					<control type="label">
 						<description>Genre Value</description>
@@ -1055,7 +1055,7 @@
 					<align>center</align>
 					<aligny>center</aligny>
 					<font>font12_title</font>
-					<textcolor>blue</textcolor>
+					<textcolor>$VAR[MainColorOne]</textcolor>
 					<shadowcolor>black</shadowcolor>
 				</control>
 				<control type="textbox">

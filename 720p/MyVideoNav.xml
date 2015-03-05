@@ -108,7 +108,7 @@
 					<height>35</height>
 					<font>font12</font>
 					<label>31006</label>
-					<textcolor>blue</textcolor>
+					<textcolor>$VAR[MainColorOne]</textcolor>
 					<align>center</align>
 					<aligny>center</aligny>
 				</control>
@@ -171,6 +171,7 @@
 					<label>31324</label>
 					<onclick>Skin.ToggleSetting(View515Hidelogo)</onclick>
 					<selected>Skin.HasSetting(View515Hidelogo)</selected>
+					<visible>!Skin.HasSetting(DisableLogoArt)</visible>
 					<visible>[Control.IsVisible(515)| Control.IsVisible(501)] + !Container.Content(Seasons) + !Container.Content(Episodes)</visible>
 				</control>
 				<control type="radiobutton" id="102">
@@ -192,7 +193,31 @@
 					<visible>Control.IsVisible(732)</visible>
 				</control>
 				
+				
 				<control type="radiobutton" id="104">
+					<description>Show Watched Banners</description>
+					<textwidth>170</textwidth>
+					<include>ButtonCommonValues</include>
+					<label>31053</label>
+					<onclick>Skin.ToggleSetting(HideWatchedMediaStat)</onclick>
+					<selected>!Skin.HasSetting(HideWatchedMediaStat)</selected>
+					<visible>Skin.HasSetting(EnableStatusBanner)</visible>
+					<visible>Control.IsVisible(732)</visible>
+				</control>
+				<control type="radiobutton" id="105">
+					<description>Show Watched Banners</description>
+					<textwidth>170</textwidth>
+					<include>ButtonCommonValues</include>
+					<label>31052</label>
+					<onclick>Skin.ToggleSetting(HideNewMediaStat)</onclick>
+					<selected>!Skin.HasSetting(HideNewMediaStat)</selected>
+					<visible>Skin.HasSetting(EnableStatusBanner)</visible>
+					<visible>Control.IsVisible(732)</visible>
+				</control>
+				
+				
+				
+				<control type="radiobutton" id="106">
 					<description>Episode Backgrounds</description>
 					<textwidth>170</textwidth>
 					<include>ButtonCommonValues</include>
@@ -201,7 +226,7 @@
 					<selected>Skin.HasSetting(EpisodeBackground)</selected>
 					<visible>Container.Content(Episodes)</visible>
 				</control>
-				<control type="radiobutton" id="105">
+				<control type="radiobutton" id="107">
 					<description>Additional Artwork</description>
 					<textwidth>170</textwidth>
 					<include>ButtonCommonValues</include>
@@ -210,16 +235,7 @@
 					<selected>Skin.HasSetting(EnableAdditionalArtWork)</selected>
 					<visible>Control.IsVisible(724) | Control.IsVisible(508) | Control.IsVisible(51)</visible>
 				</control>
-				<control type="radiobutton" id="106">
-					<description>Enable DVD Cases</description>
-					<textwidth>170</textwidth>
-					<include>ButtonCommonValues</include>
-					<label>31951</label>
-					<onclick>Skin.ToggleSetting(EnableDVDCases)</onclick>
-					<selected>Skin.HasSetting(EnableDVDCases)</selected>
-					<visible>Control.IsVisible(724)</visible>
-				</control>
-				<control type="radiobutton" id="107">
+				<control type="radiobutton" id="108">
 					<description>Extra Thumbs</description>
 					<textwidth>170</textwidth>
 					<include>ButtonCommonValues</include>
@@ -233,7 +249,7 @@
 					<height>35</height>
 					<font>font12</font>
 					<label>31026</label>
-					<textcolor>blue</textcolor>
+					<textcolor>$VAR[MainColorOne]</textcolor>
 					<align>center</align>
 					<aligny>center</aligny>
 				</control>
@@ -268,7 +284,7 @@
 					<height>35</height>
 					<font>font12</font>
 					<label>31039</label>
-					<textcolor>blue</textcolor>
+					<textcolor>$VAR[MainColorOne]</textcolor>
 					<align>center</align>
 					<aligny>center</aligny>
 				</control>

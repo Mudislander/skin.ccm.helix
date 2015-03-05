@@ -245,7 +245,7 @@
 					<label>$INFO[Control.GetLabel(190)] $INFO[Control.GetLabel(191)]</label>
 					<align>center</align>
 					<aligny>center</aligny>
-					<textcolor>blue</textcolor>
+					<textcolor>$VAR[MainColorOne]</textcolor>
 					<shadowcolor>black</shadowcolor>
 					<visible>!Control.IsVisible(198)</visible>
 				</control>

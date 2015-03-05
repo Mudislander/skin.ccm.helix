@@ -1374,7 +1374,7 @@
 				<width>1240</width>
 				<height>35</height>
 				<font>font28_title</font>
-				<textcolor>blue</textcolor>
+				<textcolor>$VAR[MainColorOne]</textcolor>
 				<shadowcolor>black</shadowcolor>
 				<scroll>true</scroll>
 				<align>center</align>
@@ -1417,7 +1417,7 @@
 				<width>1200</width>
 				<height>35</height>
 				<font>font12</font>
-				<textcolor>blue</textcolor>
+				<textcolor>$VAR[MainColorOne]</textcolor>
 				<shadowcolor>black</shadowcolor>
 				<wrapmultiline>true</wrapmultiline>
 				<scroll>false</scroll>

@@ -6,9 +6,7 @@
 	<onload condition="stringcompare(Container(9011).Position,0) + !stringcompare(Skin.String(InitialMenuPosi),0)">Control.Move(9011,$INFO[Skin.String(InitialMenuPosi)])</onload>
 	<onunload condition="IsEmpty(Skin.String(WeatherFanartDir)) | SubString(Skin.String(WeatherFanartDir),skin.ccm.helix\extras\Weather\,right)">Skin.SetString(WeatherFanartDir,special://skin/extras/Weather/)</onunload>
 	<onunload condition="!Skin.HasSetting(DisableFanartScript)">RunScript(script.grab.fanart,mode=random,refresh=$INFO[Skin.String(FanArtCycleRate)])</onunload>
-	<onunload condition="Skin.HasSetting(EnablePingWOL) + Skin.String(PingMacAddr)">WakeOnLan($INFO[Skin.String(PingMacAddr)])</onunload>
 	<controls>
-	
 		<include>CommonBackground</include>
 		<control type="image">
 			<left>0</left>
@@ -99,13 +97,13 @@
 				<texture>Confluence_Logo.png</texture>
 			</control>
 			<control type="button" id="800">
-			<include>InvisibleButton</include>
-			<onleft>801</onleft>
-			<onright>804</onright>
-			<onup>50</onup>
-			<ondown>50</ondown>
-			<visible>false</visible>
-		</control>
+				<include>InvisibleButton</include>
+				<onleft>801</onleft>
+				<onright>804</onright>
+				<onup>50</onup>
+				<ondown>50</ondown>
+				<visible>false</visible>
+			</control>
 			<control type="list" id="9000">
 				<left>10</left>
 				<top>90</top>
@@ -263,7 +261,7 @@
 						<height>45</height>
 						<font>font13_title</font>
 						<label>31337</label>
-						<textcolor>blue</textcolor>
+						<textcolor>$VAR[MainColorOne]</textcolor>
 						<shadowcolor>black</shadowcolor>
 						<align>left</align>
 						<aligny>center</aligny>
@@ -307,6 +305,19 @@
 						<texturenofocus>MenuItemNF.png</texturenofocus>
 						<onclick>Skin.ToggleSetting(HideSystemTime)</onclick>
 						<selected>!Skin.HasSetting(HideSystemTime)</selected>
+					</control>
+					<control type="button" id="104">
+						<description>Main Colour One</description>
+						<width>750</width>
+						<height>40</height>
+						<font>font13</font>
+						<textcolor>grey2</textcolor>
+						<focusedcolor>white</focusedcolor>
+						<label>$LOCALIZE[31365]</label>
+						<label2>[COLOR=$VAR[MainColorOne]]$VAR[ColorOneName][/COLOR]</label2>
+						<onclick>ActivateWindow(2130)</onclick>
+						<texturefocus>MenuItemFO.png</texturefocus>
+						<texturenofocus>MenuItemNF.png</texturenofocus>
 					</control>
 					<control type="radiobutton" id="105">
 						<width>750</width>
@@ -384,19 +395,6 @@
 						<selected>Skin.HasSetting(AutoPartySaver)</selected>
 						<enable>Library.HasContent(Music)</enable>
 					</control>
-					<control type="radiobutton" id="111">
-						<description>TVShow Thumbnails</description>
-						<width>750</width>
-						<height>40</height>
-						<font>font13</font>
-						<textcolor>grey2</textcolor>
-						<focusedcolor>white</focusedcolor>
-						<label>$LOCALIZE[31075]</label>
-						<texturefocus>MenuItemFO.png</texturefocus>
-						<texturenofocus>MenuItemNF.png</texturenofocus>
-						<onclick>Skin.ToggleSetting(HideEpisodeThumb)</onclick>
-						<selected>!Skin.HasSetting(HideEpisodeThumb)</selected>
-					</control>
 					<control type="radiobutton" id="112">
 						<width>750</width>
 						<height>40</height>
@@ -435,12 +433,37 @@
 						<onclick>Skin.ToggleSetting(HidePopUpSeekBar)</onclick>
 						<selected>!Skin.HasSetting(HidePopUpSeekBar)</selected>
 					</control>
+					<control type="radiobutton" id="115">
+						<description>Enable DVD Cases</description>
+						<width>750</width>
+						<height>40</height>
+						<font>font13</font>
+						<textcolor>grey2</textcolor>
+						<focusedcolor>white</focusedcolor>
+						<label>$LOCALIZE[31951]</label>
+						<texturefocus>MenuItemFO.png</texturefocus>
+						<texturenofocus>MenuItemNF.png</texturenofocus>
+						<onclick>Skin.ToggleSetting(EnableDVDCases)</onclick>
+						<selected>Skin.HasSetting(EnableDVDCases)</selected>
+					</control>
+					<control type="radiobutton" id="116">
+						<width>750</width>
+						<height>40</height>
+						<font>font13</font>
+						<label>$LOCALIZE[31012]</label>
+						<textcolor>grey2</textcolor>
+						<focusedcolor>white</focusedcolor>
+						<texturefocus>MenuItemFO.png</texturefocus>
+						<texturenofocus>MenuItemNF.png</texturenofocus>
+						<onclick>Skin.ToggleSetting(UseDiscTypeCase)</onclick>
+						<selected>Skin.HasSetting(UseDiscTypeCase)</selected>
+					</control>
 					<control type="label" id="120">
 						<width>750</width>
 						<height>45</height>
 						<font>font13_title</font>
 						<label>31101</label>
-						<textcolor>blue</textcolor>
+						<textcolor>$VAR[MainColorOne]</textcolor>
 						<shadowcolor>black</shadowcolor>
 						<align>left</align>
 						<aligny>center</aligny>
@@ -565,6 +588,19 @@
 						<selected>Skin.HasSetting(VizOnlyOnHome)</selected>
 					</control>
 					<control type="radiobutton" id="129">
+						<width>750</width>
+						<height>40</height>
+						<font>font13</font>
+						<label>$LOCALIZE[31096]</label>
+						<textcolor>grey2</textcolor>
+						<focusedcolor>white</focusedcolor>
+						<texturefocus>MenuItemFO.png</texturefocus>
+						<texturenofocus>MenuItemNF.png</texturenofocus>
+						<onclick>Skin.ToggleSetting(HideSuggestedMedia)</onclick>
+						<selected>!Skin.HasSetting(HideSuggestedMedia)</selected>
+						<enable>![!Skin.HasSetting(LowerMainMenuBar) + Skin.HasSetting(EnableLargeWidgets)]</enable>
+					</control>
+					<control type="radiobutton" id="130">
 						<description>enable now playing info</description>
 						<width>750</width>
 						<height>40</height>
@@ -577,7 +613,7 @@
 						<texturefocus>MenuItemFO.png</texturefocus>
 						<texturenofocus>MenuItemNF.png</texturenofocus>
 					</control>
-					<control type="radiobutton" id="130">
+					<control type="radiobutton" id="131">
 						<description>enable now TV Recording info</description>
 						<width>750</width>
 						<height>40</height>
@@ -590,7 +626,7 @@
 						<texturefocus>MenuItemFO.png</texturefocus>
 						<texturenofocus>MenuItemNF.png</texturenofocus>
 					</control>
-					<control type="radiobutton" id="131">
+					<control type="radiobutton" id="132">
 						<description>enable stats bar</description>
 						<width>750</width>
 						<height>40</height>
@@ -603,7 +639,7 @@
 						<texturefocus>MenuItemFO.png</texturefocus>
 						<texturenofocus>MenuItemNF.png</texturenofocus>
 					</control>
-					<control type="button" id="132">
+					<control type="button" id="133">
 						<description>Top Left Home Info</description>
 						<width>750</width>
 						<height>40</height>
@@ -620,7 +656,7 @@
 						<texturefocus>MenuItemFO.png</texturefocus>
 						<texturenofocus>MenuItemNF.png</texturenofocus>
 					</control>
-					<control type="radiobutton" id="133">
+					<control type="radiobutton" id="134">
 						<description>enable raindrop effect</description>
 						<width>750</width>
 						<height>40</height>
@@ -638,7 +674,7 @@
 						<height>45</height>
 						<font>font13_title</font>
 						<label>$LOCALIZE[31388]</label>
-						<textcolor>blue</textcolor>
+						<textcolor>$VAR[MainColorOne]</textcolor>
 						<shadowcolor>black</shadowcolor>
 						<align>left</align>
 						<aligny>center</aligny>
@@ -697,55 +733,7 @@
 						<onclick>Skin.ToggleSetting(HideBackGroundFanart)</onclick>
 						<selected>!Skin.HasSetting(HideBackGroundFanart)</selected>
 					</control>
-					<!--control type="radiobutton" id="144">
-						<width>750</width>
-						<height>40</height>
-						<font>font13</font>
-						<label>31950</label>
-						<textcolor>grey2</textcolor>
-						<focusedcolor>white</focusedcolor>
-						<texturefocus>MenuItemFO.png</texturefocus>
-						<texturenofocus>MenuItemNF.png</texturenofocus>
-						<onclick>Skin.ToggleSetting(AdditionalMediaFanart)</onclick>
-						<selected>Skin.HasSetting(AdditionalMediaFanart)</selected>
-					</control-->
-					<!--control type="radiobutton" id="145">
-						<width>750</width>
-						<height>40</height>
-						<font>font13</font>
-						<label>$LOCALIZE[31951]</label>
-						<textcolor>grey2</textcolor>
-						<focusedcolor>white</focusedcolor>
-						<texturefocus>MenuItemFO.png</texturefocus>
-						<texturenofocus>MenuItemNF.png</texturenofocus>
-						<onclick>Skin.ToggleSetting(EnableDVDCases)</onclick>
-						<selected>Skin.HasSetting(EnableDVDCases)</selected>
-					</control-->
-					<!--control type="radiobutton" id="146">
-						<width>750</width>
-						<height>40</height>
-						<font>font13</font>
-						<label>$LOCALIZE[31012]</label>
-						<textcolor>grey2</textcolor>
-						<focusedcolor>white</focusedcolor>
-						<texturefocus>MenuItemFO.png</texturefocus>
-						<texturenofocus>MenuItemNF.png</texturenofocus>
-						<onclick>Skin.ToggleSetting(UseDiscTypeCase)</onclick>
-						<selected>Skin.HasSetting(UseDiscTypeCase)</selected>
-					</control-->
-					<!--control type="radiobutton" id="147">
-						<width>750</width>
-						<height>40</height>
-						<font>font13</font>
-						<label>$LOCALIZE[31953]</label>
-						<textcolor>grey2</textcolor>
-						<focusedcolor>white</focusedcolor>
-						<texturefocus>MenuItemFO.png</texturefocus>
-						<texturenofocus>MenuItemNF.png</texturenofocus>
-						<onclick>Skin.ToggleSetting(HideNewMediaStat)</onclick>
-						<selected>!Skin.HasSetting(HideNewMediaStat)</selected>
-						<enable>!stringcompare(Skin.String(WatchStatusType),Hidden)</enable>
-					</control-->
+					
 					<control type="button" id="148">
 						<width>750</width>
 						<height>40</height>
@@ -776,19 +764,6 @@
 						<onclick>Skin.ToggleSetting(MediaShortDescription)</onclick>
 						<selected>Skin.HasSetting(MediaShortDescription)</selected>
 					</control>
-					<!--control type="radiobutton" id="151">
-						<description>Add Year Onto Movie Title</description>
-						<width>750</width>
-						<height>40</height>
-						<font>font13</font>
-						<textcolor>grey2</textcolor>
-						<focusedcolor>white</focusedcolor>
-						<label>$LOCALIZE[31246]</label>
-						<texturefocus>MenuItemFO.png</texturefocus>
-						<texturenofocus>MenuItemNF.png</texturenofocus>
-						<onclick>Skin.ToggleSetting(HideYearTitle)</onclick>
-						<selected>!Skin.HasSetting(HideYearTitle)</selected>
-					</control-->
 					<control type="radiobutton" id="152">
 						<width>750</width>
 						<height>40</height>
@@ -825,9 +800,6 @@
 						<onclick>Skin.ToggleSetting(WindowedTrailer)</onclick>
 						<selected>Skin.HasSetting(WindowedTrailer)</selected>
 					</control>
-					
-					
-					
 					<control type="radiobutton" id="155">
 						<width>750</width>
 						<height>40</height>
@@ -840,10 +812,6 @@
 						<onclick>Skin.ToggleSetting(HideTrailerBtn)</onclick>
 						<selected>!Skin.HasSetting(HideTrailerBtn)</selected>
 					</control>
-					
-					
-					
-					
 					<control type="radiobutton" id="156">
 						<width>750</width>
 						<height>40</height>
@@ -856,13 +824,12 @@
 						<onclick>Skin.ToggleSetting(HideFilenameFlagging)</onclick>
 						<selected>Skin.HasSetting(HideFilenameFlagging)</selected>
 					</control>
-					
 					<control type="label" id="157">
 						<width>750</width>
 						<height>45</height>
 						<font>font13_title</font>
 						<label>$LOCALIZE[31386]</label>
-						<textcolor>blue</textcolor>
+						<textcolor>$VAR[MainColorOne]</textcolor>
 						<shadowcolor>black</shadowcolor>
 						<align>left</align>
 						<aligny>center</aligny>
@@ -926,7 +893,7 @@
 						<height>45</height>
 						<font>font13_title</font>
 						<label>$LOCALIZE[31387]</label>
-						<textcolor>blue</textcolor>
+						<textcolor>$VAR[MainColorOne]</textcolor>
 						<shadowcolor>black</shadowcolor>
 						<align>left</align>
 						<aligny>center</aligny>
@@ -1002,7 +969,7 @@
 						<height>45</height>
 						<font>font13_title</font>
 						<label>31080</label>
-						<textcolor>blue</textcolor>
+						<textcolor>$VAR[MainColorOne]</textcolor>
 						<shadowcolor>black</shadowcolor>
 						<align>left</align>
 						<aligny>center</aligny>
@@ -1089,7 +1056,7 @@
 						<font>font13</font>
 						<label>[B]$LOCALIZE[31290] - 1[/B]</label>
 						<label2>[COLOR=selected]$INFO[Skin.String(HomeItem.1.Label)][/COLOR]</label2>
-						<textcolor>blue</textcolor>
+						<textcolor>$VAR[MainColorOne]</textcolor>
 						<focusedcolor>white</focusedcolor>
 						<texturefocus>MenuItemFO.png</texturefocus>
 						<texturenofocus>MenuItemNF.png</texturenofocus>
@@ -1154,10 +1121,6 @@
 						<onclick>Skin.SetString(HomeItem.1.Display,$VAR[MenuOneBackgroundType])</onclick>
 						<enable>!Skin.HasSetting(HolidayEffects) + !Skin.HasSetting(SingleGlobalBackground)</enable>
 						<visible>!IsEmpty(Skin.String(HomeItem.1.Label))</visible>
-						<!--				
-	StringCompare(Skin.String(HomeItem.1.Type),Weather)
-	Weather Music MusicPlayList Videos VideoPlayList Movies TVShows
-	-->
 					</control>
 					<control type="button" id="205">
 						<width>750</width>
@@ -1188,7 +1151,7 @@
 						<font>font13</font>
 						<label>[B]$LOCALIZE[31290] - 2[/B]</label>
 						<label2>[COLOR=selected]$INFO[Skin.String(HomeItem.2.Label)][/COLOR]</label2>
-						<textcolor>blue</textcolor>
+						<textcolor>$VAR[MainColorOne]</textcolor>
 						<focusedcolor>white</focusedcolor>
 						<texturefocus>MenuItemFO.png</texturefocus>
 						<texturenofocus>MenuItemNF.png</texturenofocus>
@@ -1283,7 +1246,7 @@
 						<font>font13</font>
 						<label>[B]$LOCALIZE[31290] - 3[/B]</label>
 						<label2>[COLOR=selected]$INFO[Skin.String(HomeItem.3.Label)][/COLOR]</label2>
-						<textcolor>blue</textcolor>
+						<textcolor>$VAR[MainColorOne]</textcolor>
 						<focusedcolor>white</focusedcolor>
 						<texturefocus>MenuItemFO.png</texturefocus>
 						<texturenofocus>MenuItemNF.png</texturenofocus>
@@ -1378,7 +1341,7 @@
 						<font>font13</font>
 						<label>[B]$LOCALIZE[31290] - 4[/B]</label>
 						<label2>[COLOR=selected]$INFO[Skin.String(HomeItem.4.Label)][/COLOR]</label2>
-						<textcolor>blue</textcolor>
+						<textcolor>$VAR[MainColorOne]</textcolor>
 						<focusedcolor>white</focusedcolor>
 						<texturefocus>MenuItemFO.png</texturefocus>
 						<texturenofocus>MenuItemNF.png</texturenofocus>
@@ -1473,7 +1436,7 @@
 						<font>font13</font>
 						<label>[B]$LOCALIZE[31290] - 5[/B]</label>
 						<label2>[COLOR=selected]$INFO[Skin.String(HomeItem.5.Label)][/COLOR]</label2>
-						<textcolor>blue</textcolor>
+						<textcolor>$VAR[MainColorOne]</textcolor>
 						<focusedcolor>white</focusedcolor>
 						<texturefocus>MenuItemFO.png</texturefocus>
 						<texturenofocus>MenuItemNF.png</texturenofocus>
@@ -1568,7 +1531,7 @@
 						<font>font13</font>
 						<label>[B]$LOCALIZE[31290] - 6[/B]</label>
 						<label2>[COLOR=selected]$INFO[Skin.String(HomeItem.6.Label)][/COLOR]</label2>
-						<textcolor>blue</textcolor>
+						<textcolor>$VAR[MainColorOne]</textcolor>
 						<focusedcolor>white</focusedcolor>
 						<texturefocus>MenuItemFO.png</texturefocus>
 						<texturenofocus>MenuItemNF.png</texturenofocus>
@@ -1663,7 +1626,7 @@
 						<font>font13</font>
 						<label>[B]$LOCALIZE[31290] - 7[/B]</label>
 						<label2>[COLOR=selected]$INFO[Skin.String(HomeItem.7.Label)][/COLOR]</label2>
-						<textcolor>blue</textcolor>
+						<textcolor>$VAR[MainColorOne]</textcolor>
 						<focusedcolor>white</focusedcolor>
 						<texturefocus>MenuItemFO.png</texturefocus>
 						<texturenofocus>MenuItemNF.png</texturenofocus>
@@ -1758,7 +1721,7 @@
 						<font>font13</font>
 						<label>[B]$LOCALIZE[31290] - 8[/B]</label>
 						<label2>[COLOR=selected]$INFO[Skin.String(HomeItem.8.Label)][/COLOR]</label2>
-						<textcolor>blue</textcolor>
+						<textcolor>$VAR[MainColorOne]</textcolor>
 						<focusedcolor>white</focusedcolor>
 						<texturefocus>MenuItemFO.png</texturefocus>
 						<texturenofocus>MenuItemNF.png</texturenofocus>
@@ -1853,7 +1816,7 @@
 						<font>font13</font>
 						<label>[B]$LOCALIZE[31290] - 9[/B]</label>
 						<label2>[COLOR=selected]$INFO[Skin.String(HomeItem.9.Label)][/COLOR]</label2>
-						<textcolor>blue</textcolor>
+						<textcolor>$VAR[MainColorOne]</textcolor>
 						<focusedcolor>white</focusedcolor>
 						<texturefocus>MenuItemFO.png</texturefocus>
 						<texturenofocus>MenuItemNF.png</texturenofocus>
@@ -1948,7 +1911,7 @@
 						<font>font13</font>
 						<label>[B]$LOCALIZE[31290] - 10[/B]</label>
 						<label2>[COLOR=selected]$INFO[Skin.String(HomeItem.10.Label)][/COLOR]</label2>
-						<textcolor>blue</textcolor>
+						<textcolor>$VAR[MainColorOne]</textcolor>
 						<focusedcolor>white</focusedcolor>
 						<texturefocus>MenuItemFO.png</texturefocus>
 						<texturenofocus>MenuItemNF.png</texturenofocus>
@@ -2043,7 +2006,7 @@
 						<font>font13</font>
 						<label>[B]$LOCALIZE[31290] - 11[/B]</label>
 						<label2>[COLOR=selected]$INFO[Skin.String(HomeItem.11.Label)][/COLOR]</label2>
-						<textcolor>blue</textcolor>
+						<textcolor>$VAR[MainColorOne]</textcolor>
 						<focusedcolor>white</focusedcolor>
 						<texturefocus>MenuItemFO.png</texturefocus>
 						<texturenofocus>MenuItemNF.png</texturenofocus>
@@ -2138,7 +2101,7 @@
 						<font>font13</font>
 						<label>[B]$LOCALIZE[31290] - 12[/B]</label>
 						<label2>[COLOR=selected]$INFO[Skin.String(HomeItem.12.Label)][/COLOR]</label2>
-						<textcolor>blue</textcolor>
+						<textcolor>$VAR[MainColorOne]</textcolor>
 						<focusedcolor>white</focusedcolor>
 						<texturefocus>MenuItemFO.png</texturefocus>
 						<texturenofocus>MenuItemNF.png</texturenofocus>
@@ -2261,7 +2224,7 @@
 						<height>45</height>
 						<font>font13_title</font>
 						<label>$VAR[UsersSubVideosName] $LOCALIZE[31291]</label>
-						<textcolor>blue</textcolor>
+						<textcolor>$VAR[MainColorOne]</textcolor>
 						<shadowcolor>black</shadowcolor>
 						<align>left</align>
 						<aligny>center</aligny>
@@ -2413,7 +2376,7 @@
 						<height>45</height>
 						<font>font13_title</font>
 						<label>$VAR[UsersSubMoviesName] $LOCALIZE[31291]</label>
-						<textcolor>blue</textcolor>
+						<textcolor>$VAR[MainColorOne]</textcolor>
 						<shadowcolor>black</shadowcolor>
 						<align>left</align>
 						<aligny>center</aligny>
@@ -2565,7 +2528,7 @@
 						<height>45</height>
 						<font>font13_title</font>
 						<label>$VAR[UsersSubTVShowsName] $LOCALIZE[31291]</label>
-						<textcolor>blue</textcolor>
+						<textcolor>$VAR[MainColorOne]</textcolor>
 						<shadowcolor>black</shadowcolor>
 						<align>left</align>
 						<aligny>center</aligny>
@@ -2717,7 +2680,7 @@
 						<height>45</height>
 						<font>font13_title</font>
 						<label>$VAR[UsersSubConcertsName] $LOCALIZE[31291]</label>
-						<textcolor>blue</textcolor>
+						<textcolor>$VAR[MainColorOne]</textcolor>
 						<shadowcolor>black</shadowcolor>
 						<align>left</align>
 						<aligny>center</aligny>
@@ -2869,7 +2832,7 @@
 						<height>45</height>
 						<font>font13_title</font>
 						<label>$VAR[UsersSubMusicName] $LOCALIZE[31291]</label>
-						<textcolor>blue</textcolor>
+						<textcolor>$VAR[MainColorOne]</textcolor>
 						<shadowcolor>black</shadowcolor>
 						<align>left</align>
 						<aligny>center</aligny>
@@ -3021,7 +2984,7 @@
 						<height>45</height>
 						<font>font13_title</font>
 						<label>$VAR[UsersSubProgsName] $LOCALIZE[31291]</label>
-						<textcolor>blue</textcolor>
+						<textcolor>$VAR[MainColorOne]</textcolor>
 						<shadowcolor>black</shadowcolor>
 						<align>left</align>
 						<aligny>center</aligny>
@@ -3173,7 +3136,7 @@
 						<height>45</height>
 						<font>font13_title</font>
 						<label>$VAR[UsersSubPicturesName] $LOCALIZE[31291]</label>
-						<textcolor>blue</textcolor>
+						<textcolor>$VAR[MainColorOne]</textcolor>
 						<shadowcolor>black</shadowcolor>
 						<align>left</align>
 						<aligny>center</aligny>
@@ -3325,7 +3288,7 @@
 						<height>45</height>
 						<font>font13_title</font>
 						<label>$VAR[UsersSubLiveTVName] $LOCALIZE[31291]</label>
-						<textcolor>blue</textcolor>
+						<textcolor>$VAR[MainColorOne]</textcolor>
 						<shadowcolor>black</shadowcolor>
 						<align>left</align>
 						<aligny>center</aligny>
@@ -3477,7 +3440,7 @@
 						<height>45</height>
 						<font>font13_title</font>
 						<label>$VAR[UsersSubRadioName] $LOCALIZE[31291]</label>
-						<textcolor>blue</textcolor>
+						<textcolor>$VAR[MainColorOne]</textcolor>
 						<shadowcolor>black</shadowcolor>
 						<align>left</align>
 						<aligny>center</aligny>
@@ -3629,7 +3592,7 @@
 						<height>45</height>
 						<font>font13_title</font>
 						<label>$VAR[UsersSubSettingsName] $LOCALIZE[31291]</label>
-						<textcolor>blue</textcolor>
+						<textcolor>$VAR[MainColorOne]</textcolor>
 						<shadowcolor>black</shadowcolor>
 						<align>left</align>
 						<aligny>center</aligny>
@@ -3781,7 +3744,7 @@
 						<height>45</height>
 						<font>font13_title</font>
 						<label>$VAR[UsersSubSelectOneName] $LOCALIZE[31291]</label>
-						<textcolor>blue</textcolor>
+						<textcolor>$VAR[MainColorOne]</textcolor>
 						<shadowcolor>black</shadowcolor>
 						<align>left</align>
 						<aligny>center</aligny>
@@ -3933,7 +3896,7 @@
 						<height>45</height>
 						<font>font13_title</font>
 						<label>$VAR[UsersSubSelectTwoName] $LOCALIZE[31291]</label>
-						<textcolor>blue</textcolor>
+						<textcolor>$VAR[MainColorOne]</textcolor>
 						<shadowcolor>black</shadowcolor>
 						<align>left</align>
 						<aligny>center</aligny>
@@ -4115,7 +4078,7 @@
 							<height>45</height>
 							<font>font13_title</font>
 							<label>$LOCALIZE[31230] $LOCALIZE[31292]</label>
-							<textcolor>blue</textcolor>
+							<textcolor>$VAR[MainColorOne]</textcolor>
 							<shadowcolor>black</shadowcolor>
 							<align>left</align>
 							<aligny>center</aligny>
@@ -4228,7 +4191,7 @@
 							<height>45</height>
 							<font>font13_title</font>
 							<label>$LOCALIZE[31231] $LOCALIZE[31292]</label>
-							<textcolor>blue</textcolor>
+							<textcolor>$VAR[MainColorOne]</textcolor>
 							<shadowcolor>black</shadowcolor>
 							<align>left</align>
 							<aligny>center</aligny>
@@ -4341,7 +4304,7 @@
 							<height>45</height>
 							<font>font13_title</font>
 							<label>$LOCALIZE[31232] $LOCALIZE[31292]</label>
-							<textcolor>blue</textcolor>
+							<textcolor>$VAR[MainColorOne]</textcolor>
 							<shadowcolor>black</shadowcolor>
 							<align>left</align>
 							<aligny>center</aligny>
@@ -4454,7 +4417,7 @@
 							<height>45</height>
 							<font>font13_title</font>
 							<label>$LOCALIZE[31233] $LOCALIZE[31292]</label>
-							<textcolor>blue</textcolor>
+							<textcolor>$VAR[MainColorOne]</textcolor>
 							<shadowcolor>black</shadowcolor>
 							<align>left</align>
 							<aligny>center</aligny>
@@ -4567,7 +4530,7 @@
 							<height>45</height>
 							<font>font13_title</font>
 							<label>$LOCALIZE[31234] $LOCALIZE[31292]</label>
-							<textcolor>blue</textcolor>
+							<textcolor>$VAR[MainColorOne]</textcolor>
 							<shadowcolor>black</shadowcolor>
 							<align>left</align>
 							<aligny>center</aligny>
@@ -4680,7 +4643,7 @@
 							<height>45</height>
 							<font>font13_title</font>
 							<label>$LOCALIZE[31235] $LOCALIZE[31292]</label>
-							<textcolor>blue</textcolor>
+							<textcolor>$VAR[MainColorOne]</textcolor>
 							<shadowcolor>black</shadowcolor>
 							<align>left</align>
 							<aligny>center</aligny>
@@ -4793,7 +4756,7 @@
 							<height>45</height>
 							<font>font13_title</font>
 							<label>$LOCALIZE[31236] $LOCALIZE[31292]</label>
-							<textcolor>blue</textcolor>
+							<textcolor>$VAR[MainColorOne]</textcolor>
 							<shadowcolor>black</shadowcolor>
 							<align>left</align>
 							<aligny>center</aligny>
@@ -4906,7 +4869,7 @@
 							<height>45</height>
 							<font>font13_title</font>
 							<label>$LOCALIZE[31237] $LOCALIZE[31292]</label>
-							<textcolor>blue</textcolor>
+							<textcolor>$VAR[MainColorOne]</textcolor>
 							<shadowcolor>black</shadowcolor>
 							<align>left</align>
 							<aligny>center</aligny>
@@ -5019,7 +4982,7 @@
 							<height>45</height>
 							<font>font13_title</font>
 							<label>$LOCALIZE[31238] $LOCALIZE[31292]</label>
-							<textcolor>blue</textcolor>
+							<textcolor>$VAR[MainColorOne]</textcolor>
 							<shadowcolor>black</shadowcolor>
 							<align>left</align>
 							<aligny>center</aligny>
@@ -5132,7 +5095,7 @@
 							<height>45</height>
 							<font>font13_title</font>
 							<label>$LOCALIZE[31239] $LOCALIZE[31292]</label>
-							<textcolor>blue</textcolor>
+							<textcolor>$VAR[MainColorOne]</textcolor>
 							<shadowcolor>black</shadowcolor>
 							<align>left</align>
 							<aligny>center</aligny>
@@ -5245,7 +5208,7 @@
 							<height>45</height>
 							<font>font13_title</font>
 							<label>$LOCALIZE[31241] $LOCALIZE[31292]</label>
-							<textcolor>blue</textcolor>
+							<textcolor>$VAR[MainColorOne]</textcolor>
 							<shadowcolor>black</shadowcolor>
 							<align>left</align>
 							<aligny>center</aligny>
@@ -5358,23 +5321,11 @@
 							<height>45</height>
 							<font>font13_title</font>
 							<label>$LOCALIZE[31242] $LOCALIZE[31292]</label>
-							<textcolor>blue</textcolor>
+							<textcolor>$VAR[MainColorOne]</textcolor>
 							<shadowcolor>black</shadowcolor>
 							<align>left</align>
 							<aligny>center</aligny>
 						</control>
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
 						<control type="button" id="850">
 							<width>750</width>
 							<height>40</height>
@@ -6956,19 +6907,16 @@
 					<onright>60</onright>
 					<onup>9006</onup>
 					<ondown>9006</ondown>
-					
-					
 					<control type="label" id="600">
 						<width>750</width>
 						<height>45</height>
 						<font>font13_title</font>
 						<label>31091</label>
-						<textcolor>blue</textcolor>
+						<textcolor>$VAR[MainColorOne]</textcolor>
 						<shadowcolor>black</shadowcolor>
 						<align>left</align>
 						<aligny>center</aligny>
 					</control>
-					
 					<control type="radiobutton" id="601">
 						<description>Enable WOL Ping</description>
 						<width>750</width>
@@ -6979,15 +6927,12 @@
 						<texturenofocus>MenuItemNF.png</texturenofocus>
 						<label>31094</label>
 						<onclick>CancelAlarm(WOLPingAlarm,true)</onclick>
+						<onclick>ClearProperty(PingAlarmSet,Home)</onclick>
 						<onclick condition="!Skin.String(WOLPingTimer)">Skin.SetString(WOLPingTimer,30)</onclick>
-						
-						
 						<onclick>Skin.ToggleSetting(EnablePingWOL)</onclick>
 						<selected>Skin.HasSetting(EnablePingWOL)</selected>
 						<enable>System.HasNetwork</enable>
 					</control>
-					
-					
 					<control type="button" id="602">
 						<description>WOL PC</description>
 						<label>31093</label>
@@ -6999,12 +6944,9 @@
 						<focusedcolor>white</focusedcolor>
 						<texturefocus>MenuItemFO.png</texturefocus>
 						<texturenofocus>MenuItemNF.png</texturenofocus>
-						
 						<onclick>Skin.SetString(PingMacAddr)</onclick>
 						<enable>Skin.HasSetting(EnablePingWOL)</enable>
 					</control>
-					
-					
 					<control type="button" id="603">
 						<description>WOL Ping Timer</description>
 						<label>31095</label>
@@ -7016,8 +6958,8 @@
 						<focusedcolor>white</focusedcolor>
 						<texturefocus>MenuItemFO.png</texturefocus>
 						<texturenofocus>MenuItemNF.png</texturenofocus>
-						
-						<onclick>Skin.SetNumeric(WOLPingTimer)</onclick> 
+						<onclick>ClearProperty(PingAlarmSet,Home)</onclick>
+						<onclick>Skin.SetNumeric(WOLPingTimer)</onclick>
 						<enable>Skin.HasSetting(EnablePingWOL)</enable>
 					</control>
 					<control type="label" id="605">
@@ -7025,7 +6967,7 @@
 						<height>45</height>
 						<font>font13_title</font>
 						<label>31147</label>
-						<textcolor>blue</textcolor>
+						<textcolor>$VAR[MainColorOne]</textcolor>
 						<shadowcolor>black</shadowcolor>
 						<align>left</align>
 						<aligny>center</aligny>
@@ -7056,7 +6998,6 @@
 						<focusedcolor>white</focusedcolor>
 						<texturefocus>MenuItemFO.png</texturefocus>
 						<texturenofocus>MenuItemNF.png</texturenofocus>
-						
 						<onclick>ActivateWindow(2132)</onclick>
 						<enable>Skin.HasSetting(UPnP_Mode)</enable>
 					</control>
@@ -7081,7 +7022,7 @@
 						<height>45</height>
 						<font>font13_title</font>
 						<label>31920</label>
-						<textcolor>blue</textcolor>
+						<textcolor>$VAR[MainColorOne]</textcolor>
 						<shadowcolor>black</shadowcolor>
 						<align>left</align>
 						<aligny>center</aligny>
@@ -7105,7 +7046,7 @@
 						<height>45</height>
 						<font>font13_title</font>
 						<label>31921</label>
-						<textcolor>blue</textcolor>
+						<textcolor>$VAR[MainColorOne]</textcolor>
 						<shadowcolor>black</shadowcolor>
 						<align>left</align>
 						<aligny>center</aligny>
@@ -7120,12 +7061,10 @@
 						<texturefocus>MenuItemFO.png</texturefocus>
 						<texturenofocus>MenuItemNF.png</texturenofocus>
 						<onclick>Skin.ToggleSetting(EnableFanartScript)</onclick>
+						<onclick>Skin.SetString(FanArtCycleRate,10)</onclick>
 						<selected>Skin.HasSetting(EnableFanartScript)</selected>
 						<enable>System.HasAddon(script.grab.fanart)</enable>
 					</control>
-					
-					
-					
 					<control type="button" id="614">
 						<width>750</width>
 						<height>40</height>
@@ -7136,8 +7075,7 @@
 						<focusedcolor>white</focusedcolor>
 						<texturefocus>MenuItemFO.png</texturefocus>
 						<texturenofocus>MenuItemNF.png</texturenofocus>
-						
-						<onclick>Skin.SetNumeric(FanArtCycleRate)</onclick> 
+						<onclick>Skin.SetNumeric(FanArtCycleRate)</onclick>
 						<enable>Skin.HasSetting(EnableFanartScript)</enable>
 					</control>
 					<control type="button" id="615">
@@ -7227,12 +7165,84 @@
 						<texturefocus>MenuItemFO.png</texturefocus>
 						<texturenofocus>MenuItemNF.png</texturenofocus>
 					</control>
+					<control type="label" id="622">
+						<width>750</width>
+						<height>45</height>
+						<font>font13_title</font>
+						<label>31276</label>
+						<textcolor>$VAR[MainColorOne]</textcolor>
+						<shadowcolor>black</shadowcolor>
+						<align>left</align>
+						<aligny>center</aligny>
+					</control>
+					<control type="radiobutton" id="623">
+						<width>750</width>
+						<height>40</height>
+						<font>font13</font>
+						<label>31941</label>
+						<textcolor>grey2</textcolor>
+						<focusedcolor>white</focusedcolor>
+						<texturefocus>MenuItemFO.png</texturefocus>
+						<texturenofocus>MenuItemNF.png</texturenofocus>
+						<onclick>Skin.ToggleSetting(EnableAutoUpdateArt)</onclick>
+						<selected>Skin.HasSetting(EnableAutoUpdateArt)</selected>
+						<enable>System.HasAddon(script.artwork.downloader)</enable>
+					</control>
+					<control type="radiobutton" id="624">
+						<description>TVShow Thumbnails</description>
+						<width>750</width>
+						<height>40</height>
+						<font>font13</font>
+						<textcolor>grey2</textcolor>
+						<focusedcolor>white</focusedcolor>
+						<label>$LOCALIZE[31075]</label>
+						<texturefocus>MenuItemFO.png</texturefocus>
+						<texturenofocus>MenuItemNF.png</texturenofocus>
+						<onclick>Skin.ToggleSetting(HideEpisodeThumb)</onclick>
+						<selected>!Skin.HasSetting(HideEpisodeThumb)</selected>
+					</control>
+					<control type="radiobutton" id="625">
+						<width>750</width>
+						<height>40</height>
+						<font>font13</font>
+						<label>31340</label>
+						<textcolor>grey2</textcolor>
+						<focusedcolor>white</focusedcolor>
+						<texturefocus>MenuItemFO.png</texturefocus>
+						<texturenofocus>MenuItemNF.png</texturenofocus>
+						<onclick>Skin.ToggleSetting(DisableLogoArt)</onclick>
+						<selected>!Skin.HasSetting(DisableLogoArt)</selected>
+					</control>
+					<control type="radiobutton" id="626">
+						<width>750</width>
+						<height>40</height>
+						<font>font13</font>
+						<label>31342</label>
+						<textcolor>grey2</textcolor>
+						<focusedcolor>white</focusedcolor>
+						<texturefocus>MenuItemFO.png</texturefocus>
+						<texturenofocus>MenuItemNF.png</texturenofocus>
+						<onclick>Skin.ToggleSetting(DisableDiscArt)</onclick>
+						<selected>!Skin.HasSetting(DisableDiscArt)</selected>
+					</control>
+					<control type="radiobutton" id="627">
+						<width>750</width>
+						<height>40</height>
+						<font>font13</font>
+						<label>31341</label>
+						<textcolor>grey2</textcolor>
+						<focusedcolor>white</focusedcolor>
+						<texturefocus>MenuItemFO.png</texturefocus>
+						<texturenofocus>MenuItemNF.png</texturenofocus>
+						<onclick>Skin.ToggleSetting(DisableClearArt)</onclick>
+						<selected>!Skin.HasSetting(DisableClearArt)</selected>
+					</control>
 					<control type="label" id="630">
 						<width>750</width>
 						<height>45</height>
 						<font>font13_title</font>
 						<label>512</label>
-						<textcolor>blue</textcolor>
+						<textcolor>$VAR[MainColorOne]</textcolor>
 						<shadowcolor>black</shadowcolor>
 						<align>left</align>
 						<aligny>center</aligny>
@@ -7281,7 +7291,7 @@
 						<height>45</height>
 						<font>font13_title</font>
 						<label>31304</label>
-						<textcolor>blue</textcolor>
+						<textcolor>$VAR[MainColorOne]</textcolor>
 						<shadowcolor>black</shadowcolor>
 						<align>left</align>
 						<aligny>center</aligny>
@@ -7471,7 +7481,7 @@
 						<height>45</height>
 						<font>font13_title</font>
 						<label>31935</label>
-						<textcolor>blue</textcolor>
+						<textcolor>$VAR[MainColorOne]</textcolor>
 						<shadowcolor>black</shadowcolor>
 						<align>left</align>
 						<aligny>center</aligny>
@@ -7541,7 +7551,7 @@
 				</control>
 			</control>
 			<control type="list" id="9011">
-						<visible>false</visible>
+				<visible>false</visible>
 				<itemlayout height="1" width="750"></itemlayout>
 				<focusedlayout height="1" width="750"></focusedlayout>
 				<content>

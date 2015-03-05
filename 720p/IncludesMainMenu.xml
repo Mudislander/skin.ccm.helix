@@ -91,7 +91,7 @@
 				<width>290</width>
 				<height>60</height>
 				<font>font_MainMenu</font>
-				<textcolor>blue</textcolor>
+				<textcolor>$VAR[MainColorOne]</textcolor>
 				<align>center</align>
 				<aligny>center</aligny>
 				<label>$INFO[ListItem.Label]</label>
@@ -407,6 +407,7 @@
 		<onload>Skin.SetString(HomeItem.12.Display,Default)</onload>
 		<onload>Skin.SetBool(SingleGlobalBackground)</onload>
 		<onload>Skin.SetBool(EnableFanartScript)</onload>
+		<onload>Skin.SetString(FanArtCycleRate,10)</onload>
 		<onload condition="System.Date(11-24,1-6)">Skin.Setbool(HolidayEffects)</onload>
 		<onload>Skin.SetString(HolidayThemePath,special://skin/extras/Holiday/xmastree.jpg)</onload>
 		<onload condition="!System.HasAddon(script.randomandlastitems)">Skin.Setbool(DisableScriptPlaylist)</onload>
